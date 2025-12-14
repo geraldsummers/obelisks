@@ -1,0 +1,13 @@
+name = "Invocore (Code Library)"
+filename = "invocore-1.20.1-4.3.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "46fb3aca88b35ed229a6f272205452cac3f269f6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6773723
+project-id = 693881

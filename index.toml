@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "LICENSE"
+hash = "7f8f48e4266aa8fd3033dfaa4bb7f6e83a60c6e099f82d4959b81de90e67cd8f"
+
+[[files]]
 file = "config/bettercombat/client.json5"
 hash = "55f4f4b66d75a1fa62c58b6119e7aaacb2e83ed9b28588f53d77771873d078c2"
 
@@ -37069,6 +37073,14 @@ file = "config/enhancedai/common.toml"
 hash = "05397c22877dbce7c54d43bf1f6c9ac244017fd2f4c26e4e38e58ed079b0c110"
 
 [[files]]
+file = "config/explosionoverhaul-client.toml"
+hash = "66604fbbf04f55217d444bf362a99ed2ea439d1724d22fbccd804ddf1acf1639"
+
+[[files]]
+file = "config/explosionoverhaul-common.toml"
+hash = "5c8da207da5b98b70d4b7116bea84b564a9d99eee5bde2e971849b0ab77af1de"
+
+[[files]]
 file = "config/geolosys-common.toml"
 hash = "9c33fe33e06bc25df13cf673c51f0c29cd751db57d98c011ae97580a9bafcc0f"
 
@@ -37095,6 +37107,10 @@ hash = "83f5bc08c3bc4265c7fbe8224dff8f0f029f01de72dd76b517b1062808775ffc"
 [[files]]
 file = "config/realisticphysics/world_definitions/the_nether.toml"
 hash = "b025745a639962dbe5f7e906e0e0df4406d610830f6c4d21909b56f4eb93e5d1"
+
+[[files]]
+file = "config/theoneprobe-common.toml"
+hash = "6bf5b4cbd1643b6d3d252a76befb0f476e21e2d81d5ded3fc5474a8846bbb62b"
 
 [[files]]
 file = "config/toughasnails/thirst.toml"
@@ -37353,8 +37369,18 @@ hash = "2abfac150d6c52601ed1d666381e9992f1be1eb88ba2c2cd0d11c6a863215986"
 metafile = true
 
 [[files]]
+file = "mods/create-connected.pw.toml"
+hash = "834517e20257dd0b64f4a6d778ad773d8e422cf7864b46a557e2fab26d153ad0"
+metafile = true
+
+[[files]]
 file = "mods/create-contraption-terminals.pw.toml"
 hash = "45181af6516b3adc99f7d564763ee0db8eb70cd133a09d3266a903a9f755c5a8"
+metafile = true
+
+[[files]]
+file = "mods/create-enchantment-industry.pw.toml"
+hash = "200b30b8eeaaf2fa9e8345fcabdd80f6195b5af67926fb1e277931100e7e1eff"
 metafile = true
 
 [[files]]
@@ -37365,6 +37391,11 @@ metafile = true
 [[files]]
 file = "mods/create-liquid-fuel.pw.toml"
 hash = "ca274f1a31ba6fdf3ce7fc4a14e5d6ffcaa19c711595d98d87deb1d9fe365727"
+metafile = true
+
+[[files]]
+file = "mods/create-molten-metals.pw.toml"
+hash = "a3693e649c41be245669e7ef4a0c2394d96a416bca2717f9ed335341d2376065"
 metafile = true
 
 [[files]]
@@ -37384,7 +37415,7 @@ metafile = true
 
 [[files]]
 file = "mods/create.pw.toml"
-hash = "9d7971a7af2ff4a96a0e5aede76f9cf8dc978da601e2754f79d6ec8631125bb9"
+hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
 metafile = true
 
 [[files]]
@@ -37478,8 +37509,18 @@ hash = "0f4de0e2aba924c792c7ff751e137b28596630a8b3114574c0cd9b3bda61431c"
 metafile = true
 
 [[files]]
+file = "mods/ding.pw.toml"
+hash = "abf68c7b90b93d7223c6ed856e7a4ae89ebdccf7780277e4de6aa3d707f7e27f"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "c5ea75feae4d340856611f78a29e6f1f0b7e707bfe43847f11d25fac1769dee7"
+metafile = true
+
+[[files]]
+file = "mods/drippy-loading-screen.pw.toml"
+hash = "9de8687c9493b7809be2d236d4b2456b5866b1586aa98b729c8d0ef7d4c25117"
 metafile = true
 
 [[files]]
@@ -37553,6 +37594,11 @@ hash = "f3f87cf17a1e93a765ad23d551fbbae51c2b2059af41d7e25f6bff4cf6618cc5"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "fa9aa329bdbefc9430cdc17bf44456c278eb3a3632956b472f71f97df6c2f9a4"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "067fc433511066d18b1795b86c9856246a8da7f9a4316afd6b25e5eee181f660"
 metafile = true
@@ -37613,6 +37659,11 @@ hash = "96a48353e105f0d2ebeb2a06b8281606f999471d672a77f462e556ca7fe607d2"
 metafile = true
 
 [[files]]
+file = "mods/globalpacks.pw.toml"
+hash = "79e3ce5a162a613d8fcc4e7793838c3eb6c39b78901be5c27111242491bfc0bc"
+metafile = true
+
+[[files]]
 file = "mods/glodium.pw.toml"
 hash = "2a7944b951ebfaa4dcf963c3e2faf43eb8115d99a4390daa49dd8ea6676e8828"
 metafile = true
@@ -37625,6 +37676,11 @@ metafile = true
 [[files]]
 file = "mods/guideme.pw.toml"
 hash = "5cc92eb0e58c2afbfd625d727d80da1d1c84500ec962bb22f5be28b864f18551"
+metafile = true
+
+[[files]]
+file = "mods/ichunutil.pw.toml"
+hash = "6be04f7e78af2fc1701666edecbc69cc7c401bad38d4b46d36ad68d10e3e643f"
 metafile = true
 
 [[files]]
@@ -37648,6 +37704,11 @@ hash = "38a72fbee92dd05ee980ccb70857c1e3ed638b4bdcc65ac646a05d6a77deaf58"
 metafile = true
 
 [[files]]
+file = "mods/invocore-utility-mod.pw.toml"
+hash = "86ca24604c0ba18cdda3d839fc521f43cf414b25eee9b4c2404652b70236a9b5"
+metafile = true
+
+[[files]]
 file = "mods/itemphysic.pw.toml"
 hash = "0aff8d745dcdbc1a327e2647c184a464c28cd35b001865f561f2228eac1df683"
 metafile = true
@@ -37660,6 +37721,11 @@ metafile = true
 [[files]]
 file = "mods/keerdms-binoculars.pw.toml"
 hash = "31d955d937042ed59a16dbe14441c471019edff17a6c7275c50755388c9de922"
+metafile = true
+
+[[files]]
+file = "mods/konkrete.pw.toml"
+hash = "143102be700d30cf68d0988bc9f1b523545e37b7074ee786faac56a388e6f0e9"
 metafile = true
 
 [[files]]
@@ -37733,6 +37799,11 @@ hash = "7c411a566d022680769ddb8323984fff292ddeb35e7d8fcfe2cc41b9885d9557"
 metafile = true
 
 [[files]]
+file = "mods/melody.pw.toml"
+hash = "0b9cc190139b0eb2d5f0153f05717ed53edd499ad2a3eeee99ea75d22fd0ef1c"
+metafile = true
+
+[[files]]
 file = "mods/merequester.pw.toml"
 hash = "6d52b6989ddabb53a1f86aee4ab315c2c8726b800276975eb510a31884891082"
 metafile = true
@@ -37745,6 +37816,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "f7f96cba7b6d9da8113c00b50ed4ced2e12f8b2266dd1a5524427fde64afb2e1"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "8dd17f19e28b517c1ce56a2024ece8a37ca9bc866079d23969cc3811577861a4"
 metafile = true
 
 [[files]]
@@ -37809,7 +37885,7 @@ metafile = true
 
 [[files]]
 file = "mods/obelisks-1.0.0.jar"
-hash = "edc0b4cb54bc312617679d20f9346b74d1e76949af5bddbec4d2ee44188f11b5"
+hash = "2ec1bfb3ccc3fb89e2e4634e0ca13a054fe25ddb890c5bd1932eab1d6ad42c3e"
 
 [[files]]
 file = "mods/oceans-delight.pw.toml"
@@ -37844,6 +37920,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "b52622122c19a3894e62fc5506d7c3332d202504fd406d6718be646f979feb40"
+metafile = true
+
+[[files]]
+file = "mods/polymorph.pw.toml"
+hash = "8c65958007f81cdf1a57dac999ec7ffdde17cce6154c9a2f75bbb389fd11efbf"
 metafile = true
 
 [[files]]
@@ -37894,6 +37975,11 @@ metafile = true
 [[files]]
 file = "mods/repurposed-structures.pw.toml"
 hash = "a4a259039769657a77dac62854c9ec478fd86ad4ed3f3f91e313653dcf024861"
+metafile = true
+
+[[files]]
+file = "mods/revive-me.pw.toml"
+hash = "55d3a1d6724c7511557a98d939b4dc62a2c8798a9e31c597e510d52ee58f92dc"
 metafile = true
 
 [[files]]

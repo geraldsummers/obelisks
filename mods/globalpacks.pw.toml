@@ -1,0 +1,13 @@
+name = "Global Packs"
+filename = "globalpacks-forge-1.20.1-19.3.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "46063649fa29df57c253072e10495c2e60579302"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7240328
+project-id = 317134

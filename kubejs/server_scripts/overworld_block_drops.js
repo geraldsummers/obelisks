@@ -11,3 +11,8 @@ LootJS.modifiers(event => {
         // ~0–3 drops depending on RNG
     }
 });
+LootJS.modifiers(event => {
+    event.addBlockLootModifier(/dtterralith:.*_leaves/)
+    .addLoot("minecraft:stick")
+    .randomChance(0.5);    // always drops; lower this for actual randomness
+});
