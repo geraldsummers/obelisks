@@ -1,0 +1,13 @@
+name = "Dynamic Trees"
+filename = "DynamicTrees-1.20.1-1.4.8.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/vdjF5PL5/versions/9aYck5po/DynamicTrees-1.20.1-1.4.8.jar"
+hash-format = "sha512"
+hash = "5e5b5cfd633ab3715b1090c38f21a15da3624a02ae894f13b9aa542b826a41cc1cf152e2742099f4e55de395b9d65a4c2abbf0b353fa6b0b91bd272ae7553ca3"
+
+[update]
+[update.modrinth]
+mod-id = "vdjF5PL5"
+version = "9aYck5po"

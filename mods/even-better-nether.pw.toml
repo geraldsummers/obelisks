@@ -1,0 +1,13 @@
+name = "Even Better Nether"
+filename = "evenbetternether-1.3.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZSdhSrVt/versions/3yiFICTE/evenbetternether-1.3.1-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "7d196a8943c4fb4c23e9e943f9c187a8ff13d26ea7a05521eaf96097b5ac5b748463495e490657603687c252a2d0f469ee90fe1879063ce41b8de94762145d90"
+
+[update]
+[update.modrinth]
+mod-id = "ZSdhSrVt"
+version = "3yiFICTE"

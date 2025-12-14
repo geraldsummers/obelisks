@@ -1,0 +1,221 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "tip_merge",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip_merge",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "middle",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "middle",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "base",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "base",
+			"fluidlogged": "empty"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "tip_merge",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip_merge",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "tip",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "middle",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "middle",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "base",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "base",
+			"fluidlogged": "water"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "tip_merge",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip_merge",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "tip",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "tip",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "middle",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "middle",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalagmite",
+			"section": "base",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"type": "stalactite",
+			"section": "base",
+			"fluidlogged": "lava"
+		},
+		"Name": "blue_skies:turquoise_dripstone"
+	}
+]

@@ -1,0 +1,5124 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "0"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "1"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "2"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "3"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "4"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "5"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "6"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "7"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "8"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "9"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "10"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "11"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "12"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "13"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "14"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "true",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"is_variant": "false",
+			"fertility": "15"
+		},
+		"Name": "dynamictrees:rooty_mangrove_aerial_roots"
+	}
+]

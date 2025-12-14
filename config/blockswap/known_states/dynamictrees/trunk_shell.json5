@@ -1,0 +1,134 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "n"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "nw"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "nw"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "w"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "w"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "sw"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "sw"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "s"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "s"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "se"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "se"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "e"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "e"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"coredir": "ne"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"coredir": "ne"
+		},
+		"Name": "dynamictrees:trunk_shell"
+	}
+]

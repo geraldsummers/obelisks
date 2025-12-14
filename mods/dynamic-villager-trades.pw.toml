@@ -1,0 +1,13 @@
+name = "Dynamic Villager Trades"
+filename = "dynamicvillagertrades-1.3.1-forge-1.20.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/baBYPjgq/versions/7RWsw1e4/dynamicvillagertrades-1.3.1-forge-1.20.jar"
+hash-format = "sha512"
+hash = "d87e1cb6297db4b69b11b1e41eb9ef46642b8cafcc31711c4a674e1f80f63ac6758e1d3966a71ac1e416396d49a53c9938d87d97dfcc899f65dd689619dc66bd"
+
+[update]
+[update.modrinth]
+mod-id = "baBYPjgq"
+version = "7RWsw1e4"

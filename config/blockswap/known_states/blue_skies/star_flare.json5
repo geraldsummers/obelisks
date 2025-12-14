@@ -1,0 +1,119 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "1"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "2"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "3"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "4"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "5"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "6"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "7"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "8"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "9"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "10"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "11"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "12"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "13"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "14"
+		},
+		"Name": "blue_skies:star_flare"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"color": "15"
+		},
+		"Name": "blue_skies:star_flare"
+	}
+]

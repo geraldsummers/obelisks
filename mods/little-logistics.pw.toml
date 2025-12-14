@@ -1,0 +1,13 @@
+name = "Little Logistics"
+filename = "littlelogistics-mc1.20.1-v1.20.1.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1zZJrh9c/versions/TgyyhU8M/littlelogistics-mc1.20.1-v1.20.1.1.jar"
+hash-format = "sha512"
+hash = "64a3ba0794204fc4a0d3446add6a0c893b6e0f2580ea4f7a8ae89012ebc0aae792c34798d84771756e414f656ef7e307cb2e7ee82544c4acc21098c993b2f7d6"
+
+[update]
+[update.modrinth]
+mod-id = "1zZJrh9c"
+version = "TgyyhU8M"

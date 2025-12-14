@@ -1,0 +1,13 @@
+name = "Realistic Physics"
+filename = "realisticphysics-1.20.1-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "adbfd229421190f4cbe3a45d3aea5b42e8dde7c6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6026115
+project-id = 1030082

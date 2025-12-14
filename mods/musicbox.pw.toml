@@ -1,0 +1,13 @@
+name = "Music Box"
+filename = "musicbox-forge-2.0.2+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hKWZWeEG/versions/q3HFwzq3/musicbox-forge-2.0.2%2B1.20.1.jar"
+hash-format = "sha512"
+hash = "4557c42734181b5ababf98b0c3a13fedd88eb6dd5edfea6478be4a228fc4462c438966053a13fcfa16371db34bf7760330fd023376969d346dd0c7c2af318c93"
+
+[update]
+[update.modrinth]
+mod-id = "hKWZWeEG"
+version = "q3HFwzq3"

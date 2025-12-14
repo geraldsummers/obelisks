@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"concretelogged": "true"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"concretelogged": "false"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"concretelogged": "false"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"concretelogged": "false"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "up",
+			"concretelogged": "false"
+		},
+		"Name": "tfmg:rebar_pillar"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "down",
+			"concretelogged": "false"
+		},
+		"Name": "tfmg:rebar_pillar"
+	}
+]

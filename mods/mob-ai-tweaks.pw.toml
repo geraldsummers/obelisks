@@ -1,0 +1,13 @@
+name = "Mob AI Tweaks"
+filename = "mob-ai-tweaks-1.9.4-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "26117545a1507876268d61d78fd60aa875874f3e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7290189
+project-id = 1077291

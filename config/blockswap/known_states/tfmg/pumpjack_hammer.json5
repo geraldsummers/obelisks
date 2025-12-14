@@ -1,0 +1,102 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "north"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "true",
+			"facing": "east"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "east"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "true",
+			"facing": "south"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "south"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "true",
+			"facing": "west"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "west"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "true",
+			"facing": "up"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "up"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "true",
+			"facing": "down"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"wide": "false",
+			"facing": "down"
+		},
+		"Name": "tfmg:pumpjack_hammer"
+	}
+]

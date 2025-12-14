@@ -1,0 +1,13 @@
+name = "Fallout Wastelands"
+filename = "Fallout Wasteland 1.20.1 Beta 3.8.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "34912eb31a37dab9d0a94367a7c69d431eec4fd5"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7127023
+project-id = 431248

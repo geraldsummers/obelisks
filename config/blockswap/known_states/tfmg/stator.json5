@@ -1,0 +1,329 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "north"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "north"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "north"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "north"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "north"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "side",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "east"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "side",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "south"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "side",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "west"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "side",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "up"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "side",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "side",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner_horizontal",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner_horizontal",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "true",
+			"stator_state": "corner",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"value": "false",
+			"stator_state": "corner",
+			"facing": "down"
+		},
+		"Name": "tfmg:stator"
+	}
+]

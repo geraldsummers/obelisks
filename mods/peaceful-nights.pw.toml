@@ -1,0 +1,13 @@
+name = "Peaceful Nights"
+filename = "peaceful_nights-forge-0.1.0+1.20.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/wusZLXmN/versions/DhtqcP7Y/peaceful_nights-forge-0.1.0%2B1.20.1.jar"
+hash-format = "sha512"
+hash = "cb856d9c0813eba83e4a024ec2da70edea41e7e2f86581a5fb50f470cb27bab50ba5012237361b0ae7fee409ecc31bc486ccfcd57e37af2bb20a1273f10fd107"
+
+[update]
+[update.modrinth]
+mod-id = "wusZLXmN"
+version = "DhtqcP7Y"

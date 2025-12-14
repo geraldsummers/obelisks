@@ -1,0 +1,13 @@
+name = "Geolosys"
+filename = "Geolosys-1.20.1-7.0.14.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/aPBZx3jD/versions/YsOxs3Dy/Geolosys-1.20.1-7.0.14.jar"
+hash-format = "sha512"
+hash = "ae9bb911ee76f700a4239fc5c08cdf26b657a57df32ceeecb1bdfa30cdd64ca0151fcb1e1699ecd699de8340d1393d5f246aa2bda984523a7c541d268caac4c0"
+
+[update]
+[update.modrinth]
+mod-id = "aPBZx3jD"
+version = "YsOxs3Dy"

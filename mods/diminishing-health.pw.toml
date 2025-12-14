@@ -1,0 +1,13 @@
+name = "Diminishing Health"
+filename = "diminishing_health-1.3.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d1d743174994c047e210a815ee169a556465e5ab"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7298752
+project-id = 1317565

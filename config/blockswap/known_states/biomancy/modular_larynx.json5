@@ -1,0 +1,1355 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "0",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "0",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "1",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "1",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "2",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "2",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "3",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "3",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "4",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "4",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "5",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "5",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "6",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "6",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "7",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "7",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "8",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "8",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "9",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "9",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "10",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "10",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "11",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "11",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "12",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "13",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "13",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "14",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "14",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "15",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "15",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "16",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "16",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "17",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "17",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "18",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "18",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "19",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "19",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "20",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "20",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "21",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "21",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "22",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "22",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "23",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "23",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "24",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "24",
+			"mob_sound_type": "ambient"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "0",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "0",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "1",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "1",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "2",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "2",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "3",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "3",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "4",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "4",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "5",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "5",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "6",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "6",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "7",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "7",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "8",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "8",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "9",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "9",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "10",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "10",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "11",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "11",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "12",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "12",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "13",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "13",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "14",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "14",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "15",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "15",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "16",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "16",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "17",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "17",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "18",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "18",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "19",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "19",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "20",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "20",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "21",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "21",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "22",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "22",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "23",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "23",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "24",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "24",
+			"mob_sound_type": "hurt"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "0",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "0",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "1",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "1",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "2",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "2",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "3",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "3",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "4",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "4",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "5",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "5",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "6",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "6",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "7",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "7",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "8",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "8",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "9",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "9",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "10",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "10",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "11",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "11",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "12",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "12",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "13",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "13",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "14",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "14",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "15",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "15",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "16",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "16",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "17",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "17",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "18",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "18",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "19",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "19",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "20",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "20",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "21",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "21",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "22",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "22",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "23",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "23",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "true",
+			"note": "24",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"powered": "false",
+			"note": "24",
+			"mob_sound_type": "death"
+		},
+		"Name": "biomancy:modular_larynx"
+	}
+]

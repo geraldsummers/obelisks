@@ -1,0 +1,13 @@
+name = "Create: Fuel Motor"
+filename = "create_fuel_motor-1.2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bb0bf2359227c485f6bbd8449ca9d702d6613440"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6543137
+project-id = 1246793

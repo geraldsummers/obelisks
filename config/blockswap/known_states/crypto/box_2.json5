@@ -1,0 +1,3238 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "0"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "0"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "0"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "1"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "1"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "1"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "1"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "2"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "2"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "2"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "2"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "3"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "3"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "3"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "3"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "4"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "4"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "4"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "4"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "5"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "5"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "5"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "5"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "6"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "6"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "6"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "6"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "7"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "7"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "7"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "7"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "8"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "8"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "8"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "8"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "9"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "9"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "9"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "9"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "10"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "10"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "10"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "10"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "11"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "11"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "11"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "11"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "12"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "12"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "12"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "12"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "13"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "13"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "13"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "13"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "14"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "14"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "14"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "14"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "15"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "15"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "15"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "15"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "16"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "16"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "16"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "16"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "17"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "17"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "17"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "17"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "18"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "18"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "18"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "18"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "19"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "19"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "19"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "19"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "20"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "20"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "20"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "20"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "21"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "21"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "21"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "21"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "22"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "22"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "22"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "22"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "23"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "23"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "23"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "23"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "24"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "24"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "24"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "24"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "25"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "25"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "25"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "25"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "26"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "26"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "26"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "26"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "27"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "27"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "27"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "27"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "28"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "28"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "28"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "28"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "29"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "29"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "29"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "29"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "30"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "30"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "30"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "30"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "31"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "31"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "31"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "31"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "32"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "32"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "32"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "32"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "33"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "33"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "33"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "33"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "34"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "34"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "34"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "34"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "35"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "35"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "35"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "35"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "36"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "36"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "36"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "36"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "37"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "37"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "37"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "37"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "38"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "38"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "38"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "38"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "39"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "39"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "39"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "39"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "40"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "40"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "40"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "40"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "41"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "41"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "41"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "41"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "42"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "42"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "42"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "42"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "43"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "43"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "43"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "43"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "44"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "44"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "44"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "44"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "45"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "45"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "45"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "45"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "46"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "46"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "46"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "46"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "47"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "47"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "47"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "47"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "48"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "48"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "48"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "48"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "49"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "49"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "49"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "49"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "50"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "50"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "50"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "50"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "51"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "51"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "51"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "51"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "52"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "52"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "52"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "52"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "53"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "53"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "53"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "53"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "54"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "54"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "54"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "54"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "55"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "55"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "55"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "55"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "56"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "56"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "56"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "56"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "57"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "57"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "57"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "57"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "58"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "58"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "58"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "58"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "59"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "59"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "59"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "59"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "60"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "60"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "60"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "60"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "61"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "61"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "61"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "61"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "62"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "62"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "62"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "62"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "63"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "63"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "63"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "63"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "64"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "64"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "64"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "64"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "65"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "65"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "65"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "65"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "66"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "66"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "66"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "66"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "67"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "67"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "67"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "67"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "68"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "68"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "68"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "68"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "69"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "69"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "69"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "69"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "70"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "70"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "70"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "70"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "71"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "71"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "71"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "71"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "72"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "72"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "72"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "72"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "73"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "73"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "73"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "73"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "74"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "74"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "74"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "74"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "75"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "75"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "75"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "75"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "76"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "76"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "76"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "76"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "77"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "77"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "77"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "77"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "78"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "78"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "78"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "78"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "79"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "79"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "79"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "79"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "80"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "80"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "80"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "80"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "81"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "81"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "81"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "81"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "82"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "82"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "82"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "82"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "83"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "83"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "83"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "83"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "84"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "84"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "84"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "84"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "85"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "85"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "85"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "85"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "86"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "86"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "86"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "86"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "87"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "87"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "87"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "87"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "88"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "88"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "88"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "88"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "89"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "89"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "89"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "89"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "90"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "90"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "90"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "90"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "91"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "91"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "91"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "91"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "92"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "92"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "92"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "92"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "93"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "93"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "93"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "93"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "94"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "94"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "94"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "94"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "95"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "95"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "95"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "95"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "96"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "96"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "96"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "96"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "97"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "97"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "97"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "97"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "98"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "98"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "98"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "98"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "99"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "99"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "99"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "99"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "north",
+			"articul": "100"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "south",
+			"articul": "100"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "west",
+			"articul": "100"
+		},
+		"Name": "crypto:box_2"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"facing": "east",
+			"articul": "100"
+		},
+		"Name": "crypto:box_2"
+	}
+]

@@ -1,0 +1,3458 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "true"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "north",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "south",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "west",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "front",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "true",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "negative",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "center",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "negative",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "center",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"z_alignment": "positive",
+			"y_alignment": "positive",
+			"up": "false",
+			"side": "both",
+			"facing": "east",
+			"down": "false"
+		},
+		"Name": "createrailwaysnavigator:advanced_display_half_panel"
+	}
+]

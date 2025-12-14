@@ -1,0 +1,1284 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "normal"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "front"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "back"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "true",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "north",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "south",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "west",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "north",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "south",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "west",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"shaft_facing": "east",
+			"facing": "east",
+			"extended": "false",
+			"engine_state": "single"
+		},
+		"Name": "tfmg:turbine_engine"
+	}
+]

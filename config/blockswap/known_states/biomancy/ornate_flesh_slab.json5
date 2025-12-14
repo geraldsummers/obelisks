@@ -1,0 +1,383 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_north",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_north",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_south",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_south",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_west",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_west",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_east",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_east",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_up",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_up",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_down",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_down",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "full",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "full",
+			"axis": "x"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_north",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_north",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_south",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_south",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_west",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_west",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_east",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_east",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_up",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_down",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_down",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "full",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "full",
+			"axis": "y"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_north",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_north",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_south",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_south",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_west",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_west",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_east",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_east",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_up",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_up",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "half_down",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "half_down",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"type": "full",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"type": "full",
+			"axis": "z"
+		},
+		"Name": "biomancy:ornate_flesh_slab"
+	}
+]

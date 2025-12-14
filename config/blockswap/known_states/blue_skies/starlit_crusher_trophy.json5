@@ -1,0 +1,293 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "bronze",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "silver",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "silver",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "gold",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "gold",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "platinum",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "platinum",
+			"facing": "north"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "bronze",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "bronze",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "silver",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "silver",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "gold",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "gold",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "platinum",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "platinum",
+			"facing": "south"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "bronze",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "bronze",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "silver",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "silver",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "gold",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "gold",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "platinum",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "platinum",
+			"facing": "west"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "bronze",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "bronze",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "silver",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "silver",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "gold",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "gold",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"tier": "platinum",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"tier": "platinum",
+			"facing": "east"
+		},
+		"Name": "blue_skies:starlit_crusher_trophy"
+	}
+]

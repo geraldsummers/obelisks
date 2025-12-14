@@ -1,0 +1,13 @@
+name = "More Villagers"
+filename = "more_villargers-2.5.8-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ghTSyem0/versions/3BzuQynG/more_villargers-2.5.8-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "8b122ffbc8e69063257fe9b89251a32ed22d7e848ca2ee34aecde019037ef61517006d5f484d94f77c8df4a25fc3f8299fb5d134027cc2beb19a7c08d4bd0633"
+
+[update]
+[update.modrinth]
+mod-id = "ghTSyem0"
+version = "3BzuQynG"

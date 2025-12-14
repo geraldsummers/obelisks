@@ -1,0 +1,390 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "9"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "9"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "10"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "10"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "11"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "11"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "12"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "12"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "13"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "13"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "14"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "14"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "15"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "15"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "16"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "16"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "17"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "17"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "18"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "18"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "19"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "19"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "20"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "20"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "21"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "21"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "22"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "22"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "23"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "23"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "24"
+		},
+		"Name": "dynamictrees:warped_branch"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "24"
+		},
+		"Name": "dynamictrees:warped_branch"
+	}
+]

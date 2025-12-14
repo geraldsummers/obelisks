@@ -1,0 +1,644 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "default"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "legacy"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "rusted"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"chemical_reactor": "hazard"
+		},
+		"Name": "immersivegeology:chemical_reactor"
+	}
+]

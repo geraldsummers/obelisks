@@ -1,0 +1,324 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "north"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "south"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "west"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "default",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "default",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"geothermal_exchanger": "steampunk",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"geothermal_exchanger": "steampunk",
+			"facing": "east"
+		},
+		"Name": "immersivegeology:geothermal_exchanger"
+	}
+]

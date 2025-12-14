@@ -1,0 +1,13 @@
+name = "Death Penalties"
+filename = "DeathPenalties-0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2b67e031fa0137d8da08ade8c573435ebaba33f8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6414735
+project-id = 1241155

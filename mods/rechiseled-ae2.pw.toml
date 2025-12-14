@@ -1,0 +1,13 @@
+name = "Rechiseled: AE2"
+filename = "rechiseledae2-forge-1.20-1.20.1-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8abcce2b76dcd5506664cfee18e0b8a80daae135"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7074191
+project-id = 987534

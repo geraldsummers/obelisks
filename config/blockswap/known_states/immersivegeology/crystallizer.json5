@@ -1,0 +1,644 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "default"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "rusted"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "hive"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "north",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "north",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "south",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "south",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "west",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "west",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "true",
+			"facing": "east",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "true",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"multiblockslave": "false",
+			"mirrored": "false",
+			"facing": "east",
+			"crystallizer": "pumpkin"
+		},
+		"Name": "immersivegeology:crystallizer"
+	}
+]

@@ -1,0 +1,437 @@
+/*
+This file uses the ".json5" file extension which allows for comments like this in a json file!
+Your text editor may show this file with invalid/no syntax, if so, we recommend you download:
+
+VSCode: https://code.visualstudio.com/
+JSON5 plugin(for VSCode): https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-json5
+
+to make editing this file much easier.
+*/
+[
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"layer": "exposed"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"layer": "filled"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "1",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "1",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "2",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "2",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "3",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "3",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "4",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "4",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "5",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "5",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "6",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "6",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "7",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "7",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "true",
+			"radius": "8",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	},
+	{
+		// Properties define the state of this block/fluid.
+		"Properties": {
+			"waterlogged": "false",
+			"radius": "8",
+			"layer": "covered"
+		},
+		"Name": "dynamictrees:mangrove_roots"
+	}
+]

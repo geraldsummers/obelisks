@@ -1,0 +1,13 @@
+name = "Cravings!"
+filename = "cravings-1.2.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/y1dyDSfY/versions/d86F8IBx/cravings-1.2.1-forge-1.20.1.jar"
+hash-format = "sha512"
+hash = "ccede5885cdba7e77ad5f5393fd9c45cdf669b3cf22a9a3d17a8cb7d9e9202ec7b5f5dbeb92de7eb7841c1aeba6fd22cac3580b1158b5430e06bce597f62d366"
+
+[update]
+[update.modrinth]
+mod-id = "y1dyDSfY"
+version = "d86F8IBx"
