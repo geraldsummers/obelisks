@@ -1,4 +1,4 @@
-terralith:alpine_grove
+
 terralith:autumnal_valley
 terralith:blooming_plateau
 terralith:crystal_hills
@@ -6,20 +6,17 @@ terralith:lush_valley
 terralith:meadow
 terralith:mystic_grove
 terralith:orchard
-terralith:shield
+
 terralith:shrubland
-terralith:steppe
-terralith:temperate_highlands
-terralith:temperate_plateau
+
 terralith:temperate_valley
 terralith:wind_swept_shrubland
 terralith:wooded_hills
-terralith:yellowstone
 
 minecraft:plains
 minecraft:meadow
 minecraft:sunflower_plains
-minecraft:cherry_grove
+
 minecraft:swamp
 minecraft:mangrove_swamp
 minecraft:beach

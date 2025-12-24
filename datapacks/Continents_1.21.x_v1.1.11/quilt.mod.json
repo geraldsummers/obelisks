@@ -1,0 +1,40 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "net.stardustlabs",
+        "id": "continents",
+        "version": "1.1.11",
+        "metadata": {
+            "name": "Continents",
+            "description": "Reshapes the world to consist of continents, separated by large oceans and small islands.",
+            "contributors": {
+                "Starmute": "Owner",
+                "catter1": "Maintainer"
+            },
+            "contact": {
+                "homepage": "https://www.stardustlabs.net/",
+                "issues": "https://github.com/Stardust-Labs-MC/Continents/issues",
+                "sources": "https://github.com/Stardust-Labs-MC/Continents"
+            },
+            "license": {
+                "name": "Stardust Labs License",
+                "id": "SLL",
+                "url": "https://github.com/Stardust-Labs-MC/license/blob/main/license.txt",
+                "description": "The official license for all Stardust Labs projects"
+            },
+            "icon": "pack.png"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "depends": [
+            {
+                "id": "minecraft",
+                "versions": ">=1.18.2"
+            },
+            {
+                "id": "quilt_resource_loader",
+                "versions": "*",
+                "unless": "fabric-resource-loader-v0"
+            }
+        ]
+    }
+}

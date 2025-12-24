@@ -1,0 +1,325 @@
+{
+    "config": {
+        "meta": {
+            "ver": 2,
+            "tab": "Continents",
+            "id": "continents"
+        },
+        "widgets": [
+            {
+                "type": "title",
+                "text": "Continents Configuration"
+            },
+            {
+                "type": "text",
+                "text": "by <a href='https://www.stardustlabs.net/'>Stardust Labs</a>.<br><br>For more information about <i>Continents</i>, visit the <a href='https://modrinth.com/datapack/continents'>Modrinth page</a> or join our <a href='https://discord.gg/stardustlabs'>official Discord server</a>."
+            },
+            {
+                "type": "heading",
+                "text": "Default world preset"
+            },
+            {
+                "type": "slider",
+                "text": "Continent scale",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "continent_scale"
+            },
+            {
+                "type": "slider",
+                "text": "Spawn island size",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "spawn_island_size"
+            },
+            {
+                "type": "slider",
+                "text": "Size of non-continent islands",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "island_scale"
+            },
+            {
+                "type": "slider",
+                "text": "Amount of non-continent islands",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        200
+                    ]
+                },
+                "method": "island_impact"
+            },
+            {
+                "type": "heading",
+                "text": "Large Biomes world preset"
+            },
+            {
+                "type": "slider",
+                "text": "Continent scale (large biomes)",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "continent_scale_large_biomes"
+            },
+            {
+                "type": "slider",
+                "text": "Spawn island size (large biomes)",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "spawn_island_size_large"
+            },
+            {
+                "type": "slider",
+                "text": "Size of non-continent islands (large biomes)",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        300
+                    ]
+                },
+                "method": "island_scale_large"
+            },
+            {
+                "type": "slider",
+                "text": "Amount of non-continent islands (large biomes)",
+                "value": {
+                    "type": "percent",
+                    "default": 100,
+                    "range": [
+                        50,
+                        200
+                    ]
+                },
+                "method": "island_impact_large"
+            }
+        ],
+        "methods": {
+            "continent_scale": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": "data/minecraft/worldgen/density_function/overworld/base_continents.json",
+                        "value_path": "argument1/argument/xz_scale"
+                    }
+                ]
+            },
+            "continent_scale_large_biomes": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": "data/minecraft/worldgen/density_function/overworld_large_biomes/base_continents.json",
+                        "value_path": "argument1/argument/xz_scale"
+                    }
+                ]
+            },
+            "spawn_island_size": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": [
+                            "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring4_offset.json"
+                        ],
+                        "value_path": "argument/argument1/xz_scale"
+                    },
+                    {
+                        "method": "divide",
+                        "file_path": [
+                            "data/continents/worldgen/density_function/centroid/ring1_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring2_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring3_offset.json",
+                            "data/continents/worldgen/density_function/centroid/ring4_offset.json"
+                        ],
+                        "value_path": "argument/argument2/argument1/xz_scale"
+                    }
+                ]
+            },
+            "spawn_island_size_large": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": [
+                            "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring4_offset.json"
+                        ],
+                        "value_path": "argument/argument1/xz_scale"
+                    },
+                    {
+                        "method": "divide",
+                        "file_path": [
+                            "data/continents/worldgen/density_function/large/centroid/ring1_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring2_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring3_offset.json",
+                            "data/continents/worldgen/density_function/large/centroid/ring4_offset.json"
+                        ],
+                        "value_path": "argument/argument2/argument1/xz_scale"
+                    }
+                ]
+            },
+            "island_scale": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": "data/continents/worldgen/density_function/island_squared.json",
+                        "value_path": "argument2/argument2/argument/argument2/input/argument1/argument/xz_scale"
+                    }
+                ]
+            },
+            "island_scale_large": {
+                "value": {
+                    "function": "square_root",
+                    "argument": "$input"
+                },
+                "accessors": [
+                    {
+                        "method": "divide",
+                        "file_path": "data/continents/worldgen/density_function/large/island_squared.json",
+                        "value_path": "argument2/argument2/argument/argument2/input/argument1/argument/xz_scale"
+                    }
+                ]
+            },
+            "island_impact": {
+                "value": {
+                    "function": "add",
+                    "argument1": {
+                        "function": "if_else",
+                        "argument": 1,
+                        "operator": ">",
+                        "argument1": "$input",
+                        "true": -0.5,
+                        "false": -0.25
+                    },
+                    "argument": {
+                        "function": "multiply",
+                        "argument": "$input",
+                        "argument1": {
+                            "function": "if_else",
+                            "argument": 1,
+                            "operator": ">",
+                            "argument1": "$input",
+                            "true": 0.5,
+                            "false": 0.25
+                        }
+                    }
+                },
+                "accessors": [
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/island_impact.json",
+                        "value_path": "spline/points/2/location"
+                    },
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/island_impact.json",
+                        "value_path": "spline/points/3/location"
+                    },
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/island_impact.json",
+                        "value_path": "spline/points/4/location"
+                    }
+                ]
+            },
+            "island_impact_large": {
+                "value": {
+                    "function": "add",
+                    "argument1": {
+                        "function": "if_else",
+                        "argument": 1,
+                        "operator": ">",
+                        "argument1": "$input",
+                        "true": -0.5,
+                        "false": -0.25
+                    },
+                    "argument": {
+                        "function": "multiply",
+                        "argument": "$input",
+                        "argument1": {
+                            "function": "if_else",
+                            "argument": 1,
+                            "operator": ">",
+                            "argument1": "$input",
+                            "true": 0.5,
+                            "false": 0.25
+                        }
+                    }
+                },
+                "accessors": [
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/large/island_impact.json",
+                        "value_path": "spline/points/2/location"
+                    },
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/large/island_impact.json",
+                        "value_path": "spline/points/3/location"
+                    },
+                    {
+                        "method": "add",
+                        "file_path": "data/continents/worldgen/density_function/large/island_impact.json",
+                        "value_path": "spline/points/4/location"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -3,10 +3,10 @@
 [prospecting]
 	#The number of times Geolosys will attempt to place plutons in a given chunk
 	#Range: > 1
-	numPlutonsPerChunk = 20
+	numPlutonsPerChunk = 1
 	#The diameter of the prospector's pick prospecting cycle
 	#Range: > 1
-	proPickDiameter = 5
+	proPickDiameter = 64
 	#A list of blocks to always ignore when prospecting, even if they're in a deposit.
 	proPickDetectionBlacklist = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:sandstone", "minecraft:deepslate", "minecraft:tuff", "minecraft:calcite", "minecraft:dripstone_block"]
 	#Enable the prospector's pickaxe
@@ -23,11 +23,11 @@
 	giveManual = true
 	#Maximum samples that can generate with each pluton within a chunk
 	#Range: 1 ~ 256
-	maxSamplesPerChunk = 1
+	maxSamplesPerChunk = 32
 	#The upper limit of RNG for generating any pluton in a given chunk.
 	#Larger values indicate further distance between plutons.
 	#Range: 0.0 ~ 1.0
-	chunkSkipChance = 0.0
+	chunkSkipChance = 0.8
 
 #Feature Control
 ["feature control"]

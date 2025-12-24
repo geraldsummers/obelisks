@@ -1,13 +1,13 @@
 name = "Ube's Delight"
-filename = "ubesdelight-forge-1.20.1-0.4.6.jar"
+filename = "ubesdelight-forge-1.20.1-0.3.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "a79f322390f4e79b23f79e4453a089b48ede0edd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/PYjpoAys/versions/5bL3Ntdy/ubesdelight-forge-1.20.1-0.3.4.jar"
+hash-format = "sha512"
+hash = "0f7e993b81479e37f2dd2945b12a0ecd454ef5e4f6135d7ec0f68443e955b6010d0713ec3f0491613c1af94499309abc2e98e422ed7a64564b5eb37c65c16a69"
 
 [update]
-[update.curseforge]
-file-id = 7236319
-project-id = 903894
+[update.modrinth]
+mod-id = "PYjpoAys"
+version = "5bL3Ntdy"

@@ -1,13 +1,13 @@
 name = "Carbon Config"
-filename = "CarbonConfig-1.20-1.2.8.1.jar"
+filename = "CarbonConfig-1.20-1.2.8.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1d1fb1f63409ecb64088507474033dbfe0d90755"
+hash = "ecfb4311796196b51b476d7709f87c7eea34c53a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7036762
+file-id = 7016187
 project-id = 898104

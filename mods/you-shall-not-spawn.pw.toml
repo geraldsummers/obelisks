@@ -1,0 +1,13 @@
+name = "You Shall Not Spawn! (Modpack Utils Series)"
+filename = "YouShallNotSpawn-forge-1.20.x-2.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2edf78b0b62eafbbd92c7c268997072e10c14163"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5820960
+project-id = 628744

@@ -1,13 +1,13 @@
 name = "Configurable Death"
-filename = "configurabledeath1_20_1-1.0.0.jar"
+filename = "configurabledeath-1.20.1-1.0.3.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "1076a9f725b7e46b6f0e6b1afe10f986673dfabb"
+hash = "54f39408146831fa8239a933fc32d008506b0bd9"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 5040938
+file-id = 7336917
 project-id = 958639

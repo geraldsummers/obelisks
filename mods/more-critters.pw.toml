@@ -1,0 +1,13 @@
+name = "More Critters"
+filename = "More Critters 1.2.6.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2b0236eea1b57ff02b56b1105078d7596fac7e55"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7210505
+project-id = 1322511

@@ -1,0 +1,39 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1766212884305
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:8e688546-39f2-4a16-aabe-c9c7db5612a4-1766212876859] = [groups:][instances:]
+}
+
+menu_background {
+  color = #1D0B24
+  instance_identifier = 6fb512b2-0da3-4648-b353-7ba8e8807901-1766212821266
+  background_type = color_fancymenu
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+  show_screen_background_overlay_on_custom_background = false
+  apply_vanilla_background_blur = false
+}
+
+layout_action_executable_blocks {
+}
+
