@@ -14,6 +14,7 @@
   //  
   "disabled": [
     "minecraft:creeper",
+    "mekanismadditions:baby_creeper",
     "example_mod:example_entity",
     "example_mod:another_example_entity"
   ],

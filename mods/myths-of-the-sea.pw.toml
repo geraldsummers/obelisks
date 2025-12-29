@@ -1,0 +1,13 @@
+name = "Myths of The Sea - Mythology Mobs!"
+filename = "MOTS-Forge-1.20.1-1.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "53cc4662d8a691ce58eea55678cb0192a438d421"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7264155
+project-id = 1317493

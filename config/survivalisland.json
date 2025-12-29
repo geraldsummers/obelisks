@@ -1,0 +1,27 @@
+{
+  "islandSize": 300.0,
+  "islandSeperation": 2000,
+  "continentalTargetRangeA": {
+    "min": -0.25,
+    "max": 0.7
+  },
+  "continentalTargetRangeB": {
+    "min": -1.0,
+    "max": 1.4
+  },
+  "islandUnderwaterFalloffDistanceMultiplier": 1.0,
+  "domainWarpNoise": {
+    "octaves": 1,
+    "horizontalSpacing": 28.0,
+    "amplitude": 22.0,
+    "lacunarity": 1.732,
+    "persistenceDivisor": 1.732
+  },
+  "rangeVariationNoise": {
+    "octaves": 2,
+    "horizontalSpacing": 344.0,
+    "amplitude": 1.2,
+    "lacunarity": 1.732,
+    "persistenceDivisor": 1.732
+  }
+}

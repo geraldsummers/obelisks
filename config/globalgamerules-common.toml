@@ -64,7 +64,7 @@
 		players_sleeping_percentage = 100
 		#The number of blocks outward from the world spawn coordinates that a player spawns in when first joining a server or when dying without a personal spawnpoint. Has no effect on servers where the default game mode is Adventure.
 		#Range: > -2147483648
-		spawn_radius = 10
+		spawn_radius = 128
 		#Whether players in spectator mode can generate chunks
 		spectators_generate_chunks = true
 

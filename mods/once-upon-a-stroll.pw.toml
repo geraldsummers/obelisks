@@ -1,0 +1,13 @@
+name = "Once Upon A Stroll"
+filename = "onceuponastroll-forge-1.20.1-1.7.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9c53a933e0ef6e92f8e4e0e4dd4feca70c4c612f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4627278
+project-id = 354552

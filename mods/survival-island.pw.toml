@@ -1,0 +1,13 @@
+name = "Survival island"
+filename = "survivalisland-forge-0.3.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1cb20ac8874f78c21fa4695a6c4eb69b3e4c9ad6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6983423
+project-id = 364426

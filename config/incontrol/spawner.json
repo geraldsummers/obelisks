@@ -1,0 +1,46 @@
+[
+  {
+    "mobsfrombiome": "monster",
+    "persecond": 1.0,
+    "attempts": 60,
+    "amount": { "minimum": 2, "maximum": 4, "groupdistance": 8 },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 16,
+      "maxdist": 72,
+      "maxverticaldist": 32,
+      "maxlocal": 18,
+      "and": { "biometags": ["minecraft:is_ocean", "forge:is_ocean", "c:is_ocean"] },
+      "not": { "cave": true }
+    }
+  },
+  {
+    "mobsfrombiome": "water_creature",
+    "persecond": 1.0,
+    "attempts": 50,
+    "amount": { "minimum": 3, "maximum": 6, "groupdistance": 10 },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 16,
+      "maxdist": 72,
+      "maxverticaldist": 32,
+      "maxlocal": 24,
+      "and": { "biometags": ["minecraft:is_ocean", "forge:is_ocean", "c:is_ocean"] }
+    }
+  },
+  {
+    "mobsfrombiome": "water_ambient",
+    "persecond": 1.0,
+    "attempts": 40,
+    "amount": { "minimum": 4, "maximum": 8, "groupdistance": 12 },
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 16,
+      "maxdist": 72,
+      "maxverticaldist": 32,
+      "maxlocal": 28,
+      "and": { "biometags": ["minecraft:is_ocean", "forge:is_ocean", "c:is_ocean"] }
+    }
+  }
+]
+[]

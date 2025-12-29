@@ -3,11 +3,11 @@ filename = "DynamicTrees-1.20.1-1.4.9.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/vdjF5PL5/versions/G7ma4wV5/DynamicTrees-1.20.1-1.4.9.jar"
-hash-format = "sha512"
-hash = "cee35ff5cd926b543d2d44f51c88501395903d80c45eb9b539ba9f2840bc61c3a8ae1c4b1529c9fda7ce3d090f405a20072ece483e2094ab839445c19fc2118f"
+hash-format = "sha1"
+hash = "02546cd1984998740b8e44fab17be1889feac5f1"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "vdjF5PL5"
-version = "G7ma4wV5"
+[update.curseforge]
+file-id = 7340373
+project-id = 252818

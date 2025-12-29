@@ -1,0 +1,13 @@
+name = "The Flash Flood"
+filename = "flash_flood-forge-2.1.1-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0683ab3df7bb33c49af79fe4c037e052b3265273"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7305830
+project-id = 1081223
