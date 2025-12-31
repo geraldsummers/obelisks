@@ -1,0 +1,13 @@
+name = "Looot"
+filename = "looot-1.20.1-1.2.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "43ccd845f6dd4195c0c9e27f5eef7c892596459c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4670222
+project-id = 420925

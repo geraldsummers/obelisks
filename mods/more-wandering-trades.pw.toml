@@ -1,0 +1,13 @@
+name = "More Wandering Trades"
+filename = "More Wandering Trades 1.0.0 - 1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "485000b16984877955c6691bbce2cabbacb2bde9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4992447
+project-id = 650248

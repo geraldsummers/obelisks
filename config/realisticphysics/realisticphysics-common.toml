@@ -5,7 +5,7 @@
 
 	#The maximum distance, in chunks, where physics calculations are performed.
 	#Range: 1 ~ 32
-	ChunkUpdateRange = 6
+	ChunkUpdateRange = 12
 
 [Defaults]
 	#The name of the world definition that should be used as the default.

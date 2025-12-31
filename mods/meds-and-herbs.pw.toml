@@ -1,0 +1,13 @@
+name = "Meds and Herbs"
+filename = "meds_and_herbs-1.20.1-2.0.3.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/d4p3w66w/versions/xsD3afN5/meds_and_herbs-1.20.1-2.0.3.jar"
+hash-format = "sha512"
+hash = "5ff0dcae656dbf7819015a588f67cf830779a0d3554a0fd2e634551365b571af893c46370c936893e6dafacbc463508dd1bb4563165b7ff4395b5053fde7bc29"
+
+[update]
+[update.modrinth]
+mod-id = "d4p3w66w"
+version = "xsD3afN5"

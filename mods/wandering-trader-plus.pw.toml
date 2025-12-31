@@ -1,0 +1,13 @@
+name = "Wandering Trader Plus"
+filename = "wandering_trader_plus-1.1 1-20-1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6f8c7ff26a87943da9843dc8faf8d786164a1a40"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6830385
+project-id = 1007801

@@ -44,7 +44,7 @@
 	keepFoodLevel = true
 	#Highest amount of food level you can respawn with
 	#Range: 0 ~ 20
-	maxFoodLevel = 12
+	maxFoodLevel = 8
 	#Lowest amount of food level you can respawn with
 	#Range: 0 ~ 20
 	minFoodLevel = 8

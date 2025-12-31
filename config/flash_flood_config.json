@@ -1,10 +1,10 @@
 {
-  "waterCreationChance": 0.05,
+  "waterCreationChance": 0.1,
   "waterCreationRadius": 128,
-  "waterSpreadChance": 0.08,
+  "waterSpreadChance": 0.0,
   "maxWaterSpreadRadius": 6,
   "maxWaterHeight": 1,
-  "floodPatchChance": 0.025,
+  "floodPatchChance": 0.0,
   "floodPatchRadius": 8,
   "floodPatchDepth": 4,
   "floodVerticalScan": 8

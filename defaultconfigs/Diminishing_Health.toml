@@ -7,9 +7,9 @@
 	#Allows passive health recovery every full Minecraft day. (Default: true)
 	"Toggle Passive Health Recovery" = true
 	#Allows health recovery when sleeping through the night. (Default: true)
-	"Toggle Sleep Health Recovery" = true
+	"Toggle Sleep Health Recovery" = false
 	#Enables recovery mechanic after multiple consecutive deaths at 1 HP with a cooldown. (Default: true)
-	"Toggle Determination" = true
+	"Toggle Determination" = false
 
 ["Minor Toggles"]
 	#Should the passive recovery timer reset when you die. (Default: true)

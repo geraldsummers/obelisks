@@ -1,0 +1,13 @@
+name = "Tonic and Wild Medicine"
+filename = "twm-3.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a91c5dcf7cceaa31660291d5644eec1ba12a577e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7378762
+project-id = 1217827
