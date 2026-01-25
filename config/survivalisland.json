@@ -7,9 +7,9 @@
   },
   "continentalTargetRangeB": {
     "min": -1.0,
-    "max": 1.4
+    "max": 3.0
   },
-  "islandUnderwaterFalloffDistanceMultiplier": 10.0,
+  "islandUnderwaterFalloffDistanceMultiplier": 2.0,
   "domainWarpNoise": {
     "octaves": 1,
     "horizontalSpacing": 28.0,

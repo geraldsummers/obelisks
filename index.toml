@@ -42169,6 +42169,10 @@ file = "config/notreepunching.toml"
 hash = "137181e7aed4310863f281af9cc272f15be91b52c06d469d2a90b947f77fa968"
 
 [[files]]
+file = "config/oculus.properties"
+hash = "c483721737db0218c0bed1608fc7482d5373df77f4de92c559c05f41cba813cb"
+
+[[files]]
 file = "config/realisticphysics/realisticphysics-common.toml"
 hash = "9378fc840d459b2e9520d1b48b54e22783ab9e7b64c766b2ffec88d2c712761d"
 
@@ -42222,7 +42226,7 @@ hash = "4fcc5a681e039b66b13ea0b61aef0c97fd1bc2ec1956382caa0066413a06de7a"
 
 [[files]]
 file = "config/survivalisland.json"
-hash = "bdcd8ae1d8c545a563527a2da6f351ecc8c7f9579d9ba7e6bafb498a7ce186df"
+hash = "98660a68e523f2c944c75e6bf4dde951da4948fa51cd80ada6fa88794d2d04a1"
 
 [[files]]
 file = "config/theoneprobe-common.toml"
@@ -42402,11 +42406,19 @@ hash = "b8efa8c8071d7fccc2a1ac7069f6dfc5586a7ef4f5dbdba2c80a2f2bee6db863"
 
 [[files]]
 file = "eee"
-hash = "fccde24a80256a10cc58cbe1082cdddb134b2984b823fac6386b5f9e4d9c3944"
+hash = "74fc937df84eb40da443523d23781d2b510b2d114e8e19ee9096738740f46923"
 
 [[files]]
 file = "get-mods.sh"
 hash = "1077799a7548e11153309957ca0863ce6f1e6af1ccebf8cb8e4ff7a861c20da5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/ore_hammer.png"
+hash = "424e9b4b0db8ca78989ee04dbf789ba154f935b8f1a5fded9abb93189c13c199"
+
+[[files]]
+file = "kubejs/client_scripts/hide_ticon_tools.js"
+hash = "665f3b5ad2224b229faa865911238c88d2180b9b2670df2d2724968bb3981553"
 
 [[files]]
 file = "kubejs/server_scripts/overworld_block_drops.js"
@@ -42414,24 +42426,35 @@ hash = "45fbdf632e9926578409beb1a162db0be1fb53fb40fd0f26f826e1b35d0fb2b6"
 
 [[files]]
 file = "kubejs/server_scripts/overworld_loot_boxes.js"
-hash = "fdb7b04619e4c5f96f1d9075d1ae160251e0fcaf670de8def4db07de92ca1f20"
+hash = "f9c1f4ebb9361d243651c26812e0ac0eeb0c77af5d54c588bc5a3baf28562654"
+
+[[files]]
+file = "kubejs/server_scripts/powdered_ores_recipes.js"
+hash = "3d7c687c809ba25fa6d38bb9008c21b34b085f0a2a5a3ab205846c3ca0eb3d06"
 
 [[files]]
 file = "kubejs/server_scripts/spawn_randomizer.js"
-hash = "b0713b6742b0833ae7c39f8e91505e74a7e8d9b28e758bb1b605cbcacd099979"
+hash = "dcc63c3a9a30acf9657d3824e279aa3a8f9ac626c66223e73acc39ce5c91b9bb"
+
+[[files]]
+file = "kubejs/startup_scripts/powdered_ores_items.js"
+hash = "b71e1b3723c51d90eccaae89e9bb6bb50672d60ef397ca89a96229464ac2a1d7"
 
 [[files]]
 file = "loot_tables.sh"
 hash = "927f12e074505e182d89aa74be4564bafaf25eef1735ae091d55011ac251adac"
 
 [[files]]
+file = "mods/Additional-Weaponry-1.20.1-1.1.1.jar"
+hash = "c55571ed42cf88421e77f8f7a1fbd4e771e883af73286ee779e79bc0144f52bd"
+
+[[files]]
 file = "mods/Structory_1.20.x_v1.3.5.jar"
 hash = "43f4b4b88bb9caa1114928a93e787335e56171b5233a545bf2f4da1ce9fe943b"
 
 [[files]]
-file = "mods/ad-astra.pw.toml"
-hash = "da42d2a6e6e3f7bd10df625ab23d6ba8a50ecb3545c1c3c6bda4f826caa5d51b"
-metafile = true
+file = "mods/TinkerBetterCombat 0.6.jar"
+hash = "af16aed065e993b072f87ae1ce7900d37cadb7b150ca2d0b73a244b5f7b050d1"
 
 [[files]]
 file = "mods/additional-enchanted-miner.pw.toml"
@@ -42461,11 +42484,6 @@ metafile = true
 [[files]]
 file = "mods/ae2.pw.toml"
 hash = "74bbdad7434bc02ec767c15c0136269f885331601f73fa2365252c24e58c09bd"
-metafile = true
-
-[[files]]
-file = "mods/aether.pw.toml"
-hash = "1aaba088a650cc1499e1871cfa92f97e3d10a9d8c612fbd784b36c12382196de"
 metafile = true
 
 [[files]]
@@ -42586,11 +42604,6 @@ metafile = true
 [[files]]
 file = "mods/block-swap.pw.toml"
 hash = "c89a994dc0964243562fe3e3d5050587db2057a006be99bee11773d8b37d1d5a"
-metafile = true
-
-[[files]]
-file = "mods/blue-skies.pw.toml"
-hash = "e0b611005c8d2142ca889e850c9f1450f45b1d30086aa8743579dde6ab1bd9af"
 metafile = true
 
 [[files]]
@@ -42776,11 +42789,6 @@ metafile = true
 [[files]]
 file = "mods/create-contraption-terminals.pw.toml"
 hash = "45181af6516b3adc99f7d564763ee0db8eb70cd133a09d3266a903a9f755c5a8"
-metafile = true
-
-[[files]]
-file = "mods/create-fuel-motor.pw.toml"
-hash = "c85727cab8daaa2e02b93726b60b4df09178f5bbd7d557b5f38cd5c43120f421"
 metafile = true
 
 [[files]]
@@ -43114,11 +43122,6 @@ hash = "d13945ad3b6653db6c65c9f3654a9b1b440823bfca3b6fe55a49e3a21dfcad18"
 metafile = true
 
 [[files]]
-file = "mods/gregtechceu-modern.pw.toml"
-hash = "095d95ed8aa22628bf45e18aa2782cb7a0064d2f815261edb00dc8bc559bea38"
-metafile = true
-
-[[files]]
 file = "mods/guard-villagers.pw.toml"
 hash = "ee278d545996d7c2c29cc58aa451160cec6b93e0bb57f14aa2d2fd49d9058174"
 metafile = true
@@ -43176,6 +43179,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "94a0ed0630ad6e53af1e317e86a195672f4627552fde677396ac94eefce6ffc6"
+metafile = true
+
+[[files]]
+file = "mods/json-things.pw.toml"
+hash = "80afdd0d7995dae1420ac39fc87364e79e9b05f09a886be33db6a87e3dab344f"
 metafile = true
 
 [[files]]
@@ -43329,8 +43337,13 @@ hash = "8ee3776430187fb4d69278e645e10fefb7fe7342caee0a5861479ce25956713a"
 metafile = true
 
 [[files]]
+file = "mods/mantle.pw.toml"
+hash = "0e41cce34411af4bfbbf28984255aa570add09a34281a9651aa055780c27f69c"
+metafile = true
+
+[[files]]
 file = "mods/meds-and-herbs.pw.toml"
-hash = "bf4e3f7d96733f2300caed56b9647b0d701e52a06b5710cc7a7b43cf8e970c0f"
+hash = "35b916581694737f73e744f4d40a8fbc26dd2c316d6c0400ada33de9f29ce3b9"
 metafile = true
 
 [[files]]
@@ -43356,6 +43369,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "186909f73870979511db893fca2e2a318b311361f168d425ba0e58fc539188ee"
+metafile = true
+
+[[files]]
+file = "mods/moffs-addonapi-dynload.pw.toml"
+hash = "5f3c58c297c293a98944840356180590bf7c1f439462823e0495efe8ce91a888"
 metafile = true
 
 [[files]]
@@ -43445,7 +43463,7 @@ metafile = true
 
 [[files]]
 file = "mods/obelisks-1.0.0.jar"
-hash = "8b1f505f41787e1fff071f4005d20b94e52163bfd6a57fbf52221bf82f3f2a8d"
+hash = "781d261b9a971de52d8fd5e140a626012d5f739df0204cada04ba249645ed39f"
 
 [[files]]
 file = "mods/obscure-api.pw.toml"
@@ -43495,11 +43513,6 @@ metafile = true
 [[files]]
 file = "mods/petrolpark.pw.toml"
 hash = "08db67f5571e690b026c38becb5c5273fc95b8519124cd046112529104605784"
-metafile = true
-
-[[files]]
-file = "mods/physics-mod.pw.toml"
-hash = "98df1e887fc18d81d282e00eb1f5109dd8e151d1b86b4c861fdd5e508ee672a2"
 metafile = true
 
 [[files]]
@@ -43753,8 +43766,23 @@ hash = "8051146fa673c05ea44107a6b3b3348d27df41041ad6028b4e2998ba7d8e15a0"
 metafile = true
 
 [[files]]
+file = "mods/tcintegrations.pw.toml"
+hash = "8d93b245da89b2de3dfe3f8ddc2c24184b23060efb4c61e9c30eeecbbb8dd76a"
+metafile = true
+
+[[files]]
+file = "mods/tcompat-tinkers-construct-addon.pw.toml"
+hash = "d7f93384cb1e4fa7eecb540c3c2c293f3062cc4c1a919095ad753e3b5db3e598"
+metafile = true
+
+[[files]]
 file = "mods/terrablender.pw.toml"
 hash = "14117b94c456598c9acece143c7a0da3cf56d13182d035a74a2da8a52dd19cbd"
+metafile = true
+
+[[files]]
+file = "mods/terracart-reloaded.pw.toml"
+hash = "2fcad20445b21d30cb94ac6d664a445d00945db5b23c2b74c0e1365b1d30c142"
 metafile = true
 
 [[files]]
@@ -43775,6 +43803,41 @@ metafile = true
 [[files]]
 file = "mods/thirst-was-taken.pw.toml"
 hash = "435e86380f442b28ab298cb300fa0f51d1772e854252c31726b17ccb1ec5041e"
+metafile = true
+
+[[files]]
+file = "mods/tinker-and-better-combat.pw.toml"
+hash = "84a7961825c7f2528a5deef0db8166f1e9aebc97e10fcacb9344c7f6c0363700"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct-additional-weaponry.pw.toml"
+hash = "cb0f56687c2ab028b8a3da27a0a0e441a4a8bcd2bb6e521be6d8a419f784c700"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-construct.pw.toml"
+hash = "f9615397542fe44fa1ee41c8ecbac25aaf59875c86a8fd65a853d1b2edb9c48e"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-jewelry.pw.toml"
+hash = "372db04ce17907c44084942ebdfc2428d4ac4418ae0fc8946bd462d6bf22caf3"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-levelling-addon.pw.toml"
+hash = "66fd483f4311166307c184c29f3e81f56179ed5ab094328b2c1413e91ba4c68a"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-things-json.pw.toml"
+hash = "1082239757f2e02aa88b740e01dd289db31a30bbe16d84fae45f97cf0db14e6f"
+metafile = true
+
+[[files]]
+file = "mods/tinkers-thinking.pw.toml"
+hash = "3299f0ee420930a4dca4c977569d4fca8fbcf58df1b3d2b0293e65853abcdf2a"
 metafile = true
 
 [[files]]
