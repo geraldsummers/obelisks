@@ -1,103 +1,141 @@
-ServerEvents.recipes(function (event) {
-    var INGOT_TAGS = ['c:ingots', 'forge:ingots']
-    var NUGGET_TAGS = ['c:nuggets', 'forge:nuggets']
-    var BLOCK_TAGS = ['c:storage_blocks', 'forge:storage_blocks']
+// Removes crafting-table metal form conversions:
+// 9 nuggets <-> 1 ingot and 9 ingots <-> 1 storage block.
+// Purpose: stop nugget/ingot/block liquidity in manual crafting.
 
-    function matchesAnyTag(itemId, tags) {
-        var stack = Item.of(itemId)
-        for (var i = 0; i < tags.length; i++) {
-            if (Ingredient.of('#' + tags[i]).test(stack)) {
-                return true
+ServerEvents.recipes(function (event) {
+    function endsWith(s, suffix) {
+        s = String(s || '')
+        suffix = String(suffix || '')
+        if (suffix.length > s.length) return false
+        return s.substring(s.length - suffix.length) === suffix
+    }
+
+    function startsWith(s, prefix) {
+        s = String(s || '')
+        prefix = String(prefix || '')
+        if (prefix.length > s.length) return false
+        return s.substring(0, prefix.length) === prefix
+    }
+
+    function pathOf(id) {
+        var s = String(id || '')
+        var i = s.indexOf(':')
+        return i >= 0 ? s.substring(i + 1) : s
+    }
+
+    function classifyItem(itemId) {
+        var p = pathOf(itemId)
+        if (endsWith(p, '_nugget')) return 'nugget'
+        if (endsWith(p, '_ingot')) return 'ingot'
+        if (endsWith(p, '_block') && !endsWith(p, '_raw_block') && !startsWith(p, 'raw_')) return 'block'
+        return null
+    }
+
+    function classifyTag(tagId) {
+        var p = pathOf(tagId)
+        if (p === 'nuggets' || p.indexOf('nuggets/') === 0 || p.indexOf('/nuggets/') >= 0) return 'nugget'
+        if (p === 'ingots' || p.indexOf('ingots/') === 0 || p.indexOf('/ingots/') >= 0) return 'ingot'
+        if (p === 'storage_blocks' || p.indexOf('storage_blocks/') === 0 || p.indexOf('/storage_blocks/') >= 0) return 'block'
+        return null
+    }
+
+    function classifyIngredient(ing) {
+        if (!ing) return null
+
+        if (Array.isArray(ing)) {
+            if (ing.length === 0) return null
+            var first = classifyIngredient(ing[0])
+            if (!first) return null
+            for (var i = 1; i < ing.length; i++) {
+                if (classifyIngredient(ing[i]) !== first) return null
+            }
+            return first
+        }
+
+        if (ing.item) return classifyItem(ing.item)
+        if (ing.tag) return classifyTag(ing.tag)
+        return null
+    }
+
+    function getResultInfo(json) {
+        if (!json || !json.result) return null
+        if (typeof json.result === 'string') {
+            return { item: String(json.result), count: 1 }
+        }
+        if (json.result.item) {
+            return { item: String(json.result.item), count: Number(json.result.count || 1) }
+        }
+        return null
+    }
+
+    function shapedInputInfo(json) {
+        var pattern = (json && json.pattern) ? json.pattern : []
+        var key = (json && json.key) ? json.key : {}
+        var inputForm = null
+        var inputCount = 0
+
+        for (var r = 0; r < pattern.length; r++) {
+            var row = String(pattern[r] || '')
+            for (var c = 0; c < row.length; c++) {
+                var ch = row.charAt(c)
+                if (ch === ' ') continue
+                var ing = key[ch]
+                var form = classifyIngredient(ing)
+                if (!form) return null
+                if (!inputForm) inputForm = form
+                if (inputForm !== form) return null
+                inputCount++
             }
         }
+
+        if (!inputForm || inputCount <= 0) return null
+        return { form: inputForm, count: inputCount }
+    }
+
+    function shapelessInputInfo(json) {
+        var ingredients = (json && json.ingredients) ? json.ingredients : []
+        if (ingredients.length <= 0) return null
+
+        var inputForm = null
+        for (var i = 0; i < ingredients.length; i++) {
+            var form = classifyIngredient(ingredients[i])
+            if (!form) return null
+            if (!inputForm) inputForm = form
+            if (inputForm !== form) return null
+        }
+
+        return { form: inputForm, count: ingredients.length }
+    }
+
+    function shouldRemove(inForm, inCount, outForm, outCount) {
+        if (inForm === 'nugget' && inCount === 9 && outForm === 'ingot' && outCount === 1) return true
+        if (inForm === 'ingot' && inCount === 1 && outForm === 'nugget' && outCount === 9) return true
+        if (inForm === 'ingot' && inCount === 9 && outForm === 'block' && outCount === 1) return true
+        if (inForm === 'block' && inCount === 1 && outForm === 'ingot' && outCount === 9) return true
         return false
     }
 
-    function ingredientMatchesAnyTag(ingredientJson, tags) {
-        if (!ingredientJson) return false
-
-            if (ingredientJson.tag) {
-                for (var i = 0; i < tags.length; i++) {
-                    if (ingredientJson.tag === tags[i]) {
-                        return true
-                    }
-                }
-            }
-
-            if (ingredientJson.item) {
-                return matchesAnyTag(ingredientJson.item, tags)
-            }
-
-            return false
-    }
-
-    function isNineOfTagToOne(type, inputTags, outputTags) {
-        event.forEachRecipe({ type: type }, function (recipe) {
+    function processType(typeId) {
+        event.forEachRecipe({ type: typeId }, function (recipe) {
             var json = recipe.json
-            if (!json || !json.result || !json.result.item) return
+            var out = getResultInfo(json)
+            if (!out) return
 
-                var resultItem = json.result.item
-                var resultCount = json.result.count || 1
+            var outForm = classifyItem(out.item)
+            if (!outForm) return
 
-                if (resultCount !== 1) return
-                    if (!matchesAnyTag(resultItem, outputTags)) return
+            var input = (typeId === 'minecraft:crafting_shaped')
+                ? shapedInputInfo(json)
+                : shapelessInputInfo(json)
+            if (!input) return
 
-                        var matched = false
-
-                        if (type === 'minecraft:crafting_shaped') {
-                            var pattern = json.pattern || []
-                            var key = json.key || {}
-                            var count = 0
-                            var ok = true
-
-                            for (var r = 0; r < pattern.length; r++) {
-                                var row = pattern[r]
-                                for (var c = 0; c < row.length; c++) {
-                                    var ch = row.charAt(c)
-                                    if (ch === ' ') {
-                                        ok = false
-                                        break
-                                    }
-
-                                    var ing = key[ch]
-                                    if (!ingredientMatchesAnyTag(ing, inputTags)) {
-                                        ok = false
-                                        break
-                                    }
-
-                                    count++
-                                }
-                                if (!ok) break
-                            }
-
-                            matched = ok && count === 9
-                        }
-
-                        if (type === 'minecraft:crafting_shapeless') {
-                            var ingredients = json.ingredients || []
-                            if (ingredients.length === 9) {
-                                matched = true
-                                for (var i = 0; i < ingredients.length; i++) {
-                                    if (!ingredientMatchesAnyTag(ingredients[i], inputTags)) {
-                                        matched = false
-                                        break
-                                    }
-                                }
-                            }
-                        }
-
-                        if (matched) {
-                            console.log('[KubeJS] Removing compression recipe: ' + recipe.getId())
-                            event.remove({ id: recipe.getId() })
-                        }
+            if (shouldRemove(input.form, input.count, outForm, out.count)) {
+                console.log('[KubeJS] Removing metal liquidity recipe: ' + recipe.getId())
+                event.remove({ id: recipe.getId() })
+            }
         })
     }
 
-    // 9 nuggets -> 1 ingot
-    isNineOfTagToOne('minecraft:crafting_shaped', NUGGET_TAGS, INGOT_TAGS)
-    isNineOfTagToOne('minecraft:crafting_shapeless', NUGGET_TAGS, INGOT_TAGS)
-
-    // 9 ingots -> 1 block
-    isNineOfTagToOne('minecraft:crafting_shaped', INGOT_TAGS, BLOCK_TAGS)
-    isNineOfTagToOne('minecraft:crafting_shapeless', INGOT_TAGS, BLOCK_TAGS)
+    processType('minecraft:crafting_shaped')
+    processType('minecraft:crafting_shapeless')
 })

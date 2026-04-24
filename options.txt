@@ -123,9 +123,9 @@ key_key.dragon_fireAttack:key.keyboard.r:ALT
 key_key.dragon_strike:key.keyboard.g:ALT
 key_key.dragon_down:key.keyboard.x:ALT
 key_key.dragon_change_view:key.keyboard.f7
-key_key.rehooked.fire_hook_key:key.mouse.4
+key_key.rehooked.fire_hook_key:key.mouse.middle
 key_key.rehooked.retract_hook_key:key.keyboard.c:SHIFT
-key_key.rehooked.remove_all_hooks_key:key.keyboard.f6
+key_key.rehooked.remove_all_hooks_key:key.keyboard.space
 key_key.modernfix.config:key.keyboard.unknown
 key_key.apotheosis.toggle_radial_mining:key.keyboard.o:ALT
 key_key.apotheosis.world_tiers_arent_real:key.keyboard.t:CONTROL
@@ -134,9 +134,9 @@ key_info.structure_gel.building_tool.redo:key.keyboard.y:CONTROL
 key_key.structure_gel.open_building_tool_gui:key.keyboard.g:SHIFT
 key_key.more_villargers.guide_gui:key.keyboard.j:ALT
 key_key.block_factorys_bosses.dodge_roll:key.keyboard.z
-key_iris.keybind.reload:key.keyboard.k:SHIFT
-key_iris.keybind.toggleShaders:key.keyboard.k
-key_iris.keybind.shaderPackSelection:key.keyboard.k:CONTROL
+key_iris.keybind.reload:key.keyboard.r
+key_iris.keybind.toggleShaders:key.keyboard.unknown
+key_iris.keybind.shaderPackSelection:key.keyboard.backspace
 key_Options Gui:key.keyboard.i
 key_key.togglecleanview:key.keyboard.unknown
 key_key.thalassophobia.ichtyhosaurus_upward_movement:key.keyboard.space

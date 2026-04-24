@@ -132,7 +132,7 @@ key_info.structure_gel.building_tool.redo:key.keyboard.y:CONTROL
 key_key.structure_gel.open_building_tool_gui:key.keyboard.r
 key_key.more_villargers.guide_gui:key.keyboard.g
 key_iris.keybind.reload:key.keyboard.r
-key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.toggleShaders:key.keyboard.unknown
 key_iris.keybind.shaderPackSelection:key.keyboard.backspace
 key_Options Gui:key.keyboard.i
 key_key.toms_storage.open_terminal:key.keyboard.b
