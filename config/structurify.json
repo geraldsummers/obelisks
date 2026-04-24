@@ -32,6 +32,7 @@
     { "name": "tconstruct:blood_island", "is_disabled": true },
 
     { "name": "graveyard:lich_prison", "is_disabled": true },
+    { "name": "mna:faction/boss/council_island", "is_disabled": true },
     { "name": "minecraft:ancient_city", "is_disabled": true },
 
     { "name": "minecraft:ruined_portal_swamp", "is_disabled": true },

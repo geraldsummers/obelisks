@@ -2,7 +2,7 @@ type = fancymenu_layout
 
 layout-meta {
   identifier = title_screen
-  render_custom_elements_behind_vanilla = false
+  render_custom_elements_behind_vanilla = true
   last_edited_time = 1771288381050
   is_enabled = true
   randommode = false
@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  color = #260d07
+  color = #05080C
   instance_identifier = 33459376-241a-403a-ae99-1ee5a68a2ad1-1771224857521
   background_type = color_fancymenu
 }
@@ -38,7 +38,7 @@ layout_action_executable_blocks {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/title2.png
+  source = [source:local]/config/fancymenu/assets/btm_bg.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
@@ -58,13 +58,13 @@ element {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = top-centered
-  x = -232
-  y = 42
-  width = 462
-  height = 69
-  stretch_x = false
-  stretch_y = false
+  anchor_point = top-left
+  x = 0
+  y = 0
+  width = 1920
+  height = 1080
+  stretch_x = true
+  stretch_y = true
   stay_on_screen = true
   element_loading_requirement_container_identifier = 096f5bf4-0185-4577-80f9-83f7f4057aef-1771225374307
   [loading_requirement_container_meta:096f5bf4-0185-4577-80f9-83f7f4057aef-1771225374307] = [groups:][instances:]
@@ -79,6 +79,147 @@ element {
   rotation_degrees = 0.0
   advanced_rotation_mode = false
   vertical_tilt_degrees = 42.696884
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/btm_logo.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
+  element_type = image
+  instance_identifier = btm_logo_element
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 3441
+  auto_sizing_base_screen_height = 1413
+  sticky_anchor = false
+  anchor_point = top-left
+  x = 46
+  y = 36
+  width = 980
+  height = 250
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = btm_logo_requirements
+  [loading_requirement_container_meta:btm_logo_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/btm_nav_panel.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
+  element_type = image
+  instance_identifier = btm_nav_panel_element
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 3441
+  auto_sizing_base_screen_height = 1413
+  sticky_anchor = false
+  anchor_point = mid-left
+  x = 36
+  y = -320
+  width = 520
+  height = 640
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = btm_nav_panel_requirements
+  [loading_requirement_container_meta:btm_nav_panel_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_mode = false
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_mode = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/btm_info_panel.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  image_tint = #FFFFFF
+  restart_animated_on_menu_load = false
+  element_type = image
+  instance_identifier = btm_info_panel_element
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in_v2 = no_fading
+  fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 3441
+  auto_sizing_base_screen_height = 1413
+  sticky_anchor = false
+  anchor_point = mid-right
+  x = -46
+  y = -300
+  width = 860
+  height = 600
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = btm_info_panel_requirements
+  [loading_requirement_container_meta:btm_info_panel_requirements] = [groups:][instances:]
+  enable_parallax = false
+  parallax_intensity_v2 = 0.5
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  in_editor_color = #FFC800FF
+  layer_hidden_in_editor = false
+  rotation_degrees = 0.0
+  advanced_rotation_mode = false
+  vertical_tilt_degrees = 0.0
   advanced_vertical_tilt_mode = false
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
@@ -119,11 +260,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -107
-  y = -49
-  width = 98
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = -60
+  width = 320
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -245,11 +386,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -107
-  y = -73
-  width = 98
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = -96
+  width = 320
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -308,11 +449,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -145
-  y = -49
-  width = 20
-  height = 20
+  anchor_point = mid-left
+  x = 164
+  y = 24
+  width = 24
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -371,11 +512,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -164
-  y = -49
-  width = 20
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = 24
+  width = 24
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -434,11 +575,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -107
-  y = -26
-  width = 98
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = -24
+  width = 320
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -521,7 +662,7 @@ vanilla_button {
   advanced_vertical_tilt_mode = false
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
 }
 
@@ -561,9 +702,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
   anchor_point = bottom-left
-  x = 3
-  y = -13
-  width = 196
+  x = 16
+  y = -16
+  width = 460
   height = 10
   stretch_x = false
   stretch_y = false
@@ -623,11 +764,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = top-centered
-  x = -100
-  y = 122
-  width = 200
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = -168
+  width = 320
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -710,7 +851,7 @@ vanilla_button {
   advanced_vertical_tilt_mode = false
   horizontal_tilt_degrees = 0.0
   advanced_horizontal_tilt_mode = false
-  is_hidden = false
+  is_hidden = true
   automated_button_clicks = 0
 }
 
@@ -812,11 +953,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = top-centered
-  x = -100
-  y = 155
-  width = 200
-  height = 20
+  anchor_point = mid-left
+  x = 104
+  y = -132
+  width = 320
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -875,11 +1016,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -183
-  y = -49
-  width = 20
-  height = 20
+  anchor_point = mid-left
+  x = 134
+  y = 24
+  width = 24
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -938,11 +1079,11 @@ vanilla_button {
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
   sticky_anchor = false
-  anchor_point = bottom-right
-  x = -126
-  y = -49
-  width = 20
-  height = 20
+  anchor_point = mid-left
+  x = 194
+  y = 24
+  width = 24
+  height = 24
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -1028,4 +1169,3 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
