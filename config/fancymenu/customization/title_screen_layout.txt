@@ -179,7 +179,7 @@ element {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/btm_info_panel.png
+  source = [source:local]/config/fancymenu/assets/btm_atmos_panel.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

@@ -84,7 +84,7 @@ element {
 }
 
 element {
-  source = [source:local]/config/fancymenu/assets/btm_logo.png
+  source = [source:local]/config/fancymenu/assets/btm_emblem.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
@@ -99,7 +99,7 @@ element {
   fade_in_speed = 1.0
   fade_out = no_fading
   fade_out_speed = 1.0
-  base_opacity = 0.35
+  base_opacity = 0.32
   auto_sizing = false
   auto_sizing_base_screen_width = 3441
   auto_sizing_base_screen_height = 1413
@@ -107,8 +107,8 @@ element {
   anchor_point = top-left
   x = 20
   y = 14
-  width = 460
-  height = 116
+  width = 96
+  height = 96
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
