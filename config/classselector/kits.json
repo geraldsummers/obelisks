@@ -1,7 +1,7 @@
 [
   {
     "id": "miner",
-    "title": "Mining Specialist",
+    "title": "Blast Miner",
     "blurb": "Mining, scouting, and controlled blasting",
     "description": "Starts with mining tools, cave lighting, explosives, and a prospector's pick. Best for players who want to scout ore, clear tunnels, and return with resources quickly.",
     "items": [
@@ -69,7 +69,7 @@
   },
   {
     "id": "lumberjack",
-    "title": "Lumberjack",
+    "title": "Lumberjack Builder",
     "blurb": "Wood harvesting and base supply",
     "description": "Starts with a strong axe, logs, tree seeds, and basic utility gear. Best for players who want to secure wood, expand the base, and supply early building materials.",
     "items": [
@@ -188,16 +188,6 @@
       },
       {
         "item": "veggiesdelight:zucchini_seeds",
-        "count": 32,
-        "slot": "inventory"
-      },
-      {
-        "item": "delightful:cantaloupe_seeds",
-        "count": 32,
-        "slot": "inventory"
-      },
-      {
-        "item": "farmersdelight:tomato_seeds",
         "count": 32,
         "slot": "inventory"
       },
@@ -324,11 +314,6 @@
       },
       {
         "item": "brewinandchewin:keg",
-        "count": 1,
-        "slot": "inventory"
-      },
-      {
-        "item": "farmersrespite:kettle",
         "count": 1,
         "slot": "inventory"
       },
