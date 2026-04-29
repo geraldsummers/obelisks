@@ -6641,6 +6641,10 @@ file = "docs/create_preprocessing_pass_report.md"
 hash = "29ba72d4a2da9805acc8db928f2611713c60cc021e8dc2836525e84e6677dd19"
 
 [[files]]
+file = "docs/cross_system_source_report.md"
+hash = "18d23b1d8cbc56d022da1480d8ac873a1a7b63c9ef226e23f22d915f7372f5b2"
+
+[[files]]
 file = "docs/design_handoff.md"
 hash = "b17f39dda4828f96a15eb8fcac1d0d5a54cee461a84cf20777459c022d5dec81"
 
@@ -6649,12 +6653,24 @@ file = "docs/discovered_connections.md"
 hash = "a17d19f159406571981b353bad30e22c465734f7a5bd158ccd2bbb51531517e4"
 
 [[files]]
+file = "docs/expert_item_graph.md"
+hash = "2339c12256668b1c31e951bfc7eec7d0be5f5307e057fde246fd282522f4571c"
+
+[[files]]
+file = "docs/expert_item_graph_summary.json"
+hash = "e8c400f6940474c7d02a286958697403f79d02ea67293dddc909dcaa838886f7"
+
+[[files]]
 file = "docs/extreme_y_band_reward_pass.md"
 hash = "9bb925fc475e027bb6109e02bdaa3eb83323c3da3bf7d8842afb1e5d01d5f9ff"
 
 [[files]]
 file = "docs/ftb_quest_audit.md"
 hash = "d440d34d2efbc787fd05168ee06d3fdb47be0f96b8e3406a899cfb89bed90f9a"
+
+[[files]]
+file = "docs/full_item_graph_audit.md"
+hash = "e34f4187139e51a19454e04a8ffe105f01c286cdd3fb5f885b3a3c0ae958b290"
 
 [[files]]
 file = "docs/high_value_mod_progression_audit.md"
@@ -6699,6 +6715,10 @@ hash = "acff361f819fa2977736855d457da5fb3940d5eea2ce749aebfe0b7574de246f"
 [[files]]
 file = "docs/material_registry_map.md"
 hash = "d5a6e6d5333d2e79cafafb99dc12c89315e92fb3b2c35dac3d98386e93973a82"
+
+[[files]]
+file = "docs/no_bypass_report.md"
+hash = "1cb6ca0a16f09d7c9ce262279160fe08528d37428e04a773ce31d33a496d6d83"
 
 [[files]]
 file = "docs/ore_deposit_catalog.md"
@@ -7469,6 +7489,10 @@ file = "kubejs/config/audit_dumps.json"
 hash = "44a4a032d22d41a1f4609d8c5985fe44725c0ca21668ccc6d2393ce4fc660900"
 
 [[files]]
+file = "kubejs/config/btm_expert_graph_catalog.json"
+hash = "fca6ee77d8cbc86b43e6bf1836083a9e4e2833e842ca624ae2ce8f04601bbc93"
+
+[[files]]
 file = "kubejs/config/client.properties"
 hash = "ca1bcfdcb5e2feb66eea14271ba8ceb5aaa1cc81fba3b5294a2cc0a14eb26b6e"
 
@@ -7897,6 +7921,10 @@ file = "kubejs/server_scripts/30_recipe_replace/115_material_economy_recipe_pass
 hash = "1d107464c1961cc420423b3fdefbac585a428ba903f2120691514d186bd6ca22"
 
 [[files]]
+file = "kubejs/server_scripts/30_recipe_replace/120_graph_audit_recipe_gates.js"
+hash = "d81233a25532909e8e8b2d93e50aa343e9df99aa7a258f25ab8efe746b41840b"
+
+[[files]]
 file = "kubejs/server_scripts/30_recipe_replace/20_expensive_grout.js"
 hash = "e6c8d7264f4564aa029554693e293cc3184550dddf826e07111bf37f9ff459fb"
 
@@ -7987,6 +8015,10 @@ hash = "45fbdf632e9926578409beb1a162db0be1fb53fb40fd0f26f826e1b35d0fb2b6"
 [[files]]
 file = "kubejs/server_scripts/50_loot/20_world_chest_coin_tiers.js"
 hash = "97429f20c010d6127cd58aceaba69f3c9ec7c9fadfa050c43572f5409afb804a"
+
+[[files]]
+file = "kubejs/server_scripts/50_loot/30_global_loot_progression_scrub.js"
+hash = "c837dc5bdab43afa947dc5fbb0832fb8b18c44e2b87f62d3d26f7d2da944bc57"
 
 [[files]]
 file = "kubejs/server_scripts/60_worldgen/10_r_ores_melted.js"
@@ -9813,3 +9845,7 @@ hash = "3a5f45d40550d15a973b5d6a63b218e93a8930851690108d92add5d409bdaf2f"
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.7.1/shaders/block.properties"
 hash = "7dd5b169772f8dcff8a2ee4f18427c6407a191bc3d9d6d36b0ba5b1347f98171"
+
+[[files]]
+file = "tools/expert_graph_audit.mjs"
+hash = "48aab172366174312dbfb87853b8e158696855d12398fca998549d049020016c"
