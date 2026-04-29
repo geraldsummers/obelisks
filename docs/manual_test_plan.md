@@ -28,3 +28,8 @@
 25. Kill an Apotheosis treasure goblin; verify it drops bounded coins/supplies instead of random affix gear and gems.
 26. Open Apotheotic Additions themed spawner chests; verify `apotheosis:gem_dust` and `apotheosis:gem_fused_slate` do not appear.
 27. Check End City and Twilight Forest structure loot; verify any Apotheosis affix/gem loot appears only at the reduced configured rates.
+
+28. Give yourself every Dot Coin item and verify none show disabled/server-disabled tooltip text.
+29. Spawn each vanilla villager profession and verify all trades use Dot Coin costs, not emeralds.
+30. Spawn a wandering trader and verify both trade pools use Dot Coin costs.
+31. Check representative high-tier trades and verify they are convenience/adventure sinks, not required progression shortcuts.

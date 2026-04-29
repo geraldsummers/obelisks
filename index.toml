@@ -5542,7 +5542,7 @@ hash = "4fde63ba18d1adf869b400cfcd31aadd538290445af0daf5405a10f6a712ef52"
 
 [[files]]
 file = "config/dcm.json"
-hash = "5e0807e5cfe0fce5a9220245bf38543b3182022e0f8a05d189669d6580062073"
+hash = "7beb1ad252cccb85b4fb5b229a399a89430a0e40b247b10e7adcca16aa5da863"
 
 [[files]]
 file = "config/dynamictrees-common.toml"
@@ -6633,6 +6633,10 @@ file = "docs/bypass_and_deadlock_report.md"
 hash = "a9034f2fdfb8908f690fc164512e0a73ddf2ad633b59322f2c638cebd9d9b607"
 
 [[files]]
+file = "docs/coin_villager_trade_pass_report.md"
+hash = "55a2b9848e5f33e561639a6a1466c2952b7e3c087d2e41d0430f51a3b03696f8"
+
+[[files]]
 file = "docs/create_preprocessing_pass_report.md"
 hash = "29ba72d4a2da9805acc8db928f2611713c60cc021e8dc2836525e84e6677dd19"
 
@@ -6662,7 +6666,7 @@ hash = "c2752171709760aea5d28a6d33a625d7b2c37b281eeb8ad7d72801657c0e96ec"
 
 [[files]]
 file = "docs/known_issues.md"
-hash = "2b85976ee3d5581057d15cbb0078c4efea07f7de3495127ec9201b128589f54d"
+hash = "a7b70c5c34ad0e403fbd6a97071a1e3e761285654745f3f5ae098c80c309ef72"
 
 [[files]]
 file = "docs/loot_table_pass_report.md"
@@ -6678,7 +6682,7 @@ hash = "c8de909c00aaea705c760b33f132299c156b53d1445ab9cda8336bfbfb88e9dc"
 
 [[files]]
 file = "docs/manual_test_plan.md"
-hash = "ce06064d373e1ca7a28c7cf81be052df76e5dfaafffe4b20c3cbccc9864b24b6"
+hash = "4562c3ee30e000e4a1cee2edec8de3a65c4344ec55b1dcfc7c81d8d6f53a9143"
 
 [[files]]
 file = "docs/material_registry_map.md"
@@ -6706,7 +6710,7 @@ hash = "7c62aa1a88aa778ebedd64f875fe67b4241990c9c619dd6ba9342e68e8906412"
 
 [[files]]
 file = "docs/validation_report.md"
-hash = "c20ad7b9c83efb07e46353fd8e1a15dd0ea61f753bd2966d14cdb6d6821561f2"
+hash = "efa537e5a88d3853366298fc871016ebcd3c9d2dc2f203d65f89d9769c02a02a"
 
 [[files]]
 file = "globalresources/obelisks/globaldata/obelisks/excavated_variants/modifier/disable_malum_brilliant_stone.json"
@@ -7838,7 +7842,7 @@ hash = "3cfcf335d73c8b74562d1a93834f48f09cd9f1aee1755b6aefb5be486aed7076"
 
 [[files]]
 file = "kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js"
-hash = "f47e1224821b3e704bbb78663f6daf878ec67b2200391a40281a9897238f9938"
+hash = "8c28db4122703cae15f84dcbe3f4ae62c5bde86184e68d5e92a00947633132b5"
 
 [[files]]
 file = "kubejs/server_scripts/40_recipe_add/10_campfire_recipe.js"

@@ -49,3 +49,10 @@
 - Apotheosis and Apotheotic Additions high-value tables were replaced with bounded coin/supply loot.
 - Generated overrides were searched for `apotheosis:gem`, `random_gem`, `random_affix`, `create:andesite_alloy`, and `minecraft:netherite_scrap`; none remain in the replacement tables.
 - Full Minecraft loot reload still needs an in-client `/reload` check.
+
+## Coin Villager Trade Pass
+
+- Dot Coin config now enables every coin item while keeping conversion disabled.
+- Expanded villager and wandering trader script passed `node --check`.
+- Trade result item IDs were validated against the live item registry dump; no missing result item IDs remain.
+- Runtime villager UI checks are still required in-client.
