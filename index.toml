@@ -5726,51 +5726,51 @@ hash = "caa0cc67910381bf95bcc0056d27d534430807ae7e40721de5cc7264ec77e9b0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/adventuring.snbt"
-hash = "d2c8a47cf1bea13b59d43e8246594a9825545812184ab78e0e297d8df1082716"
+hash = "5045a85a6538ec3dcf9ec9bffbb76bc3f3bcc6dd748bb6637a773daede70733d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "d03ca614a4ef05cba0d05a6ffa08079fac0f400b6388f5b22febe2691c77bef9"
+hash = "1afdd15e2f1deba65d774f433dabbfc187550de5765a568a27c231af8adedc22"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_i.snbt"
-hash = "50ab98e5fb807dd86313c5b5f452c6fea7991ddb6e9defe19a54f07532e64ee7"
+hash = "c1a82f906b9224cbd9b641efc45ccd04e6f47b95c584d034dc2751bf278fedb1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_ii.snbt"
-hash = "6b94f215033c9fce40c04f9d1b618aa9687f43b47e0b00347635a334341efbb6"
+hash = "e31fc549abaa996c524412c49bb30bbc5cf417819288885c5585d85a8c15072f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/death.snbt"
-hash = "3a2433e1d5d362133e3f01afb2f2b269c810864eb20d8d25497c55800afe886d"
+hash = "e9db51b8a62be211581103364a8d30d7bb171cde9e5c68be4fced1ac7ad7f92a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/electricity.snbt"
-hash = "91ed875c210ca4ca8fc9ded87822038c236e003a55ba27c81c266da76e4c0d93"
+hash = "d90d0251d263694295ca22bf3a5edcb9986d529bb58920fd37d820a4b20226b9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic_i.snbt"
-hash = "9925b00964f82a0c04a3afcb0e5669f132c424939a0d2277984210f685e35f9a"
+hash = "5fe9bdb031b32d4602d7f3375d23ffa1c1d93e4060d3fe9b97bce0d0916cd26d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/oc2r.snbt"
-hash = "551e6b57548a553380ad9f2f985b5480f7ed34780c735832f2d124d7132f5276"
+hash = "a8beb7e676a61460b554bd79f3ef9d4b0f27e8581dfb830a6ea160c00b9a74b5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/space.snbt"
-hash = "94698585cc9ca6622326d51a58994165097b38d7c72d85a392166ee6a2dd28b5"
+hash = "d1831fae1b149e8fbf37be52c3220e0792547f3d801dbbd38a159d4259f66711"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/starting_out.snbt"
-hash = "fef427f9d6436306e409371cd2d7367697f27a7bbcad938521dbc0e9c1b6e6b9"
+hash = "8e04f5e23556d9211602dc3e5a7c6b1d7e55fa708cea2b23564c27adacdde898"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/synthesis_i.snbt"
-hash = "471e5f74fe656c8aa07431201c9a8444798c77639568114779d811b7187919b3"
+hash = "0ecd7ae8de8e2510bec7fc52cc184e3459ac2f0bf892a963bf899b496036d87b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tinkers_construct.snbt"
-hash = "4cc7fd3a77a26d401995b62f8754c5e6132af4f2a4eec2a68a7ee345464d7855"
+hash = "7e85ba5760acad1e63baa32d742c6f4f0c669eb896c8b5ca00d445d29242fba4"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -9847,5 +9847,13 @@ file = "shaderpacks/ComplementaryReimagined_r5.7.1/shaders/block.properties"
 hash = "7dd5b169772f8dcff8a2ee4f18427c6407a191bc3d9d6d36b0ba5b1347f98171"
 
 [[files]]
+file = "tools/apply_quest_dependencies.mjs"
+hash = "8148eba10d7e03b07b422d48dfd63ccc29793881e97f0112ff0b838ae24810d3"
+
+[[files]]
 file = "tools/expert_graph_audit.mjs"
 hash = "48aab172366174312dbfb87853b8e158696855d12398fca998549d049020016c"
+
+[[files]]
+file = "tools/validate_quest_dependencies.mjs"
+hash = "cab984c921cad264f126d02b9f2a1fd12323acace0bc4aecaefb8365f605fdfb"
