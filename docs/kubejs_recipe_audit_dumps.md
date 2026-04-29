@@ -13,7 +13,7 @@ The script is disabled by default and has no gameplay effect while disabled.
 
 1. Set `enabled` to `true` in `kubejs/config/audit_dumps.json`.
 2. Launch the pack or run `/reload` in an existing world.
-3. Inspect the generated files under `kubejs/recipe_dumps/`.
+3. Inspect the generated files under `kubejs/config/`.
 4. Set `enabled` back to `false` before committing release builds or shipping an instance.
 
 Optional: set `writeFullRecipeIndex` to `true` to dump every scanned recipe. This can generate a large file.

@@ -1,14 +1,8 @@
 // Dev-only recipe audit dumps. Enable in kubejs/config/audit_dumps.json, then run /reload.
-// Writes final post-KubeJS recipe snapshots to kubejs/recipe_dumps/.
+// Writes final post-KubeJS recipe snapshots to kubejs/config/.
 
 var BTM_AUDIT_DUMP_CONFIG = 'kubejs/config/audit_dumps.json'
-var BTM_AUDIT_DUMP_DIR = 'kubejs/recipe_dumps/'
-var BTM_AUDIT_FILES = Java.loadClass('java.nio.file.Files')
-var BTM_AUDIT_PATH = Java.loadClass('java.nio.file.Path')
-
-function btmAuditEnsureDumpDir() {
-    BTM_AUDIT_FILES.createDirectories(BTM_AUDIT_PATH.of(BTM_AUDIT_DUMP_DIR))
-}
+var BTM_AUDIT_DUMP_DIR = 'kubejs/config/'
 
 function btmAuditReadConfig() {
     var fallback = {
@@ -105,8 +99,6 @@ var BTM_AUDIT_BYPASS_NEEDLES = [
 ServerEvents.recipes(function (event) {
     var cfg = btmAuditReadConfig()
     if (!cfg.enabled) return
-    btmAuditEnsureDumpDir()
-
     var scanned = 0
     var typeCounts = {}
     var namespaceCounts = {}
