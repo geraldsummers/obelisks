@@ -7910,7 +7910,7 @@ hash = "71cf48039941d735dee02d05c6d8380a5464c28a14e73e3675e9e54cbd68dadf"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/10_recipe_audit_dumps.js"
-hash = "13b0a62896b6a8662e6bba5198e352e1ac52662f66b061d21899b0aceadcb6d1"
+hash = "33969eaa1e2ea78886c718bad0737542343b49d822f82677551f75a2a1628e87"
 
 [[files]]
 file = "kubejs/server_scripts/README.md"
