@@ -9,7 +9,8 @@ function btmAuditReadConfig() {
         enabled: false,
         writeFullRecipeIndex: false,
         writeMatchedRecipeJson: true,
-        maxJsonCharsPerRecipe: 12000
+        maxJsonCharsPerRecipe: 12000,
+        fullRecipeChunkSize: 1000
     }
 
     var cfg = JsonIO.read(BTM_AUDIT_DUMP_CONFIG)
@@ -19,7 +20,8 @@ function btmAuditReadConfig() {
         enabled: cfg.enabled === true,
         writeFullRecipeIndex: cfg.writeFullRecipeIndex === true,
         writeMatchedRecipeJson: cfg.writeMatchedRecipeJson !== false,
-        maxJsonCharsPerRecipe: Number(cfg.maxJsonCharsPerRecipe || fallback.maxJsonCharsPerRecipe)
+        maxJsonCharsPerRecipe: Number(cfg.maxJsonCharsPerRecipe || fallback.maxJsonCharsPerRecipe),
+        fullRecipeChunkSize: Number(cfg.fullRecipeChunkSize || fallback.fullRecipeChunkSize)
     }
 }
 
@@ -49,6 +51,42 @@ function btmAuditMakeBucketMap(keys) {
     var map = {}
     for (var i = 0; i < keys.length; i++) map[keys[i].id] = []
     return map
+}
+
+function btmAuditWriteFullIndexChunks(fullIndex, cfg) {
+    if (!cfg.writeFullRecipeIndex) return 0
+
+    var chunkSize = cfg.fullRecipeChunkSize
+    if (!chunkSize || chunkSize < 100) chunkSize = 1000
+
+    var chunkCount = 0
+    for (var start = 0; start < fullIndex.length; start += chunkSize) {
+        var chunk = []
+        var end = start + chunkSize
+        if (end > fullIndex.length) end = fullIndex.length
+
+        for (var i = start; i < end; i++) chunk.push(fullIndex[i])
+
+        var padded = String(chunkCount)
+        while (padded.length < 4) padded = '0' + padded
+        JsonIO.write(BTM_AUDIT_DUMP_DIR + 'full_recipe_index_' + padded + '.json', {
+            chunk: chunkCount,
+            start: start,
+            endExclusive: end,
+            count: chunk.length,
+            recipes: chunk
+        })
+        chunkCount++
+    }
+
+    JsonIO.write(BTM_AUDIT_DUMP_DIR + 'full_recipe_index_manifest.json', {
+        chunkSize: chunkSize,
+        chunkCount: chunkCount,
+        recipeCount: fullIndex.length,
+        pattern: 'full_recipe_index_0000.json'
+    })
+
+    return chunkCount
 }
 
 var BTM_AUDIT_VALUABLE_MATERIALS = [
@@ -143,11 +181,13 @@ ServerEvents.recipes(function (event) {
         scannedRecipes: scanned,
         writeFullRecipeIndex: cfg.writeFullRecipeIndex,
         writeMatchedRecipeJson: cfg.writeMatchedRecipeJson,
+        fullRecipeChunkSize: cfg.fullRecipeChunkSize,
         typeCounts: typeCounts,
         namespaceCounts: namespaceCounts,
         progressionMentionCounts: {},
         materialMatchCounts: {},
-        bypassMatchCounts: {}
+        bypassMatchCounts: {},
+        fullRecipeChunkCount: 0
     }
 
     for (var pi = 0; pi < BTM_AUDIT_PROGRESSION_NEEDLES.length; pi++) {
@@ -163,11 +203,11 @@ ServerEvents.recipes(function (event) {
         summary.bypassMatchCounts[bid] = bypassMatches[bid].length
     }
 
-    JsonIO.write(BTM_AUDIT_DUMP_DIR + 'recipe_audit_summary.json', summary)
     JsonIO.write(BTM_AUDIT_DUMP_DIR + 'progression_recipe_mentions.json', progressionMentions)
     JsonIO.write(BTM_AUDIT_DUMP_DIR + 'valuable_material_usage_recipes.json', materialMatches)
     JsonIO.write(BTM_AUDIT_DUMP_DIR + 'known_bypass_candidate_recipes.json', bypassMatches)
-    if (cfg.writeFullRecipeIndex) JsonIO.write(BTM_AUDIT_DUMP_DIR + 'full_recipe_index.json', fullIndex)
+    summary.fullRecipeChunkCount = btmAuditWriteFullIndexChunks(fullIndex, cfg)
+    JsonIO.write(BTM_AUDIT_DUMP_DIR + 'recipe_audit_summary.json', summary)
 
-    console.info('[BTM-RECIPE-AUDIT] scanned=' + scanned + ' wrote ' + BTM_AUDIT_DUMP_DIR + 'recipe_audit_summary.json')
+    console.info('[BTM-RECIPE-AUDIT] scanned=' + scanned + ' fullChunks=' + summary.fullRecipeChunkCount + ' wrote ' + BTM_AUDIT_DUMP_DIR + 'recipe_audit_summary.json')
 })

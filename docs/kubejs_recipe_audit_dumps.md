@@ -16,7 +16,7 @@ The script is disabled by default and has no gameplay effect while disabled.
 3. Inspect the generated files under `kubejs/config/`.
 4. Set `enabled` back to `false` before committing release builds or shipping an instance.
 
-Optional: set `writeFullRecipeIndex` to `true` to dump every scanned recipe. This can generate a large file.
+The pack keeps `writeFullRecipeIndex` enabled for dev. Full graph output is chunked by `fullRecipeChunkSize` to avoid very large single-file writes.
 
 ## Generated Dumps
 
@@ -24,7 +24,8 @@ Optional: set `writeFullRecipeIndex` to `true` to dump every scanned recipe. Thi
 - `progression_recipe_mentions.json`: recipes mentioning core progression items such as grout, andesite alloy, machine casings, blood orbs, AE2 controller, and Acid Vat.
 - `valuable_material_usage_recipes.json`: recipes that still reference vanilla valuable materials or common tags for iron, copper, gold, redstone, lapis, diamond, emerald, or amethyst.
 - `known_bypass_candidate_recipes.json`: suspicious recipes for known bypass classes such as non-alloying andesite alloy, item-application andesite casing, crafted nether grout, or Blood Magic teleposer.
-- `full_recipe_index.json`: optional full index when `writeFullRecipeIndex` is enabled.
+- `full_recipe_index_manifest.json`: manifest for the full graph chunks.
+- `full_recipe_index_####.json`: chunked full recipe graph when `writeFullRecipeIndex` is enabled.
 
 ## Notes
 

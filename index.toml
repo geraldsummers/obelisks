@@ -6674,7 +6674,7 @@ hash = "a7b70c5c34ad0e403fbd6a97071a1e3e761285654745f3f5ae098c80c309ef72"
 
 [[files]]
 file = "docs/kubejs_recipe_audit_dumps.md"
-hash = "9b2e38b78e53550e01bd570bd99e1c43b24aed8274fca0aa828d373db7e1a1bf"
+hash = "cdfcb9f2a2431acb9f49bba93cd283d6b97a013f25bae2500b0d23182e6bea0f"
 
 [[files]]
 file = "docs/loot_table_pass_report.md"
@@ -7450,7 +7450,7 @@ hash = "d0ca8623aade77f21526556b9c3dd473d04be542ea85d0a27e20c3a4b9cb4698"
 
 [[files]]
 file = "kubejs/config/audit_dumps.json"
-hash = "52fcfc0004335769f940b01ea82c572d413bae9907dd1ae9d08d50d7fe8857b5"
+hash = "44a4a032d22d41a1f4609d8c5985fe44725c0ca21668ccc6d2393ce4fc660900"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -7910,7 +7910,7 @@ hash = "71cf48039941d735dee02d05c6d8380a5464c28a14e73e3675e9e54cbd68dadf"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/10_recipe_audit_dumps.js"
-hash = "9d11ea058a166a624a9f22281e82d93a554efaddb320f0342d0beed27dd22eaa"
+hash = "afab998e436e467ff9e3fc5f8b1b8e71834b9207ad3c55acbd7b60b46b48e591"
 
 [[files]]
 file = "kubejs/server_scripts/README.md"

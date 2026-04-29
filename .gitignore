@@ -7,3 +7,5 @@ kubejs/config/progression_recipe_mentions.json
 kubejs/config/valuable_material_usage_recipes.json
 kubejs/config/known_bypass_candidate_recipes.json
 kubejs/config/full_recipe_index.json
+kubejs/config/full_recipe_index_manifest.json
+kubejs/config/full_recipe_index_*.json
