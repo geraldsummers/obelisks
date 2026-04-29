@@ -21,9 +21,36 @@ const tierCoins = {
   platinum: ['copper', 'iron', 'tin', 'bronze', 'brass', 'silver', 'gold', 'diamond', 'platinum']
 }
 
-function q(id, title, x, y, tasks, deps = []) { return { id, title, x, y, tasks, deps } }
+function q(id, title, x, y, tasks, deps = [], description = []) { return { id, title, x, y, tasks, deps, description } }
 function item(item, count = 1) { return { item, count } }
 function esc(s) { return String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"') }
+function desc(lines) {
+  const list = Array.isArray(lines) ? lines : [lines]
+  return list.length ? ` description:[${list.map(line => `"${esc(line)}"`).join(',')}]` : ''
+}
+function defaultQuestDescription(chapterPrefix, quest) {
+  const taskList = quest.tasks.map(t => t.item).join(', ')
+  const guidance = {
+    TC: 'Tinkers is the metallurgy authority here. This checkpoint should teach deposits, molten material, repair, and foundry interpretation before Create machines dominate infrastructure.',
+    DE: 'Death trophies are milestone evidence, not bulk fuel. Use this checkpoint to connect body maintenance, Still-Beating Hearts, and Blood Magic permission.',
+    FB: 'Food and water are infrastructure. This checkpoint should improve route endurance, recovery, and settlement readiness instead of becoming a decorative side quest.',
+    C1: 'Create begins only after early metallurgy. This checkpoint should prove andesite alloy, deployers, casings, and local power without bypassing Tinkers.',
+    C2: 'This is the manufacturing layer where plates, mixers, press work, and brass turn Create into real infrastructure.',
+    PG: 'Power Grid adds electrical complexity to the casing ladder. Treat circuits and relays as manufactured systems, not redstone shortcuts.',
+    OC: 'OC2R is preferred for intersite communication. This checkpoint is about authored logic and wired site intelligence, not teleporting items.',
+    SP: 'Space is a logistics and synthesis commitment. Rockets, suits, and chemical machines should consume the previous workshop rather than replace it.',
+    AE: 'AE2 is local site intelligence. This checkpoint may make a factory smarter, but it must not become global logistics or infinite storage.',
+    M1: 'Blood Magic sets permission. Side magic can become powerful only after the appropriate slate tier is proven.',
+    AD: 'Adventure progression is a real crafting economy. Routes, coins, Wares, and villages are part of how the pack pays for risk.',
+    VE: 'Village economy is a sideload path. It can supply comfort, recovery, and decor without bypassing machine or material progression.',
+    S1: 'Acid chemistry interprets deposits as chemical packages. The pack side treats Acid Vat as a recipe surface; the mod source remains read-only.',
+    PA: 'Post-AE2 branches improve local manufacturing, bounded storage, source integration, and body-scale rewards without breaking distance.'
+  }[chapterPrefix] || 'This checkpoint exists to make the item graph explicit.'
+  return [
+    guidance,
+    `Inspect or craft: ${taskList}.`
+  ]
+}
 function taskSnbt(chapter, quest, t, idx) {
   const count = t.count && t.count !== 1 ? ` count:${t.count}L` : ''
   const nbt = t.matchNbt === false ? ' match_nbt:false' : ''
@@ -36,7 +63,8 @@ function rewards(chapter, quest, tier) {
 }
 function questSnbt(chapterPrefix, tier, quest) {
   const deps = quest.deps?.length ? ` dependencies:[${quest.deps.map(d => `"${d}"`).join(',')}] hide_until_deps_complete:true` : ''
-  return `\t\t{id:"${quest.id}"${deps} title:"${esc(quest.title)}" x:${quest.x.toFixed(1)}d y:${quest.y.toFixed(1)}d rewards:${rewards(chapterPrefix, quest.id, tier)} tasks:[${quest.tasks.map((t, i) => taskSnbt(chapterPrefix, quest.id, t, i + 1)).join(',')}]}`
+  const text = quest.description?.length ? quest.description : defaultQuestDescription(chapterPrefix, quest)
+  return `\t\t{id:"${quest.id}"${deps} title:"${esc(quest.title)}"${desc(text)} x:${quest.x.toFixed(1)}d y:${quest.y.toFixed(1)}d rewards:${rewards(chapterPrefix, quest.id, tier)} tasks:[${quest.tasks.map((t, i) => taskSnbt(chapterPrefix, quest.id, t, i + 1)).join(',')}]}`
 }
 function chapterSnbt(ch) {
   return `{
@@ -46,6 +74,7 @@ function chapterSnbt(ch) {
 \tid: "${ch.id}"
 \torder_index: ${ch.order}
 \ttitle: "${esc(ch.title)}"
+\tdescription: [${(ch.description || []).map(line => `"${esc(line)}"`).join(',')}]
 \tquests: [
 ${ch.quests.map(qt => questSnbt(ch.prefix, ch.tier, qt)).join('\n')}
 \t]
@@ -55,30 +84,32 @@ ${ch.quests.map(qt => questSnbt(ch.prefix, ch.tier, qt)).join('\n')}
 
 const chapters = [
   {
-    filename: 'starting_out', prefix: 'SO', id: 'BTM_STARTING_OUT', order: 0, title: 'Starting Out', tier: 'starting', quests: [
-      q('SO_BACKPACK', 'Carry More', -8, 0, [item('sophisticatedbackpacks:backpack')]),
-      q('SO_LIGHT', 'Make Light', -6, 0, [item('minecraft:torch', 16)], ['SO_BACKPACK']),
-      q('SO_SHELTER', 'Claim Shelter', -4, 0, [item('minecraft:white_bed')], ['SO_LIGHT']),
-      q('SO_WATER', 'Carry Water', -2, 0, [{ item: 'thirst:terracotta_water_bowl', matchNbt: false }], ['SO_BACKPACK']),
-      q('SO_SEWING', 'Body Temperature', 0, 0, [item('cold_sweat:sewing_table')], ['SO_BACKPACK']),
-      q('SO_COOKING', 'Food Is Infrastructure', 2, 0, [item('farmersdelight:cooking_pot'), item('farmersdelight:skillet')], ['SO_WATER']),
-      q('SO_TINKER', 'Tinkers Station', -6, 2, [item('tconstruct:tinker_station')], ['SO_LIGHT']),
-      q('SO_PARTS', 'Tool Parts', -4, 2, [item('tconstruct:part_builder')], ['SO_TINKER']),
-      q('SO_CRAFTING', 'Crafting Station', -2, 2, [item('tconstruct:crafting_station')], ['SO_TINKER']),
-      q('SO_REPAIR', 'Repair Mindset', 0, 2, [item('tconstruct:repair_kit')], ['SO_PARTS']),
-      q('SO_HOOK', 'Hooks and Routes', 2, 2, [item('rehooked:wood_hook')], ['SO_BACKPACK']),
-      q('SO_TNT', 'Controlled Blast Mining', 4, 2, [item('minecraft:tnt')], ['SO_PARTS']),
-      q('SO_TRADE_FLOAT', 'Sixteen Copper Coins', 6, 2, [item('dotcoinmod:copper_coin', 16)], ['SO_BACKPACK']),
-      q('SO_NETHER', 'First Nether Obelisk Run', -4, 4, [item('minecraft:netherrack', 16)], ['SO_SHELTER', 'SO_WATER', 'SO_COOKING']),
-      q('SO_GROUT', 'Netherrack Grout', -2, 4, [item('tconstruct:grout', 8)], ['SO_NETHER', 'SO_PARTS']),
-      q('SO_MELTERY', 'First Meltery', 0, 4, [item('tconstruct:seared_melter'), item('tconstruct:seared_heater'), item('tconstruct:seared_faucet'), item('tconstruct:seared_basin'), item('tconstruct:seared_table')], ['SO_GROUT']),
-      q('SO_EXIT_TECH', 'Exit: Tech 1', 2, 4, [item('tconstruct:seared_brick', 8)], ['SO_MELTERY']),
-      q('SO_EXIT_MAGIC', 'Exit: Body and Blood', 4, 4, [item('rpgstats:still_beating_heart')], ['SO_WATER', 'SO_COOKING']),
-      q('SO_EXIT_ADVENTURE', 'Exit: Routes and Villages', 6, 4, [item('minecraft:compass'), item('minecraft:map')], ['SO_TRADE_FLOAT', 'SO_NETHER'])
+    filename: 'starting_out', prefix: 'SO', id: 'BTM_STARTING_OUT', order: 0, title: 'Starting Out', tier: 'starting',
+    description: ['This chapter is the playable tutorial spine: foothold, body, Tinkers, Nether netherrack, meltery, then exits.', 'Every quest pays 16 copper coins so the village economy unlocks immediately after a few real survival commitments.'],
+    quests: [
+      q('SO_BACKPACK', 'Carry More', -8, 0, [item('sophisticatedbackpacks:backpack')], [], ['Distance matters here. A backpack is not luxury storage; it is what lets a scouting run become a supply line.']),
+      q('SO_LIGHT', 'Make Light', -6, 0, [item('minecraft:torch', 16)], ['SO_BACKPACK'], ['Commit to a safe pocket of terrain. Darkness should be a local problem you solve with carried supplies.']),
+      q('SO_SHELTER', 'Claim Shelter', -4, 0, [item('minecraft:white_bed')], ['SO_LIGHT'], ['A bed is the first sign that this location is becoming a foothold instead of a camp.']),
+      q('SO_WATER', 'Carry Water', -2, 0, [{ item: 'thirst:terracotta_water_bowl', matchNbt: false }], ['SO_BACKPACK'], ['Thirst is not a background debuff. Carry a vessel before long trips, obelisk runs, and blast mining.']),
+      q('SO_SEWING', 'Body Temperature', 0, 0, [item('cold_sweat:sewing_table')], ['SO_BACKPACK'], ['Cold and heat make terrain matter. The sewing table starts the habit of preparing your body for a route.']),
+      q('SO_COOKING', 'Food Is Infrastructure', 2, 0, [item('farmersdelight:cooking_pot'), item('farmersdelight:skillet')], ['SO_WATER'], ['Meals are base infrastructure. Better food means longer routes, safer retreats, and less panic after death.']),
+      q('SO_TINKER', 'Tinkers Station', -6, 2, [item('tconstruct:tinker_station')], ['SO_LIGHT'], ['This pack expects tool investment. Tinkers is the early crafting authority before Create takes over infrastructure.']),
+      q('SO_PARTS', 'Tool Parts', -4, 2, [item('tconstruct:part_builder')], ['SO_TINKER'], ['Tool parts teach replacement and repair instead of disposable vanilla tools.']),
+      q('SO_CRAFTING', 'Crafting Station', -2, 2, [item('tconstruct:crafting_station')], ['SO_TINKER'], ['Keep the workshop physical. The station is the first small piece of authored infrastructure.']),
+      q('SO_REPAIR', 'Repair Mindset', 0, 2, [item('tconstruct:repair_kit')], ['SO_PARTS'], ['Do not throw tools away. Repair is part of the cost of distance and deposits.']),
+      q('SO_HOOK', 'Hooks and Routes', 2, 2, [item('rehooked:wood_hook')], ['SO_BACKPACK'], ['Movement tools are route tools. They help traverse terrain; they do not erase distance.']),
+      q('SO_TNT', 'Controlled Blast Mining', 4, 2, [item('minecraft:tnt')], ['SO_PARTS'], ['TNT is meant to be an early mining method. It is loud, risky, and efficient when you plan the blast.']),
+      q('SO_TRADE_FLOAT', 'Sixteen Copper Coins', 6, 2, [item('dotcoinmod:copper_coin', 16)], ['SO_BACKPACK'], ['Holding copper coins unlocks village trading. Coins are a crafting system, not just money.']),
+      q('SO_NETHER', 'First Nether Obelisk Run', -4, 4, [item('minecraft:netherrack', 16)], ['SO_SHELTER', 'SO_WATER', 'SO_COOKING'], ['This is a prepared raid, not a base move. Pack light, bring food and water, take netherrack, retreat successfully.']),
+      q('SO_GROUT', 'Netherrack Grout', -2, 4, [item('tconstruct:grout', 8)], ['SO_NETHER', 'SO_PARTS'], ['Base grout now remembers the Nether. This is the first hard proof that obelisks feed progression.']),
+      q('SO_MELTERY', 'First Meltery', 0, 4, [item('tconstruct:seared_melter'), item('tconstruct:seared_heater'), item('tconstruct:seared_faucet'), item('tconstruct:seared_basin'), item('tconstruct:seared_table')], ['SO_GROUT'], ['The meltery is the first metallurgy checkpoint. From here, ore is a material stream instead of a furnace shortcut.']),
+      q('SO_EXIT_TECH', 'Exit: Tech 1', 2, 4, [item('tconstruct:seared_brick', 8)], ['SO_MELTERY'], ['You have enough seared infrastructure to enter the tech spine.']),
+      q('SO_EXIT_MAGIC', 'Exit: Body and Blood', 4, 4, [item('rpgstats:still_beating_heart')], ['SO_WATER', 'SO_COOKING'], ['The body is maintained by food and water, then witnessed by death. Hearts bridge survival into Blood Magic.']),
+      q('SO_EXIT_ADVENTURE', 'Exit: Routes and Villages', 6, 4, [item('minecraft:compass'), item('minecraft:map')], ['SO_TRADE_FLOAT', 'SO_NETHER'], ['Villages, maps, coins, and obelisks are the adventure economy. Start thinking in routes.'])
     ]
   },
   {
-    filename: 'tinkers_construct', prefix: 'TC', id: 'BTM_TINKERS', order: 1, title: 'Iron Tier - Tinkers Construct', tier: 'iron', quests: [
+    filename: 'tinkers_construct', prefix: 'TC', id: 'BTM_TINKERS', order: 1, title: 'Iron Tier - Tinkers Construct', tier: 'iron', description: ['Tinkers owns early metallurgy: repair, molten primaries, smeltery scale, scorched progression, and foundry byproducts.'], quests: [
       q('TC_SEARED_CASE', 'Seared Machine Casing', 0, 0, [item('kubejs:seared_machine_casing')], ['SO_MELTERY']),
       q('TC_SMELTERY', 'Smeltery Authority', 2, 0, [item('tconstruct:smeltery_controller'), item('tconstruct:seared_fuel_tank')], ['TC_SEARED_CASE']),
       q('TC_FIRST_COPPER', 'Primary Molten Output', 4, -1, [item('minecraft:copper_ingot')], ['TC_SMELTERY']),
@@ -90,7 +121,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'death', prefix: 'DE', id: 'BTM_DEATH', order: 2, title: 'Iron Tier - Death and Blood', tier: 'iron', quests: [
+    filename: 'death', prefix: 'DE', id: 'BTM_DEATH', order: 2, title: 'Iron Tier - Death and Blood', tier: 'iron', description: ['Still-Beating Hearts are death trophies and Blood Magic keys. They should feel like ordeal evidence, not farmable reagent dust.'], quests: [
       q('DE_HEART', 'Still-Beating Heart', 0, 0, [item('rpgstats:still_beating_heart')], ['SO_EXIT_MAGIC']),
       q('DE_ALTAR', 'First Blood Altar', 2, 0, [item('bloodmagic:altar')], ['DE_HEART']),
       q('DE_WEAK_HEART', 'Blood-Touched Heart', 4, 0, [item('kubejs:weak_blood_heart')], ['DE_ALTAR']),
@@ -100,7 +131,25 @@ const chapters = [
     ]
   },
   {
-    filename: 'create_i', prefix: 'C1', id: 'BTM_CREATE_I', order: 3, title: 'Tin Tier - Create I', tier: 'tin', quests: [
+    filename: 'food_body', prefix: 'FB', id: 'BTM_FOOD_BODY', order: 3, title: 'Iron Tier - Food, Water, and Body', tier: 'iron',
+    description: ['Food is not decorative in this pack. This chapter turns early cooking into expedition readiness, thirst management, and the bodily logic that makes Blood Magic feel earned.'],
+    quests: [
+      q('FB_CUTTING', 'Knife Work and Prep', 0, 0, [item('farmersdelight:cutting_board')], ['SO_COOKING'], ['Cutting boards turn food from found calories into prepared stock. This is also where many side ingredients start being worth collecting.']),
+      q('FB_DOUGH', 'Staple Dough', 2, -1, [item('farmersdelight:wheat_dough')], ['FB_CUTTING'], ['Dough is the first reliable staple. It gives farming a practical purpose before automation.']),
+      q('FB_CANVAS', 'Canvas and Packing', 2, 1, [item('farmersdelight:canvas')], ['FB_CUTTING'], ['Canvas ties food infrastructure to carrying, drying, and expedition packing.']),
+      q('FB_STOVE', 'Permanent Kitchen', 4, 0, [item('farmersdelight:stove')], ['FB_DOUGH', 'FB_CANVAS'], ['The stove marks the kitchen as infrastructure. A base that cannot cook cannot support long routes.']),
+      q('FB_SOUP', 'Hydrating Meals', 6, -1, [item('farmersdelight:vegetable_soup')], ['FB_STOVE'], ['Soups are survival logistics: food and water pressure handled together.']),
+      q('FB_FEAST', 'Group Expedition Stock', 6, 1, [item('farmersdelight:roast_chicken_block')], ['FB_STOVE'], ['Feasts are for team travel, recovery, and staging around dangerous deposits or obelisks.']),
+      q('FB_FILTER', 'Clean Water Site', 8, -1, [item('thirst:sand_filter')], ['FB_SOUP', 'C1_CASING'], ['The sand filter is post-Create survival infrastructure. Clean water should be built, not assumed.']),
+      q('FB_KETTLE', 'Kettle Drinks', 8, 1, [item('farmersrespite:kettle')], ['FB_FEAST'], ['Tea and hot drinks make body management more interesting than eating one best food forever.']),
+      q('FB_TEA', 'Route Tea', 10, 1, [item('farmersrespite:green_tea')], ['FB_KETTLE'], ['Pack drinks alongside food. A route with prepared drinks is a different route.']),
+      q('FB_KEG', 'Fermentation', 12, 0, [item('brewinandchewin:keg')], ['FB_KETTLE', 'C2_ANDESITE_CASE'], ['Fermentation is slow value: stronger travel food, tavern economy, and material for village contracts.']),
+      q('FB_PRESERVED', 'Preserved Food', 14, -1, [item('brewinandchewin:jerky'), item('brewinandchewin:kimchi')], ['FB_KEG'], ['Preserved food is for distance. It belongs in backpacks, trains, ships, and outpost crates.']),
+      q('FB_BREW', 'Brewed Recovery', 14, 1, [item('brewinandchewin:beer')], ['FB_KEG'], ['Brews are powerful enough to matter, but they should come from a kitchen and a route economy, not loot spam.'])
+    ]
+  },
+  {
+    filename: 'create_i', prefix: 'C1', id: 'BTM_CREATE_I', order: 4, title: 'Tin Tier - Create I', tier: 'tin', description: ['Create starts after alloying. This chapter teaches hand power, millstones, deployer assembly, and sustainable local power.'], quests: [
       q('C1_ALLOY', 'Alloyed Andesite', 0, 0, [item('create:andesite_alloy')], ['TC_FOUNDRY']),
       q('C1_CRANK', 'Hand Crank', 2, 0, [item('create:hand_crank')], ['C1_ALLOY']),
       q('C1_MILL', 'Millstone', 4, 0, [item('create:millstone')], ['C1_CRANK']),
@@ -113,7 +162,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'create_ii', prefix: 'C2', id: 'BTM_CREATE_II', order: 4, title: 'Bronze Tier - Create II', tier: 'bronze', quests: [
+    filename: 'create_ii', prefix: 'C2', id: 'BTM_CREATE_II', order: 5, title: 'Bronze Tier - Create II', tier: 'bronze', description: ['Create II is the first real manufactured-component layer: machine casings, press work, plates, mixers, brass, and larger mechanisms.'], quests: [
       q('C2_ANDESITE_CASE', 'Andesite Machine Casing', 0, 0, [item('kubejs:andesite_machine_casing')], ['C1_CRUSHED']),
       q('C2_PRESS', 'Mechanical Press', 2, 0, [item('create:mechanical_press')], ['C2_ANDESITE_CASE']),
       q('C2_PLATES', 'Pressed or Cast Plates', 4, -1, [item('chemlib:iron_plate'), item('chemlib:copper_plate')], ['C2_PRESS']),
@@ -126,7 +175,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'electricity', prefix: 'PG', id: 'BTM_ELECTRICITY', order: 5, title: 'Brass Tier - Power Grid', tier: 'brass', quests: [
+    filename: 'electricity', prefix: 'PG', id: 'BTM_ELECTRICITY', order: 6, title: 'Brass Tier - Power Grid', tier: 'brass', description: ['Power Grid adds the electrical casing tier. Circuits, relays, batteries, and heat components should consume Create-brass infrastructure.'], quests: [
       q('PG_CONDUCTIVE', 'Conductive Casing', 0, 0, [item('powergrid:conductive_casing')], ['C2_BRASS']),
       q('PG_CASE', 'Power Grid Machine Casing', 2, 0, [item('kubejs:power_grid_machine_casing')], ['PG_CONDUCTIVE']),
       q('PG_CIRCUIT', 'Integrated Circuit', 4, -1, [item('powergrid:integrated_circuit')], ['PG_CASE']),
@@ -137,7 +186,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'oc2r', prefix: 'OC', id: 'BTM_OC2R', order: 6, title: 'Silver Tier - OC2R', tier: 'silver', quests: [
+    filename: 'oc2r', prefix: 'OC', id: 'BTM_OC2R', order: 7, title: 'Silver Tier - OC2R', tier: 'silver', description: ['OC2R is the preferred intersite communication layer. It should coordinate routes and machines without becoming item teleportation.'], quests: [
       q('OC_TRANSISTOR', 'Transistor', 0, -1, [item('oc2r:transistor')], ['PG_BATTERY']),
       q('OC_CASE', 'OC2R Machine Casing', 0, 1, [item('kubejs:oc2r_machine_casing')], ['PG_BATTERY']),
       q('OC_COMPUTER', 'Local Computer', 2, 0, [item('oc2r:computer')], ['OC_TRANSISTOR', 'OC_CASE']),
@@ -147,7 +196,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'space', prefix: 'SP', id: 'BTM_SPACE', order: 7, title: 'Gold Tier - Creating Space', tier: 'gold', quests: [
+    filename: 'space', prefix: 'SP', id: 'BTM_SPACE', order: 8, title: 'Gold Tier - Creating Space', tier: 'gold', description: ['Creating Space is a major logistics commitment: suit up, build rockets, route materials, and unlock chemical synthesis.'], quests: [
       q('SP_TABLE', 'Rocket Engineer Table', 0, 0, [item('creatingspace:rocket_engineer_table')], ['OC_NETWORK']),
       q('SP_CASE', 'Space Machine Casing', 2, 0, [item('kubejs:space_machine_casing')], ['SP_TABLE']),
       q('SP_SUIT_BASIC', 'Basic Spacesuit', 4, -1, [item('creatingspace:basic_spacesuit_helmet'), item('creatingspace:basic_spacesuit_leggings'), item('creatingspace:basic_spacesuit_boots')], ['SP_CASE']),
@@ -159,7 +208,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'ae2', prefix: 'AE', id: 'BTM_AE2', order: 8, title: 'Diamond Tier - AE2 Local Intelligence', tier: 'diamond', quests: [
+    filename: 'ae2', prefix: 'AE', id: 'BTM_AE2', order: 9, title: 'Diamond Tier - AE2 Local Intelligence', tier: 'diamond', description: ['AE2 is local intelligence for a committed site. Storage and autocrafting improve a base, but trains and routes still move matter.'], quests: [
       q('AE_CHARGER', 'Certus Preparation', 0, -1, [item('ae2:charger')], ['SP_CHEM']),
       q('AE_INSCRIBER', 'Processor Fabrication', 0, 1, [item('ae2:inscriber')], ['SP_CHEM']),
       q('AE_CASE', 'AE2 Machine Casing', 2, 0, [item('kubejs:ae2_machine_casing')], ['AE_CHARGER', 'AE_INSCRIBER']),
@@ -170,7 +219,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'post_ae2', prefix: 'PA', id: 'BTM_POST_AE2', order: 12, title: 'Platinum Tier - Post-AE2 Branches', tier: 'platinum', quests: [
+    filename: 'post_ae2', prefix: 'PA', id: 'BTM_POST_AE2', order: 14, title: 'Platinum Tier - Post-AE2 Branches', tier: 'platinum', description: ['Post-AE2 fans into a few strong branches: quantum manufacturing, extended local intelligence, bounded storage, source-AE hybrid, and quantum body rewards.'], quests: [
       q('PA_QUANTUM_STRUCTURE', 'Quantum Structure', 0, 0, [item('advanced_ae:quantum_structure')], ['AE_SPATIAL']),
       q('PA_REACTION', 'Reaction Chamber', 2, -1, [item('advanced_ae:reaction_chamber')], ['PA_QUANTUM_STRUCTURE']),
       q('PA_QUANTUM_CORE', 'Quantum Core', 2, 1, [item('advanced_ae:quantum_core')], ['PA_QUANTUM_STRUCTURE']),
@@ -190,7 +239,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'magic_i', prefix: 'M1', id: 'BTM_MAGIC_I', order: 9, title: 'Tin Tier - Magic I', tier: 'tin', quests: [
+    filename: 'magic_i', prefix: 'M1', id: 'BTM_MAGIC_I', order: 10, title: 'Tin Tier - Magic I', tier: 'tin', description: ['Blood Magic is the permission spine. Slates unlock side magic tiers; guidebooks are not the gate unless a mod gives no better surface.'], quests: [
       q('M1_BLANK', 'Blank Slate Permission', 0, 0, [item('bloodmagic:blankslate')], ['DE_WEAK_ORB']),
       q('M1_HEXEREI', 'Hexerei Gate', 2, -1, [item('hexerei:mixing_cauldron')], ['M1_BLANK']),
       q('M1_MALUM', 'Malum Gate', 2, 1, [item('malum:spirit_altar')], ['M1_BLANK']),
@@ -209,7 +258,7 @@ const chapters = [
     ]
   },
   {
-    filename: 'adventuring', prefix: 'AD', id: 'BTM_ADVENTURING', order: 10, title: 'Copper Tier - Adventuring, Coins, and Wares', tier: 'copper', quests: [
+    filename: 'adventuring', prefix: 'AD', id: 'BTM_ADVENTURING', order: 11, title: 'Copper Tier - Adventuring, Coins, and Wares', tier: 'copper', description: ['Adventure is a grindable progression lane. Coins, contracts, villages, and routes give useful work when the next factory is unclear.'], quests: [
       q('AD_ROUTE', 'Route Supplies', 0, 0, [item('minecraft:compass'), item('minecraft:map')], ['SO_EXIT_ADVENTURE']),
       q('AD_COIN', 'First Market Float', 2, 0, [item('dotcoinmod:copper_coin', 16)], ['AD_ROUTE']),
       q('AD_TRADING_POST', 'Village Trading Post', 4, -1, [item('tradingpost:trading_post')], ['AD_COIN']),
@@ -221,7 +270,25 @@ const chapters = [
     ]
   },
   {
-    filename: 'synthesis_i', prefix: 'S1', id: 'BTM_SYNTHESIS_I', order: 11, title: 'Gold Tier - Acid Chemistry', tier: 'gold', quests: [
+    filename: 'village_economy', prefix: 'VE', id: 'BTM_VILLAGE_ECONOMY', order: 12, title: 'Tin Tier - Villages, Wares, and Settlement Rewards', tier: 'tin',
+    description: ['Villager trading and Wares contracts are part of the expert item graph. This chapter teaches coins as a crafting surface and keeps decorative depth shallow through trade sideloads.'],
+    quests: [
+      q('VE_TRADING_POST', 'Centralized Trades', 0, 0, [item('tradingpost:trading_post')], ['AD_TRADING_POST'], ['Villages matter because people and routes matter. A trading post is a local market, not a magic converter.']),
+      q('VE_WARES_BOX', 'Cardboard Logistics', 2, -1, [item('wares:cardboard_box')], ['AD_WARES_TABLE'], ['Wares packages are physical goods. Treat them like small logistics contracts.']),
+      q('VE_AGREEMENT', 'Delivery Agreement', 2, 1, [item('wares:delivery_agreement')], ['AD_CONTRACT'], ['Contracts should consume and produce coin-tier value without falling back to emeralds.']),
+      q('VE_COMPLETED', 'Completed Contract', 4, 0, [item('wares:completed_delivery_agreement')], ['VE_WARES_BOX', 'VE_AGREEMENT'], ['A completed delivery is proof of route work. It belongs in the same mental category as crafting components.']),
+      q('VE_FURNITURE_TOOL', 'Furniture Toolkit', 6, -2, [item('another_furniture:furniture_hammer'), item('handcrafted:hammer')], ['VE_COMPLETED'], ['Decorative blocks can have graph depth, but only shallow depth: village economy plus early workshop tools.']),
+      q('VE_SETTLEMENT_ROOM', 'Furnished Room', 8, -2, [item('another_furniture:oak_chair'), item('another_furniture:oak_table'), item('handcrafted:oak_table')], ['VE_FURNITURE_TOOL'], ['A settlement should look inhabited. These are sideload rewards, not required machine gates.']),
+      q('VE_GARDEN_MARKET', 'Garden Market', 6, 0, [item('beautify:botanist_workbench'), item('beautify:oak_trellis'), item('beautify:hanging_pot')], ['VE_COMPLETED'], ['Garden and decor trades make villages useful without trivializing ore, magic, or machines.']),
+      q('VE_BUILDERS_STOCK', 'Builder Stock', 8, 0, [item('buildersaddition:shelf_oak'), item('buildersaddition:bench_oak'), item('twigs:bamboo_thatch')], ['VE_GARDEN_MARKET'], ['Bulk building support is allowed here because it improves bases and routes instead of skipping progression.']),
+      q('VE_LIGHTING_STOCK', 'Settlement Lighting', 10, 0, [item('beautify:lamp_light_bulb'), item('excessive_building:copper_bulb')], ['VE_BUILDERS_STOCK'], ['Lighting trades reward villages and coins while staying below Create andesite depth.']),
+      q('VE_SERVICE_BELL', 'Market Signal', 10, -2, [item('another_furniture:service_bell')], ['VE_SETTLEMENT_ROOM'], ['A village route should have signals, meeting points, and trade counters.']),
+      q('VE_IRON_COIN_TIER', 'Iron Coin Trade Float', 12, -1, [item('dotcoinmod:iron_coin', 8)], ['VE_COMPLETED'], ['Higher coin tiers come from harder chapters, loot, and combat loops. They should not be convertible downward or upward in bulk.']),
+      q('VE_TIN_COIN_TIER', 'Tin Coin Trade Float', 14, -1, [item('dotcoinmod:tin_coin', 8)], ['VE_IRON_COIN_TIER'], ['Tin tier trades are where villages begin supporting workshop recovery and settlement upgrades.'])
+    ]
+  },
+  {
+    filename: 'synthesis_i', prefix: 'S1', id: 'BTM_SYNTHESIS_I', order: 13, title: 'Gold Tier - Acid Chemistry', tier: 'gold', description: ['Acid chemistry is where deposits stop being ore and become chemical packages. This pack wires recipes against Acid Vat without editing its mod source.'], quests: [
       q('S1_VAT', 'Acid Vat', 0, 0, [item('acid_vat:acid_vat')], ['C2_BRASS', 'TC_FOUNDRY']),
       q('S1_TUBE', 'Slurry Transport', 2, 0, [item('acid_vat:slurry_tank'), item('acid_vat:smart_slurry_pipe')], ['S1_VAT']),
       q('S1_CENTRIFUGE', 'Centrifuge Fractions', 4, 0, [item('acid_vat:centrifuge_bearing'), item('acid_vat:centrifuge_chamber')], ['S1_TUBE']),

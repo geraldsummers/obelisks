@@ -5726,55 +5726,63 @@ hash = "caa0cc67910381bf95bcc0056d27d534430807ae7e40721de5cc7264ec77e9b0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/adventuring.snbt"
-hash = "76a2b44de777593acb5782b6a29887dc5359e70b7d46ab2a5604f15df1746859"
+hash = "89ab764603feb58c3b2db8e9644fbd745715bd8ff03604bd102b0d5ab5547973"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "6c65d36367605566777d0721cd01d0778fc14a9920cb7ac2c670dc81bd09937f"
+hash = "095d3cf3abc3210a1352693b9a89cda0cb65cc97a92f7f0f6ed68a75438b7ec2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_i.snbt"
-hash = "28042963d6b40f89d185222943ae3298d43f7f1e4a5ae26546c20322ea707f9c"
+hash = "dacf6cdcf769d285c13318c25343c34faf847a2ac597bbfd727ca7d4a09137db"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_ii.snbt"
-hash = "1c4cd12bc2342f308a320ad0a91370457919b73f0dc8a838511568d882912846"
+hash = "6ac51b1a304649aaa2b9e168009de477757e3e3d5adf83b2f98b4b8269428e92"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/death.snbt"
-hash = "b0ee514e31b31fa5b46d3ea0a328abb3e3f93df7f30dac3a1d7da43f828b082c"
+hash = "abe4ae37a00caa62aae4180a9dc80506e2f07387c839ec6ad3d243d76efc6849"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/electricity.snbt"
-hash = "dd02db5cc49ad1b87fc7bb1ec05a5a23009cff0c37f0e4f0272f948483098694"
+hash = "90190d2277a3c14d93d07a5ac21e0a8f7cbf0883a7090fd5f25d3baec578ec8d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/food_body.snbt"
+hash = "32f612fe0384d1a4411b3eede3574fef8f2e52e0799f222f40f9c5f6bcbdc47a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/magic_i.snbt"
-hash = "d0f4b3ecfd530c3a87e1918206ab60e9b05482b4686f5b301fa4a02649252b37"
+hash = "b1658a9848a62ebc12b8edbdb145517eb843f03801239183e1830b3d8e8ddb95"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/oc2r.snbt"
-hash = "6ac826ef1898217e3c2d2cd02d6c9513a34fb36aacbf73abe736332d9a224cdc"
+hash = "0e07c5287b7a63addaf11a2355e8f484124ca1b3f671a281032375cc440db8a6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/post_ae2.snbt"
-hash = "65a86c10ed820f4a5737f3473f0bbbac83cab3dbc8f0ffce24e1397267f86386"
+hash = "c993ec64cfd46f8ba93fb399140d4be509f51e5bce52685a88f98cb7d556021e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/space.snbt"
-hash = "c7dfeeca748cd21d220c6e6b2fbb0eaa7a4ca7fdeac0a1cb5a89aed90390f59c"
+hash = "6a1adb1b481e63b69839cc84e29b7c869248799812b3e478260df5883772f70b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/starting_out.snbt"
-hash = "c91db276cf6d05f5a509707d236560e32caf676c47eb55022acaf49e4ade27eb"
+hash = "a43dc55631802332a3b305b3aa10a0ebdcc94b446a4dce153fc8b563b945152b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/synthesis_i.snbt"
-hash = "d622421ef5456a4d1b96c05bd26dfe2b6dd16d4d2e17819c52960b4ace672c56"
+hash = "34184b7ac532ff7fb1874e7ecbb2c3efc24dc0b570cb15536e9e936efe36010b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tinkers_construct.snbt"
-hash = "2b8372777fac4babf75d626e0a248d3751b418c0c4edfb97683aade46f90c26d"
+hash = "02627f131b9f2071bc2eb52e1e6367395df7cc139b0c57ec903ae5109ce741ba"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/village_economy.snbt"
+hash = "9981dae2fec2298c6917bf5ab7c0e04d7f28fd2ce5afb3e3f71a88477a234afd"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -6759,6 +6767,10 @@ hash = "f55dc3dee334c40ada88ba57204f1c10c964d1d3618b209841a31b7939acf47b"
 [[files]]
 file = "docs/quest_book_completeness_audit.md"
 hash = "dd8309984f3936fc801c5588768607d2d6fd8f328c8b8314e222e7f7e8b8b808"
+
+[[files]]
+file = "docs/quest_book_fleshout_pass.md"
+hash = "f8e0331969fc1650fbe0cd950ccc6572601774db2e13a2d8592b41b98387a338"
 
 [[files]]
 file = "docs/recipe_completeness_audit.md"
@@ -8010,7 +8022,7 @@ hash = "3cfcf335d73c8b74562d1a93834f48f09cd9f1aee1755b6aefb5be486aed7076"
 
 [[files]]
 file = "kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js"
-hash = "8c28db4122703cae15f84dcbe3f4ae62c5bde86184e68d5e92a00947633132b5"
+hash = "44298a9fdd81faae3d3eae68aa2eae45753c50d407e6642a1c28a2a8f830a19e"
 
 [[files]]
 file = "kubejs/server_scripts/40_recipe_add/10_campfire_recipe.js"
@@ -9892,7 +9904,7 @@ hash = "48aab172366174312dbfb87853b8e158696855d12398fca998549d049020016c"
 
 [[files]]
 file = "tools/generate_expert_quest_book.mjs"
-hash = "6696fb8501fcdfe2877812f1232acacb7865485cac11033d8da42a1ebc6e2b17"
+hash = "94a440a3d293f2c37daf56ec32d3f31cb35a5c80bd7430e0cea13ada3947f0e4"
 
 [[files]]
 file = "tools/validate_quest_dependencies.mjs"
