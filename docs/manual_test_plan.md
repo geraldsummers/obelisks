@@ -16,3 +16,9 @@
 14. Open FTB Quests and verify Starting Out gives only 16 copper coins per quest.
 15. Verify non-starting chapters give 4 coins per included difficulty tier.
 16. Spawn a villager for each major profession and confirm vanilla emerald trades are replaced with dotcoin trades.
+17. Verify `sophisticatedbackpacks:infinity_upgrade`, `sophisticatedbackpacks:survival_infinity_upgrade`, `sophisticatedstorage:infinity_upgrade`, and `expatternprovider:infinity_cell` have no crafting recipe.
+18. Verify `advanced_ae:flight_card` and `advanced_ae:flight_drift_card` have no crafting recipe.
+19. Verify Create Power Loader chunk loaders require Power Grid / OC2R machine casings.
+20. Verify Building Gadgets are gated by Power Grid, OC2R, or Space casing depending on power level.
+21. Verify Apotheosis reforging/salvaging/gem-cutting and high shelves require Blood Magic slates.
+22. Verify AE2 addon wireless/requester/extended pattern/high-storage items require OC2R, AE2, or Space casing.

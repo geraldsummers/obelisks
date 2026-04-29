@@ -6649,6 +6649,10 @@ file = "docs/ftb_quest_audit.md"
 hash = "d440d34d2efbc787fd05168ee06d3fdb47be0f96b8e3406a899cfb89bed90f9a"
 
 [[files]]
+file = "docs/high_value_mod_progression_audit.md"
+hash = "f5497d018a54bc4a003222249a3aecf1ee65cdaed5cfb44a44702977900ecb48"
+
+[[files]]
 file = "docs/implementation_pass_plan.md"
 hash = "87921191377dc3399703a8b2347a562ceb4cabe6bc890945dc69626eaee18788"
 
@@ -6658,11 +6662,11 @@ hash = "c2752171709760aea5d28a6d33a625d7b2c37b281eeb8ad7d72801657c0e96ec"
 
 [[files]]
 file = "docs/known_issues.md"
-hash = "4e5acef2fc5c173e75d60fb1f4fc9f37b8658d86141c2cfb360b57a34a66bce1"
+hash = "b0bb9da8bee2ae83836147b7ff97b96c744ad8b303405b7e7181681684ab8936"
 
 [[files]]
 file = "docs/manual_test_plan.md"
-hash = "781090b5f636b131a3ac3df5b9097b68bf38e198065950449e22d5785ab9a607"
+hash = "84a1fd00a434171b950c3688c2b2a9cd8071027a4e2c586987abbd8650d698df"
 
 [[files]]
 file = "docs/material_registry_map.md"
@@ -6690,7 +6694,7 @@ hash = "7c62aa1a88aa778ebedd64f875fe67b4241990c9c619dd6ba9342e68e8906412"
 
 [[files]]
 file = "docs/validation_report.md"
-hash = "14793c6370723cc483a6ac757afedca6bceb1fbed6e077b03f5f7dbddf8f90e4"
+hash = "6ee8ed613abf3c28ed9f1a8d756ce80050c2ffe621590634b9fb5f72fdd940ac"
 
 [[files]]
 file = "globalresources/obelisks/globaldata/obelisks/excavated_variants/modifier/disable_malum_brilliant_stone.json"
@@ -7219,6 +7223,10 @@ hash = "29ae303123b2e292fa329560e66663e60d07cf60788552f7eae4f86cd0ec5647"
 [[files]]
 file = "kubejs/server_scripts/20_recipe_remove/40_remove_create_new_age_electric_crafting.js"
 hash = "2de1e08e1f0a44ab5a51741769c2d83e26ad06248c352274aec793ce272cc4b1"
+
+[[files]]
+file = "kubejs/server_scripts/30_recipe_replace/100_high_value_mod_progression_gates.js"
+hash = "ccf6ba763ced4452c7fd55e290b58be410afa47f23a510210c4eca26fb64e41f"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/10_no_easy_compression.js"

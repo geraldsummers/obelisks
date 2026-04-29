@@ -32,3 +32,11 @@
 - Full modpack Minecraft/KubeJS startup was not run in this pass.
 - FTB Quest chapter load needs an in-client reload check.
 - Villager trade runtime behavior needs a throwaway-world verification.
+
+## High-Value Mod Gate Pass
+
+- Added `kubejs/server_scripts/30_recipe_replace/100_high_value_mod_progression_gates.js`.
+- Static KubeJS syntax check passed after adding high-value gates.
+- `git diff --check` passed after adding high-value gates.
+- `packwiz refresh` was run after adding high-value gates and audit docs.
+- Runtime EMI verification is still required for output-based replacement breadth and multi-input hard-gate costs.
