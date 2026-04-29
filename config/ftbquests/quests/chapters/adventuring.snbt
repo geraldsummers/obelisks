@@ -1,7 +1,18 @@
 {
-	filename:"adventuring" group:"BTM_ROOT" id:"BTM_ADVENTURING" order_index:10 title:"Copper Tier - Adventuring"
-	quests:[
-		{id:"AD_ROUTE" dependencies:["SO_NETHER"] hide_until_deps_complete:true title:"Route Supplies" x:0.0d y:0.0d rewards:[{id:"AD_R1" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_T1" type:"item" item:"minecraft:compass"},{id:"AD_T2" type:"item" item:"minecraft:map"}]}
-		{id:"AD_COIN" dependencies:["AD_ROUTE"] hide_until_deps_complete:true title:"First Market Float" x:2.0d y:0.0d rewards:[{id:"AD_R2" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_T3" type:"item" item:"dotcoinmod:copper_coin" count:16L}]}
+	default_hide_dependency_lines: false
+	filename: "adventuring"
+	group: "BTM_ROOT"
+	id: "BTM_ADVENTURING"
+	order_index: 10
+	title: "Copper Tier - Adventuring, Coins, and Wares"
+	quests: [
+		{id:"AD_ROUTE" dependencies:["SO_EXIT_ADVENTURE"] hide_until_deps_complete:true title:"Route Supplies" x:0.0d y:0.0d rewards:[{id:"AD_AD_ROUTE_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_ROUTE_T1" type:"item" item:"minecraft:compass"},{id:"AD_AD_ROUTE_T2" type:"item" item:"minecraft:map"}]}
+		{id:"AD_COIN" dependencies:["AD_ROUTE"] hide_until_deps_complete:true title:"First Market Float" x:2.0d y:0.0d rewards:[{id:"AD_AD_COIN_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_COIN_T1" type:"item" item:"dotcoinmod:copper_coin" count:16L}]}
+		{id:"AD_TRADING_POST" dependencies:["AD_COIN"] hide_until_deps_complete:true title:"Village Trading Post" x:4.0d y:-1.0d rewards:[{id:"AD_AD_TRADING_POST_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_TRADING_POST_T1" type:"item" item:"tradingpost:trading_post"}]}
+		{id:"AD_WARES_TABLE" dependencies:["AD_COIN"] hide_until_deps_complete:true title:"Wares Delivery Table" x:4.0d y:1.0d rewards:[{id:"AD_AD_WARES_TABLE_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_WARES_TABLE_T1" type:"item" item:"wares:delivery_table"}]}
+		{id:"AD_CONTRACT" dependencies:["AD_WARES_TABLE"] hide_until_deps_complete:true title:"Contract As Crafting" x:6.0d y:0.0d rewards:[{id:"AD_AD_CONTRACT_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_CONTRACT_T1" type:"item" item:"wares:delivery_agreement"}]}
+		{id:"AD_PACKAGE" dependencies:["AD_CONTRACT"] hide_until_deps_complete:true title:"Physical Package" x:8.0d y:-1.0d rewards:[{id:"AD_AD_PACKAGE_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_PACKAGE_T1" type:"item" item:"wares:package"}]}
+		{id:"AD_COMPLETED" dependencies:["AD_PACKAGE"] hide_until_deps_complete:true title:"Completed Delivery" x:8.0d y:1.0d rewards:[{id:"AD_AD_COMPLETED_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_COMPLETED_T1" type:"item" item:"wares:completed_delivery_agreement"}]}
+		{id:"AD_IRON_FLOAT" dependencies:["AD_COMPLETED"] hide_until_deps_complete:true title:"Iron Tier Float" x:10.0d y:0.0d rewards:[{id:"AD_AD_IRON_FLOAT_R0" type:"item" item:"dotcoinmod:copper_coin" count:4}] tasks:[{id:"AD_AD_IRON_FLOAT_T1" type:"item" item:"dotcoinmod:iron_coin" count:4L}]}
 	]
 }

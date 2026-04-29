@@ -1,9 +1,18 @@
 {
-	filename:"tinkers_construct" group:"BTM_ROOT" id:"BTM_TINKERS" order_index:1 title:"Iron Tier - Tinkers Construct"
-	quests:[
-		{id:"TC_SEARED_CASE" dependencies:["SO_MELTERY"] hide_until_deps_complete:true title:"Seared Machine Casing" x:0.0d y:0.0d rewards:[{id:"TC_R1" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_R2" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_T1" type:"item" item:"kubejs:seared_machine_casing"}]}
-		{id:"TC_SMELTERY" dependencies:["TC_SEARED_CASE"] hide_until_deps_complete:true title:"Smeltery Authority" x:2.0d y:0.0d rewards:[{id:"TC_R3" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_R4" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_T2" type:"item" item:"tconstruct:smeltery_controller"},{id:"TC_T3" type:"item" item:"tconstruct:seared_fuel_tank"}]}
-		{id:"TC_SCORCHED" dependencies:["TC_SMELTERY"] hide_until_deps_complete:true title:"Scorched Machine Casing" x:4.0d y:0.0d rewards:[{id:"TC_R5" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_R6" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_T4" type:"item" item:"kubejs:scorched_machine_casing"}]}
-		{id:"TC_FOUNDRY" dependencies:["TC_SCORCHED"] hide_until_deps_complete:true title:"Foundry Reads Geology" x:6.0d y:0.0d rewards:[{id:"TC_R7" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_R8" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_T5" type:"item" item:"tconstruct:foundry_controller"}]}
+	default_hide_dependency_lines: false
+	filename: "tinkers_construct"
+	group: "BTM_ROOT"
+	id: "BTM_TINKERS"
+	order_index: 1
+	title: "Iron Tier - Tinkers Construct"
+	quests: [
+		{id:"TC_SEARED_CASE" dependencies:["SO_MELTERY"] hide_until_deps_complete:true title:"Seared Machine Casing" x:0.0d y:0.0d rewards:[{id:"TC_TC_SEARED_CASE_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_SEARED_CASE_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_SEARED_CASE_T1" type:"item" item:"kubejs:seared_machine_casing"}]}
+		{id:"TC_SMELTERY" dependencies:["TC_SEARED_CASE"] hide_until_deps_complete:true title:"Smeltery Authority" x:2.0d y:0.0d rewards:[{id:"TC_TC_SMELTERY_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_SMELTERY_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_SMELTERY_T1" type:"item" item:"tconstruct:smeltery_controller"},{id:"TC_TC_SMELTERY_T2" type:"item" item:"tconstruct:seared_fuel_tank"}]}
+		{id:"TC_FIRST_COPPER" dependencies:["TC_SMELTERY"] hide_until_deps_complete:true title:"Primary Molten Output" x:4.0d y:-1.0d rewards:[{id:"TC_TC_FIRST_COPPER_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_FIRST_COPPER_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_FIRST_COPPER_T1" type:"item" item:"minecraft:copper_ingot"}]}
+		{id:"TC_FIRST_IRON" dependencies:["TC_SMELTERY"] hide_until_deps_complete:true title:"Ironstone Pays Out" x:4.0d y:1.0d rewards:[{id:"TC_TC_FIRST_IRON_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_FIRST_IRON_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_FIRST_IRON_T1" type:"item" item:"minecraft:iron_ingot"}]}
+		{id:"TC_SCORCHED" dependencies:["TC_FIRST_COPPER","TC_FIRST_IRON"] hide_until_deps_complete:true title:"Scorched Machine Casing" x:6.0d y:0.0d rewards:[{id:"TC_TC_SCORCHED_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_SCORCHED_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_SCORCHED_T1" type:"item" item:"kubejs:scorched_machine_casing"}]}
+		{id:"TC_FOUNDRY" dependencies:["TC_SCORCHED"] hide_until_deps_complete:true title:"Foundry Reads Geology" x:8.0d y:0.0d rewards:[{id:"TC_TC_FOUNDRY_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_FOUNDRY_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_FOUNDRY_T1" type:"item" item:"tconstruct:foundry_controller"}]}
+		{id:"TC_ALLOYER" dependencies:["TC_SCORCHED"] hide_until_deps_complete:true title:"Scorched Alloying" x:10.0d y:-1.0d rewards:[{id:"TC_TC_ALLOYER_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_ALLOYER_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_ALLOYER_T1" type:"item" item:"tconstruct:scorched_alloyer"}]}
+		{id:"TC_FUEL" dependencies:["TC_SCORCHED"] hide_until_deps_complete:true title:"Scorched Fuel Handling" x:10.0d y:1.0d rewards:[{id:"TC_TC_FUEL_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"TC_TC_FUEL_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"TC_TC_FUEL_T1" type:"item" item:"tconstruct:scorched_fuel_tank"}]}
 	]
 }

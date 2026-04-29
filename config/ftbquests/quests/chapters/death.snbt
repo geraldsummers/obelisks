@@ -1,9 +1,16 @@
 {
-	filename:"death" group:"BTM_ROOT" id:"BTM_DEATH" order_index:2 title:"Iron Tier - Death and Blood"
-	quests:[
-		{id:"DE_HEART" dependencies:["SO_WATER","SO_COOKING"] hide_until_deps_complete:true title:"Still-Beating Heart" x:0.0d y:0.0d rewards:[{id:"DE_R1" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_R2" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_T1" type:"item" item:"rpgstats:still_beating_heart"}]}
-		{id:"DE_ALTAR" dependencies:["DE_HEART"] hide_until_deps_complete:true title:"First Blood Altar" x:2.0d y:0.0d rewards:[{id:"DE_R3" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_R4" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_T2" type:"item" item:"bloodmagic:altar"}]}
-		{id:"DE_WEAK_HEART" dependencies:["DE_ALTAR"] hide_until_deps_complete:true title:"Blood-Touched Heart" x:4.0d y:0.0d rewards:[{id:"DE_R5" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_R6" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_T3" type:"item" item:"kubejs:weak_blood_heart"}]}
-		{id:"DE_WEAK_ORB" dependencies:["DE_WEAK_HEART"] hide_until_deps_complete:true title:"Weak Blood Orb" x:6.0d y:0.0d rewards:[{id:"DE_R7" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_R8" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_T4" type:"item" item:"bloodmagic:weakbloodorb"}]}
+	default_hide_dependency_lines: false
+	filename: "death"
+	group: "BTM_ROOT"
+	id: "BTM_DEATH"
+	order_index: 2
+	title: "Iron Tier - Death and Blood"
+	quests: [
+		{id:"DE_HEART" dependencies:["SO_EXIT_MAGIC"] hide_until_deps_complete:true title:"Still-Beating Heart" x:0.0d y:0.0d rewards:[{id:"DE_DE_HEART_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_HEART_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_HEART_T1" type:"item" item:"rpgstats:still_beating_heart"}]}
+		{id:"DE_ALTAR" dependencies:["DE_HEART"] hide_until_deps_complete:true title:"First Blood Altar" x:2.0d y:0.0d rewards:[{id:"DE_DE_ALTAR_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_ALTAR_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_ALTAR_T1" type:"item" item:"bloodmagic:altar"}]}
+		{id:"DE_WEAK_HEART" dependencies:["DE_ALTAR"] hide_until_deps_complete:true title:"Blood-Touched Heart" x:4.0d y:0.0d rewards:[{id:"DE_DE_WEAK_HEART_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_WEAK_HEART_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_WEAK_HEART_T1" type:"item" item:"kubejs:weak_blood_heart"}]}
+		{id:"DE_WEAK_ORB" dependencies:["DE_WEAK_HEART"] hide_until_deps_complete:true title:"Weak Blood Orb" x:6.0d y:0.0d rewards:[{id:"DE_DE_WEAK_ORB_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_WEAK_ORB_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_WEAK_ORB_T1" type:"item" item:"bloodmagic:weakbloodorb"}]}
+		{id:"DE_BLANK" dependencies:["DE_WEAK_ORB"] hide_until_deps_complete:true title:"Blank Slate" x:8.0d y:-1.0d rewards:[{id:"DE_DE_BLANK_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_BLANK_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_BLANK_T1" type:"item" item:"bloodmagic:blankslate"}]}
+		{id:"DE_BODY_LOOP" dependencies:["DE_WEAK_ORB"] hide_until_deps_complete:true title:"Body Systems Matter" x:8.0d y:1.0d rewards:[{id:"DE_DE_BODY_LOOP_R0" type:"item" item:"dotcoinmod:copper_coin" count:4},{id:"DE_DE_BODY_LOOP_R1" type:"item" item:"dotcoinmod:iron_coin" count:4}] tasks:[{id:"DE_DE_BODY_LOOP_T1" type:"item" item:"farmersdelight:cooking_pot"},{id:"DE_DE_BODY_LOOP_T2" type:"item" item:"thirst:sand_filter"}]}
 	]
 }
