@@ -6689,6 +6689,10 @@ file = "docs/manual_test_plan.md"
 hash = "7f1934bb36147a8269db91d327fe487b812c0801018f2261976823f1baeace2a"
 
 [[files]]
+file = "docs/material_economy_recipe_pass.md"
+hash = "acff361f819fa2977736855d457da5fb3940d5eea2ce749aebfe0b7574de246f"
+
+[[files]]
 file = "docs/material_registry_map.md"
 hash = "d5a6e6d5333d2e79cafafb99dc12c89315e92fb3b2c35dac3d98386e93973a82"
 
@@ -7795,6 +7799,10 @@ hash = "24c62acdb6c0d3d64166b27deb0fe2b6e74eb59a8540bfe960cc27cefc6a8056"
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/110_extreme_y_band_reward_gates.js"
 hash = "2a93a445e4847a88971cb7a13defc29ab5fc97f0ee27ecbe22373c7cec5662a8"
+
+[[files]]
+file = "kubejs/server_scripts/30_recipe_replace/115_material_economy_recipe_pass.js"
+hash = "1d107464c1961cc420423b3fdefbac585a428ba903f2120691514d186bd6ca22"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/20_expensive_grout.js"
