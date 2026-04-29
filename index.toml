@@ -5786,7 +5786,7 @@ hash = "8387f89c2428af5ff3333bf506b4c0433355bc59746476e3ad10ffa0c6457388"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/starting_out.snbt"
-hash = "618c156656760abbba7356e91d8f003e5014cb8e38e7e444d943f9677509c727"
+hash = "4573f01a8b8e006fb0354b6c0df9b4d9abd6debb5781f43ba0c8c25a108bc596"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/synthesis_i.snbt"
@@ -10024,7 +10024,7 @@ hash = "48aab172366174312dbfb87853b8e158696855d12398fca998549d049020016c"
 
 [[files]]
 file = "tools/generate_expert_quest_book.mjs"
-hash = "040a403952baf07f94cdc5231222dbae2dd18866d8033b489e8720dc8de60de4"
+hash = "dbaf064b4a2c6e38ab46788687b0f5b64f26a59ba5e5dbc1b0c73f1693e1ec3d"
 
 [[files]]
 file = "tools/validate_quest_dependencies.mjs"
