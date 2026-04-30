@@ -6054,7 +6054,7 @@ hash = "7699b1da74a628bf541f530e721f842347519110f0c889dab2ec06fd12fdde06"
 
 [[files]]
 file = "config/pillagerpressure-common.toml"
-hash = "819459f6223bbd1da45341bc94aaea2f7f73bfa4fc6630e1e60c2a78d05b88ce"
+hash = "2a1b3e196c9a77e918623678129e8afaa3ab8abdee8e5f00875117303dbb238a"
 
 [[files]]
 file = "config/rbp/block_definitions/bamboo.toml"
@@ -8820,6 +8820,11 @@ hash = "ba80cc37957ed8c7f6766ea09fa2c0d4364e22d977a3d79cf1d95b0cec63e04d"
 metafile = true
 
 [[files]]
+file = "mods/cristel-lib.pw.toml"
+hash = "6a62d8663df5fe33f18c8a0d3784a3aab183b252c620c45fc98e677a71b06cde"
+metafile = true
+
+[[files]]
 file = "mods/curios.pw.toml"
 hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
 metafile = true
@@ -9734,6 +9739,11 @@ metafile = true
 [[files]]
 file = "mods/tome-of-blood-rebirth.pw.toml"
 hash = "856291689e9ec1338f076c5192b1e89df1008f820cbd47013a60ecd1b50bc9f9"
+metafile = true
+
+[[files]]
+file = "mods/towns-and-towers.pw.toml"
+hash = "00a0cba74675174812eea16aca533adfe9bac7b30a81a7e33dd81bd9343b45c4"
 metafile = true
 
 [[files]]
