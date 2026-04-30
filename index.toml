@@ -6054,7 +6054,7 @@ hash = "7699b1da74a628bf541f530e721f842347519110f0c889dab2ec06fd12fdde06"
 
 [[files]]
 file = "config/pillagerpressure-common.toml"
-hash = "2a1b3e196c9a77e918623678129e8afaa3ab8abdee8e5f00875117303dbb238a"
+hash = "f5dd675c92c58d98f9d44f642decf4c384af11a14b36ae0105f5954860e93581"
 
 [[files]]
 file = "config/rbp/block_definitions/bamboo.toml"
@@ -9403,7 +9403,7 @@ metafile = true
 
 [[files]]
 file = "mods/pillagerpressure-0.2.0.jar"
-hash = "8641cb96e18f311eda49be236d028eb5b911ec25937b6008fabb2b1e49b9c90e"
+hash = "43db84cae50dbffa7d4c7f4d5f03dc1501e6106fd5cba8360b61f5458d99aa8a"
 
 [[files]]
 file = "mods/placebo.pw.toml"

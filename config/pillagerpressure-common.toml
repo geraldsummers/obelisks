@@ -38,3 +38,7 @@
 	death_flags_per_kill = 5
 	max_death_flags_per_chunk = 12
 	officer_escape_health = 0.22
+	officer_engineering_enabled = true
+	officer_engineering_cooldown_ticks = 30
+	officer_engineering_ttl_ticks = 6000
+	officer_engineering_max_blocks = 24
