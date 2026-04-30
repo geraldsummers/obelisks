@@ -1,3 +1,0 @@
-variant=empirical_cut_thalassophobia marker=menu java_pid=386301 peakMiB=12227 peakGiB=11.94 disabled=1 staleDisabled=86
-[30Apr2026 08:57:49.094] [main/INFO] [Puzzles Lib/]: Loading 347 mods:
-[30Apr2026 08:58:17.083] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

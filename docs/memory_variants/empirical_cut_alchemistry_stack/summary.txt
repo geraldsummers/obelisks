@@ -1,3 +1,0 @@
-variant=empirical_cut_alchemistry_stack marker=menu java_pid=402409 peakMiB=2653 peakGiB=2.59 disabled=3 staleDisabled=86
-
-[30Apr2026 09:11:44.536] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas

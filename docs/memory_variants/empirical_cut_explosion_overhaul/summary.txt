@@ -1,3 +1,0 @@
-variant=empirical_cut_explosion_overhaul marker=menu java_pid=380642 peakMiB=12901 peakGiB=12.60 disabled=1 staleDisabled=86
-[30Apr2026 08:53:34.893] [main/INFO] [Puzzles Lib/]: Loading 347 mods:
-[30Apr2026 08:54:02.823] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

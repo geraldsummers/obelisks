@@ -1,3 +1,0 @@
-variant=empirical_combo_no_abyss_best_valid marker=menu java_pid=417443 peakMiB=13945 peakGiB=13.62 disabled=18 staleDisabled=86
-[30Apr2026 09:24:33.074] [main/INFO] [Puzzles Lib/]: Loading 329 mods:
-[30Apr2026 09:25:00.765] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

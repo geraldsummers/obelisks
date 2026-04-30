@@ -1,4 +1,0 @@
-variant=empirical_baseline_current_active marker=menu java_pid=378782 peakMiB=13827 peakGiB=13.50 disabled=0
-0 staleDisabled=86
-[30Apr2026 08:51:43.681] [main/INFO] [Puzzles Lib/]: Loading 348 mods:
-[30Apr2026 08:52:11.967] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

@@ -1,4 +1,0 @@
-191564:
- ZHeap           used 10240M, capacity 10240M, max capacity 10240M
- Metaspace       used 748875K, committed 753600K, reserved 1703936K
-  class space    used 160841K, committed 162880K, reserved 1048576K

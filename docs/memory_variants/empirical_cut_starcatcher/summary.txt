@@ -1,3 +1,0 @@
-variant=empirical_cut_starcatcher marker=menu java_pid=410048 peakMiB=13246 peakGiB=12.94 disabled=1 staleDisabled=86
-[30Apr2026 09:18:12.824] [main/INFO] [Puzzles Lib/]: Loading 346 mods:
-[30Apr2026 09:18:40.280] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

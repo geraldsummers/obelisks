@@ -1,8 +1,0 @@
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477587,"elapsed":0,"processes":1,"rssKb":4304,"maxProcessRssKb":4304}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477589,"elapsed":2,"processes":1,"rssKb":72452,"maxProcessRssKb":72452}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477591,"elapsed":4,"processes":1,"rssKb":73216,"maxProcessRssKb":73216}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477593,"elapsed":6,"processes":1,"rssKb":73892,"maxProcessRssKb":73892}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477595,"elapsed":8,"processes":2,"rssKb":661988,"maxProcessRssKb":572980}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477597,"elapsed":10,"processes":2,"rssKb":938896,"maxProcessRssKb":849888}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477599,"elapsed":12,"processes":2,"rssKb":1360312,"maxProcessRssKb":1271304}
-{"variant":"jvm_xmx2g_lite_core_tech","t":1777477601,"elapsed":14,"processes":2,"rssKb":1601292,"maxProcessRssKb":1512284}

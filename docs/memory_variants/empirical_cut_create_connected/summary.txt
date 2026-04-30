@@ -1,3 +1,0 @@
-variant=empirical_cut_create_connected marker=menu java_pid=390056 peakMiB=13113 peakGiB=12.81 disabled=1 staleDisabled=86
-[30Apr2026 09:00:39.730] [main/INFO] [Puzzles Lib/]: Loading 347 mods:
-[30Apr2026 09:01:07.692] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

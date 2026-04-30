@@ -1,5 +1,0 @@
-marker=exited elapsed=31 java_pid=423309 profile=docs/memory_variants/empirical_world_after_abyss_thalass_cut.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-diagnostics=docs/memory_variants/empirical_world_after_abyss_thalass_cut_diagnostics
-68:[30Apr2026 09:38:59.305] [main/INFO] [Puzzles Lib/]: Loading 433 mods:
-tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
-peakRssMiB=4746 peakRssGiB=4.64

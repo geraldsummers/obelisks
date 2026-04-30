@@ -1,3 +1,0 @@
-variant=empirical_cut_weather2 marker=menu java_pid=384612 peakMiB=12854 peakGiB=12.55 disabled=2 staleDisabled=86
-[30Apr2026 08:56:24.046] [main/INFO] [Puzzles Lib/]: Loading 346 mods:
-[30Apr2026 08:56:51.872] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

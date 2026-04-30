@@ -1,7 +1,0 @@
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477443,"elapsed":0,"processes":1,"rssKb":3296,"maxProcessRssKb":3296}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477445,"elapsed":2,"processes":1,"rssKb":72976,"maxProcessRssKb":72976}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477447,"elapsed":4,"processes":1,"rssKb":73700,"maxProcessRssKb":73700}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477449,"elapsed":6,"processes":1,"rssKb":74344,"maxProcessRssKb":74344}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477451,"elapsed":8,"processes":2,"rssKb":883440,"maxProcessRssKb":794852}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477453,"elapsed":10,"processes":2,"rssKb":1011000,"maxProcessRssKb":922412}
-{"variant":"jvm_xmx2g_ultra_cut_envelope","t":1777477455,"elapsed":12,"processes":2,"rssKb":1438552,"maxProcessRssKb":1349964}

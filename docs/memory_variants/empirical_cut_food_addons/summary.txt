@@ -1,3 +1,0 @@
-variant=empirical_cut_food_addons marker=menu java_pid=393266 peakMiB=12284 peakGiB=12.00 disabled=13 staleDisabled=86
-[30Apr2026 09:03:30.245] [main/INFO] [Puzzles Lib/]: Loading 334 mods:
-[30Apr2026 09:03:58.364] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

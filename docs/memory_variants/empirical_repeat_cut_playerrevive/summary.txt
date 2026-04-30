@@ -1,3 +1,0 @@
-variant=empirical_repeat_cut_playerrevive marker=menu java_pid=405159 peakMiB=13112 peakGiB=12.81 disabled=1 staleDisabled=86
-[30Apr2026 09:14:38.410] [main/INFO] [Puzzles Lib/]: Loading 347 mods:
-[30Apr2026 09:15:06.711] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

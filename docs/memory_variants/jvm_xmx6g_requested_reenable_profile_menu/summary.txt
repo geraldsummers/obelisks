@@ -1,3 +1,0 @@
-variant=jvm_xmx6g_requested_reenable_profile_menu marker=menu java_pid=347452 peakMiB=12878 peakGiB=12.58 staleDisabled=86
-[30Apr2026 08:21:09.670] [main/INFO] [Puzzles Lib/]: Loading 348 mods:
-[30Apr2026 08:21:38.010] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 32768x16384x4 minecraft:textures/atlas/blocks.png-atlas

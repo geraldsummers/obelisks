@@ -1,9 +1,0 @@
-marker=failed elapsed=119 java_pid=181060 profile=docs/memory_variants/jvm_xmx10g_real.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-diagnostics=docs/memory_variants/jvm_xmx10g_real_diagnostics
-66:[29Apr2026 23:31:44.730] [main/INFO] [Puzzles Lib/]: Loading 430 mods:
-39033:[29Apr2026 23:33:10.086] [Render thread/WARN] [ModernFix/]: Initial datapack load took 32.09 s
-39347:[29Apr2026 23:33:19.984] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-39351:[29Apr2026 23:33:20.549] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 686 ms
-41514:[29Apr2026 23:33:27.079] [Render thread/INFO] [STDOUT/]: [net.minecraft.server.Bootstrap:m_135875_:151]: #@!@# Game crashed! Crash report saved to: #@!@# /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-04-29_23.33.23-server.txt
-tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=1 fpsMin= fpsAvg= fpsMax=
-peakRssMiB=21074 peakRssGiB=20.58

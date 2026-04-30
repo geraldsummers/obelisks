@@ -1,1 +1,0 @@
-cat: /proc/472397/smaps_rollup: No such file or directory

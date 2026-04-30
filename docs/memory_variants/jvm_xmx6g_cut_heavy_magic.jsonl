@@ -1,9 +1,0 @@
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475223,"elapsed":0,"processes":1,"rssKb":3820,"maxProcessRssKb":3820}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475225,"elapsed":2,"processes":1,"rssKb":72508,"maxProcessRssKb":72508}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475227,"elapsed":4,"processes":1,"rssKb":73156,"maxProcessRssKb":73156}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475229,"elapsed":6,"processes":1,"rssKb":73812,"maxProcessRssKb":73812}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475231,"elapsed":8,"processes":1,"rssKb":74616,"maxProcessRssKb":74616}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475233,"elapsed":10,"processes":2,"rssKb":942000,"maxProcessRssKb":853088}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475235,"elapsed":12,"processes":2,"rssKb":1987304,"maxProcessRssKb":1898392}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475238,"elapsed":15,"processes":2,"rssKb":2406520,"maxProcessRssKb":2317608}
-{"variant":"jvm_xmx6g_cut_heavy_magic","t":1777475240,"elapsed":17,"processes":2,"rssKb":2438172,"maxProcessRssKb":2349260}

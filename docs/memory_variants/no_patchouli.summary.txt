@@ -1,6 +1,0 @@
-disabled guideme-20.1.14.jar
-disabled modonomicon-1.20.1-forge-1.79.3.jar
-disabled Patchouli-1.20.1-85-FORGE.jar
-marker=failed elapsed=14 java_pid=158352 profile=docs/memory_variants/no_patchouli.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-175:[29Apr2026 23:05:23.401] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-04-29_23.05.23-fml.txt
-peakRssMiB=2961 peakRssGiB=2.89

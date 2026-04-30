@@ -1,3 +1,0 @@
-variant=empirical_cut_pollution marker=failed java_pid=411679 peakMiB=2304 peakGiB=2.25 disabled=2 staleDisabled=86
-
-[30Apr2026 09:19:36.590] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas

@@ -1,4 +1,0 @@
-variant=empirical_world_fresh_after_abyss_thalass_cut_v2 marker=exited java_pid=445956 peakMiB=10367 peakGiB=10.12 staleDisabled=86 clicked=1
-[30Apr2026 09:51:32.690] [main/INFO] [Puzzles Lib/]: Loading 346 mods:
-[30Apr2026 09:52:00.749] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 16384x16384x4 minecraft:textures/atlas/blocks.png-atlas
-

@@ -1,6 +1,0 @@
-marker=exited elapsed=402 java_pid=472397 profile=docs/memory_variants/empirical_world_entry_repo_active_after_abyss_thalass_cut.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-diagnostics=docs/memory_variants/empirical_world_entry_repo_active_after_abyss_thalass_cut_diagnostics
-57:[30Apr2026 10:19:33.036] [main/INFO] [Puzzles Lib/]: Loading 346 mods:
-103322:[30Apr2026 10:20:06.046] [Render thread/WARN] [ModernFix/]: Initial datapack load took 1.167 s
-tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
-peakRssMiB=10452 peakRssGiB=10.21

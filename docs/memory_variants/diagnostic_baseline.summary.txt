@@ -1,9 +1,0 @@
-marker=in_game elapsed=129 java_pid=163543 profile=docs/memory_variants/diagnostic_baseline.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-diagnostics=docs/memory_variants/diagnostic_baseline_diagnostics
-66:[29Apr2026 23:10:54.798] [main/INFO] [Puzzles Lib/]: Loading 430 mods:
-39031:[29Apr2026 23:12:18.090] [Render thread/WARN] [ModernFix/]: Initial datapack load took 28.34 s
-39345:[29Apr2026 23:12:27.710] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-39353:[29Apr2026 23:12:28.348] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 741 ms
-40616:[29Apr2026 23:12:46.647] [Render thread/WARN] [ModernFix/]: Time from main menu to in-game was 28.553663 seconds
-40617:[29Apr2026 23:12:46.648] [Render thread/WARN] [ModernFix/]: Total time to load game and open world was 132.56166 seconds
-peakRssMiB=25022 peakRssGiB=24.44

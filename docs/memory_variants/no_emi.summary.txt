@@ -1,9 +1,0 @@
-disabled emitrades-forge-1.2.1+mc1.20.1.jar
-disabled emi_enchanting-0.1.2+1.20.1+forge.jar
-disabled emi_ores-1.2+1.20.1+forge.jar
-disabled emi-1.1.22+1.20.1+forge.jar
-disabled emi_loot-0.7.9+1.20.1+forge.jar
-disabled jei-1.20.1-forge-15.20.0.130.jar
-marker=failed elapsed=14 java_pid=155310 profile=docs/memory_variants/no_emi.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
-165:[29Apr2026 23:02:34.165] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-04-29_23.02.34-fml.txt
-peakRssMiB=3087 peakRssGiB=3.02
