@@ -24,7 +24,7 @@
 ["pillager patrols"]
 	#Add custom patrol behavior.
 	#If this value is false, special patrols will not spawn either.
-	enable_custom_patrols = true
+	enable_custom_patrols = false
 	#The amount of time that has to pass when attempting to spawn a patrol.
 	#Vanilla patrols happen on average every 3 days.
 	#EX: (24,000 ticks = 1 minecraft day)

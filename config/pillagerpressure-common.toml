@@ -1,0 +1,26 @@
+[scheduler]
+	enabled = true
+	interval_ticks = 1200
+	spawn_chance = 0.95
+	overworld_only = true
+	allow_creative_players = true
+	skip_spectator_players = true
+	disable_vanilla_patrol_spawning = true
+
+[placement]
+	min_radius = 32
+	max_radius = 64
+	spawn_attempts = 24
+	max_active_near_player = 48
+	active_check_radius = 128
+
+[patrol]
+	spawn_leader = true
+	min_pillagers = 4
+	max_pillagers = 7
+	special_chance = 0.75
+	special_amount = 2
+	special_illagers = ["minecraft:vindicator", "minecraft:evoker", "minecraft:witch", "takesapillage:archer", "takesapillage:skirmisher", "takesapillage:legioner", "savage_and_ravage:griefer", "savage_and_ravage:executioner", "savage_and_ravage:iceologer", "savage_and_ravage:trickster"]
+	target_player_immediately = true
+	persistent_patrol_mobs = true
+	drop_ominous_bottle_from_leaders = true
