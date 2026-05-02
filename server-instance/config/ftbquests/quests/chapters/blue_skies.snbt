@@ -1,0 +1,405 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "blue_skies"
+	group: "3BF99559A31D6EB4"
+	id: "7EC861C0C4B9AC65"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Blue Journal."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:blue_journal"
+			id: "4E6030C5E0E8B21A"
+			rewards: [
+				{
+					count: 4
+					id: "51ABC161399B447E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "075AE0CB31C4FF77"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "737429F946EB01B7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0CA15DA6CBBFEFC6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "37CA0AE94542D766"
+				item: "blue_skies:blue_journal"
+				type: "item"
+			}]
+			title: "Blue Journal"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Aquite, Charoite."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:aquite"
+			id: "3B7D4BC365A12666"
+			rewards: [
+				{
+					count: 4
+					id: "573C7734C3BD8ED1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05DAFF19801A6798"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6F728EB7D5D96008"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BF54A75E5DF297A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3C19D10E25DE662F"
+					item: "blue_skies:aquite"
+					type: "item"
+				}
+				{
+					id: "5F66FD6341FB9AA7"
+					item: "blue_skies:charoite"
+					type: "item"
+				}
+			]
+			title: "Sky Materials"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Alchemy Table."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:alchemy_table"
+			icon_scale: 1.18d
+			id: "7C28F58FF3B15223"
+			rewards: [
+				{
+					count: 4
+					id: "006B856361A12D3A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F236308E1341CC4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D4678131D8EFD1C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FC9696460458104"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "1489D3C229D8A4BE"
+				item: "blue_skies:alchemy_table"
+				type: "item"
+			}]
+			title: "Alchemy Table"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3B7D4BC365A12666"]
+			description: [
+				"Goal: obtain Turquoise Stone."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:turquoise_stone"
+			id: "01560F3E5C5AB868"
+			rewards: [
+				{
+					count: 4
+					id: "65873F33AE3CC9EF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "205144F13FC64BD3"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6CABE8E86F83D456"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A962C23623453B1"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "78D1781FBF082A5D"
+				item: "blue_skies:turquoise_stone"
+				type: "item"
+			}]
+			title: "Turquoise Stonework"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["01560F3E5C5AB868"]
+			description: [
+				"Goal: obtain Blinding Key."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:blinding_key"
+			icon_scale: 1.18d
+			id: "52A04AB4A6EEC586"
+			rewards: [
+				{
+					count: 4
+					id: "242CE5EB610F9436"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38AEFC3A0E7EAEC8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "40063A728706EE68"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A7D1E495D776830"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6F50C96DAA50FE9B"
+				item: "blue_skies:blinding_key"
+				type: "item"
+			}]
+			title: "Blinding Key"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C28F58FF3B15223"]
+			description: [
+				"Goal: obtain Nature Key."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:nature_key"
+			id: "65BB68664702A6EE"
+			rewards: [
+				{
+					count: 4
+					id: "63363E38A3AB51FF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "505650D3BAD169CB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51468C12C558C846"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E79CCF9D69F11DD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "617DEA951B93F7AE"
+				item: "blue_skies:nature_key"
+				type: "item"
+			}]
+			title: "Nature Key"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C28F58FF3B15223"]
+			description: [
+				"Goal: obtain Poison Key."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:poison_key"
+			id: "574FF2C0E27A9920"
+			rewards: [
+				{
+					count: 4
+					id: "4DAAB846E72E2F3B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D2AB99242D7FBF7"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39EB33C441F63D35"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3751EB3F2655341F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4F2383976CF48D84"
+				item: "blue_skies:poison_key"
+				type: "item"
+			}]
+			title: "Poison Key"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"52A04AB4A6EEC586"
+				"65BB68664702A6EE"
+			]
+			description: [
+				"Goal: obtain Summoner Trophy, Arachnarch Trophy."
+				"Why it matters: This advances Blue Skies exploration through local materials, keys, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "blue_skies:summoner_trophy"
+			icon_scale: 1.18d
+			id: "68AEA09CF8D53615"
+			rewards: [
+				{
+					count: 4
+					id: "3C0F32ABEB0B234E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55E4F15E8D4EE4EC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1124089CC44891E6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0250BF29827D1163"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "18C77F420A7DED0D"
+					item: "blue_skies:summoner_trophy"
+					type: "item"
+				}
+				{
+					id: "3AD36856044FEA80"
+					item: "blue_skies:arachnarch_trophy"
+					type: "item"
+				}
+			]
+			title: "Boss Trophies"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Blue Skies"
+}

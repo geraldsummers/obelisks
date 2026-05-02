@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:empty",
+  "features": "create_new_age:thorium_ore",
+  "step": "underground_ores"
+}

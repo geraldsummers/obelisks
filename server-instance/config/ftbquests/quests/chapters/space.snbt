@@ -1,0 +1,1016 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "space"
+	group: "410B481B7D8A23F1"
+	id: "52D4F58B0C6E5EBB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Rocket Engineer Table."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Use this as the dedicated space workbench. Place it near your OC2R and Create manufacturing area because the following steps need mechanical crafting, sequenced assembly, pressing, cutting, fluids, and reusable staging space."
+				"Before moving on, reserve room for a rocket parts line instead of treating this as a single crafting table."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:rocket_engineer_table"
+			id: "2D2C04784A1D50DC"
+			rewards: [
+				{
+					count: 4
+					id: "7FAB34FD9FEEE79F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5385806D3176F138"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2539F5F6D2BAE98A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A9705DC864B10E2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7486C3026315803B"
+				item: "creatingspace:rocket_engineer_table"
+				type: "item"
+			}]
+			title: "Rocket Engineer Table"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2D2C04784A1D50DC"]
+			description: [
+				"Goal: obtain Space Machine Casing."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"This is the pack gate for space-era machines. If a recipe asks for this casing, it belongs after Create brass, Power Grid, and OC2R control."
+				"Craft extra casings before starting rocket work; later machines and synthesis blocks should consume them repeatedly."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:space_machine_casing"
+			icon_scale: 1.18d
+			id: "50F234860F0786DA"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "4B341A28407B5D31"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7924F0F26B71CF3B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2504C8C1419D03AC"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BBF26C91F11629C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "38058584677DF313"
+				item: "kubejs:space_machine_casing"
+				type: "item"
+			}]
+			title: "Space Machine Casing"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50F234860F0786DA"]
+			description: [
+				"Goal: obtain Basic Spacesuit Fabric."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Make this with Create sequenced assembly. The fabric is not just armor cloth; it proves you can run a repeatable deploy-and-press line for survival equipment."
+				"Inspect the recipe before batch crafting because suit pieces and oxygen equipment both pull from this material family."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:basic_spacesuit_fabric"
+			id: "440D705E620A512A"
+			rewards: [
+				{
+					count: 4
+					id: "29A3C098117A20E0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74E6A621605A1148"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "427390F76C8590FE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4535238E4B37B916"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "05C68998B34DE2E8"
+				item: "creatingspace:basic_spacesuit_fabric"
+				type: "item"
+			}]
+			title: "Basic Suit Fabric"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Basic Spacesuit Helmet, Basic Spacesuit Leggings, Basic Spacesuit Boots."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Build the helmet, leggings, and boots as a minimum away-from-Earth suit kit. The quest intentionally omits a chestplate because oxygen backtanks fill that body role."
+				"Do not launch with only the suit pieces; the next oxygen node is part of the same survival checklist."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "creatingspace:basic_spacesuit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DA8DFE66C1C9272"
+			rewards: [
+				{
+					count: 4
+					id: "6CC274E19DFA2617"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B87C69F435DF1C8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0EC6E129CC5584EF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3389436119B65203"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "27F016AC3B78320B"
+					item: {
+						Count: 1
+						id: "creatingspace:basic_spacesuit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "214FC834BB47FCEA"
+					item: {
+						Count: 1
+						id: "creatingspace:basic_spacesuit_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46C14871E36E1E8A"
+					item: {
+						Count: 1
+						id: "creatingspace:basic_spacesuit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Basic Spacesuit"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Copper Oxygen Backtank."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Craft a copper oxygen backtank with mechanical crafting. This is your first portable oxygen source and should be kept filled before any no-oxygen route."
+				"Treat oxygen as expedition stock like food and water: make a refill plan, not just one tank."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:copper_oxygen_backtank"
+			id: "6799182314260F96"
+			rewards: [
+				{
+					count: 4
+					id: "3DCA7FAFDEDB1F6E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C8E0093C8CD8A62"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "009575F4E993F08E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "091E31B22B9E1C5A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "10CCCC47F6AF54F9"
+				item: "creatingspace:copper_oxygen_backtank"
+				type: "item"
+			}]
+			title: "Oxygen Backtank"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50F234860F0786DA"]
+			description: [
+				"Goal: obtain Mechanical Electrolyzer."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Build this before relying on oxygen infrastructure. It turns the space branch into a fluid-processing branch rather than a simple armor checklist."
+				"Place it where water, rotation, and fluid pipes can be maintained without crossing your main workshop paths."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:mechanical_electrolyzer"
+			id: "1BE22ED7751A2D7B"
+			rewards: [
+				{
+					count: 4
+					id: "5256394F9F54D098"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "03B7E97C4AB8530D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4E6B3B791B6BB973"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B45425F7AB96EDD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "756BFEC737166407"
+				item: "creatingspace:mechanical_electrolyzer"
+				type: "item"
+			}]
+			title: "Mechanical Electrolyzer"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Air Liquefier."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"The air liquefier starts cryogenic fluid handling. It is a preparation step for oxygen, hydrogen, methane, and CO2 logistics later."
+				"Leave access for tanks and pipes; cramped placement makes space fuel work painful."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:air_liquefier"
+			id: "692D32BACFDDAB48"
+			rewards: [
+				{
+					count: 4
+					id: "6F98A9D9E03D0A5A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C340231D306CCDC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27DEE806EC6BBCCF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7DF1F025611F046E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4E1DFFEE26E78355"
+				item: "creatingspace:air_liquefier"
+				type: "item"
+			}]
+			title: "Air Liquefier"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Cryogenic Tank."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Use cryogenic tanks as physical buffers for cold fluids. This keeps the space branch bounded: fluids live in tanks and pipes, not invisible global storage."
+				"Make at least one spare tank before scaling chemical synthesis or fuel handling."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:cryogenic_tank"
+			id: "51230990EBB8A5BC"
+			rewards: [
+				{
+					count: 4
+					id: "0B7E13CC95EC79EC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "35F39C6C877A9523"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F138907B8D870E3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "58C0C9A749DE25B4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0E208665BD398947"
+				item: "creatingspace:cryogenic_tank"
+				type: "item"
+			}]
+			title: "Cryogenic Storage"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4DA8DFE66C1C9272"
+				"6799182314260F96"
+			]
+			description: [
+				"Goal: obtain Engine Blueprint, Design Blueprint."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Engine recipes use blueprint-style sequenced assembly. Keep the blueprint route readable because it carries NBT through several stages."
+				"If EMI shows partial-NBT ingredients, follow the shown recipe path exactly instead of substituting a fresh blank blueprint."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:engine_blueprint"
+			id: "12E62D55816C125A"
+			rewards: [
+				{
+					count: 4
+					id: "766B66019F128414"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53251B475CB25A23"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "155C37B4D1497B24"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29500E5F307276F2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6F81F629B20DABF7"
+					item: "creatingspace:engine_blueprint"
+					type: "item"
+				}
+				{
+					id: "37034CECB0390FFF"
+					item: "creatingspace:design_blueprint"
+					type: "item"
+				}
+			]
+			title: "Engine Blueprint"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Reinforced Copper Sheet, Monel Sheet, Inconel Sheet, and related items."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"These alloys define rocket part quality. Reinforced copper is the simple entry; Monel, Inconel, and Hastelloy represent higher heat and corrosion resistance."
+				"Make sheets through pressing and keep the alloy chain documented in your workshop. Space should feel like metallurgy plus Create, not a one-off recipe."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:reinforced_copper_sheet"
+			id: "0EC6574894C4ADC2"
+			rewards: [
+				{
+					count: 4
+					id: "61F923E1EE3E9F78"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47CF15DFA9606E96"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74CF5E5738457744"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "527BC64B9D2947AB"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "31D9322313579E1D"
+					item: "creatingspace:reinforced_copper_sheet"
+					type: "item"
+				}
+				{
+					id: "4C27F86F7F3DECA9"
+					item: "creatingspace:monel_sheet"
+					type: "item"
+				}
+				{
+					id: "68FD6B3512FB0E9C"
+					item: "creatingspace:inconel_sheet"
+					type: "item"
+				}
+				{
+					id: "135F74214F1D11D1"
+					item: "creatingspace:hastelloy_sheet"
+					type: "item"
+				}
+			]
+			title: "Rocket Alloy Sheets"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Goal: obtain Combustion Chamber, Power Pack, Exhaust Pack."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Assemble combustion, power, and exhaust packs before the engine itself. These are the real rocket manufacturing steps."
+				"Expect multiple sequenced assembly passes. A failed or mismatched blueprint usually means the wrong material level or exhaust path was selected."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:combustion_chamber"
+			id: "0F412A53D59891A6"
+			rewards: [
+				{
+					count: 4
+					id: "2F3F2D5B145C0149"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67A4B402FD3CCB53"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DEBFAE84E9E3C15"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "70382E62359CBE27"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "39663828187AF421"
+					item: "creatingspace:combustion_chamber"
+					type: "item"
+				}
+				{
+					id: "13898418C3F27D5E"
+					item: "creatingspace:power_pack"
+					type: "item"
+				}
+				{
+					id: "5509136189BA62C3"
+					item: "creatingspace:exhaust_pack"
+					type: "item"
+				}
+			]
+			title: "Engine Subassemblies"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Rocket Engine."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"The final engine combines the power and exhaust assemblies through the blueprint path. This is the point where the space line becomes a serious manufactured product."
+				"Make only one first, verify it works, then scale after the recipe path is stable."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:rocket_engine"
+			id: "16E8AC1A4462F318"
+			rewards: [
+				{
+					count: 4
+					id: "51BE68A8818E7B4A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "44ED8C7F89B5F516"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45DD2F2B6EF3A0B9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4FD8AD6D8A13E185"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4B3A6EDA3857642A"
+				item: "creatingspace:rocket_engine"
+				type: "item"
+			}]
+			title: "Rocket Engine"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Rocket Casing."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Rocket casing turns alloy sheet production into a vehicle body. Keep casing production separate from engine production so shortages are visible."
+				"This is also the checkpoint that moon aluminum and cobalt routes are becoming relevant."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:rocket_casing"
+			icon_scale: 0.95d
+			id: "1DAA02311B3709A9"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "29D946C4036F3B53"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0EB17BFE2940C028"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22913DA4E5492793"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "283799F2E68DFADD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "57EFB84571C7DD3B"
+				item: "creatingspace:rocket_casing"
+				type: "item"
+			}]
+			title: "Rocket Casing"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["16E8AC1A4462F318"]
+			description: [
+				"Goal: obtain Rocket Controls."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Rocket controls connect Create control hardware to the vehicle. You should already have redstone links, electron tubes, and sturdy sheet production automated or at least repeatable."
+				"Controls are not power by themselves; they are the navigation and operation layer."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:rocket_controls"
+			id: "09911A0A63340703"
+			rewards: [
+				{
+					count: 4
+					id: "7BF49354D7D8F31A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "750CF754264EE132"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3568FA8668832E2E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E6D4B94DD5087DC"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "573113FE40D0B3C0"
+				item: "creatingspace:rocket_controls"
+				type: "item"
+			}]
+			title: "Rocket Controls"
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["51230990EBB8A5BC"]
+			description: [
+				"Goal: obtain Oxygen Sealer, Room Pressuriser."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Build sealing and pressurising blocks before depending on off-world bases. The goal is a survivable room, not just a suit."
+				"Test the room locally with tanks and pipes before moving materials through a dimension route."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:oxygen_sealer"
+			id: "0F803ACEC879670D"
+			rewards: [
+				{
+					count: 4
+					id: "044202819024FBE1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FEF5F55B3A9C239"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F628B4BF9554BC3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "322C4DE96FCD5DF3"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1618626A2CB6C746"
+					item: "creatingspace:oxygen_sealer"
+					type: "item"
+				}
+				{
+					id: "722C7FCAC901B734"
+					item: "creatingspace:room_pressuriser"
+					type: "item"
+				}
+			]
+			title: "Sealed Room Support"
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1DAA02311B3709A9"
+				"0F803ACEC879670D"
+			]
+			description: [
+				"Goal: obtain Chemical Synthesizer."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"The Chemical Synthesizer is the exit into space-era synthesis. It connects rocket progress back into the matter graph and unlocks later AE2 and fusion preparation."
+				"Place it near cryogenic storage and the Acid Vat/chemistry area, because future recipes should bridge those systems."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:chemical_synthesizer"
+			icon_scale: 1.18d
+			id: "55DE0B5865D65506"
+			rewards: [
+				{
+					count: 4
+					id: "235B44AA169B3232"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3264BCBF49C4D32A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04DD708FEDA979E7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6AA63C6893C7DB0F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "34D48B82B8D33A62"
+				item: "creatingspace:chemical_synthesizer"
+				type: "item"
+			}]
+			title: "Chemical Synthesizer"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Advanced Spacesuit Fabric."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Advanced suit fabric upgrades the survival kit using late space materials. It should be produced as a controlled batch, not hand-crafted one piece at a time."
+				"This is the material checkpoint before advanced armor and higher-risk routes."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:advanced_spacesuit_fabric"
+			id: "00B4597F6F43D2F4"
+			rewards: [
+				{
+					count: 4
+					id: "69147D8C8D24ECDD"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1EF2A9A98CE94467"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1327CD74C9FF7B9A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D322E6AFB1FE92F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4D912A1BE5453C3D"
+				item: "creatingspace:advanced_spacesuit_fabric"
+				type: "item"
+			}]
+			title: "Advanced Suit Fabric"
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["00B4597F6F43D2F4"]
+			description: [
+				"Goal: obtain Advanced Spacesuit Helmet, Advanced Spacesuit Leggings, Advanced Spacesuit Boots, and related items."
+				"Why it matters: This prepares rockets, suits, and chemistry for space-era progression."
+				"Upgrade to the advanced suit and netherite oxygen backtank before treating space as routine travel."
+				"This is the chapter capstone: you now have suit protection, portable oxygen, room support, rocket manufacturing, and chemical synthesis online."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "creatingspace:advanced_spacesuit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "41CD326691460AEC"
+			rewards: [
+				{
+					count: 4
+					id: "7508125E851C970F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7838D4B1C0BCF36D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1792E87EF9B797DB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "048475E0515170BF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "78D9E2A339D32DB4"
+					item: {
+						Count: 1
+						id: "creatingspace:advanced_spacesuit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CF3EF6430A32BCE"
+					item: {
+						Count: 1
+						id: "creatingspace:advanced_spacesuit_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1544D698AB61A0D2"
+					item: {
+						Count: 1
+						id: "creatingspace:advanced_spacesuit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44B31AE0A7CA641C"
+					item: "creatingspace:netherite_oxygen_backtank"
+					type: "item"
+				}
+			]
+			title: "Advanced Spacesuit"
+			x: 20.0d
+			y: 0.0d
+		}
+	]
+	title: "Creating Space"
+}

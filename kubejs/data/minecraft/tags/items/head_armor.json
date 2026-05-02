@@ -1,0 +1,21 @@
+{
+  "replace": true,
+  "values": [
+    "protection_pixel:linkplate_helmet",
+    "protection_pixel:nightdemonas_helmet",
+    "protection_pixel:nightdemon_helmet",
+    "protection_pixel:tosaki_helmet",
+    "protection_pixel:bloodprisoneras_helmet",
+    "protection_pixel:bloodprisoner_helmet",
+    "protection_pixel:closedas_helmet",
+    "protection_pixel:closed_helmet",
+    "protection_pixel:hunteras_helmet",
+    "protection_pixel:hunter_helmet",
+    "protection_pixel:hammeras_helmet",
+    "protection_pixel:hammer_helmet",
+    "protection_pixel:lanceras_helmet",
+    "protection_pixel:lancer_helmet",
+    "protection_pixel:plagueas_helmet",
+    "protection_pixel:plague_helmet"
+  ]
+}

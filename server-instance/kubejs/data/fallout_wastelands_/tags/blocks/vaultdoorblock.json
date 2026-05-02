@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "fallout_wastelands_:vault_door_sealed",
+    "fallout_wastelands_:vault_door_open"
+  ]
+}

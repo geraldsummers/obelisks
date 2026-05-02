@@ -1,0 +1,4 @@
+marker=failed elapsed=14 java_pid=1337320 profile=docs/memory_variants/crash_test_no_fabric_api_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+163:[01May2026 13:21:17.403] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_13.21.17-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=2627 peakRssGiB=2.57

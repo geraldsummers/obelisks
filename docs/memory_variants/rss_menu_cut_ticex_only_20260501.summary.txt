@@ -1,0 +1,7 @@
+disabled ticex-mc1.20.1-0.5.1-all.jar
+marker=sampled_timeout elapsed=300 java_pid=1300959 profile=docs/memory_variants/rss_menu_cut_ticex_only_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=9189376 postGcJavaRssMiB=8974
+diagnostics=docs/memory_variants/rss_menu_cut_ticex_only_20260501_diagnostics
+57:[01May2026 12:55:00.683] [main/INFO] [Puzzles Lib/]: Loading 355 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=9953 peakRssGiB=9.72

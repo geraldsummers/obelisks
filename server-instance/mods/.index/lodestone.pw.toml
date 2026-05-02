@@ -1,0 +1,17 @@
+filename = 'lodestone-1.20.1-1.6.4.1.jar'
+name = 'Lodestone'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'lodestone-1.20.1-1.6.4.1.jar'
+
+[download]
+hash = 'e6346060ae70cbf103b231d8a1536bcd044c84a8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6213794
+project-id = 616457

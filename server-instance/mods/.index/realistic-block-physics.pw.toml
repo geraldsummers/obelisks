@@ -1,0 +1,17 @@
+filename = 'rbp-1.20.1-1.0.0.jar'
+name = 'Realistic Block Physics'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Realistic Block Physics [1.20.1-1.0.0]'
+
+[download]
+hash = '1c6a18411d5e4c53ebfd57e0b1bbaa56455ec44c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6393411
+project-id = 375616

@@ -1,0 +1,1926 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "food_catalogue"
+	group: "1535A2E7C7CA772B"
+	id: "7457EB2B106AF545"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Apple, Baked Potato, Beetroot, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"This catalogue keeps the vanilla foods visible. They are simple, portable, and often the base ingredients for better route food."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:apple"
+			id: "3673B73DE6F5D4A6"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "173CD5F3AE17071B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18635639B2ED1EC5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "78C1C00DE5C4AFF8"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "2D930515FC0ADDD6"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "2F8B409BF90017E8"
+					item: "minecraft:beetroot"
+					type: "item"
+				}
+				{
+					id: "234F56BF7596068D"
+					item: "minecraft:beetroot_soup"
+					type: "item"
+				}
+				{
+					id: "1B78A7835AB5E2A0"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "2D0A51DFBB18FA0C"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					id: "6197A104B13CC671"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					id: "1F197627E5628B67"
+					item: "minecraft:cod"
+					type: "item"
+				}
+				{
+					id: "5DA8A19E3700E960"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "5CCA914668E31FCA"
+					item: "minecraft:cooked_chicken"
+					type: "item"
+				}
+				{
+					id: "44D742EFB0896B7B"
+					item: "minecraft:cooked_cod"
+					type: "item"
+				}
+				{
+					id: "4321E0FF19CD3EF0"
+					item: "minecraft:cooked_mutton"
+					type: "item"
+				}
+				{
+					id: "373B19CBDF704CE3"
+					item: "minecraft:cooked_porkchop"
+					type: "item"
+				}
+				{
+					id: "3EE3CD0B6DE65ED4"
+					item: "minecraft:cooked_rabbit"
+					type: "item"
+				}
+				{
+					id: "4ED5DAB8BC843207"
+					item: "minecraft:cooked_salmon"
+					type: "item"
+				}
+				{
+					id: "547248C5BCAFF304"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "6E740863E81F17AB"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					id: "6BD2E69EBDB8D147"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+				{
+					id: "3FFC7DEF718A36E4"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "79F2F50E18B209CE"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "1F3CD33A21683861"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "290F6F640D486BC8"
+					item: "minecraft:melon_slice"
+					type: "item"
+				}
+				{
+					id: "545FB23E533C8E0A"
+					item: "minecraft:mushroom_stew"
+					type: "item"
+				}
+				{
+					id: "0C91E9E1DEDC9B58"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+				{
+					id: "543A071B2CA452FA"
+					item: "minecraft:porkchop"
+					type: "item"
+				}
+				{
+					id: "45F4BDD535531D3E"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					id: "6304C13EED850C1D"
+					item: "minecraft:pufferfish"
+					type: "item"
+				}
+				{
+					id: "1BB0976950355824"
+					item: "minecraft:pumpkin_pie"
+					type: "item"
+				}
+				{
+					id: "7DB35486A973B31C"
+					item: "minecraft:rabbit"
+					type: "item"
+				}
+				{
+					id: "3ED904E7E6EF174F"
+					item: "minecraft:rabbit_stew"
+					type: "item"
+				}
+				{
+					id: "7D09CBEEF78AFA00"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "7BCCF7D87369EDE1"
+					item: "minecraft:salmon"
+					type: "item"
+				}
+				{
+					id: "17AB9F232685972C"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "4AE18670DAE78724"
+					item: "minecraft:suspicious_stew"
+					type: "item"
+				}
+				{
+					id: "1EAE47EBD4734AB6"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+			]
+			title: "Showcase: Vanilla Food"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Goal: obtain Apple Cider, Apple Pie, Apple Pie Slice, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Farmer's Delight is the main early kitchen. Use this node as a menu of meals, slices, sandwiches, stews, rolls, and prepared ingredients."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:apple_cider"
+			icon_scale: 1.18d
+			id: "0977E2DD91C81565"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6D9F7CA1E4111FDF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E360DF72DC3707D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.75d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "0A530744AFF80DB1"
+					item: "farmersdelight:apple_cider"
+					type: "item"
+				}
+				{
+					id: "1F0D245E1C5158AB"
+					item: "farmersdelight:apple_pie"
+					type: "item"
+				}
+				{
+					id: "10B72F4483803408"
+					item: "farmersdelight:apple_pie_slice"
+					type: "item"
+				}
+				{
+					id: "17324A111884B02A"
+					item: "farmersdelight:bacon"
+					type: "item"
+				}
+				{
+					id: "49A14AA85EE2C3A4"
+					item: "farmersdelight:bacon_and_eggs"
+					type: "item"
+				}
+				{
+					id: "1763B21DA2F29378"
+					item: "farmersdelight:bacon_sandwich"
+					type: "item"
+				}
+				{
+					id: "03D6B50F4D1C0636"
+					item: "farmersdelight:baked_cod_stew"
+					type: "item"
+				}
+				{
+					id: "611C89D58774F71E"
+					item: "farmersdelight:barbecue_stick"
+					type: "item"
+				}
+				{
+					id: "2934E204BBAE7B81"
+					item: "farmersdelight:beef_patty"
+					type: "item"
+				}
+				{
+					id: "04E56F545C2B0AEC"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+				{
+					id: "7A3C6234A770E37A"
+					item: "farmersdelight:bone_broth"
+					type: "item"
+				}
+				{
+					id: "5BDE0CD55BF24441"
+					item: "farmersdelight:cake_slice"
+					type: "item"
+				}
+				{
+					id: "3A8DB458A0C952E9"
+					item: "farmersdelight:chicken_cuts"
+					type: "item"
+				}
+				{
+					id: "7798C8ABB9D750F4"
+					item: "farmersdelight:chicken_sandwich"
+					type: "item"
+				}
+				{
+					id: "1BB9FF1BF0F2A9B9"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+				{
+					id: "3218584101FAF86C"
+					item: "farmersdelight:chocolate_pie"
+					type: "item"
+				}
+				{
+					id: "0865C47E31A5A85A"
+					item: "farmersdelight:chocolate_pie_slice"
+					type: "item"
+				}
+				{
+					id: "3994051BC5E91716"
+					item: "farmersdelight:cod_roll"
+					type: "item"
+				}
+				{
+					id: "28D5DE1F5AC01484"
+					item: "farmersdelight:cod_slice"
+					type: "item"
+				}
+				{
+					id: "60966563FC6B691A"
+					item: "farmersdelight:cooked_bacon"
+					type: "item"
+				}
+				{
+					id: "4DDFE95241266B1A"
+					item: "farmersdelight:cooked_chicken_cuts"
+					type: "item"
+				}
+				{
+					id: "70254506EFA0AF4C"
+					item: "farmersdelight:cooked_cod_slice"
+					type: "item"
+				}
+				{
+					id: "669AD5F018AE0EA9"
+					item: "farmersdelight:cooked_mutton_chops"
+					type: "item"
+				}
+				{
+					id: "5BB8CE46D4894B93"
+					item: "farmersdelight:cooked_rice"
+					type: "item"
+				}
+				{
+					id: "0D8F4C5305007DC0"
+					item: "farmersdelight:cooked_salmon_slice"
+					type: "item"
+				}
+				{
+					id: "07D5917C01ECC91C"
+					item: "farmersdelight:dumplings"
+					type: "item"
+				}
+				{
+					id: "3D2AB4BDCEA70A7E"
+					item: "farmersdelight:egg_sandwich"
+					type: "item"
+				}
+				{
+					id: "43CB2EA261C64EFF"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+				{
+					id: "3744E3F6D0A6E4D5"
+					item: "farmersdelight:fried_egg"
+					type: "item"
+				}
+				{
+					id: "144B8BAB9F1C73E9"
+					item: "farmersdelight:fried_rice"
+					type: "item"
+				}
+				{
+					id: "72058D93656EE20B"
+					item: "farmersdelight:fruit_salad"
+					type: "item"
+				}
+				{
+					id: "1A4498C19B2403EC"
+					item: "farmersdelight:glow_berry_custard"
+					type: "item"
+				}
+				{
+					id: "539F94BA007BBE2A"
+					item: "farmersdelight:grilled_salmon"
+					type: "item"
+				}
+				{
+					id: "322951A2F307D48F"
+					item: "farmersdelight:ham"
+					type: "item"
+				}
+				{
+					id: "5870A5A402D79704"
+					item: "farmersdelight:hamburger"
+					type: "item"
+				}
+				{
+					id: "447119446FE917B2"
+					item: "farmersdelight:honey_cookie"
+					type: "item"
+				}
+				{
+					id: "78CAC85C358C35E1"
+					item: "farmersdelight:honey_glazed_ham"
+					type: "item"
+				}
+				{
+					id: "2B01547D81871495"
+					item: "farmersdelight:hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "77A936C2B94E84BB"
+					item: "farmersdelight:kelp_roll"
+					type: "item"
+				}
+				{
+					id: "55024BC1BC7443F8"
+					item: "farmersdelight:kelp_roll_slice"
+					type: "item"
+				}
+				{
+					id: "5A02BA4A582A2CBB"
+					item: "farmersdelight:melon_juice"
+					type: "item"
+				}
+				{
+					id: "252AB6E08935C0FB"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+				{
+					id: "20C62E500B4BF837"
+					item: "farmersdelight:minced_beef"
+					type: "item"
+				}
+				{
+					id: "7F3F4DA33A2D3FB5"
+					item: "farmersdelight:mixed_salad"
+					type: "item"
+				}
+				{
+					id: "6051B86E99BB9ED7"
+					item: "farmersdelight:mushroom_rice"
+					type: "item"
+				}
+				{
+					id: "3A2BDF93E90B15CF"
+					item: "farmersdelight:mutton_chops"
+					type: "item"
+				}
+				{
+					id: "64CBC0718E4ADDE3"
+					item: "farmersdelight:mutton_wrap"
+					type: "item"
+				}
+				{
+					id: "3F3E0D88ACDC72C0"
+					item: "farmersdelight:nether_salad"
+					type: "item"
+				}
+				{
+					id: "2505B6C027829CCE"
+					item: "farmersdelight:noodle_soup"
+					type: "item"
+				}
+				{
+					id: "6DC26F63B0FC58EF"
+					item: "farmersdelight:pasta_with_meatballs"
+					type: "item"
+				}
+				{
+					id: "5D4875A15378E630"
+					item: "farmersdelight:pasta_with_mutton_chop"
+					type: "item"
+				}
+				{
+					id: "1D879AF1593E952A"
+					item: "farmersdelight:pumpkin_slice"
+					type: "item"
+				}
+				{
+					id: "0DF8A8637A50BF89"
+					item: "farmersdelight:pumpkin_soup"
+					type: "item"
+				}
+				{
+					id: "5147AA0B249D0840"
+					item: "farmersdelight:rice"
+					type: "item"
+				}
+				{
+					id: "6DF4120D997F2324"
+					item: "farmersdelight:roast_chicken"
+					type: "item"
+				}
+				{
+					id: "538B7FA26FD438B5"
+					item: "farmersdelight:roasted_mutton_chops"
+					type: "item"
+				}
+				{
+					id: "73A4F75B5D518829"
+					item: "farmersdelight:salmon_roll"
+					type: "item"
+				}
+				{
+					id: "07BBA83215BE3595"
+					item: "farmersdelight:salmon_slice"
+					type: "item"
+				}
+				{
+					id: "77E97031300A7F38"
+					item: "farmersdelight:shepherds_pie"
+					type: "item"
+				}
+				{
+					id: "5905855AEB636912"
+					item: "farmersdelight:smoked_ham"
+					type: "item"
+				}
+				{
+					id: "6E499D792B68DB82"
+					item: "farmersdelight:squid_ink_pasta"
+					type: "item"
+				}
+				{
+					id: "689484917DB9F558"
+					item: "farmersdelight:steak_and_potatoes"
+					type: "item"
+				}
+				{
+					id: "0C383A100C9E7FD6"
+					item: "farmersdelight:stuffed_potato"
+					type: "item"
+				}
+				{
+					id: "3C8655B273F4DD37"
+					item: "farmersdelight:sweet_berry_cheesecake"
+					type: "item"
+				}
+				{
+					id: "1B798DEFEC8AEECF"
+					item: "farmersdelight:sweet_berry_cheesecake_slice"
+					type: "item"
+				}
+				{
+					id: "32F11756BFF308AD"
+					item: "farmersdelight:sweet_berry_cookie"
+					type: "item"
+				}
+				{
+					id: "61AC83BA94D17F97"
+					item: "farmersdelight:tomato_sauce"
+					type: "item"
+				}
+				{
+					id: "55BACE36D841DB90"
+					item: "farmersdelight:vegetable_noodles"
+					type: "item"
+				}
+				{
+					id: "116612C0492B0B63"
+					item: "farmersdelight:vegetable_soup"
+					type: "item"
+				}
+			]
+			title: "Showcase: Farmers Delight Meals"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Black Tea, Coffee, Dandelion Tea, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Drinks and fermented foods are route supplies. They support recovery, tavern contracts, and food variety beyond raw hunger value."
+			]
+			hide_dependency_lines: false
+			icon: "farmersrespite:black_tea"
+			id: "2D27A1D00590B4F5"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "7C1E6F5B3BBB1F90"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0F621A8F97F8692C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "39FD671B3BDEF01F"
+					item: "farmersrespite:black_tea"
+					type: "item"
+				}
+				{
+					id: "12ABF99BB5B4A6CC"
+					item: "farmersrespite:coffee"
+					type: "item"
+				}
+				{
+					id: "73ECD8291A4A677D"
+					item: "farmersrespite:dandelion_tea"
+					type: "item"
+				}
+				{
+					id: "2D08A9223E8947F9"
+					item: "farmersrespite:gamblers_tea"
+					type: "item"
+				}
+				{
+					id: "7460B3173451E1DD"
+					item: "farmersrespite:green_tea"
+					type: "item"
+				}
+				{
+					id: "3BAE625B522EDC5A"
+					item: "farmersrespite:green_tea_cookie"
+					type: "item"
+				}
+				{
+					id: "09A4EFE7119AA332"
+					item: "farmersrespite:long_apple_cider"
+					type: "item"
+				}
+				{
+					id: "12B4485574105952"
+					item: "farmersrespite:long_black_tea"
+					type: "item"
+				}
+				{
+					id: "639639397D8BB664"
+					item: "farmersrespite:long_coffee"
+					type: "item"
+				}
+				{
+					id: "1E6A7CB4673357E7"
+					item: "farmersrespite:long_dandelion_tea"
+					type: "item"
+				}
+				{
+					id: "6C24E549C91219A2"
+					item: "farmersrespite:long_gamblers_tea"
+					type: "item"
+				}
+				{
+					id: "1E8016F1CE3BF96C"
+					item: "farmersrespite:long_green_tea"
+					type: "item"
+				}
+				{
+					id: "6BA4E9E79921B258"
+					item: "farmersrespite:long_purulent_tea"
+					type: "item"
+				}
+				{
+					id: "08125AD3CD8ADEE9"
+					item: "farmersrespite:long_rose_hip_tea"
+					type: "item"
+				}
+				{
+					id: "7B85CA4B2240D88F"
+					item: "farmersrespite:long_yellow_tea"
+					type: "item"
+				}
+				{
+					id: "4D219B8F48D57D6B"
+					item: "farmersrespite:purulent_tea"
+					type: "item"
+				}
+				{
+					id: "76CCBA3A41AD4216"
+					item: "farmersrespite:rose_hip_pie"
+					type: "item"
+				}
+				{
+					id: "33EF7747C808D411"
+					item: "farmersrespite:rose_hip_pie_slice"
+					type: "item"
+				}
+				{
+					id: "39AA057E8E4574DF"
+					item: "farmersrespite:rose_hip_tea"
+					type: "item"
+				}
+				{
+					id: "731F5ABB47206576"
+					item: "farmersrespite:strong_apple_cider"
+					type: "item"
+				}
+				{
+					id: "04B1853A8CC31173"
+					item: "farmersrespite:strong_black_tea"
+					type: "item"
+				}
+				{
+					id: "45E349D705588DC0"
+					item: "farmersrespite:strong_coffee"
+					type: "item"
+				}
+				{
+					id: "17CA208CCB7A270C"
+					item: "farmersrespite:strong_gamblers_tea"
+					type: "item"
+				}
+				{
+					id: "0B87D120ECCD3FBC"
+					item: "farmersrespite:strong_green_tea"
+					type: "item"
+				}
+				{
+					id: "53D91CE35097D4D5"
+					item: "farmersrespite:strong_hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "6C96630CF248E925"
+					item: "farmersrespite:strong_melon_juice"
+					type: "item"
+				}
+				{
+					id: "56DFDFE6D0BE7DFB"
+					item: "farmersrespite:strong_purulent_tea"
+					type: "item"
+				}
+				{
+					id: "13DFFA8B27882AF2"
+					item: "farmersrespite:strong_rose_hip_tea"
+					type: "item"
+				}
+				{
+					id: "2FDAD80C11E38D5E"
+					item: "farmersrespite:strong_yellow_tea"
+					type: "item"
+				}
+				{
+					id: "5795FBAB5FB6B084"
+					item: "farmersrespite:tea_curry"
+					type: "item"
+				}
+				{
+					id: "77E5A41527D6794B"
+					item: "farmersrespite:yellow_tea"
+					type: "item"
+				}
+				{
+					id: "439E282E86CA3657"
+					item: "brewinandchewin:apple_jelly"
+					type: "item"
+				}
+				{
+					id: "4B1AA109B16EC452"
+					item: "brewinandchewin:beer"
+					type: "item"
+				}
+				{
+					id: "52BFD84CFF76CA15"
+					item: "brewinandchewin:bloody_mary"
+					type: "item"
+				}
+				{
+					id: "367B5D4EE66B893E"
+					item: "brewinandchewin:cheesy_pasta"
+					type: "item"
+				}
+				{
+					id: "509CC59ED64D5D26"
+					item: "brewinandchewin:cocoa_fudge"
+					type: "item"
+				}
+				{
+					id: "1D3DA1D84A827929"
+					item: "brewinandchewin:creamy_onion_soup"
+					type: "item"
+				}
+				{
+					id: "451B5C65774903B3"
+					item: "brewinandchewin:dread_nog"
+					type: "item"
+				}
+				{
+					id: "36B634F13F00EDEE"
+					item: "brewinandchewin:egg_grog"
+					type: "item"
+				}
+				{
+					id: "1AC278C8A8E1999F"
+					item: "brewinandchewin:fiery_fondue"
+					type: "item"
+				}
+				{
+					id: "3C85D129718FA09D"
+					item: "brewinandchewin:flaxen_cheese_wedge"
+					type: "item"
+				}
+				{
+					id: "13383857B1F76A27"
+					item: "brewinandchewin:glittering_grenadine"
+					type: "item"
+				}
+				{
+					id: "701A9912A092DD9E"
+					item: "brewinandchewin:glow_berry_marmalade"
+					type: "item"
+				}
+				{
+					id: "13A69E656B3087ED"
+					item: "brewinandchewin:ham_and_cheese_sandwich"
+					type: "item"
+				}
+				{
+					id: "16181D78AC82EA61"
+					item: "brewinandchewin:horror_lasagna"
+					type: "item"
+				}
+				{
+					id: "25D6D046892FE1B8"
+					item: "brewinandchewin:jerky"
+					type: "item"
+				}
+				{
+					id: "6BB02216B71AFD21"
+					item: "brewinandchewin:kimchi"
+					type: "item"
+				}
+				{
+					id: "06113DAE50378AF7"
+					item: "brewinandchewin:kippers"
+					type: "item"
+				}
+				{
+					id: "03E9F6220A89B4F9"
+					item: "brewinandchewin:mead"
+					type: "item"
+				}
+				{
+					id: "4FCE20841FB3BD74"
+					item: "brewinandchewin:pale_jane"
+					type: "item"
+				}
+				{
+					id: "05D984BC15DC0956"
+					item: "brewinandchewin:pizza"
+					type: "item"
+				}
+				{
+					id: "2EACF6DA5A1A5180"
+					item: "brewinandchewin:pizza_slice"
+					type: "item"
+				}
+				{
+					id: "328DA5D2691FB892"
+					item: "brewinandchewin:quiche"
+					type: "item"
+				}
+				{
+					id: "080206EC65A7C7A3"
+					item: "brewinandchewin:quiche_slice"
+					type: "item"
+				}
+				{
+					id: "2AA65D8CA44C000C"
+					item: "brewinandchewin:red_rum"
+					type: "item"
+				}
+				{
+					id: "1B58A12A4707A84C"
+					item: "brewinandchewin:rice_wine"
+					type: "item"
+				}
+				{
+					id: "14CAF42590B1F1C3"
+					item: "brewinandchewin:saccharine_rum"
+					type: "item"
+				}
+				{
+					id: "67C30AAC9C7DC85A"
+					item: "brewinandchewin:salty_folly"
+					type: "item"
+				}
+				{
+					id: "5045F3405CE8A7E1"
+					item: "brewinandchewin:scarlet_cheese_wedge"
+					type: "item"
+				}
+				{
+					id: "41DDA6D913764A56"
+					item: "brewinandchewin:scarlet_pierogi"
+					type: "item"
+				}
+				{
+					id: "4BA5BAA8A39C6C5B"
+					item: "brewinandchewin:strongroot_ale"
+					type: "item"
+				}
+				{
+					id: "35CE6A6DF601B064"
+					item: "brewinandchewin:sweet_berry_jam"
+					type: "item"
+				}
+				{
+					id: "70F32EFB816C950C"
+					item: "brewinandchewin:vegetable_omelet"
+					type: "item"
+				}
+				{
+					id: "6DB68AFA8AED7130"
+					item: "brewinandchewin:vodka"
+					type: "item"
+				}
+				{
+					id: "1DD57A840B12EEF8"
+					item: "brewinandchewin:withering_dross"
+					type: "item"
+				}
+			]
+			title: "Showcase: Drinks and Ferments"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60F7817845DD39DF"]
+			description: [
+				"Goal: obtain Rice And Vegetables, Cauliflower Soup, Stuffed Bellpepper, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Vegetables, corn, peppers, coffee, and rustic foods make farming a broader material graph than wheat into bread."
+			]
+			hide_dependency_lines: false
+			icon: "veggiesdelight:rice_and_vegetables"
+			id: "00D5182BFCAA9795"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6D5084F4B5AB9E19"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "594EB33FDA16E1D9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "05FE537761D4DFE3"
+					item: "veggiesdelight:rice_and_vegetables"
+					type: "item"
+				}
+				{
+					id: "09CF931F1AEC6AE6"
+					item: "veggiesdelight:cauliflower_soup"
+					type: "item"
+				}
+				{
+					id: "4282E630097FA21E"
+					item: "veggiesdelight:stuffed_bellpepper"
+					type: "item"
+				}
+				{
+					id: "2184BAB959325D6E"
+					item: "veggiesdelight:garlic_bread"
+					type: "item"
+				}
+				{
+					id: "2DE805FB57F2627B"
+					item: "veggiesdelight:stuffed_zucchini_boat"
+					type: "item"
+				}
+				{
+					id: "202B3B2278C3A62E"
+					item: "veggiesdelight:pasta_with_broccoli"
+					type: "item"
+				}
+				{
+					id: "656EB0E99785D72F"
+					item: "veggiesdelight:bellpepper"
+					type: "item"
+				}
+				{
+					id: "17FA032896139106"
+					item: "veggiesdelight:cauliflower"
+					type: "item"
+				}
+				{
+					id: "2EA0860BA19AD691"
+					item: "veggiesdelight:garlic"
+					type: "item"
+				}
+				{
+					id: "4CB65311CED50C02"
+					item: "veggiesdelight:sweet_potato"
+					type: "item"
+				}
+				{
+					id: "0929837EB5562B2A"
+					item: "veggiesdelight:zucchini"
+					type: "item"
+				}
+				{
+					id: "5DED99C4497288DF"
+					item: "corn_delight:boiled_corn"
+					type: "item"
+				}
+				{
+					id: "1663D5D1FF4A3178"
+					item: "corn_delight:creamy_corn_drink"
+					type: "item"
+				}
+				{
+					id: "35277E5C1C1D2B4B"
+					item: "corn_delight:caramel_popcorn"
+					type: "item"
+				}
+				{
+					id: "067C4964B70ACAC2"
+					item: "corn_delight:cornbread"
+					type: "item"
+				}
+				{
+					id: "6A84323DEAAB0824"
+					item: "corn_delight:corn_dog"
+					type: "item"
+				}
+				{
+					id: "08DC99BB817A2750"
+					item: "corn_delight:corn_soup"
+					type: "item"
+				}
+				{
+					id: "73FEA3EC66905C22"
+					item: "corn_delight:grilled_corn"
+					type: "item"
+				}
+				{
+					id: "317D08754BE78130"
+					item: "corn_delight:tortilla"
+					type: "item"
+				}
+				{
+					id: "2B1163037961A06A"
+					item: "corn_delight:creamed_corn"
+					type: "item"
+				}
+				{
+					id: "11F5070A5938D700"
+					item: "corn_delight:nachos_bowl"
+					type: "item"
+				}
+				{
+					id: "779337FBD255F506"
+					item: "corn_delight:popcorn"
+					type: "item"
+				}
+				{
+					id: "4A9AC68A6BEDA000"
+					item: "rusticdelight:bell_pepper_soup"
+					type: "item"
+				}
+				{
+					id: "543B99767BAE7360"
+					item: "rusticdelight:coffee"
+					type: "item"
+				}
+				{
+					id: "3EC6DF3866E65C3F"
+					item: "rusticdelight:cooked_calamari"
+					type: "item"
+				}
+				{
+					id: "133118CB4B46604C"
+					item: "rusticdelight:cooked_calamari_slice"
+					type: "item"
+				}
+				{
+					id: "1B93096FD96BEFF5"
+					item: "rusticdelight:calamari"
+					type: "item"
+				}
+				{
+					id: "7F53FF8CA703B15B"
+					item: "rusticdelight:fried_mushrooms"
+					type: "item"
+				}
+				{
+					id: "3E6F8BEA3293868A"
+					item: "delightful:marshmallow_stick"
+					type: "item"
+				}
+				{
+					id: "7AB75B18FF49FBA3"
+					item: "rusticdelight:batter"
+					type: "item"
+				}
+				{
+					id: "318C8C16AF0170B7"
+					item: "rusticdelight:roasted_coffee_beans"
+					type: "item"
+				}
+				{
+					id: "1076A87CEEAF3256"
+					item: "rusticdelight:bell_pepper_pasta"
+					type: "item"
+				}
+				{
+					id: "6A6E2B912A1BAF02"
+					item: "rusticdelight:calamari_slice"
+					type: "item"
+				}
+				{
+					id: "6767EAC12709F1E4"
+					item: "rusticdelight:stuffed_bell_pepper_red"
+					type: "item"
+				}
+				{
+					id: "09E57EAC90A4CB26"
+					item: "rusticdelight:calamari_roll"
+					type: "item"
+				}
+			]
+			title: "Showcase: Field Crop Foods"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Acorn, Azalea Tea, Baklava, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Delightful adds fruit, tea, sweets, and mixed foods that make route food more varied than one optimal meal."
+			]
+			hide_dependency_lines: false
+			icon: "delightful:acorn"
+			id: "4DFBAAB07F87C00D"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "67B70856F034263F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A9C674B645D1C86"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "5EC54D9462805E55"
+					item: "delightful:acorn"
+					type: "item"
+				}
+				{
+					id: "3F33ED6475BB97F1"
+					item: "delightful:azalea_tea"
+					type: "item"
+				}
+				{
+					id: "739B1E070B4E7652"
+					item: "delightful:baklava"
+					type: "item"
+				}
+				{
+					id: "7BF40BF680AFC487"
+					item: "delightful:berry_matcha_latte"
+					type: "item"
+				}
+				{
+					id: "5872B56787DE9340"
+					item: "delightful:cactus_chili"
+					type: "item"
+				}
+				{
+					id: "0431CDB9C2BC2E99"
+					item: "delightful:cantaloupe"
+					type: "item"
+				}
+				{
+					id: "39A2F963BBF9EDFA"
+					item: "delightful:cantaloupe_bread"
+					type: "item"
+				}
+				{
+					id: "0FB758B2A9817B52"
+					item: "delightful:cheeseburger"
+					type: "item"
+				}
+				{
+					id: "78F0ADAFA280A3CB"
+					item: "delightful:chorus_muffin"
+					type: "item"
+				}
+				{
+					id: "46188DC1774D5635"
+					item: "delightful:coconut_curry"
+					type: "item"
+				}
+				{
+					id: "15D585C89B008018"
+					item: "delightful:cooked_goat"
+					type: "item"
+				}
+				{
+					id: "5791B3F272B3CDAD"
+					item: "delightful:ender_nectar"
+					type: "item"
+				}
+				{
+					id: "689CE38A91A77EE2"
+					item: "delightful:glow_jam_cookie"
+					type: "item"
+				}
+				{
+					id: "2EC164C04AFD7173"
+					item: "delightful:glow_jam_jar"
+					type: "item"
+				}
+				{
+					id: "0A3E9CF8414885BA"
+					item: "delightful:marshmallow_stick"
+					type: "item"
+				}
+				{
+					id: "4298C12978CC29E1"
+					item: "delightful:matcha_gummy"
+					type: "item"
+				}
+				{
+					id: "5F287D12A99B3E3C"
+					item: "delightful:matcha_ice_cream"
+					type: "item"
+				}
+				{
+					id: "2A51662F5AE76A8D"
+					item: "delightful:matcha_latte"
+					type: "item"
+				}
+				{
+					id: "76BFE01E7711C991"
+					item: "delightful:mini_melon"
+					type: "item"
+				}
+				{
+					id: "4B7F7DD4AFC1104E"
+					item: "delightful:mulberry_pie_slice"
+					type: "item"
+				}
+				{
+					id: "44C6245C125429E0"
+					item: "delightful:mutton_pie_slice"
+					type: "item"
+				}
+				{
+					id: "0DFD007C9A84A0B3"
+					item: "delightful:nut_butter_and_jam_sandwich"
+					type: "item"
+				}
+				{
+					id: "41DA478331F164D8"
+					item: "delightful:passion_fruit_tart_slice"
+					type: "item"
+				}
+				{
+					id: "0DFC08872AAACF16"
+					item: "delightful:rock_candy"
+					type: "item"
+				}
+				{
+					id: "3E2AE5B1CB09C2E0"
+					item: "delightful:salmon_and_roe_blini"
+					type: "item"
+				}
+				{
+					id: "5446105AA4C07418"
+					item: "delightful:salmonberry_milkshake"
+					type: "item"
+				}
+				{
+					id: "34A05E898E608E92"
+					item: "delightful:salmonberry_pie"
+					type: "item"
+				}
+				{
+					id: "13013F60D9EDF7F9"
+					item: "delightful:sinigang"
+					type: "item"
+				}
+				{
+					id: "3E4A426D1E38A5BD"
+					item: "delightful:smore"
+					type: "item"
+				}
+				{
+					id: "12E545E061945ECD"
+					item: "delightful:source_berry_cookie"
+					type: "item"
+				}
+				{
+					id: "24F9EAE516BA30F8"
+					item: "delightful:source_berry_gummy"
+					type: "item"
+				}
+				{
+					id: "09A206FBBB850993"
+					item: "delightful:source_berry_ice_cream"
+					type: "item"
+				}
+				{
+					id: "672E42A6C7FFEBEB"
+					item: "delightful:source_berry_milkshake"
+					type: "item"
+				}
+				{
+					id: "6597FD84363438A6"
+					item: "delightful:source_berry_pie_slice"
+					type: "item"
+				}
+				{
+					id: "2EC3303DC23E069E"
+					item: "delightful:wrapped_cantaloupe"
+					type: "item"
+				}
+			]
+			title: "Showcase: Delightful Foods"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E4E7A60784AF000"]
+			description: [
+				"Goal: obtain Egg Soup, Bleeding Tartar, Breakfast Sampler, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Dimension and biome foods turn expeditions into new food infrastructure. Bring back ingredients, not just trophies."
+			]
+			hide_dependency_lines: false
+			icon: "mynethersdelight:egg_soup"
+			icon_scale: 1.18d
+			id: "71DAD5E9A9B3E7EF"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "2EE5B2C293C7799A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "500FD1FA8083DF6A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.75d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "1068FA683E516695"
+					item: "mynethersdelight:egg_soup"
+					type: "item"
+				}
+				{
+					id: "59880413DD57AC69"
+					item: "mynethersdelight:bleeding_tartar"
+					type: "item"
+				}
+				{
+					id: "61206424941EFE28"
+					item: "mynethersdelight:breakfast_sampler"
+					type: "item"
+				}
+				{
+					id: "33063F5981823D81"
+					item: "mynethersdelight:burnt_roll"
+					type: "item"
+				}
+				{
+					id: "005D051A9D742D2D"
+					item: "mynethersdelight:crimson_stroganoff"
+					type: "item"
+				}
+				{
+					id: "22118254584BFDD5"
+					item: "mynethersdelight:deviled_egg"
+					type: "item"
+				}
+				{
+					id: "19977FEA9DFDA5E5"
+					item: "mynethersdelight:ghasta"
+					type: "item"
+				}
+				{
+					id: "01C1E53FDDCA0E91"
+					item: "mynethersdelight:hot_cream"
+					type: "item"
+				}
+				{
+					id: "3E10BDA5FB839AF3"
+					item: "mynethersdelight:hot_wings"
+					type: "item"
+				}
+				{
+					id: "7052EFD05AADE412"
+					item: "mynethersdelight:plate_of_stuffed_hoglin_ham"
+					type: "item"
+				}
+				{
+					id: "43F01704265A92F7"
+					item: "mynethersdelight:plate_of_stuffed_hoglin_snout"
+					type: "item"
+				}
+				{
+					id: "4C4340791688DF23"
+					item: "mynethersdelight:plate_of_stuffed_hoglin"
+					type: "item"
+				}
+				{
+					id: "789A794005DB6B3C"
+					item: "mynethersdelight:sausage_and_potatoes"
+					type: "item"
+				}
+				{
+					id: "21F97197F41297A5"
+					item: "mynethersdelight:strider_slice"
+					type: "item"
+				}
+				{
+					id: "21365DE223B121F8"
+					item: "mynethersdelight:red_loin_on_a_stick"
+					type: "item"
+				}
+				{
+					id: "6F9AAA04346A471E"
+					item: "mynethersdelight:hotdog_with_nether_salad"
+					type: "item"
+				}
+				{
+					id: "724DFC30BC9E05B6"
+					item: "mynethersdelight:hotdog_with_mixed_salad"
+					type: "item"
+				}
+				{
+					id: "083BAED02DC9D0F8"
+					item: "mynethersdelight:spicy_noodle_soup"
+					type: "item"
+				}
+				{
+					id: "1737A6BC77A01576"
+					item: "ends_delight:chorus_fruit_grain"
+					type: "item"
+				}
+				{
+					id: "473C6A7FB42443AB"
+					item: "ends_delight:chorus_fruit_milk_tea"
+					type: "item"
+				}
+				{
+					id: "4AC30A0C5118BC8E"
+					item: "ends_delight:chorus_fruit_pie_slice"
+					type: "item"
+				}
+				{
+					id: "5029055146A15FEF"
+					item: "ends_delight:dragon_breath_and_chorus_soup"
+					type: "item"
+				}
+				{
+					id: "3E9718B9E5267A8B"
+					item: "ends_delight:dragon_breath_soda"
+					type: "item"
+				}
+				{
+					id: "00E5029E5BE8D555"
+					item: "ends_delight:dragon_leg_with_sauce"
+					type: "item"
+				}
+				{
+					id: "387E05C1637DF7B1"
+					item: "ends_delight:dragon_meat_stew"
+					type: "item"
+				}
+				{
+					id: "2871423F1DCD673B"
+					item: "ends_delight:dried_endermite_meat"
+					type: "item"
+				}
+				{
+					id: "1EF81E3C457EF67C"
+					item: "ends_delight:end_barbecue_stick"
+					type: "item"
+				}
+				{
+					id: "2032EEAF68947E1C"
+					item: "ends_delight:end_mixed_salad"
+					type: "item"
+				}
+				{
+					id: "7064CA8B1E0A44F7"
+					item: "ends_delight:enderman_gristle_stew"
+					type: "item"
+				}
+				{
+					id: "4C22C0E6A2B876DF"
+					item: "ends_delight:grilled_shulker"
+					type: "item"
+				}
+				{
+					id: "21EDE07212319FB9"
+					item: "ends_delight:liquid_dragon_egg"
+					type: "item"
+				}
+				{
+					id: "292608D089ED2FC2"
+					item: "ends_delight:roasted_dragon_meat_cuts"
+					type: "item"
+				}
+				{
+					id: "72EBA61AB7A13155"
+					item: "ends_delight:roasted_shulker_meat"
+					type: "item"
+				}
+				{
+					id: "5F8CFB851E16AD95"
+					item: "ends_delight:shulker_meat"
+					type: "item"
+				}
+				{
+					id: "1D8450A3F62D5931"
+					item: "oceansdelight:seagrass_salad"
+					type: "item"
+				}
+				{
+					id: "2FF7D011D9D60DA2"
+					item: "oceansdelight:baked_tentacle_on_a_stick"
+					type: "item"
+				}
+				{
+					id: "534494C79BD1E8AF"
+					item: "oceansdelight:bowl_of_guardian_soup"
+					type: "item"
+				}
+				{
+					id: "714F919D5EF29EF8"
+					item: "oceansdelight:braised_sea_pickle"
+					type: "item"
+				}
+				{
+					id: "5CACA3C1CE114AA9"
+					item: "oceansdelight:cabbage_wrapped_elder_guardian"
+					type: "item"
+				}
+				{
+					id: "655F47561D3C2AD1"
+					item: "oceansdelight:cut_tentacles"
+					type: "item"
+				}
+				{
+					id: "352E8D1B4122445E"
+					item: "oceansdelight:elder_guardian_roll"
+					type: "item"
+				}
+				{
+					id: "04D021279985DC5E"
+					item: "oceansdelight:elder_guardian_slice"
+					type: "item"
+				}
+				{
+					id: "3E1D1B3E06ED3695"
+					item: "oceansdelight:fugu_roll"
+					type: "item"
+				}
+				{
+					id: "5D6D16BC720902AC"
+					item: "oceansdelight:guardian"
+					type: "item"
+				}
+				{
+					id: "40680B5742630339"
+					item: "oceansdelight:guardian_soup"
+					type: "item"
+				}
+				{
+					id: "6CEA8FB4347756A5"
+					item: "oceansdelight:guardian_tail"
+					type: "item"
+				}
+				{
+					id: "37D9BB0289B4949B"
+					item: "oceansdelight:honey_fried_kelp"
+					type: "item"
+				}
+				{
+					id: "1B9CFD89303A9B4B"
+					item: "oceansdelight:stuffed_cod"
+					type: "item"
+				}
+				{
+					id: "1423E2550EB63A90"
+					item: "oceansdelight:tentacle_on_a_stick"
+					type: "item"
+				}
+			]
+			title: "Showcase: Nether, End, and Ocean Food"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Lumpia, Ensaymada, Chicken Inasal, and related items."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"Regional foods are a reason to care about where ingredients come from. They make different bases and routes feel materially different."
+			]
+			hide_dependency_lines: false
+			icon: "ubesdelight:lumpia"
+			id: "44C8DD3723AD6A92"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "38129C4103C352B7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4CF82952598B8644"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "38B83EC9109BC906"
+					item: "ubesdelight:lumpia"
+					type: "item"
+				}
+				{
+					id: "14E717EAD86EBAAB"
+					item: "ubesdelight:ensaymada"
+					type: "item"
+				}
+				{
+					id: "3E60DB855ED6E03A"
+					item: "ubesdelight:chicken_inasal"
+					type: "item"
+				}
+				{
+					id: "5D5C5F9AB39F3600"
+					item: "ubesdelight:condensed_milk_bottle"
+					type: "item"
+				}
+				{
+					id: "3DD555A5ABEA4E6C"
+					item: "ubesdelight:garlic_chop"
+					type: "item"
+				}
+				{
+					id: "39DC6B338EB63AB0"
+					item: "ubesdelight:sinangag"
+					type: "item"
+				}
+				{
+					id: "730E4D1862983BA2"
+					item: "ubesdelight:halo_halo"
+					type: "item"
+				}
+				{
+					id: "0F3149B1EE051323"
+					item: "ubesdelight:milk_tea_ube"
+					type: "item"
+				}
+				{
+					id: "4997B589C5896BF9"
+					item: "ubesdelight:pandesal"
+					type: "item"
+				}
+				{
+					id: "36145B043F5AD565"
+					item: "ubesdelight:pandesal_ube"
+					type: "item"
+				}
+				{
+					id: "3CB295F354F41CA8"
+					item: "ubesdelight:polvorone"
+					type: "item"
+				}
+				{
+					id: "75C27DABEF8A316C"
+					item: "ubesdelight:ube"
+					type: "item"
+				}
+				{
+					id: "46DC32B926C70A76"
+					item: "ubesdelight:ube_cake_slice"
+					type: "item"
+				}
+				{
+					id: "67B59991DB60098B"
+					item: "ubesdelight:cookie_ube"
+					type: "item"
+				}
+				{
+					id: "74E891DF2C06604C"
+					item: "ubesdelight:polvorone_ube"
+					type: "item"
+				}
+				{
+					id: "55F781D91A74BDF9"
+					item: "ubesdelight:ensaymada_ube"
+					type: "item"
+				}
+				{
+					id: "26D2E085AE8CFF38"
+					item: "undergardendelight:blood_tomato_soup"
+					type: "item"
+				}
+				{
+					id: "0C85E01BC73A4245"
+					item: "undergardendelight:depth_shroom_cream_soup"
+					type: "item"
+				}
+				{
+					id: "5590DDB1226C040F"
+					item: "undergardendelight:gloomgourd_pie_slice"
+					type: "item"
+				}
+				{
+					id: "28E27BE0E218B240"
+					item: "undergardendelight:scintling_stew"
+					type: "item"
+				}
+				{
+					id: "467E409850446839"
+					item: "undergardendelight:mogsteak"
+					type: "item"
+				}
+				{
+					id: "0847C0B8EF926BD1"
+					item: "undergardendelight:gronglunch"
+					type: "item"
+				}
+				{
+					id: "2B63E558B4AFC71B"
+					item: "undergardendelight:glitterdish"
+					type: "item"
+				}
+				{
+					id: "33EB4A6D9A1E1DCC"
+					item: "undergardendelight:cooked_gloomper_cuts"
+					type: "item"
+				}
+				{
+					id: "61E6B6E062933C93"
+					item: "undergardendelight:cooked_gwibling_fillet"
+					type: "item"
+				}
+				{
+					id: "6CB4A7DCDFDA775B"
+					item: "undergardendelight:gronglet_roll"
+					type: "item"
+				}
+				{
+					id: "0FA95FF442A766AF"
+					item: "undergardendelight:droopstew"
+					type: "item"
+				}
+				{
+					id: "2B1602FDFFF6C60F"
+					item: "undergardendelight:stuffed_gloomgourd_bowl"
+					type: "item"
+				}
+				{
+					id: "736C8FFE4E4BB0B9"
+					item: "undergardendelight:underbean_salad"
+					type: "item"
+				}
+				{
+					id: "48968F677A4F0192"
+					item: "undergardendelight:dweller_meat_slice"
+					type: "item"
+				}
+				{
+					id: "30F4FDC8CC22A8FF"
+					item: "undergardendelight:raw_gloomper_cuts"
+					type: "item"
+				}
+				{
+					id: "7C73BCE6A52CA277"
+					item: "undergardendelight:raw_gwibling_fillet"
+					type: "item"
+				}
+				{
+					id: "479028D7EB722608"
+					item: "undergardendelight:cooked_dweller_meat_slice"
+					type: "item"
+				}
+				{
+					id: "028FE089319BC89F"
+					item: "undergardendelight:shimmerpearl"
+					type: "item"
+				}
+				{
+					id: "574B96F02B9558ED"
+					item: "undergardendelight:gronglet_with_roasted_veggies"
+					type: "item"
+				}
+				{
+					id: "451AEDB8D3DA5217"
+					item: "undergardendelight:baked_gwibling_and_vegetables"
+					type: "item"
+				}
+				{
+					id: "3679D381FEC0C185"
+					item: "undergardendelight:glitterwrap"
+					type: "item"
+				}
+				{
+					id: "0CD1A9834D38F873"
+					item: "undergardendelight:stuffed_gloomgourd"
+					type: "item"
+				}
+			]
+			title: "Showcase: Regional Delight Foods"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3673B73DE6F5D4A6"
+				"2D27A1D00590B4F5"
+				"4DFBAAB07F87C00D"
+				"71DAD5E9A9B3E7EF"
+			]
+			description: [
+				"Goal: obtain Tomato Sauce, Glow Berry Marmalade."
+				"Why it matters: This catalogs food options so route planning can match meals to risk, distance, and environment."
+				"This catalogue capstone is a planning surface: choose food by route, climate, distance, and risk instead of defaulting to one static meal."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:tomato_sauce"
+			icon_scale: 1.18d
+			id: "320768E17D54DAA8"
+			rewards: [
+				{
+					count: 4
+					id: "3A6347ED550714D9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "154B0129BC41B624"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0B6266CB309C90F9"
+					item: "farmersdelight:tomato_sauce"
+					type: "item"
+				}
+				{
+					id: "02AA37DD8D9E41CD"
+					item: "brewinandchewin:glow_berry_marmalade"
+					type: "item"
+				}
+			]
+			title: "Expedition Menu Board"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Food Catalogue"
+}

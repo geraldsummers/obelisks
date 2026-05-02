@@ -1,0 +1,10 @@
+disabled FastWorkbench-1.20.1-8.0.4.jar
+disabled FastFurnace-1.20.1-8.0.2.jar
+disabled ApothicAttributes-1.20.1-1.3.7.jar
+disabled Placebo-1.20.1-8.6.3.jar
+disabled ApotheoticAdditionsV2.2.2.jar
+disabled Apotheosis-1.20.1-7.4.8.jar
+marker=sampled_timeout elapsed=90 java_pid=52855 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_026.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:12:58.079] [main/INFO] [Puzzles Lib/]: Loading 352 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=13335 peakRssGiB=13.02

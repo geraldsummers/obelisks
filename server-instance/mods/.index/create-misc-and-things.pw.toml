@@ -1,0 +1,17 @@
+filename = 'create_things_and_misc-4.1.0-forge-1.20.1.jar'
+name = 'Create : Misc & Things'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[1.20.1] Create Misc and Things 4.1'
+
+[download]
+hash = 'e5ab15bffeaf5f09260e3ccd0b09c4f07e15ab36'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7822534
+project-id = 652202

@@ -1,0 +1,630 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "starting_out"
+	group: "52D8800CDEBBF5D6"
+	id: "03E92D264C1B3E20"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Backpack."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Distance matters here. A backpack is not luxury storage; it is what lets a scouting run become a supply line."
+			]
+			hide_dependency_lines: false
+			icon: "sophisticatedbackpacks:backpack"
+			id: "6F243CE80DBB8E2A"
+			rewards: [{
+				count: 4
+				id: "57C2779B73E5D642"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "326482D54BDC24BE"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Carry More"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Torch."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Commit to a safe pocket of terrain. Darkness should be a local problem you solve with carried supplies."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:torch"
+			id: "556A58337338542D"
+			rewards: [{
+				count: 4
+				id: "26588A1210F9C379"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				count: 16L
+				id: "58DEE02E634397BD"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "Make Light"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Oak Seed, Oak Log."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Dynamic Trees makes timber a local living resource, not a floating block stack. Learn what nearby tree species can actually support before overbuilding."
+			]
+			hide_dependency_lines: false
+			icon: "dynamictrees:oak_seed"
+			id: "090EB63A0287C66E"
+			rewards: [{
+				count: 4
+				id: "04C499D6BE6C3A6D"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "68915B3672F51679"
+					item: "dynamictrees:oak_seed"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3599B34B3077AC4D"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+			]
+			title: "Living Trees"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["090EB63A0287C66E"]
+			description: [
+				"Goal: obtain White Bed."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"A bed is the first sign that this location is becoming a foothold instead of a camp."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:white_bed"
+			id: "0D4B3E86350014A0"
+			rewards: [{
+				count: 4
+				id: "041536B24B1BA636"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5A72DBA8E0B49CD5"
+				item: "minecraft:white_bed"
+				type: "item"
+			}]
+			title: "Claim Shelter"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Terracotta Water Bowl."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Thirst is not a background debuff. Carry a vessel before long trips, obelisk runs, and blast mining."
+			]
+			hide_dependency_lines: false
+			icon: "thirst:terracotta_water_bowl"
+			id: "3B1D9FD547D211F5"
+			rewards: [{
+				count: 4
+				id: "1926F42E3981267A"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3C64A5E04E158E59"
+				item: "thirst:terracotta_water_bowl"
+				match_nbt: false
+				type: "item"
+			}]
+			title: "Carry Water"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Sewing Table."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Cold and heat make terrain matter. The sewing table starts the habit of preparing your body for a route."
+			]
+			hide_dependency_lines: false
+			icon: "cold_sweat:sewing_table"
+			id: "3B8FA2DAC3E01B05"
+			rewards: [{
+				count: 4
+				id: "69913050D1A203F1"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2C6139C3B527A382"
+				item: "cold_sweat:sewing_table"
+				type: "item"
+			}]
+			title: "Body Temperature"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B1D9FD547D211F5"]
+			description: [
+				"Goal: obtain Cooking Pot, Skillet."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Meals are base infrastructure. Better food means longer routes, safer retreats, and less panic after death."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:cooking_pot"
+			id: "2FAB36BAC5BE9B21"
+			rewards: [{
+				count: 4
+				id: "234E31E2C26CFA0C"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0C0AD7A2C3EFF425"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "56503494998409A5"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Food Is Infrastructure"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["090EB63A0287C66E"]
+			description: [
+				"Goal: obtain Tinker Station."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"This pack expects tool investment. Tinkers is the early crafting authority before Create takes over infrastructure."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:tinker_station"
+			id: "6512781196AA96D4"
+			rewards: [{
+				count: 4
+				id: "7D4B5B1B32D0CABC"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "75C0F300FF9684AA"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			title: "Tinkers Station"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6512781196AA96D4"]
+			description: [
+				"Goal: obtain Part Builder."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Tool parts teach replacement and repair instead of disposable vanilla tools."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:part_builder"
+			id: "66095B7A5C7E4596"
+			rewards: [{
+				count: 4
+				id: "6982D28CB1B08A6A"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "57885A048BEA5C0D"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			title: "Tool Parts"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6512781196AA96D4"]
+			description: [
+				"Goal: obtain Crafting Station."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Keep the workshop physical. The station is the first small piece of authored infrastructure."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:crafting_station"
+			id: "28D7763BA9316CEE"
+			rewards: [{
+				count: 4
+				id: "1B790E6313185ABA"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "53D67D67B2604298"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			title: "Crafting Station"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Repair Kit."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Do not throw tools away. Repair is part of the cost of distance and deposits."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:repair_kit"
+			id: "7785B8CD85CA1CC3"
+			rewards: [{
+				count: 4
+				id: "3A1FFE9E588BDA76"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7C10528029EF8888"
+				item: "tconstruct:repair_kit"
+				type: "item"
+			}]
+			title: "Repair Mindset"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Wood Hook."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Movement tools are route tools. They help traverse terrain; they do not erase distance."
+			]
+			hide_dependency_lines: false
+			icon: "rehooked:wood_hook"
+			id: "0CB71BE8D8A74441"
+			rewards: [{
+				count: 4
+				id: "5B1CA3EF8D5D5186"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4DBFD26400CF6A7C"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			title: "Hooks and Routes"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain TNT."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"TNT is meant to be an early mining method. It is loud, risky, and efficient when you plan the blast."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:tnt"
+			id: "3E57845B0EBCB3BE"
+			rewards: [{
+				count: 4
+				id: "3D193C08BFD3DC71"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "01F6C82C51DEDC75"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			title: "Controlled Blast Mining"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Copper Coin."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Holding copper coins unlocks village trading. Coins are a crafting system, not just money."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:copper_coin"
+			id: "4D6EB2119BEB0E6D"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "38E94C684DD14021"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [{
+				count: 16L
+				id: "090058FB54D8AF14"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			title: "Sixteen Copper Coins"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B1D9FD547D211F5"]
+			description: [
+				"Goal: obtain Netherrack."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"This is a prepared raid, not a base move. Pack light, bring food and water, take netherrack, retreat successfully."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:netherrack"
+			id: "6E4E7A60784AF000"
+			rewards: [{
+				count: 4
+				id: "3B97D6F90B811CDE"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				count: 16L
+				id: "6AEE6C3D8590CFE6"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			title: "First Nether Obelisk Run"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E4E7A60784AF000"]
+			description: [
+				"Goal: obtain Grout."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Base grout now remembers the Nether. This is the first hard proof that obelisks feed progression."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:grout"
+			id: "0D9764524D21E957"
+			rewards: [{
+				count: 4
+				id: "0E94E709B6099CFB"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				count: 8L
+				id: "38CC97034AB3E736"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			title: "Netherrack Grout"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0D9764524D21E957"]
+			description: [
+				"Goal: obtain Seared Melter, Seared Heater, Seared Faucet, and related items."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"The meltery is the first metallurgy checkpoint. From here, ore is a material stream instead of a furnace shortcut."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:seared_melter"
+			icon_scale: 1.18d
+			id: "27934A4F5BF42390"
+			rewards: [{
+				count: 4
+				id: "70BBAAAACEDBDA14"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "08B19A227453CCCC"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "2C1E626E995CD960"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "724A3074A61F6794"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "5CCFA9D2A6BAE558"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "106F9AAB36822B64"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+			]
+			title: "First Meltery"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"Goal: obtain Seared Brick."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"You have enough seared infrastructure to enter the tech spine."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:seared_brick"
+			icon_scale: 1.18d
+			id: "2FBA327130783BC1"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "0C0D311D73245B60"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Exit"
+			tasks: [{
+				count: 8L
+				id: "2AC6C1C2CD6DE01F"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			title: "Exit: Tech 1"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3B1D9FD547D211F5"]
+			description: [
+				"Goal: obtain Still Beating Heart."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"The body is maintained by food and water, then witnessed by death. Hearts bridge survival into Blood Magic."
+			]
+			hide_dependency_lines: false
+			icon: "rpgstats:still_beating_heart"
+			icon_scale: 1.18d
+			id: "40E75CF4B1C27ADC"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "65A1A9D8D463F2B7"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Exit"
+			tasks: [{
+				id: "6BD75AA0AE9F8F5D"
+				item: "rpgstats:still_beating_heart"
+				type: "item"
+			}]
+			title: "Exit: Body and Blood"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E4E7A60784AF000"]
+			description: [
+				"Goal: obtain Compass, Map."
+				"Why it matters: This helps establish a reliable foothold before longer routes and early obelisk runs."
+				"Villages, maps, coins, and obelisks are the adventure economy. Start thinking in routes."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:compass"
+			id: "2B65D216FD7625E0"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "498255B39112C6B7"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Exit"
+			tasks: [
+				{
+					id: "36E5D9B7C5B9703D"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "757DF9F82B42FC75"
+					item: "minecraft:map"
+					type: "item"
+				}
+			]
+			title: "Exit: Routes and Villages"
+			x: 6.0d
+			y: 4.0d
+		}
+	]
+	title: "Starting Out"
+}

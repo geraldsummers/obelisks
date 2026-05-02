@@ -1,0 +1,17 @@
+filename = 'bloodmagic-1.20.1-3.3.7-49.jar'
+name = 'Blood Magic '
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'bloodmagic-1.20.1-3.3.7-49.jar'
+
+[download]
+hash = 'c3966f3dc894f3d1594aa7617cf6dd7be0a204a4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7956981
+project-id = 224791

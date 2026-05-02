@@ -1,0 +1,6 @@
+disabled HangGlider-v8.0.1-1.20.1-Forge.jar
+disabled TradingPost-v8.0.2-1.20.1-Forge.jar
+disabled PuzzlesLib-v8.1.33-1.20.1-Forge.jar
+marker=sampled_timeout elapsed=91 java_pid=65715 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_055.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11751 peakRssGiB=11.48

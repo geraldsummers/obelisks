@@ -1,0 +1,17 @@
+filename = 'nomobfarm-forge-1.6.6.jar'
+name = 'No Mob Farms'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'nomobfarm-forge-1.6.6.jar'
+
+[download]
+hash = 'f4eca3557540f67e7d9e914df88d96a83e005111'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5716681
+project-id = 560784

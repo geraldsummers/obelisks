@@ -1,0 +1,17 @@
+filename = 'mysterious_mountain_lib-1.6.34-1.20.1.jar'
+name = 'Mysterious Mountain Lib'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'mysterious_mountain_lib-1.6.34-1.20.1.jar'
+
+[download]
+hash = '4fb6e35edf9384fde736cd9ee972468d65f61dce'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7636232
+project-id = 368098

@@ -1,0 +1,8 @@
+{"variant":"c1_core_libs_perf","t":1777629031,"elapsed":0,"processes":1,"rssKb":11288,"maxProcessRssKb":11288}
+{"variant":"c1_core_libs_perf","t":1777629033,"elapsed":2,"processes":1,"rssKb":72992,"maxProcessRssKb":72992}
+{"variant":"c1_core_libs_perf","t":1777629035,"elapsed":4,"processes":1,"rssKb":73320,"maxProcessRssKb":73320}
+{"variant":"c1_core_libs_perf","t":1777629038,"elapsed":7,"processes":1,"rssKb":73996,"maxProcessRssKb":73996}
+{"variant":"c1_core_libs_perf","t":1777629040,"elapsed":9,"processes":2,"rssKb":682092,"maxProcessRssKb":595200}
+{"variant":"c1_core_libs_perf","t":1777629042,"elapsed":11,"processes":2,"rssKb":1668944,"maxProcessRssKb":1582052}
+{"variant":"c1_core_libs_perf","t":1777629044,"elapsed":13,"processes":2,"rssKb":1917680,"maxProcessRssKb":1830788}
+{"variant":"c1_core_libs_perf","t":1777629046,"elapsed":15,"processes":2,"rssKb":1995816,"maxProcessRssKb":1908924}

@@ -1,0 +1,40 @@
+disabled littlelogistics-mc1.20.1-v1.20.1.2.jar
+disabled create_things_and_misc-4.1.0-forge-1.20.1.jar
+disabled create_more_additions-2.0.0-forge-1.20.1.jar
+disabled create-stuff-additions1.20.1_v2.1.2.jar
+disabled create-transmission-loss-0.1.0.jar
+disabled liquid_coolant-0.1.0.jar
+disabled acid_vat-0.1.0.jar
+disabled computerbridge-0.1.0.jar
+disabled heatsync-0.1.0.jar
+disabled fission_reactor-0.1.0.jar
+disabled gases_and_plasmas-0.1.0.jar
+disabled alchemistry-1.20.1-2.3.4.jar
+disabled alchemylib-1.20.1-1.0.30.jar
+disabled chemlib-1.20.1-2.0.19.jar
+disabled createliquidfuel-2.1.1-1.20.1.jar
+disabled createaddoncompatibility-0.2.4.jar
+disabled createappliedkinetics-1.5.1-1.20.1.jar
+disabled create_enchantment_industry-1.3.3-for-create-6.0.6.jar
+disabled create_power_loader-2.0.3-mc1.20.1.jar
+disabled createadvlogistics-0.2.0.jar
+disabled createmoredrillheads-2.1.0-1.20.1.jar
+disabled create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar
+disabled appliedenergistics2-forge-15.4.10.jar
+disabled create-1.20.1-6.0.8.jar
+disabled create_cold_sweat-1.1.2.jar
+disabled createadditionallogistics-1.20.1-1.4.5.jar
+disabled create_bb-1.0.7-1.20.1-Forge.jar
+disabled create-new-age-1.1.7f+forge-mc1.20.1.jar
+disabled oc2r-1.20.1-forge-2.2.12-all.jar
+disabled create_connected-1.1.13-mc1.20.1-all.jar
+disabled powergrid-mc1.20.1-0.5.4.jar
+disabled mae2-2.0.0.jar
+disabled createfix-0.5.jar
+disabled createdieselgenerators-1.20.1-1.3.12.jar
+disabled AE2NetworkAnalyzer-1.20-1.0.6-forge.jar
+disabled AE2-Things-1.2.1.jar
+marker=failed elapsed=15 java_pid=84109 profile=/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c3_tech_automation.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+172:[01May2026 19:41:42.849] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_19.41.42-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=2593 peakRssGiB=2.53

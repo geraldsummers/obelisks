@@ -1,0 +1,17 @@
+filename = 'Steam_Rails-1.7.2+forge-mc1.20.1.jar'
+name = "Create: Steam 'n' Rails"
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "Steam 'n' Rails 1.7.2 Forge 1.20.1 C6"
+
+[download]
+hash = '15d317afd2459368b19c23f2bdfefdeb87708bdd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7758640
+project-id = 688231

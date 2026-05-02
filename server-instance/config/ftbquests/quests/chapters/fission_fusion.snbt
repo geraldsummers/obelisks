@@ -1,0 +1,673 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "fission_fusion"
+	group: "666B73C638A92906"
+	id: "5BB468953277AADD"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["499EF2CFF7EFF3AD"]
+			description: [
+				"Goal: obtain Coolant Exchanger."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "liquid_coolant:coolant_exchanger"
+			id: "1E5746C76B18FBE8"
+			rewards: [
+				{
+					count: 4
+					id: "4CD8EADD1F8D1779"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7FD6860CF7C18B1E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A1D409763A4E5C4"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "57187205CCA133A0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B4A73773D404267"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2D3518EDB92505F4"
+				item: "liquid_coolant:coolant_exchanger"
+				type: "item"
+			}]
+			title: "Liquid Coolant Exchanger"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["135CD272448EB0BB"]
+			description: [
+				"Goal: obtain Fission Fuel Acceptor."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+				"Fission entry requires coolant engineering and synthesis maturity."
+			]
+			hide_dependency_lines: false
+			icon: "fission_reactor:fission_fuel_acceptor"
+			id: "39FC1D475754BA90"
+			rewards: [
+				{
+					count: 4
+					id: "3EE515D5C6E27089"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04931407ECDA689C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7969B28C2B18307C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "764F98B888E15621"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00FA6F3731EB0746"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4F137DF7C03DEEB0"
+				item: "fission_reactor:fission_fuel_acceptor"
+				type: "item"
+			}]
+			title: "Fission Fuel Acceptor"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["39FC1D475754BA90"]
+			description: [
+				"Goal: obtain Fission Reactor Rod."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "fission_reactor:fission_reactor_rod"
+			icon_scale: 1.18d
+			id: "1650666750510F21"
+			rewards: [
+				{
+					count: 4
+					id: "659EE4C34A5EFE51"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "201E07CD90DA8569"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10F8A1477EC4258B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79CC28EC901A2B13"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C75DFD4490FEEA0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3F9240ACEAEED3EC"
+				item: "fission_reactor:fission_reactor_rod"
+				type: "item"
+			}]
+			title: "Fission Reactor Rod"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["499EF2CFF7EFF3AD"]
+			description: [
+				"Goal: obtain Gas Pipe."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:gas_pipe"
+			id: "3465C0053AD11A4E"
+			rewards: [
+				{
+					count: 4
+					id: "50A50A5FAD76075C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "62CE2DB809158A6E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25DB9595C8F9BCC8"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CACF026EC99516D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A271DB45F8ADE43"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "19E8B0227705A8CA"
+				item: "gases_and_plasmas:gas_pipe"
+				type: "item"
+			}]
+			title: "Gas Pipe Network"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Gas Compressor."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:gas_compressor"
+			id: "1064D3AA36BDAE17"
+			rewards: [
+				{
+					count: 4
+					id: "517E3661362E7B71"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C93D2E3DA76973D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B0B83B2181C8B23"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A3512D8A5CA641C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00AF39E01F64B357"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7D1A1FED4114AFF9"
+				item: "gases_and_plasmas:gas_compressor"
+				type: "item"
+			}]
+			title: "Gas Compressor"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1064D3AA36BDAE17"]
+			description: [
+				"Goal: obtain Gas Fan."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:gas_fan"
+			id: "08DAF92AF8B897DE"
+			rewards: [
+				{
+					count: 4
+					id: "53E5736882306144"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0977DA414707A1FE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7478764A6DC8CDCE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60807CE7D6A14DA8"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F7768BC514880C6"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "68995EEACE6B5C18"
+				item: "gases_and_plasmas:gas_fan"
+				type: "item"
+			}]
+			title: "Gas Fan"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1064D3AA36BDAE17"
+				"499EF2CFF7EFF3AD"
+			]
+			description: [
+				"Goal: obtain Electrolyzer."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:electrolyzer"
+			id: "70BF460B41A49F91"
+			rewards: [
+				{
+					count: 4
+					id: "26AA489BC4AA1172"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F9E22CF464681EF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "622836484486723E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "46E72E6A32886685"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0F15F91198CCE503"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "661519DCAB0D6C79"
+				item: "gases_and_plasmas:electrolyzer"
+				type: "item"
+			}]
+			title: "Electrolyzer"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["121CC32FAF0CB32A"]
+			description: [
+				"Goal: obtain AE2 Machine Casing."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+				"Fusion as power needs local intelligence and controlled automation."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:ae2_machine_casing"
+			icon_scale: 1.18d
+			id: "5189433D29332FB3"
+			rewards: [
+				{
+					count: 4
+					id: "1CE8A5971C8699C7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "661F21D919058A31"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C579A116C74562E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "03F393C05AD4D01A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D30B8DAABE62EC0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2B9B0C842EBE4534"
+				item: "kubejs:ae2_machine_casing"
+				type: "item"
+			}]
+			title: "AE2 Control Access"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08DAF92AF8B897DE"]
+			description: [
+				"Goal: obtain Electromagnet."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:electromagnet"
+			id: "3BE2DF6C49D7B17D"
+			rewards: [
+				{
+					count: 4
+					id: "293EFCE6416CDD49"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "648D6A87883E0E1F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2C4B409A4A6E5993"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "331580A26743E9CA"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32B92A2A18C73741"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5F25DA60AB6A94CC"
+				item: "gases_and_plasmas:electromagnet"
+				type: "item"
+			}]
+			title: "Magnetic Confinement"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Ionizer."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:ionizer"
+			id: "4CF61D3383AD8B5A"
+			rewards: [
+				{
+					count: 4
+					id: "7FF688B90C4C0601"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D6D3D4B297A88F9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "30F9B214778CD8EB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "30CF422F655DC166"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1CC6683733FCCD23"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "69989D2A08702F36"
+				item: "gases_and_plasmas:ionizer"
+				type: "item"
+			}]
+			title: "Ionizer"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4CF61D3383AD8B5A"]
+			description: [
+				"Goal: obtain Electromagnet, Ionizer, Fission Reactor Rod."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:electromagnet"
+			id: "2F0316839633C5C2"
+			rewards: [
+				{
+					count: 4
+					id: "2BDD5E1E081DE19E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E5D38B9C3DD7F3A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D6AB3F1E404B360"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "278DD01421CBD739"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D762D37FEF2F8D0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3C82876C99AEB572"
+					item: "gases_and_plasmas:electromagnet"
+					type: "item"
+				}
+				{
+					id: "182428423D92C985"
+					item: "gases_and_plasmas:ionizer"
+					type: "item"
+				}
+				{
+					id: "65F536AECF07CBF3"
+					item: "fission_reactor:fission_reactor_rod"
+					type: "item"
+				}
+			]
+			title: "Reactive Matter Cell Work"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Ionizer, Battery."
+				"Why it matters: This combines coolant, fission, gas handling, and fusion readiness."
+				"You now have coolant, fission hardware, gas handling, magnetic containment, and AE2 control ready for fusion tuning."
+			]
+			hide_dependency_lines: false
+			icon: "gases_and_plasmas:ionizer"
+			icon_scale: 1.18d
+			id: "502A74DF553B013C"
+			rewards: [
+				{
+					count: 4
+					id: "3034FB33EA2EF1AA"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FDCEB848E2E749D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1C85C93C88A6BC50"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "568170CFE321257F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5CB3ADB569E12DE2"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "77E886FC63E04FFA"
+					item: "gases_and_plasmas:ionizer"
+					type: "item"
+				}
+				{
+					id: "3EF68C79126A03B7"
+					item: "powergrid:battery"
+					type: "item"
+				}
+			]
+			title: "Fusion Readiness"
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+	title: "Fission and Fusion"
+}

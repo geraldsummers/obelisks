@@ -1,0 +1,17 @@
+filename = 'DynamicTrees-1.20.1-1.4.10.jar'
+name = 'Dynamic Trees'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'DynamicTrees-1.20.1-1.4.10.jar'
+
+[download]
+hash = '6fdd23dfdbdf0fa88c468b1cae6a2dbefa019923'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7502488
+project-id = 252818

@@ -1,0 +1,5 @@
+
+[logbegone]
+	regex = ["Better Caves expected a ServerLevel, but got:.*DhLitWorldGenRegion", "Liquid regions will not be generated for this chunk\\. This may be fatal!"]
+	phrases = ["Better Caves expected a ServerLevel, but got:", "Liquid regions will not be generated for this chunk. This may be fatal!"]
+

@@ -1,0 +1,17 @@
+filename = 'tinkers_advanced_tools-3.0.0-beta.4.jar'
+name = "Tinkers' Advanced-Tools"
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'tinkers_advanced_tools-3.0.0-beta.4.jar'
+
+[download]
+hash = '2aae36bd1437558edd920d25081d6fbc1fd981bd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7554841
+project-id = 1397176

@@ -1,0 +1,5 @@
+marker=sampled_timeout elapsed=121 java_pid=1338051 profile=docs/memory_variants/crash_test_restored_forgified_fabric_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+57:[01May2026 13:23:58.788] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+29008:[01May2026 13:24:56.728] [Render thread/WARN] [ModernFix/]: Initial datapack load took 17.75 s
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11989 peakRssGiB=11.71

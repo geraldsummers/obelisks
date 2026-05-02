@@ -1,0 +1,31 @@
+{
+  "id": "everdawn",
+  "displayName": "Everdawn Rift Anchor",
+  "instanceTemplateId": "everdawn",
+  "targetDimension": "blue_skies:everdawn",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "blue_skies",
+  "enabled": true,
+  "worldgenWeight": 1.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "blue_skies:lunar_stonebrick",
+  "meteorShellBlock": "blue_skies:polished_umber",
+  "pedestalBlock": "blue_skies:polished_cinderstone",
+  "returnPadFrameBlock": "blue_skies:chiseled_lunar_stonebrick",
+  "platformFloorBlock": "blue_skies:lunar_stonebrick",
+  "craterFillBlocks": [
+    "blue_skies:lunar_stonebrick",
+    "blue_skies:polished_umber",
+    "blue_skies:polished_cinderstone",
+    "blue_skies:chiseled_lunar_stonebrick",
+    "blue_skies:midnight_sandstone"
+  ],
+  "rewardTableId": "default",
+  "useAe2Skystone": true
+}

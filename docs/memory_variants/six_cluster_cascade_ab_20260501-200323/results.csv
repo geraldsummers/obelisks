@@ -1,0 +1,10 @@
+type,name,seed_jar_count,disabled_jar_count,marker,peak_kb,peak_gib,delta_vs_baseline_gib
+baseline,baseline_1,,,sampled_timeout,12076032,11.517,
+baseline,baseline_2,,,sampled_timeout,14349312,13.685,
+baseline,baseline_3,,,sampled_timeout,12812288,12.219,
+cluster,c1_core_libs_perf,137,168,failed,3162112,3.016,9.203
+cluster,c2_worldgen_dimensions,24,26,sampled_timeout,11410432,10.882,1.337
+cluster,c3_tech_automation,36,43,failed,2660352,2.537,9.682
+cluster,c4_magic,12,13,sampled_timeout,10220544,9.747,2.472
+cluster,c5_adventure_mobs_structures,21,21,sampled_timeout,13429760,12.808,-0.589
+cluster,c6_survival_food_building_qol,48,51,sampled_timeout,13477888,12.854,-0.635

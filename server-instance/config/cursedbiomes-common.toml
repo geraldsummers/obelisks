@@ -1,0 +1,49 @@
+#Region size in blocks for deterministic curse assignment.
+#Range: 128 ~ 4096
+regionSize = 768
+#Approximate fraction of eligible regions that receive a curse.
+#Range: 0.0 ~ 1.0
+curseRegionDensity = 0.6
+#Range: 16 ~ 128
+activeRadius = 48
+#Range: 1 ~ 128
+maxEventOwnedEntitiesPerPlayer = 16
+#Range: 1 ~ 256
+maxEventOwnedEntitiesPerRegion = 48
+#Range: 1 ~ 128
+maxIgniteAttemptsPerBurst = 24
+#Range: 1 ~ 32
+maxLightningStrikesPerBurst = 5
+#Range: 1 ~ 32
+maxHostileSpawnsPerWave = 6
+#Range: 1 ~ 16
+maxHazardBandsPerPhase = 3
+#Range: 100 ~ 36000
+maxEventDurationTicks = 1200
+#Range: 0.0 ~ 4.0
+griefingSeverity = 1.0
+playerOnlyLawMode = false
+debugLogging = false
+pyreEnabled = true
+stormwrathEnabled = true
+predationEnabled = true
+pressEnabled = true
+#Range: 0.1 ~ 5.0
+pyreTimingMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+stormwrathTimingMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+predationTimingMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+pressTimingMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+pyreHazardMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+stormwrathHazardMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+predationHazardMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+pressHazardMultiplier = 1.0
+#Range: 0.1 ~ 5.0
+lawStrengthMultiplier = 1.0
+

@@ -1,0 +1,446 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "botania"
+	group: "77AFAA45BDFC5D88"
+	id: "0A7C5CD89C39C655"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B77F9CDE731390A"]
+			description: [
+				"Goal: obtain Lexicon."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:lexicon"
+			id: "391DD88804205A88"
+			rewards: [
+				{
+					count: 4
+					id: "351D7E02DF60CAB5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0750D2299F48E3D9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15FECA836AECEC8E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3294017D4937AF1D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25A4766DCE6B7799"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4860159C17CF5B8E"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			title: "Lexica Botania"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Mana Pool."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:mana_pool"
+			icon_scale: 1.18d
+			id: "25C0002C93B35134"
+			rewards: [
+				{
+					count: 4
+					id: "60FA21A78A4D63CC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BE134B587C8B30A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4AAAF8B2B938899A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B8498B008F0E27B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CF7E4D07F5D5557"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5E3F1E39C794F92B"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			title: "Mana Pool"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Mana Spreader."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:mana_spreader"
+			id: "043933B43A62E2B3"
+			rewards: [
+				{
+					count: 4
+					id: "01249405E8F91AD0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C0650DF1204F93E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BF7579D1FDCA08C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "44247F6A0FB109EB"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4D1FF5DA3E6AF746"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "416E4CE673D5DE8A"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			title: "Mana Spreader"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Runic Altar."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:runic_altar"
+			id: "128A5A0108AA6A0F"
+			rewards: [
+				{
+					count: 4
+					id: "290F426325B0CACD"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DB5DA9CD821FD40"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06D37E1AE3887634"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7407B670CC94A9FE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53168036BA78F939"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5D4B24DD724EBA3D"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "Runic Altar"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C242EFA1B5147F6"]
+			description: [
+				"Goal: obtain Terra Plate."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:terra_plate"
+			icon_scale: 1.18d
+			id: "52D6414CD02CE6B8"
+			rewards: [
+				{
+					count: 4
+					id: "6CB8C4109F2419BA"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31BAAF42EEDBB928"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0996713658DE5632"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0265C4FEB92341F6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0210488F56256969"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "17D7CC31FF3EEFCA"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "Terrestrial Plate"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["52D6414CD02CE6B8"]
+			description: [
+				"Goal: obtain Terrasteel Ingot."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:terrasteel_ingot"
+			id: "32A8AE490F013982"
+			rewards: [
+				{
+					count: 4
+					id: "458530AAEC1F4B6D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6CFB5814C08CFDEF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EDE6B62B3CA2A0D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6F61498E9D9551B1"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FAF73A529B64338"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "04DE88173C1EFC56"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "Terrasteel Ingot"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"32A8AE490F013982"
+				"755CF156F945F8EC"
+			]
+			description: [
+				"Goal: obtain Alfheim Portal."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:alfheim_portal"
+			id: "2E2D0449F6DF597E"
+			rewards: [
+				{
+					count: 4
+					id: "6ADA4EAB86F5BCEE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DFF0206B5AD9E61"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "239D7C411114108B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "732A5FA58AD2E0CE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02E6A7B9051BD783"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "366CAA30B63F5FDA"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			title: "Alfheim Portal"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2E2D0449F6DF597E"]
+			description: [
+				"Goal: obtain Gaia Ingot, Gaia Head."
+				"Why it matters: This builds Botania mana infrastructure, runes, terrasteel, and boss rewards."
+			]
+			hide_dependency_lines: false
+			icon: "botania:gaia_ingot"
+			icon_scale: 1.18d
+			id: "50B4D5D7FE42BC5B"
+			rewards: [
+				{
+					count: 4
+					id: "388113372C56EAA6"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A66152178E73C6C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0545DE5EC0721F90"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C6FE0E5402A062A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0247F940B607F624"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "19246F0035170321"
+					item: "botania:gaia_ingot"
+					type: "item"
+				}
+				{
+					id: "3E63126CB1E7A2A4"
+					item: "botania:gaia_head"
+					type: "item"
+				}
+			]
+			title: "Gaia Reward"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Botania"
+}

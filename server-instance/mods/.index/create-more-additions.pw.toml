@@ -1,0 +1,17 @@
+filename = 'create_more_additions-2.0.0-forge-1.20.1.jar'
+name = 'Create: Crafts & (More) Additions'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'create_more_additions-2.0.0-forge-1.20.1.jar'
+
+[download]
+hash = '511225a7ff271cc5b0bfc69a617da4a80436d3ba'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7950353
+project-id = 1096395

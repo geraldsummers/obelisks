@@ -1,0 +1,17 @@
+filename = 'create_cold_sweat-1.1.2.jar'
+name = 'Create: Cold Sweat'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4', '1.20.5', '1.20.6' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'CCS 1.1.2'
+
+[download]
+hash = '4b96ca65a8b0c5bbfc16b5a9532ed931d18c8925'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7214648
+project-id = 1184450

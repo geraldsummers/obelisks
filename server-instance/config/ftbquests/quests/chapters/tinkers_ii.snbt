@@ -1,0 +1,197 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tinkers_ii"
+	group: "17D1B259E2B76A4F"
+	id: "54BDCFC2927F8CD6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Scorched Machine Casing."
+				"Why it matters: This upgrades Tinkers into scorched and foundry-scale metallurgy for more controlled material conversion."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:scorched_machine_casing"
+			icon_scale: 1.18d
+			id: "4FF82A40E0CFE52B"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6F760E87F93FC66C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14198A413A32C1FC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "243304AE45A37C4B"
+				item: "kubejs:scorched_machine_casing"
+				type: "item"
+			}]
+			title: "Scorched Machine Casing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FF82A40E0CFE52B"]
+			description: [
+				"Goal: obtain Scorched Alloyer."
+				"Why it matters: This upgrades Tinkers into scorched and foundry-scale metallurgy for more controlled material conversion."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:scorched_alloyer"
+			id: "7F86BB2191769D8B"
+			rewards: [
+				{
+					count: 4
+					id: "03C83712CB138C8B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38BDAFF6C510D13F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "40FD5482CA368BB5"
+				item: "tconstruct:scorched_alloyer"
+				type: "item"
+			}]
+			title: "Scorched Alloying"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FF82A40E0CFE52B"]
+			description: [
+				"Goal: obtain Scorched Fuel Tank."
+				"Why it matters: This upgrades Tinkers into scorched and foundry-scale metallurgy for more controlled material conversion."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:scorched_fuel_tank"
+			id: "0437C0C1A358A1C0"
+			rewards: [
+				{
+					count: 4
+					id: "3D58F72A37FBE4F3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "194F1869A2F660C1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "14A305EAD72701DA"
+				item: "tconstruct:scorched_fuel_tank"
+				type: "item"
+			}]
+			title: "Scorched Fuel Handling"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FF82A40E0CFE52B"]
+			description: [
+				"Goal: obtain Foundry Controller."
+				"Why it matters: This upgrades Tinkers into scorched and foundry-scale metallurgy for more controlled material conversion."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:foundry_controller"
+			icon_scale: 1.18d
+			id: "161287AD001F331C"
+			rewards: [
+				{
+					count: 4
+					id: "40BBA3ABB12A08D0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3747A5C20701C2D3"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "20AE4509E271CB06"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			title: "Foundry Reads Geology"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Scorched Drain, Scorched Chute."
+				"Why it matters: This upgrades Tinkers into scorched and foundry-scale metallurgy for more controlled material conversion."
+				"This is the metallurgy capstone for early progression: stable heat, alloy control, and deliberate molten routing in one station set."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:scorched_drain"
+			icon_scale: 1.18d
+			id: "77B736915F6BB66D"
+			rewards: [
+				{
+					count: 4
+					id: "318BDCCADA6DE5A7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54D989666B40C28B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0DC9F8541FCDDDD7"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					id: "1C44891A44811554"
+					item: "tconstruct:scorched_chute"
+					type: "item"
+				}
+			]
+			title: "Molten Logistics"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Tinkers II"
+}

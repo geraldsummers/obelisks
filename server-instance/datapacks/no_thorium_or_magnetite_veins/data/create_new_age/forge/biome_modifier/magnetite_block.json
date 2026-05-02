@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:empty",
+  "features": "create_new_age:magnetite_block",
+  "step": "underground_ores"
+}

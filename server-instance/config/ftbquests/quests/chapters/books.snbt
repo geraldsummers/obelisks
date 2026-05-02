@@ -1,0 +1,126 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "none"
+	filename: "books"
+	group: "52D8800CDEBBF5D6"
+	id: "1F2C9A2FA90C2EF4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6F243CE80DBB8E2A"]
+			description: [
+				"Goal: obtain Book."
+				"Why it matters: This points you toward the in-game documentation for the systems you are using."
+				"Use the quest book as the authored graph. It is allowed to explain; it should not be the mechanical gate."
+			]
+			hide_dependency_lines: false
+			icon: "ftbquests:book"
+			icon_scale: 1.18d
+			id: "3C43803D7D62CE6F"
+			rewards: [{
+				count: 4
+				id: "1C13334CCEEB49F9"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.75d
+			subtitle: "Reference"
+			tasks: [{
+				id: "2384272F87BAB8A9"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			title: "Quest Book"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6512781196AA96D4"]
+			description: [
+				"Goal: obtain Encyclopedia."
+				"Why it matters: This points you toward the in-game documentation for the systems you are using."
+				"Tinkers documentation belongs near the repair and metallurgy spine."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:encyclopedia"
+			icon_scale: 1.18d
+			id: "5725B9D046D6B9BA"
+			rewards: [{
+				count: 4
+				id: "0DA16DB048E69F94"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.75d
+			subtitle: "Reference"
+			tasks: [{
+				id: "0F10F7BCA7E1A956"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			title: "Tinkers Encyclopedia"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Guide Book."
+				"Why it matters: This points you toward the in-game documentation for the systems you are using."
+				"Patchouli guide books vary by mod/NBT, so this is a loose reference checkpoint rather than a hard mod gate."
+			]
+			hide_dependency_lines: false
+			icon: "patchouli:guide_book"
+			id: "0FFD0A61708C31A7"
+			rewards: [{
+				count: 4
+				id: "5A1EF3903D9B8FC7"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "none"
+			size: 0.9d
+			subtitle: "Reference"
+			tasks: [{
+				id: "62C06F1C9F0A647F"
+				item: "patchouli:guide_book"
+				type: "item"
+			}]
+			title: "Patchouli Guides"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0FFD0A61708C31A7"]
+			description: [
+				"Goal: obtain Guide Book."
+				"Why it matters: This points you toward the in-game documentation for the systems you are using."
+				"Mana and Artifice documentation is late because the mod itself is late."
+			]
+			hide_dependency_lines: false
+			icon: "mna:guide_book"
+			icon_scale: 1.18d
+			id: "526C7A950B8472B0"
+			rewards: [{
+				count: 4
+				id: "55617BF48F103946"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.75d
+			subtitle: "Reference"
+			tasks: [{
+				id: "61449AE2413F2203"
+				item: "mna:guide_book"
+				type: "item"
+			}]
+			title: "Codex Arcana"
+			x: 4.0d
+			y: 1.0d
+		}
+	]
+	title: "Reference Books"
+}

@@ -1,0 +1,6 @@
+disabled emitrades-forge-1.2.1+mc1.20.1.jar
+disabled emi-1.1.22+1.20.1+forge.jar
+marker=sampled_timeout elapsed=91 java_pid=51304 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_025.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:11:24.776] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=13883 peakRssGiB=13.56

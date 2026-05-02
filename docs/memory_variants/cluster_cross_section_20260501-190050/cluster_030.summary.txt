@@ -1,0 +1,7 @@
+disabled [forge]ctov-3.4.14.jar
+disabled lithostitched-forge-1.20.1-1.4.11.jar
+disabled tectonic-3.0.17-forge-1.20.1.jar
+marker=sampled_timeout elapsed=91 java_pid=55956 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_030.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:16:03.847] [main/INFO] [Puzzles Lib/]: Loading 355 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=12978 peakRssGiB=12.67

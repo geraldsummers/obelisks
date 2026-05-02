@@ -1,0 +1,401 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "reliquary"
+	group: "6E0A7267C9728B31"
+	id: "5EEB7E2CE94E82E6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Apothecary Mortar."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:apothecary_mortar"
+			id: "75FA91718C354C8E"
+			rewards: [
+				{
+					count: 4
+					id: "316C59587393193B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E096D4696D07916"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "110E366ADD07C7CD"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CD51389C79E4958"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0041A033D06DD637"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0A0F8A2A113B1210"
+				item: "reliquary:apothecary_mortar"
+				type: "item"
+			}]
+			title: "Apothecary Mortar"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75FA91718C354C8E"]
+			description: [
+				"Goal: obtain Apothecary Cauldron."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:apothecary_cauldron"
+			icon_scale: 1.18d
+			id: "294F4EA9A5E9E61A"
+			rewards: [
+				{
+					count: 4
+					id: "6D1C6CA9FC7D0E13"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B143E8BD10EB584"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3660EC4B4CFB238C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "30FCAA3B4C3D4526"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "50D3111D9C75233B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "7BED7C57095A8AE4"
+				item: "reliquary:apothecary_cauldron"
+				type: "item"
+			}]
+			title: "Apothecary Cauldron"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75FA91718C354C8E"]
+			description: [
+				"Goal: obtain Interdiction Torch."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:interdiction_torch"
+			id: "65C2DF1EEAD8DF3E"
+			rewards: [
+				{
+					count: 4
+					id: "4F8E0974BB9B7BB7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18F0C23D727E4E1A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E2B18A23FFB665D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "377F27A9F8360946"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CCAA4A27406BF56"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7F580C0437B254E6"
+				item: "reliquary:interdiction_torch"
+				type: "item"
+			}]
+			title: "Interdiction Torch"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["294F4EA9A5E9E61A"]
+			description: [
+				"Goal: obtain Handgun."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:handgun"
+			id: "45AA6EECAE853F2F"
+			rewards: [
+				{
+					count: 4
+					id: "572FF1A3B68F0242"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E39311E0D28E0E7"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F79A13BE1FF3D9A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "596668EAD2C3A738"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B872A73DAF8BA61"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "56A6C2C2751510C1"
+				item: "reliquary:handgun"
+				type: "item"
+			}]
+			title: "Handgun Line"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"294F4EA9A5E9E61A"
+				"7A8A5A5D953E7BC1"
+			]
+			description: [
+				"Goal: obtain Alkahestry Altar, Alkahestry Tome."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:alkahestry_altar"
+			icon_scale: 1.18d
+			id: "4F6556F04F144A79"
+			rewards: [
+				{
+					count: 4
+					id: "3B4B469A650F0F2C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CCE38A9CFF116F6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "36AE4E8B38B95AE7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38F39C1465C90F72"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6FEF43CD8E070E16"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5640B2FE8467B7A7"
+					item: "reliquary:alkahestry_altar"
+					type: "item"
+				}
+				{
+					id: "6BA64D2BC67BE713"
+					item: {
+						Count: 1
+						id: "reliquary:alkahestry_tome"
+						tag: {
+							Damage: 1001
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Alkahestry"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["45AA6EECAE853F2F"]
+			description: [
+				"Goal: obtain Holy Hand Grenade."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:holy_hand_grenade"
+			id: "05C95E6CE24A32AD"
+			rewards: [
+				{
+					count: 4
+					id: "2D5C721B95F27AB5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27C10DCF15215B31"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1141BE642C1ED250"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3906E679EB8172D6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F38086A9187C5E3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "628005CFB90C7B14"
+				item: "reliquary:holy_hand_grenade"
+				type: "item"
+			}]
+			title: "Holy Hand Grenade"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F6556F04F144A79"]
+			description: [
+				"Goal: obtain Emperor Chalice."
+				"Why it matters: This builds Reliquary utility tools, apothecary work, and stronger relic items."
+			]
+			hide_dependency_lines: false
+			icon: "reliquary:emperor_chalice"
+			icon_scale: 1.18d
+			id: "19D6DBB8A5A8E500"
+			rewards: [
+				{
+					count: 4
+					id: "1E1E33B1A2C050E3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "20C0707D32016D62"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BF1B54D561AB1E2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18E3E8BF5D3290BF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0BC308001D4D5CF5"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "261362BA3C9730C1"
+				item: "reliquary:emperor_chalice"
+				type: "item"
+			}]
+			title: "Emperor Chalice"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Reliquary"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "meteor",
+  "enabled": true,
+  "siteShape": "meteor",
+  "craterRadiusMin": 5,
+  "craterRadiusMax": 7,
+  "craterDepthMin": 2,
+  "craterDepthMax": 4,
+  "coreRadiusMin": 3,
+  "coreRadiusMax": 3,
+  "shellIntegrity": 0.88,
+  "debrisRadius": 2,
+  "debrisChance": 0.12,
+  "pillarCountMin": 0,
+  "pillarCountMax": 0,
+  "pillarHeightMin": 2,
+  "pillarHeightMax": 4
+}

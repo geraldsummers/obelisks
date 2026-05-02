@@ -1,0 +1,15 @@
+disabled Additional-Weaponry-1.20.1-1.1.3.jar
+disabled TConstruct-1.20.1-3.11.2.166.jar
+disabled Mantle-1.20.1-1.11.104.jar
+disabled TinkersBattleSpades-1.20.1-1.2.1.jar
+disabled tponder-1.1.jar
+disabled tinkersweaponry-1.20.1-0.0.5.jar
+disabled tconjei-1.20.1-1.5.4.jar
+disabled etstlib-3.0.0-beta.20.jar
+disabled jei-1.20.1-forge-15.20.0.130.jar
+disabled TinkerBetterCombat 0.14.jar
+disabled JsonThings-1.20.1-0.9.13.jar
+marker=failed elapsed=13 java_pid=50701 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_019.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+168:[01May2026 19:11:09.536] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_19.11.09-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=2745 peakRssGiB=2.68

@@ -1,0 +1,17 @@
+filename = 'AdPother-1.20.1-8.1.43.0-build.2132.jar'
+name = 'Pollution of the Realms'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'AdPother-1.20.1-8.1.43.0-build.2132.jar'
+
+[download]
+hash = '32d9a4ac7a3964b7b733fdf3b5dd6b0eb813da6f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7723739
+project-id = 269973

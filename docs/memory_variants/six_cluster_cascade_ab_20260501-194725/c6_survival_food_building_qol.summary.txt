@@ -1,0 +1,57 @@
+disabled oceansdelight-1.0.2-1.20.jar
+disabled appleskin-forge-mc1.20.1-2.5.1.jar
+disabled diet-forge-2.1.1+1.20.1.jar
+disabled PresenceFootsteps-1.20.1-1.9.1-beta.1.jar
+disabled plonk-1.20.1-10.0.5-forge.jar
+disabled lighty-forge-2.1.2+1.20.1.jar
+disabled MouseTweaks-forge-mc1.20.1-2.25.1.jar
+disabled embeddium-0.3.31+mc1.20.1.jar
+disabled oculus-mc1.20.1-1.8.0.jar
+disabled ThirstWasTaken-1.20.1-1.4.0.jar
+disabled buildinggadgets2-1.0.8.jar
+disabled sound-physics-remastered-forge-1.20.1-1.5.1.jar
+disabled FramedBlocks-9.4.3.jar
+disabled wares-1.20.1-1.2.10.jar
+disabled entityculling-forge-1.10.1-mc1.20.1.jar
+disabled controllable-forge-1.20.1-0.21.9.jar
+disabled ColdSweat-2.4.jar
+disabled rusticdelight-forge-1.20.1-1.5.1.jar
+disabled ubesdelight-forge-1.20.1-0.4.11.jar
+disabled FarmersDelight-1.20.1-1.2.11a.jar
+disabled VeggiesDelight-1.20.1-1.9.2.jar
+disabled farmersrespite-1.20.1-2.1.2.jar
+disabled BrewinAndChewin-1.20.1-3.2.1.jar
+disabled ends_delight-2.5.1+forge.1.20.1.jar
+disabled MyNethersDelight-1.20.1-0.1.8.jar
+disabled Delightful-1.20.1-3.7.8.jar
+disabled chefsdelight-1.0.4-forge-1.20.1.jar
+disabled jei-1.20.1-forge-15.20.0.130.jar
+disabled emitrades-forge-1.2.1+mc1.20.1.jar
+disabled emi-1.1.22+1.20.1+forge.jar
+disabled sophisticatedstorageinmotion-1.20.1-0.10.28.198.jar
+disabled sophisticatedbackpacks-1.20.1-3.24.35.1675.jar
+disabled sophisticatedcore-1.20.1-1.3.21.1676.jar
+disabled sophisticatedstorage-1.20.1-1.4.39.1666.jar
+disabled fiahi-3.1.6.jar
+disabled collectorsreap-1.20.1-1.5.5.jar
+disabled AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar
+disabled dotcoinmod-forge-20.18.1.jar
+disabled Quark-4.0-462.jar
+disabled ftb-teams-forge-2001.3.2.jar
+disabled ftb-quests-forge-2001.4.21.jar
+disabled BuildingWands-forge-MC1.20.1-3.0.4.jar
+disabled Controlling-forge-1.20.1-12.0.2.jar
+disabled corn_delight-1.1.9-1.20.1.jar
+disabled tconjei-1.20.1-1.5.4.jar
+disabled immersive_weathering-1.20.1-2.0.5-forge.jar
+disabled supplementaries-1.20-3.1.42-forge.jar
+disabled amendments-1.20-2.2.5.jar
+disabled weather2-1.20.1-2.8.3.jar
+disabled BetterGrassify-1.4.4+forge.1.20.1.jar
+disabled DynamicTreesQuark-1.20.1-2.5.3.jar
+disabled create_cold_sweat-1.1.2.jar
+marker=failed elapsed=23 java_pid=99000 profile=/home/gerald/obelisks/docs/memory_variants/six_cluster_cascade_ab_20260501-194725/c6_survival_food_building_qol.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+48:[01May2026 19:57:14.802] [main/INFO] [Puzzles Lib/]: Loading 303 mods:
+1248:[01May2026 19:57:23.349] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_19.57.23-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=4151 peakRssGiB=4.05

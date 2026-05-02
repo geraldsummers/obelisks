@@ -1,0 +1,17 @@
+filename = 'guardvillagers-1.20.1-1.6.17.jar'
+name = 'Guard Villagers'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'guardvillagers-1.20.1-1.6.17.jar'
+
+[download]
+hash = '5d338370d734cc73126fe8231f3defa3d120e0c7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7704195
+project-id = 360203

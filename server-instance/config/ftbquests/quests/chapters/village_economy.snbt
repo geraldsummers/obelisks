@@ -1,0 +1,368 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "village_economy"
+	group: "3570F9CE90E09BD1"
+	id: "48EADD859C7E5455"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7076D14173C92EFD"]
+			description: [
+				"Goal: obtain Trading Post."
+				"Why it matters: This advances the next part of the progression path."
+				"Villages matter because people and routes matter. A trading post is a local market, not a magic converter."
+			]
+			hide_dependency_lines: false
+			icon: "tradingpost:trading_post"
+			icon_scale: 1.18d
+			id: "2C0E2EDCF3BAC91B"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "67FB72153DC065A5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CBD18A4EE0E07FE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				id: "06397999B1CED920"
+				item: "tradingpost:trading_post"
+				type: "item"
+			}]
+			title: "Centralized Trades"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7076D14173C92EFD"]
+			description: [
+				"Goal: obtain Cardboard Box."
+				"Why it matters: This advances the next part of the progression path."
+				"Wares packages are physical goods. Treat them like small logistics contracts."
+			]
+			hide_dependency_lines: false
+			icon: "wares:cardboard_box"
+			id: "21BA309D9514B497"
+			rewards: [
+				{
+					count: 4
+					id: "5651F8E7486A6684"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E63F2ED8113E664"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "194F81E9C09EAB36"
+				item: "wares:cardboard_box"
+				type: "item"
+			}]
+			title: "Cardboard Logistics"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DEEF12CE3692689"]
+			description: [
+				"Goal: obtain Delivery Agreement."
+				"Why it matters: This advances the next part of the progression path."
+				"Contracts should consume and produce coin value without falling back to emeralds."
+			]
+			hide_dependency_lines: false
+			icon: "wares:delivery_agreement"
+			id: "2D5BC3D32D54287A"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6815FD6BE1514F6F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1949A8CAF92FFF0A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [{
+				id: "76E22F6EAA6CA794"
+				item: "wares:delivery_agreement"
+				type: "item"
+			}]
+			title: "Delivery Agreement"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Completed Delivery Agreement."
+				"Why it matters: This advances the next part of the progression path."
+				"A completed delivery is proof of route work. It belongs in the same mental category as crafting components."
+			]
+			hide_dependency_lines: false
+			icon: "wares:completed_delivery_agreement"
+			icon_scale: 1.18d
+			id: "57B83CD67B7004E6"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6911878BB2CC03B7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C13A2CABE995A43"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				id: "52B1F10D56CF7E5C"
+				item: "wares:completed_delivery_agreement"
+				type: "item"
+			}]
+			title: "Completed Contract"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Bouquet Grid, Potted Bouquet."
+				"Why it matters: This advances the next part of the progression path."
+				"Decorative systems can have shallow graph depth. Bouquets stay because they are a small custom settlement reward, not a massive block-variant library."
+			]
+			hide_dependency_lines: false
+			icon: "procedural_bouquets:bouquet_grid"
+			id: "58E6FC84FF2F8493"
+			rewards: [
+				{
+					count: 4
+					id: "7CAA4DE6AD0FE3F9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BEE730D59686C0E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "628031A6A47670D4"
+					item: "procedural_bouquets:bouquet_grid"
+					type: "item"
+				}
+				{
+					id: "67D31D57C9F569EB"
+					item: "procedural_bouquets:potted_bouquet"
+					type: "item"
+				}
+			]
+			title: "Procedural Bouquets"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Stone Bricks, Spruce Log."
+				"Why it matters: This advances the next part of the progression path."
+				"Village Walls turns settlement defense into local infrastructure. The wall itself is commanded/world work, but the materials should still be physical."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:stone_bricks"
+			id: "077E6DE6D775E8C1"
+			rewards: [
+				{
+					count: 4
+					id: "7EAD050CE7060846"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "269DB7FB302FE14D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "02D2155C2D5E8DB2"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					id: "6A4284ED75A34503"
+					item: "minecraft:spruce_log"
+					type: "item"
+				}
+			]
+			title: "Fortified Village"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["077E6DE6D775E8C1"]
+			description: [
+				"Goal: obtain Dirt Path, Gravel, Stone Bricks."
+				"Why it matters: This advances the next part of the progression path."
+				"Settlement Roads makes routes visible in the world. Roads and bridges support distance; they do not erase it."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:dirt_path"
+			id: "7584761369460F94"
+			rewards: [
+				{
+					count: 4
+					id: "000CB72292BA7B20"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10148D6E5DFE271B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "077B00B95E5933DA"
+					item: "minecraft:dirt_path"
+					type: "item"
+				}
+				{
+					id: "374304ABE36DE701"
+					item: "minecraft:gravel"
+					type: "item"
+				}
+				{
+					id: "7F2258C318D13086"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+			]
+			title: "Settlement Roads"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iron Coin."
+				"Why it matters: This advances the next part of the progression path."
+				"Higher coins come from harder chapters, loot, and combat loops. They should not be convertible downward or upward in bulk."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:iron_coin"
+			id: "0E23D408551CB9E5"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "3C6F655B39A52F7A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73897497B73D199A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [{
+				count: 8L
+				id: "719C476C5342C212"
+				item: "dotcoinmod:iron_coin"
+				type: "item"
+			}]
+			title: "Iron Coin Float"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E23D408551CB9E5"]
+			description: [
+				"Goal: obtain Brass Coin."
+				"Why it matters: This advances the next part of the progression path."
+				"Brass coin trades are where villages begin supporting workshop recovery, logistics, and settlement upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:brass_coin"
+			icon_scale: 1.18d
+			id: "09B835365EF2F043"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "63631621C086B895"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1C3A3BB7686C7E93"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				count: 8L
+				id: "145CEC4277074757"
+				item: "dotcoinmod:brass_coin"
+				type: "item"
+			}]
+			title: "Brass Coin Float"
+			x: 14.0d
+			y: -1.0d
+		}
+	]
+	title: "Villages, Wares, and Settlement Rewards"
+}

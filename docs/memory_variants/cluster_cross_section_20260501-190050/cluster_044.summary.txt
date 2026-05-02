@@ -1,0 +1,6 @@
+disabled enhancedai-3.3.6.3.jar
+disabled insanelib-1.23.4.4.jar
+marker=sampled_timeout elapsed=90 java_pid=60575 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_044.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:20:43.309] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=12040 peakRssGiB=11.76

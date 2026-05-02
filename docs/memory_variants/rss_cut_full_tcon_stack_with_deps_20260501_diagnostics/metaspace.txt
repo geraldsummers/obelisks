@@ -1,0 +1,49 @@
+1175253:
+
+Usage:
+  Non-class:    366.20 MB used.
+      Class:     95.08 MB used.
+       Both:    461.28 MB used.
+
+Virtual space:
+  Non-class space:      384.00 MB reserved,     368.44 MB ( 96%) committed,  6 nodes.
+      Class space:        1.00 GB reserved,      96.69 MB (  9%) committed,  1 nodes.
+             Both:        1.38 GB reserved,     465.12 MB ( 33%) committed. 
+
+Chunk freelists:
+   Non-Class:  15.19 MB
+       Class:  15.31 MB
+        Both:  30.50 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 775.12 MB
+CDS: off
+MetaspaceReclaimPolicy: balanced
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 8388608.
+ - enlarge_chunks_in_place: 1.
+ - new_chunks_are_fully_committed: 0.
+ - uncommit_free_chunks: 1.
+ - use_allocation_guard: 0.
+ - handle_deallocations: 1.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 370.
+num_arena_births: 5572.
+num_arena_deaths: 26.
+num_vsnodes_births: 7.
+num_vsnodes_deaths: 0.
+num_space_committed: 7433.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 407.
+num_chunks_taken_from_freelist: 25378.
+num_chunk_merges: 367.
+num_chunk_splits: 18129.
+num_chunks_enlarged: 13319.
+num_inconsistent_stats: 0.
+

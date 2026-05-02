@@ -1,0 +1,17 @@
+filename = 'ShoulderSurfing-Forge-1.20.1-4.22.7.jar'
+name = 'Shoulder Surfing Reloaded'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ShoulderSurfing-Forge-1.20.1-4.22.7'
+
+[download]
+hash = '5ca9ab993c9403e6b9f1333d6f0cc2f1f95e200c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7974108
+project-id = 243190

@@ -1,0 +1,470 @@
+{
+	"chunk": 29,
+	"start": 29000,
+	"endExclusive": 29077,
+	"count": 77,
+	"recipes": [
+		{
+			"id": "iceandfire:podium2",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"SPS\",\" P \",\"SPS\"],\"key\":{\"S\":{\"item\":\"minecraft:birch_slab\"},\"P\":{\"item\":\"minecraft:birch_planks\"}},\"result\":{\"item\":\"iceandfire:podium_birch\"}}"
+		},
+		{
+			"id": "iceandfire:podium5",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"SPS\",\" P \",\"SPS\"],\"key\":{\"S\":{\"item\":\"minecraft:acacia_slab\"},\"P\":{\"item\":\"minecraft:acacia_planks\"}},\"result\":{\"item\":\"iceandfire:podium_acacia\"}}"
+		},
+		{
+			"id": "iceandfire:podium4",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"SPS\",\" P \",\"SPS\"],\"key\":{\"S\":{\"item\":\"minecraft:jungle_slab\"},\"P\":{\"item\":\"minecraft:jungle_planks\"}},\"result\":{\"item\":\"iceandfire:podium_jungle\"}}"
+		},
+		{
+			"id": "ars_nouveau:scryers_crystal",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "ars_nouveau",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"item\":\"minecraft:ender_eye\"},{\"tag\":\"forge:gems/source\"}],\"result\":{\"item\":\"ars_nouveau:scryers_crystal\"}}"
+		},
+		{
+			"id": "immersive_weathering:waxed_exposed_iron_bars_from_honeycomb",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "immersive_weathering",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"ingredients\":[{\"item\":\"immersive_weathering:exposed_iron_bars\"},{\"tag\":\"immersive_weathering:wax\"}],\"result\":{\"item\":\"immersive_weathering:waxed_exposed_iron_bars\"}}"
+		},
+		{
+			"id": "iceandfire:podium1",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"SPS\",\" P \",\"SPS\"],\"key\":{\"S\":{\"item\":\"minecraft:oak_slab\"},\"P\":{\"item\":\"minecraft:oak_planks\"}},\"result\":{\"item\":\"iceandfire:podium_oak\"}}"
+		},
+		{
+			"id": "create:cutting/runtime_generated/compat/botania/livingwood_planks_to_livingwood_fence",
+			"type": "create:cutting",
+			"namespace": "create",
+			"json": "{\"type\":\"create:cutting\",\"ingredients\":[{\"item\":\"botania:livingwood_planks\"}],\"results\":[{\"item\":\"botania:livingwood_fence\"}],\"processingTime\":50}"
+		},
+		{
+			"id": "quark:building/crafting/slabs/dripstone_block_slab",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"###\"],\"key\":{\"#\":{\"item\":\"minecraft:dripstone_block\"}},\"result\":{\"item\":\"quark:dripstone_block_slab\",\"count\":6},\"conditions\":[{\"type\":\"quark:flag\",\"flag\":\"dripstone\"}]}"
+		},
+		{
+			"id": "tconstruct:tools/modifiers/upgrade/magnetic_armor",
+			"type": "tconstruct:modifier",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"tconstruct:modifier\",\"allow_crystal\":true,\"inputs\":[{\"item\":\"minecraft:compass\"}],\"level\":1,\"result\":\"tconstruct:magnetic\",\"slots\":{\"upgrades\":1},\"tools\":{\"tag\":\"tconstruct:modifiable/armor/worn\"}}"
+		},
+		{
+			"id": "create_more_additions:silver/building/slab",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "create_more_additions",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"pattern\":[\"AAA\",\"   \",\"   \"],\"key\":{\"A\":{\"tag\":\"forge:ingots/silver\"}},\"result\":{\"item\":\"create_more_additions:silver_slab\",\"count\":6}}"
+		},
+		{
+			"id": "farmersdelight:apple_pie",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "farmersdelight",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"group\":\"fd_apple_pie\",\"key\":{\"#\":{\"item\":\"minecraft:wheat\"},\"O\":{\"item\":\"farmersdelight:pie_crust\"},\"a\":{\"item\":\"minecraft:apple\"},\"x\":{\"item\":\"minecraft:sugar\"}},\"pattern\":[\"###\",\"aaa\",\"xOx\"],\"result\":{\"item\":\"farmersdelight:apple_pie\"},\"show_notification\":true}"
+		},
+		{
+			"id": "railways:mechanical_crafting/yellow_brass_wrapped_locometal_boiler",
+			"type": "create:mechanical_crafting",
+			"namespace": "railways",
+			"json": "{\"type\":\"create:mechanical_crafting\",\"acceptMirrored\":true,\"key\":{\"#\":{\"item\":\"railways:yellow_brass_wrapped_locometal\"},\"/\":{\"item\":\"minecraft:blaze_rod\"},\"u\":{\"item\":\"minecraft:bucket\"}},\"pattern\":[\"  #  \",\" #u# \",\"#///#\",\" #/# \",\"  #  \"],\"result\":{\"count\":4,\"item\":\"railways:yellow_brass_wrapped_locometal_boiler\"}}"
+		},
+		{
+			"id": "alchemistry:fusion/8oxygen_and_19potassium_to_27cobalt",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:oxygen\"},\"input2\":{\"item\":\"chemlib:potassium\"},\"output\":{\"item\":\"chemlib:cobalt\"}}"
+		},
+		{
+			"id": "immersive_weathering:nether_brick_from_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "immersive_weathering",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"minecraft:nether_bricks\"},\"result\":\"minecraft:nether_brick\",\"count\":4}"
+		},
+		{
+			"id": "mynethersdelight:crafting/hoglin_trophy",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "mynethersdelight",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"group\":\"nether_trophy\",\"key\":{\"#\":{\"item\":\"mynethersdelight:hoglin_hide\"},\"B\":{\"item\":\"minecraft:bone_block\"},\"G\":{\"tag\":\"forge:ingots/gold\"},\"W\":{\"tag\":\"minecraft:planks\"},\"b\":{\"item\":\"minecraft:bone\"}},\"pattern\":[\"W#W\",\"bBb\",\"WGW\"],\"result\":{\"item\":\"mynethersdelight:hoglin_trophy\"},\"show_notification\":true}"
+		},
+		{
+			"id": "notreepunching:flint_from_gravel",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "notreepunching",
+			"json": "{\"__comment__\":\"This file was automatically created by mcresources\",\"type\":\"minecraft:crafting_shapeless\",\"ingredients\":[{\"item\":\"minecraft:gravel\"},{\"item\":\"minecraft:gravel\"},{\"item\":\"minecraft:gravel\"}],\"result\":{\"item\":\"minecraft:flint\",\"count\":2}}"
+		},
+		{
+			"id": "tconstruct:tools/building/longbow",
+			"type": "tconstruct:tool_building",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"tconstruct:tool_building\",\"result\":\"tconstruct:longbow\",\"result_count\":1}"
+		},
+		{
+			"id": "bloodmagic:array/divinationsigil",
+			"type": "bloodmagic:array",
+			"namespace": "bloodmagic",
+			"json": "{\"type\":\"bloodmagic:array\",\"addedinput\":{\"item\":\"bloodmagic:blankslate\"},\"baseinput\":{\"item\":\"minecraft:redstone\"},\"output\":{\"item\":\"bloodmagic:divinationsigil\"},\"texture\":\"bloodmagic:textures/models/alchemyarrays/divinationsigil.png\"}"
+		},
+		{
+			"id": "deeperdarker:cut_gloomslate_slab",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "deeperdarker",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"key\":{\"#\":{\"item\":\"deeperdarker:cut_gloomslate\"}},\"pattern\":[\"###\"],\"result\":{\"count\":6,\"item\":\"deeperdarker:cut_gloomslate_slab\"},\"show_notification\":true}"
+		},
+		{
+			"id": "bloodmagic:soulforge/master_node_upgrade_speed",
+			"type": "bloodmagic:soulforge",
+			"namespace": "bloodmagic",
+			"json": "{\"type\":\"bloodmagic:soulforge\",\"drain\":50.0,\"input0\":{\"tag\":\"forge:ingots/gold\"},\"input1\":{\"tag\":\"forge:ingots/gold\"},\"input2\":{\"tag\":\"forge:glass\"},\"input3\":{\"tag\":\"forge:storage_blocks/redstone\"},\"minimumDrain\":400.0,\"output\":{\"item\":\"bloodmagic:mastercorespeed\"}}"
+		},
+		{
+			"id": "botania:stonecutting/metamorphic_forest_bricks_to_chiseled_metamorphic_forest_bricks",
+			"type": "minecraft:stonecutting",
+			"namespace": "botania",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"count\":1,\"ingredient\":{\"item\":\"botania:metamorphic_forest_bricks\"},\"result\":\"botania:chiseled_metamorphic_forest_bricks\"}"
+		},
+		{
+			"id": "create:deploying/weathered_copper_tiles_from_removing_wax",
+			"type": "create:deploying",
+			"namespace": "create",
+			"json": "{\"type\":\"create:deploying\",\"ingredients\":[{\"item\":\"create:waxed_weathered_copper_tiles\"},{\"tag\":\"minecraft:axes\"}],\"keepHeldItem\":true,\"results\":[{\"item\":\"create:weathered_copper_tiles\"}]}"
+		},
+		{
+			"id": "create:dark_oak_window_pane",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "create",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"key\":{\"#\":{\"item\":\"create:dark_oak_window\"}},\"pattern\":[\"###\",\"###\"],\"result\":{\"count\":16,\"item\":\"create:dark_oak_window_pane\"},\"show_notification\":true}"
+		},
+		{
+			"id": "fiahi:food_pouch",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "fiahi",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"key\":{\"S\":{\"item\":\"minecraft:string\"},\"L\":{\"item\":\"minecraft:leather\"},\"W\":{\"item\":\"minecraft:white_wool\"}},\"pattern\":[\" S \",\"LSL\",\"LWL\"],\"result\":{\"item\":\"fiahi:food_pouch\"}}"
+		},
+		{
+			"id": "theurgy:incubation/cherry_log",
+			"type": "theurgy:incubation",
+			"namespace": "theurgy",
+			"json": "{\"type\":\"theurgy:incubation\",\"incubation_time\":100,\"mercury\":{\"item\":\"theurgy:mercury_shard\"},\"result\":{\"count\":1,\"item\":\"minecraft:cherry_log\"},\"salt\":{\"item\":\"theurgy:alchemical_salt_plant\"},\"sulfur\":{\"item\":\"theurgy:alchemical_sulfur_cherry_log\"}}"
+		},
+		{
+			"id": "farmersdelight:purple_hanging_canvas_sign",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "farmersdelight",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"group\":\"fd_hanging_canvas_sign\",\"ingredients\":[{\"tag\":\"farmersdelight:hanging_canvas_signs\"},{\"tag\":\"forge:dyes/purple\"}],\"result\":{\"item\":\"farmersdelight:purple_hanging_canvas_sign\"}}"
+		},
+		{
+			"id": "minecraft:deepslate_brick_wall_from_polished_deepslate_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "minecraft",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"count\":1,\"ingredient\":{\"item\":\"minecraft:polished_deepslate\"},\"result\":\"minecraft:deepslate_brick_wall\"}"
+		},
+		{
+			"id": "quark:building/stonecutting/stonevariants/jasper_bricks_polished_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"quark:polished_jasper\"},\"result\":\"quark:jasper_bricks\",\"count\":1,\"conditions\":[{\"type\":\"forge:and\",\"values\":[{\"type\":\"quark:flag\",\"flag\":\"stone_bricks\"},{\"type\":\"quark:flag\",\"flag\":\"jasper\"}]}]}"
+		},
+		{
+			"id": "alchemistry:fusion/2helium_and_21scandium_to_23vanadium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:helium\"},\"input2\":{\"item\":\"chemlib:scandium\"},\"output\":{\"item\":\"chemlib:vanadium\"}}"
+		},
+		{
+			"id": "create:cut_veridium_slab_recycling",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "create",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"building\",\"ingredients\":[{\"item\":\"create:cut_veridium_slab\"},{\"item\":\"create:cut_veridium_slab\"}],\"result\":{\"item\":\"create:cut_veridium\"}}"
+		},
+		{
+			"id": "minecraft:end_stone_brick_stairs_from_end_stone_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "minecraft",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"count\":1,\"ingredient\":{\"item\":\"minecraft:end_stone\"},\"result\":\"minecraft:end_stone_brick_stairs\"}"
+		},
+		{
+			"id": "create:cutting/runtime_generated/compat/twilightforest/dark_log_to_stripped_dark_log",
+			"type": "create:cutting",
+			"namespace": "create",
+			"json": "{\"type\":\"create:cutting\",\"ingredients\":[{\"item\":\"twilightforest:dark_log\"}],\"results\":[{\"item\":\"twilightforest:stripped_dark_log\"}],\"processingTime\":50}"
+		},
+		{
+			"id": "aether:chinchilla_enchanting",
+			"type": "aether:enchanting",
+			"namespace": "aether",
+			"json": "{\"type\":\"aether:enchanting\",\"category\":\"enchanting_misc\",\"cookingtime\":500,\"experience\":1.0,\"ingredient\":{\"item\":\"minecraft:music_disc_strad\"},\"result\":\"aether:music_disc_chinchilla\"}"
+		},
+		{
+			"id": "blue_skies:comet_slab",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "blue_skies",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"group\":\"wooden_slab\",\"key\":{\"#\":{\"item\":\"blue_skies:comet_planks\"}},\"pattern\":[\"###\"],\"result\":{\"count\":6,\"item\":\"blue_skies:comet_slab\"},\"show_notification\":true}"
+		},
+		{
+			"id": "tconstruct:smeltery/scorched/duct",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"redstone\",\"key\":{\"#\":{\"item\":\"tconstruct:scorched_brick\"},\"C\":{\"tag\":\"forge:ingots/gold\"}},\"pattern\":[\"# #\",\"C C\",\"# #\"],\"result\":{\"item\":\"tconstruct:scorched_duct\"},\"show_notification\":true}"
+		},
+		{
+			"id": "quark:building/stonecutting/vertslabs/polished_deepslate_vertical_slab_from_cobbled_deepslate",
+			"type": "minecraft:stonecutting",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"minecraft:cobbled_deepslate\"},\"result\":\"quark:polished_deepslate_vertical_slab\",\"count\":2,\"conditions\":[{\"type\":\"quark:flag\",\"flag\":\"vertical_slabs\"}]}"
+		},
+		{
+			"id": "minecraft:polished_granodiorite_brick_wall_from_granodiorite_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "minecraft",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"unearthed:granodiorite\"},\"result\":\"unearthed:polished_granodiorite_brick_wall\",\"count\":1}"
+		},
+		{
+			"id": "iceandfire:myrmex_jungle_boots",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"equipment\",\"key\":{\"#\":{\"item\":\"iceandfire:myrmex_jungle_chitin\"}},\"pattern\":[\"# #\",\"# #\"],\"result\":{\"item\":\"iceandfire:myrmex_jungle_boots\"},\"show_notification\":true}"
+		},
+		{
+			"id": "quark:world/stonecutting/slabs/permafrost_slab_stonecutter",
+			"type": "minecraft:stonecutting",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"quark:permafrost\"},\"result\":\"quark:permafrost_slab\",\"count\":2,\"conditions\":[{\"type\":\"quark:flag\",\"flag\":\"permafrost\"}]}"
+		},
+		{
+			"id": "railways:dying_existing_cap_red",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "railways",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"equipment\",\"ingredients\":[{\"tag\":\"railways:conductor_caps\"},{\"tag\":\"railways:internal/dyes/red_dyes\"}],\"result\":{\"item\":\"railways:red_conductor_cap\"}}"
+		},
+		{
+			"id": "framedblocks:framed_vertical_stairs_rotate_to_framed_stairs",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "framedblocks",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"building\",\"ingredients\":[{\"item\":\"framedblocks:framed_vertical_stairs\"},{\"item\":\"framedblocks:framed_wrench\"}],\"result\":{\"item\":\"framedblocks:framed_stairs\"}}"
+		},
+		{
+			"id": "ars_nouveau:arcanist_robes",
+			"type": "ars_nouveau:enchanting_apparatus",
+			"namespace": "ars_nouveau",
+			"json": "{\"type\":\"ars_nouveau:enchanting_apparatus\",\"keepNbtOfReagent\":true,\"output\":{\"item\":\"ars_nouveau:arcanist_robes\"},\"pedestalItems\":[{\"item\":\"ars_nouveau:magebloom_fiber\"},{\"item\":\"ars_nouveau:magebloom_fiber\"},{\"item\":\"ars_nouveau:magebloom_fiber\"},{\"item\":\"ars_nouveau:magebloom_fiber\"}],\"reagent\":[{\"item\":\"minecraft:iron_chestplate\"}],\"sourceCost\":0}"
+		},
+		{
+			"id": "createdieselgenerators:crushing/wood_chip_chests",
+			"type": "create:crushing",
+			"namespace": "createdieselgenerators",
+			"json": "{\"type\":\"create:crushing\",\"ingredients\":[{\"tag\":\"forge:chests/wooden\"}],\"results\":[{\"item\":\"createdieselgenerators:wood_chip\",\"count\":63},{\"item\":\"createdieselgenerators:wood_chip\",\"chance\":0.5}]}"
+		},
+		{
+			"id": "theurgy:incubation/glow_ink_sac",
+			"type": "theurgy:incubation",
+			"namespace": "theurgy",
+			"json": "{\"type\":\"theurgy:incubation\",\"incubation_time\":100,\"mercury\":{\"item\":\"theurgy:mercury_shard\"},\"result\":{\"count\":1,\"item\":\"minecraft:glow_ink_sac\"},\"salt\":{\"item\":\"theurgy:alchemical_salt_creature\"},\"sulfur\":{\"item\":\"theurgy:alchemical_sulfur_glow_ink_sac\"}}"
+		},
+		{
+			"id": "immersive_weathering:natures_spirit/redwood_leaf_pile",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "immersive_weathering",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"###\"],\"key\":{\"#\":{\"item\":\"natures_spirit:redwood_leaves\"}},\"result\":{\"item\":\"immersive_weathering:natures_spirit/redwood_leaf_pile\",\"count\":6}}"
+		},
+		{
+			"id": "quark:building/crafting/furnaces/blackstone_minecart_tweaked",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"group\":\"furnace_minecart\",\"pattern\":[\"#X#\",\"###\"],\"key\":{\"#\":{\"tag\":\"forge:ingots/iron\"},\"X\":{\"item\":\"quark:blackstone_furnace\"}},\"result\":{\"item\":\"minecraft:furnace_minecart\"},\"conditions\":[{\"type\":\"quark:flag\",\"flag\":\"minecart_upgrade\"},{\"type\":\"quark:flag\",\"flag\":\"variant_furnaces\"}]}"
+		},
+		{
+			"id": "theurgy:distillation/logs",
+			"type": "theurgy:distillation",
+			"namespace": "theurgy",
+			"json": "{\"type\":\"theurgy:distillation\",\"conditions\":[{\"type\":\"forge:not\",\"value\":{\"type\":\"forge:tag_empty\",\"tag\":\"minecraft:logs\"}}],\"distillation_time\":100,\"ingredient\":{\"tag\":\"minecraft:logs\"},\"ingredient_count\":2,\"result\":{\"count\":1,\"item\":\"theurgy:mercury_shard\"}}"
+		},
+		{
+			"id": "ae2:decorative/quartz_block",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "ae2",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"key\":{\"a\":{\"item\":\"ae2:certus_quartz_crystal\"}},\"pattern\":[\"aa\",\"aa\"],\"result\":{\"item\":\"ae2:quartz_block\"},\"show_notification\":true}"
+		},
+		{
+			"id": "bloodmagic:alchemytable/quick_draw_anointment_xl",
+			"type": "bloodmagic:alchemytable",
+			"namespace": "bloodmagic",
+			"json": "{\"type\":\"bloodmagic:alchemytable\",\"input\":[{\"item\":\"bloodmagic:quick_draw_anointment\"},{\"item\":\"bloodmagic:tauoil\"},{\"item\":\"minecraft:spectral_arrow\"},{\"item\":\"bloodmagic:sand_hellforged\"},{\"item\":\"minecraft:amethyst_shard\"}],\"output\":{\"item\":\"bloodmagic:quick_draw_anointment_xl\"},\"syphon\":2000,\"ticks\":100,\"upgradeLevel\":4}"
+		},
+		{
+			"id": "sophisticatedstorage:backpack_advanced_compacting_upgrade_from_storage_advanced_compacting_upgrade",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "sophisticatedstorage",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"conditions\":[{\"type\":\"forge:mod_loaded\",\"modid\":\"sophisticatedbackpacks\"},{\"type\":\"sophisticatedcore:item_enabled\",\"itemRegistryName\":\"sophisticatedbackpacks:advanced_compacting_upgrade\"}],\"key\":{\"L\":{\"tag\":\"forge:leather\"},\"T\":{\"tag\":\"forge:string\"},\"U\":{\"item\":\"sophisticatedstorage:advanced_compacting_upgrade\"}},\"pattern\":[\"TUT\",\" L \",\"T T\"],\"result\":{\"item\":\"sophisticatedbackpacks:advanced_compacting_upgrade\"}}"
+		},
+		{
+			"id": "quark:building/stonecutting/vertslabs/cut_sandstone_vertical_slab2_stonecutter",
+			"type": "minecraft:stonecutting",
+			"namespace": "quark",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"ingredient\":{\"item\":\"minecraft:cut_sandstone\"},\"result\":\"quark:cut_sandstone_vertical_slab\",\"count\":2,\"conditions\":[{\"type\":\"quark:flag\",\"flag\":\"vertical_slabs\"}]}"
+		},
+		{
+			"id": "twilightforest:wood/mangrove_stripped_wood",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "twilightforest",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"key\":{\"#\":{\"item\":\"twilightforest:stripped_mangrove_log\"}},\"pattern\":[\"##\",\"##\"],\"result\":{\"count\":3,\"item\":\"twilightforest:stripped_mangrove_wood\"},\"show_notification\":true}"
+		},
+		{
+			"id": "ars_nouveau:shapers_focus",
+			"type": "ars_nouveau:enchanting_apparatus",
+			"namespace": "ars_nouveau",
+			"json": "{\"type\":\"ars_nouveau:enchanting_apparatus\",\"keepNbtOfReagent\":false,\"output\":{\"item\":\"ars_nouveau:shapers_focus\"},\"pedestalItems\":[{\"tag\":\"forge:ingots/gold\"},{\"item\":\"minecraft:piston\"},{\"item\":\"minecraft:slime_block\"},{\"tag\":\"forge:gems/diamond\"}],\"reagent\":[{\"item\":\"ars_nouveau:manipulation_essence\"}],\"sourceCost\":0}"
+		},
+		{
+			"id": "create_sa:copper_leggings_recipe",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "create_sa",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"pattern\":[\"000\",\"0 0\",\"0 0\"],\"key\":{\"0\":{\"tag\":\"forge:ingots/copper\"}},\"result\":{\"item\":\"create_sa:copper_leggings\",\"count\":1}}"
+		},
+		{
+			"id": "mynethersdelight:crafting/ghasta_with_cream",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "mynethersdelight",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"key\":{\"#\":{\"item\":\"minecraft:magma_cream\"},\"B\":{\"item\":\"minecraft:bowl\"},\"G\":[{\"item\":\"mynethersdelight:ghasta\"},{\"item\":\"mynethersdelight:ghasmati\"}],\"T\":{\"item\":\"minecraft:ghast_tear\"}},\"pattern\":[\"GGG\",\"GT#\",\"GBG\"],\"result\":{\"item\":\"mynethersdelight:ghasta_with_cream\"},\"show_notification\":true}"
+		},
+		{
+			"id": "ae2additions:cells/fluid/disk-1-casing",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "ae2additions",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"item\":\"ae2additions:disk_fluid_housing\"},{\"item\":\"ae2:cell_component_1k\"}],\"result\":{\"item\":\"ae2additions:disk_fluid_1k\"}}"
+		},
+		{
+			"id": "alchemistry:fusion/7nitrogen_and_97berkelium_to_104rutherfordium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:nitrogen\"},\"input2\":{\"item\":\"chemlib:berkelium\"},\"output\":{\"item\":\"chemlib:rutherfordium\"}}"
+		},
+		{
+			"id": "tconstruct:tools/materials/casting/silver",
+			"type": "tconstruct:material_fluid",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"tconstruct:material_fluid\",\"conditions\":[{\"type\":\"mantle:tag_filled\",\"tag\":\"forge:ingots/silver\"}],\"fluid\":{\"amount\":90,\"tag\":\"forge:molten_silver\"},\"output\":\"tconstruct:silver\",\"temperature\":790}"
+		},
+		{
+			"id": "ars_nouveau:volcanic_sourcelink",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "ars_nouveau",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"key\":{\"g\":{\"tag\":\"forge:ingots/gold\"},\"i\":{\"item\":\"minecraft:lava_bucket\"},\"s\":{\"tag\":\"forge:gems/source\"}},\"pattern\":[\" s \",\"gig\",\" s \"],\"result\":{\"item\":\"ars_nouveau:volcanic_sourcelink\"},\"show_notification\":true}"
+		},
+		{
+			"id": "mynethersdelight:cooking/roast_stuffed_hoglin",
+			"type": "farmersdelight:cooking",
+			"namespace": "mynethersdelight",
+			"json": "{\"type\":\"farmersdelight:cooking\",\"container\":{\"item\":\"minecraft:bowl\"},\"cookingtime\":700,\"experience\":2.0,\"ingredients\":[{\"tag\":\"mynethersdelight:hot_spice\"},{\"tag\":\"mynethersdelight:stuffed_hoglin\"},{\"item\":\"minecraft:crimson_fungus\"},{\"item\":\"farmersdelight:nether_salad\"},{\"item\":\"farmersdelight:nether_salad\"}],\"recipe_book_tab\":\"meals\",\"result\":{\"item\":\"mynethersdelight:roast_stuffed_hoglin\"}}"
+		},
+		{
+			"id": "alchemistry:fusion/19potassium_and_46palladium_to_65terbium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:potassium\"},\"input2\":{\"item\":\"chemlib:palladium\"},\"output\":{\"item\":\"chemlib:terbium\"}}"
+		},
+		{
+			"id": "create:cut_tuff_bricks_from_stone_types_tuff_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "create",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"count\":1,\"ingredient\":{\"tag\":\"create:stone_types/tuff\"},\"result\":\"create:cut_tuff_bricks\"}"
+		},
+		{
+			"id": "alchemistry:fusion/29copper_and_71lutetium_to_100fermium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:copper\"},\"input2\":{\"item\":\"chemlib:lutetium\"},\"output\":{\"item\":\"chemlib:fermium\"}}"
+		},
+		{
+			"id": "theurgy:reformation/alchemical_sulfur_beetroot_from_alchemical_sulfur_crops_abundant",
+			"type": "theurgy:reformation",
+			"namespace": "theurgy",
+			"json": "{\"type\":\"theurgy:reformation\",\"mercury_flux\":50,\"reformation_time\":100,\"result\":{\"Count\":1,\"id\":\"theurgy:alchemical_sulfur_beetroot\"},\"sources\":[{\"item\":\"theurgy:alchemical_sulfur_crops_abundant\"}],\"target\":{\"item\":\"theurgy:alchemical_sulfur_beetroot\"}}"
+		},
+		{
+			"id": "reliquary:mob_charm_fragments/witch",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "reliquary",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"key\":{\"P\":{\"item\":\"reliquary:witch_hat\"},\"S\":{\"item\":\"minecraft:glass_bottle\"},\"T\":{\"item\":\"minecraft:spider_eye\"}},\"pattern\":[\"PPP\",\"STS\",\"PPP\"],\"result\":{\"item\":\"reliquary:mob_charm_fragment\",\"nbt\":\"{entity:\\\"minecraft:witch\\\"}\"}}"
+		},
+		{
+			"id": "tconstruct:tools/materials/endstone",
+			"type": "tconstruct:material",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"tconstruct:material\",\"ingredient\":{\"tag\":\"forge:end_stones\"},\"material\":\"tconstruct:whitestone#end\",\"needed\":1,\"value\":1}"
+		},
+		{
+			"id": "iceandfire:silver_sword",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "iceandfire",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"equipment\",\"key\":{\"H\":{\"tag\":\"forge:rods/wooden\"},\"M\":{\"tag\":\"forge:ingots/silver\"}},\"pattern\":[\"M\",\"M\",\"H\"],\"result\":{\"item\":\"iceandfire:silver_sword\"},\"show_notification\":true}"
+		},
+		{
+			"id": "tconstruct:common/glass/brown_clear_stained_glass_pane",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"misc\",\"group\":\"tconstruct:stained_clear_glass_pane\",\"key\":{\"#\":{\"item\":\"tconstruct:brown_clear_stained_glass\"}},\"pattern\":[\"###\",\"###\"],\"result\":{\"count\":16,\"item\":\"tconstruct:brown_clear_stained_glass_pane\"},\"show_notification\":true}"
+		},
+		{
+			"id": "alchemistry:fusion/41niobium_and_70ytterbium_to_111roentgenium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:niobium\"},\"input2\":{\"item\":\"chemlib:ytterbium\"},\"output\":{\"item\":\"chemlib:roentgenium\"}}"
+		},
+		{
+			"id": "create:cut_tuff_from_stone_types_tuff_stonecutting",
+			"type": "minecraft:stonecutting",
+			"namespace": "create",
+			"json": "{\"type\":\"minecraft:stonecutting\",\"count\":1,\"ingredient\":{\"tag\":\"create:stone_types/tuff\"},\"result\":\"create:cut_tuff\"}"
+		},
+		{
+			"id": "theurgy:reformation/alchemical_sulfur_dusk_from_alchemical_sulfurs_logs_abundant",
+			"type": "theurgy:reformation",
+			"namespace": "theurgy",
+			"json": "{\"type\":\"theurgy:reformation\",\"conditions\":[{\"type\":\"forge:not\",\"value\":{\"type\":\"forge:tag_empty\",\"tag\":\"theurgy:alchemical_sulfurs/logs/abundant\"}}],\"mercury_flux\":50,\"reformation_time\":100,\"result\":{\"Count\":1,\"id\":\"theurgy:alchemical_sulfur_dusk\"},\"sources\":[{\"tag\":\"theurgy:alchemical_sulfurs/logs/abundant\"}],\"target\":{\"item\":\"theurgy:alchemical_sulfur_dusk\"}}"
+		},
+		{
+			"id": "alchemistry:fusion/6carbon_and_64gadolinium_to_70ytterbium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:carbon\"},\"input2\":{\"item\":\"chemlib:gadolinium\"},\"output\":{\"item\":\"chemlib:ytterbium\"}}"
+		},
+		{
+			"id": "framedblocks:framed_vertical_sloped_stairs",
+			"type": "minecraft:crafting_shaped",
+			"namespace": "framedblocks",
+			"json": "{\"type\":\"minecraft:crafting_shaped\",\"category\":\"building\",\"key\":{\"H\":{\"item\":\"framedblocks:framed_half_slope\"},\"P\":{\"item\":\"framedblocks:framed_panel\"}},\"pattern\":[\"PH\"],\"result\":{\"item\":\"framedblocks:framed_vertical_sloped_stairs\"},\"show_notification\":true}"
+		},
+		{
+			"id": "tconstruct:tools/materials/rose_gold/block",
+			"type": "tconstruct:material",
+			"namespace": "tconstruct",
+			"json": "{\"type\":\"tconstruct:material\",\"ingredient\":{\"tag\":\"forge:storage_blocks/rose_gold\"},\"leftover\":{\"count\":1,\"tag\":\"forge:ingots/rose_gold\"},\"material\":\"tconstruct:rose_gold\",\"needed\":1,\"value\":9}"
+		},
+		{
+			"id": "supplementaries:twilightforest/sign_post_mangrove",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "supplementaries",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"misc\",\"ingredients\":[{\"block_type\":\"wood_type\",\"from\":\"minecraft:oak\",\"to\":\"twilightforest:mangrove\",\"ingredient\":{\"item\":\"minecraft:oak_sign\"},\"type\":\"moonlight:block_type_swap\"}],\"result\":{\"item\":\"supplementaries:twilightforest/sign_post_mangrove\",\"count\":2}}"
+		},
+		{
+			"id": "alchemistry:fusion/10neon_and_94plutonium_to_104rutherfordium",
+			"type": "alchemistry:fusion",
+			"namespace": "alchemistry",
+			"json": "{\"type\":\"alchemistry:fusion\",\"group\":\"fusion\",\"input1\":{\"item\":\"chemlib:neon\"},\"input2\":{\"item\":\"chemlib:plutonium\"},\"output\":{\"item\":\"chemlib:rutherfordium\"}}"
+		},
+		{
+			"id": "minecraft:dye_purple_wool",
+			"type": "minecraft:crafting_shapeless",
+			"namespace": "minecraft",
+			"json": "{\"type\":\"minecraft:crafting_shapeless\",\"category\":\"building\",\"group\":\"wool\",\"ingredients\":[{\"item\":\"minecraft:purple_dye\"},[{\"item\":\"minecraft:black_wool\"},{\"item\":\"minecraft:blue_wool\"},{\"item\":\"minecraft:brown_wool\"},{\"item\":\"minecraft:cyan_wool\"},{\"item\":\"minecraft:gray_wool\"},{\"item\":\"minecraft:green_wool\"},{\"item\":\"minecraft:light_blue_wool\"},{\"item\":\"minecraft:light_gray_wool\"},{\"item\":\"minecraft:lime_wool\"},{\"item\":\"minecraft:magenta_wool\"},{\"item\":\"minecraft:orange_wool\"},{\"item\":\"minecraft:pink_wool\"},{\"item\":\"minecraft:red_wool\"},{\"item\":\"minecraft:yellow_wool\"},{\"item\":\"minecraft:white_wool\"}]],\"result\":{\"item\":\"minecraft:purple_wool\"}}"
+		}
+	]
+}

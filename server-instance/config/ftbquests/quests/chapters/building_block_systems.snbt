@@ -1,0 +1,237 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "building_block_systems"
+	group: "42544D4255494C44"
+	id: "259CBCF36859E2B2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Framed Cube, Framed Slab, Framed Stairs."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+				"Framed Blocks let one material take many shapes. Treat them as a palette multiplier, not a progression shortcut."
+			]
+			hide_dependency_lines: false
+			icon: "framedblocks:framed_cube"
+			icon_scale: 1.18d
+			id: "58A4D7761CB1874B"
+			rewards: [{
+				count: 4
+				id: "217C04DF5B8F3D45"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "20D59B8B6F3A631B"
+					item: "framedblocks:framed_cube"
+					type: "item"
+				}
+				{
+					id: "5E709522525CA8DB"
+					item: "framedblocks:framed_slab"
+					type: "item"
+				}
+				{
+					id: "4786D9CD26AD7CC0"
+					item: "framedblocks:framed_stairs"
+					type: "item"
+				}
+			]
+			title: "Framed Block Core"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58A4D7761CB1874B"]
+			description: [
+				"Goal: obtain Framed Slope, Framed Door, Framed Trapdoor."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+			]
+			hide_dependency_lines: false
+			icon: "framedblocks:framed_slope"
+			id: "1CC7C8108B6F6449"
+			rewards: [{
+				count: 4
+				id: "7CC003AE4F104026"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "105988FBB7A4A0D1"
+					item: "framedblocks:framed_slope"
+					type: "item"
+				}
+				{
+					id: "234E04A3AF23485A"
+					item: "framedblocks:framed_door"
+					type: "item"
+				}
+				{
+					id: "29BC99A24351B2E6"
+					item: "framedblocks:framed_trapdoor"
+					type: "item"
+				}
+			]
+			title: "Framed Shapes"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["58A4D7761CB1874B"]
+			description: [
+				"Goal: obtain Crystal Display, Lantern, Chain."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+			]
+			hide_dependency_lines: false
+			icon: "supplementaries:crystal_display"
+			icon_scale: 1.18d
+			id: "328B0872911D0062"
+			rewards: [{
+				count: 4
+				id: "4F4BF60EACFB66EC"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1D4B34E17EC0E3DF"
+					item: "supplementaries:crystal_display"
+					type: "item"
+				}
+				{
+					id: "79F7B611993E3A90"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+				{
+					id: "311DC82EE28F75A2"
+					item: "minecraft:chain"
+					type: "item"
+				}
+			]
+			title: "Settlement Materials"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Charred Planks, Mossy Stone Bricks."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+			]
+			hide_dependency_lines: false
+			icon: "immersive_weathering:charred_planks"
+			id: "33DDD6FF8844A933"
+			rewards: [{
+				count: 4
+				id: "25A98544D6AF0128"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "06C00ECC43630C55"
+					item: "immersive_weathering:charred_planks"
+					type: "item"
+				}
+				{
+					id: "620C3B55C2662BB4"
+					item: "minecraft:mossy_stone_bricks"
+					type: "item"
+				}
+			]
+			title: "Weathered Materials"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Travertine, Chert, Pink Sand."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+				"Regional blocks make terrain and travel matter for architecture. Different outposts should have different local palettes."
+			]
+			hide_dependency_lines: false
+			icon: "natures_spirit:travertine"
+			icon_scale: 1.18d
+			id: "46831758E1FAEB45"
+			rewards: [{
+				count: 4
+				id: "69950243931AB4D9"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "22C34E8BD1BBD618"
+					item: "natures_spirit:travertine"
+					type: "item"
+				}
+				{
+					id: "6724329CAAB9CD01"
+					item: "natures_spirit:chert"
+					type: "item"
+				}
+				{
+					id: "14BAFD0EA5308579"
+					item: "natures_spirit:pink_sand"
+					type: "item"
+				}
+			]
+			title: "Regional Palettes"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Framed Fence, Framed Wall."
+				"Why it matters: This expands decorative block choices through framed shapes, regional palettes, and settlement materials without making decor a deep machine gate."
+			]
+			hide_dependency_lines: false
+			icon: "framedblocks:framed_fence"
+			id: "139268D0E01F6C6E"
+			rewards: [{
+				count: 4
+				id: "329BBDF8775F794C"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "46560EAB52009EC6"
+					item: "framedblocks:framed_fence"
+					type: "item"
+				}
+				{
+					id: "429CC7678BBC8293"
+					item: "framedblocks:framed_wall"
+					type: "item"
+				}
+			]
+			title: "Route-Readable Builds"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Building Block Systems"
+}

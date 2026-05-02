@@ -1,0 +1,17 @@
+filename = 'xlpackets-1.18.2-2.1.jar'
+name = 'XL Packets'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.18.2', '1.19.2', '1.19.3', '1.19.4', '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'xlpackets-1.18.2-2.1.jar'
+
+[download]
+hash = 'f24208aa29e04b26366589061806d07d77d30034'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4426828
+project-id = 391640

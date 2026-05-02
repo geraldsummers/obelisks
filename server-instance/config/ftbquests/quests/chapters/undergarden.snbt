@@ -1,0 +1,389 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "undergarden"
+	group: "3BF99559A31D6EB4"
+	id: "349C4A99B287FA8C"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Depthrock."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:depthrock"
+			id: "2354BE9D4D3E2F89"
+			rewards: [
+				{
+					count: 4
+					id: "0B5939D3CE9A853F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "63527ADAE0D4AC37"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1CB89DDDE596ADC6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1139A3B94E12ABAD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3C8AE748F0651384"
+				item: "undergarden:depthrock"
+				type: "item"
+			}]
+			title: "Depthrock Route"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2354BE9D4D3E2F89"]
+			description: [
+				"Goal: obtain Gloomgourd."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:gloomgourd"
+			id: "37A7F18D03BDAB82"
+			rewards: [
+				{
+					count: 4
+					id: "3009CB0BCE5A5269"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C6E2EF772CC2232"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7EC8E2C6BF66ACB8"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32B4593596ABF855"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0989077EC9DCC03E"
+				item: "undergarden:gloomgourd"
+				type: "item"
+			}]
+			title: "Gloomgourd Food"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2354BE9D4D3E2F89"]
+			description: [
+				"Goal: obtain Cloggrum Ingot."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:cloggrum_ingot"
+			icon_scale: 1.18d
+			id: "7EF852E749349697"
+			rewards: [
+				{
+					count: 4
+					id: "07A516D21EBA949F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F2B532A54FCB204"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F618B1710851F4F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "677ACD467E3AEC9E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "7382DA6C74693F68"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			title: "Cloggrum Ingot"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Froststeel Ingot."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:froststeel_ingot"
+			id: "6B5E85E3A51B1DAC"
+			rewards: [
+				{
+					count: 4
+					id: "472B5C61F1297885"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "264ED2C289284763"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67D89737176323FD"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7930F8C9B1039C52"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "336DC5E78A31B0A1"
+				item: "undergarden:froststeel_ingot"
+				type: "item"
+			}]
+			title: "Froststeel Ingot"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Utherium Crystal."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:utherium_crystal"
+			id: "630EB2CBF79D599E"
+			rewards: [
+				{
+					count: 4
+					id: "7745E9F0478C2005"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7BCA2A0854378C49"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1B4A1C36AD863EDE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55A8F010E1AED3AF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4308C45F7D803266"
+				item: "undergarden:utherium_crystal"
+				type: "item"
+			}]
+			title: "Utherium Crystal"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Regalium Crystal."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:regalium_crystal"
+			id: "4CF78706FD9804CE"
+			rewards: [
+				{
+					count: 4
+					id: "10B7B922777E29BB"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68247052FA9F2636"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02CAC948460D5B0A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "487986C60BCF94E2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "76487C6C637C5354"
+				item: "undergarden:regalium_crystal"
+				type: "item"
+			}]
+			title: "Regalium Crystal"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"630EB2CBF79D599E"
+				"4CF78706FD9804CE"
+			]
+			description: [
+				"Goal: obtain Forgotten Ingot."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:forgotten_ingot"
+			icon_scale: 1.18d
+			id: "5C4B4BAFBF5EF882"
+			rewards: [
+				{
+					count: 4
+					id: "7EC092BE9E8ED909"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "632A2CB6DCF167F9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A9B6D1372723D9C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "038620984C74B7E6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "04BC9AD590554B40"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			title: "Forgotten Ingot"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Catalyst."
+				"Why it matters: This advances Undergarden exploration through local metals, food, and deep materials."
+			]
+			hide_dependency_lines: false
+			icon: "undergarden:catalyst"
+			icon_scale: 1.18d
+			id: "7F66CB8E73C9EEB6"
+			rewards: [
+				{
+					count: 4
+					id: "370E540347D0400F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "28F847C6CAB13DA2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74C521F20127ABBF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "36204D0432CA91CD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3E19CD9F0EE03756"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			title: "Undergarden Catalyst"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "The Undergarden"
+}

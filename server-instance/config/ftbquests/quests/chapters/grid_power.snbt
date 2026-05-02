@@ -1,0 +1,502 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "grid_power"
+	group: "666B73C638A92906"
+	id: "5B17BA47C0F97DED"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["097203DFB50CCE77"]
+			description: [
+				"Goal: obtain Conductive Casing."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:conductive_casing"
+			icon_scale: 0.95d
+			id: "3BE80819D80BA7D5"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "4E699BFFAE555118"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47822009FBAA7E1F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1C09D7EF36147FB8"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "716DB1CACA31BF6D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "46015B8DFBC5675D"
+				item: "powergrid:conductive_casing"
+				type: "item"
+			}]
+			title: "Conductive Casing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BE80819D80BA7D5"]
+			description: [
+				"Goal: obtain Power Grid Machine Casing."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:power_grid_machine_casing"
+			icon_scale: 1.18d
+			id: "56F1197DFE6AEAC3"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "28DF71E626A6FEE6"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "674B73785A5D2DF8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A0C30F329971EE3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FDBFE0D2FFE9A31"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "33709BE91658B563"
+				item: "kubejs:power_grid_machine_casing"
+				type: "item"
+			}]
+			title: "Power Grid Machine Casing"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56F1197DFE6AEAC3"]
+			description: [
+				"Goal: obtain Generator Housing."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:generator_housing"
+			id: "1C9D8775B8015CD3"
+			rewards: [
+				{
+					count: 4
+					id: "6C6CFC98B51A57E6"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22264058B2A992C6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22CE336E74344499"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A62AC09086C80FF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0D8EEC72B72D83DD"
+				item: "powergrid:generator_housing"
+				type: "item"
+			}]
+			title: "Generator Housing"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56F1197DFE6AEAC3"]
+			description: [
+				"Goal: obtain Generator Induction Rotor."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:generator_induction_rotor"
+			id: "3479C4673A335B30"
+			rewards: [
+				{
+					count: 4
+					id: "33A2DF07B51A7BC9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4716713D1594FFDC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32A4B443845FBD89"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "421E6DA8CEED7B82"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3D9A0D3BDF30B98E"
+				item: "powergrid:generator_induction_rotor"
+				type: "item"
+			}]
+			title: "Induction Rotor"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56F1197DFE6AEAC3"]
+			description: [
+				"Goal: obtain Generator Commutator."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:generator_commutator"
+			id: "7261FB70E6757B5C"
+			rewards: [
+				{
+					count: 4
+					id: "3D0ACF71F8B54626"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25C021A2D5970E5A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A7B729F799E07A6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "46B44D619CA82672"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1296DF55491B063B"
+				item: "powergrid:generator_commutator"
+				type: "item"
+			}]
+			title: "Commutator"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Wire Connector, Wire."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:wire_connector"
+			id: "08B453A6163AE47C"
+			rewards: [
+				{
+					count: 4
+					id: "048785DDECA14F05"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "506A9BD03AB5A865"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06A2B88502647821"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54E87687D6B7531C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6DF8149273F5E096"
+					item: "powergrid:wire_connector"
+					type: "item"
+				}
+				{
+					id: "74EAAE7FC15D9919"
+					item: "powergrid:wire"
+					type: "item"
+				}
+			]
+			title: "Wires and Connectors"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Integrated Circuit."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:integrated_circuit"
+			id: "09F6F2DB6DA6B908"
+			rewards: [
+				{
+					count: 4
+					id: "6580C0A0240D9137"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B5243A5BEF94F04"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32C8B640B0C37DAD"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "095E2F28195C59E7"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3C3073938A93F14C"
+				item: "powergrid:integrated_circuit"
+				type: "item"
+			}]
+			title: "Integrated Circuit"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Redstone Relay."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+				"Relays make the grid controllable instead of just powered."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:redstone_relay"
+			icon_scale: 1.18d
+			id: "70D58831CB651938"
+			rewards: [
+				{
+					count: 4
+					id: "0CB0435533003A1D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E5DBF43F841E48F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75AAC1DE9A070CE9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38977E78E26856E0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5A96E779F2F29D97"
+				item: "powergrid:redstone_relay"
+				type: "item"
+			}]
+			title: "Relay Control"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["70D58831CB651938"]
+			description: [
+				"Goal: obtain Battery."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+				"A battery is the capstone of a local grid: generation, distribution, control, and storage."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:battery"
+			icon_scale: 1.18d
+			id: "499EF2CFF7EFF3AD"
+			rewards: [
+				{
+					count: 4
+					id: "5778FEBCC0EDC9B3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48596F83FC9F150E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "138DC8888201BCEF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A228F3D5F091173"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "09FD07D5BE66F164"
+				item: "powergrid:battery"
+				type: "item"
+			}]
+			title: "Battery Storage"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["499EF2CFF7EFF3AD"]
+			description: [
+				"Goal: obtain Network Connector, Stressometer."
+				"Why it matters: This turns rotational infrastructure into electricity and stored power."
+				"OC2R should observe and coordinate the grid without teleporting items or replacing routes."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:network_connector"
+			id: "52147ADFB558A2FD"
+			rewards: [
+				{
+					count: 4
+					id: "65F255296A535FE4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "113AF3B4AF5FC515"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2628700CA4197431"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4CE7D89EA2B12417"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0E0F55DEBC9C11AC"
+					item: "oc2r:network_connector"
+					type: "item"
+				}
+				{
+					id: "390C68834754944E"
+					item: "create:stressometer"
+					type: "item"
+				}
+			]
+			title: "OC2R Telemetry Tie-In"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Grid Power"
+}

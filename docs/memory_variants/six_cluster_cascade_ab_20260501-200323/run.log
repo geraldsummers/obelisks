@@ -1,0 +1,9 @@
+baseline_1: 11.517 GiB marker=sampled_timeout
+baseline_2: 13.685 GiB marker=sampled_timeout
+baseline_3: 12.219 GiB marker=sampled_timeout
+c1_core_libs_perf: seed=137 cascade=168 peak=3.016GiB delta=+9.203 marker=failed
+c2_worldgen_dimensions: seed=24 cascade=26 peak=10.882GiB delta=+1.337 marker=sampled_timeout
+c3_tech_automation: seed=36 cascade=43 peak=2.537GiB delta=+9.682 marker=failed
+c4_magic: seed=12 cascade=13 peak=9.747GiB delta=+2.472 marker=sampled_timeout
+c5_adventure_mobs_structures: seed=21 cascade=21 peak=12.808GiB delta=-0.589 marker=sampled_timeout
+c6_survival_food_building_qol: seed=48 cascade=51 peak=12.854GiB delta=-0.635 marker=sampled_timeout

@@ -1,0 +1,45 @@
+{
+  "id": "overworld",
+  "enabled": true,
+  "baseRolls": 0,
+  "rollsPerKill": 1,
+  "damagePerBonusRoll": 18.0,
+  "pools": [
+    {
+      "id": "artisan_materials",
+      "chance": 0.45,
+      "entries": [
+        {
+          "item": "minecraft:iron_ingot",
+          "minCount": 1,
+          "maxCount": 3,
+          "weight": 40
+        },
+        {
+          "item": "minecraft:gold_ingot",
+          "minCount": 1,
+          "maxCount": 2,
+          "weight": 25
+        },
+        {
+          "item": "minecraft:redstone",
+          "minCount": 2,
+          "maxCount": 6,
+          "weight": 25
+        },
+        {
+          "item": "minecraft:diamond",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 5
+        },
+        {
+          "item": "minecraft:enchanted_golden_apple",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

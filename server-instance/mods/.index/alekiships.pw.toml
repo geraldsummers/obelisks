@@ -1,0 +1,17 @@
+filename = 'alekiNiftyShips-FORGE-1.20.1-1.0.14.jar'
+name = "aleki's Nifty Ships"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'alekiNiftyShips-FORGE-1.20.1-1.0.14.jar'
+
+[download]
+hash = 'c42aaab43cd524c45c4065996cc06b9b48c5682a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5963449
+project-id = 1068445

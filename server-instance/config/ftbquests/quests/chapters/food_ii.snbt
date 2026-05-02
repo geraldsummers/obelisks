@@ -1,0 +1,242 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "food_ii"
+	group: "1535A2E7C7CA772B"
+	id: "0BBCE0B98626D476"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Kettle."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"Tea and hot drinks make body management more interesting than eating one best food forever. Kettle pouring later isolates these drinks into clean extracts."
+			]
+			hide_dependency_lines: false
+			icon: "farmersrespite:kettle"
+			icon_scale: 1.18d
+			id: "6702C30DAE5E1F32"
+			rewards: [
+				{
+					count: 4
+					id: "1F6B77462F7B7962"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53FDB674F894539B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "045467BCD56BD60E"
+				item: "farmersrespite:kettle"
+				type: "item"
+			}]
+			title: "Kettle Drinks"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6702C30DAE5E1F32"]
+			description: [
+				"Goal: obtain Green Tea."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"Pack drinks alongside food. A route with prepared drinks is a different route."
+			]
+			hide_dependency_lines: false
+			icon: "farmersrespite:green_tea"
+			id: "652B90A01534D45C"
+			rewards: [
+				{
+					count: 4
+					id: "4963E239735D67F4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "50A61CE7B40F1981"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "08FA67EE5F8D1577"
+				item: "farmersrespite:green_tea"
+				type: "item"
+			}]
+			title: "Route Tea"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["747708EE29DA1318"]
+			description: [
+				"Goal: obtain Keg."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"Fermentation is slow value: stronger travel food, tavern economy, village contracts, and keg-poured potion concentrates."
+			]
+			hide_dependency_lines: false
+			icon: "brewinandchewin:keg"
+			icon_scale: 1.18d
+			id: "666391DA08CAF6E9"
+			rewards: [
+				{
+					count: 4
+					id: "09A47B4E9384AE9A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "41B840B054CF9980"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5C55D418E21B6C3C"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "Fermentation"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Jerky, Kimchi."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"Preserved food is for distance. It belongs in backpacks, trains, ships, and outpost crates."
+			]
+			hide_dependency_lines: false
+			icon: "brewinandchewin:jerky"
+			id: "6072FF63CC0F05F2"
+			rewards: [
+				{
+					count: 4
+					id: "5980430D3DB9FCA6"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D872B603B6FF7F5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "57866970C4BB4CF7"
+					item: "brewinandchewin:jerky"
+					type: "item"
+				}
+				{
+					id: "49762F247AAAE627"
+					item: "brewinandchewin:kimchi"
+					type: "item"
+				}
+			]
+			title: "Preserved Food"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Beer."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"Brews are powerful enough to matter, but they should come from a kitchen and a route economy, not loot spam."
+			]
+			hide_dependency_lines: false
+			icon: "brewinandchewin:beer"
+			id: "72B2DDFF7A733621"
+			rewards: [
+				{
+					count: 4
+					id: "45DD6195DAA878B1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7BF255F558C9951E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5F217BFCD4727357"
+				item: "brewinandchewin:beer"
+				type: "item"
+			}]
+			title: "Brewed Supplies"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["72B2DDFF7A733621"]
+			description: [
+				"Goal: obtain Rice Roll Medley Block, Kimchi."
+				"Why it matters: This expands food infrastructure into fermentation, preservation, and brewed supplies."
+				"This capstone marks a sustainable food stockpile: meals for now, preserved food for travel, and brewed supplies for hard pushes."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:rice_roll_medley_block"
+			icon_scale: 1.18d
+			id: "20B862D4621325D3"
+			rewards: [
+				{
+					count: 4
+					id: "194BA61A704B781A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51F5D16315BB09F6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "53EED7C51399C9BD"
+					item: "farmersdelight:rice_roll_medley_block"
+					type: "item"
+				}
+				{
+					id: "68F68934F0EF4E7B"
+					item: "brewinandchewin:kimchi"
+					type: "item"
+				}
+			]
+			title: "Stockpile Pantry"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Food II"
+}

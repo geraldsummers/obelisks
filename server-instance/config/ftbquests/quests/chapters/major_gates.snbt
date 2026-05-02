@@ -1,0 +1,349 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "major_gates"
+	group: "52D8800CDEBBF5D6"
+	id: "5C369BD199F78B83"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Seared Melter."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"The tutorial spine has reached molten material. From here the pack opens into parallel streams."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:seared_melter"
+			icon_scale: 1.18d
+			id: "3171F66F034812A0"
+			rewards: [{
+				count: 4
+				id: "05E47DB90227F695"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "1B51AFB70CFDD0FF"
+				item: "tconstruct:seared_melter"
+				type: "item"
+			}]
+			title: "Starting Out Complete"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3171F66F034812A0"]
+			description: [
+				"Goal: obtain Foundry Controller."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Tinkers proves deposit interpretation and alloy authority before Create becomes the infrastructure layer."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:foundry_controller"
+			id: "7680EDF42E77688F"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "4E00EC0AFBCD27C8"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "1F3BD39DAA4CE6D0"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			title: "Tinkers Metallurgy Milestone"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Brass Machine Casing."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Create proves sequenced manufacturing, brass, presses, and manufactured casings."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:brass_machine_casing"
+			id: "0D66C8E5F6B268BA"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "17F1BB94E347F367"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "3A1C3F62EEBE01EC"
+				item: "kubejs:brass_machine_casing"
+				type: "item"
+			}]
+			title: "Create Manufacturing Milestone"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56F1197DFE6AEAC3"]
+			description: [
+				"Goal: obtain Power Grid Machine Casing."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"SU and heat feed Power Grid, where rotational infrastructure becomes stored electricity. The casing is the manufacturing proof for this tier."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:power_grid_machine_casing"
+			id: "6304F9162CDC98B1"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "7888576265950286"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "3D6A01F4ABEBA7A3"
+				item: "kubejs:power_grid_machine_casing"
+				type: "item"
+			}]
+			title: "Grid Power Milestone"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6304F9162CDC98B1"]
+			description: [
+				"Goal: obtain Oc2r Machine Casing."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"OC2R is the intersite communication/control track before AE2 local intelligence. The casing proves the electronics line is online."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:oc2r_machine_casing"
+			id: "6F2B1454EE46BEFE"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "2333F5CD8B0A060C"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "48A4F71AC2406530"
+				item: "kubejs:oc2r_machine_casing"
+				type: "item"
+			}]
+			title: "OC2R Control Milestone"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50F234860F0786DA"]
+			description: [
+				"Goal: obtain Space Machine Casing."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Space is a logistics and chemistry commitment that consumes the earlier factory rather than replacing it. The casing is the launch-era authority item."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:space_machine_casing"
+			id: "51C06160C2E82646"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "229EC9E86559C91E"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "0B2ED4D8D430CC68"
+				item: "kubejs:space_machine_casing"
+				type: "item"
+			}]
+			title: "Space Logistics Milestone"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3171F66F034812A0"]
+			description: [
+				"Goal: obtain Ethereal Slate."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Magic progresses through Blood Magic slate permissions. Ethereal Slate proves the late magic stream is ready to contribute."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:etherealslate"
+			id: "751866729304AF6B"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "41A80BA954640CFA"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "0C838E597BC98BFF"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			title: "Blood Magic Milestone"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Completed Delivery Agreement."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Coins, Wares, villages, and routes are a parallel crafting economy."
+			]
+			hide_dependency_lines: false
+			icon: "wares:completed_delivery_agreement"
+			id: "5A4723DC7A048651"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "7F5FA059221EDFCD"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "25414E4FF484B953"
+				item: "wares:completed_delivery_agreement"
+				type: "item"
+			}]
+			title: "Village Economy Milestone"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5A4723DC7A048651"
+				"135CD272448EB0BB"
+			]
+			description: [
+				"Goal: obtain Acid Vat."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"Acid Vat and synthesis turn deposits into chemical packages, feeding late materials."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:acid_vat"
+			id: "37FE13E8A0605875"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "70B0B4A1C03E78A3"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "7408851F0FC75F37"
+				item: "acid_vat:acid_vat"
+				type: "item"
+			}]
+			title: "Synthesis Milestone"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"51C06160C2E82646"
+				"37FE13E8A0605875"
+			]
+			description: [
+				"Goal: obtain AE2 Machine Casing."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"AE2 is the convergence point for local site intelligence, not global logistics. The casing is the final shared machine authority before hybrid branches."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:ae2_machine_casing"
+			icon_scale: 1.18d
+			id: "33440AE31BAA6BED"
+			rewards: [{
+				count: 4
+				id: "6B4C9D07DE3FA5ED"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "65088E3CE687BD85"
+				item: "kubejs:ae2_machine_casing"
+				type: "item"
+			}]
+			title: "AE2 Local Intelligence"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33440AE31BAA6BED"
+				"67E9F66BAE682400"
+			]
+			description: [
+				"Goal: obtain Quantum Structure, Armor Load Platform, Novice Tome of Blood."
+				"Why it matters: This marks one of the major progress paths that leads toward later automation and site intelligence."
+				"After AE2, progression fans into fewer stronger branches: quantum infrastructure, serious armor, and late Blood-Ars synthesis."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_structure"
+			icon_scale: 1.18d
+			id: "072FE917516D5A28"
+			rewards: [{
+				count: 4
+				id: "2FD525CF9A9C7670"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1965E53D8A3079AF"
+					item: "advanced_ae:quantum_structure"
+					type: "item"
+				}
+				{
+					id: "24F69FB0AD0658C3"
+					item: "protection_pixel:armorloadplatform"
+					type: "item"
+				}
+				{
+					id: "17519F0D66358135"
+					item: "tomeofblood:novice_tome_of_blood"
+					type: "item"
+				}
+			]
+			title: "Post-AE2 Branches"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Major Gates"
+}

@@ -1,0 +1,445 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "ticex"
+	group: "7D79E4B0E21B410D"
+	id: "2F5E52FB65ABD0FC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"121CC32FAF0CB32A"
+				"272E3C4DE86820FA"
+			]
+			description: [
+				"Goal: obtain Reconstruction Core."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:reconstruction_core"
+			icon_scale: 1.18d
+			id: "42C0D712553D7C97"
+			rewards: [
+				{
+					count: 4
+					id: "4944A3F9B604B774"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "007B933F7C9B11AE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47C206B443CB96B9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54718994FA53A1BD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DBAF5D6D9F00B4F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "709BFDF299454583"
+				item: "ticex:reconstruction_core"
+				type: "item"
+			}]
+			title: "Reconstruction Core"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42C0D712553D7C97"]
+			description: [
+				"Goal: obtain Flickering Reconstruction Core."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:flickering_reconstruction_core"
+			id: "6EAB342115362CF3"
+			rewards: [
+				{
+					count: 4
+					id: "6EF1B06F0B3F5466"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CB95F46C6CE46F0"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29DE91C6AFABE331"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14646DDE84A256F4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "77E9520489B47170"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "119013AA5908F4E9"
+				item: "ticex:flickering_reconstruction_core"
+				type: "item"
+			}]
+			title: "Flickering Reconstruction Core"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EAB342115362CF3"]
+			description: [
+				"Goal: obtain Seared RF Furnace."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:seared_rf_furnace"
+			id: "5E7CB8E64F5C6A53"
+			rewards: [
+				{
+					count: 4
+					id: "6DD83DDD7BA7CCAF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1EC29F457ADCFCBC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E3A757138DCF56C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "252546F0C5E746CF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E784065BAF8548A"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "003FD3338F5CD985"
+				item: "ticex:seared_rf_furnace"
+				type: "item"
+			}]
+			title: "Seared RF Furnace"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6EAB342115362CF3"]
+			description: [
+				"Goal: obtain Scorched RF Furnace."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:scorched_rf_furnace"
+			id: "7649794648DA1E82"
+			rewards: [
+				{
+					count: 4
+					id: "4EC8A8521989F4B7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1183B6A9DBD4F168"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "618D513405C633C6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "690D23BC7F6152A8"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71B10DD915B90C82"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "45B3552CE8AC44BD"
+				item: "ticex:scorched_rf_furnace"
+				type: "item"
+			}]
+			title: "Scorched RF Furnace"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5E7CB8E64F5C6A53"
+				"7649794648DA1E82"
+			]
+			description: [
+				"Goal: obtain Fluid Transmuter."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:fluid_transmuter"
+			icon_scale: 1.18d
+			id: "242722730993543C"
+			rewards: [
+				{
+					count: 4
+					id: "151E99C15DF2FA26"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0612E54D0D878C82"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "146EA29288517560"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5AEB9F622AB615AB"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A96DAD2C25C0EAD"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "7F2F8951BD8E1B2B"
+				item: "ticex:fluid_transmuter"
+				type: "item"
+			}]
+			title: "Fluid Transmuter"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["242722730993543C"]
+			description: [
+				"Goal: obtain Od Ingot."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:od_ingot"
+			id: "60FC7C99F287C627"
+			rewards: [
+				{
+					count: 4
+					id: "111A8060CBFBEF3A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F2618FBC3F8DA52"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27384E330A52A98B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FDB515B055ABB85"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71E30690A82EDD47"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2353D734346C9F95"
+				item: "ticex:od_ingot"
+				type: "item"
+			}]
+			title: "Od Material"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["242722730993543C"]
+			description: [
+				"Goal: obtain Etheric Ingot."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:etheric_ingot"
+			icon_scale: 1.18d
+			id: "770C8D72902847EC"
+			rewards: [
+				{
+					count: 4
+					id: "0108C4ABA629E6D7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73FE10F4BC0AEF1C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "167529ED9D1BDB10"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "650021DE0FE556B0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "319CC68E9DE1FC72"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "65A253A2D32277FE"
+				item: "ticex:etheric_ingot"
+				type: "item"
+			}]
+			title: "Etheric Material"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["60FC7C99F287C627"]
+			description: [
+				"Goal: obtain Cardboard Core."
+				"Why it matters: This turns Tinkers into a post-AE2 body/tool branch using quantum control, fission hardware, and late magic."
+			]
+			hide_dependency_lines: false
+			icon: "ticex:cardboard_core"
+			id: "67403309EBC5F481"
+			rewards: [
+				{
+					count: 4
+					id: "42EC5BFD945B6886"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "41B607F62B1E2531"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39EF54EF81E04009"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2BB6A21FD025E59E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10802DD0C67CBCE1"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "60F036525B656C89"
+				item: "ticex:cardboard_core"
+				type: "item"
+			}]
+			title: "Cardboard Core"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Tinkers Construct EX"
+}

@@ -1,0 +1,339 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "occultism"
+	group: "77AFAA45BDFC5D88"
+	id: "0E2BE4E17A39DF32"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3283929DD58F8795"]
+			description: [
+				"Goal: obtain Chalk White Impure."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:chalk_white_impure"
+			id: "729093F981AE1797"
+			rewards: [
+				{
+					count: 4
+					id: "23FD4D04C0AC4840"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1606FDA660183A46"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EDA218A5B559ED6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "765EF941D3333063"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "26FB3B87BB3C163F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "6555C3FB48CAA442"
+				item: "occultism:chalk_white_impure"
+				type: "item"
+			}]
+			title: "Impure White Chalk"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["729093F981AE1797"]
+			description: [
+				"Goal: obtain Sacrificial Bowl, Golden Sacrificial Bowl."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:sacrificial_bowl"
+			icon_scale: 1.18d
+			id: "1E5CF25E1F8BEF2B"
+			rewards: [
+				{
+					count: 4
+					id: "60804732F152B433"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "746CE95A00D4E771"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75C8F6441FC01E42"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C8394F1BD763147"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0976F58145106B36"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "737D4D8A9FD7B94C"
+					item: "occultism:sacrificial_bowl"
+					type: "item"
+				}
+				{
+					id: "2A2779E230642B0C"
+					item: "occultism:golden_sacrificial_bowl"
+					type: "item"
+				}
+			]
+			title: "Ritual Bowls"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Spirit Attuned Gem."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:spirit_attuned_gem"
+			id: "75C09521B59F5F39"
+			rewards: [
+				{
+					count: 4
+					id: "0D49DB377C06D0EE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6210E7455A2F5494"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1C502E1F0D36B595"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "103B41C6461567B5"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "568E62C59F9E8818"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "037273D9283FDA77"
+				item: "occultism:spirit_attuned_gem"
+				type: "item"
+			}]
+			title: "Spirit-Attuned Gem"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75C09521B59F5F39"]
+			description: [
+				"Goal: obtain Storage Controller."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:storage_controller"
+			icon_scale: 1.18d
+			id: "0B6FC3BCED6AA110"
+			rewards: [
+				{
+					count: 4
+					id: "75C07A355E76E1AE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "370E7EE73A99C047"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5FD78AB725755648"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "439EFF2FE08CCC5D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4CC3ED6970E77D2E"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "150286295E16F420"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			title: "Storage Controller"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B6FC3BCED6AA110"]
+			description: [
+				"Goal: obtain Iesnium Ingot."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:iesnium_ingot"
+			id: "1CC15028F9CD962D"
+			rewards: [
+				{
+					count: 4
+					id: "606D730F96B712F5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "57EEAB69AB19CD70"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32A1499ECE96060E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02264F8AF127D59C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18C7E2B562EB4981"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2686B45C7AB7C65E"
+				item: "occultism:iesnium_ingot"
+				type: "item"
+			}]
+			title: "Iesnium Ingot"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1CC15028F9CD962D"]
+			description: [
+				"Goal: obtain Dimensional Matrix."
+				"Why it matters: This builds Occultism ritual work, spirit items, storage, and mining helpers."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:dimensional_matrix"
+			icon_scale: 1.18d
+			id: "524039D6AD4EC6EB"
+			rewards: [
+				{
+					count: 4
+					id: "0EEC89858A4B42C8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "09E69401DC3FEADF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "59E36F106E692C31"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "23B6B5E3086BB82E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6578B37D18A2D52A"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5B5FA1079DAF5E46"
+				item: "occultism:dimensional_matrix"
+				type: "item"
+			}]
+			title: "Dimensional Matrix"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Occultism"
+}

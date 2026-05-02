@@ -1,0 +1,1048 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tinkers_arsenal"
+	group: "17D1B259E2B76A4F"
+	id: "74649251A6475FD7"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Pickaxe, Hand Axe, Mattock, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"Tinkers tools are material platforms. This node shows the core mining, digging, chopping, and hybrid tool forms you can build without caring which material or modifier NBT they carry."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:pickaxe"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			icon_scale: 1.18d
+			id: "46A0200B2C56C08C"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "67A72C0B446E41B0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60D0373697DAA49A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.75d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "103342F817189694"
+					item: {
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "69B56EBF8C7EB95F"
+					item: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2F8D7A97853C37B8"
+					item: {
+						Count: 1
+						id: "tconstruct:mattock"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "21B71ACA236FE180"
+					item: {
+						Count: 1
+						id: "tconstruct:kama"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "545F1E9194360BA1"
+					item: {
+						Count: 1
+						id: "tconstruct:sledge_hammer"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "622549450AF6D676"
+					item: {
+						Count: 1
+						id: "tconstruct:excavator"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2855DC105DD68DA9"
+					item: {
+						Count: 1
+						id: "tconstruct:vein_hammer"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "73E368DB92EDB299"
+					item: {
+						Count: 1
+						id: "tconstruct:broad_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "08BBC9DEF8A45F7B"
+					item: {
+						Count: 1
+						id: "tconstruct:pickadze"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3EFE2048AD13B7EC"
+					item: {
+						Count: 1
+						id: "tconstruct:war_pick"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Showcase: Core Tools"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Goal: obtain Sword, Dagger, Cleaver, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"The combat catalogue is broad. Build the weapon form that matches the route, mob pressure, and reach pattern you actually need."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:sword"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "4509CEEA725EB4AD"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6242B85EF0E7556F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D121FFAA19C7E3C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "0082B3C5544C6111"
+					item: {
+						Count: 1
+						id: "tconstruct:sword"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "600EEFC7CE35A812"
+					item: {
+						Count: 1
+						id: "tconstruct:dagger"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0FA3E67B2EB4ACCB"
+					item: {
+						Count: 1
+						id: "tconstruct:cleaver"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "5EFC180C2543DAC1"
+					item: {
+						Count: 1
+						id: "tconstruct:battlesign"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "32CE6638373D9D3D"
+					item: {
+						Count: 1
+						id: "tconstruct:melting_pan"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "35162F84404C419F"
+					item: {
+						Count: 1
+						id: "tconstruct:swasher"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "47F9A6723EFBA586"
+					item: {
+						Count: 1
+						id: "tconstruct:flint_and_brick"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "44B0BB49A449128A"
+					item: {
+						Count: 1
+						id: "tconstruct:minotaur_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "109A9652B44918D4"
+					item: {
+						Count: 1
+						id: "tinkersweaponry:greatsword"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "25ED421CEFCDEF7A"
+					item: {
+						Count: 1
+						id: "tinkersweaponry:lance"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "7E390CCFF0FD8C3C"
+					item: {
+						Count: 1
+						id: "tinkersweaponry:pike"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "685664E3223CCF30"
+					item: {
+						Count: 1
+						id: "tinkers_battle_spades:battle_spade"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "14D5AE8CA1A92D3D"
+					item: {
+						Count: 1
+						id: "additionalweaponry:butcher_knife"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3B41D20C147592D3"
+					item: {
+						Count: 1
+						id: "additionalweaponry:cutlass"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4ED70A4E418B83A3"
+					item: {
+						Count: 1
+						id: "additionalweaponry:pitchfork"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "773AB754BA66795B"
+					item: {
+						Count: 1
+						id: "additionalweaponry:scepter"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "62EB2894FB69F955"
+					item: {
+						Count: 1
+						id: "additionalweaponry:sniffer_claws"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "671C1C57615D0E3F"
+					item: {
+						Count: 1
+						id: "additionalweaponry:wrench"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Showcase: Melee Weapons"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Longbow, Crossbow, Arrow, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"Ranged Tinkers tools and addon weapons give options for hostile routes before the pack becomes a gun or spell problem."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:longbow"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "3DED9F1C4352C331"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "14600EAD9000F6E8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04E9A8EE55148DE5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "7BF475A615486E99"
+					item: {
+						Count: 1
+						id: "tconstruct:longbow"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2ED1B722D25BA1E1"
+					item: {
+						Count: 1
+						id: "tconstruct:crossbow"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2CBC75CE1F5688C6"
+					item: "tconstruct:arrow"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1D8240AD530CEA1B"
+					item: {
+						Count: 1
+						id: "tconstruct:javelin"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2A96BEC96C164B11"
+					item: "tconstruct:shuriken"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "052FC9125F5C06B6"
+					item: "tconstruct:throwing_axe"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1136958ACEDE2100"
+					item: "tconstruct:crystalshot"
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "455214C4D2341F6D"
+					item: {
+						Count: 1
+						id: "additionalweaponry:arrow_sling"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "1F027C1EEBA0F7F9"
+					item: {
+						Count: 1
+						id: "tinkers_advanced:ionized_cannon"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Showcase: Ranged Weapons"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FF82A40E0CFE52B"]
+			description: [
+				"Goal: obtain Travelers Helmet, Travelers Chestplate, Travelers Leggings, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"Armor, shields, slime gear, and traveller gear are part of the same toolcraft economy. Treat them as route preparation."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:travelers_helmet"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			id: "5EB632DCA30F5DE2"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "48F16E4367DD4228"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "17E72051D8C13226"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.05d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "300C632C353379D6"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_helmet"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "3B33324963D6CD93"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_chestplate"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "6ED3B22FC0A856DE"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_leggings"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "107BAE2F4D4D6AA4"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_boots"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "76782321BD4C484F"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_shield"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "371A3453B0F8964B"
+					item: {
+						Count: 1
+						id: "tconstruct:plate_helmet"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "54F4EB79DC7AC640"
+					item: {
+						Count: 1
+						id: "tconstruct:plate_chestplate"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "33450BE3CDF61FA3"
+					item: {
+						Count: 1
+						id: "tconstruct:plate_leggings"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "2241EC53EA4D13E7"
+					item: {
+						Count: 1
+						id: "tconstruct:plate_boots"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "514B65CBCAA82306"
+					item: {
+						Count: 1
+						id: "tconstruct:plate_shield"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "03AD3C50F317DF41"
+					item: {
+						Count: 1
+						id: "tconstruct:slime_helmet"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "47EFC8EC344F831E"
+					item: {
+						Count: 1
+						id: "tconstruct:slime_chestplate"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "21688AA0C4DB186D"
+					item: {
+						Count: 1
+						id: "tconstruct:slime_leggings"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0A4C42AB90EBD660"
+					item: {
+						Count: 1
+						id: "tconstruct:slime_boots"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "0EAC429AFE101EF2"
+					item: {
+						Count: 1
+						id: "additionalweaponry:propeller_cap"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Showcase: Armor and Travel"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Goal: obtain Sky Staff, Earth Staff, Ichor Staff, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"These forms point toward later Tinkers branches and post-AE2 tool escalation. They are displayed here so the tool catalogue is visible early."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:sky_staff"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			icon_scale: 1.18d
+			id: "2E4BFC8429D5D0F0"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "3B07F12BEBFFE659"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7945554A91D32B21"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 1.75d
+			subtitle: "Showcase"
+			tasks: [
+				{
+					id: "2ED6EEDDD14DCD18"
+					item: {
+						Count: 1
+						id: "tconstruct:sky_staff"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "64EF9D8461290347"
+					item: {
+						Count: 1
+						id: "tconstruct:earth_staff"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "64272CC8A8987690"
+					item: {
+						Count: 1
+						id: "tconstruct:ichor_staff"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "546D40C9C229542F"
+					item: {
+						Count: 1
+						id: "tconstruct:ender_staff"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4B7C32C1488789F0"
+					item: {
+						Count: 1
+						id: "tconstruct:fishing_rod"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4714CE698AABF911"
+					item: {
+						Count: 1
+						id: "tinkers_advanced:electron_tuner"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+				{
+					id: "4C402A3948654E0B"
+					item: {
+						Count: 1
+						id: "tinkers_advanced:matter_manipulator"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Showcase: Late Tool Forms"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46A0200B2C56C08C"
+				"4509CEEA725EB4AD"
+				"5EB632DCA30F5DE2"
+				"2E4BFC8429D5D0F0"
+			]
+			description: [
+				"Goal: obtain Travelers Helmet, Travelers Chestplate, Travelers Leggings, and related items."
+				"Why it matters: This turns Tinkers tools and armor into a practical route-ready arsenal."
+				"The arsenal capstone is a full route kit: mining, combat, mobility, and repair options selected intentionally for your next dangerous branch."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tconstruct:travelers_helmet"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+				}
+			}
+			icon_scale: 1.18d
+			id: "0B12E44E3CBD7919"
+			rewards: [
+				{
+					count: 4
+					id: "3C42AD5FAA23310B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "761829C92D1D19C5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5E1FF58B291A6B4D"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_helmet"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "430F143EB838BAD3"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_chestplate"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31159C9EB81E47BD"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_leggings"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "070085BCFC9D3947"
+					item: {
+						Count: 1
+						id: "tconstruct:travelers_boots"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Route Armory"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Tinkers Arsenal"
+}

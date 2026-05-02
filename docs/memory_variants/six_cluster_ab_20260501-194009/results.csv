@@ -1,0 +1,8 @@
+type,name,jar_count,marker,peak_kb,peak_gib,delta_vs_baseline_gib,summary
+baseline,baseline_1,,sampled_timeout,14600192,13.924,,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/baseline_1.summary.txt
+cluster,c1_core_libs_perf,136,failed,2689024,2.564,11.359,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c1_core_libs_perf.summary.txt
+cluster,c2_worldgen_dimensions,24,failed,2794496,2.665,11.259,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c2_worldgen_dimensions.summary.txt
+cluster,c3_tech_automation,36,failed,2655232,2.532,11.392,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c3_tech_automation.summary.txt
+cluster,c4_magic,12,failed,2962432,2.825,11.099,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c4_magic.summary.txt
+cluster,c5_adventure_mobs_structures,22,sampled_timeout,12659712,12.073,1.851,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c5_adventure_mobs_structures.summary.txt
+cluster,c6_survival_food_building_qol,48,failed,2665472,2.542,11.382,/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c6_survival_food_building_qol.summary.txt

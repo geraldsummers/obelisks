@@ -1,0 +1,102 @@
+// Backpack automation that changes body logistics is post-AE2. These are explicit
+// recipes rather than broad input replacement so the gates remain visible in EMI.
+
+function btmBpExists(id) {
+    try { return Item.exists(id) } catch (e) { return false }
+}
+
+function btmBpRecipe(event, output, pattern, key, id) {
+    if (!btmBpExists(output)) return
+    event.remove({ output: output })
+    event.shaped(output, pattern, key).id(id)
+}
+
+ServerEvents.recipes(function (event) {
+    btmBpRecipe(event, 'sophisticatedbackpacks:feeding_upgrade', [
+        'FDF',
+        'CAC',
+        'FDF'
+    ], {
+        F: 'farmersdelight:roast_chicken_block',
+        D: 'sophisticatedbackpacks:upgrade_base',
+        C: 'kubejs:ae2_machine_casing',
+        A: 'advanced_ae:quantum_core'
+    }, 'kubejs:sophisticatedbackpacks/feeding_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedbackpacks:advanced_feeding_upgrade', [
+        'SQS',
+        'UCU',
+        'SQS'
+    ], {
+        S: 'kubejs:sky_steel_sheet',
+        Q: 'advanced_ae:quantum_alloy_plate',
+        U: 'sophisticatedbackpacks:feeding_upgrade',
+        C: 'kubejs:ae2_machine_casing'
+    }, 'kubejs:sophisticatedbackpacks/advanced_feeding_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedbackpacks:alchemy_upgrade', [
+        'ESE',
+        'CAC',
+        'ESE'
+    ], {
+        E: 'bloodmagic:etherealslate',
+        S: 'ars_nouveau:source_gem_block',
+        C: 'kubejs:ae2_machine_casing',
+        A: 'sophisticatedbackpacks:upgrade_base'
+    }, 'kubejs:sophisticatedbackpacks/alchemy_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedbackpacks:advanced_alchemy_upgrade', [
+        'SQS',
+        'UCU',
+        'SQS'
+    ], {
+        S: 'kubejs:sky_steel_sheet',
+        Q: 'advanced_ae:quantum_core',
+        U: 'sophisticatedbackpacks:alchemy_upgrade',
+        C: 'kubejs:ae2_machine_casing'
+    }, 'kubejs:sophisticatedbackpacks/advanced_alchemy_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedbackpacks:tool_swapper_upgrade', [
+        'TQT',
+        'CAC',
+        'TQT'
+    ], {
+        T: 'create:mechanical_arm',
+        Q: 'advanced_ae:quantum_alloy_plate',
+        C: 'kubejs:ae2_machine_casing',
+        A: 'sophisticatedbackpacks:upgrade_base'
+    }, 'kubejs:sophisticatedbackpacks/tool_swapper_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedbackpacks:advanced_tool_swapper_upgrade', [
+        'SQS',
+        'UCU',
+        'SQS'
+    ], {
+        S: 'kubejs:sky_steel_sheet',
+        Q: 'advanced_ae:quantum_core',
+        U: 'sophisticatedbackpacks:tool_swapper_upgrade',
+        C: 'kubejs:ae2_machine_casing'
+    }, 'kubejs:sophisticatedbackpacks/advanced_tool_swapper_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedstorage:alchemy_upgrade', [
+        'ESE',
+        'CAC',
+        'ESE'
+    ], {
+        E: 'bloodmagic:etherealslate',
+        S: 'ars_nouveau:source_gem_block',
+        C: 'kubejs:ae2_machine_casing',
+        A: 'sophisticatedstorage:upgrade_base'
+    }, 'kubejs:sophisticatedstorage/alchemy_upgrade_post_ae2')
+
+    btmBpRecipe(event, 'sophisticatedstorage:advanced_alchemy_upgrade', [
+        'SQS',
+        'UCU',
+        'SQS'
+    ], {
+        S: 'kubejs:sky_steel_sheet',
+        Q: 'advanced_ae:quantum_core',
+        U: 'sophisticatedstorage:alchemy_upgrade',
+        C: 'kubejs:ae2_machine_casing'
+    }, 'kubejs:sophisticatedstorage/advanced_alchemy_upgrade_post_ae2')
+})

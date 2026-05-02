@@ -1,0 +1,17 @@
+filename = 'tponder-1.1.jar'
+name = "Tinkers' Ponder"
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "[Tinkers' Ponder]tponder-1.1-patch-1.jar"
+
+[download]
+hash = 'e7abe8859eb955618d6edbd137a55e2d7bb96ad8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7720241
+project-id = 1464764

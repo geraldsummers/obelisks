@@ -1,0 +1,17 @@
+filename = 'finite_water-1.20.1-1.0.0.jar'
+name = 'Simple Finite Water Control'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'finite_water-1.20.1-1.0.0.jar'
+
+[download]
+hash = '9e694575f5328c9e2661a927f6a3df79b92fc74e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6034272
+project-id = 1034483

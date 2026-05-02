@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "theurgy"
+	group: "77AFAA45BDFC5D88"
+	id: "1371E4F2B5516E8F"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3BA781F17425B97C"]
+			description: [
+				"Goal: obtain Sal Ammoniac Accumulator."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:sal_ammoniac_accumulator"
+			icon_scale: 1.18d
+			id: "4F30D6DE22FA41D5"
+			rewards: [
+				{
+					count: 4
+					id: "16106B8F962615FC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E7747A14A7AA194"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07D144B3BF5E0475"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BE0F3056A86F7C6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5F2802515CB1A075"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "284E91198DC1ECF7"
+				item: "theurgy:sal_ammoniac_accumulator"
+				type: "item"
+			}]
+			title: "Sal Ammoniac Accumulator"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F30D6DE22FA41D5"]
+			description: [
+				"Goal: obtain Alchemical Salt Mineral."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:alchemical_salt_mineral"
+			id: "30EFD9EA14D16EC1"
+			rewards: [
+				{
+					count: 4
+					id: "0382F92C6CF1E7F9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CC28C667F84CAD4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "66C9F098C4783C23"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31D18D90C26CE872"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "302F96A6D1C846FF"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3132E08BB97F120F"
+				item: "theurgy:alchemical_salt_mineral"
+				type: "item"
+			}]
+			title: "Alchemical Salt"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30EFD9EA14D16EC1"]
+			description: [
+				"Goal: obtain Distiller."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:distiller"
+			icon_scale: 1.18d
+			id: "08F03D235CA0F654"
+			rewards: [
+				{
+					count: 4
+					id: "409BBDDEF717907A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "20F35E7A43271F89"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22BAE5D34BC4C58C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B9E96BAE1A2678E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B290F67C8344AEB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "735B69BD7AE2B809"
+				item: "theurgy:distiller"
+				type: "item"
+			}]
+			title: "Distiller"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["30EFD9EA14D16EC1"]
+			description: [
+				"Goal: obtain Calcination Oven."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:calcination_oven"
+			id: "7697F2546A1C9F68"
+			rewards: [
+				{
+					count: 4
+					id: "6D39E5C84D30CC78"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02A3626F62DC67D1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E9F0E18E8208128"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14D333E97F6DC368"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79A9AFF9EBDDAC6D"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "111F91EC5AD5369A"
+				item: "theurgy:calcination_oven"
+				type: "item"
+			}]
+			title: "Calcination Oven"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08F03D235CA0F654"]
+			description: [
+				"Goal: obtain Liquefaction Cauldron."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:liquefaction_cauldron"
+			id: "32A1D6161619252B"
+			rewards: [
+				{
+					count: 4
+					id: "3B3F2415CDA9D8B4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "419BAED976F17E61"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4832F13D87948D68"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3856B2AEAB011E75"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55ECB3BCEA59F522"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5BB255078BF184AD"
+				item: "theurgy:liquefaction_cauldron"
+				type: "item"
+			}]
+			title: "Liquefaction Cauldron"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7697F2546A1C9F68"]
+			description: [
+				"Goal: obtain Incubator."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:incubator"
+			id: "25FFFFB2183338A6"
+			rewards: [
+				{
+					count: 4
+					id: "3DB74ADEE78D83E0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F823A219F32D205"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78F63EA9F347ABBA"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67611E70158BA69E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1EF502463731A999"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "40C7F4AC8DC19D0A"
+				item: "theurgy:incubator"
+				type: "item"
+			}]
+			title: "Incubator"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["32A1D6161619252B"]
+			description: [
+				"Goal: obtain Digestion Vat."
+				"Why it matters: This builds Theurgy transmutation machines and alchemical material processing."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:digestion_vat"
+			icon_scale: 1.18d
+			id: "000099DD8E0FB37D"
+			rewards: [
+				{
+					count: 4
+					id: "3AD36D6A0BF2BA99"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "70DFCA6B64F02777"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "734D647813316F51"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "375179D114497950"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "33A47B10A17E3A9F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "49CBF316951EB1F4"
+				item: "theurgy:digestion_vat"
+				type: "item"
+			}]
+			title: "Digestion Vat"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Theurgy"
+}

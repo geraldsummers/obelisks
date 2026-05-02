@@ -1,0 +1,23 @@
+411d7000-7ffd116bb000 ---p 00000000 00:00 0                              [rollup]
+Rss:            10106112 kB
+Pss:            10074989 kB
+Pss_Dirty:      10025320 kB
+Pss_Anon:        9993188 kB
+Pss_File:          78351 kB
+Pss_Shmem:          3450 kB
+Shared_Clean:      32512 kB
+Shared_Dirty:         96 kB
+Private_Clean:     48200 kB
+Private_Dirty:  10025304 kB
+Referenced:     10106112 kB
+Anonymous:       9993188 kB
+KSM:                   0 kB
+LazyFree:              0 kB
+AnonHugePages:         0 kB
+ShmemPmdMapped:        0 kB
+FilePmdMapped:         0 kB
+Shared_Hugetlb:        0 kB
+Private_Hugetlb:       0 kB
+Swap:                  0 kB
+SwapPss:               0 kB
+Locked:                0 kB

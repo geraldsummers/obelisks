@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "deeper_darker"
+	group: "3BF99559A31D6EB4"
+	id: "361E5D99532C4D70"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Gloomslate."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:gloomslate"
+			id: "5A30C75EA1E503E7"
+			rewards: [
+				{
+					count: 4
+					id: "2B970D4CC027A67B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39CBE73ED0BA5FAA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7196D2C20CD5A141"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B602A296F94321F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "36586DF7809814CC"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "66B451F7E79A6639"
+				item: "deeperdarker:gloomslate"
+				type: "item"
+			}]
+			title: "Gloomslate"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A30C75EA1E503E7"]
+			description: [
+				"Goal: obtain Sculk Stone."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:sculk_stone"
+			id: "11D3A18B5A71F336"
+			rewards: [
+				{
+					count: 4
+					id: "4ED10405CBEBA671"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D30463B6B9E9F5E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C257F9886F80F6F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54FA0381DD6F622C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "23B598A8D9B8D40C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7024BE596B293DB5"
+				item: "deeperdarker:sculk_stone"
+				type: "item"
+			}]
+			title: "Sculk Stone"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Heart Of The Deep."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:heart_of_the_deep"
+			icon_scale: 1.18d
+			id: "0C75A6AA86BDB6BD"
+			rewards: [
+				{
+					count: 4
+					id: "007E835DF9D0E271"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "474AC642E5069802"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54651B3C7BD9BF82"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "367F1745B72CC47B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EB8CD63C7DB7083"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "7C142BD09F8BB43E"
+				item: "deeperdarker:heart_of_the_deep"
+				type: "item"
+			}]
+			title: "Heart of the Deep"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Reinforced Echo Shard."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:reinforced_echo_shard"
+			id: "1B1D41478363F226"
+			rewards: [
+				{
+					count: 4
+					id: "5191AA0C778EA50F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00B628E5420ED25F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1596167DAFCFB724"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07E9E58B9B9C6796"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3DA4B14B4060E5A0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "67F184B6D42BB330"
+				item: "deeperdarker:reinforced_echo_shard"
+				type: "item"
+			}]
+			title: "Reinforced Echo Shard"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B1D41478363F226"]
+			description: [
+				"Goal: obtain Resonarium."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:resonarium"
+			icon_scale: 1.18d
+			id: "5C33447F2B992427"
+			rewards: [
+				{
+					count: 4
+					id: "3F504E4AA66154C9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45EC15C3DC9C6BEE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4369F95B3652AC38"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "19489B42EFCD38E0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02C668F3DA5AD46B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "22FDF13DB9D96C19"
+				item: "deeperdarker:resonarium"
+				type: "item"
+			}]
+			title: "Resonarium"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B1D41478363F226"]
+			description: [
+				"Goal: obtain Resonarium Plate."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:resonarium_plate"
+			id: "5159528F48CB2184"
+			rewards: [
+				{
+					count: 4
+					id: "1ADF62E54C5AAD05"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72280CFEA878B1ED"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7571E0AAD97571FE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "70A1F09641C15551"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "441AD7FA6F0B2228"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "10AD9669EC344B73"
+				item: "deeperdarker:resonarium_plate"
+				type: "item"
+			}]
+			title: "Resonarium Plate"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5C33447F2B992427"
+				"5159528F48CB2184"
+			]
+			description: [
+				"Goal: obtain Soul Crystal."
+				"Why it matters: This advances deep sculk exploration and unlocks late materials from dangerous depths."
+			]
+			hide_dependency_lines: false
+			icon: "deeperdarker:soul_crystal"
+			icon_scale: 1.18d
+			id: "3BCACDE2C3D768CF"
+			rewards: [
+				{
+					count: 4
+					id: "78B32789D142833B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1B8EF8F4F8AA570D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4D4FC0846DC7BA88"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1E93A56179D72059"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E257D6730B75A81"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "10ADA1E118921A73"
+				item: "deeperdarker:soul_crystal"
+				type: "item"
+			}]
+			title: "Soul Crystal"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Deeper and Darker"
+}

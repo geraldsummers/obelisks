@@ -1,0 +1,380 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "relics"
+	group: "6E0A7267C9728B31"
+	id: "3ECFE91571B86C07"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Researching Table."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:researching_table"
+			icon_scale: 1.18d
+			id: "624209BD61CE84EF"
+			rewards: [
+				{
+					count: 4
+					id: "52C1CDFE9C2A7370"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6ED41FE640B682B4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "57BEBAF6B1A67E0E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "61DF2B5912E90D13"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "070025A601A7ACE2"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "630562C471FD0D38"
+				item: "relics:researching_table"
+				type: "item"
+			}]
+			title: "Researching Table"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Arrow Quiver."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:arrow_quiver"
+			id: "0F395624F83AC37E"
+			rewards: [
+				{
+					count: 4
+					id: "2D37AA625BB64A1F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78EEB9E406204F27"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "50E960DC7152F71D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54F342296150C45D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5243FDB0A8603AF5"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "011DABA29F7CBEAA"
+				item: "relics:arrow_quiver"
+				type: "item"
+			}]
+			title: "Arrow Quiver"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Magic Mirror."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:magic_mirror"
+			id: "31D3A4272B9DD7E6"
+			rewards: [
+				{
+					count: 4
+					id: "6D840E3F98651FFE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47E862F05EA32AA9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "720F341AD670DD45"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "020842D43DEB2769"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05576CFC9F724ADC"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "6A134A41C5D055C5"
+				item: "relics:magic_mirror"
+				type: "item"
+			}]
+			title: "Magic Mirror"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Enders Hand."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:enders_hand"
+			id: "5965304F22706A51"
+			rewards: [
+				{
+					count: 4
+					id: "3E8B1AAAAF98B422"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3AA435071A17B40E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4FD68F3A8B2063C1"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "605883B412F7E83B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51C10FBB546B3E2C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "56B4BF896C95AAF6"
+				item: "relics:enders_hand"
+				type: "item"
+			}]
+			title: "Ender's Hand"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["31D3A4272B9DD7E6"]
+			description: [
+				"Goal: obtain Elytra Booster."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:elytra_booster"
+			id: "476E758DEDF644FF"
+			rewards: [
+				{
+					count: 4
+					id: "3DBD203A9CFC587B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5F078DD4F6F8B9BF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2FAE5ECD46524D4D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "259DBA85E31C7D4D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "49DECBD648A78679"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4BD3280E644F01C0"
+				item: "relics:elytra_booster"
+				type: "item"
+			}]
+			title: "Elytra Booster"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5965304F22706A51"]
+			description: [
+				"Goal: obtain Shadow Glaive."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:shadow_glaive"
+			id: "41A7EB4519B002BA"
+			rewards: [
+				{
+					count: 4
+					id: "099E102930106612"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A0359F2F005CA07"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39DC9FDBB525E041"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "21F681AA1C974342"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E7F1019D7827466"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "50C28032B510E7C4"
+				item: "relics:shadow_glaive"
+				type: "item"
+			}]
+			title: "Shadow Glaive"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Space Dissector."
+				"Why it matters: This develops Relics research and high-impact adventure rewards."
+			]
+			hide_dependency_lines: false
+			icon: "relics:space_dissector"
+			icon_scale: 1.18d
+			id: "068F69CAB2FD91A1"
+			rewards: [
+				{
+					count: 4
+					id: "695933F681C6EB61"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EFEDB3A9FCAFB97"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42BE85BE2F5981C9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "798D62F6749DE15A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D12F28FFA3C54AA"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6BF69515476272A5"
+				item: "relics:space_dissector"
+				type: "item"
+			}]
+			title: "Space Dissector"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Relics"
+}

@@ -1,0 +1,554 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "create_brass_automation"
+	group: "4B746D4352454154"
+	id: "2737E113B67DFBD4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["200A6D5E84D5AF08"]
+			description: [
+				"Goal: obtain Brass Ingot."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:brass_ingot"
+			icon_scale: 1.18d
+			id: "5C2080E222425812"
+			rewards: [
+				{
+					count: 4
+					id: "3121A2D59BFABB3F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "534AF44D39B4D820"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "44F06CFD353BA8B7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "70C4707323614567"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "Brass Is Create Steel"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Brass Sheet."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:brass_sheet"
+			id: "33166D46F0F967B4"
+			rewards: [
+				{
+					count: 4
+					id: "74A281F346EEAF8D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0249F4F2A1D08628"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "530C8F9AB5AA41B6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4ACD187E563A1DE0"
+				item: "create:brass_sheet"
+				type: "item"
+			}]
+			title: "Brass Sheet"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Electron Tube."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:electron_tube"
+			id: "5AA4733E14F69976"
+			rewards: [
+				{
+					count: 4
+					id: "2C42FCD930AE960C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F2F2AAF1DEBC662"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4497EB401011D3D0"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4C3627C74229ACDB"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "Electron Tube"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Precision Mechanism."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:precision_mechanism"
+			icon_scale: 1.18d
+			id: "6905B4951A3DFBF4"
+			rewards: [
+				{
+					count: 4
+					id: "34A5557D361C68F8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B9DC5D2D3CDFFEE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B99C5B6E0952BF8"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "1BCE23428AE71563"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "Precision Mechanism"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Brass Funnel, Brass Tunnel."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:brass_funnel"
+			id: "43AC4BB8A88CE35F"
+			rewards: [
+				{
+					count: 4
+					id: "0C07A7E97175B453"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31917C00B1C39E77"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A3CF086E8954770"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "57D8E833AC7323F5"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "799A514056CC265D"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+			]
+			title: "Brass Routing Faces"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6905B4951A3DFBF4"
+				"43AC4BB8A88CE35F"
+			]
+			description: [
+				"Goal: obtain Brass Machine Casing."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:brass_machine_casing"
+			icon_scale: 1.18d
+			id: "3F4389B457AC1A55"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "0D30014451744C8C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15A76C4BBFF34CDF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3DF85E27BECD9398"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "332A159FFE2A8991"
+				item: "kubejs:brass_machine_casing"
+				type: "item"
+			}]
+			title: "Brass Machine Casing"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Mechanical Arm."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_arm"
+			id: "53641ED3991F0E87"
+			rewards: [
+				{
+					count: 4
+					id: "08B94B91628062BC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08EC320B91EF8501"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3621C8E0CF14A613"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2CBEE47BFCECF11A"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			title: "Mechanical Arm"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Rotation Speed Controller."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:rotation_speed_controller"
+			id: "7B42DA9C15E09812"
+			rewards: [
+				{
+					count: 4
+					id: "265A87AA176A3B1A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48BF18A83616D8A8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4AFB166236180424"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "017391B0C014814A"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			title: "Speed Control"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43AC4BB8A88CE35F"]
+			description: [
+				"Goal: obtain Attribute Filter, Smart Chute."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:attribute_filter"
+			id: "326D525FE7F66AFD"
+			rewards: [
+				{
+					count: 4
+					id: "26D6704CDE8225A4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "44B4A5D665C5EDAF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31F0F51DB0D3705B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2340F6BD350A2F8D"
+					item: "create:attribute_filter"
+					type: "item"
+				}
+				{
+					id: "197603A2D51AE3F6"
+					item: "create:smart_chute"
+					type: "item"
+				}
+			]
+			title: "Attribute and Smart Filters"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7B42DA9C15E09812"]
+			description: [
+				"Goal: obtain Stockpile Switch, Content Observer, Redstone Link."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:stockpile_switch"
+			id: "7105EBC03C2D672A"
+			rewards: [
+				{
+					count: 4
+					id: "08D414F259CD6C1C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7281ADDF55308230"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "309DF9D71AEFD936"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "307E6068430089E5"
+					item: "create:stockpile_switch"
+					type: "item"
+				}
+				{
+					id: "42C6A5343F04F185"
+					item: "create:content_observer"
+					type: "item"
+				}
+				{
+					id: "2D72CB60235C7DE8"
+					item: "create:redstone_link"
+					type: "item"
+				}
+			]
+			title: "Observed Automation"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5AA4733E14F69976"
+				"7105EBC03C2D672A"
+			]
+			description: [
+				"Goal: obtain Pulse Repeater, Pulse Extender."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+			]
+			hide_dependency_lines: false
+			icon: "create:pulse_repeater"
+			id: "52D2D7EADACDCB6E"
+			rewards: [
+				{
+					count: 4
+					id: "00D63DE572CA714F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0EC14642AFEC3397"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73388B4C7621E12B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "65989E6FCD4F9542"
+					item: "create:pulse_repeater"
+					type: "item"
+				}
+				{
+					id: "5A091F423C0384F1"
+					item: "create:pulse_extender"
+					type: "item"
+				}
+			]
+			title: "Pulse and Interlock Control"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["326D525FE7F66AFD"]
+			description: [
+				"Goal: obtain Mechanical Arm, Stockpile Switch, Brass Machine Casing."
+				"Why it matters: This turns brass into the main Create automation material and unlocks precision manufacturing."
+				"Capstone: build a brass automation cell that routes, observes, and throttles itself under load."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_arm"
+			id: "68C5F834CFD1087B"
+			rewards: [
+				{
+					count: 4
+					id: "6DD57A02343D7A48"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E2F0FFE77ED31D7"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06A64C7DB27B706B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "745EAD8E69301487"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+				{
+					id: "70078950AB6FA011"
+					item: "create:stockpile_switch"
+					type: "item"
+				}
+				{
+					id: "393D2ED32256C5AB"
+					item: "kubejs:brass_machine_casing"
+					type: "item"
+				}
+			]
+			title: "Capstone: Self-Regulating Brass Cell"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Create Brass Automation"
+}

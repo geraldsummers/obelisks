@@ -1,0 +1,11 @@
+disabled etstlib-3.0.0-beta.20.jar
+disabled tinkers_advanced_core-3.0.0-beta.5.jar
+disabled tinkers_advanced_tools-3.0.0-beta.4.jar
+disabled tponder-1.1.jar
+disabled tconjei-1.20.1-1.5.4.jar
+marker=sampled_timeout elapsed=300 java_pid=1306006 profile=docs/memory_variants/rss_menu_cut_tcon_advanced_docs_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=9510084 postGcJavaRssMiB=9287
+diagnostics=docs/memory_variants/rss_menu_cut_tcon_advanced_docs_20260501_diagnostics
+57:[01May2026 13:00:30.830] [main/INFO] [Puzzles Lib/]: Loading 351 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=10098 peakRssGiB=9.86

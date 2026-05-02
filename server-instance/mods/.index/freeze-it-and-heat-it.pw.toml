@@ -1,0 +1,17 @@
+filename = 'fiahi-3.1.6.jar'
+name = 'Freeze It, and Heat It!'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'fiahi-3.1.6.jar'
+
+[download]
+hash = 'a64b8c66c8efc1eeb59fa6579574636897ca0c01'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7925825
+project-id = 911258

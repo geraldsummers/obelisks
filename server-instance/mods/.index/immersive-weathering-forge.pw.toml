@@ -1,0 +1,17 @@
+filename = 'immersive_weathering-1.20.1-2.0.5-forge.jar'
+name = 'Immersive Weathering [FORGE]'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'immersive_weathering-1.20.1-2.0.5-forge.jar'
+
+[download]
+hash = 'd89ad3793ffb97df27f415ac6cc07c61460dd9f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6116941
+project-id = 592449

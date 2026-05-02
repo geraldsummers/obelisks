@@ -1,0 +1,232 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "death"
+	group: "1535A2E7C7CA772B"
+	id: "076D4E90647C41D8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["40E75CF4B1C27ADC"]
+			description: [
+				"Goal: obtain Still Beating Heart."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "rpgstats:still_beating_heart"
+			icon_scale: 1.18d
+			id: "6F941E45D095683A"
+			rewards: [
+				{
+					count: 4
+					id: "44301D21E5FBDABD"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3337A2140AB7B2DA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6D9AA8F262C7DBA1"
+				item: "rpgstats:still_beating_heart"
+				type: "item"
+			}]
+			title: "Still-Beating Heart"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6F941E45D095683A"]
+			description: [
+				"Goal: obtain Altar."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:altar"
+			id: "1F37E2B668624B9E"
+			rewards: [
+				{
+					count: 4
+					id: "778BEF624C794088"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52F12FA2A2976FF8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5038D6306325B996"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "First Blood Altar"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F37E2B668624B9E"]
+			description: [
+				"Goal: obtain Weak Blood Heart."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:weak_blood_heart"
+			id: "13C57F510339333F"
+			rewards: [
+				{
+					count: 4
+					id: "7D807AA004309289"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48FAC8E7E9C47D11"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "14DECDDA88147CE9"
+				item: "kubejs:weak_blood_heart"
+				type: "item"
+			}]
+			title: "Blood-Touched Heart"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13C57F510339333F"]
+			description: [
+				"Goal: obtain Weakbloodorb."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:weakbloodorb"
+			icon_scale: 1.18d
+			id: "612030654C6E045A"
+			rewards: [
+				{
+					count: 4
+					id: "2EF732D1CC3E272B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6DE9149B79EF41B8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "76369BE5162DC98D"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			title: "Weak Blood Orb"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["612030654C6E045A"]
+			description: [
+				"Goal: obtain Blank Slate."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:blankslate"
+			icon_scale: 1.18d
+			id: "0BBB96C712C01E5C"
+			rewards: [
+				{
+					count: 4
+					id: "6436F58704719AA4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3126B96DCA5D01C6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2A758127D98D2DCB"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			title: "Blank Slate"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["612030654C6E045A"]
+			description: [
+				"Goal: obtain Cooking Pot, Sand Filter."
+				"Why it matters: This connects death trophies, blood, and slate crafting into the magic progression path."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:cooking_pot"
+			id: "7C7359C9554AF437"
+			rewards: [
+				{
+					count: 4
+					id: "0CA34C8868CBFA65"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F17F7CBA7E14B33"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2A5DF78A623AB44C"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "18405894D69F46ED"
+					item: "thirst:sand_filter"
+					type: "item"
+				}
+			]
+			title: "Body Systems Matter"
+			x: 8.0d
+			y: 1.0d
+		}
+	]
+	title: "Death and Blood"
+}

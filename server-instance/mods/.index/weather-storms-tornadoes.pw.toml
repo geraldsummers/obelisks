@@ -1,0 +1,17 @@
+filename = 'weather2-1.20.1-2.8.3.jar'
+name = 'Weather, Storms & Tornadoes'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'weather2-1.20.1-2.8.3.jar'
+
+[download]
+hash = '4ec7a372945874dd734a20fa61574f08d2b6763a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5244118
+project-id = 237746

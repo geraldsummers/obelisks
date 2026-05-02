@@ -1,0 +1,280 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "adventuring"
+	group: "3570F9CE90E09BD1"
+	id: "20AA1B8669BC31E2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Compass, Map."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:compass"
+			id: "6FE50852CFDB45B1"
+			rewards: [{
+				count: 4
+				id: "79C2E358099FD4FD"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4C973EFC4A690760"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "3A5E93C178C48897"
+					item: "minecraft:map"
+					type: "item"
+				}
+			]
+			title: "Route Supplies"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6FE50852CFDB45B1"]
+			description: [
+				"Goal: obtain Copper Coin."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:copper_coin"
+			icon_scale: 1.18d
+			id: "2B255C08B9B63B6E"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "054E5810FDDC14CE"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				count: 16L
+				id: "6FCE683C0FEFFD11"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			title: "First Market Float"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Trading Post."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "tradingpost:trading_post"
+			id: "7076D14173C92EFD"
+			rewards: [{
+				count: 4
+				id: "082F8E2DEAB1F3C8"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2E120562F57F98AF"
+				item: "tradingpost:trading_post"
+				type: "item"
+			}]
+			title: "Village Trading Post"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Delivery Table."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "wares:delivery_table"
+			id: "7AA68243E955B277"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "0A33473919722441"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [{
+				id: "7213E85FA5F32D33"
+				item: "wares:delivery_table"
+				type: "item"
+			}]
+			title: "Wares Delivery Table"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7076D14173C92EFD"]
+			description: [
+				"Goal: obtain Delivery Agreement."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "wares:delivery_agreement"
+			id: "0DEEF12CE3692689"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "3A70EC0AE434FCD0"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [{
+				id: "579BCD2BAD1C58EA"
+				item: "wares:delivery_agreement"
+				type: "item"
+			}]
+			title: "Contract As Crafting"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DEEF12CE3692689"]
+			description: [
+				"Goal: obtain Package."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "wares:package"
+			id: "2F3028BDAB347362"
+			rewards: [{
+				count: 4
+				id: "7AEE6CF47C2547A9"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "66A8496FF4C08B1A"
+				item: "wares:package"
+				type: "item"
+			}]
+			title: "Physical Package"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Completed Delivery Agreement."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "wares:completed_delivery_agreement"
+			icon_scale: 1.18d
+			id: "506EAF7FE72E6F51"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "0F8F7C5EDEAC1C48"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				id: "7A391A4A9CA0A4DA"
+				item: "wares:completed_delivery_agreement"
+				type: "item"
+			}]
+			title: "Completed Delivery"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Compass, Shield."
+				"Why it matters: This advances the next part of the progression path."
+				"Cursed Biomes adds dangerous regional laws. Treat cursed territory as an extraction/adventure route, not background ambience."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:compass"
+			id: "6D5D7BE85459EA54"
+			rewards: [{
+				count: 4
+				id: "6A99E014A57AFD64"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2BF8A93DA0D2071E"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					id: "4B1B26E6B1ABB846"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cursed Regions"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iron Coin."
+				"Why it matters: This advances the next part of the progression path."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:iron_coin"
+			icon_scale: 1.18d
+			id: "43446D27D7BE85A7"
+			min_width: 2
+			rewards: [{
+				count: 4
+				id: "40BE01B55C71AA20"
+				item: "dotcoinmod:copper_coin"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Economy"
+			tasks: [{
+				count: 4L
+				id: "562F323715E2869B"
+				item: "dotcoinmod:iron_coin"
+				type: "item"
+			}]
+			title: "Iron Coin Float"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Adventuring, Coins, and Wares"
+}

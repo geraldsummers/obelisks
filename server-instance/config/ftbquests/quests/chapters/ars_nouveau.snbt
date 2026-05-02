@@ -1,0 +1,431 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "ars_nouveau"
+	group: "77AFAA45BDFC5D88"
+	id: "3CFE283B0F800A6F"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Imbuement Chamber."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:imbuement_chamber"
+			icon_scale: 1.18d
+			id: "2D93036661BBADB2"
+			rewards: [
+				{
+					count: 4
+					id: "47A5C2B8E6E5071F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "63901F50FECFAE0F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7E7F28E06D9A7689"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4BBAEB0D19B6FFCC"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "56918F1400564C7E"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "199AD9C2BF747B6F"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Imbuement Chamber"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Source Jar."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:source_jar"
+			id: "144E97830B7A8788"
+			rewards: [
+				{
+					count: 4
+					id: "539B8BAB7AF602A9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "17E44CE9E738E95D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78C381FBFDBFE5A3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "356F03861E8DCFDF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3FC1AC25CB9449C5"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "079782397A98AC15"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "Source Jar"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Enchanting Apparatus."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:enchanting_apparatus"
+			icon_scale: 1.18d
+			id: "60F285EE4A77746B"
+			rewards: [
+				{
+					count: 4
+					id: "4B93BB30AE2A6F6B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "201ABB0518502ABD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "11BF7989CCBEB6F6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D3F8089F286464C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D44EB200224CE7C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "1A732010F43EC14E"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			title: "Enchanting Apparatus"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Arcane Core."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:arcane_core"
+			id: "0897BAE974F62A1D"
+			rewards: [
+				{
+					count: 4
+					id: "36B4D578F729DAC7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71952B52A5C5496A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1939DA18B24AE905"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1317290815848651"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55F3556D9D62D2CB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2FC83366687B0E06"
+				item: "ars_nouveau:arcane_core"
+				type: "item"
+			}]
+			title: "Arcane Core"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Ritual Brazier."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:ritual_brazier"
+			id: "749958C3C221A5E9"
+			rewards: [
+				{
+					count: 4
+					id: "4899FF7FFA6485FE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5FB3FA5F52988C26"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7856609A6B880AB3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "50112DD43AA4D9F0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E868FF715FABB7C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "43A7555305CFB944"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Ritual Brazier"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Apprentice Spell Book."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "57EE6CFFEF6099E0"
+			rewards: [
+				{
+					count: 4
+					id: "32E7AE743ECC511A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2686DA91F07278AD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60C413C6B07921D0"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EA147E7EC20C604"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "027306E511D68F7C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 0.9d
+			subtitle: "Reference"
+			tasks: [{
+				id: "5D0C52EAA8E4DC8F"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Apprentice Spell Book"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Wilden Tribute."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:wilden_tribute"
+			id: "3F1236A79A25DCB8"
+			rewards: [
+				{
+					count: 4
+					id: "48571225E1FC1801"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DDA0A844531D6CE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F31BDE12C10B526"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7FAB84935C0B727B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "255A1804B85A2DD3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "20692BFCB1290A21"
+				item: "ars_nouveau:wilden_tribute"
+				type: "item"
+			}]
+			title: "Wilden Tribute"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Archmage Spell Book."
+				"Why it matters: This builds Ars Nouveau source infrastructure, spell work, rituals, and late spellcasting."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:archmage_spell_book"
+			icon_scale: 1.18d
+			id: "5BE6D0C5F6C4DCC3"
+			rewards: [
+				{
+					count: 4
+					id: "05DB31009D5797FE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B30A1F3A9B3A27B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1EBBAB0E6AF8BEE9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2526CE6C0D96A868"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D46158EDC034171"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 1.75d
+			subtitle: "Reference"
+			tasks: [{
+				id: "7382CBCA6C203FDF"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Archmage Spell Book"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Ars Nouveau"
+}

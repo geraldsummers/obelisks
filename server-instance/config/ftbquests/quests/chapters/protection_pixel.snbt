@@ -1,0 +1,1070 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "protection_pixel"
+	group: "7D79E4B0E21B410D"
+	id: "2753ED1B367EDDC1"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Armor Load Platform."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:armorloadplatform"
+			icon_scale: 1.18d
+			id: "08742E486E4B27B5"
+			rewards: [
+				{
+					count: 4
+					id: "76185684E4C29E62"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "21BBF1516C259CA4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "440615CE6546B269"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EDF279D1DC72608"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "64B694A62780F5DB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "46588E4B63B29CC3"
+				item: "protection_pixel:armorloadplatform"
+				type: "item"
+			}]
+			title: "Armor Load Platform"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Small Netherite Sheet."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:smallnetheritesheet"
+			id: "7041E58B86A7EDE1"
+			rewards: [
+				{
+					count: 4
+					id: "33715019D9918F9E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A39849F96AA7EFC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D9445E666F50A4A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48D4DA1A16F0C261"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C4155A7140C6DB8"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "217355AD77FDBED4"
+				item: "protection_pixel:smallnetheritesheet"
+				type: "item"
+			}]
+			title: "Small Netherite Sheet"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Reinforced Fiber."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:reinforcedfiber"
+			id: "1B759AC9ECBD9AAA"
+			rewards: [
+				{
+					count: 4
+					id: "3C2EDEACBFAFAD68"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "689AC5C1610481EF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31A7CB525A8F374A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42A4557015A878C4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C8DF12E6A9D8C52"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "438CB900342A3F9C"
+				item: "protection_pixel:reinforcedfiber"
+				type: "item"
+			}]
+			title: "Reinforced Fiber"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Heat-Resistant Ceramic Sheet."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:heatresistantceramicsheet"
+			id: "6707BE13D9B630EA"
+			rewards: [
+				{
+					count: 4
+					id: "2A820C8837489E9F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "483D67AE06E6471A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0CCEEF9753C0A825"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EEA493DABEEE2D2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4D91105ED305ADAE"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "753A0CA2A9A6FE44"
+				item: "protection_pixel:heatresistantceramicsheet"
+				type: "item"
+			}]
+			title: "Heat Ceramic Sheet"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7041E58B86A7EDE1"
+				"1B759AC9ECBD9AAA"
+			]
+			description: [
+				"Goal: obtain Alloy Armor Plate."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:alloyarmorplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0D6A8EF8E2010C54"
+			rewards: [
+				{
+					count: 4
+					id: "28C4593CC1788890"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2C8BF720D9AE678C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7594FCAFD5A152BF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "128E04628D572025"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "478AA70D87FEEF85"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "70E628C5A6D91B1D"
+				item: {
+					Count: 1
+					id: "protection_pixel:alloyarmorplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Alloy Armor Plate"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Power Engine."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 9
+					}
+				}
+				id: "protection_pixel:powerengine"
+				tag: {
+					Inventory: {
+						Items: [ ]
+						Size: 9
+					}
+				}
+			}
+			icon_scale: 1.18d
+			id: "3EAE23F667B1F207"
+			rewards: [
+				{
+					count: 4
+					id: "3F7DE84642C7C08C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "356356ABA628F66A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C519A6AB2C69059"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52737E7CFE7A17C1"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71DD8290245683EE"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2E1D3B6421DD1F11"
+				item: "protection_pixel:powerengine"
+				type: "item"
+			}]
+			title: "Power Engine"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Heat Overlocking Mechanism."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:heatoverlockingmechanism"
+			id: "7E6F71A636A05CF6"
+			rewards: [
+				{
+					count: 4
+					id: "73538E5D73BD1522"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C31BDF0782180FB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31B6E38E1C5008CC"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2520318C715CB0F9"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "338571697B47316E"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4512B52B72CE8243"
+				item: "protection_pixel:heatoverlockingmechanism"
+				type: "item"
+			}]
+			title: "Heat Overlock Mechanism"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Equipmentkit, Armorplatekit."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:equipmentkit"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1D2CBDC0631B65F6"
+			rewards: [
+				{
+					count: 4
+					id: "37D51647F2291267"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "074B8A0CB958FEE4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0473C3965982A290"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F9E23DEDDD73F38"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "726ACB03F3A5E6B5"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2F7438F358CA52F3"
+					item: {
+						Count: 1
+						id: "protection_pixel:equipmentkit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "70255700E6B9C118"
+					item: {
+						Count: 1
+						id: "protection_pixel:armorplatekit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Armor and Equipment Kits"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D2CBDC0631B65F6"]
+			description: [
+				"Goal: obtain Linkplate Helmet, Linkplate Chestplate, Linkplate Leggings, and related items."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:linkplate_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "37F4BA02404F30C1"
+			rewards: [
+				{
+					count: 4
+					id: "7C1AEA9AE38E4BA4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D1E2062F09F90FE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D04ED9E353D6036"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "09F06EB13F56FA67"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B63B541E0B9FAF0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7A381C98DDCC4C37"
+					item: {
+						Count: 1
+						id: "protection_pixel:linkplate_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04962CB621EB4A73"
+					item: {
+						Count: 1
+						id: "protection_pixel:linkplate_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40D5A7809FB3A145"
+					item: {
+						Count: 1
+						id: "protection_pixel:linkplate_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B6D0D54C26493D9"
+					item: {
+						Count: 1
+						id: "protection_pixel:linkplate_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Link-Plate Armor"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1D2CBDC0631B65F6"]
+			description: [
+				"Goal: obtain Steam Ectoskeleton."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "protection_pixel:steamectoskeleton"
+				tag: {
+					Inventory: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+			}
+			id: "34E51BCD8CC479F0"
+			rewards: [
+				{
+					count: 4
+					id: "6FDEA701979E5187"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7353CFCA36934926"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "332FDE4A38B179F3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E4B0F44C02AAE80"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A59B47449A57A78"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "66C5BD4664849E3C"
+				item: "protection_pixel:steamectoskeleton"
+				type: "item"
+			}]
+			title: "Steam Ectoskeleton"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Suspjetpack, Maneuveringwing."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+				id: "protection_pixel:suspjetpack"
+				tag: {
+					Inventory: {
+						Items: [ ]
+						Size: 3
+					}
+				}
+			}
+			id: "51B533726190DB01"
+			rewards: [
+				{
+					count: 4
+					id: "0BB80C9592FA1301"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71088BE91D7D5C01"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6EF688C74B72781A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5007570E2E992F51"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B95782C543B02D5"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3B5E6E0F0E8AFDCE"
+					item: "protection_pixel:suspjetpack"
+					type: "item"
+				}
+				{
+					id: "304D0738901D0448"
+					item: "protection_pixel:maneuveringwing"
+					type: "item"
+				}
+			]
+			title: "Powered Mobility"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D2CBDC0631B65F6"]
+			description: [
+				"Goal: obtain Workerhornet Chestplate, Breaker Chestplate, Typhoon Chestplate."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:workerhornet_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4266A73146AD6264"
+			rewards: [
+				{
+					count: 4
+					id: "35067C2AFAF171A2"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4421E73E2B5447CE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3EB1477B1E630757"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "69FC1EB11701E5A3"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02C6B0B251DA1BCB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "13C350F3B1799D24"
+					item: {
+						Count: 1
+						id: "protection_pixel:workerhornet_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "644B9A96B9089215"
+					item: {
+						Count: 1
+						id: "protection_pixel:breaker_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D55E5D9CE8A3A01"
+					item: {
+						Count: 1
+						id: "protection_pixel:typhoon_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Combat Chestplates"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Closed Helmet, Plague Helmet, Nightdemon Helmet, and related items."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:closed_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5C90AACDDFD34CCB"
+			rewards: [
+				{
+					count: 4
+					id: "4ED812DB1F340E10"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "631984578FF8A0F9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C7C954CAA148DB3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73AFA684A2EE5FAE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CA26480500BF1A7"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "208C53D444130E90"
+					item: {
+						Count: 1
+						id: "protection_pixel:closed_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64A8686A29D1DB6D"
+					item: {
+						Count: 1
+						id: "protection_pixel:plague_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D35FA740410752B"
+					item: {
+						Count: 1
+						id: "protection_pixel:nightdemon_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A247C3A715BCBEE"
+					item: {
+						Count: 1
+						id: "protection_pixel:bloodprisoner_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Environmental Helmets"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Anchorpoint Leggings, Buoyancy Leggings, Slingshot Leggings."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:anchorpoint_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1541167FEC1EFB59"
+			rewards: [
+				{
+					count: 4
+					id: "4BE9301C2901570F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "085A198CE798578C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "561C9E32EA1F2979"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5730395BABB0BD68"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A76B0E7D7B36D2F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5D9FDE768706540D"
+					item: {
+						Count: 1
+						id: "protection_pixel:anchorpoint_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B0CF7FCA04B1570"
+					item: {
+						Count: 1
+						id: "protection_pixel:buoyancy_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58E424A2966909BD"
+					item: {
+						Count: 1
+						id: "protection_pixel:slingshot_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Route Leggings"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Wings of Prism AS."
+				"Why it matters: This turns post-AE2 manufacturing, fission heat, and extreme-depth chemistry into powered armor and body equipment."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "protection_pixel:wingsofprismas_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "19FC6059CA72120B"
+			rewards: [
+				{
+					count: 4
+					id: "5DCFD96BDC61FA1B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "117F57239A1D171B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72E981FEF983135A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78AE3B0252BB5AAC"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C677BB2CD32C9CB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "371B138A43BE9B11"
+				item: {
+					Count: 1
+					id: "protection_pixel:wingsofprismas_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "AS Upgrade Line"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Protection Pixel"
+}

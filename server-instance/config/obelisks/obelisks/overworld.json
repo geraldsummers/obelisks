@@ -1,0 +1,27 @@
+{
+  "id": "overworld",
+  "displayName": "Overworld Rift Anchor",
+  "instanceTemplateId": "overworld",
+  "targetDimension": "minecraft:overworld",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 16,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "enabled": false,
+  "worldgenWeight": 0.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "minecraft:stone",
+  "meteorShellBlock": "minecraft:stone",
+  "pedestalBlock": "minecraft:stone",
+  "returnPadFrameBlock": "minecraft:obsidian",
+  "platformFloorBlock": "minecraft:bedrock",
+  "craterFillBlocks": [
+    "minecraft:gravel",
+    "minecraft:coarse_dirt"
+  ],
+  "rewardTableId": "overworld",
+  "useAe2Skystone": true
+}

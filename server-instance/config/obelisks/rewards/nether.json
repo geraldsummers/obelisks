@@ -1,0 +1,45 @@
+{
+  "id": "nether",
+  "enabled": true,
+  "baseRolls": 0,
+  "rollsPerKill": 1,
+  "damagePerBonusRoll": 16.0,
+  "pools": [
+    {
+      "id": "nether_salvage",
+      "chance": 0.55,
+      "entries": [
+        {
+          "item": "minecraft:blaze_rod",
+          "minCount": 1,
+          "maxCount": 2,
+          "weight": 30
+        },
+        {
+          "item": "minecraft:quartz",
+          "minCount": 2,
+          "maxCount": 6,
+          "weight": 40
+        },
+        {
+          "item": "minecraft:gold_ingot",
+          "minCount": 1,
+          "maxCount": 3,
+          "weight": 20
+        },
+        {
+          "item": "minecraft:nether_wart",
+          "minCount": 2,
+          "maxCount": 5,
+          "weight": 25
+        },
+        {
+          "item": "minecraft:ancient_debris",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

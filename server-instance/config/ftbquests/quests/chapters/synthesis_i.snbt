@@ -1,0 +1,312 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "synthesis_i"
+	group: "77AFAA45BDFC5D88"
+	id: "740899DE4171BF14"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Acid Vat."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:acid_vat"
+			id: "1AE0C8479367EF6F"
+			rewards: [
+				{
+					count: 4
+					id: "7BCBAE9AC56D29BC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "070BCA2199FBECD5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D9D0E8210D0FB4D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D5FA6A67B4AE8D6"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0F3FADFAC1A3FAA1"
+				item: "acid_vat:acid_vat"
+				type: "item"
+			}]
+			title: "Acid Vat"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Slurry Tank, Smart Slurry Pipe."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:slurry_tank"
+			id: "723D6D057B32B425"
+			rewards: [
+				{
+					count: 4
+					id: "1BCBEEF81C8F659B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "100EDCA4459A46DB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D15D76F985D0893"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3647EF81D0ACCFEF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "64CEB8B8A6BBDEB9"
+					item: "acid_vat:slurry_tank"
+					type: "item"
+				}
+				{
+					id: "4649D3DADE2D5D35"
+					item: "acid_vat:smart_slurry_pipe"
+					type: "item"
+				}
+			]
+			title: "Slurry Transport"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["723D6D057B32B425"]
+			description: [
+				"Goal: obtain Centrifuge Bearing, Centrifuge Chamber."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:centrifuge_bearing"
+			id: "5F4E618B68C744F5"
+			rewards: [
+				{
+					count: 4
+					id: "3A8DAB6269B2CEF6"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BF3C77C554123EC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "358618DBAA35BF90"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "77CD560D327670AE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6B29A303BA2CA8B9"
+					item: "acid_vat:centrifuge_bearing"
+					type: "item"
+				}
+				{
+					id: "19F212BA893042D2"
+					item: "acid_vat:centrifuge_chamber"
+					type: "item"
+				}
+			]
+			title: "Centrifuge Fractions"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Copper, Sulfur."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:copper"
+			id: "543BB92865DD94E6"
+			rewards: [
+				{
+					count: 4
+					id: "78146590360A2BD1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6FC74957031A398F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0B719632B1BA850A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5FFDFA243B8638EC"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3AB4006BB0B2CAA3"
+					item: "chemlib:copper"
+					type: "item"
+				}
+				{
+					id: "6DB7C4912BC46C67"
+					item: "chemlib:sulfur"
+					type: "item"
+				}
+			]
+			title: "Chemical Interpretation"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Platinum Plate."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:platinum_plate"
+			id: "0D1685473C78F70A"
+			rewards: [
+				{
+					count: 4
+					id: "5B28E072855398BD"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "09BAF568F600407A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5790C57DABB019A7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B7CC455808723C2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0A2663E15AECC615"
+				item: "chemlib:platinum_plate"
+				type: "item"
+			}]
+			title: "Mountain-Depth Plate Reward"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Osmium Plate."
+				"Why it matters: This begins chemical processing so deposits can provide more than a single metal output."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:osmium_plate"
+			icon_scale: 1.18d
+			id: "135CD272448EB0BB"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "7FB6730F842344FE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "091287B1F7390F0C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "58E0D728ED5F03FB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68DF598D668E1678"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Exit"
+			tasks: [{
+				id: "1BC48E98B1414B6C"
+				item: "chemlib:osmium_plate"
+				type: "item"
+			}]
+			title: "Exit: Matter Routing"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Acid Chemistry"
+}

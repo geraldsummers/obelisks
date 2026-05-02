@@ -227,7 +227,9 @@ function intendedMachineTier(output) {
 
 function isMachineLike(output) {
   const name = localName(output)
-  return /(machine|controller|generator|motor|battery|drive|interface|assembler|crafter|processor|terminal|bus|cell|storage|chamber|vat|centrifuge|router|network|computer|monitor|transmitter|receiver|wireless|loader|quarry|miner|pump|pipe|conduit|reactor|turbine|fission|fusion|engine|gearbox|alternator|housing)/.test(name)
+  if (name === 'activator_rail' || name === 'excavator') return false
+  if (namespace(output) === 'tconstruct' && name.startsWith('fake_')) return false
+  return /(machine|controller|generator|motor|battery|drive|interface|assembler|crafter|processor|terminal|bus|cell|storage|chamber|centrifuge|router|network|computer|monitor|transmitter|receiver|wireless|loader|quarry|miner|pump|pipe|conduit|reactor|turbine|fission|fusion|engine|gearbox|alternator|housing)/.test(name) || /(^|_)vat($|_)/.test(name)
 }
 
 function loadGeneratedRecipes() {
@@ -524,7 +526,13 @@ function testQuestBook() {
   const absent = requiredNodes.filter(n => !chapterText.includes(n))
   absent.length ? finding('quest book is missing important progression nodes', absent.join(', '), 'MUST') : ok('quest book covers major progression nodes', `${requiredNodes.length} anchors`)
 
-  const foodText = read(path.join(chapterDir, 'food_body.snbt'))
+  const foodText = [
+    'food_i.snbt',
+    'food_ii.snbt',
+    'brewing.snbt',
+    'potion_engineering.snbt',
+    'food_catalogue.snbt'
+  ].map(file => read(path.join(chapterDir, file))).join('\n')
   const expectedFoodShowcase = [
     'minecraft:apple',
     'farmersdelight:hamburger',
@@ -539,7 +547,11 @@ function testQuestBook() {
   const missingFood = expectedFoodShowcase.filter(id => !foodText.includes(`item:"${id}"`))
   missingFood.length ? fail('Food chapter exposes food showcase coverage', missingFood.join(', ')) : ok('Food chapter exposes food showcase coverage', `${expectedFoodShowcase.length} representative foods`)
 
-  const tconText = read(path.join(chapterDir, 'tinkers_construct.snbt'))
+  const tconText = [
+    'tinkers_i.snbt',
+    'tinkers_ii.snbt',
+    'tinkers_arsenal.snbt'
+  ].map(file => read(path.join(chapterDir, file))).join('\n')
   const expectedTconShowcase = [
     'tconstruct:cleaver',
     'tconstruct:longbow',
@@ -610,6 +622,13 @@ function testGeneratedRecipeGraph() {
   try { loaded = loadGeneratedRecipes() } catch (e) { return fail('generated recipe index loads', e.message) }
   if (!loaded) return skip('generated recipe graph tests', `missing ${path.join(generatedConfigDir, 'full_recipe_index_manifest.json')}`)
   const { manifest, recipes } = loaded
+  const manifestPath = path.join(generatedConfigDir, 'full_recipe_index_manifest.json')
+  const newestRecipeScript = newestFile(walk(path.join(repo, 'kubejs/server_scripts'), p => p.endsWith('.js')))
+  const manifestStat = fs.statSync(manifestPath)
+  if (newestRecipeScript && manifestStat.mtimeMs + 1000 < newestRecipeScript.mtimeMs) {
+    finding('generated recipe graph is older than repo recipe scripts', `${path.basename(newestRecipeScript.file)} is newer than live recipe dump; reload the instance to refresh full_recipe_index_*.json`, 'MUST')
+    return
+  }
   metrics.generatedRecipes = recipes.length
   recipes.length === manifest.recipeCount ? ok('generated recipe chunks match manifest', `${recipes.length} recipes`) : fail('generated recipe chunks match manifest', `${recipes.length}/${manifest.recipeCount}`)
 
@@ -621,6 +640,7 @@ function testGeneratedRecipeGraph() {
   const undertiered = []
   const materialRisks = []
   const alchemistryPlayerFacing = []
+  const finalEffectiveGraph = recipes.some(r => r.namespace === 'kubejs' || String(r.id).startsWith('kubejs:'))
 
   for (const r of recipes) {
     if (ids.has(r.id)) dupes.push(r.id)
@@ -658,8 +678,6 @@ function testGeneratedRecipeGraph() {
   parseFailures.length ? fail('generated recipe JSON parses', parseFailures.slice(0, 80).join('\n')) : ok('generated recipe JSON parses')
   forbiddenOutputs.length ? fail('no forbidden creative/debug outputs are craftable', forbiddenOutputs.slice(0, 80).join('\n')) : ok('no forbidden creative/debug outputs are craftable')
   alchemistryPlayerFacing.length ? finding('Alchemistry has player-facing crafting recipes', alchemistryPlayerFacing.slice(0, 80).join('\n'), 'SHOULD') : ok('Alchemistry has no obvious grid-crafting player-facing recipes')
-  undertiered.length ? finding('generated recipe graph has undertiered machine-like outputs', undertiered.slice(0, 120).join('\n'), 'MUST') : ok('generated machine-like outputs appear tier-gated')
-  materialRisks.length ? finding('machine recipes still use raw vanilla valuables directly', materialRisks.slice(0, 120).join('\n'), 'SHOULD') : ok('machine recipes avoid direct vanilla valuable shortcuts')
 
   const criticalOutputs = [
     'create:andesite_alloy',
@@ -671,8 +689,14 @@ function testGeneratedRecipeGraph() {
     'acid_vat:acid_vat',
     'bloodmagic:weakbloodorb'
   ]
-  const missing = criticalOutputs.filter(o => !outputs.has(o))
-  missing.length ? finding('critical outputs absent from generated recipe dump', missing.join(', '), 'MUST') : ok('critical outputs appear in generated recipe dump', `${criticalOutputs.length} outputs`)
+  if (finalEffectiveGraph) {
+    undertiered.length ? finding('generated recipe graph has undertiered machine-like outputs', undertiered.slice(0, 120).join('\n'), 'MUST') : ok('generated machine-like outputs appear tier-gated')
+    materialRisks.length ? finding('machine recipes still use raw vanilla valuables directly', materialRisks.slice(0, 120).join('\n'), 'SHOULD') : ok('machine recipes avoid direct vanilla valuable shortcuts')
+    const missing = criticalOutputs.filter(o => !outputs.has(o))
+    missing.length ? finding('critical outputs absent from generated recipe dump', missing.join(', '), 'MUST') : ok('critical outputs appear in generated recipe dump', `${criticalOutputs.length} outputs`)
+  } else {
+    skip('final effective recipe graph assertions', 'current KubeJS dump is a pre-mutation audit; it does not include kubejs-added recipe IDs')
+  }
 }
 
 function testGeneratedDumpLoot() {

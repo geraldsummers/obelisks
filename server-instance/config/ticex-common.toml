@@ -1,0 +1,58 @@
+
+#General
+[general]
+	#Using ticex-more-config.toml(If true, it will override your datapack!)
+	useMoreConfig = false
+	#MAX Rate Capacity(RF/t)
+	rateCapacity = 100000
+	#Fluid Transmuter valid tag prefix list
+	fluid_transmuter_patterns = ["forge:"]
+	#Fluid Transmuter invalid tag prefix list
+	fluid_transmuter_exclude_patterns = ["forge:water", "forge:lava"]
+
+[avaritia]
+	#Probability of a neutron pile is dropped by condensing modifier
+	condensingDropProbability = 0.003
+
+[mekanism]
+	#Allow Mekaplate can use shield of electricity
+	mekaplateUseShield = true
+
+[apotheosis]
+	#Maximum level of enchantments granted by override
+	overrideLevelLimit = 255
+
+["ars nouveau"]
+	#Internal cooldown ticks of spellcasting
+	reactiveCooldown = 10
+
+[curios]
+	#Ticks remaining on the gauntlet after a gauntlet shot hits
+	gantletRemainTicks = 40
+	#Blacklist of entities that do not drop the glove.
+	gloveDropBlacklist = ["minecraft:armor_stand", "dummmmmmy:target_dummy"]
+	#Use gloveDropBlacklist as whitelist
+	gloveDropBlacklistAsWhitelist = false
+
+#Provided by AddonAPI:
+#Module Options
+[modules]
+	"Mekanism Compat" = true
+	"Curios API Compat" = true
+	"Ars Nouveau Compat" = true
+	"Psi Compat" = true
+	"CC:Tweaked Compat" = true
+	"Apotheosis Compat" = true
+	"TiCEX Original Utilities" = true
+	"SlashBlade Compat" = true
+	"ProjectE Compat" = true
+	"Iron's Spells n' Spellbooks Compat" = true
+	"Avaritia Compat" = true
+	"Draconic Evolution Compat" = true
+	Default = true
+	"JEI Compat" = true
+	"Create Compat" = true
+	"TiCEX Original Materials and Modifiers" = true
+	"Botania Compat" = true
+	"TaCz Compat" = true
+

@@ -1,0 +1,25 @@
+disabled ubesdelight-forge-1.20.1-0.4.11.jar
+disabled FarmersDelight-1.20.1-1.2.11a.jar
+disabled VeggiesDelight-1.20.1-1.9.2.jar
+disabled rusticdelight-forge-1.20.1-1.5.1.jar
+disabled oceansdelight-1.0.2-1.20.jar
+disabled appleskin-forge-mc1.20.1-2.5.1.jar
+disabled diet-forge-2.1.1+1.20.1.jar
+disabled farmersrespite-1.20.1-2.1.2.jar
+disabled undergardendelight-1.1.2-forge-1.20.1.jar
+disabled ends_delight-2.5.1+forge.1.20.1.jar
+disabled BrewinAndChewin-1.20.1-3.2.1.jar
+disabled MyNethersDelight-1.20.1-0.1.8.jar
+disabled ThirstWasTaken-1.20.1-1.4.0.jar
+disabled corn_delight-1.1.9-1.20.1.jar
+disabled create_central_kitchen-1.20.1-for-create-6.0.6-1.4.3b.jar
+disabled cravings-1.2.1-forge-1.20.1.jar
+disabled chefsdelight-1.0.4-forge-1.20.1.jar
+disabled Delightful-1.20.1-3.7.8.jar
+disabled collectorsreap-1.20.1-1.5.5.jar
+marker=sampled_timeout elapsed=300 java_pid=1279300 profile=docs/memory_variants/rss_menu_cut_full_food_stack_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=9720716 postGcJavaRssMiB=9492
+diagnostics=docs/memory_variants/rss_menu_cut_full_food_stack_20260501_diagnostics
+56:[01May2026 12:42:08.505] [main/INFO] [Puzzles Lib/]: Loading 336 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=10410 peakRssGiB=10.17

@@ -1,0 +1,4 @@
+run_type,variant,jar,marker,elapsed_s,peak_rss_kb,peak_rss_gib,delta_vs_baseline_gib,summary_file
+baseline,baseline_1,,sampled_timeout,61,0,0.000,,/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/baseline_1.summary.txt
+mod,xmod_1_AE2_Things_1_2_1_jar,AE2-Things-1.2.1.jar,sampled_timeout,61,0,0.000,0.000,/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_1_AE2_Things_1_2_1_jar.summary.txt
+mod,xmod_2_AE2NetworkAnalyzer_1_20_1_0_6_forge_jar,AE2NetworkAnalyzer-1.20-1.0.6-forge.jar,sampled_timeout,61,0,0.000,0.000,/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_2_AE2NetworkAnalyzer_1_20_1_0_6_forge_jar.summary.txt

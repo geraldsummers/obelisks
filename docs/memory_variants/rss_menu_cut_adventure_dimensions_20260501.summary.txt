@@ -1,0 +1,24 @@
+disabled villagewalls-1.0.0.jar
+disabled Towns-and-Towers-1.12-Fabric+Forge.jar
+disabled takesapillage-1.0.3-1.20.1.jar
+disabled blue_skies-1.20.1-1.3.31.jar
+disabled The_Undergarden-1.20.1-0.8.14.jar
+disabled structure_gel-1.20.1-2.16.2.jar
+disabled twilightforest-1.20.1-4.3.2508-universal.jar
+disabled iceandfire-2.1.13-1.20.1-beta-5.jar
+disabled deeperdarker-forge-1.20.1-1.3.3.jar
+disabled aether-1.20.1-1.5.2-neoforge.jar
+disabled villagespawnpoint-1.20.1-4.6.jar
+disabled the_finley_dimension_remastered-1.6.3-forge-1.20.1.jar
+disabled savage_and_ravage-1.20.1-6.0.1.jar
+disabled Fallout Wasteland 1.20.1 Beta 3.8.1.jar
+disabled lostcities-1.20-7.4.11.jar
+disabled golemoverhaul-forge-1.20.1-1.1.0.jar
+disabled guardvillagers-1.20.1-1.6.17.jar
+disabled undergardendelight-1.1.2-forge-1.20.1.jar
+marker=sampled_timeout elapsed=300 java_pid=1284678 profile=docs/memory_variants/rss_menu_cut_adventure_dimensions_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=9360228 postGcJavaRssMiB=9140
+diagnostics=docs/memory_variants/rss_menu_cut_adventure_dimensions_20260501_diagnostics
+55:[01May2026 12:47:49.670] [main/INFO] [Puzzles Lib/]: Loading 336 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=10157 peakRssGiB=9.92

@@ -1,0 +1,17 @@
+filename = 'createliquidfuel-2.1.1-1.20.1.jar'
+name = 'Create: Liquid Fuel'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.20.1 v2.1.1 *CREATE 6.0 SUPPORTED*'
+
+[download]
+hash = 'd216cf52735f8e4d3594943139599f6b0b20b8cf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5217310
+project-id = 840734

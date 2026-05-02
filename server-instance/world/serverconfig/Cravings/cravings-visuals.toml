@@ -1,0 +1,14 @@
+
+["Visual toggles"]
+	#Toggle a small custom icon that appears at the top center of the screen when the chat is open.
+	#Meant to remind you of your current craving. (Default: true)
+	"Chat Craving Reminder" = true
+	#Toggle a visual potion effect icon that appears as a reminder of your current craving.
+	#This effect has no gameplay impact and disappears once the craving is satisfied or changed. (Default: true)
+	"Effect Craving Reminder" = true
+	#Choose the totem-like animation shown when you satisfy a craving.
+	#Full: Displays the entire craving sprite, which looks great but may feel large.
+	#Minimal: Shows only the effect icon for a more subtle animation.
+	#Allowed Values: Full, Minimal, Disabled. If the value is invalid, no animation will show, careful with that.
+	"Satisfy Craving Animation" = "Full"
+

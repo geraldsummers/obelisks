@@ -1,0 +1,17 @@
+filename = 'starcatcher-2.2.1-FORGE-1.20.1.jar'
+name = 'Starcatcher'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'starcatcher-2.2.1-FORGE-1.20.1.jar'
+
+[download]
+hash = '1e9345a91af6e11fd43216c58d8e1a616cde346e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7582886
+project-id = 1357603

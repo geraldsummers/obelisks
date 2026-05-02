@@ -1,0 +1,17 @@
+filename = 'dotcoinmod-forge-20.18.1.jar'
+name = 'Dot Coin Mod (Forge)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Dot Coin Mod (Forge) 20.18.1'
+
+[download]
+hash = 'f9caa2839bada6ad0b6dd0d7b84eb0c1158e201b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5575654
+project-id = 458261

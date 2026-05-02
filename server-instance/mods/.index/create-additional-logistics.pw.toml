@@ -1,0 +1,17 @@
+filename = 'createadditionallogistics-1.20.1-1.4.5.jar'
+name = 'Create: Additional Logistics'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Create: Additional Logistics 1.4.5'
+
+[download]
+hash = '8d6aef17ded372c2ef66dcc5e5cfc5edda8c53a9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7460284
+project-id = 1359885

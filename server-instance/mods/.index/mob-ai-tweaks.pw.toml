@@ -1,0 +1,17 @@
+filename = 'mob-ai-tweaks-1.11.1-1.20.1.jar'
+name = 'Mob AI Tweaks'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'mob-ai-tweaks-1.11.1-1.20.1.jar'
+
+[download]
+hash = '48c369164b69f7092018cabf2bfa458d3cf1798c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7898235
+project-id = 1077291

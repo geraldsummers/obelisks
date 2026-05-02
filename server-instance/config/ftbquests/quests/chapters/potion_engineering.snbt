@@ -1,0 +1,270 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "potion_engineering"
+	group: "1535A2E7C7CA772B"
+	id: "3EAF32EF5D340C55"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Leaping Extract, Featherlight Extract, Melon Life Extract, and related items."
+				"Why it matters: This finishes potion work using stabilized reagent and prepared extract pipelines."
+				"Leaping, slow falling, healing, and turtle-master routes need prepared biological sources before the brewing stand can finish them."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:leaping_extract"
+			icon_scale: 1.18d
+			id: "11E72413848BD5CC"
+			rewards: [
+				{
+					count: 4
+					id: "00ADB2C33F96FD39"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68F05161A3563C9B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7E95FFD82D1AB521"
+					item: "kubejs:leaping_extract"
+					type: "item"
+				}
+				{
+					id: "1F2D48E2075BA218"
+					item: "kubejs:featherlight_extract"
+					type: "item"
+				}
+				{
+					id: "1C1FB2370F95F3B3"
+					item: "kubejs:melon_life_extract"
+					type: "item"
+				}
+				{
+					id: "53D253BC4FF3C886"
+					item: "kubejs:turtle_guard_extract"
+					type: "item"
+				}
+			]
+			title: "Advanced Extracts"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Weakening Extract, Shadow Extract, Harm Extract, and related items."
+				"Why it matters: This finishes potion work using stabilized reagent and prepared extract pipelines."
+				"Fermented spider eye is no longer a universal shortcut. Corrupted potion outcomes use processed weakening, shadow, harm, and slowness extracts."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:weakening_extract"
+			id: "79F199B4342E6220"
+			rewards: [
+				{
+					count: 4
+					id: "0CA7A716B2A36772"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1D092A73CC395061"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7768B6F08ADD88FA"
+					item: "kubejs:weakening_extract"
+					type: "item"
+				}
+				{
+					id: "51AA5CE94A019F30"
+					item: "kubejs:shadow_extract"
+					type: "item"
+				}
+				{
+					id: "59FA5A4155CC244C"
+					item: "kubejs:harm_extract"
+					type: "item"
+				}
+				{
+					id: "3535DE85DD660989"
+					item: "kubejs:slowness_extract"
+					type: "item"
+				}
+			]
+			title: "Corrupt Extracts"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Brewing Stand, Stabilized Reagent, Caffeine Extract, and related items."
+				"Why it matters: This finishes potion work using stabilized reagent and prepared extract pipelines."
+				"The brewing stand is the finishing station. Water becomes awkward through stabilized reagent, then food-derived extracts finish potion effects."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:brewing_stand"
+			icon_scale: 1.18d
+			id: "73E078F7A09F8FE4"
+			rewards: [
+				{
+					count: 4
+					id: "0F5731591F67E183"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "30BC99689B805493"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0DFB8351C7CA1D0E"
+					item: "minecraft:brewing_stand"
+					type: "item"
+				}
+				{
+					id: "1C105AC0C3FCA42C"
+					item: "kubejs:stabilized_reagent"
+					type: "item"
+				}
+				{
+					id: "16873DEE6F9D7CE5"
+					item: "kubejs:caffeine_extract"
+					type: "item"
+				}
+				{
+					id: "1A4C692FAA40C03F"
+					item: "kubejs:vision_extract"
+					type: "item"
+				}
+			]
+			title: "Potion Engineering"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Stabilized Reagent, Leaping Extract, Shadow Extract."
+				"Why it matters: This finishes potion work using stabilized reagent and prepared extract pipelines."
+				"This marks potion literacy for expedition planning: mobility buffs, survival buffs, and hostile-effect tools are now part of route prep."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:stabilized_reagent"
+			id: "7C2324A7E95D044A"
+			rewards: [
+				{
+					count: 4
+					id: "14CF1C6211CF9B09"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4641B1B3E29BC2BC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "21EA3653A6CD68FB"
+					item: "kubejs:stabilized_reagent"
+					type: "item"
+				}
+				{
+					id: "11219F66A5D66766"
+					item: "kubejs:leaping_extract"
+					type: "item"
+				}
+				{
+					id: "6BCB75A7ED215FCA"
+					item: "kubejs:shadow_extract"
+					type: "item"
+				}
+			]
+			title: "Route Potion Dossier"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Caffeine Extract, Heatproof Extract, Turtle Guard Extract, and related items."
+				"Why it matters: This finishes potion work using stabilized reagent and prepared extract pipelines."
+				"Plan effects by route. Caffeine is speed, heatproofing is lava and Nether work, turtle guard is underwater or heavy defense, and fermented pomegranate is strength. This is the practical capstone for potion engineering."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:caffeine_extract"
+			icon_scale: 1.18d
+			id: "4BC0374AC4DC1790"
+			rewards: [
+				{
+					count: 4
+					id: "69034E13C233BDE1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B03855DB010E16B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "78F2AEBD49432E34"
+					item: "kubejs:caffeine_extract"
+					type: "item"
+				}
+				{
+					id: "7C9B5FFA13FD3C74"
+					item: "kubejs:heatproof_extract"
+					type: "item"
+				}
+				{
+					id: "3F15AEA75F5C7E59"
+					item: "kubejs:turtle_guard_extract"
+					type: "item"
+				}
+				{
+					id: "30ACD456D721259E"
+					item: "kubejs:fermented_pomegranate_extract"
+					type: "item"
+				}
+			]
+			title: "Effect Loadout Board"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Potion Engineering"
+}

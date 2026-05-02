@@ -1,0 +1,24 @@
+{
+  "replace": true,
+  "values": [
+    "protection_pixel:linkplate_chestplate",
+    "protection_pixel:typhoonas_chestplate",
+    "protection_pixel:typhoon_chestplate",
+    "protection_pixel:falconnestas_chestplate",
+    "protection_pixel:falconnest_chestplate",
+    "protection_pixel:tosaki_chestplate",
+    "protection_pixel:hellsnakeas_chestplate",
+    "protection_pixel:hellsnake_chestplate",
+    "protection_pixel:pioneeras_chestplate",
+    "protection_pixel:pioneer_chestplate",
+    "protection_pixel:magneticstormas_chestplate",
+    "protection_pixel:magneticstorm_chestplate",
+    "protection_pixel:workerhornetas_chestplate",
+    "protection_pixel:workerhornet_chestplate",
+    "protection_pixel:floatshield_chestplate",
+    "protection_pixel:wingsofprismas_chestplate",
+    "protection_pixel:wingsofprism_chestplate",
+    "protection_pixel:breakeras_chestplate",
+    "protection_pixel:breaker_chestplate"
+  ]
+}

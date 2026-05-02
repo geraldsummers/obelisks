@@ -1,0 +1,445 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "ice_and_fire"
+	group: "3BF99559A31D6EB4"
+	id: "1C6790DD9DD94C19"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Bestiary."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:bestiary"
+			icon_scale: 1.18d
+			id: "6C5C35AECEE037B3"
+			rewards: [
+				{
+					count: 4
+					id: "6F8926FC840EEC13"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "391D5F83A349BC66"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08F2CD0170861F0F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "462B4AB66F7FF6E9"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "566BDE5F53C188A8"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "710A3B467CE24092"
+				item: "iceandfire:bestiary"
+				type: "item"
+			}]
+			title: "Bestiary"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Dragonbone."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:dragonbone"
+			id: "427AD8C868A217F4"
+			rewards: [
+				{
+					count: 4
+					id: "11BFF5AE6D62917B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08A0CFFE8B7A5CBE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E5AA6511382F2B2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A8A0A9ACABE16C4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "052A3868D0E5A80B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "30CC29C6E4E0FDC3"
+				item: "iceandfire:dragonbone"
+				type: "item"
+			}]
+			title: "Dragonbone"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Fire Dragon Blood."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:fire_dragon_blood"
+			id: "5E18BDFE5A9E3A97"
+			rewards: [
+				{
+					count: 4
+					id: "56D661880EF1CD3D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0687005FE449A0F6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BE9AB803B1E7722"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4E4C23FB0C16B57E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "721767722D983952"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1AD3FB0DE15CE469"
+				item: "iceandfire:fire_dragon_blood"
+				type: "item"
+			}]
+			title: "Fire Dragon Blood"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Ice Dragon Blood."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:ice_dragon_blood"
+			id: "341078D839FD1AF4"
+			rewards: [
+				{
+					count: 4
+					id: "394E09A693311485"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1888A23053A4CD7B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14E2E8072110D1AE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "24CB618439431B96"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7BC5B82248063F27"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "22F7FB7A2C5F645F"
+				item: "iceandfire:ice_dragon_blood"
+				type: "item"
+			}]
+			title: "Ice Dragon Blood"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Lightning Dragon Blood."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:lightning_dragon_blood"
+			id: "667BD37DC98FEEB6"
+			rewards: [
+				{
+					count: 4
+					id: "26B949AE566231D8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "249D8AB1D0A368A6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1E92AF3A22781B6A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A56F24498665D98"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BBDFF5AE1980C4D"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "54B7110E1F4427FB"
+				item: "iceandfire:lightning_dragon_blood"
+				type: "item"
+			}]
+			title: "Lightning Dragon Blood"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["341078D839FD1AF4"]
+			description: [
+				"Goal: obtain Dragonsteel Fire Ingot, Dragonsteel Ice Ingot, Dragonsteel Lightning Ingot."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:dragonsteel_fire_ingot"
+			icon_scale: 1.18d
+			id: "2E4B259D5433ADB9"
+			rewards: [
+				{
+					count: 4
+					id: "121EBDD388275495"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0381360792B39433"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "080484456BAEC817"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B50DC4F5E00E33B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F7417F93BD231D7"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "14A0EB5BDD3BC204"
+					item: "iceandfire:dragonsteel_fire_ingot"
+					type: "item"
+				}
+				{
+					id: "5D78127436454939"
+					item: "iceandfire:dragonsteel_ice_ingot"
+					type: "item"
+				}
+				{
+					id: "38350E1377178F5D"
+					item: "iceandfire:dragonsteel_lightning_ingot"
+					type: "item"
+				}
+			]
+			title: "Dragonsteel Set"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E4B259D5433ADB9"]
+			description: [
+				"Goal: obtain Dragon Skull Fire."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:dragon_skull_fire"
+			id: "6373AE52E68D629D"
+			rewards: [
+				{
+					count: 4
+					id: "1A794B229FD1B22A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3550BB9A5633DBE6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2299872C7F8031BA"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "187D1DFB9FCD1C44"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D1676FCF66403DE"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "14773DB5B60CCB1E"
+				item: "iceandfire:dragon_skull_fire"
+				type: "item"
+			}]
+			title: "Dragon Skull Trophy"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Dread Shard."
+				"Why it matters: This advances monster hunting through dragon materials and apex creature rewards."
+			]
+			hide_dependency_lines: false
+			icon: "iceandfire:dread_shard"
+			icon_scale: 1.18d
+			id: "15F8ADAAD0C5DAA0"
+			rewards: [
+				{
+					count: 4
+					id: "6CFECE59CD3312A0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "35D15EBC45DCB48F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3422E8BB2DBD4A8B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C597B8437D4C239"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DED2E1EE9FCAFAF"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3DB1D395117A2B34"
+				item: "iceandfire:dread_shard"
+				type: "item"
+			}]
+			title: "Dread Shard"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Ice and Fire"
+}

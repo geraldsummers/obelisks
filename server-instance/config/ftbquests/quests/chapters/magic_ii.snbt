@@ -1,0 +1,475 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "magic_ii"
+	group: "77AFAA45BDFC5D88"
+	id: "7B81096ADFAB9493"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7A8A5A5D953E7BC1"]
+			description: [
+				"Goal: obtain Storage Controller."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Occult storage is useful, but it must not become an early infinite-storage substitute."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:storage_controller"
+			id: "14E17D75E13FC4C7"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "36FB850967F86B35"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E59E30732C26BEF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A9D70102D2F3E7E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1431C6E4EDBAC444"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1AD8C72A4AB2764C"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "521525B2AED87389"
+				item: "occultism:storage_controller"
+				type: "item"
+			}]
+			title: "Occult Storage Access"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B77F9CDE731390A"]
+			description: [
+				"Goal: obtain Terra Plate."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Botania engineering starts after Demonic Slate permission."
+			]
+			hide_dependency_lines: false
+			icon: "botania:terra_plate"
+			icon_scale: 1.18d
+			id: "5C242EFA1B5147F6"
+			rewards: [
+				{
+					count: 4
+					id: "0644E542BE941C6F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "558286241518F842"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0360347221AF44F1"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51FAAA180097204B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C701AA06F450FCC"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "775EC38AAF582D7E"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "Terrestrial Plate"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C242EFA1B5147F6"]
+			description: [
+				"Goal: obtain Alfheim Portal."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Dimensional magic has to be a constructed commitment."
+			]
+			hide_dependency_lines: false
+			icon: "botania:alfheim_portal"
+			id: "755CF156F945F8EC"
+			rewards: [
+				{
+					count: 4
+					id: "07610C8727E2713B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A74D0B5FAF85ACF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04E1762A351C8EFE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6F6095C0BBDB7947"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F64A5CB64371882"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "469EFCD4F2BDCC7F"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			title: "Alfheim Portal"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5C242EFA1B5147F6"
+				"7A8A5A5D953E7BC1"
+			]
+			description: [
+				"Goal: obtain Hephaestus Forge."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Forbidden and Arcanus belongs after Demonic Slate permission, not early utility work."
+			]
+			hide_dependency_lines: false
+			icon: "forbidden_arcanus:hephaestus_forge"
+			id: "101AB931C5F93C06"
+			rewards: [
+				{
+					count: 4
+					id: "1D48F77A69CFB33B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "758F124E405BF527"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "590A7564F379380F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "16E83BBE617C5BA5"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55094FCD634E0369"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "69AA130AB53030A3"
+				item: "forbidden_arcanus:hephaestus_forge"
+				type: "item"
+			}]
+			title: "Forbidden Forge"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Sal Ammoniac Accumulator."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Theurgy is matter transmutation, so it belongs near late magic and synthesis rather than early ore solving."
+			]
+			hide_dependency_lines: false
+			icon: "theurgy:sal_ammoniac_accumulator"
+			icon_scale: 1.18d
+			id: "3BA781F17425B97C"
+			rewards: [
+				{
+					count: 4
+					id: "23EBBF9B3E65FF5F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B4BE89B3B4DBC88"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F84BF235D224F6D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A7874DC75497A98"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E035D8D8D02C331"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6E84FDBF7700B82E"
+				item: "theurgy:sal_ammoniac_accumulator"
+				type: "item"
+			}]
+			title: "Theurgy Accumulator"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3BA781F17425B97C"]
+			description: [
+				"Goal: obtain Focus, Staff Oak."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Programmable magic waits for Ethereal Slate permission."
+			]
+			hide_dependency_lines: false
+			icon: "hexcasting:focus"
+			id: "585B88D37191573D"
+			rewards: [
+				{
+					count: 4
+					id: "06DA9E1CB2EC6563"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C93AA468451E4F4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C166134F23F82FC"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1E8F83E5D9AEAFF7"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "61A5127C2496B526"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3D6B352AB2486251"
+					item: "hexcasting:focus"
+					type: "item"
+				}
+				{
+					id: "64BF218A3C0C6E05"
+					item: "hexcasting:staff/oak"
+					type: "item"
+				}
+			]
+			title: "Hex Focus and Staff"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BA781F17425B97C"]
+			description: [
+				"Goal: obtain Runeforge, Manaweaver Wand."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Mana and Artifice is late magical infrastructure, not a side-door around Blood Magic."
+			]
+			hide_dependency_lines: false
+			icon: "mna:runeforge"
+			id: "41840FC86A686074"
+			rewards: [
+				{
+					count: 4
+					id: "4D5D43D0875F153D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3500619A25A3C608"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1588D2A8FF9E3241"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C6D2D9FDB4B6120"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1D3E30F91397B0B2"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "130C9C37D4E810E3"
+					item: "mna:runeforge"
+					type: "item"
+				}
+				{
+					id: "62518F84E72487E7"
+					item: "mna:manaweaver_wand"
+					type: "item"
+				}
+			]
+			title: "Mana and Artifice Runeforge"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Advanced Prism, Starbuncle Wheel, Ritual Conjure Island Starter."
+				"Why it matters: This expands late magic branches after the required Blood Magic materials are available."
+				"Late Ars branches are allowed to be powerful after Blood Magic says yes."
+			]
+			hide_dependency_lines: false
+			icon: "ars_elemental:advanced_prism"
+			icon_scale: 1.18d
+			id: "18B5F90FB56C370A"
+			rewards: [
+				{
+					count: 4
+					id: "01143BE0562E7E8A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A1F22336AFF3313"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "597E367121B0B7E4"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F3545E8E8606E79"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "19B6AC37F267C990"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4D9C424DFB0CA75B"
+					item: "ars_elemental:advanced_prism"
+					type: "item"
+				}
+				{
+					id: "24953B695951B5E1"
+					item: "ars_creo:starbuncle_wheel"
+					type: "item"
+				}
+				{
+					id: "5AF8C8A3E5C8F3FC"
+					item: "ars_caelum:ritual_conjure_island_starter"
+					type: "item"
+				}
+			]
+			title: "Ars Addon Power"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Magic II Power Branches"
+}

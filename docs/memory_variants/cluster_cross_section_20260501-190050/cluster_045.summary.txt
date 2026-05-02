@@ -1,0 +1,8 @@
+disabled moonlight-1.20-2.16.30-forge.jar
+disabled immersive_weathering-1.20.1-2.0.5-forge.jar
+disabled supplementaries-1.20-3.1.42-forge.jar
+disabled amendments-1.20-2.2.5.jar
+marker=sampled_timeout elapsed=91 java_pid=62103 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_045.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:22:14.257] [main/INFO] [Puzzles Lib/]: Loading 354 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=13555 peakRssGiB=13.24

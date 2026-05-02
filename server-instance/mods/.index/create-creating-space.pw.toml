@@ -1,0 +1,17 @@
+filename = 'creatingspace-1.20.1-1.7.13.jar'
+name = 'Create : Creating Space'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'creatingspace-1.20.1-1.7.13'
+
+[download]
+hash = '7b341b9c32fec9fcf020ae6d8429c59917415f7b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7850072
+project-id = 858897

@@ -1,0 +1,17 @@
+filename = 'TradingPost-v8.0.2-1.20.1-Forge.jar'
+name = 'Trading Post'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[FORGE] [1.20.1] TradingPost-v8.0.2'
+
+[download]
+hash = 'b5cfd0afd134d118124fb12f5e605574938ddffd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5057539
+project-id = 539057

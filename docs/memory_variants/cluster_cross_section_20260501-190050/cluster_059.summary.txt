@@ -1,0 +1,6 @@
+disabled TravelersTitles-1.20-Forge-4.0.2.jar
+disabled YungsApi-1.20-Forge-4.0.6.jar
+marker=sampled_timeout elapsed=91 java_pid=67340 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_059.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:26:52.999] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11910 peakRssGiB=11.63

@@ -1,0 +1,17 @@
+filename = 'darkness-forge-1.20.1-2.0.103-fork.jar'
+name = 'True Darkness [Forge] - Updated Fork'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'darkness-forge-1.20.1-2.0.103-fork.jar'
+
+[download]
+hash = '56be989675f110d74c04567c4ccc3c1941f7472c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5080314
+project-id = 970641

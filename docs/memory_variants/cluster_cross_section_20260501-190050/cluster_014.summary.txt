@@ -1,0 +1,20 @@
+disabled rusticdelight-forge-1.20.1-1.5.1.jar
+disabled ubesdelight-forge-1.20.1-0.4.11.jar
+disabled FarmersDelight-1.20.1-1.2.11a.jar
+disabled VeggiesDelight-1.20.1-1.9.2.jar
+disabled farmersrespite-1.20.1-2.1.2.jar
+disabled BrewinAndChewin-1.20.1-3.2.1.jar
+disabled ends_delight-2.5.1+forge.1.20.1.jar
+disabled blueprint-1.20.1-7.1.3.jar
+disabled MyNethersDelight-1.20.1-0.1.8.jar
+disabled corn_delight-1.1.9-1.20.1.jar
+disabled savage_and_ravage-1.20.1-6.0.1.jar
+disabled Delightful-1.20.1-3.7.8.jar
+disabled chefsdelight-1.0.4-forge-1.20.1.jar
+disabled collectorsreap-1.20.1-1.5.5.jar
+disabled mysterious_mountain_lib-1.6.34-1.20.1.jar
+marker=failed elapsed=25 java_pid=48360 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_014.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+55:[01May2026 19:09:11.928] [main/INFO] [Puzzles Lib/]: Loading 342 mods:
+2404:[01May2026 19:09:21.048] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_19.09.21-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=5776 peakRssGiB=5.64

@@ -1,0 +1,5 @@
+disabled AE2-Things-1.2.1.jar
+marker=sampled_timeout elapsed=61 java_pid=32498 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_1_AE2_Things_1_2_1_jar.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 18:52:57.300] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=14925 peakRssGiB=14.58

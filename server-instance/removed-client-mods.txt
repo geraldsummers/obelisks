@@ -1,0 +1,8 @@
+/home/gerald/obelisks/server-instance/mods/embeddium-0.3.31+mc1.20.1.jar
+/home/gerald/obelisks/server-instance/mods/oculus-mc1.20.1-1.8.0.jar
+/home/gerald/obelisks/server-instance/mods/sodiumoptionsapi-forge-1.0.10-1.20.1.jar
+/home/gerald/obelisks/server-instance/mods/controllable-forge-1.20.1-0.21.9.jar
+/home/gerald/obelisks/server-instance/mods/entityculling-forge-1.10.1-mc1.20.1.jar
+/home/gerald/obelisks/server-instance/mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar
+/home/gerald/obelisks/server-instance/mods/PresenceFootsteps-1.20.1-1.9.1-beta.1.jar
+/home/gerald/obelisks/server-instance/mods/ShoulderSurfing-Forge-1.20.1-4.22.7.jar

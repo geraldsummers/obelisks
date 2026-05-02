@@ -1,0 +1,381 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "create_applied_kinetics"
+	group: "4B746D4352454154"
+	id: "3F4ED268FA841BAB"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["121CC32FAF0CB32A"]
+			description: [
+				"Goal: obtain Energy Provider."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+			]
+			hide_dependency_lines: false
+			icon: "createappliedkinetics:energy_provider"
+			icon_scale: 1.18d
+			id: "3EEA165010957FDE"
+			rewards: [
+				{
+					count: 4
+					id: "39C7509CD395ACDA"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "65B972B4492E4C65"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75055388597D6915"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7BF1A9293204CEFD"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "640A949352FA75C3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "03B5A7A8B8EFAB9E"
+				item: "createappliedkinetics:energy_provider"
+				type: "item"
+			}]
+			title: "Create Energy Provider"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Me Proxy."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+			]
+			hide_dependency_lines: false
+			icon: "createappliedkinetics:me_proxy"
+			icon_scale: 1.18d
+			id: "5812F3479F747AA4"
+			rewards: [
+				{
+					count: 4
+					id: "46DEE8229C835E14"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5CA1972C3FA58E8E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "659AB62209DE6236"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73C63853AF302251"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4052377400FD0FB3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "41CF5FAA7447DE9D"
+				item: "createappliedkinetics:me_proxy"
+				type: "item"
+			}]
+			title: "ME Proxy"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5812F3479F747AA4"]
+			description: [
+				"Goal: obtain Printed Logic Processor, Printed Calculation Processor, Printed Engineering Processor."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+			]
+			hide_dependency_lines: false
+			icon: "ae2:printed_logic_processor"
+			id: "7A0D00D0883E7FF8"
+			rewards: [
+				{
+					count: 4
+					id: "72F4D53DF29C9AF9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "37F4555FDE92BAE6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C93A18E7BD7D9B9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B00C646D8D9CB2E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "57B408B6F5862B99"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5B9ECF3C41DF483E"
+					item: "ae2:printed_logic_processor"
+					type: "item"
+				}
+				{
+					id: "24E75D7C3B3F4583"
+					item: "ae2:printed_calculation_processor"
+					type: "item"
+				}
+				{
+					id: "52F00DD7B3421921"
+					item: "ae2:printed_engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Sequenced Printed Circuits"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A0D00D0883E7FF8"]
+			description: [
+				"Goal: obtain Logic Processor, Calculation Processor, Engineering Processor."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+			]
+			hide_dependency_lines: false
+			icon: "ae2:logic_processor"
+			icon_scale: 1.18d
+			id: "53BB82934F697166"
+			rewards: [
+				{
+					count: 4
+					id: "0D9B72E453F7BB02"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3465E967CA371FF8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5731D25A163D39F3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42F0186E6AFB4238"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53F7DF984D8A5EAA"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1C965F71A3C54B9F"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "54D4C0082DC2A7D1"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "5DD6ED2DBE16DC22"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Sequenced Processors"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5812F3479F747AA4"]
+			description: [
+				"Goal: obtain Deployer, Mechanical Press, Depot."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+			]
+			hide_dependency_lines: false
+			icon: "create:deployer"
+			id: "4585B1B139B1D4D0"
+			rewards: [
+				{
+					count: 4
+					id: "61A3B3872EAE0020"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "613E4268E6A8648C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "13A20A2163BD40A5"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "125CBE2F9C87AA9C"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7FFE2B862496E256"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "245205691D5DDDA5"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "5CC129C392E2844F"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "0AAE6DDDDBFE5AD8"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "Create Processor Line"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53BB82934F697166"]
+			description: [
+				"Goal: obtain Me Proxy, Pattern Provider, Stock Link."
+				"Why it matters: This connects Create automation to AE2 after local site intelligence exists."
+				"This is local site automation. It should make one base smarter without becoming intersite teleport logistics."
+			]
+			hide_dependency_lines: false
+			icon: "createappliedkinetics:me_proxy"
+			id: "72F05A78A31CA19D"
+			rewards: [
+				{
+					count: 4
+					id: "30D736AFB97E7D62"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7140E67965F4F331"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CFCA103201A7EC9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4DEE5F0C34C1ACF9"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01A19A3E08627BE6"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0897F91824171A86"
+					item: "createappliedkinetics:me_proxy"
+					type: "item"
+				}
+				{
+					id: "7159436BE5F7F2D1"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "35BA64861996AA07"
+					item: "create:stock_link"
+					type: "item"
+				}
+			]
+			title: "Local Intelligence Factory"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Create Applied Kinetics"
+}

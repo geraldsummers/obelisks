@@ -1,0 +1,26 @@
+disabled settlementroads-0.1.0.jar
+disabled villagewalls-1.0.0.jar
+disabled pillagerpressure-0.2.0.jar
+disabled pillagercampaigns-0.2.0.jar
+disabled obelisks-1.0.0.jar
+disabled raider_detector-1.0.0.jar
+disabled norecipebookreborn-1.0.5.jar
+disabled takesapillage-1.0.3-1.20.1.jar
+disabled dynamicvillagertrades-1.3.1-forge-1.20.jar
+disabled nomobfarm-forge-1.6.6.jar
+disabled alekiNiftyShips-FORGE-1.20.1-1.0.14.jar
+disabled starcatcher-2.2.1-FORGE-1.20.1.jar
+disabled guardvillagers-1.20.1-1.6.17.jar
+disabled mob-ai-tweaks-1.11.1-1.20.1.jar
+disabled golemoverhaul-forge-1.20.1-1.1.0.jar
+disabled relics-1.20.1-0.8.0.13.jar
+disabled artifacts-forge-9.5.19.jar
+disabled savage_and_ravage-1.20.1-6.0.1.jar
+disabled iceandfire-2.1.13-1.20.1-beta-5.jar
+disabled [forge]ctov-3.4.14.jar
+disabled villagespawnpoint-1.20.1-4.6.jar
+disabled Towns-and-Towers-1.12-Fabric+Forge.jar
+marker=sampled_timeout elapsed=45 java_pid=85507 profile=/home/gerald/obelisks/docs/memory_variants/six_cluster_ab_20260501-194009/c5_adventure_mobs_structures.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:42:27.757] [main/INFO] [Puzzles Lib/]: Loading 335 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=12363 peakRssGiB=12.07

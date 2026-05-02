@@ -1,0 +1,11 @@
+{
+	"andesite_alloy_non_alloying": [],
+	"andesite_casing_item_application": [],
+	"nether_grout_crafting": [
+		{
+			"id": "tconstruct:common/fantastic_foundry",
+			"type": "minecraft:crafting_shapeless"
+		}
+	],
+	"teleposer_present": []
+}

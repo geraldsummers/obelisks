@@ -1,0 +1,17 @@
+filename = 'configurabledeath-1.20.1-1.0.3.jar'
+name = 'Configurable Death'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'configurabledeath-1.20.1-1.0.3.jar'
+
+[download]
+hash = '54f39408146831fa8239a933fc32d008506b0bd9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7336917
+project-id = 958639

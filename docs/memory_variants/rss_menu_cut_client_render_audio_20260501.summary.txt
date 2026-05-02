@@ -1,0 +1,19 @@
+disabled Controlling-forge-1.20.1-12.0.2.jar
+disabled PresenceFootsteps-1.20.1-1.9.1-beta.1.jar
+disabled lighty-forge-2.1.2+1.20.1.jar
+disabled Ding-1.20.1-Forge-1.5.0.jar
+disabled oculus-mc1.20.1-1.8.0.jar
+disabled BetterGrassify-1.4.4+forge.1.20.1.jar
+disabled particular-1.20.1-Forge-1.2.7.jar
+disabled sound-physics-remastered-forge-1.20.1-1.5.1.jar
+disabled DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar
+disabled AmbientSounds_FORGE_v6.3.4_mc1.20.1.jar
+disabled entityculling-forge-1.10.1-mc1.20.1.jar
+disabled controllable-forge-1.20.1-0.21.9.jar
+disabled ShoulderSurfing-Forge-1.20.1-4.22.7.jar
+marker=sampled_timeout elapsed=300 java_pid=1218425 profile=docs/memory_variants/rss_menu_cut_client_render_audio_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=9931460 postGcJavaRssMiB=9698
+diagnostics=docs/memory_variants/rss_menu_cut_client_render_audio_20260501_diagnostics
+56:[01May2026 12:25:43.307] [main/INFO] [Puzzles Lib/]: Loading 341 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=10685 peakRssGiB=10.44

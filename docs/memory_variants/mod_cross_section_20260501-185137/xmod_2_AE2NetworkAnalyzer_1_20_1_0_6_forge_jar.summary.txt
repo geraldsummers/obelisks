@@ -1,0 +1,5 @@
+disabled AE2NetworkAnalyzer-1.20-1.0.6-forge.jar
+marker=sampled_timeout elapsed=61 java_pid=33755 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_2_AE2NetworkAnalyzer_1_20_1_0_6_forge_jar.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 18:54:03.014] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=16163 peakRssGiB=15.78

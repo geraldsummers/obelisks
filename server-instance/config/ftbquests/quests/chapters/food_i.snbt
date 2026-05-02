@@ -1,0 +1,354 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "food_i"
+	group: "1535A2E7C7CA772B"
+	id: "04A2F2ADD1DF7DD3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Cutting Board."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Cutting boards turn food from found calories into prepared stock. Green tea, salmonberries, and blazing chili start becoming potion reagents here."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:cutting_board"
+			icon_scale: 1.18d
+			id: "60F7817845DD39DF"
+			rewards: [
+				{
+					count: 4
+					id: "435AE72CDDAF0C83"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01C649867169CA3E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3449064751A59298"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			title: "Knife Work and Prep"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60F7817845DD39DF"]
+			description: [
+				"Goal: obtain Wheat Dough."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Dough is the first reliable staple. It gives farming a practical purpose before automation."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:wheat_dough"
+			id: "588659F9FCD39926"
+			rewards: [
+				{
+					count: 4
+					id: "605EAF080E9FC75F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DFA5E26610DF10E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7D1E150661764135"
+				item: "farmersdelight:wheat_dough"
+				type: "item"
+			}]
+			title: "Staple Dough"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["60F7817845DD39DF"]
+			description: [
+				"Goal: obtain Canvas."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Canvas ties food infrastructure to carrying, drying, and expedition packing."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:canvas"
+			id: "14D60DBE0B9408CF"
+			rewards: [
+				{
+					count: 4
+					id: "644D24B14C13CE05"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31D45CED6DF59243"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "37576EBBD483DDF8"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			title: "Canvas and Packing"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["60F7817845DD39DF"]
+			description: [
+				"Goal: obtain Campfire, Roasted Coffee Reagent, Charred Blazing Chili."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Campfires are the crude heat step. Coffee beans and blazing chili become prepared reagent material before they become potion logic."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:campfire"
+			id: "37D125FAC6A97D1E"
+			rewards: [
+				{
+					count: 4
+					id: "45AFB1421395231E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "40D30B694AF0CFFA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5707BD6312EB75B4"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "6955544F631428B2"
+					item: "kubejs:roasted_coffee_reagent"
+					type: "item"
+				}
+				{
+					id: "3E437B0290E6DFE5"
+					item: "kubejs:charred_blazing_chili"
+					type: "item"
+				}
+			]
+			title: "Campfire Reagents"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["588659F9FCD39926"]
+			description: [
+				"Goal: obtain Stove."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"The stove marks the kitchen as infrastructure. A base that cannot cook cannot support long routes."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:stove"
+			icon_scale: 1.18d
+			id: "71027C73DBD8395E"
+			rewards: [
+				{
+					count: 4
+					id: "1A58BACB63125068"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "769E43388A0F5617"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "088BE548140EE266"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			title: "Permanent Kitchen"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Vegetable Soup."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Soups are survival logistics: food and water pressure handled together."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:vegetable_soup"
+			id: "6251015F2A692441"
+			rewards: [
+				{
+					count: 4
+					id: "6682CAAF8FF18FDA"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "69AFE2A8664FF5DB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2102740A48FC00C0"
+				item: "farmersdelight:vegetable_soup"
+				type: "item"
+			}]
+			title: "Hydrating Meals"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Roast Chicken Block."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"Feasts are for team travel, recovery, and staging around dangerous deposits or obelisks."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:roast_chicken_block"
+			id: "46EF65F805DCFD8E"
+			rewards: [
+				{
+					count: 4
+					id: "02B244B25064E32D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "435E0B426256E508"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "66615858641525DA"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			title: "Group Expedition Stock"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6251015F2A692441"]
+			description: [
+				"Goal: obtain Sand Filter."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"The sand filter is post-Create survival infrastructure. Clean water should be built, not assumed."
+			]
+			hide_dependency_lines: false
+			icon: "thirst:sand_filter"
+			id: "12EE41FAF0489D5C"
+			rewards: [
+				{
+					count: 4
+					id: "69138229BF3A8DFC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52AA8243D0AE2F6A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "047894E37663C044"
+				item: "thirst:sand_filter"
+				type: "item"
+			}]
+			title: "Clean Water Site"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Table, Oak Cabinet."
+				"Why it matters: This builds the first kitchen and hydration baseline for reliable survival routes."
+				"This capstone proves the first body baseline is complete: cooked meals, hydration, storage, and repeatable prep before difficult routes."
+			]
+			hide_dependency_lines: false
+			icon: "farmersdelight:table"
+			icon_scale: 1.18d
+			id: "75AA296427C312D3"
+			rewards: [
+				{
+					count: 4
+					id: "6DAC33AA63F796EB"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00FBAC5F5126356E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3B08C3B509F15DB2"
+					item: "farmersdelight:table"
+					type: "item"
+				}
+				{
+					id: "502ABC71A432B660"
+					item: "farmersdelight:oak_cabinet"
+					type: "item"
+				}
+			]
+			title: "Route Kitchen Table"
+			x: 8.0d
+			y: 1.0d
+		}
+	]
+	title: "Food I"
+}

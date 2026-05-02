@@ -1,0 +1,4 @@
+marker=sampled_timeout elapsed=40 java_pid=35404 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185513/baseline_1.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+62:[01May2026 18:55:27.962] [main/INFO] [Puzzles Lib/]: Loading 358 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11955 peakRssGiB=11.68

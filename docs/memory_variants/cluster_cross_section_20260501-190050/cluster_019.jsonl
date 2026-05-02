@@ -1,0 +1,7 @@
+{"variant":"cluster_019","t":1777626657,"elapsed":0,"processes":1,"rssKb":9044,"maxProcessRssKb":9044}
+{"variant":"cluster_019","t":1777626660,"elapsed":3,"processes":1,"rssKb":73152,"maxProcessRssKb":73152}
+{"variant":"cluster_019","t":1777626662,"elapsed":5,"processes":1,"rssKb":73880,"maxProcessRssKb":73880}
+{"variant":"cluster_019","t":1777626664,"elapsed":7,"processes":2,"rssKb":190076,"maxProcessRssKb":103560}
+{"variant":"cluster_019","t":1777626666,"elapsed":9,"processes":2,"rssKb":2268492,"maxProcessRssKb":2181616}
+{"variant":"cluster_019","t":1777626668,"elapsed":11,"processes":2,"rssKb":2407380,"maxProcessRssKb":2320504}
+{"variant":"cluster_019","t":1777626670,"elapsed":13,"processes":2,"rssKb":2811836,"maxProcessRssKb":2724956}

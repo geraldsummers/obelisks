@@ -1,0 +1,330 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "little_logistics"
+	group: "666B73C638A92906"
+	id: "0B3E06E1FC0F6D29"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"4F0AC0A55BD113A4"
+				"499EF2CFF7EFF3AD"
+			]
+			description: [
+				"Goal: obtain Energy Tug."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:energy_tug"
+			icon_scale: 1.18d
+			id: "0FF5DE9514CE72C4"
+			rewards: [
+				{
+					count: 4
+					id: "6C605E1B4CDB844B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C678EAB6B78BE8D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BCE9909E3FBD383"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7A3E14CE93839817"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "60FA923304EE7382"
+				item: "littlelogistics:energy_tug"
+				type: "item"
+			}]
+			title: "Energy Tug"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FF5DE9514CE72C4"]
+			description: [
+				"Goal: obtain Chest Barge, Fluid Barge."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:chest_barge"
+			id: "2ACA36CC305236DD"
+			rewards: [
+				{
+					count: 4
+					id: "52E9035E78E2DA9F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3620D1872E189ADD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D16F76E8619C670"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5F88A91EFD40FA00"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0202B27A42954CB8"
+					item: "littlelogistics:chest_barge"
+					type: "item"
+				}
+				{
+					id: "1FF180F384BF06F3"
+					item: "littlelogistics:fluid_barge"
+					type: "item"
+				}
+			]
+			title: "Cargo Barges"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"0FF5DE9514CE72C4"
+				"499EF2CFF7EFF3AD"
+			]
+			description: [
+				"Goal: obtain Vessel Charger."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:vessel_charger"
+			icon_scale: 1.18d
+			id: "0D4928E3FCF64819"
+			rewards: [
+				{
+					count: 4
+					id: "71C73505FBDC8624"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "365A9F81AE3D2511"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B15B8DC28FB2861"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0F62237EEAAB5272"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "038210A1D6EB2908"
+				item: "littlelogistics:vessel_charger"
+				type: "item"
+			}]
+			title: "Vessel Charger"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0D4928E3FCF64819"]
+			description: [
+				"Goal: obtain Energy Locomotive."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:energy_locomotive"
+			id: "163428FBFE575CEB"
+			rewards: [
+				{
+					count: 4
+					id: "03AF21107B686013"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1CFED1CCCC0C925A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E206734284BB15C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "02607A8B6BB64C2A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "18E193E13BCCEC27"
+				item: "littlelogistics:energy_locomotive"
+				type: "item"
+			}]
+			title: "Small Rail Power"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D4928E3FCF64819"]
+			description: [
+				"Goal: obtain Receiver Component, Transmitter Component."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:receiver_component"
+			icon_scale: 1.18d
+			id: "208B17604067EE4F"
+			rewards: [
+				{
+					count: 4
+					id: "0AF88C5623E35966"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51F22EBBD79FD3F2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7AA735167312F66B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1AEA4DA50177CBBF"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "763469C3A56625C2"
+					item: "littlelogistics:receiver_component"
+					type: "item"
+				}
+				{
+					id: "4B05AC3E7FFE7FD5"
+					item: "littlelogistics:transmitter_component"
+					type: "item"
+				}
+			]
+			title: "Route Signals"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["208B17604067EE4F"]
+			description: [
+				"Goal: obtain Energy Tug, Receiver Component, Transmitter Component."
+				"Why it matters: This adds small physical logistics for barges, tugs, rail cars, and local route automation without replacing Create trains."
+				"Use this for river, coast, and short-haul outpost service. Create trains remain the heavy intersite logistics answer."
+			]
+			hide_dependency_lines: false
+			icon: "littlelogistics:energy_tug"
+			id: "12EA1A0DDE6364B4"
+			rewards: [
+				{
+					count: 4
+					id: "022E80114A7D7EFE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "499F2DABB9EE7FE0"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "59FE0D754959D9F2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D128EF6A9E77AC3"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7D552B56E2300C6A"
+					item: "littlelogistics:energy_tug"
+					type: "item"
+				}
+				{
+					id: "014B8BD54C5B104D"
+					item: "littlelogistics:receiver_component"
+					type: "item"
+				}
+				{
+					id: "3F5CDD54E3FFBD22"
+					item: "littlelogistics:transmitter_component"
+					type: "item"
+				}
+			]
+			title: "Local Route Network"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Little Logistics"
+}

@@ -1,0 +1,42 @@
+
+#***注意！
+#***Notice
+#这些配置并不会同步修改语言文件中的描述，当你修改了某个工具/工具属性的性质后如果想要更改描述则需要手动覆盖语言文件！
+#This configure won't affect language display. When a certain modifier or tool is configured, please manually replace the description of the relating language contents.
+#平衡性和游玩（施工中）
+["Gameplay (WIP)"]
+	#在JEI和创造模式物品栏中隐藏被被关闭的材料，默认true。
+	#Hide blacklisted materials, true by default
+	HideBlacklistedMaterials = true
+	#启用TiAc的原创材料，这些材料会有偏高的强度，默认true。
+	#这是一个总控，用于进行全局开关。如果你想精准控制各种联动材料的开关请使用下面的黑白名单。
+	#Toggle original materials (Slightly OP), true by default.
+	AllowOriginalMaterials = true
+	#集成型联动模组ID黑名单，向表中添加ModId来隐藏前沿匠艺对该模组的集成型联动。
+	#黑名单模组对应的联动内容会被隐藏（不会加入创造模式物品栏，被JEI隐藏且配方不加载）。
+	#Integration ModId blacklist.
+	IntegrationModBL = ["example_mod1", "example_mod2"]
+	#原创型联动模组ID黑名单，向表中添加ModId来隐藏前沿匠艺对该模组的原创型联动（比如热力的活化彩钢）。无联动材料可通过tinkers_advanced这个id隐藏。
+	#黑名单模组对应的联动内容会被隐藏（不会加入创造模式物品栏，被JEI隐藏且配方不加载）。
+	#Original Compat ModId blacklist.
+	OriginalCompatModBL = ["example_mod1", "example_mod2"]
+	#集成型联动模组ID白名单，只有表中有的modId的模组的集成联动会被加载，会覆盖黑名单的效果。
+	#Integration Compat ModId whitelist(Overrides blacklist).
+	IntegrationModWL = []
+	#原创型联动模组ID白名单，只有表中有的modId的模组的原创联动会被加载，会覆盖黑名单的效果。无联动材料可通过tinkers_advanced这个id控制。
+	#Original Compat ModId whitelist(Overrides blacklist).
+	OriginalCompatModWL = []
+	#启用TiAc的通用材料，这些材料通常伴随多个联动模组，具有比联动材料略低的强度，默认true。
+	#这是一个总控，用于进行全局开关。如果你想精准控制各种联动材料的开关请使用GeneralMaterialBL或GeneralMaterialWL。
+	#Toggle original materials (Slightly OP), true by default.
+	AllowGeneralMaterials = true
+	#通用材料黑名单，填材料名(比如塑料就是plastic)。
+	#General material name blacklist.
+	GeneralMaterialNameBL = ["name1", "name2"]
+	#通用材料白名单，填材料名，会覆盖黑名单的效果。
+	#General material name whitelist(Overrides blacklist).
+	GeneralMaterialNameWL = []
+	#允许绝大部分前沿匠艺的范围伤害打到玩家，不建议启用这个，默认false。
+	#Allow most of aoe damage from TiAc attacking player, false by default.
+	"Allow Aoe Hit Players" = false
+

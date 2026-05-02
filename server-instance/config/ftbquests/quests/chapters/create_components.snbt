@@ -1,0 +1,517 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "create_components"
+	group: "4B746D4352454154"
+	id: "6439F014241BA7FD"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Andesite Machine Casing."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:andesite_machine_casing"
+			icon_scale: 1.18d
+			id: "747708EE29DA1318"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "64F77D06CEE14806"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D6FAD9BFB16F5F4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4AC18DA0D6F8C78C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "670005B39BCA922D"
+				item: "kubejs:andesite_machine_casing"
+				type: "item"
+			}]
+			title: "Andesite Machine Casing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["747708EE29DA1318"]
+			description: [
+				"Goal: obtain Mechanical Press."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_press"
+			icon_scale: 1.18d
+			id: "55B5DF63D01BF82E"
+			rewards: [
+				{
+					count: 4
+					id: "05C85A6E3179C944"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "207C6067450A4354"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D1CBD8F97541F27"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "26574948A7AD2139"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "Mechanical Press"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iron Plate, Copper Plate."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:iron_plate"
+			id: "4838853C4B0ADD6F"
+			rewards: [
+				{
+					count: 4
+					id: "5BACD2B1AA5E4514"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71FE18319DFAEF4B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1B401FE38F25158E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0610D18234F75B15"
+					item: "chemlib:iron_plate"
+					type: "item"
+				}
+				{
+					id: "7E20FD3BCD9C0299"
+					item: "chemlib:copper_plate"
+					type: "item"
+				}
+			]
+			title: "Pressed or Cast Plates"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Basin, Blaze Burner."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:basin"
+			id: "0B93CA590CC1DA02"
+			rewards: [
+				{
+					count: 4
+					id: "57A696DC3C72627A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72829566D134B39C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A559AEF04411141"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "30B6BE46237F4C16"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "5C4E134A3927911E"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "Basin and Burner Setup"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Mechanical Mixer."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_mixer"
+			id: "200A6D5E84D5AF08"
+			rewards: [
+				{
+					count: 4
+					id: "46126A40AB2C9895"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "435E735EB8867CFF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "23A646334578D8EF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7CC38AB9489A7CB9"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "Mechanical Mixer"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["747708EE29DA1318"]
+			description: [
+				"Goal: obtain Mechanical Saw, Mechanical Drill."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_saw"
+			id: "19AFCF94986BB7A2"
+			rewards: [
+				{
+					count: 4
+					id: "4F0A3A78F3B2C8C4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6305EA3BF81FEE65"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C6EE8A035704937"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0247E6C80F7F43A8"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "34F5A1C9A3666F81"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+			]
+			title: "Industrial Contact Tools"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0B93CA590CC1DA02"]
+			description: [
+				"Goal: obtain Encased Fan."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:encased_fan"
+			id: "1CB41B30090DF434"
+			rewards: [
+				{
+					count: 4
+					id: "2B0A7B4AB0D61DAC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D9FDBEEEC4EA9C9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A32ADFFA2ECE21E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3DD17FA548502E56"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "Encased Fan Processing"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["747708EE29DA1318"]
+			description: [
+				"Goal: obtain Mechanical Crafter."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:mechanical_crafter"
+			icon_scale: 1.18d
+			id: "759D71947E988AED"
+			rewards: [
+				{
+					count: 4
+					id: "242AD4D1AEAD788F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14C025DBCC5A6D69"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1493920F23D39DA3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2A5D9C2C6B84621E"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "Mechanical Crafting"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"200A6D5E84D5AF08"
+				"0B93CA590CC1DA02"
+			]
+			description: [
+				"Goal: obtain Basin, Depot."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+				"Basins and depots make Create recipes visible as physical manufacturing steps."
+			]
+			hide_dependency_lines: false
+			icon: "create:basin"
+			id: "6CBD992D86D5E6E7"
+			rewards: [
+				{
+					count: 4
+					id: "3B8402B9DF1AA164"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3032F27656A0F5DA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D28A1D3C577409C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3A301E45E4587D28"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "2A0BA73F4E3C264A"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "Basin Processing"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Clutch, Gearshift."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+			]
+			hide_dependency_lines: false
+			icon: "create:clutch"
+			id: "0D7D40D2C38FD0A5"
+			rewards: [
+				{
+					count: 4
+					id: "798DC17692F39122"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EB2C6F20EEAB2ED"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6574AAC49C7F7636"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1B82096DCCA47B88"
+					item: "create:clutch"
+					type: "item"
+				}
+				{
+					id: "30A22C7FC46E1D13"
+					item: "create:gearshift"
+					type: "item"
+				}
+			]
+			title: "Line Balance and Throughput"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6CBD992D86D5E6E7"
+				"1CB41B30090DF434"
+			]
+			description: [
+				"Goal: obtain Andesite Machine Casing, Mechanical Press, Mechanical Mixer."
+				"Why it matters: This adds press work, plates, mixers, and manufactured components for larger machines."
+				"Capstone: operate a repeatable line that outputs plates, mixed intermediates, and crafted parts on demand."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:andesite_machine_casing"
+			id: "4E5A4FDCC2415C26"
+			rewards: [
+				{
+					count: 4
+					id: "4CDD7AF4B6D531E8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A151F99ED984523"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4D8F1031B893CE08"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "59D9F83210A3AA21"
+					item: "kubejs:andesite_machine_casing"
+					type: "item"
+				}
+				{
+					id: "381EF45CA9950D7C"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "274BA0E6AD1E8604"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
+			title: "Capstone: Repeatable Component Line"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Create Components"
+}

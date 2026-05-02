@@ -1,0 +1,31 @@
+{
+  "id": "undergarden",
+  "displayName": "Undergarden Rift Anchor",
+  "instanceTemplateId": "undergarden",
+  "targetDimension": "undergarden:undergarden",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "undergarden",
+  "enabled": true,
+  "worldgenWeight": 1.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "undergarden:depthrock",
+  "meteorShellBlock": "undergarden:depthrock_tiles",
+  "pedestalBlock": "undergarden:polished_depthrock",
+  "returnPadFrameBlock": "undergarden:shiverstone_bricks",
+  "platformFloorBlock": "undergarden:shiverstone",
+  "craterFillBlocks": [
+    "undergarden:depthrock",
+    "undergarden:deepsoil",
+    "undergarden:coarse_deepsoil",
+    "undergarden:shiverstone",
+    "undergarden:sediment"
+  ],
+  "rewardTableId": "default",
+  "useAe2Skystone": true
+}

@@ -1,0 +1,17 @@
+filename = 'diet-forge-2.1.1+1.20.1.jar'
+name = 'Diet (Fabric/Forge/Quilt)'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'diet-forge-2.1.1+1.20.1.jar'
+
+[download]
+hash = 'c5f5d5980803259931dfa62236e888fb08ecf70a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4813904
+project-id = 443570

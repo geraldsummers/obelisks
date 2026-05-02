@@ -1,0 +1,17 @@
+filename = 'collectorsreap-1.20.1-1.5.5.jar'
+name = "Collector's Reap"
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = "Collector's Reap 1.5.5 - 1.20.1"
+
+[download]
+hash = 'e61d0b93ecfb809fe0afce09e4181e201c35b981'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7457274
+project-id = 807101

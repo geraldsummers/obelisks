@@ -1,0 +1,6 @@
+disabled realisticphysics-1.20.1-1.0.1.jar
+disabled rbp-1.20.1-1.0.0.jar
+marker=sampled_timeout elapsed=90 java_pid=72253 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_067.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:31:33.893] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=14772 peakRssGiB=14.43

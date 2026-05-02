@@ -1,0 +1,325 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "oc2r"
+	group: "666B73C638A92906"
+	id: "1187944E3356413E"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["499EF2CFF7EFF3AD"]
+			description: [
+				"Goal: obtain Transistor."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:transistor"
+			id: "0F6F5B98F3066663"
+			rewards: [
+				{
+					count: 4
+					id: "7C737137E678E59C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DF4BCFA99984990"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0717D91A7548D18D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2CA55B6A1F566D92"
+				item: "oc2r:transistor"
+				type: "item"
+			}]
+			title: "Transistor"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["499EF2CFF7EFF3AD"]
+			description: [
+				"Goal: obtain Oc2r Machine Casing."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:oc2r_machine_casing"
+			icon_scale: 1.18d
+			id: "3B5D6CD5E597110B"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "00E0F2BD8EA44673"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5C2D267282BCAF8A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B147E8C2CF4BEF9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "2E200EBB53CB697A"
+				item: "kubejs:oc2r_machine_casing"
+				type: "item"
+			}]
+			title: "OC2R Machine Casing"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Computer."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:computer"
+			icon_scale: 1.18d
+			id: "1AE980C50A28A0D0"
+			rewards: [
+				{
+					count: 4
+					id: "62CE348527CAE840"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25B4E32D9B254179"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C8E80F5222415D4"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "0B73952F35953346"
+				item: "oc2r:computer"
+				type: "item"
+			}]
+			title: "Local Computer"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Network Hub, Network Connector."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:network_hub"
+			icon_scale: 1.18d
+			id: "3C23CA910DB79637"
+			rewards: [
+				{
+					count: 4
+					id: "23F7D4BDC7824F36"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "43B976C4C667760C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75C0BA4B14B35490"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1EB58D02FC4E2141"
+					item: "oc2r:network_hub"
+					type: "item"
+				}
+				{
+					id: "36F7CB9D3FBB6D9F"
+					item: "oc2r:network_connector"
+					type: "item"
+				}
+			]
+			title: "Wired Site Communication"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Speedometer, Stressometer, Network Connector."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+				"ComputerBridge exposes Create machines to OC2R. It is intersite communication and observability, not item teleportation."
+			]
+			hide_dependency_lines: false
+			icon: "create:speedometer"
+			id: "2726EA98615E2786"
+			rewards: [
+				{
+					count: 4
+					id: "19FB9416B09F024F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3846A25C9D7DC990"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E0129AED49F6C5F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4EED69EBA01F012D"
+					item: "create:speedometer"
+					type: "item"
+				}
+				{
+					id: "485BB6D4D77D9847"
+					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					id: "655D34E380EE18C4"
+					item: "oc2r:network_connector"
+					type: "item"
+				}
+			]
+			title: "Create Device Bridge"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Robot."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:robot"
+			id: "57BD953121D1E364"
+			rewards: [
+				{
+					count: 4
+					id: "13F643E5B85279A3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6BDD77AFBC36C221"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D1B7270CFC2F46A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "625D67CD958E51AF"
+				item: "oc2r:robot"
+				type: "item"
+			}]
+			title: "Authored Field Work"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Redstone Interface, Network Interface Card."
+				"Why it matters: This adds computer control and communication for machines, routes, and remote sites."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:redstone_interface"
+			id: "5C4B29416449BD65"
+			rewards: [
+				{
+					count: 4
+					id: "61CC34B386257BE8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "699EADFF900D7420"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75F183B5EC3FA7CB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5989E1E8DEA4039D"
+					item: "oc2r:redstone_interface"
+					type: "item"
+				}
+				{
+					id: "0463CA15CE3A4E3E"
+					item: "oc2r:network_interface_card"
+					type: "item"
+				}
+			]
+			title: "Route Logic"
+			x: 6.0d
+			y: 1.0d
+		}
+	]
+	title: "OC2R"
+}

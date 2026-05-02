@@ -1,0 +1,53 @@
+marker=in_game elapsed=129 java_pid=1417639 profile=docs/worldgen_hang_diagnostics_20260501/c2me_feature_fix_worldgen.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=14133868 postGcJavaRssMiB=13802
+diagnostics=docs/worldgen_hang_diagnostics_20260501/c2me_feature_fix_worldgen_diagnostics
+56:[01May2026 14:15:47.296] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+24155:[01May2026 14:16:42.437] [Render thread/WARN] [ModernFix/]: Initial datapack load took 16.02 s
+25925:[01May2026 14:17:02.672] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 12%
+25926:[01May2026 14:17:03.165] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 14%
+25927:[01May2026 14:17:03.661] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 17%
+25928:[01May2026 14:17:04.164] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 20%
+25929:[01May2026 14:17:04.661] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 23%
+25930:[01May2026 14:17:05.156] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 26%
+25931:[01May2026 14:17:05.668] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 29%
+25932:[01May2026 14:17:06.168] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 33%
+25933:[01May2026 14:17:06.662] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 36%
+25934:[01May2026 14:17:07.166] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 38%
+25935:[01May2026 14:17:07.670] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 39%
+25936:[01May2026 14:17:08.160] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 41%
+25937:[01May2026 14:17:08.672] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 42%
+25938:[01May2026 14:17:09.172] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 44%
+25939:[01May2026 14:17:09.660] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 45%
+25940:[01May2026 14:17:10.162] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 48%
+25941:[01May2026 14:17:10.670] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+25942:[01May2026 14:17:11.166] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 53%
+25943:[01May2026 14:17:11.671] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 56%
+25944:[01May2026 14:17:12.162] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 59%
+25945:[01May2026 14:17:12.662] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 63%
+25946:[01May2026 14:17:13.164] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 67%
+25947:[01May2026 14:17:13.671] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 67%
+25948:[01May2026 14:17:14.159] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 68%
+25949:[01May2026 14:17:14.661] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 69%
+25950:[01May2026 14:17:15.159] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 69%
+25951:[01May2026 14:17:15.663] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 70%
+25952:[01May2026 14:17:16.161] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 71%
+25953:[01May2026 14:17:16.663] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 73%
+25954:[01May2026 14:17:17.166] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 75%
+25955:[01May2026 14:17:17.657] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 78%
+25956:[01May2026 14:17:18.160] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
+25957:[01May2026 14:17:18.661] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 92%
+25958:[01May2026 14:17:19.414] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 94%
+25959:[01May2026 14:17:20.001] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 96%
+25960:[01May2026 14:17:20.939] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25961:[01May2026 14:17:20.939] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25962:[01May2026 14:17:21.217] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25963:[01May2026 14:17:22.643] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25964:[01May2026 14:17:22.643] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25965:[01May2026 14:17:22.679] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 97%
+25966:[01May2026 14:17:23.164] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 99%
+25977:[01May2026 14:17:23.765] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 21110 ms
+27486:[01May2026 14:17:32.545] [Render thread/WARN] [ModernFix/]: Time from main menu to in-game was 47.687267 seconds
+27487:[01May2026 14:17:32.545] [Render thread/WARN] [ModernFix/]: Total time to load game and open world was 87.92827 seconds
+28009:[01May2026 14:17:43.434] [Thread-91/INFO] [EMI/]: [EMI] Reloaded EMI in 13865ms
+tickBehindWarnings=1 maxTickBehindMs=2258 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=15780 peakRssGiB=15.41

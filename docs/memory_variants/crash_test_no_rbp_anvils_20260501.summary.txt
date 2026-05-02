@@ -1,0 +1,5 @@
+marker=sampled_timeout elapsed=151 java_pid=1381800 profile=docs/memory_variants/crash_test_no_rbp_anvils_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+57:[01May2026 13:42:13.672] [main/INFO] [Puzzles Lib/]: Loading 356 mods:
+24137:[01May2026 13:43:14.758] [Render thread/WARN] [ModernFix/]: Initial datapack load took 18.25 s
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11959 peakRssGiB=11.68

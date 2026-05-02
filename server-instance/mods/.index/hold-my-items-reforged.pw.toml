@@ -1,0 +1,17 @@
+filename = 'holdmyitems-1.20.1v2.1.jar'
+name = 'Hold My Items - Reforged'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'holdmyitems-1.20.1v2.1.jar'
+
+[download]
+hash = 'd020896a07f1d40847389addc1b49ec1cf941305'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6608415
+project-id = 1246920

@@ -1,0 +1,17 @@
+filename = 'createfix-0.5.jar'
+name = 'Create Registry Fix'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Create Registry Fix V0.5'
+
+[download]
+hash = 'dd2d1ba05b8ec28ff214e9e9a0b7899aa4045904'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7927228
+project-id = 1487097

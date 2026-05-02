@@ -1,0 +1,199 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tinkers_i"
+	group: "17D1B259E2B76A4F"
+	id: "03D3348B1AFB2527"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Seared Machine Casing."
+				"Why it matters: This starts the early Tinkers metallurgy loop with seared infrastructure and reliable molten output."
+			]
+			hide_dependency_lines: false
+			icon: "kubejs:seared_machine_casing"
+			icon_scale: 1.18d
+			id: "5E1A5472D23D62D4"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "4EA9611FAB5B8BAF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E724BAF014E2BCE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "5DBDF6B451F39E11"
+				item: "kubejs:seared_machine_casing"
+				type: "item"
+			}]
+			title: "Seared Machine Casing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E1A5472D23D62D4"]
+			description: [
+				"Goal: obtain Smeltery Controller, Seared Fuel Tank."
+				"Why it matters: This starts the early Tinkers metallurgy loop with seared infrastructure and reliable molten output."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:smeltery_controller"
+			icon_scale: 1.18d
+			id: "79A8C0B62454E219"
+			rewards: [
+				{
+					count: 4
+					id: "6625CDD7FC8653B4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6703A97B7C461E0B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "31F29F4D8E6EB542"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "709C1E99F219F7BB"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "Smeltery Setup"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Copper Ingot."
+				"Why it matters: This starts the early Tinkers metallurgy loop with seared infrastructure and reliable molten output."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:copper_ingot"
+			id: "780B83B71866DBE2"
+			rewards: [
+				{
+					count: 4
+					id: "1CF2438674A0207A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04C907EE9DC43E05"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3D1E9E235EB81098"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "Primary Molten Output"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iron Ingot."
+				"Why it matters: This starts the early Tinkers metallurgy loop with seared infrastructure and reliable molten output."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:iron_ingot"
+			id: "67793F06FF21DFCF"
+			rewards: [
+				{
+					count: 4
+					id: "5876479C1E5D6CB0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1901286C56BE210A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "61E99F9FA5E7F492"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Ironstone Pays Out"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"780B83B71866DBE2"
+				"67793F06FF21DFCF"
+			]
+			description: [
+				"Goal: obtain Tinkers Anvil."
+				"Why it matters: This starts the early Tinkers metallurgy loop with seared infrastructure and reliable molten output."
+				"A repairable tool loop is the point of early Tinkers. Keep tools alive, keep routes moving, and avoid replacing full toolsets after every risky run."
+			]
+			hide_dependency_lines: false
+			icon: "tconstruct:tinkers_anvil"
+			icon_scale: 1.18d
+			id: "25C1007F55FBF11F"
+			rewards: [
+				{
+					count: 4
+					id: "375FE3956CB3959F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "70F29CF2EED9A0D2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "69E738537F59F8AE"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			title: "Field Repair Loop"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Tinkers I"
+}

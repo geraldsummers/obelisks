@@ -1,0 +1,167 @@
+
+["Sweet Craving Settings"]
+	#XP points awarded when satisfying the Sweet craving. (Default: 3)
+	#Range: > 0
+	"Sweet XP Amount" = 3
+	#Extra saturation points gained when satisfying the Sweet craving. (Default: 1)
+	#Range: 0.0 ~ 20.0
+	"Sweet Saturation Amount" = 1.0
+	#Speed effect level applied when satisfying the Sweet craving. (Default: 1)
+	#Range: 1 ~ 255
+	"Sweet Speed Level" = 1
+	#Duration (in ticks) of the Speed effect when satisfying the Sweet craving. (Default: 6000)
+	#Range: > 0
+	"Sweet Speed Duration" = 6000
+
+["Healthy Craving Settings"]
+	#XP points awarded when satisfying the Healthy craving. (Default: 3)
+	#Range: > 0
+	"Healthy XP Amount" = 3
+	#Extra saturation points gained when satisfying the Healthy craving. (Default: 1)
+	#Range: 0.0 ~ 20.0
+	"Healthy Saturation Amount" = 1.0
+	#Haste effect level applied when satisfying the Healthy craving. (Default: 1)
+	#Range: 1 ~ 255
+	"Healthy Haste Level" = 1
+	#Duration (in ticks) of the Haste effect when satisfying the Healthy craving. (Default: 6000)
+	#Range: > 0
+	"Healthy Haste Duration" = 6000
+
+["Meaty Craving Settings"]
+	#XP points awarded when satisfying the Meaty craving. (Default: 3)
+	#Range: > 0
+	"Meaty XP Amount" = 3
+	#Extra saturation points gained when satisfying the Meaty craving. (Default: 1)
+	#Range: 0.0 ~ 20.0
+	"Meaty Saturation Amount" = 1.0
+	#Strength effect level applied when satisfying the Meaty craving. (Default: 1)
+	#Range: 1 ~ 255
+	"Meaty Strength Level" = 1
+	#Duration (in ticks) of the Strength effect when satisfying the Meaty craving. (Default: 6000)
+	#Range: > 0
+	"Meaty Strength Duration" = 6000
+
+["Fishy Craving Settings"]
+	#XP points awarded when satisfying the Fishy craving. (Default: 5)
+	#Range: > 0
+	"Fishy XP Amount" = 5
+	#Extra saturation points gained when satisfying the Fishy craving. (Default: 1)
+	#Range: 0.0 ~ 20.0
+	"Fishy Saturation Amount" = 1.0
+	#Duration (in ticks) of the Water Breathing effect when satisfying the Fishy craving. (Default: 6000)
+	#Range: > 0
+	"Fishy Water Breathing Duration" = 6000
+
+["Gross Craving Settings"]
+	#XP points awarded when satisfying the gross craving. (Default: 5)
+	#Range: > 0
+	"Gross XP Amount" = 5
+	#Extra saturation points gained when satisfying the Gross craving. (Default: 0.5)
+	#Range: 0.0 ~ 20.0
+	"Gross Saturation Amount" = 0.5
+	#Resistance effect level applied when satisfying the Gross craving. (Default: 1)
+	#Range: 1 ~ 255
+	"Gross Resistance Level" = 1
+	#Duration (in ticks) of the Resistance effect when satisfying the Gross craving. (Default: 6000)
+	#Range: > 0
+	"Gross Resistance Duration" = 6000
+
+["Fancy Craving Settings"]
+	#XP points awarded when satisfying the Fancy craving. (Default: 8)
+	#Range: > 0
+	"Fancy XP Amount" = 8
+	#Extra saturation points gained when satisfying the Fancy craving. (Default: 1)
+	#Range: 0.0 ~ 20.0
+	"Fancy Saturation Amount" = 1.0
+	#Duration (in ticks) of the Night Vision effect when satisfying the Fancy craving. (Default: 6000)
+	#Range: > 0
+	"Fancy Night Vision Duration" = 6000
+
+["Hearty Craving Settings"]
+	#XP points awarded when satisfying the Hearty craving. (Default: 8)
+	#Range: > 0
+	"Hearty XP Amount" = 8
+	#Extra saturation points gained when satisfying the Hearty craving. (Default: 1.5)
+	#Range: 0.0 ~ 20.0
+	"Hearty Saturation Amount" = 1.5
+	#Health boost effect level applied when satisfying the Hearty craving. (Default: 1)
+	#Range: 1 ~ 255
+	"Hearty Health Boost Level" = 1
+	#Duration (in ticks) of the Health Boost effect when satisfying the Hearty craving. (Default: 6000)
+	#Range: > 0
+	"Hearty Health Boost Duration" = 6000
+
+["Raw Craving Settings"]
+	#XP points awarded when satisfying the Raw craving. (Default: 10)
+	#Range: > 0
+	"Raw XP Amount" = 10
+	#Extra saturation points gained when satisfying the Raw craving. (Default: 0.5)
+	#Range: 0.0 ~ 20.0
+	"Raw Saturation Amount" = 0.5
+	#Duration (in ticks) of the Nausea effect when satisfying the Raw craving. (Default: 600)
+	#Range: > 0
+	"Raw Nausea Duration" = 600
+
+["Consequences Settings"]
+	#Set the amount of saturation lost when missing any craving. (default = 1.5)
+	#Range: 0.0 ~ 20.0
+	"Saturation Loss" = 1.5
+	#Sets the amplifier (level) of the Hunger effect given when missing a craving. (default = 1)
+	#Range: 1 ~ 255
+	"Hunger level" = 1
+	#Sets the duration in ticks of the Hunger effect given when missing any craving.
+	#Set to 0 to disable this effect. (default = 300)
+	#Range: > 0
+	"Hunger duration" = 300
+
+["Sweet Consequences"]
+	#Level of Slowness given by missing a Sweet craving. (default = 1)
+	#Range: 1 ~ 255
+	"Slowness Level" = 1
+	#Duration in ticks of Slowness given by missing a Sweet craving. (default = 1200)
+	#Range: > 0
+	"Slowness duration" = 1200
+
+["Healthy Consequences"]
+	#Level of Mining Fatigue given by missing a Healthy craving. (default = 1)
+	#Range: 1 ~ 255
+	"Mining Fatigue Level" = 1
+	#Duration in ticks of Mining Fatigue given by missing a Healthy craving. (default = 1200)
+	#Range: > 0
+	"Mining Fatigue duration" = 1200
+
+["Meaty Consequences"]
+	#Level of Weakness given by missing a Meaty craving. (default = 1)
+	#Range: 1 ~ 255
+	"Weakness Level" = 1
+	#Duration in ticks of Weakness given by missing a Meaty craving. (default = 1200)
+	#Range: > 0
+	"Weakness duration" = 1200
+
+["Fishy and Gross Consequences"]
+	#Duration in ticks of Nausea given by missing a Fishy or Gross craving. (default = 400)
+	#Range: > 0
+	"Nausea duration" = 400
+
+["Fancy Consequences"]
+	#Duration in ticks of Blindness given by missing a Fancy craving. (default = 400)
+	#Range: > 0
+	"Blindness duration" = 400
+
+["Hearty Consequences"]
+	#Level of Hunger given by missing a Hearty craving. (default = 1)
+	#Range: 1 ~ 255
+	"Hearty Hunger Level" = 1
+	#Duration in ticks of Hunger given by missing a Hearty craving.
+	#This overwrites the general Hunger effect. (default = 900)
+	#Range: > 0
+	"Hearty Hunger duration" = 900
+
+["Raw Consequences"]
+	#Level of Luck given by missing a Raw craving. (default = 1)
+	#Range: 1 ~ 255
+	"Luck Level" = 1
+	#Duration in ticks of Luck given by missing a Raw craving. (default = 1200)
+	#Range: > 0
+	"Luck duration" = 1200
+

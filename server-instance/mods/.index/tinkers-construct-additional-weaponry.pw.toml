@@ -1,0 +1,17 @@
+filename = 'Additional-Weaponry-1.20.1-1.1.3.jar'
+name = "Tinkers' Construct: Additional Weaponry"
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Additional-Weaponry-1.20.1-1.1.3.jar'
+
+[download]
+hash = 'c309b9b55cd29af41b2486be768b76bde020409e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7948163
+project-id = 1379381

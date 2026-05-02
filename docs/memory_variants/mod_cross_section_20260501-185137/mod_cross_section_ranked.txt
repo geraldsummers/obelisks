@@ -1,0 +1,4 @@
+Baseline median: 0.000 GiB
+Top memory savers when disabled:
+AE2-Things-1.2.1.jar	peak=0.000GiB	delta=+0.000GiB	marker=sampled_timeout
+AE2NetworkAnalyzer-1.20-1.0.6-forge.jar	peak=0.000GiB	delta=+0.000GiB	marker=sampled_timeout

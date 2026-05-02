@@ -1,0 +1,17 @@
+filename = 'inline-forge-1.20.1-1.2.2.jar'
+name = 'Inline'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Inline 1.20.1-1.2.2 [Forge]'
+
+[download]
+hash = 'f19ae88f41256a74eed7b08b434d5c4695aaa6dd'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6556850
+project-id = 971167

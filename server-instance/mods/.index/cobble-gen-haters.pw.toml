@@ -1,0 +1,17 @@
+filename = 'Cobble-Gen-Haters-1.20-1.0.1.jar'
+name = 'Cobble Gen Haters'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Cobble-Gen-Haters-1.20-1.0.1.jar'
+
+[download]
+hash = '15a8c37b64658980756c8c26ed1b7a9b99d948b2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4576554
+project-id = 305797

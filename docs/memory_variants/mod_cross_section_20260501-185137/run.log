@@ -1,0 +1,22 @@
+Total jars to test: 2
+[18:51:37] RUN baseline_1 
+marker=sampled_timeout elapsed=61 java_pid=31223 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/baseline_1.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+62:[01May2026 18:51:52.961] [main/INFO] [Puzzles Lib/]: Loading 358 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=15506 peakRssGiB=15.14
+Baseline median: 0 KB (0.000 GiB)
+[18:52:42] RUN xmod_1_AE2_Things_1_2_1_jar ^AE2\-Things\-1\.2\.1\.jar$
+disabled AE2-Things-1.2.1.jar
+marker=sampled_timeout elapsed=61 java_pid=32498 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_1_AE2_Things_1_2_1_jar.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 18:52:57.300] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=14925 peakRssGiB=14.58
+[18:53:47] 1/2 AE2-Things-1.2.1.jar peak=0.000GiB delta=0.000GiB marker=sampled_timeout
+[18:53:47] RUN xmod_2_AE2NetworkAnalyzer_1_20_1_0_6_forge_jar ^AE2NetworkAnalyzer\-1\.20\-1\.0\.6\-forge\.jar$
+disabled AE2NetworkAnalyzer-1.20-1.0.6-forge.jar
+marker=sampled_timeout elapsed=61 java_pid=33755 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/xmod_2_AE2NetworkAnalyzer_1_20_1_0_6_forge_jar.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 18:54:03.014] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=16163 peakRssGiB=15.78
+[18:54:52] 2/2 AE2NetworkAnalyzer-1.20-1.0.6-forge.jar peak=0.000GiB delta=0.000GiB marker=sampled_timeout
+Done. CSV: /home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185137/mod_cross_section.csv

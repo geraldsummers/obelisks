@@ -1,0 +1,25 @@
+{
+  "id": "nether",
+  "displayName": "Nether Rift Anchor",
+  "instanceTemplateId": "nether",
+  "targetDimension": "minecraft:the_nether",
+  "coordinateScale": 0.125,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "minecraft",
+  "enabled": true,
+  "worldgenWeight": 2.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "minecraft:blackstone",
+  "meteorShellBlock": "minecraft:magma_block",
+  "craterFillBlocks": [
+    "minecraft:gravel",
+    "minecraft:blackstone",
+    "minecraft:magma_block"
+  ],
+  "rewardTableId": "nether"
+}

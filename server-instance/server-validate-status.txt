@@ -1,0 +1,36 @@
+=== attempt 1 ===
+fatal_hint: 658:[15:33:51] [main/INFO] [STDERR/]: [java.lang.Throwable:lockedPrintStackTrace:696]: Caused by: java.lang.RuntimeException: Attempted to load class de/bene2212/holdmyitems/mixin/LivingEntityMixin for invalid dist DEDICATED_SERVER
+Removing mods/holdmyitems-1.20.1v2.1.jar
+=== attempt 2 ===
+fatal_hint: 2079:§7java.lang.RuntimeException: Attempted to load class dev/architectury/event/events/client/ClientLifecycleEvent for invalid dist DEDICATED_SERVER
+Removing mods/alchemistry-1.20.1-2.3.4.jar
+=== attempt 3 ===
+fatal_hint: 14:[15:40:53] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/emitrades-forge-1.2.1+mc1.20.1.jar
+=== attempt 4 ===
+fatal_hint: 14:[15:41:00] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/emi-1.1.22+1.20.1+forge.jar
+=== attempt 5 ===
+fatal_hint: 14:[15:41:07] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/tconjei-1.20.1-1.5.4.jar
+=== attempt 6 ===
+fatal_hint: 14:[15:41:13] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/jei-1.20.1-forge-15.20.0.130.jar
+=== attempt 7 ===
+fatal_hint: 14:[15:41:18] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/appleskin-forge-mc1.20.1-2.5.1.jar
+=== attempt 8 ===
+fatal_hint: 14:[15:41:24] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar
+=== attempt 9 ===
+fatal_hint: 14:[15:41:29] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/Controlling-forge-1.20.1-12.0.2.jar
+=== attempt 10 ===
+fatal_hint: 14:[15:41:34] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/Searchables-forge-1.20.1-1.0.3.jar
+=== attempt 11 ===
+fatal_hint: 14:[15:41:39] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/nomorepopups-forge-1.20.1-2.2.0.jar
+=== attempt 12 ===
+fatal_hint: 14:[15:41:44] [main/ERROR] [ne.mi.fm.lo.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+Removing mods/TravelersTitles-1.20-Forge-4.0.2.jar

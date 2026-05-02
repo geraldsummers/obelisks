@@ -1,0 +1,1028 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "post_ae2"
+	group: "7D79E4B0E21B410D"
+	id: "5882DABE35F89FAB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Quantum Structure."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_structure"
+			icon_scale: 1.18d
+			id: "67E9F66BAE682400"
+			rewards: [
+				{
+					count: 4
+					id: "6A5405EFC0C8E77B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3AF1987CFA0494E1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "37708BDE5C685EB1"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7581DFEADF006C41"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54C2C3762E0D1665"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6784830387EA51C5"
+				item: "advanced_ae:quantum_structure"
+				type: "item"
+			}]
+			title: "Quantum Structure"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67E9F66BAE682400"]
+			description: [
+				"Goal: obtain Reaction Chamber."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:reaction_chamber"
+			id: "77220115ED39BE76"
+			rewards: [
+				{
+					count: 4
+					id: "50D468C5D90E6CDC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DD085663E3C8A7C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BCE3A802E0A82EC"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1BB6AFCECF49FCEA"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D9CACC0BCD4BB1E"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "751186356BD9785E"
+				item: "advanced_ae:reaction_chamber"
+				type: "item"
+			}]
+			title: "Reaction Chamber"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["67E9F66BAE682400"]
+			description: [
+				"Goal: obtain Quantum Core."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_core"
+			id: "272E3C4DE86820FA"
+			rewards: [
+				{
+					count: 4
+					id: "1954739B283EDA76"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CCBEC0DE3353CE2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "549DFF899A02C1D5"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "62EC22ACD793B025"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F37A6957B3450F0"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "6AE4B3AB65E6D2E7"
+				item: "advanced_ae:quantum_core"
+				type: "item"
+			}]
+			title: "Quantum Core"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Quantum Crafter, Quantum Accelerator."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_crafter"
+			id: "5E62717CCAF5A00D"
+			rewards: [
+				{
+					count: 4
+					id: "66CB5AE51082B911"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2F54585C46E0E261"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "408BC2459BDBC878"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "22AFEE80321AA668"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1818F42E5C036E78"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "36515A5BEC60F46B"
+					item: "advanced_ae:quantum_crafter"
+					type: "item"
+				}
+				{
+					id: "55B6C0DF4754BB94"
+					item: "advanced_ae:quantum_accelerator"
+					type: "item"
+				}
+			]
+			title: "Quantum Crafting Branch"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Quantum Multi Threader."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_multi_threader"
+			id: "27375AD1BFB6C04F"
+			rewards: [
+				{
+					count: 4
+					id: "0BF4DC66DB81CE76"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3BBD538E828010A9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BA6496507CFA4D0"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A0E565525F2D0AE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "77E1A689B5373426"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "07605BE424C633F1"
+				item: "advanced_ae:quantum_multi_threader"
+				type: "item"
+			}]
+			title: "Parallel Pattern Work"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Ex Drive, Ex Interface, Ex Pattern Provider."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "expatternprovider:ex_drive"
+			id: "5837046C2D896057"
+			rewards: [
+				{
+					count: 4
+					id: "6B6F4747863F3A97"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01FB7DB7E4181D2A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3FF75EAF37A77C51"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FCCAE0117F2EF92"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A23B762919B316E"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4E4A2D728CF79351"
+					item: "expatternprovider:ex_drive"
+					type: "item"
+				}
+				{
+					id: "20653083C00EA5D0"
+					item: "expatternprovider:ex_interface"
+					type: "item"
+				}
+				{
+					id: "4216233F21C16862"
+					item: "expatternprovider:ex_pattern_provider"
+					type: "item"
+				}
+			]
+			title: "Extended Local Intelligence"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5837046C2D896057"]
+			description: [
+				"Goal: obtain Assembler Matrix Frame, Assembler Matrix Crafter."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "expatternprovider:assembler_matrix_frame"
+			id: "7192A7CEE5253E3F"
+			rewards: [
+				{
+					count: 4
+					id: "72011818C4F714E5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4497A53F12F91062"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06D3DD53939FD771"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "69CB8A228A9BAF78"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C8F9D294EB4A5EA"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "646817BAC02BA233"
+					item: "expatternprovider:assembler_matrix_frame"
+					type: "item"
+				}
+				{
+					id: "25F852A9D747933B"
+					item: "expatternprovider:assembler_matrix_crafter"
+					type: "item"
+				}
+			]
+			title: "Assembler Matrix"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Super Cell Housing, Super Cell 1024k."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "ae2additions:super_cell_housing"
+			id: "4DC29C4911526A62"
+			rewards: [
+				{
+					count: 4
+					id: "46D43BD77321A736"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FEEDE4A7F45A0E9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "692A473928C617F0"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1BC42737BB9012EA"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "12A8A179AB6E2574"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4AF71FFADE2AABCD"
+					item: "ae2additions:super_cell_housing"
+					type: "item"
+				}
+				{
+					id: "280CB20108378C4A"
+					item: "ae2additions:super_cell_1024k"
+					type: "item"
+				}
+			]
+			title: "Bounded Deep Storage"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DC29C4911526A62"]
+			description: [
+				"Goal: obtain Disk Item 1024k."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "ae2additions:disk_item_1024k"
+			id: "2AA8CBDCC699E807"
+			rewards: [
+				{
+					count: 4
+					id: "6C00987CDA032B5B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "007C38B4D4B47E19"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E7F77763346709D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38575013119242F4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78C0B56D944FDB0A"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "17CA69A87B2E1CC1"
+				item: "ae2additions:disk_item_1024k"
+				type: "item"
+			}]
+			title: "Disk Storage Branch"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Me Source Jar, Source Acceptor, Source Cell Housing."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "arseng:me_source_jar"
+			icon_scale: 1.18d
+			id: "59DAD94EAF1F2831"
+			rewards: [
+				{
+					count: 4
+					id: "1FA418B6FA282C6F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B61E6701EB1F6A7"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "016A57E2D0F2A212"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DBC4A6B7FEC940B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4328C9B0C3083760"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "475221FD0A275EC0"
+					item: "arseng:me_source_jar"
+					type: "item"
+				}
+				{
+					id: "7820975779FEF5A4"
+					item: "arseng:source_acceptor"
+					type: "item"
+				}
+				{
+					id: "1B3C6690C24F3284"
+					item: "arseng:source_cell_housing"
+					type: "item"
+				}
+			]
+			title: "Source-AE Bridge"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Portable Source Cell 64k."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "arseng:portable_source_cell_64k"
+			id: "202714604628EB2B"
+			rewards: [
+				{
+					count: 4
+					id: "294DCE5B747A5E2F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7005408AF1E74E14"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79C98B7F663C4873"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E41FA72738D4EE8"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "791BBAFFD4FDEC50"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "63F1FA443F6C29D3"
+				item: "arseng:portable_source_cell_64k"
+				type: "item"
+			}]
+			title: "Portable Source Cell"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4DC29C4911526A62"
+				"135CD272448EB0BB"
+			]
+			description: [
+				"Goal: obtain Quantum Upgrade Base."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:quantum_upgrade_base"
+			id: "705E88F65BB8A36E"
+			rewards: [
+				{
+					count: 4
+					id: "2E095DEBC8CD35B5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A319D7EA2767482"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A9304489337388B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5186FEC41B42795A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1BDC24F93CB58944"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "050AB1B0D5113DE0"
+				item: "advanced_ae:quantum_upgrade_base"
+				type: "item"
+			}]
+			title: "Quantum Body Base"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Lava Immunity Card."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:lava_immunity_card"
+			id: "5DD59E0873731975"
+			rewards: [
+				{
+					count: 4
+					id: "20BB4A93AC79F94F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0B7A11A7E7B99012"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3DAE2ACB2B3EA474"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E631E53253B8B68"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1310133627C9DAD2"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4A4F04B4EB6EED64"
+				item: "advanced_ae:lava_immunity_card"
+				type: "item"
+			}]
+			title: "Lava-Depth Body Reward"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Regeneration Card."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:regeneration_card"
+			id: "661DF756D170EA3B"
+			rewards: [
+				{
+					count: 4
+					id: "5E5291C7F1285B1B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5569CBF5612C7F52"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6541EDE321E06159"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D3AF34D105B0F2A"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E813057796ABBF8"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "113AA95ADF802C8B"
+				item: "advanced_ae:regeneration_card"
+				type: "item"
+			}]
+			title: "Regeneration Body Reward"
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"Goal: obtain Magnet Card."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "advanced_ae:magnet_card"
+			id: "6388277A93E0FCF9"
+			rewards: [
+				{
+					count: 4
+					id: "551AA157773C4019"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4CE0E9AF67E9D523"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "70C9A6208C6F3BB9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5694C758E245B1A4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A33B59E3CBB4A42"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "631860D83A369C51"
+				item: "advanced_ae:magnet_card"
+				type: "item"
+			}]
+			title: "Magnetic Field Reward"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5DD59E0873731975"
+				"661DF756D170EA3B"
+				"6388277A93E0FCF9"
+			]
+			description: [
+				"Goal: obtain Armor Load Platform."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+			]
+			hide_dependency_lines: false
+			icon: "protection_pixel:armorloadplatform"
+			icon_scale: 1.18d
+			id: "38A2D07964C4DF4E"
+			rewards: [
+				{
+					count: 4
+					id: "7F9968EC0DD083B5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "683F8F542552448F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "762121400D8B0D83"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E63FD9141ADBCB2"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32BBE474649B1964"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "65E353A8ADBF527B"
+				item: "protection_pixel:armorloadplatform"
+				type: "item"
+			}]
+			title: "Powered Armor Branch"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Novice Tome of Blood."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+				"Tome of Blood is the late combat-magic branch: source, LP, Demon Will, and AE2-era control feed the same spell body."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:novice_tome_of_blood"
+			id: "240C9CECEC0957C2"
+			rewards: [
+				{
+					count: 4
+					id: "2D25A1ED9746FD65"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "203CD9CAEE7A5484"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4FA71693FE029203"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "11B5FE4E6D0CFE0F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D07B40FECBDB202"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7AECDFF36B6838A9"
+				item: "tomeofblood:novice_tome_of_blood"
+				type: "item"
+			}]
+			title: "Blood-Source Branch"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Feeding Upgrade, Alchemy Upgrade, Tool Swapper Upgrade."
+				"Why it matters: This advances post-AE2 branches for stronger local manufacturing and body-scale upgrades."
+				"Feeding, alchemy, and tool swapping are strong body automation. They stay post-AE2 so travel preparation remains a real decision earlier."
+			]
+			hide_dependency_lines: false
+			icon: "sophisticatedbackpacks:feeding_upgrade"
+			id: "79763619776CFB4D"
+			rewards: [
+				{
+					count: 4
+					id: "0B7F63AE9AE39983"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "36BCA4DF500D0AD4"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10C5EF2A7A5F0738"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01B3EF9AEF2F836D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A1241EA2D4C0479"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5E6E55E501DE29F4"
+					item: "sophisticatedbackpacks:feeding_upgrade"
+					type: "item"
+				}
+				{
+					id: "77A8DAC3EFC6371C"
+					item: "sophisticatedbackpacks:alchemy_upgrade"
+					type: "item"
+				}
+				{
+					id: "03B98730284E823F"
+					item: "sophisticatedbackpacks:tool_swapper_upgrade"
+					type: "item"
+				}
+			]
+			title: "Body Logistics Upgrades"
+			x: 14.0d
+			y: 4.0d
+		}
+	]
+	title: "Post-AE2 Branches"
+}

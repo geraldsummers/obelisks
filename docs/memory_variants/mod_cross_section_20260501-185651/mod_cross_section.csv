@@ -1,0 +1,2 @@
+run_type,variant,jar,marker,elapsed_s,peak_rss_kb,peak_rss_gib,delta_vs_baseline_gib,summary_file
+baseline,baseline_1,,sampled_timeout,91,15116288,14.416,,/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185651/baseline_1.summary.txt

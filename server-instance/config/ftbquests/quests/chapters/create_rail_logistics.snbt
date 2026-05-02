@@ -1,0 +1,578 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "create_rail_logistics"
+	group: "4B746D4352454154"
+	id: "3FE047B015F7D862"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6E83C3344F330B82"]
+			description: [
+				"Goal: obtain Track Coupler."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Couplers make trains into planned logistics instead of minecart clutter."
+			]
+			hide_dependency_lines: false
+			icon: "railways:track_coupler"
+			icon_scale: 1.18d
+			id: "22475E0DD963078A"
+			rewards: [
+				{
+					count: 4
+					id: "5C98443223B9C7D0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08CE3E5263266921"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A224019C31C6D53"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "0ECD8CCB19A92D5A"
+				item: "railways:track_coupler"
+				type: "item"
+			}]
+			title: "Track Coupler"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Conductor Whistle, Black Conductor Cap."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"The conductor layer is for authored train work and route maintenance."
+			]
+			hide_dependency_lines: false
+			icon: "railways:conductor_whistle"
+			id: "7A60B45489DE2B15"
+			rewards: [
+				{
+					count: 4
+					id: "0F7FC68732B9A44E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "47E9194FEB009B1E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D259A09C33CEAB5"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "26220058C7FC4688"
+					item: "railways:conductor_whistle"
+					type: "item"
+				}
+				{
+					id: "22E3301B50F7CA9E"
+					item: "railways:black_conductor_cap"
+					type: "item"
+				}
+			]
+			title: "Conductor Tools"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Big Buffer."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Buffers and yards make train stations physical places."
+			]
+			hide_dependency_lines: false
+			icon: "railways:big_buffer"
+			id: "4F4EFAFF90817F5E"
+			rewards: [
+				{
+					count: 4
+					id: "0B30AABA3F61286F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F6D84B8E9B80F33"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3DC7B3AF21C3E8F4"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "195935D9B7274EC6"
+				item: "railways:big_buffer"
+				type: "item"
+			}]
+			title: "Rail Yard Hardware"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7A60B45489DE2B15"]
+			description: [
+				"Goal: obtain Track Station."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Stations turn distance into named infrastructure. A station is a site commitment."
+			]
+			hide_dependency_lines: false
+			icon: "create:track_station"
+			icon_scale: 1.18d
+			id: "4F0AC0A55BD113A4"
+			rewards: [
+				{
+					count: 4
+					id: "11AFA9CB4DFAC5FC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "33CADAB2129FB9B5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07C15DBF59546C7F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "514DF60B162677C4"
+				item: "create:track_station"
+				type: "item"
+			}]
+			title: "Train Station"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F0AC0A55BD113A4"]
+			description: [
+				"Goal: obtain Track Signal, Track Observer."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Signals make routes authored and safe instead of improvised rail lines."
+			]
+			hide_dependency_lines: false
+			icon: "create:track_signal"
+			id: "624578ADE0918A34"
+			rewards: [
+				{
+					count: 4
+					id: "33914CF5A6915F20"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2DFDD26DEA6C5BA0"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7450253A92141D13"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "300EC531DBA6C7FE"
+					item: "create:track_signal"
+					type: "item"
+				}
+				{
+					id: "575B6663C5D55B5B"
+					item: "create:track_observer"
+					type: "item"
+				}
+			]
+			title: "Signals and Observers"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F0AC0A55BD113A4"]
+			description: [
+				"Goal: obtain Schedule, Controls."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Schedules are physical logistics logic. This is not teleportation; trains must still move matter."
+			]
+			hide_dependency_lines: false
+			icon: "create:schedule"
+			id: "29BF3AE9FCE47C9D"
+			rewards: [
+				{
+					count: 4
+					id: "424BDDC693E1D3AE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4544BAAC88346160"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "00BE6A6510A1EC06"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "655710DC610E7BBD"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "20613B30CC1ED5DA"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "Schedules and Controls"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Track Switch."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+			]
+			hide_dependency_lines: false
+			icon: "create:track_switch"
+			id: "720D3EDD9F6E02CF"
+			rewards: [
+				{
+					count: 4
+					id: "6ACAA7AF60E24C72"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "43B018F0EEDDA80A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "638880EAD34C01B7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "28F4556308EA88B4"
+				item: "create:track_switch"
+				type: "item"
+			}]
+			title: "Track Switching"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Track Coupler, Redstone Link."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+			]
+			hide_dependency_lines: false
+			icon: "railways:track_coupler"
+			id: "0ADB4A4DAF8B32EB"
+			rewards: [
+				{
+					count: 4
+					id: "6EBDF63FB48003F3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "481B78B68367A180"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "589CA7E0DF981D67"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2A4B155CD8B0F376"
+					item: "railways:track_coupler"
+					type: "item"
+				}
+				{
+					id: "379AFD5CB1B7C24A"
+					item: "create:redstone_link"
+					type: "item"
+				}
+			]
+			title: "Coupler Dispatch Control"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0ADB4A4DAF8B32EB"]
+			description: [
+				"Goal: obtain Big Buffer, Track Signal, Track Station."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"A rail yard is the first serious intersite logistics build. It should look like infrastructure."
+			]
+			hide_dependency_lines: false
+			icon: "railways:big_buffer"
+			icon_scale: 1.18d
+			id: "7255A8A0C04FC5B3"
+			rewards: [
+				{
+					count: 4
+					id: "7028FC0C3578C14A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D3A470EE9D71C9A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60172642DFF04963"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2DD4C55A7A220401"
+					item: "railways:big_buffer"
+					type: "item"
+				}
+				{
+					id: "5574EB4808E7BA3F"
+					item: "create:track_signal"
+					type: "item"
+				}
+				{
+					id: "343CFBF3CB77E2A3"
+					item: "create:track_station"
+					type: "item"
+				}
+			]
+			title: "Rail Yard"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7255A8A0C04FC5B3"]
+			description: [
+				"Goal: obtain Portable Storage Interface, Portable Fluid Interface."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+			]
+			hide_dependency_lines: false
+			icon: "create:portable_storage_interface"
+			id: "0823CEFDCAA51FF0"
+			rewards: [
+				{
+					count: 4
+					id: "4E350F212C23C803"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "71047E081B5ADA68"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "650854F133F3AE77"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "158E833B15326B10"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "4F144D5009767D69"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+			]
+			title: "Freight Interfaces"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7255A8A0C04FC5B3"]
+			description: [
+				"Goal: obtain Redstone Interface, Track Signal."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"OC2R observes and coordinates train routes. It does not replace the train."
+			]
+			hide_dependency_lines: false
+			icon: "oc2r:redstone_interface"
+			id: "60CA3FC4F0269DB7"
+			rewards: [
+				{
+					count: 4
+					id: "45A19C06434EABA9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E96C62772C5D8E3"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6ACB24657AF465FB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "45E7D0508ABEBA7A"
+					item: "oc2r:redstone_interface"
+					type: "item"
+				}
+				{
+					id: "32A4D3D2E5372314"
+					item: "create:track_signal"
+					type: "item"
+				}
+			]
+			title: "OC2R Dispatch Layer"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0823CEFDCAA51FF0"]
+			description: [
+				"Goal: obtain Track Station, Schedule, Redstone Interface."
+				"Why it matters: This improves physical logistics so materials can move between sites by rail."
+				"Capstone: operate a bidirectional freight loop with station logic, safe signaling, and dispatch visibility."
+			]
+			hide_dependency_lines: false
+			icon: "create:track_station"
+			id: "293BF2A38E0A7BE1"
+			rewards: [
+				{
+					count: 4
+					id: "0CFCD5230343644F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7EE7A8270BC07BBB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "601D2411721A7DCE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "2CF3AA3D6B516CA0"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "041FD922B74BA447"
+					item: "create:schedule"
+					type: "item"
+				}
+				{
+					id: "5CBE2F601363C2C2"
+					item: "oc2r:redstone_interface"
+					type: "item"
+				}
+			]
+			title: "Capstone: Intersite Freight Loop"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "Create Rail Logistics"
+}

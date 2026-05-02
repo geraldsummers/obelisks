@@ -1,0 +1,386 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "tome_of_blood"
+	group: "7D79E4B0E21B410D"
+	id: "5F261F41DD029904"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"272E3C4DE86820FA"
+				"5BE6D0C5F6C4DCC3"
+			]
+			description: [
+				"Goal: obtain Novice Tome of Blood."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"This is the entry conversion. The book proves that Ars source work, Blood Magic LP, and AE2-era manufacturing are now part of one combat-magic branch."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:novice_tome_of_blood"
+			icon_scale: 1.18d
+			id: "3DC7ED9C480B7495"
+			rewards: [
+				{
+					count: 4
+					id: "31B189039F2D646E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "01D188036CCEE006"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55A8D824020F4098"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2240710996DAC17B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1282F88EDEC01CEF"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "65BF1691965304F9"
+				item: "tomeofblood:novice_tome_of_blood"
+				type: "item"
+			}]
+			title: "Novice Tome of Blood"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Apprentice Tome of Blood."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"Upgrade the tome after the novice bridge is stable. The recipe keeps the Ars spell-book ladder visible instead of replacing it."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:apprentice_tome_of_blood"
+			id: "67CC4336C0E194E8"
+			rewards: [
+				{
+					count: 4
+					id: "740302A8661CD18D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A4A24D3F8E30E9B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4583144915575F62"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0FF25854C33FAE78"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "092FB44B80D03767"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0B1001A06611CCA4"
+				item: "tomeofblood:apprentice_tome_of_blood"
+				type: "item"
+			}]
+			title: "Apprentice Tome of Blood"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Living Mage Hood, Living Mage Robes, Living Mage Leggings, and related items."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"Convert Living Armor into mage armor when the body branch has quantum manufacturing and late source work behind it."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "tomeofblood:living_mage_hood"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "27D4E490A389314D"
+			rewards: [
+				{
+					count: 4
+					id: "78B87FBB49E065B2"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D89212E7E937CAF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07378258E258E14C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "51355BD7BA04FA89"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "617A95E79E4243A1"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0770DB70E274A627"
+					item: {
+						Count: 1
+						id: "tomeofblood:living_mage_hood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "25D76EA565052A8A"
+					item: {
+						Count: 1
+						id: "tomeofblood:living_mage_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "768ADC43EF951168"
+					item: {
+						Count: 1
+						id: "tomeofblood:living_mage_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7307206BDE0C49DF"
+					item: {
+						Count: 1
+						id: "tomeofblood:living_mage_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Living Mage Armor"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67CC4336C0E194E8"]
+			description: [
+				"Goal: obtain Sentient Harm Glyph."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"This glyph makes Demon Will part of spell combat. It belongs after the tome entry, not as an early Blood Magic side reward."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:glyph_sentient_harm"
+			id: "182FF0E132F99CB2"
+			rewards: [
+				{
+					count: 4
+					id: "7E75AA05D1D367C8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "58F45515383416F2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1139529A965BFBC2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F1CDE25285DE7F5"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DFFD8121AD2AE11"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1C0F9671216C7B09"
+				item: "tomeofblood:glyph_sentient_harm"
+				type: "item"
+			}]
+			title: "Sentient Harm Glyph"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["27D4E490A389314D"]
+			description: [
+				"Goal: obtain Sentient Wrath Glyph."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"Wrath is the branch escalation: Will weapons, source spell work, and nuclear-era components become a high-impact area combat option."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:glyph_sentient_wrath"
+			id: "139F85E472C839F7"
+			rewards: [
+				{
+					count: 4
+					id: "689655BE672A8E89"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D15B02E385DC1CA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "35F6260517A1B9DE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "388B13C054B8B9F1"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1906AC1EA1F99029"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "74CD32D3F2C57103"
+				item: "tomeofblood:glyph_sentient_wrath"
+				type: "item"
+			}]
+			title: "Sentient Wrath Glyph"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Archmage Tome of Blood."
+				"Why it matters: This turns AE2-era control, Ethereal Slate, Ars spell work, and Demon Will into a late hybrid combat-magic branch."
+				"The archmage tome is the capstone. It should feel like a late hybrid instrument, not a cheap spell-book conversion."
+			]
+			hide_dependency_lines: false
+			icon: "tomeofblood:archmage_tome_of_blood"
+			icon_scale: 1.18d
+			id: "3EED3D1E5916D045"
+			rewards: [
+				{
+					count: 4
+					id: "1EC97EFA8D1F0E12"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A38EA4D70E1E5D1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "617A16004D254607"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1B297C5534790891"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D599BC8490C3ADE"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "748A4A814188B971"
+				item: "tomeofblood:archmage_tome_of_blood"
+				type: "item"
+			}]
+			title: "Archmage Tome of Blood"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Tome of Blood"
+}

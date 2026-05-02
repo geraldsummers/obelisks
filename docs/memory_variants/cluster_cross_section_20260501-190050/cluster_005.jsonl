@@ -1,0 +1,10 @@
+{"variant":"cluster_005","t":1777626330,"elapsed":0,"processes":1,"rssKb":8208,"maxProcessRssKb":8208}
+{"variant":"cluster_005","t":1777626332,"elapsed":2,"processes":1,"rssKb":73076,"maxProcessRssKb":73076}
+{"variant":"cluster_005","t":1777626334,"elapsed":4,"processes":1,"rssKb":73748,"maxProcessRssKb":73748}
+{"variant":"cluster_005","t":1777626336,"elapsed":6,"processes":1,"rssKb":74360,"maxProcessRssKb":74360}
+{"variant":"cluster_005","t":1777626338,"elapsed":8,"processes":2,"rssKb":1485188,"maxProcessRssKb":1397128}
+{"variant":"cluster_005","t":1777626340,"elapsed":10,"processes":2,"rssKb":2182672,"maxProcessRssKb":2094612}
+{"variant":"cluster_005","t":1777626342,"elapsed":12,"processes":2,"rssKb":2633916,"maxProcessRssKb":2545856}
+{"variant":"cluster_005","t":1777626344,"elapsed":14,"processes":2,"rssKb":2430904,"maxProcessRssKb":2342844}
+{"variant":"cluster_005","t":1777626346,"elapsed":16,"processes":2,"rssKb":2781792,"maxProcessRssKb":2693732}
+{"variant":"cluster_005","t":1777626348,"elapsed":18,"processes":2,"rssKb":3499592,"maxProcessRssKb":3411532}

@@ -1,0 +1,17 @@
+filename = 'Towns-and-Towers-1.12-Fabric+Forge.jar'
+name = 'Towns and Towers'
+side = ''
+x-prismlauncher-loaders = [ 'forge', 'quilt', 'fabric' ]
+x-prismlauncher-mc-versions = [ '1.19.3', '1.19.4', '1.20', '1.20.1', '1.20.2', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '(1.19.3/4+1.20.x) Towns and Towers v1.12 (Fabric/Forge)'
+
+[download]
+hash = '5a28ec56457cf1bf154e993cf73dba0428a7921b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4923828
+project-id = 626761

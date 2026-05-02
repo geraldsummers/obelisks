@@ -1,0 +1,17 @@
+filename = 'createappliedkinetics-1.5.1-1.20.1.jar'
+name = 'Create: Applied Kinetics'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.20.1 v1.5.1'
+
+[download]
+hash = '339f229406b2d946f4ad92f67b59735ad8668a92'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6628405
+project-id = 867328

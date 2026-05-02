@@ -1,0 +1,390 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "synthesis_ii"
+	group: "77AFAA45BDFC5D88"
+	id: "1BA057AD730A81B3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["135CD272448EB0BB"]
+			description: [
+				"Goal: obtain Mechanical Slurry Pump."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Slurry movement is physical infrastructure, not a magic pipe."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:mechanical_slurry_pump"
+			icon_scale: 1.18d
+			id: "53DC93E9D2DC8423"
+			rewards: [
+				{
+					count: 4
+					id: "00E6E017661A8267"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "578FA85AC5CA8F4C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3870CB0B0ED1116B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "755CE6903ECA3EF9"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C5CDDDF3FD99632"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2420E2FB09C172F8"
+				item: "acid_vat:mechanical_slurry_pump"
+				type: "item"
+			}]
+			title: "Mechanical Slurry Pump"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Portable Slurry Interface."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Portable interfaces make chemistry fieldwork practical."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:portable_slurry_interface"
+			id: "32A0155835FCE079"
+			rewards: [
+				{
+					count: 4
+					id: "2076B809058B2B00"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29C46DDBCEAC5E32"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "066E6E6700A3DABB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0CF5A474D451B6AB"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "75D4857C70C152B9"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "6B8D9F838A105973"
+				item: "acid_vat:portable_slurry_interface"
+				type: "item"
+			}]
+			title: "Portable Slurry Interface"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Slurry Valve."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Valves make chemical routing authored and inspectable."
+			]
+			hide_dependency_lines: false
+			icon: "acid_vat:slurry_valve"
+			id: "379B70CDA59EB30D"
+			rewards: [
+				{
+					count: 4
+					id: "2498432E46766B43"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "593F8E39283310D7"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "19C447DA43FC0EB3"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DAE0003A3BA9781"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A0E303060A62984"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "79C2F24E76205367"
+				item: "acid_vat:slurry_valve"
+				type: "item"
+			}]
+			title: "Slurry Valve Control"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["32A0155835FCE079"]
+			description: [
+				"Goal: obtain Uranium Plate."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Lava-depth and deep synthesis materials become engineered plates."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:uranium_plate"
+			id: "16E6FBB817D1FAC2"
+			rewards: [
+				{
+					count: 4
+					id: "0B9A009F87E36BA1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34E85358D7D02B91"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "657FF68B0E1E8741"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "498235C3A4072E06"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "64B65528A3B6AD36"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "67F9F83464AF2BEC"
+				item: "chemlib:uranium_plate"
+				type: "item"
+			}]
+			title: "Uranium Plate"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32A0155835FCE079"]
+			description: [
+				"Goal: obtain Thorium Plate."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Thorium is a late matter-routing material, not furnace ore."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:thorium_plate"
+			id: "28A87D3B07B47689"
+			rewards: [
+				{
+					count: 4
+					id: "3573978C43B78B23"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D46157F9CB7B462"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7941F9A981CBA70B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4A4462B86D42CD5B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29B7FFF512E592D3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5BCC67D0D0A85150"
+				item: "chemlib:thorium_plate"
+				type: "item"
+			}]
+			title: "Thorium Plate"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iridium Plate."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Iridium should represent serious chemistry and extreme-resource commitment."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:iridium_plate"
+			icon_scale: 1.18d
+			id: "1024BB38FC52C5DD"
+			rewards: [
+				{
+					count: 4
+					id: "299D2390A697ACB1"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7AC915358F9FC7C2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DC233D47AB19AE2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C7C5600D2EDB7D0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60A33CD369279559"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3CAC7256760A3610"
+				item: "chemlib:iridium_plate"
+				type: "item"
+			}]
+			title: "Iridium Plate"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1024BB38FC52C5DD"]
+			description: [
+				"Goal: obtain Ruthenium Plate."
+				"Why it matters: This extends slurry handling and late chemical materials for advanced recipes."
+				"Ruthenium is a capstone signal for advanced chemical interpretation."
+			]
+			hide_dependency_lines: false
+			icon: "chemlib:ruthenium_plate"
+			icon_scale: 1.18d
+			id: "26031B978625E6A0"
+			rewards: [
+				{
+					count: 4
+					id: "5B2378F50EC4752A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1ABCF2CCF75F38C2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04118EFB0F3C696A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "07F24314DF3F6F21"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6566C8D1F1E21A96"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "610648D92FEE66D0"
+				item: "chemlib:ruthenium_plate"
+				type: "item"
+			}]
+			title: "Ruthenium Plate"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	title: "Synthesis II"
+}

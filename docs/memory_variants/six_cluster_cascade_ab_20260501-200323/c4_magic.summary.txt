@@ -1,0 +1,17 @@
+disabled farsighted-mobs-forge-1.1-1.20.1.jar
+disabled SimpleDayLengthExtender-1.2.1-Forge-1.20.1.jar
+disabled reliquary-1.20.1-2.0.56.1418.jar
+disabled KubeJS Blood Magic-1.0.2-1.20.1.jar
+disabled malum-1.20.1-1.6.7.jar
+disabled ars_nouveau-1.20.1-4.12.7-all.jar
+disabled occultism-1.20.1-1.157.0.jar
+disabled tomeofblood-1.20.1-0.4.5.jar
+disabled Botania-1.20.1-451-FORGE.jar
+disabled theurgy-1.20.1-1.28.0.jar
+disabled bloodmagic-1.20.1-3.3.7-49.jar
+disabled DynamicTreesArsNouveau-1.20.1-1.2.0.jar
+disabled dtmalum-1.0.0.jar
+marker=sampled_timeout elapsed=90 java_pid=107936 profile=/home/gerald/obelisks/docs/memory_variants/six_cluster_cascade_ab_20260501-200323/c4_magic.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+55:[01May2026 20:10:28.761] [main/INFO] [Puzzles Lib/]: Loading 345 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=9981 peakRssGiB=9.75

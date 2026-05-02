@@ -1,0 +1,32 @@
+{
+  "id": "otherside",
+  "displayName": "Otherside Rift Anchor",
+  "instanceTemplateId": "otherside",
+  "targetDimension": "deeperdarker:otherside",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "deeperdarker",
+  "enabled": true,
+  "worldgenWeight": 1.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "deeperdarker:sculk_stone",
+  "meteorShellBlock": "deeperdarker:sculk_gleam",
+  "pedestalBlock": "deeperdarker:polished_sculk_stone",
+  "returnPadFrameBlock": "deeperdarker:sculk_stone_bricks",
+  "platformFloorBlock": "deeperdarker:sculk_stone_tiles",
+  "craterFillBlocks": [
+    "minecraft:sculk",
+    "minecraft:sculk_vein",
+    "deeperdarker:sculk_stone",
+    "deeperdarker:sculk_gleam",
+    "deeperdarker:echo_soil",
+    "deeperdarker:sculk_grime"
+  ],
+  "rewardTableId": "default",
+  "useAe2Skystone": true
+}

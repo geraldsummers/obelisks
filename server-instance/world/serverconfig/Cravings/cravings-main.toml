@@ -1,0 +1,86 @@
+
+["Craving toggles"]
+	#Toggle the chance to crave something sweet. (Default: true)
+	"Sweet Craving Toggle" = true
+	#Toggle the chance to crave something healthy. (Default: true)
+	"Healthy Craving Toggle" = true
+	#Toggle the chance to crave something meaty. (Default: true)
+	"Meaty Craving Toggle" = true
+	#Toggle the chance to crave something fishy. (Default: true)
+	"Fishy Craving Toggle" = true
+	#Toggle the chance to crave something gross. (Default: true)
+	"Gross Craving Toggle" = true
+	#Toggle the chance to crave something fancy. (Default: true)
+	"Fancy Craving Toggle" = true
+	#Toggle the chance to crave something hearty. (Default: true)
+	"Hearty Craving Toggle" = true
+	#Toggle the chance to crave something raw. (Default: true)
+	"Raw Craving Toggle" = true
+
+["Miscellaneous Settings"]
+	#How long will it take to crave something different. (Default: 12000)
+	#If you change this, make sure to tweak the effect's durations below to keep it balanced.
+	#Changing the effects to last half of this is a good starting point.
+	#Range: > 1
+	"Time Between Cravings" = 12000
+	#Enable potion effect particles for benefits gained by satisfying cravings. (default: false)
+	#If true, ambient particles will be used, which are less intrusive and less visible.
+	"Toggle Effect Particles" = false
+	#Toggles whether craving reminder effects display a countdown timer
+	#When disabled, all cravings will show as “Infinite,” hiding the time left until the next craving. (default: true)
+	"Craving Timer Display" = true
+
+#Craving Weights. These determine the chances of each craving triggering compared to each other.
+#Weights are used instead of straight up chances. The higher the weight in comparison with the others, the higher the chance.
+#Example: If Sweet = 40 and Healthy = 20, then Sweet has double the chance of being picked than healthy.
+["Craving Weights"]
+	#Chance to crave something sweet. (Default: 20)
+	#Range: 1 ~ 1000
+	"Sweet Craving Chance" = 20
+	#Chance to crave something healthy. (Default: 20)
+	#Range: 1 ~ 1000
+	"Healthy Craving Chance" = 20
+	#Chance to crave something meaty. (Default: 20)
+	#Range: 1 ~ 1000
+	"Meaty Craving Chance" = 20
+	#Chance to crave something fishy. (Default: 17)
+	#Range: 1 ~ 1000
+	"Fishy Craving Chance" = 17
+	#Chance to crave something gross. (Default: 17)
+	#Range: 1 ~ 1000
+	"Gross Craving Chance" = 17
+	#Chance to crave something fancy. (Default: 14)
+	#Range: 1 ~ 1000
+	"Fancy Craving Chance" = 14
+	#Chance to crave something hearty. (Default: 14)
+	#Range: 1 ~ 1000
+	"Hearty Craving Chance" = 14
+	#Chance to crave something raw. (Default: 5)
+	#Range: 1 ~ 1000
+	"Raw Craving Chance" = 5
+
+["Streak Settings"]
+	#Number of consecutive cravings that must be satisfied to trigger a streak bonus. (default = 5)
+	#Range: > 1
+	"Streak Amount" = 5
+	#Extra experience points granted on top of the base reward when a streak bonus is triggered. (default = 5)
+	#Range: > 0
+	"Bonus XP" = 5
+	#Extra saturation granted on top of the base reward when a streak bonus is triggered. (default = 3)
+	#Range: 0.0 ~ 20.0
+	"Bonus Saturation" = 3.0
+	#Additional effect amplifier levels added to the reward effect during a streak bonus. (default = 0)
+	#Range: 0 ~ 255
+	"Bonus Level" = 0
+	#Extra duration (in ticks) added to the reward effect during a streak bonus. (default = 2400)
+	#Range: > 0
+	"Bonus Duration" = 2400
+
+["Palate Cleanser Settings"]
+	#Toggles whether drinking a Palate Cleanser applies the Upset Stomach effect as a cooldown.
+	#Disable to allow continuous use of the potion without any delay. (Default: true)
+	"Upset Stomach Effect Toggle" = true
+	#Sets the duration (in ticks) of the Upset Stomach cooldown applied after drinking a Palate Cleanser. (default = 3000)
+	#Range: > 0
+	"Upset Stomach Duration" = 3000
+

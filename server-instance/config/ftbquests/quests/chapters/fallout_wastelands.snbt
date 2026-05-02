@@ -1,0 +1,531 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "fallout_wastelands"
+	group: "3BF99559A31D6EB4"
+	id: "1DA395A6DB19ED8B"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Wasteland Portal Frame, Wasteland Portal Igniter."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+				"Craft the portal frame and igniter through the space-gated recipes. They consume space casing, rocket controls, rocket engine work, netherite oxygen, and Hastelloy."
+				"This makes Fallout access a manufactured route, not an early decorative portal."
+			]
+			hide_dependency_lines: false
+			icon: "fallout_wastelands_:portal_frame"
+			id: "46C2A787E70097FA"
+			rewards: [
+				{
+					count: 4
+					id: "27FBE2E305FE2D3A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5650E2094D14639D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "137197C09AA34E9E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EBA9383DBDA8985"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "330138BFB4EF2B00"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1B2B6317AF62C019"
+					item: "fallout_wastelands_:portal_frame"
+					type: "item"
+				}
+				{
+					id: "14735D6053DE946E"
+					item: {
+						Count: 1
+						id: "fallout_wastelands_:wastelands"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Wasteland Portal"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46C2A787E70097FA"]
+			description: [
+				"Goal: obtain Antiradsuit Helmet, Antiradsuit Chestplate."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "fallout_wastelands_:antiradsuit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "34469CBCD0942FD5"
+			rewards: [
+				{
+					count: 4
+					id: "19B02CF5B595A240"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "625B928B37D388A0"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14448ACD03E8BEF1"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F1ADC6850682222"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C419ACAFB93E99B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6E48FF4B3B3FD612"
+					item: {
+						Count: 1
+						id: "fallout_wastelands_:antiradsuit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "166D809BBBEE9CDA"
+					item: {
+						Count: 1
+						id: "fallout_wastelands_:antiradsuit_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Anti-Rad Suit"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Dented Can, Copperwires."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: "fallout_wastelands_:dented_can"
+			id: "1648015D57B60570"
+			rewards: [
+				{
+					count: 4
+					id: "3B0606BB454EF72C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06071F6FA88F3FD6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "375519AF3777E439"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39D2C77999EDFD61"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A4B2C1A745555A1"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "63A37DC7C464A04F"
+					item: "fallout_wastelands_:dented_can"
+					type: "item"
+				}
+				{
+					id: "4AB519B972CD3AE2"
+					item: "fallout_wastelands_:copperwires"
+					type: "item"
+				}
+			]
+			title: "Wasteland Scrap"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Cram, Canned Beef."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: "fallout_wastelands_:cram"
+			id: "42AAE08D1C00BA38"
+			rewards: [
+				{
+					count: 4
+					id: "0E1969AEF886DB18"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A9ECAF766B89ADD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "073C451723D42701"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2615A3246A6C4B37"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "09EAA66CC8CAECB8"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7D17BC99413B906A"
+					item: "fallout_wastelands_:cram"
+					type: "item"
+				}
+				{
+					id: "36B3A36A37F75053"
+					item: "fallout_wastelands_:canned_beef"
+					type: "item"
+				}
+			]
+			title: "Packaged Food"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Advanced Motherboard, Advanced Motor."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: "fallout_wastelands_:advanced_motherboard"
+			id: "34C9B7FF384FC508"
+			rewards: [
+				{
+					count: 4
+					id: "7C90859AD10B1CB5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "793567AD2869DF46"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "160C85CE65BDA64C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F46854947368CF4"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F882B176557CDE1"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0AFD4C2A188A8D3B"
+					item: "fallout_wastelands_:advanced_motherboard"
+					type: "item"
+				}
+				{
+					id: "7A910CFE57C4AD76"
+					item: "fallout_wastelands_:advanced_motor"
+					type: "item"
+				}
+			]
+			title: "Advanced Electronics"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Chinesepistol."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "fallout_wastelands_:chinesepistol"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2532E0E90FE4BE02"
+			rewards: [
+				{
+					count: 4
+					id: "733A343AA8E4CDF2"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18BFFC2DC67A30AE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2A6061979623058E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "58B678B064EFC502"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5F8EB6BB92EAE1AA"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5446DD4D2893D7A6"
+				item: {
+					Count: 1
+					id: "fallout_wastelands_:chinesepistol"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Wasteland Weapon"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Bas Ecore."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: "fallout_wastelands_:bas_ecore"
+			icon_scale: 1.18d
+			id: "610D56A3293B9933"
+			rewards: [
+				{
+					count: 4
+					id: "56D45A30D7474484"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "027ED87120E7D1EE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4D678606479D6A4F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D834951DBDB126B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DF40AF3522C9395"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "13AE7E7BE7017201"
+				item: "fallout_wastelands_:bas_ecore"
+				type: "item"
+			}]
+			title: "Power Core"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["610D56A3293B9933"]
+			description: [
+				"Goal: obtain Apa 1 Chestplate, Apa 1 Helmet."
+				"Why it matters: This supports hazardous wasteland scavenging with protection, supplies, and recovered technology."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "fallout_wastelands_:apa_1_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "751245D0A3FE56D4"
+			rewards: [
+				{
+					count: 4
+					id: "36E5F1BF78179792"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "13D5930542987B46"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4DD82AFD0138ED0A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "798EF6A703CF23C9"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1FE47DEA128B4068"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5010D570B4A4572E"
+					item: {
+						Count: 1
+						id: "fallout_wastelands_:apa_1_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6CDCCB48878AA867"
+					item: {
+						Count: 1
+						id: "fallout_wastelands_:apa_1_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Power Armor Frame"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Fallout Wastelands"
+}

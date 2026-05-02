@@ -1,0 +1,3 @@
+Baseline median: 11.675 GiB
+Top memory savers when disabled:
+AE2-Things-1.2.1.jar	peak=10.466GiB	delta=+1.209GiB	marker=sampled_timeout

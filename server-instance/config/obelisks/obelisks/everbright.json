@@ -1,0 +1,31 @@
+{
+  "id": "everbright",
+  "displayName": "Everbright Rift Anchor",
+  "instanceTemplateId": "everbright",
+  "targetDimension": "blue_skies:everbright",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "blue_skies",
+  "enabled": true,
+  "worldgenWeight": 1.0,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "blue_skies:turquoise_stonebrick",
+  "meteorShellBlock": "blue_skies:polished_taratite",
+  "pedestalBlock": "blue_skies:polished_rimestone",
+  "returnPadFrameBlock": "blue_skies:chiseled_turquoise_stonebrick",
+  "platformFloorBlock": "blue_skies:turquoise_stonebrick",
+  "craterFillBlocks": [
+    "blue_skies:turquoise_stonebrick",
+    "blue_skies:polished_taratite",
+    "blue_skies:polished_rimestone",
+    "blue_skies:chiseled_turquoise_stonebrick",
+    "blue_skies:crystal_sandstone"
+  ],
+  "rewardTableId": "default",
+  "useAe2Skystone": true
+}

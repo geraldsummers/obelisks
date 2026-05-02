@@ -1,0 +1,17 @@
+filename = 'raider_detector-1.0.0.jar'
+name = 'Raider Radar'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'raider_detector-1.0.0.jar'
+
+[download]
+hash = '31792718ccba002bb298e27a26523507ad7a01f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4995750
+project-id = 955548

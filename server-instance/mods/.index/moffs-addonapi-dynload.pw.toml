@@ -1,0 +1,17 @@
+filename = 'addonapi-mc1.20.1-2.0.0.jar'
+name = "Moff's AddonAPI-DynLoad"
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'addonapi-mc1.20.1-2.0.0[Forge]'
+
+[download]
+hash = '73395a58f5a996c815d76813d0e247388b163fb1'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7695505
+project-id = 1242459

@@ -1,0 +1,17 @@
+filename = 'ticex-mc1.20.1-0.5.1-all.jar'
+name = 'TiCEX - Tinkers Construct EX'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'ticex-mc1.20.1-0.5.1[Forge]'
+
+[download]
+hash = '0609e95a7fb35e4fc371be7969f856f7db18354e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7913989
+project-id = 1242469

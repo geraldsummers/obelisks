@@ -1,0 +1,373 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "building_tools"
+	group: "42544D4255494C44"
+	id: "225DA33150E3C58B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Diamond Wand, Netherite Wand."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "wands:diamond_wand"
+				tag: {
+					Damage: 0
+				}
+			}
+			icon_scale: 1.18d
+			id: "210E78E79840287D"
+			rewards: [
+				{
+					count: 4
+					id: "54D7D60B0A073874"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2D8E5BD0829DD1A3"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6DF66A2D67C2D28B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4E29E0D354CA5DC0"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0424EDF413715222"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6EBA83A08F17228F"
+					item: {
+						Count: 1
+						id: "wands:diamond_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "355A681B43D2732D"
+					item: {
+						Count: 1
+						id: "wands:netherite_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Late Building Wand"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Building Gadget, Gadget Exchanging."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+			]
+			hide_dependency_lines: false
+			icon: "buildinggadgets2:gadget_building"
+			icon_scale: 1.18d
+			id: "10FC1EC3DA528853"
+			rewards: [
+				{
+					count: 4
+					id: "06C37613DBB4A092"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "12AC35062F413D9C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "718BC359D1AEE866"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "14B07DD438E400B8"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6AB1DC6F0937480B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6A42BEFC75E6EE0C"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "7A6BEE5AD503553F"
+					item: "buildinggadgets2:gadget_exchanging"
+					type: "item"
+				}
+			]
+			title: "Building Gadget"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10FC1EC3DA528853"]
+			description: [
+				"Goal: obtain Template Manager."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+			]
+			hide_dependency_lines: false
+			icon: "buildinggadgets2:template_manager"
+			id: "017A985B67CD4AC0"
+			rewards: [
+				{
+					count: 4
+					id: "51007B498C759E21"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CB2AA2C162ACCBC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DBEDC3071275E52"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79CE9B52A8CD3951"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5551EFF4CD0F5C7F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "36FB11B4BB0AB8F0"
+				item: "buildinggadgets2:template_manager"
+				type: "item"
+			}]
+			title: "Template Manager"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10FC1EC3DA528853"]
+			description: [
+				"Goal: obtain Gadget Copy Paste, Gadget Cut Paste."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+			]
+			hide_dependency_lines: false
+			icon: "buildinggadgets2:gadget_copy_paste"
+			id: "6A0F4A6BF13B8A36"
+			rewards: [
+				{
+					count: 4
+					id: "7834EA23A0FEB6EC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C1DB6DC1E204AE2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3ADC032F3BA2F947"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "49F3AA49D091E1FE"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "64CFD16653CADB5B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "610737FC7374F7BC"
+					item: "buildinggadgets2:gadget_copy_paste"
+					type: "item"
+				}
+				{
+					id: "7AC642BF567B0B5A"
+					item: "buildinggadgets2:gadget_cut_paste"
+					type: "item"
+				}
+			]
+			title: "Copy and Cut Gadgets"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["272E3C4DE86820FA"]
+			description: [
+				"Goal: obtain Brass Drone."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+			]
+			hide_dependency_lines: false
+			icon: "create_sa:brass_drone"
+			id: "2BC5CF0A359ADB8C"
+			rewards: [
+				{
+					count: 4
+					id: "7C8CCE517AA7FA95"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4DFAA0A503671E56"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5D3A12B2BE8014EB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5BBE7706E11FDC9F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B35245E392F04B8"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3331303A2214CA30"
+				item: "create_sa:brass_drone"
+				type: "item"
+			}]
+			title: "Create Drone Helper"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BC5CF0A359ADB8C"]
+			description: [
+				"Goal: obtain Gadget Destruction."
+				"Why it matters: This covers construction acceleration tools that are intentionally delayed until AE2-era material control exists."
+				"Destructive mass edits are last because they can erase local block economy if they arrive too early."
+			]
+			hide_dependency_lines: false
+			icon: "buildinggadgets2:gadget_destruction"
+			icon_scale: 1.18d
+			id: "330BFE45BD20AC34"
+			rewards: [
+				{
+					count: 4
+					id: "56CEF63F335F5576"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "34E9C14E6E224DE2"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "54B51B525EEDACCA"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2540474CCD7FCB80"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1039CEC97D1E0413"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5F240986A114F0DA"
+				item: "buildinggadgets2:gadget_destruction"
+				type: "item"
+			}]
+			title: "Destruction Gadget"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Building Tools"
+}

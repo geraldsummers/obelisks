@@ -199,7 +199,7 @@ Progression candidates: 654
 
 ## Quest-Book Use
 
-- Use `combat_supply` foods for expedition and pillager-pressure nodes.
+- Use `combat_supply` foods for expedition and pillager-campaigns nodes.
 - Use `route_survival` foods for Nether, ocean, deepslate, lava-depth, and dimension-route preparation.
 - Use `movement_supply` foods for travel and obelisk-run preparation.
 - Use `varied_nutrition` and `strong_nutrition` foods as Diet progression candidates even when they have no potion effects.

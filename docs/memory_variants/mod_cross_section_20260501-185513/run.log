@@ -1,0 +1,15 @@
+Total jars to test: 1
+[18:55:13] RUN baseline_1 
+marker=sampled_timeout elapsed=40 java_pid=35404 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185513/baseline_1.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+62:[01May2026 18:55:27.962] [main/INFO] [Puzzles Lib/]: Loading 358 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11955 peakRssGiB=11.68
+Baseline median: 12241920 KB (11.675 GiB)
+[18:55:57] RUN xmod_1_AE2_Things_1_2_1_jar ^AE2\-Things\-1\.2\.1\.jar$
+disabled AE2-Things-1.2.1.jar
+marker=sampled_timeout elapsed=40 java_pid=36421 profile=/home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185513/xmod_1_AE2_Things_1_2_1_jar.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 18:56:12.330] [main/INFO] [Puzzles Lib/]: Loading 357 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=10717 peakRssGiB=10.47
+[18:56:42] 1/1 AE2-Things-1.2.1.jar peak=10.466GiB delta=1.209GiB marker=sampled_timeout
+Done. CSV: /home/gerald/obelisks/docs/memory_variants/mod_cross_section_20260501-185513/mod_cross_section.csv

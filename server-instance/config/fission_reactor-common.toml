@@ -1,0 +1,4 @@
+#Legacy config key retained; multiplier applied to RTG base heat times its criticality factor to determine heat/t output.
+#Range: 0.0 ~ 64.0
+rtgHeatToFeFactor = 0.1
+

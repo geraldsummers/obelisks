@@ -1,0 +1,8 @@
+disabled sophisticatedstorageinmotion-1.20.1-0.10.28.198.jar
+disabled sophisticatedbackpacks-1.20.1-3.24.35.1675.jar
+disabled sophisticatedcore-1.20.1-1.3.21.1676.jar
+disabled sophisticatedstorage-1.20.1-1.4.39.1666.jar
+marker=sampled_timeout elapsed=92 java_pid=69090 profile=/home/gerald/obelisks/docs/memory_variants/cluster_cross_section_20260501-190050/cluster_060.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+56:[01May2026 19:28:25.828] [main/INFO] [Puzzles Lib/]: Loading 354 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=13964 peakRssGiB=13.64

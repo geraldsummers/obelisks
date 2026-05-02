@@ -1,0 +1,377 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "lost_cities"
+	group: "3BF99559A31D6EB4"
+	id: "76DBEFDA62C71851"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Netherite Oxygen Backtank."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"Do not treat Lost Cities as an early world preset. Enter it only after advanced space survival is online."
+				"Pack oxygen, food, water, blocks, lights, and return logistics before committing to a city route."
+			]
+			hide_dependency_lines: false
+			icon: "creatingspace:netherite_oxygen_backtank"
+			icon_scale: 1.18d
+			id: "11DE746A21378B8B"
+			rewards: [
+				{
+					count: 4
+					id: "24A1711519B1505C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DF13084681AD62B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "23BB6B55DAAF5FCE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "19F1AC43565C2996"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7EE9EBD4AC4885DA"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "00A64326197F90FD"
+				item: "creatingspace:netherite_oxygen_backtank"
+				type: "item"
+			}]
+			title: "Space-Era City Route"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11DE746A21378B8B"]
+			description: [
+				"Goal: obtain Map, Compass."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"Cities are navigation problems. Bring maps and a compass so routes through buildings, subways, and streets stay readable."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:map"
+			id: "06BFA4126E12B2F1"
+			rewards: [
+				{
+					count: 4
+					id: "106DE5F10124268A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B29C47395D97293"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6EF017C6AF92A633"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0B12DA312D034A0E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1839AE39611299EB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4990702338409E84"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					id: "6ABA00FDD760B854"
+					item: "minecraft:compass"
+					type: "item"
+				}
+			]
+			title: "Urban Mapping Stock"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["06BFA4126E12B2F1"]
+			description: [
+				"Goal: obtain Rail, Minecart."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"Lost Cities rail corridors are physical logistics opportunities. Scout them as route infrastructure, not just loot tunnels."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:rail"
+			icon_scale: 1.18d
+			id: "29A3A909EE4E7BF4"
+			rewards: [
+				{
+					count: 4
+					id: "220D80332D3587AA"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "27E3F87A0D970992"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4FF5EAAD7A20D107"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6019786AC3DEEA24"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EF7E239F364114B"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1FE7B094833E84A1"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					id: "396AA9AE3626A97F"
+					item: "minecraft:minecart"
+					type: "item"
+				}
+			]
+			title: "Rail Dungeon Scouting"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11DE746A21378B8B"]
+			description: [
+				"Goal: obtain Golden Apple, Roast Chicken Block."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"Urban scavenging has long sightlines, vertical danger, and recovery risk. Stage food and healing before deep building clears."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:golden_apple"
+			id: "0302E7E63BB2CBD1"
+			rewards: [
+				{
+					count: 4
+					id: "5CC8A1DF44186A7D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4DA0CC9306DE7C99"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2244FBBCB43960A6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5913E7159E9D9516"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "49FEC7FFEE5EAA41"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "3DD2976B8F1A9D26"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "628A91C8BDE59941"
+					item: "farmersdelight:roast_chicken_block"
+					type: "item"
+				}
+			]
+			title: "Recovery Cache"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Gold Coin, Chest."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"World loot and coins are part of the crafting economy. Treat recovered city loot as a resource stream that still has to be hauled home."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:gold_coin"
+			id: "1C6633D016BCAD8A"
+			rewards: [
+				{
+					count: 4
+					id: "23BC720E268234A7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "30EA2E7D938A042D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45F939160CF9DCD8"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D4ED3A88F551E72"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "551BF592FF328845"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0EFC0B72BF6A289E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					id: "7DAC1428DBDC11EB"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "City Chest Recovery"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Iron Bars, Chain, Lantern."
+				"Why it matters: This advances Lost Cities as a space-era ruin route for scavenging, rail corridors, and urban recovery work."
+				"Bring back durable city materials for outposts, rail stops, and defensive routes. The value is not only the chest contents."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:iron_bars"
+			icon_scale: 1.18d
+			id: "0C13207F37847522"
+			rewards: [
+				{
+					count: 4
+					id: "1C006014917C210F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "25E7668860F01C78"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "18D17CBEF85D7841"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0712765C3A6285EA"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A4AB569EB1BAD09"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6429FEC35B8A5BEA"
+					item: "minecraft:iron_bars"
+					type: "item"
+				}
+				{
+					id: "1CA4047C2B44C34E"
+					item: "minecraft:chain"
+					type: "item"
+				}
+				{
+					id: "0B37D4FEEAA2AD43"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+			]
+			title: "Recovered City Infrastructure"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Lost Cities"
+}

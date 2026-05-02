@@ -1,0 +1,17 @@
+filename = 'TinyCoal-forge-1.20.1-1.1.5.jar'
+name = 'Tiny Coal'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'TinyCoal-forge-1.20.1-1.1.5.jar'
+
+[download]
+hash = '5263cdcc3c686f277ba3876041fe434df2147411'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5249440
+project-id = 395272

@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "values": [
+    "protection_pixel:linkplate_leggings",
+    "protection_pixel:tosaki_leggings",
+    "protection_pixel:buoyancyas_leggings",
+    "protection_pixel:buoyancy_leggings",
+    "protection_pixel:anchorpointas_leggings",
+    "protection_pixel:anchorpoint_leggings",
+    "protection_pixel:slingshotas_leggings",
+    "protection_pixel:slingshot_leggings"
+  ]
+}

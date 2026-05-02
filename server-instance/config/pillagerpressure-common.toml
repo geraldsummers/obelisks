@@ -1,0 +1,86 @@
+
+[scheduler]
+	#Enable pack-owned pillager pressure patrols.
+	enabled = true
+	#Ticks between fallback patrol attempts. Campaigns use their own scheduler.
+	#Range: 20 ~ 240000
+	interval_ticks = 1200
+	#Chance that each fallback interval attempts a patrol per eligible player.
+	#Range: 0.0 ~ 1.0
+	spawn_chance = 0.95
+	overworld_only = true
+	#Keep true while tuning so creative playtests still receive pressure.
+	allow_creative_players = true
+	skip_spectator_players = true
+	#Set doPatrolSpawning=false on server start so this mod is the sole patrol scheduler.
+	disable_vanilla_patrol_spawning = true
+
+[placement]
+	#Range: 8 ~ 192
+	min_radius = 32
+	#Range: 8 ~ 256
+	max_radius = 64
+	#Surface placement attempts before the patrol attempt is skipped.
+	#Range: 1 ~ 128
+	spawn_attempts = 24
+	#Stops runaway accumulation of pressure mobs around a player.
+	#Range: 0 ~ 256
+	max_active_near_player = 48
+	#Range: 16 ~ 512
+	active_check_radius = 128
+
+[patrol]
+	spawn_leader = true
+	#Range: 0 ~ 40
+	min_pillagers = 4
+	#Range: 0 ~ 40
+	max_pillagers = 7
+	#Range: 0.0 ~ 1.0
+	special_chance = 0.75
+	#Range: 0 ~ 40
+	special_amount = 2
+	#Missing entity ids are skipped, so optional illager mods can be removed safely.
+	special_illagers = ["minecraft:vindicator", "minecraft:evoker", "minecraft:witch", "takesapillage:archer", "takesapillage:skirmisher", "takesapillage:legioner", "savage_and_ravage:griefer", "savage_and_ravage:executioner", "savage_and_ravage:iceologer", "savage_and_ravage:trickster"]
+	target_player_immediately = true
+	#Persistence prevents campaign mobs from vanishing before they matter; accumulation caps prevent runaway counts.
+	persistent_patrol_mobs = true
+
+[campaigns]
+	enabled = true
+	#Range: 4 ~ 32
+	region_size_chunks = 8
+	#Regions older than this may receive satellite camps. Default is 5 Minecraft days.
+	#Range: 1200 ~ 2400000
+	stale_region_ticks = 120000
+	#Range: 20 ~ 6000
+	base_scan_interval_ticks = 200
+	#Range: 20 ~ 6000
+	campaign_tick_interval = 100
+	#Range: 10 ~ 6000
+	campaign_speed_ticks_per_chunk = 80
+	#Range: 0 ~ 32
+	max_campaigns_per_base = 4
+	#Range: 0 ~ 24
+	max_satellites_per_major_base = 4
+	#Cancel natural raider spawns inside registered bases and spend base economy for garrisons instead.
+	replace_natural_outpost_spawns = true
+	#Structure ids treated as major pillager bases. Modded structures can be added here after registry confirmation.
+	structure_base_ids = ["minecraft:pillager_outpost"]
+	#Range: 0 ~ 32
+	death_flags_per_kill = 12
+	#Range: 0 ~ 64
+	max_death_flags_per_chunk = 24
+	#Named officers below this health fraction try to escape/collapse to campaign state.
+	#Range: 0.0 ~ 1.0
+	officer_escape_health = 0.22
+	#Named officers may place temporary invasion blocks to bridge gaps or ladder walls. They never break or replace solid blocks.
+	officer_engineering_enabled = true
+	#Range: 5 ~ 1200
+	officer_engineering_cooldown_ticks = 30
+	#Temporary officer-placed blocks are removed after this many ticks once their chunk is loaded again.
+	#Range: 200 ~ 72000
+	officer_engineering_ttl_ticks = 6000
+	#Per spawned officer cap for temporary engineering placements.
+	#Range: 0 ~ 128
+	officer_engineering_max_blocks = 24
+

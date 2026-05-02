@@ -1,0 +1,595 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "magic_i"
+	group: "77AFAA45BDFC5D88"
+	id: "1892E60323328CF3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["612030654C6E045A"]
+			description: [
+				"Goal: obtain Blank Slate."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:blankslate"
+			icon_scale: 1.18d
+			id: "5C9FBDB96C3823F8"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "6A4B27E835B402ED"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C38687065A63DCC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "190BAD3A42DC920E"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			title: "Blank Slate Access"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Mixing Cauldron."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "hexerei:mixing_cauldron"
+			id: "6F355659B9E0DCF5"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "5199AD627EB87C48"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6DE47A009B264008"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "2F85012F8DAF48DC"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "Hexerei Milestone"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Spirit Altar."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "malum:spirit_altar"
+			id: "37FCC41A66D9E111"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "233B45015BB3D4A5"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "066C21AB4965CFBE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "45F7F78E3061702B"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			title: "Malum Milestone"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["37FCC41A66D9E111"]
+			description: [
+				"Goal: obtain Runewood Sapling, Azure Runewood Sapling."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+				"Dynamic Trees for Malum makes Runewood part of the living world instead of static decoration."
+			]
+			hide_dependency_lines: false
+			icon: "malum:runewood_sapling"
+			id: "244CE07B529C026D"
+			rewards: [
+				{
+					count: 4
+					id: "7A0C8AF8E09AA045"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1F69D0F2A6B25665"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "32AF7EDFDB9D33EA"
+					item: "malum:runewood_sapling"
+					type: "item"
+				}
+				{
+					id: "62E052F15B172A5D"
+					item: "malum:azure_runewood_sapling"
+					type: "item"
+				}
+			]
+			title: "Living Runewood"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6F355659B9E0DCF5"
+				"37FCC41A66D9E111"
+			]
+			description: [
+				"Goal: obtain Reinforced Slate."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:reinforcedslate"
+			id: "1A4C0C61426D77F6"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "595DDBF95930947A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4ACA35606B3D537A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "5CA5690E92DCF24B"
+				item: "bloodmagic:reinforcedslate"
+				type: "item"
+			}]
+			title: "Reinforced Slate Access"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Imbuement Chamber."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:imbuement_chamber"
+			id: "12760891F83B56D0"
+			rewards: [
+				{
+					count: 4
+					id: "1D6A8AC3FE336036"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2E5D284CC9F2BEDE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "68CC6E4211A02CE3"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Ars Entry"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Enchanting Apparatus."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "1FA0DA640B938FD8"
+			rewards: [
+				{
+					count: 4
+					id: "682391CE22AB0A80"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "78CEC1A81EAD4DF0"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "35FD4DAE3E1C33E4"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			title: "Enchanting Apparatus"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Ritual Brazier."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "ars_nouveau:ritual_brazier"
+			id: "508D08F2C7D1AE09"
+			rewards: [
+				{
+					count: 4
+					id: "399CC504E1790D6A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "575A8F9D048A1624"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "42F9D09BA0FB4619"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Ritual Brazier"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Offering Table."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "naturesaura:offering_table"
+			id: "17F349498C64D14E"
+			rewards: [
+				{
+					count: 4
+					id: "52A1F92B25616100"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0DE477AC20B62845"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1EDEA19C85C7DFC3"
+				item: "naturesaura:offering_table"
+				type: "item"
+			}]
+			title: "Nature Aura Entry"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["508D08F2C7D1AE09"]
+			description: [
+				"Goal: obtain Imbued Slate."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:infusedslate"
+			id: "2CC6E28276A98760"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "3CC9733C38DC6A50"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3E9CE7AE3F7A8564"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "13013F52B7722E73"
+				item: "bloodmagic:infusedslate"
+				type: "item"
+			}]
+			title: "Imbued Slate Access"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Chalk White Impure."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "occultism:chalk_white_impure"
+			id: "3283929DD58F8795"
+			rewards: [
+				{
+					count: 4
+					id: "038C774A560A4F34"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72AA00AA5CFD8785"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "08E5FB96F8A04D17"
+				item: "occultism:chalk_white_impure"
+				type: "item"
+			}]
+			title: "Occultism Chalk"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Dark Altar."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "goety:dark_altar"
+			id: "2B15B913911FB6C1"
+			rewards: [
+				{
+					count: 4
+					id: "0830EA9AC92632A0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32E7752CE8E7982E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0196C0337F363195"
+				item: "goety:dark_altar"
+				type: "item"
+			}]
+			title: "Goety Dark Altar"
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3283929DD58F8795"
+				"2B15B913911FB6C1"
+			]
+			description: [
+				"Goal: obtain Demonic Slate."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:demonslate"
+			icon_scale: 1.18d
+			id: "7A8A5A5D953E7BC1"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "16E3DA31273821A7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C5A999447E9982B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "4313F500C607E5C9"
+				item: "bloodmagic:demonslate"
+				type: "item"
+			}]
+			title: "Demonic Slate Access"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A8A5A5D953E7BC1"]
+			description: [
+				"Goal: obtain Runic Altar."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "botania:runic_altar"
+			id: "1B77F9CDE731390A"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "1054EEA283A6C131"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "546B8D01DD709225"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "1E16D85727831585"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "Botania Engineering Milestone"
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B77F9CDE731390A"]
+			description: [
+				"Goal: obtain Ethereal Slate."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "bloodmagic:etherealslate"
+			icon_scale: 1.18d
+			id: "0E562BB34EEF3E95"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "52CCCCCC44A2BACD"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "003567507778B45B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "Milestone"
+			tasks: [{
+				id: "7071694317989ADE"
+				item: "bloodmagic:etherealslate"
+				type: "item"
+			}]
+			title: "Ethereal Slate Access"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Programmer, Hex Focus."
+				"Why it matters: This advances Blood Magic and opens the next set of magic systems."
+			]
+			hide_dependency_lines: false
+			icon: "psi:programmer"
+			id: "1AC68E7488698613"
+			rewards: [
+				{
+					count: 4
+					id: "0903F26C96AB2C2A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79515DA78E4C9F6A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "50CDEA87DC78CF27"
+					item: "psi:programmer"
+					type: "item"
+				}
+				{
+					id: "183B44DB5E7F7B8B"
+					item: "hexalia:hex_focus"
+					type: "item"
+				}
+			]
+			title: "Programmable Magic"
+			x: 20.0d
+			y: 0.0d
+		}
+	]
+	title: "Magic I"
+}

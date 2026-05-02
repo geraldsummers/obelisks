@@ -1,0 +1,17 @@
+filename = 'iceandfire-2.1.13-1.20.1-beta-5.jar'
+name = 'Ice and Fire: Dragons'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'iceandfire-2.1.13-1.20.1-beta-5.jar'
+
+[download]
+hash = '7e828cbb046ca3d622e92c68f956bd1c0155dc6f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5633453
+project-id = 264231

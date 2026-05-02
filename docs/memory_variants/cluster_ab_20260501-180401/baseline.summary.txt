@@ -1,0 +1,4 @@
+marker=sampled_timeout elapsed=181 java_pid=10332 profile=docs/memory_variants/cluster_ab_20260501-180401/baseline.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+62:[01May2026 18:04:17.785] [main/INFO] [Puzzles Lib/]: Loading 358 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=14392 peakRssGiB=14.06

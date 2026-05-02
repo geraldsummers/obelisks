@@ -1,0 +1,488 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "su_heat"
+	group: "4B746D4352454154"
+	id: "137BCB2ED2BCBBA0"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Water Wheel."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Water wheels are the first stable rotational source for real workshop load."
+			]
+			hide_dependency_lines: false
+			icon: "create:water_wheel"
+			icon_scale: 1.18d
+			id: "19F02F74B86C205D"
+			rewards: [
+				{
+					count: 4
+					id: "64B73496E662B55D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B5633EC335D798F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "552B85FABB6776B2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "0F59FD9B3ADD39C0"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "Water Wheel Source"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Windmill Bearing."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Windmills scale cleanly when your base footprint grows."
+			]
+			hide_dependency_lines: false
+			icon: "create:windmill_bearing"
+			id: "665355978E3656CD"
+			rewards: [
+				{
+					count: 4
+					id: "225C18F17E8AF555"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "684F30239CDEF5F1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "245E74592CBF15B6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "208A2987C1E7C0D9"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "Windmill Source"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Shaft, Gearbox, Belt Connector."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Distance has cost. Keep generation close to consumers or pay for readable transmission hardware."
+			]
+			hide_dependency_lines: false
+			icon: "create:shaft"
+			id: "1ADCDAD436CB1439"
+			rewards: [
+				{
+					count: 4
+					id: "41D2ABA5186E8594"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "628FA718DD94593D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53BE66644EEF101E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "6DF55BEE803A42D4"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "494AF2287F4D46B3"
+					item: "create:gearbox"
+					type: "item"
+				}
+				{
+					id: "1222F19CB397E077"
+					item: "create:belt_connector"
+					type: "item"
+				}
+			]
+			title: "SU Transport Losses"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"665355978E3656CD"
+				"200A6D5E84D5AF08"
+			]
+			description: [
+				"Goal: obtain Blaze Burner."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Blaze burners are process heat infrastructure, not just a mixer upgrade."
+			]
+			hide_dependency_lines: false
+			icon: "create:blaze_burner"
+			icon_scale: 1.18d
+			id: "0867F0C2C0E77EB6"
+			rewards: [
+				{
+					count: 4
+					id: "792B0F221821A390"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6559EF12EBABF559"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "204F2550863B662A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "23D0C1C8ABBA4EDA"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "Blaze Burner Heat"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0867F0C2C0E77EB6"]
+			description: [
+				"Goal: obtain Diesel Engine."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Diesel converts fluid logistics into dense rotational power."
+			]
+			hide_dependency_lines: false
+			icon: "createdieselgenerators:diesel_engine"
+			id: "75774ED4F8570945"
+			rewards: [
+				{
+					count: 4
+					id: "757E1CBD7373A53E"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2B1765E1464B3A98"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1E00C626A90C98CE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2C86EE05A962B905"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			title: "Diesel Engine Source"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["75774ED4F8570945"]
+			description: [
+				"Goal: obtain Distillation Controller."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Refining turns one engine recipe into an industrial chain."
+			]
+			hide_dependency_lines: false
+			icon: "createdieselgenerators:distillation_controller"
+			id: "38C8BED2CDFB2199"
+			rewards: [
+				{
+					count: 4
+					id: "3B0613A83853C251"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "771087C40A34F9BD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05173EE2AFFEB5AC"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5E99161D1FC84697"
+				item: "createdieselgenerators:distillation_controller"
+				type: "item"
+			}]
+			title: "Diesel Refining"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0867F0C2C0E77EB6"]
+			description: [
+				"Goal: obtain Basic Solar Heating Plate."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Solar heat rewards planned sites with clear exposure and enough material investment."
+			]
+			hide_dependency_lines: false
+			icon: "create_new_age:basic_solar_heating_plate"
+			id: "0AC5D0B02334F258"
+			rewards: [
+				{
+					count: 4
+					id: "1E8028D491DA9DF9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1AF690F672AE4127"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "540D7E151907D2B9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "6E221151BE84C752"
+				item: "create_new_age:basic_solar_heating_plate"
+				type: "item"
+			}]
+			title: "Solar Heat Source"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Heat Pipe."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Heat pipes make thermal work visible and routable instead of implicit."
+			]
+			hide_dependency_lines: false
+			icon: "create_new_age:heat_pipe"
+			id: "4C401335A7187918"
+			rewards: [
+				{
+					count: 4
+					id: "2CC5A4B5E67CA066"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "46B0839858B77173"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "026631783C811699"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1D7B506C71BED46A"
+				item: "create_new_age:heat_pipe"
+				type: "item"
+			}]
+			title: "Heat Pipe Network"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Heat Pump."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Heat pumps are the active thermal-control step before electricity and coolant work."
+			]
+			hide_dependency_lines: false
+			icon: "create_new_age:heat_pump"
+			id: "40F5C739FEDC6FF3"
+			rewards: [
+				{
+					count: 4
+					id: "76DD6D726883750B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "530E5AECC27B7AA5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C4341A7FAD9F5A7"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "578EC3AC1971CCE2"
+				item: "create_new_age:heat_pump"
+				type: "item"
+			}]
+			title: "Heat Pump"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40F5C739FEDC6FF3"]
+			description: [
+				"Goal: obtain Stirling Engine."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"Stirling closes the loop: structured heat can become rotational output again."
+			]
+			hide_dependency_lines: false
+			icon: "create_new_age:stirling_engine"
+			icon_scale: 1.18d
+			id: "3BE75391ADB7460D"
+			rewards: [
+				{
+					count: 4
+					id: "2E8031B95D7CC4E2"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C306842DCC71DA8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "72C118C17BB8F4F1"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "52C1533CF8B87D25"
+				item: "create_new_age:stirling_engine"
+				type: "item"
+			}]
+			title: "Stirling Engine"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BE75391ADB7460D"]
+			description: [
+				"Goal: obtain Conductive Casing."
+				"Why it matters: This develops rotational power and heat handling for your workshop."
+				"You now understand SU generation, transmission, and heat well enough to build a grid."
+			]
+			hide_dependency_lines: false
+			icon: "powergrid:conductive_casing"
+			id: "097203DFB50CCE77"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "79213922BC115095"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6271119FBD5C21FD"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6ED640EE0B6D87DD"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.12d
+			subtitle: "Exit"
+			tasks: [{
+				id: "3E2101ED00A9347D"
+				item: "powergrid:conductive_casing"
+				type: "item"
+			}]
+			title: "Exit: Electrical Grid"
+			x: 14.0d
+			y: 0.0d
+		}
+	]
+	title: "SU and Heat"
+}

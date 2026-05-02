@@ -1,0 +1,290 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "pillager_campaigns"
+	group: "3570F9CE90E09BD1"
+	id: "6F34D7D01DDD05EB"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Spyglass, Crossbow."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"Scout before you fight. A spyglass and ranged tool turn patrol contact into readable terrain decisions instead of panic melee."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:spyglass"
+			icon_scale: 1.18d
+			id: "3817464943816B3C"
+			rewards: [
+				{
+					count: 4
+					id: "0E06064B1FE8A40D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "118B541009F4D443"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5DC49DBCA4267546"
+					item: "minecraft:spyglass"
+					type: "item"
+				}
+				{
+					id: "6FB18FB32BC5A2E9"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Campaign Scout Kit"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3817464943816B3C"]
+			description: [
+				"Goal: obtain Bell, Goat Horn."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"Use audible alarm points near roads and gates so campaign hits trigger response, not confusion."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:bell"
+			id: "42B5E154951278C5"
+			rewards: [
+				{
+					count: 4
+					id: "5C2B5745121D1318"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "61D7A51EF0023557"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "606582B652F70D99"
+					item: "minecraft:bell"
+					type: "item"
+				}
+				{
+					id: "3E8506A6A007B1C3"
+					item: "minecraft:goat_horn"
+					type: "item"
+				}
+			]
+			title: "Alarm and Muster"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3817464943816B3C"]
+			description: [
+				"Goal: obtain White Banner, Ominous Banner."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"Captains mark successful interception. Treat banners as route intelligence markers in your settlement, not trophy clutter."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:white_banner"
+			id: "07985098F82BABB4"
+			rewards: [
+				{
+					count: 4
+					id: "6E300435B4A66482"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3EA516B5622EAFC6"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "32F459846E72E6A5"
+					item: "minecraft:white_banner"
+					type: "item"
+				}
+				{
+					id: "1774A1CF0B8219D7"
+					item: "minecraft:ominous_banner"
+					type: "item"
+				}
+			]
+			title: "Captain Banner Capture"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Cartography Table, Lectern, Barrel."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"A command post is a real place: maps, records, and stock. Campaign pressure should be answered by infrastructure, not just better armor."
+			]
+			hide_dependency_lines: false
+			icon: "minecraft:cartography_table"
+			icon_scale: 1.18d
+			id: "09F116A2E7EF6702"
+			rewards: [
+				{
+					count: 4
+					id: "1C4949DF732B605F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EBF2604E10153FC"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4BAB6D88E69BFF5B"
+					item: "minecraft:cartography_table"
+					type: "item"
+				}
+				{
+					id: "194B38F0F779E876"
+					item: "minecraft:lectern"
+					type: "item"
+				}
+				{
+					id: "416096B3A261F526"
+					item: "minecraft:barrel"
+					type: "item"
+				}
+			]
+			title: "Command Post"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09F116A2E7EF6702"]
+			description: [
+				"Goal: obtain Delivery Agreement, Completed Delivery Agreement."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"After a campaign hit, route recovery should return value. Contracts and deliveries make defense part of settlement economics."
+			]
+			hide_dependency_lines: false
+			icon: "wares:delivery_agreement"
+			id: "3BD3790A3A99E45D"
+			min_width: 2
+			rewards: [
+				{
+					count: 4
+					id: "54B169276E0A5359"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05FE434F38CF3B3F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Economy"
+			tasks: [
+				{
+					id: "7CA6E857B94DA94B"
+					item: "wares:delivery_agreement"
+					type: "item"
+				}
+				{
+					id: "388344DD1F30148C"
+					item: "wares:completed_delivery_agreement"
+					type: "item"
+				}
+			]
+			title: "Recovery Contract Loop"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59BA0C0F79640CB6"]
+			description: [
+				"Goal: obtain Iron Coin, Brass Coin, Completed Delivery Agreement."
+				"Why it matters: This turns recurring pillager pressure into authored route work: scouting, staged defense, and recovery contracts."
+				"Capstone: pillager pressure now feeds your broader route economy. You can scout, defend, recover, and reinvest without breaking the pack's physical logistics rules."
+			]
+			hide_dependency_lines: false
+			icon: "dotcoinmod:iron_coin"
+			icon_scale: 1.18d
+			id: "579C617D6F26B361"
+			rewards: [
+				{
+					count: 4
+					id: "068DE1FEB7DA378F"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "332EC3DD383D2027"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					count: 16L
+					id: "09F40C8D93361425"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5E41120B59879EE2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					id: "7A577366745EDE1A"
+					item: "wares:completed_delivery_agreement"
+					type: "item"
+				}
+			]
+			title: "Battle Standard Economy"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Pillager Campaigns"
+}

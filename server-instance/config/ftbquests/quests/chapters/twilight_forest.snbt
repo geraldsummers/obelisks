@@ -1,0 +1,389 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "twilight_forest"
+	group: "3BF99559A31D6EB4"
+	id: "2B0B0766322E100F"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Magic Map."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+				"Twilight Forest access is unlocked by the Creating Space access advancement, granted when you have a netherite oxygen backtank."
+				"Build the portal only after the space survival chain is complete; this keeps Twilight as a later route branch instead of an early alternate overworld."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:magic_map"
+			icon_scale: 1.18d
+			id: "77AEAE17B64C3A1F"
+			rewards: [
+				{
+					count: 4
+					id: "342333116D1AE268"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "201FBF378E5EC3FB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "16305C08613A3D3D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "33654A62B2F2F43D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3407A418FEFFB57E"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			title: "Magic Map"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77AEAE17B64C3A1F"]
+			description: [
+				"Goal: obtain Naga Scale."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:naga_scale"
+			id: "5C0B4999D95230EC"
+			rewards: [
+				{
+					count: 4
+					id: "55489E46BACF7344"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "086B6A2CCB5AED30"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04FF300CB65D09C5"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "071104F6581CBC09"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0E00185D35EEBC7E"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
+			title: "Naga Scale"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C0B4999D95230EC"]
+			description: [
+				"Goal: obtain Lich Trophy."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:lich_trophy"
+			icon_scale: 1.18d
+			id: "6D3413BE78514071"
+			rewards: [
+				{
+					count: 4
+					id: "3A424DB07B275C60"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "24FBF08A18CD458D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "16FD34553C74D8EE"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0F67D4F6C77C3C11"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "04525DDB1A328AE3"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			title: "Lich Trophy"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5C0B4999D95230EC"]
+			description: [
+				"Goal: obtain Maze Map."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:maze_map"
+			id: "17C35F1D2ECFB9E8"
+			rewards: [
+				{
+					count: 4
+					id: "04162340808CA589"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "028ED4B732790D57"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F5440C65D0E687A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6CD57B9D86247858"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "56CEB278E0E68E33"
+				item: "twilightforest:maze_map"
+				type: "item"
+			}]
+			title: "Maze Map"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Carminite."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:carminite"
+			id: "06B6AE257DE532B2"
+			rewards: [
+				{
+					count: 4
+					id: "21F60223DA0195BC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5AE3EA41F41FA451"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4F66BF1B8848CC91"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "330BA259ACFE0B1D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "5D3083E208B05292"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			title: "Carminite"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Fiery Blood."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:fiery_blood"
+			id: "562AFA525D6DC1F2"
+			rewards: [
+				{
+					count: 4
+					id: "7B6E6CADAA2D2061"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EE6E87EBC8E198D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "73252C08FAFF895E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F0C34E0286E4181"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4886EAB2F4C183A6"
+				item: "twilightforest:fiery_blood"
+				type: "item"
+			}]
+			title: "Fiery Blood"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Alpha Yeti Fur."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:alpha_yeti_fur"
+			id: "7E7F6D52DB4D8AC4"
+			rewards: [
+				{
+					count: 4
+					id: "5E60C4DB3E69AAE7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C83DAC35CC95B90"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "61A52A1C18D4CA34"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6246F2F9BF87D98E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "78529F1BE6F41E95"
+				item: "twilightforest:alpha_yeti_fur"
+				type: "item"
+			}]
+			title: "Alpha Yeti Fur"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7E7F6D52DB4D8AC4"]
+			description: [
+				"Goal: obtain Ur Ghast Trophy."
+				"Why it matters: This advances the Twilight Forest route through maps, bosses, and trophy materials."
+			]
+			hide_dependency_lines: false
+			icon: "twilightforest:ur_ghast_trophy"
+			icon_scale: 1.18d
+			id: "5FBCF7A5415CBB5E"
+			rewards: [
+				{
+					count: 4
+					id: "06426B362F4D1FC3"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "60CD81029F46C71A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "469C48979D38233A"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "69F7247E44621065"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "2B9D2F580AC2F1C3"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			title: "Ur-Ghast Trophy"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "Twilight Forest"
+}

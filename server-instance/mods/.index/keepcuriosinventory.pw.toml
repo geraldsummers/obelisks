@@ -1,0 +1,17 @@
+filename = 'keepcuriosinventory-1.20.1-1.0.0.jar'
+name = 'KeepCuriosInventory'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'keepcuriosinventory-1.20.1-1.0.0'
+
+[download]
+hash = 'b5f334487d8ad18bf7ab405b28d316ffbcd8a13a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6845913
+project-id = 880582

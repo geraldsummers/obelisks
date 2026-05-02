@@ -1,0 +1,45 @@
+{
+  "id": "end",
+  "enabled": true,
+  "baseRolls": 0,
+  "rollsPerKill": 1,
+  "damagePerBonusRoll": 22.0,
+  "pools": [
+    {
+      "id": "end_salvage",
+      "chance": 0.5,
+      "entries": [
+        {
+          "item": "minecraft:ender_pearl",
+          "minCount": 1,
+          "maxCount": 3,
+          "weight": 40
+        },
+        {
+          "item": "minecraft:chorus_fruit",
+          "minCount": 2,
+          "maxCount": 5,
+          "weight": 30
+        },
+        {
+          "item": "minecraft:shulker_shell",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 10
+        },
+        {
+          "item": "minecraft:end_crystal",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 4
+        },
+        {
+          "item": "minecraft:elytra",
+          "minCount": 1,
+          "maxCount": 1,
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

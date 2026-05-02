@@ -1,0 +1,17 @@
+filename = 'enhancedai-3.3.6.3.jar'
+name = 'Enhanced AI'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.3.6.3'
+
+[download]
+hash = '0210c7c5bd0a3b667cd353a611383d627996a219'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7706349
+project-id = 515276

@@ -32,7 +32,16 @@ var BTM_EXTREME = {
     }
 }
 
+function btmExtremeItemExists(id) {
+    try { return Item.exists(id) } catch (e) { return false }
+}
+
 function btmExtremeRecipe(event, output, pattern, keys, id) {
+    if (!btmExtremeItemExists(output)) {
+        console.warn('[extreme-y-rewards] Skipping recipe for missing output: ' + output)
+        return
+    }
+
     event.remove({ output: output })
     event.shaped(output, pattern, keys).id(id)
 }

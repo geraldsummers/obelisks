@@ -1,0 +1,7 @@
+baseline_median_gib=13.924
+c3_tech_automation	count=36	peak=2.532GiB	delta=+11.392GiB	marker=failed
+c6_survival_food_building_qol	count=48	peak=2.542GiB	delta=+11.382GiB	marker=failed
+c1_core_libs_perf	count=136	peak=2.564GiB	delta=+11.359GiB	marker=failed
+c2_worldgen_dimensions	count=24	peak=2.665GiB	delta=+11.259GiB	marker=failed
+c4_magic	count=12	peak=2.825GiB	delta=+11.099GiB	marker=failed
+c5_adventure_mobs_structures	count=22	peak=12.073GiB	delta=+1.851GiB	marker=sampled_timeout

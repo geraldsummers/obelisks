@@ -1,0 +1,17 @@
+filename = 'ThirstWasTaken-1.20.1-1.4.0.jar'
+name = 'Thirst Was Taken'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'ThirstWasTaken-1.20.1-1.4.0.jar'
+
+[download]
+hash = 'de1c5adad2a77c7f6e168f2df6e7b82d9c3db719'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6660408
+project-id = 679270

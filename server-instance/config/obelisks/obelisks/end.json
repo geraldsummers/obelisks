@@ -1,0 +1,24 @@
+{
+  "id": "end",
+  "displayName": "End Rift Anchor",
+  "instanceTemplateId": "end",
+  "targetDimension": "minecraft:the_end",
+  "coordinateScale": 1.0,
+  "spawnSearchRadius": 24,
+  "runRadius": 96,
+  "scarRadius": 10,
+  "scarIntervalTicks": 20,
+  "scarColumnsPerInterval": 3,
+  "protectedSpawnRadius": 2,
+  "requiredNamespace": "minecraft",
+  "enabled": true,
+  "worldgenWeight": 0.5,
+  "worldgenFamilyId": "meteor",
+  "meteorCoreBlock": "minecraft:end_stone",
+  "meteorShellBlock": "minecraft:purpur_block",
+  "craterFillBlocks": [
+    "minecraft:end_stone",
+    "minecraft:gravel"
+  ],
+  "rewardTableId": "end"
+}

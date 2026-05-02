@@ -1,0 +1,207 @@
+{
+  "schema": 1,
+  "tierOrder": [
+    "survival",
+    "tcon_seared",
+    "tcon_scorched",
+    "create_andesite",
+    "create_brass",
+    "power_grid",
+    "oc2r",
+    "space",
+    "ae2",
+    "hybrid_matter"
+  ],
+  "coinTiers": [
+    {
+      "id": "copper",
+      "item": "dotcoinmod:copper_coin",
+      "index": 0,
+      "intendedSources": [
+        "starting_out",
+        "low_world_loot",
+        "early_mobs",
+        "villages"
+      ]
+    },
+    {
+      "id": "iron",
+      "item": "dotcoinmod:iron_coin",
+      "index": 1,
+      "intendedSources": [
+        "tcon_seared",
+        "early_adventure",
+        "village_contracts"
+      ]
+    },
+    {
+      "id": "brass",
+      "item": "dotcoinmod:brass_coin",
+      "index": 2,
+      "intendedSources": [
+        "create_brass",
+        "logistics",
+        "danger_structures"
+      ]
+    },
+    {
+      "id": "gold",
+      "item": "dotcoinmod:gold_coin",
+      "index": 3,
+      "intendedSources": [
+        "space",
+        "synthesis",
+        "wandering_contracts"
+      ]
+    },
+    {
+      "id": "platinum",
+      "item": "dotcoinmod:platinum_coin",
+      "index": 4,
+      "intendedSources": [
+        "deepslate_depths",
+        "lava_depths",
+        "ae2",
+        "bosses"
+      ]
+    }
+  ],
+  "machineTiers": [
+    {
+      "id": "tcon_seared",
+      "casing": "kubejs:seared_machine_casing",
+      "authority": "TCon seared",
+      "requiresPrevious": null
+    },
+    {
+      "id": "tcon_scorched",
+      "casing": "kubejs:scorched_machine_casing",
+      "authority": "TCon scorched",
+      "requiresPrevious": "tcon_seared"
+    },
+    {
+      "id": "create_andesite",
+      "casing": "kubejs:andesite_machine_casing",
+      "authority": "Create andesite",
+      "requiresPrevious": "tcon_scorched"
+    },
+    {
+      "id": "create_brass",
+      "casing": "kubejs:brass_machine_casing",
+      "authority": "Create brass",
+      "requiresPrevious": "create_andesite"
+    },
+    {
+      "id": "power_grid",
+      "casing": "kubejs:power_grid_machine_casing",
+      "authority": "Create: Power Grid",
+      "requiresPrevious": "create_brass"
+    },
+    {
+      "id": "oc2r",
+      "casing": "kubejs:oc2r_machine_casing",
+      "authority": "OC2R",
+      "requiresPrevious": "power_grid"
+    },
+    {
+      "id": "space",
+      "casing": "kubejs:space_machine_casing",
+      "authority": "Creating Space",
+      "requiresPrevious": "oc2r"
+    },
+    {
+      "id": "ae2",
+      "casing": "kubejs:ae2_machine_casing",
+      "authority": "AE2 local intelligence",
+      "requiresPrevious": "space"
+    }
+  ],
+  "bloodMagicTiers": [
+    {
+      "id": "blood_1",
+      "gate": "bloodmagic:blankslate",
+      "mods": [
+        "hexerei",
+        "rootsclassic",
+        "malum",
+        "reliquary"
+      ]
+    },
+    {
+      "id": "blood_2",
+      "gate": "bloodmagic:reinforcedslate",
+      "mods": [
+        "ars_nouveau",
+        "ars_additions",
+        "ars_instrumentum",
+        "ars_elemental",
+        "naturesaura",
+        "irons_spellbooks"
+      ]
+    },
+    {
+      "id": "blood_3",
+      "gate": "bloodmagic:infusedslate",
+      "mods": [
+        "occultism",
+        "mahoutsukai",
+        "eidolon",
+        "goety"
+      ]
+    },
+    {
+      "id": "blood_4",
+      "gate": "bloodmagic:demonslate",
+      "mods": [
+        "botania",
+        "forbidden_arcanus",
+        "theurgy",
+        "ars_creo",
+        "ars_technica",
+        "ars_caelum"
+      ]
+    },
+    {
+      "id": "blood_5",
+      "gate": "bloodmagic:etherealslate",
+      "mods": [
+        "hexcasting",
+        "psi",
+        "mna",
+        "hexalia",
+        "arseng",
+        "tomeofblood"
+      ]
+    }
+  ],
+  "systemAuthorities": {
+    "recipes": "grid and machine crafting",
+    "loot": "exploration, danger, region, and bounded reward crafting",
+    "villager_trades": "coin-mediated village crafting",
+    "wares_contracts": "route, packaging, packager labor, and coin-mediated contract crafting",
+    "quest_rewards": "tutorial and progression proof rewards",
+    "mob_drops": "dimension and combat proof rewards",
+    "worldgen": "bounded matter source"
+  },
+  "criticalRules": [
+    "Block-like machines must require their assigned casing tier.",
+    "Magic workstations must be parented to Blood Magic tiers.",
+    "Loot, Wares, trades, mob drops, and quests are recipe-equivalent material sources.",
+    "Emerald currency must not drive villager or Wares economy.",
+    "Alchemistry is compatibility/reference; Acid Vat and Create synthesis are player-facing chemistry.",
+    "AE2 is local site intelligence, not global logistics.",
+    "Teleportation, creative flight, infinite storage, and infinite non-grown resources must be removed or endgame-contained."
+  ],
+  "postAe2Branches": [
+    {
+      "id": "tomeofblood",
+      "requires": [
+        "ae2",
+        "bloodmagic:etherealslate",
+        "ars_nouveau:archmage_spell_book",
+        "advanced_ae:quantum_core"
+      ],
+      "role": "late Blood Magic + Ars Nouveau combat-magic branch"
+    }
+  ]
+}

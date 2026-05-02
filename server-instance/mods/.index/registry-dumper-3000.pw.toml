@@ -1,0 +1,17 @@
+filename = 'registry_dumper_3000-forge-1.1.0.jar'
+name = 'Registry Dumper 3000'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Registry Dumper 3000 v1.1.0'
+
+[download]
+hash = '5ef95c5e71fefff922c4f400392be04b4caad52d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7665013
+project-id = 1383086

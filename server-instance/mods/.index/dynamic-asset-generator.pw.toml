@@ -1,0 +1,17 @@
+filename = 'dynamicassetgenerator-forge-1.20.1-4.2.2.jar'
+name = 'Dynamic Asset Generator'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Dynamic Asset Generator [Forge] v4.2.2'
+
+[download]
+hash = '5f4206fc51d357aae1714aa4e8710ab9fd7a590a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5008421
+project-id = 577096

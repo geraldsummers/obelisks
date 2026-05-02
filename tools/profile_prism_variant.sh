@@ -42,46 +42,74 @@ import os
 from pathlib import Path
 import sys
 p = Path(sys.argv[1])
-lines = p.read_text().splitlines()
-out = []
-seen_args = seen_override = seen_memory_override = seen_max = seen_min = False
 extra = "-XX:NativeMemoryTracking=summary -XX:+UnlockDiagnosticVMOptions"
 if os.environ.get("BTM_PROFILE_NMT", "1") != "1":
     extra = ""
 extra = (extra + " " + os.environ.get("BTM_JVM_ARGS", "")).strip()
 max_mem = os.environ.get("BTM_MAX_MEM")
 min_mem = os.environ.get("BTM_MIN_MEM")
+
+lines = p.read_text().splitlines()
+sections = {}
+current = None
+order = []
 for line in lines:
-    if line.startswith("JvmArgs="):
-        seen_args = True
-        value = line.split("=", 1)[1].strip()
-        if extra and all(arg not in value for arg in extra.split()):
-            value = (value + " " + extra).strip()
-        out.append("JvmArgs=" + value)
-    elif line.startswith("OverrideJavaArgs="):
-        seen_override = True
-        out.append("OverrideJavaArgs=true")
-    elif line.startswith("OverrideMemory=") and (max_mem or min_mem):
-        seen_memory_override = True
-        out.append("OverrideMemory=true")
-    elif line.startswith("MaxMemAlloc=") and max_mem:
-        seen_max = True
-        out.append("MaxMemAlloc=" + max_mem)
-    elif line.startswith("MinMemAlloc=") and min_mem:
-        seen_min = True
-        out.append("MinMemAlloc=" + min_mem)
+    if line.startswith("[") and line.endswith("]"):
+        current = line[1:-1]
+        sections.setdefault(current, [])
+        if current not in order:
+            order.append(current)
+    elif current is None:
+        sections.setdefault("", []).append(line)
+        if "" not in order:
+            order.append("")
     else:
-        out.append(line)
-if not seen_args:
-    out.append("JvmArgs=" + extra)
-if not seen_override:
-    out.append("OverrideJavaArgs=true")
-if (max_mem or min_mem) and not seen_memory_override:
-    out.append("OverrideMemory=true")
-if max_mem and not seen_max:
-    out.append("MaxMemAlloc=" + max_mem)
-if min_mem and not seen_min:
-    out.append("MinMemAlloc=" + min_mem)
+        sections.setdefault(current, []).append(line)
+if "General" not in sections:
+    sections["General"] = []
+    order.insert(0, "General")
+
+updates = {
+    "OverrideJavaArgs": "true",
+}
+if extra:
+    existing = ""
+    for line in sections["General"]:
+        if line.startswith("JvmArgs="):
+            existing = line.split("=", 1)[1].strip()
+            break
+    value = existing
+    for arg in extra.split():
+        if arg not in value.split():
+            value = (value + " " + arg).strip()
+    updates["JvmArgs"] = value
+if max_mem or min_mem:
+    updates["OverrideMemory"] = "true"
+if max_mem:
+    updates["MaxMemAlloc"] = max_mem
+if min_mem:
+    updates["MinMemAlloc"] = min_mem
+
+new_general = []
+seen = set()
+for line in sections["General"]:
+    key = line.split("=", 1)[0] if "=" in line else None
+    if key in updates:
+        if key not in seen:
+            new_general.append(f"{key}={updates[key]}")
+            seen.add(key)
+    else:
+        new_general.append(line)
+for key, value in updates.items():
+    if key not in seen:
+        new_general.append(f"{key}={value}")
+sections["General"] = new_general
+
+out = []
+for section in order:
+    if section:
+        out.append(f"[{section}]")
+    out.extend(sections.get(section, []))
 p.write_text("\n".join(out) + "\n")
 PY
 fi
@@ -113,7 +141,10 @@ rm -f "$profile" "$launch_log"
 before_mtime=$(stat -c %Y "$log" 2>/dev/null || echo 0)
 start_epoch=$(date +%s)
 world_name="${BTM_PROFILE_WORLD:-New World}"
-launch_cmd=("$prism" --dir "$root" --launch "$instance_name" --offline Dev --world "$world_name")
+launch_cmd=("$prism" --dir "$root" --launch "$instance_name" --offline Dev)
+if [[ "${BTM_PROFILE_MENU_ONLY:-0}" != "1" ]]; then
+  launch_cmd+=(--world "$world_name")
+fi
 if [[ "${BTM_DISABLE_THP_PRCTL:-0}" == "1" ]]; then
   launch_cmd=("$(dirname "$0")/disable_thp_exec.py" "${launch_cmd[@]}")
 fi
@@ -156,6 +187,12 @@ for i in $(seq 1 420); do
     fi
   done
   printf '{"variant":"%s","t":%s,"elapsed":%s,"processes":%s,"rssKb":%s,"maxProcessRssKb":%s}\n' "$variant" "$now" "$((now-start_epoch))" "$count" "$rss" "$max_rss" >> "$profile"
+
+  force_stop_after="${BTM_FORCE_STOP_AFTER_SECONDS:-}"
+  if [[ "$force_stop_after" =~ ^[0-9]+$ && "$force_stop_after" -gt 0 && "$((now-start_epoch))" -ge "$force_stop_after" ]]; then
+    marker="sampled_timeout"
+    break
+  fi
 
   mt=$(stat -c %Y "$log" 2>/dev/null || echo 0)
   if [[ "$mt" -gt "$before_mtime" ]]; then

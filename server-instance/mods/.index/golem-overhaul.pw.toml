@@ -1,0 +1,17 @@
+filename = 'golemoverhaul-forge-1.20.1-1.1.0.jar'
+name = 'Golem Overhaul'
+side = ''
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '[Forge] Golem Overhaul 1.1.0'
+
+[download]
+hash = '57a7c3c8b38744629ec491553625adb9a987530c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7484359
+project-id = 618752

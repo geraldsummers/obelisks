@@ -1,0 +1,13 @@
+
+[dynamicTrees]
+	#Replaces Dynamic Trees' NormalSeasonManager season context HashMap with a ConcurrentHashMap.
+	#This is intended to prevent ConcurrentModificationException during parallel feature generation, especially with C2ME threaded features.
+	#Disable this if Dynamic Trees changes this internals or if diagnosing unrelated season behavior.
+	seasonContextConcurrentMap = true
+
+[hyle]
+	#Guards Hyle tertiary stone selection against invalid indices.
+	#Prevents worldgen crashes when Hyle's tertiary selector requests an index outside the available tertiary list size.
+	#Keeps Unearthed/Hyle stone replacement enabled while avoiding ArrayIndexOutOfBoundsException in RoughNoiseSampler.selectTertiary.
+	safeTertiarySelection = true
+

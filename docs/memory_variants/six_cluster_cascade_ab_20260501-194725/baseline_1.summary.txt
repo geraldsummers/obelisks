@@ -1,0 +1,4 @@
+marker=sampled_timeout elapsed=91 java_pid=87250 profile=/home/gerald/obelisks/docs/memory_variants/six_cluster_cascade_ab_20260501-194725/baseline_1.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+62:[01May2026 19:47:39.857] [main/INFO] [Puzzles Lib/]: Loading 358 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=12308 peakRssGiB=12.02

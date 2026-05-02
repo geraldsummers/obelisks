@@ -1,0 +1,17 @@
+filename = 'tinkers_advanced_core-3.0.0-beta.5.jar'
+name = "Tinkers' Advanced-Core"
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'tinkers_advanced_core-3.0.0-beta.5.jar'
+
+[download]
+hash = '7488e0d3ce345a449a426232f3b041e4b622b195'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7421096
+project-id = 1396422

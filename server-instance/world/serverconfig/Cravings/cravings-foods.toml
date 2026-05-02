@@ -1,0 +1,39 @@
+
+["Cravings Foods"]
+	#Food items that satisfy your sweet craving.
+	"Sweet Foods" = ["minecraft:cookie", "minecraft:glow_berries", "minecraft:honey_bottle", "minecraft:sweet_berries", "minecraft:melon_slice", "minecraft:chorus_fruit", "minecraft:apple", "minecraft:golden_apple", "minecraft:enchanted_golden_apple", "minecraft:pumpkin_pie", "minecraft:cake"]
+	#Food items that satisfy your healthy craving.
+	"Healthy Foods" = ["minecraft:potato", "minecraft:carrot", "minecraft:beetroot", "minecraft:beetroot_soup", "minecraft:baked_potato", "minecraft:golden_carrot", "minecraft:dried_kelp"]
+	#Food items that satisfy your meaty craving.
+	"Meaty Foods" = ["minecraft:rabbit_stew", "minecraft:cooked_rabbit", "minecraft:cooked_chicken", "minecraft:cooked_beef", "minecraft:cooked_porkchop", "minecraft:cooked_mutton"]
+	#Food items that satisfy your fishy craving.
+	"Fishy Foods" = ["minecraft:cooked_cod", "minecraft:cooked_salmon", "minecraft:pufferfish"]
+	#Food items that satisfy your gross craving.
+	"Gross Foods" = ["minecraft:rotten_flesh", "minecraft:spider_eye", "minecraft:suspicious_stew", "minecraft:poisonous_potato", "minecraft:pufferfish"]
+	#Food items that satisfy your fancy craving.
+	"Fancy Foods" = ["minecraft:golden_apple", "minecraft:enchanted_golden_apple", "minecraft:golden_carrot", "minecraft:glow_berries"]
+	#Food items that satisfy your hearty craving.
+	"Hearty Foods" = ["minecraft:pumpkin_pie", "minecraft:rabbit_stew", "minecraft:mushroom_stew", "minecraft:beetroot_soup"]
+	#Food items that satisfy your raw craving.
+	"Raw Foods" = ["minecraft:cod", "minecraft:salmon", "minecraft:rabbit", "minecraft:porkchop", "minecraft:mutton", "minecraft:chicken", "minecraft:beef"]
+
+["Farmer's delight Compat"]
+	#Enable Farmer's Delight foods satisfying cravings out of the box. Will only work if Farmer's Delight is installed. (Default: true)
+	"Farmer's Delight Compatibility" = true
+	#Farmer's Delight food items that satisfy your sweet craving.
+	"Sweet Foods" = ["farmersdelight:honey_glazed_ham", "farmersdelight:apple_pie", "farmersdelight:apple_pie_slice", "farmersdelight:sweet_berry_cheesecake", "farmersdelight:sweet_berry_cheesecake_slice", "farmersdelight:chocolate_pie", "farmersdelight:chocolate_pie_slice", "farmersdelight:cake_slice", "farmersdelight:honey_cookie", "farmersdelight:sweet_berry_cookie", "farmersdelight:glow_berry_custard", "farmersdelight:melon_popsicle", "farmersdelight:hot_cocoa", "farmersdelight:apple_cider", "farmersdelight:melon_juice", "farmersdelight:fruit_salad", "farmersdelight:tomato_sauce", "farmersdelight:pumpkin_slice"]
+	#Farmer's Delight food items that satisfy your healthy craving.
+	"Healthy Foods" = ["farmersdelight:cabbage", "farmersdelight:cabbage_leaf", "farmersdelight:onion", "farmersdelight:tomato", "farmersdelight:dumplings", "farmersdelight:cabbage_rolls", "farmersdelight:kelp_roll", "farmersdelight:kelp_roll_slice", "farmersdelight:mixed_salad", "farmersdelight:vegetable_soup", "farmersdelight:vegetable_noodles", "farmersdelight:ratatouille", "farmersdelight:cooked_rice", "farmersdelight:fried_egg", "farmersdelight:fried_rice"]
+	#Farmer's Delight food items that satisfy your meaty craving.
+	"Meaty Foods" = ["farmersdelight:barbecue_stick", "farmersdelight:chicken_sandwich", "farmersdelight:hamburger", "farmersdelight:bacon_sandwich", "farmersdelight:mutton_wrap", "farmersdelight:roast_chicken", "farmersdelight:honey_glazed_ham", "farmersdelight:shepherds_pie", "farmersdelight:beef_stew", "farmersdelight:chicken_soup", "farmersdelight:bacon_and_eggs", "farmersdelight:roasted_mutton_chops", "farmersdelight:steak_and_potatoes", "farmersdelight:beef_patty", "farmersdelight:cooked_chicken_cuts", "farmersdelight:cooked_bacon", "farmersdelight:cooked_mutton_chops", "farmersdelight:smoked_ham"]
+	#Farmer's Delight food items that satisfy your fishy craving.
+	"Fishy Foods" = ["farmersdelight:salmon_roll", "farmersdelight:cod_roll", "farmersdelight:fish_stew", "farmersdelight:baked_cod_stew", "farmersdelight:squid_ink_pasta", "farmersdelight:grilled_salmon", "farmersdelight:cooked_cod_slice", "farmersdelight:cooked_salmon_slice"]
+	#Farmer's Delight food items that satisfy your gross craving.
+	"Gross Foods" = ["farmersdelight:dog_food", "farmersdelight:nether_salad", "farmersdelight:bone_broth"]
+	#Farmer's Delight food items that satisfy your fancy craving.
+	"Fancy Foods" = ["farmersdelight:glow_berry_custard"]
+	#Farmer's Delight food items that satisfy your hearty craving.
+	"Hearty Foods" = ["farmersdelight:stuffed_pumpkin", "farmersdelight:honey_glazed_ham", "farmersdelight:shepherds_pie", "farmersdelight:roast_chicken", "farmersdelight:beef_stew", "farmersdelight:chicken_soup", "farmersdelight:pumpkin_soup", "farmersdelight:baked_cod_stew", "farmersdelight:noodle_soup", "farmersdelight:bacon_and_eggs", "farmersdelight:pasta_with_meatballs", "farmersdelight:pasta_with_mutton_chop", "farmersdelight:mushroom_rice", "farmersdelight:roasted_mutton_chops", "farmersdelight:steak_and_potatoes", "farmersdelight:ratatouille", "farmersdelight:squid_ink_pasta", "farmersdelight:grilled_salmon", "farmersdelight:fried_rice", "farmersdelight:fish_stew"]
+	#Farmer's Delight food items that satisfy your raw craving.
+	"Raw Foods" = ["farmersdelight:minced_beef", "farmersdelight:chicken_cuts", "farmersdelight:bacon", "farmersdelight:cod_slice", "farmersdelight:salmon_slice", "farmersdelight:mutton_chops", "farmersdelight:ham"]
+

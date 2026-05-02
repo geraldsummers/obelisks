@@ -1,0 +1,385 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "malum"
+	group: "77AFAA45BDFC5D88"
+	id: "145CD11FE6D4424A"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["37FCC41A66D9E111"]
+			description: [
+				"Goal: obtain Spirit Altar."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:spirit_altar"
+			icon_scale: 1.18d
+			id: "2159C90CCA4BD493"
+			rewards: [
+				{
+					count: 4
+					id: "2B2632222E29E000"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0CF45C4771DFCF7B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "79369BC17272F2B9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0D785BEE7976357E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "65BFFEF56528AF99"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "1DB6897C7D9974C6"
+				item: "malum:spirit_altar"
+				type: "item"
+			}]
+			title: "Spirit Altar"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Runewood Sapling."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:runewood_sapling"
+			id: "6131CC0B3656FAB3"
+			rewards: [
+				{
+					count: 4
+					id: "2290F67823A95F2A"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4823F0ADD6DF289B"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55E01BA2E88EC5EB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3FC286D47125711B"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B49D0D64E913CCB"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "65EB570A95793015"
+				item: "malum:runewood_sapling"
+				type: "item"
+			}]
+			title: "Runewood Growth"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Spirit Jar."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:spirit_jar"
+			id: "26902BCC0771CCBF"
+			rewards: [
+				{
+					count: 4
+					id: "7B13F534BC3EA5B4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6F26FE41DF9DB5B8"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "77C995C36423D306"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4DA3C3265F928E66"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "747BF90A55F30C2F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "36368EA4235B3583"
+				item: "malum:spirit_jar"
+				type: "item"
+			}]
+			title: "Spirit Jar"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6131CC0B3656FAB3"]
+			description: [
+				"Goal: obtain Runic Workbench."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:runic_workbench"
+			id: "406359829F22E8EF"
+			rewards: [
+				{
+					count: 4
+					id: "1831FBF55FE09951"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52345AADA358D2EA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EA82DE2B154BC3F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0B7B733E830D1270"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52353EA23555CAE3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "7AF23B19481CD568"
+				item: "malum:runic_workbench"
+				type: "item"
+			}]
+			title: "Runic Workbench"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Spirit Crucible."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:spirit_crucible"
+			icon_scale: 1.18d
+			id: "7A50ED6E83FC920A"
+			rewards: [
+				{
+					count: 4
+					id: "054C3E1D7C438973"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4462F9D736B48902"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "338B5F43B6F6E327"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C70A8102F5EE692"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3A5EB59E019A0EF6"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "6EBA5970A58B97D1"
+				item: "malum:spirit_crucible"
+				type: "item"
+			}]
+			title: "Spirit Crucible"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Spirit Fabric."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:spirit_fabric"
+			id: "06907686361DEA78"
+			rewards: [
+				{
+					count: 4
+					id: "18FC18A26A80C2FE"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "55FC0A35D8495CAA"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68322F05E2C64AD9"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74ECDF3AF43FDD49"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "076571932D3B37D3"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3BAE0FD336F35A47"
+				item: "malum:spirit_fabric"
+				type: "item"
+			}]
+			title: "Spirit Fabric"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7A50ED6E83FC920A"
+				"06907686361DEA78"
+			]
+			description: [
+				"Goal: obtain Soul Stained Steel Ingot."
+				"Why it matters: This builds Malum spirit work, runewood crafting, and soul-material processing."
+			]
+			hide_dependency_lines: false
+			icon: "malum:soul_stained_steel_ingot"
+			icon_scale: 1.18d
+			id: "7705514367463D12"
+			rewards: [
+				{
+					count: 4
+					id: "44D7500FC1CB9E51"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5DA25DCFEE5F3F0F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "697082FADD38AD23"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B278FDE5A62D75F"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "485D6E70F0EC136F"
+					item: "dotcoinmod:platinum_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "11D92A6DAC8472B7"
+				item: "malum:soul_stained_steel_ingot"
+				type: "item"
+			}]
+			title: "Soul-Stained Steel"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Malum"
+}

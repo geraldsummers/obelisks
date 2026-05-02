@@ -1,0 +1,314 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "starcatcher"
+	group: "3570F9CE90E09BD1"
+	id: "06A4C84677EAA175"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Starcatcher Rod."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"The rod starts the system. Fishing is a route activity: bring food, water, and time, then convert catches into trade value."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:starcatcher_rod"
+			icon_scale: 1.18d
+			id: "1565BC06E5DA4B02"
+			rewards: [
+				{
+					count: 4
+					id: "2708137FC34081C8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53C2C49975CD1E0D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7D9168B9DB81E5E2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "3721DAF946A35515"
+				item: "starcatcher:starcatcher_rod"
+				type: "item"
+			}]
+			title: "Starcatcher Rod"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Starcatcher Twine, Iron Hook, Bobber."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"Tackle upgrades control the fishing loop. Keep spare hooks, bobbers, bait, and twine with your route supplies."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:starcatcher_twine"
+			id: "55284633D12181D4"
+			rewards: [
+				{
+					count: 4
+					id: "135B22DCCB820176"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5CF77F13207A8F23"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1618AE38D18F839E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5C260FF70F52DBD8"
+					item: "starcatcher:starcatcher_twine"
+					type: "item"
+				}
+				{
+					id: "27D7CAD36829BA24"
+					item: "starcatcher:hook"
+					type: "item"
+				}
+				{
+					id: "650B5B809B607254"
+					item: "starcatcher:bobber"
+					type: "item"
+				}
+			]
+			title: "Tackle Materials"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["55284633D12181D4"]
+			description: [
+				"Goal: obtain Murkwater Bait, Dripstone Bait, Sculk Bait."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"Bait makes the minigame a material system. Different environments and ingredients should point toward different catches."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:murkwater_bait"
+			id: "7841DDA26AD1F474"
+			rewards: [
+				{
+					count: 4
+					id: "07A5A68A6D6E689C"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7ECFAD7139BE3C9C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48CE134531782278"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1F748D3FD116C365"
+					item: "starcatcher:murkwater_bait"
+					type: "item"
+				}
+				{
+					id: "3A416D39691B7190"
+					item: "starcatcher:dripstone_bait"
+					type: "item"
+				}
+				{
+					id: "542899C7BB8C8346"
+					item: "starcatcher:sculk_bait"
+					type: "item"
+				}
+			]
+			title: "Bait Choices"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Pinfish, Deepslatefish, Magma Fish."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"Fish are proof of water routes. Sell selected fish to Fishermen for copper coins or keep them as food and collection targets."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:pinfish"
+			id: "2651964132AB585C"
+			rewards: [
+				{
+					count: 4
+					id: "58C41B72FEF3A247"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A17258A2328D038"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6422F595964CB221"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "7F212B79098CFA5F"
+					item: "starcatcher:pinfish"
+					type: "item"
+				}
+				{
+					id: "182D00FAFC62450D"
+					item: "starcatcher:deepslatefish"
+					type: "item"
+				}
+				{
+					id: "1EFE1866B9E1E2D5"
+					item: "starcatcher:magma_fish"
+					type: "item"
+				}
+			]
+			title: "Route Catches"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2651964132AB585C"]
+			description: [
+				"Goal: obtain Fish Radar, Waterlogged Satchel."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"Fishermen now sell tackle and buy selected catches for coins. This makes fishing a side economy like Wares or village contracts."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:fish_radar"
+			icon_scale: 1.18d
+			id: "59BA0C0F79640CB6"
+			rewards: [
+				{
+					count: 4
+					id: "1756A757C662C969"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6D6472C313C415C9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "546BCCCC46D5C76F"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "683E310962AF9464"
+					item: "starcatcher:fish_radar"
+					type: "item"
+				}
+				{
+					id: "691EDD2EF28050C3"
+					item: "starcatcher:waterlogged_satchel"
+					type: "item"
+				}
+			]
+			title: "Fisherman Economy"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59BA0C0F79640CB6"]
+			description: [
+				"Goal: obtain Tournament Stand, Trophy Gold."
+				"Why it matters: This treats fishing as a small economy: tackle, skill catches, satchels, trophies, and fisherman trades all become useful material routes."
+				"Trophies make the system visible at a base or settlement. Use them to mark fishing routes and completed collections."
+			]
+			hide_dependency_lines: false
+			icon: "starcatcher:tournament_stand"
+			icon_scale: 1.18d
+			id: "2B69D20FEE821040"
+			rewards: [
+				{
+					count: 4
+					id: "39A4055BAE926ABB"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DE729AFA602F85F"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "707CAED87C00647B"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1E649A96E3857564"
+					item: "starcatcher:tournament_stand"
+					type: "item"
+				}
+				{
+					id: "5AF76ED2A05A58F9"
+					item: "starcatcher:trophy_gold"
+					type: "item"
+				}
+			]
+			title: "Tournament Display"
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "Starcatcher Fishing"
+}

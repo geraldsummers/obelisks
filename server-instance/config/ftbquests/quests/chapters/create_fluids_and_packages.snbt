@@ -1,0 +1,582 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "create_fluids_and_packages"
+	group: "4B746D4352454154"
+	id: "2A3E07CB6C942B40"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["747708EE29DA1318"]
+			description: [
+				"Goal: obtain Fluid Pipe, Mechanical Pump."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:fluid_pipe"
+			icon_scale: 1.18d
+			id: "687BC439F4CA864D"
+			rewards: [
+				{
+					count: 4
+					id: "1FB7F4CB377E2550"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "05242316FDB10384"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CFDBE8C48763919"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "536C1BE7E16E5A1B"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "0831B4968CC0C8B7"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Fluid Handling"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["687BC439F4CA864D"]
+			description: [
+				"Goal: obtain Fluid Tank, Item Drain, Spout."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:fluid_tank"
+			id: "1FF7E3E39D290C27"
+			rewards: [
+				{
+					count: 4
+					id: "431268C892DE89FC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3ADD46CA5AF773E1"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B48374885D9A46D"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1603EB217CCD68CD"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "0B387F2EAB3DF4A3"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "7F9AB8064648467E"
+					item: "create:spout"
+					type: "item"
+				}
+			]
+			title: "Tanks, Drains, and Spouts"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["687BC439F4CA864D"]
+			description: [
+				"Goal: obtain Hose Pulley."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:hose_pulley"
+			id: "7553F3DC283DADE7"
+			rewards: [
+				{
+					count: 4
+					id: "48DDD372558AC68B"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5B879828C48C7F12"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D81FE3D041B6060"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "3F08FB45913EED17"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			title: "Hose Pulley and Bulk Transfer"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7553F3DC283DADE7"]
+			description: [
+				"Goal: obtain Portable Storage Interface, Portable Fluid Interface."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:portable_storage_interface"
+			id: "6E83C3344F330B82"
+			rewards: [
+				{
+					count: 4
+					id: "20182BDA06E45F75"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3CF3D4E0CA26F467"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0B759BDE59ABC5D2"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "0CCAA94F035D08A8"
+					item: "create:portable_storage_interface"
+					type: "item"
+				}
+				{
+					id: "00D314E1C88159A7"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+			]
+			title: "Portable Interfaces"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6E83C3344F330B82"]
+			description: [
+				"Goal: obtain Packager, Repackager, Stock Link."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:packager"
+			icon_scale: 1.18d
+			id: "5D2CAFEC5CD5358E"
+			rewards: [
+				{
+					count: 4
+					id: "0963C5C855AA5FEF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "451E5A32435454FE"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0173BE897C0DD79C"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "5D768C53CB0431AB"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "00E16AF64CE52B8D"
+					item: "create:repackager"
+					type: "item"
+				}
+				{
+					id: "6BB84BB22C18EDC1"
+					item: "create:stock_link"
+					type: "item"
+				}
+			]
+			title: "Package Network"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Package Frogport."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:package_frogport"
+			id: "24FCF7D279056981"
+			rewards: [
+				{
+					count: 4
+					id: "7B7E7CF8CF818FBB"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08425DBF5A1AE175"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "53B824FC855D51BB"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "64336745B85A6F30"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			title: "Package Frogport"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Goal: obtain Stock Ticker, Redstone Requester."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:stock_ticker"
+			id: "143E2285C14F4317"
+			rewards: [
+				{
+					count: 4
+					id: "39563BCF61E82FCC"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "498D862C5546B65A"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "016C138B5E2A8DE0"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "4EDD54A0CB20DAFC"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+				{
+					id: "32AA5B7AEB763AD4"
+					item: "create:redstone_requester"
+					type: "item"
+				}
+			]
+			title: "Stock Control"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Factory Gauge."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create:factory_gauge"
+			id: "299C94BEC45D8311"
+			rewards: [
+				{
+					count: 4
+					id: "629830116429E747"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "06CF5BFEEA5EC6B9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "31B078DBA69A2DDA"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "70868F77F3915693"
+				item: "create:factory_gauge"
+				type: "item"
+			}]
+			title: "Factory Gauge"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Kinetic Battery, Brake, Linked Transmitter."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "create_connected:kinetic_battery"
+			id: "5873416D81494E71"
+			rewards: [
+				{
+					count: 4
+					id: "0C33B074ED44FFB8"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "583B1922C491F8B9"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "76B9104A70B72EE6"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "04C11425E5738544"
+					item: "create_connected:kinetic_battery"
+					type: "item"
+				}
+				{
+					id: "616B23ECB11EF0F0"
+					item: "create_connected:brake"
+					type: "item"
+				}
+				{
+					id: "6A18DC9394BD1D83"
+					item: "create_connected:linked_transmitter"
+					type: "item"
+				}
+			]
+			title: "Connected Kinetics"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Package Editor, Package Accelerator, Network Monitor."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "createadditionallogistics:package_editor"
+			icon_scale: 1.18d
+			id: "72745CB9FF696664"
+			rewards: [
+				{
+					count: 4
+					id: "71E59002E75CDCA9"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6C642CA4B89A0494"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08DACD98D492E584"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "610653D23FBE39AF"
+					item: "createadditionallogistics:package_editor"
+					type: "item"
+				}
+				{
+					id: "1E3163E4EB775ABA"
+					item: "createadditionallogistics:package_accelerator"
+					type: "item"
+				}
+				{
+					id: "069CE96043888E9C"
+					item: "createadditionallogistics:network_monitor"
+					type: "item"
+				}
+			]
+			title: "Addon Logistics Devices"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Goal: obtain Package Content Filter."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+			]
+			hide_dependency_lines: false
+			icon: "createadvlogistics:package_content_filter"
+			id: "4DADF36817A517D0"
+			rewards: [
+				{
+					count: 4
+					id: "09B36447C335342D"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4B466C951B145489"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0A646BED06609280"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "02552455BE6A7182"
+				item: "createadvlogistics:package_content_filter"
+				type: "item"
+			}]
+			title: "Package Content Filters"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Goal: obtain Packager, Stock Ticker, Package Content Filter."
+				"Why it matters: This expands Create into fluids, packages, signals, and controlled logistics devices."
+				"Capstone: run a visible fluid-plus-package district with stock requests, filters, and recoverable routing."
+			]
+			hide_dependency_lines: false
+			icon: "create:packager"
+			id: "0A1DACE192C1862E"
+			rewards: [
+				{
+					count: 4
+					id: "71CC9D8C64A11FC4"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F18E0DBCA0FF031"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4759FCEDD369FE2E"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [
+				{
+					id: "1DEEADCC85D1D3ED"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "5F85283B9834EFAB"
+					item: "create:stock_ticker"
+					type: "item"
+				}
+				{
+					id: "145E46C92DDE7D4B"
+					item: "createadvlogistics:package_content_filter"
+					type: "item"
+				}
+			]
+			title: "Capstone: Routed Parcel District"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Create Fluids and Packages"
+}

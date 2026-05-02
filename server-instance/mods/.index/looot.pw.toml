@@ -1,0 +1,17 @@
+filename = 'looot-1.20.1-1.2.0.4.jar'
+name = 'Looot'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'looot-1.20.1-1.2.0.4.jar'
+
+[download]
+hash = '43ccd845f6dd4195c0c9e27f5eef7c892596459c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4670222
+project-id = 420925

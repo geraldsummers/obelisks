@@ -1,0 +1,9 @@
+disabled coroutil-forge-1.20.1-1.3.7.jar
+disabled weather2-1.20.1-2.8.3.jar
+disabled realisticphysics-1.20.1-1.0.1.jar
+marker=failed elapsed=14 java_pid=1183810 profile=docs/memory_variants/rss_cut_physics_weather_destruction_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=2706044 postGcJavaRssMiB=2642
+diagnostics=docs/memory_variants/rss_cut_physics_weather_destruction_20260501_diagnostics
+164:[01May2026 11:56:58.847] [Render thread/FATAL] [net.minecraftforge.client.loading.ClientModLoader/]: Crash report saved to /home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/crash-reports/crash-2026-05-01_11.56.58-fml.txt
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=2750 peakRssGiB=2.69

@@ -1,0 +1,17 @@
+filename = 'oc2r-1.20.1-forge-2.2.12-all.jar'
+name = 'OpenComputers II: Reimagined'
+side = ''
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'oc2r-1.20.1-forge-2.2.12-all.jar'
+
+[download]
+hash = '3cde0b43962718e0d7fbff9d1d78db8dd6f4f51e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 7516220
+project-id = 1037738

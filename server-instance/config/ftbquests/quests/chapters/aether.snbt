@@ -1,0 +1,441 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "aether"
+	group: "3BF99559A31D6EB4"
+	id: "7BE336560956DEFC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Goal: obtain Book Of Lore."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+				"Treat Aether entry as a packed route: food, water, fall safety, and retreat plan."
+			]
+			hide_dependency_lines: false
+			icon: "aether:book_of_lore"
+			id: "4B1FBB8B983DCD86"
+			rewards: [
+				{
+					count: 4
+					id: "35603B6EE99E0720"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "50A8FB57B42AE842"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "62F66099376DF466"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "59AADB30F4770479"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0A119C3124849BB2"
+				item: "aether:book_of_lore"
+				type: "item"
+			}]
+			title: "Sky Route Kit"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4B1FBB8B983DCD86"]
+			description: [
+				"Goal: obtain Altar."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:altar"
+			icon_scale: 1.18d
+			id: "01E42670335B4A74"
+			rewards: [
+				{
+					count: 4
+					id: "1594C423C7D65AB7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "35DB34841269DE2D"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3F03FCFD3E03E864"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10C07D752861789E"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "5908AD2D7851AFB7"
+				item: "aether:altar"
+				type: "item"
+			}]
+			title: "Altar Work"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B1FBB8B983DCD86"]
+			description: [
+				"Goal: obtain Freezer."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:freezer"
+			id: "4F7217FC89E13562"
+			rewards: [
+				{
+					count: 4
+					id: "0C0B67F006BB3BB7"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10072DF7ADB3AE4C"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7F87E5890DA1BB61"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3084BEC04A2C3C74"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "2AF8C6BDD8CC644E"
+				item: "aether:freezer"
+				type: "item"
+			}]
+			title: "Freezer Work"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["01E42670335B4A74"]
+			description: [
+				"Goal: obtain Ambrosium Shard."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:ambrosium_shard"
+			id: "4ED6DB3C8FD56E4E"
+			rewards: [
+				{
+					count: 4
+					id: "1CB4621F023805FF"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0749078E1B586BBF"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "615BF04E4C5D59FD"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0E12210A4643E371"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "75AF488985B595CE"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			title: "Ambrosium Stock"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F7217FC89E13562"]
+			description: [
+				"Goal: obtain Zanite Gemstone."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:zanite_gemstone"
+			id: "0FAA6059A0F00965"
+			rewards: [
+				{
+					count: 4
+					id: "41484C2162364194"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5950D549E8A70024"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3226E07159E709CF"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EC4D6C1E59CD4B8"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "4AA712FBA618F50B"
+				item: "aether:zanite_gemstone"
+				type: "item"
+			}]
+			title: "Zanite Route"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4ED6DB3C8FD56E4E"
+				"0FAA6059A0F00965"
+			]
+			description: [
+				"Goal: obtain Bronze Dungeon Key."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:bronze_dungeon_key"
+			id: "21C3E8042C8B3B05"
+			rewards: [
+				{
+					count: 4
+					id: "4CE7E68A020AA364"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "0C45C0753B149FB5"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "52F5337AF4D31465"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3EED625B5CC17CF5"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "1DD07CBAB3561AA0"
+				item: "aether:bronze_dungeon_key"
+				type: "item"
+			}]
+			title: "Bronze Dungeon Key"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["21C3E8042C8B3B05"]
+			description: [
+				"Goal: obtain Silver Dungeon Key."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:silver_dungeon_key"
+			icon_scale: 1.18d
+			id: "782DE9EC717F6A8E"
+			rewards: [
+				{
+					count: 4
+					id: "50C8261F35AE2CE0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "10EDB803118DC105"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4C7C3BB0AB539899"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "41C7A47D0B05DB7D"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "7654F5707416A790"
+				item: "aether:silver_dungeon_key"
+				type: "item"
+			}]
+			title: "Silver Dungeon Key"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["782DE9EC717F6A8E"]
+			description: [
+				"Goal: obtain Enchanted Gravitite."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:enchanted_gravitite"
+			id: "074880E1F29D6B0B"
+			rewards: [
+				{
+					count: 4
+					id: "6D1D14EB8D475ED0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2EFBBF435A00ADDB"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5EAF11E8550D6549"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "38312944B5322F32"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.0d
+			subtitle: "Process"
+			tasks: [{
+				id: "0F1EB84683374996"
+				item: "aether:enchanted_gravitite"
+				type: "item"
+			}]
+			title: "Enchanted Gravitite"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["074880E1F29D6B0B"]
+			description: [
+				"Goal: obtain Gold Dungeon Key."
+				"Why it matters: This advances the Aether route through sky materials, machines, and dungeon rewards."
+			]
+			hide_dependency_lines: false
+			icon: "aether:gold_dungeon_key"
+			icon_scale: 1.18d
+			id: "3270811D5CE993E0"
+			rewards: [
+				{
+					count: 4
+					id: "5A5E5AE786653FA0"
+					item: "dotcoinmod:copper_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "027389FD86C51A3E"
+					item: "dotcoinmod:iron_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3EEDF6E445EDF764"
+					item: "dotcoinmod:brass_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "450FB288DE09D512"
+					item: "dotcoinmod:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.75d
+			subtitle: "Process"
+			tasks: [{
+				id: "20998C6D6822D116"
+				item: "aether:gold_dungeon_key"
+				type: "item"
+			}]
+			title: "Gold Dungeon Key"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "The Aether"
+}

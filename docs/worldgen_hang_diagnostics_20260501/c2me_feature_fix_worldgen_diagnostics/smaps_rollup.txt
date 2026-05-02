@@ -1,0 +1,23 @@
+40a37000-7fffb3f79000 ---p 00000000 00:00 0                              [rollup]
+Rss:            16195856 kB
+Pss:            16164696 kB
+Pss_Dirty:      16088020 kB
+Pss_Anon:       15486912 kB
+Pss_File:         673374 kB
+Pss_Shmem:          4410 kB
+Shared_Clean:      32544 kB
+Shared_Dirty:        104 kB
+Private_Clean:     75208 kB
+Private_Dirty:  16088000 kB
+Referenced:     16195856 kB
+Anonymous:      15486912 kB
+KSM:                   0 kB
+LazyFree:              0 kB
+AnonHugePages:  13062144 kB
+ShmemPmdMapped:        0 kB
+FilePmdMapped:         0 kB
+Shared_Hugetlb:        0 kB
+Private_Hugetlb:       0 kB
+Swap:                944 kB
+SwapPss:               0 kB
+Locked:                0 kB

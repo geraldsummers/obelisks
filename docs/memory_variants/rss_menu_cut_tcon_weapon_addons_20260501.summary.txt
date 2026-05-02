@@ -1,0 +1,10 @@
+disabled Additional-Weaponry-1.20.1-1.1.3.jar
+disabled TinkersBattleSpades-1.20.1-1.2.1.jar
+disabled tinkersweaponry-1.20.1-0.0.5.jar
+disabled TinkerBetterCombat 0.14.jar
+marker=sampled_timeout elapsed=300 java_pid=1319113 profile=docs/memory_variants/rss_menu_cut_tcon_weapon_addons_20260501.jsonl log=/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log
+postGcJavaRssKb=10923548 postGcJavaRssMiB=10667
+diagnostics=docs/memory_variants/rss_menu_cut_tcon_weapon_addons_20260501_diagnostics
+57:[01May2026 13:05:55.958] [main/INFO] [Puzzles Lib/]: Loading 352 mods:
+tickBehindWarnings=0 maxTickBehindMs=0 fpsSamples=0 fpsMin= fpsAvg= fpsMax=
+peakRssMiB=11462 peakRssGiB=11.19

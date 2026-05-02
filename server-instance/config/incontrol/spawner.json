@@ -1,0 +1,55 @@
+[
+  {
+    "mob": [
+
+  "deeperdarker:sludge",
+  "deeperdarker:shattered",
+  "deeperdarker:sculk_centipede",
+  "deeperdarker:sculk_leech",
+  "deeperdarker:sculk_snapper",
+
+  "alexsmobs:crimson_mosquito",
+  "alexsmobs:murmur",
+  "alexsmobs:skreecher",
+  "alexsmobs:underminer",
+
+  "undergarden:rotwalker",
+  "undergarden:rotling",
+  "undergarden:rotbeast",
+  "undergarden:dweller",
+  "undergarden:forgotten",
+  "undergarden:brute",
+  "undergarden:nargoyle",
+  "undergarden:muncher",
+  "undergarden:smog_mog"
+]
+,
+    "persecond": 20,
+    "attempts": 100,
+    "amount": { "minimum": 2, "maximum": 4 },
+
+    "conditions": {
+      "dimension": "minecraft:overworld",
+      "mindist": 25,
+      "maxdist": 100,
+      "minheight": 60,
+      "maxheight": 320,
+      "maxthis": 20,
+
+      "and": {
+        "biome":[
+  "nyctophobia:ancient_dead_coral_reef",
+  "nyctophobia:deep_dark_forest",
+  "nyctophobia:eroded_haunted_forest",
+  "nyctophobia:haunted_forest",
+  "nyctophobia:haunted_lakes"
+],
+        "seesky": true
+      },
+
+      "not": {
+        "structuretags": "minecraft:village"
+      }
+    }
+  }
+]

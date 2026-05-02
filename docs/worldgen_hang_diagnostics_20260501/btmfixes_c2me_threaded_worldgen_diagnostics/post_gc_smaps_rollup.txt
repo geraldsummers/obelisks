@@ -1,0 +1,23 @@
+409a9000-7ffe3b8d6000 ---p 00000000 00:00 0                              [rollup]
+Rss:            19447860 kB
+Pss:            19416684 kB
+Pss_Dirty:      19343316 kB
+Pss_Anon:       19123856 kB
+Pss_File:         288398 kB
+Pss_Shmem:          4430 kB
+Shared_Clean:      32592 kB
+Shared_Dirty:         96 kB
+Private_Clean:     71872 kB
+Private_Dirty:  19343300 kB
+Referenced:     19447860 kB
+Anonymous:      19123856 kB
+KSM:                   0 kB
+LazyFree:              0 kB
+AnonHugePages:  15738880 kB
+ShmemPmdMapped:        0 kB
+FilePmdMapped:         0 kB
+Shared_Hugetlb:        0 kB
+Private_Hugetlb:       0 kB
+Swap:                944 kB
+SwapPss:               0 kB
+Locked:                0 kB
