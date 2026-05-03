@@ -6585,8 +6585,12 @@ file = "datapacks/datapack_foraging_everywhere/pack.mcmeta"
 hash = "33af6e1c019635b9f56028167066eb02a6f3cb13cf1c85bc9d79f74e185bad68"
 
 [[files]]
-file = "datapacks/hyle_deep/data/hyle/worldgen/placed_feature/stone_replacer.json"
-hash = "0044558413b0d38ce944c0920b730df946b7aaba14f3d9f6dc6d7fb922892e2b"
+file = "datapacks/hyle_deep/data/hyledata/regions/vanilla.json"
+hash = "1f74e5e64e33e54ec2c68fa127f5b992b1573f51c3ec3655a69ffc33bb150664"
+
+[[files]]
+file = "datapacks/hyle_deep/data/hyledata/stone_types/vanilla/deepslate.json"
+hash = "e4914863e206c01c564fe46fbad0401d7a5eb02f94e3f604ff653fd327d62b42"
 
 [[files]]
 file = "datapacks/hyle_deep/pack.mcmeta"
