@@ -133,6 +133,6 @@ LootJS.modifiers(function (event) {
 
     for (var j = 0; j < BTM_LOOT_EMERALD_TABLES_TO_COIN.length; j++) {
         event.addLootTableModifier(BTM_LOOT_EMERALD_TABLES_TO_COIN[j])
-            .replaceLoot('minecraft:emerald', Item.of('dotcoinmod:copper_coin', 4), true)
+            .replaceLoot('minecraft:emerald', Item.of('createdeco:copper_coin', 4), true)
     }
 })

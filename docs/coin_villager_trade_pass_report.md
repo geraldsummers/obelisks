@@ -2,70 +2,54 @@
 
 ## Scope
 
-This pass fixes the Dot Coin disabled-item visual bug and expands village trading into a broad coin sink across all difficulty coin tiers.
+This pass keeps the Create Deco coin migration intact and fixes the in-game trade gap where higher coin tiers were defined in script but silently blocked by the tier whitelist.
 
-## Config Fix
+## Source Data
 
-`config/dcm.json` now enables every coin item:
+- Current trade source: `kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js`
+- Old instance item dump: `/home/gerald/Bound to Matter-Playtest 3 - v1-37471267/minecraft/generated/runtime-dumps/registries.manual.json`
+- Current runtime dump references: `generated/runtime-dumps/`
 
-- copper
-- iron
-- tin
-- bronze
-- nickel
-- silver
-- steel
-- brass
-- gold
-- osmium
-- platinum
-- diamond
-- emerald
-- ruby
-- sapphire
-- topaz
+## Fixes
 
-Coin conversion remains disabled with `conversionRate: 0`. Coin drops, Dot Coin chest loot, and spawner-entity coin loot remain disabled as global Dot Coin sources; pack-authored quests, loot tables, obelisk/dimension systems, and trades should define coin flow.
+- Enabled all Create Deco coin tiers in villager trade guards:
+  - copper: `createdeco:copper_coin`
+  - zinc: `createdeco:zinc_coin`
+  - iron: `createdeco:iron_coin`
+  - industrial iron: `createdeco:industrial_iron_coin`
+  - brass: `createdeco:brass_coin`
+  - gold: `createdeco:gold_coin`
+  - platinum/netherite: `createdeco:netherite_coin`
+- Added a dedicated industrial-iron market with 30 active Create/workshop/rail support trades.
+- Added gold and platinum top-up markets so each high tier has at least about 30 active coin-cost trades.
+- Replaced stale optional IDs that were absent from the old item dump:
+  - `mynethersdelight:roast_stuffed_hoglin`
+  - `artifacts:snorkel`
+  - `railways:conductor_whistle`
+  - `railways:track_coupler`
+  - `artifacts:night_vision_goggles`
+- Updated the expert graph catalog to include zinc and industrial iron coin tiers.
+- Updated pack validation wording/checks from Dot Coin to Create Deco coins.
 
-## Trade Design
+## Active Trade Counts
 
-The villager trade script now:
+Mocked MoreJS validation against the old instance item registry reports these active coin-cost trades:
 
-- Removes vanilla villager trades.
-- Removes vanilla wandering trader trades.
-- Uses Dot Coin purchases instead of emerald trades.
-- Guards each trade with `Item.exists` so optional/moved IDs skip cleanly instead of crashing.
-- Uses all coin tiers at least once.
-- Keeps trades focused on recovery, convenience, settlement support, travel stock, route tools, decoration, and limited expedition supplies.
-- Avoids making villagers a bulk production replacement.
+| Tier | Active Trades |
+| --- | ---: |
+| copper | 64 |
+| zinc | 34 |
+| iron | 52 |
+| industrial_iron | 30 |
+| brass | 64 |
+| gold | 33 |
+| platinum | 46 |
 
-## Profession Coverage
-
-- Farmer: food recovery, cooking infrastructure, feast restock.
-- Butcher: protein and meal recovery.
-- Fisherman: water travel, ocean supplies, fishing recovery.
-- Fletcher: arrows, ranged tools, route marking.
-- Shepherd: beds, wool, banners, comfort/decor.
-- Leatherworker: backpacks, carry upgrades, temperature/travel gear.
-- Mason: construction materials and limited casing-adjacent convenience stock.
-- Toolsmith: repair kits, workshop tools, building gadgets.
-- Armorer: defensive recovery gear.
-- Weaponsmith: weapons, gunpowder, TNT, blast-mining support.
-- Cleric: ritual and magic recovery materials.
-- Librarian: books, manuals, XP bottles, local intelligence support.
-- Cartographer: maps, route tools, compasses, rail navigation support.
-- Wandering Trader: cross-tier travel/adventure oddities and late-tier curios.
+Sell-to-villager payout trades are not counted in this table because their input is an item and their output is copper coins.
 
 ## Validation
 
-- `node --check kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js` passed.
-- Trade result item IDs were checked against the live item registry dump at `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/dump/registry_builtin/minecraft/item/_entries.txt`; no missing result item IDs remain.
-- `packwiz refresh` was run after config/script/doc changes.
+- `node --check kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js`
+- All referenced item result IDs were checked against the old instance manual item registry dump.
+- A mocked MoreJS execution counted active coin-cost offers after `Item.exists` filtering.
 
-## Runtime Checks
-
-- Confirm every coin item no longer shows disabled/server-disabled tooltip text.
-- Spawn each vanilla profession and verify it has Dot Coin trades.
-- Spawn a wandering trader and verify both trade levels use Dot Coin costs.
-- Confirm no emerald trades remain.
-- Confirm high-tier trades are acceptable as convenience/adventure sinks, not mandatory progression shortcuts.

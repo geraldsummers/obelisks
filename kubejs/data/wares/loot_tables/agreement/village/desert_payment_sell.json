@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "dotcoinmod:copper_coin"
+          "name": "createdeco:copper_coin"
         }
       ],
       "rolls": 1.0

@@ -1,0 +1,13 @@
+name = "Concurrent Chunk Management Engine for Forge -The Twilight Forest fix"
+filename = "c2meF-0.2.0+alpha.13-all.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f70f85cfd8bfdc94bf608c7f527bb5f1fa8d1776"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7746800
+project-id = 1484205

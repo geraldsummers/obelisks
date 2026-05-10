@@ -3,7 +3,7 @@
 
 var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     {
-        coin: 'dotcoinmod:copper_coin',
+        coin: 'createdeco:copper_coin',
         count: 4,
         tables: [
             'minecraft:chests/village/village_armorer',
@@ -37,7 +37,7 @@ var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     }
 ,
     {
-        coin: 'dotcoinmod:iron_coin',
+        coin: 'createdeco:iron_coin',
         count: 2,
         tables: [
             'born_in_chaos_v1:entities/barrel_zombie',
@@ -57,7 +57,7 @@ var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     }
 ,
     {
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:brass_coin',
         count: 3,
         tables: [
             'artifacts:chests/campsite_barrel/gems',
@@ -82,7 +82,7 @@ var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     }
 ,
     {
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:brass_coin',
         count: 2,
         tables: [
             'block_factorys_bosses:chests/dragon_tower',
@@ -201,7 +201,7 @@ var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     }
 ,
     {
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:brass_coin',
         count: 2,
         tables: [
             'alexsmobs:gameplay/trader_elephant_chest',
@@ -219,7 +219,7 @@ var BTM_EMERALD_LOOT_COIN_REPLACEMENTS = [
     }
 ,
     {
-        coin: 'dotcoinmod:gold_coin',
+        coin: 'createdeco:gold_coin',
         count: 2,
         tables: [
             'deeperdarker:chests/ancient_temple_apex',

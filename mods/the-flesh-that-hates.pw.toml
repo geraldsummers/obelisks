@@ -1,0 +1,13 @@
+name = "The Flesh That Hates"
+filename = "TFTH 1.1b.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7d157b87a9eb29a2e5bcb8cde35e0eaab1e60f2f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5235839
+project-id = 852739

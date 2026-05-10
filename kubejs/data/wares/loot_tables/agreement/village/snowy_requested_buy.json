@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "dotcoinmod:brass_coin"
+          "name": "createdeco:brass_coin"
         }
       ],
       "rolls": 1

@@ -1,0 +1,76 @@
+{
+  "run_root": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930",
+  "cycles_requested": 3,
+  "cycles": [
+    {
+      "index": 1,
+      "status": "PASS",
+      "phases": [
+        "bootstrap",
+        "jar_verification",
+        "boot",
+        "join",
+        "lc_teleport",
+        "lc_dh_generation",
+        "lc_tfth_pressure",
+        "repeat"
+      ],
+      "failure_class": null,
+      "reason": "clean cycle",
+      "server_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-01/server",
+      "client_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-01/client",
+      "evidence_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-01/evidence",
+      "port": 40735,
+      "required_jars": {
+        "server": {
+          "lostcities": "lostcities-1.20-7.4.11.jar",
+          "the_flesh_that_hates": "TFTH 1.1b.jar",
+          "c2me": "c2meF-0.2.0+alpha.13-all.jar",
+          "DistantHorizons": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+          "btmfixes": "btmfixes-0.1.0.jar"
+        },
+        "client": {
+          "lostcities": "lostcities-1.20-7.4.11.jar",
+          "the_flesh_that_hates": "TFTH 1.1b.jar",
+          "c2me": "c2meF-0.2.0+alpha.13-all.jar",
+          "DistantHorizons": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+          "btmfixes": "btmfixes-0.1.0.jar"
+        }
+      },
+      "dh_activity_seen": true,
+      "crash_reports": []
+    },
+    {
+      "index": 2,
+      "status": "FAIL",
+      "phases": [
+        "bootstrap",
+        "jar_verification"
+      ],
+      "failure_class": "dh_worldgen_exception",
+      "reason": "dh_worldgen_exception signature in /tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-02/server/logs/latest.log",
+      "server_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-02/server",
+      "client_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-02/client",
+      "evidence_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-113930/cycle-02/evidence",
+      "port": 33685,
+      "required_jars": {
+        "server": {
+          "lostcities": "lostcities-1.20-7.4.11.jar",
+          "the_flesh_that_hates": "TFTH 1.1b.jar",
+          "c2me": "c2meF-0.2.0+alpha.13-all.jar",
+          "DistantHorizons": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+          "btmfixes": "btmfixes-0.1.0.jar"
+        },
+        "client": {
+          "lostcities": "lostcities-1.20-7.4.11.jar",
+          "the_flesh_that_hates": "TFTH 1.1b.jar",
+          "c2me": "c2meF-0.2.0+alpha.13-all.jar",
+          "DistantHorizons": "DistantHorizons-2.4.5-b-1.20.1-fabric-forge.jar",
+          "btmfixes": "btmfixes-0.1.0.jar"
+        }
+      },
+      "dh_activity_seen": false,
+      "crash_reports": []
+    }
+  ]
+}

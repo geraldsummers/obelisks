@@ -15,7 +15,7 @@
   "coinTiers": [
     {
       "id": "copper",
-      "item": "dotcoinmod:copper_coin",
+      "item": "createdeco:copper_coin",
       "index": 0,
       "intendedSources": [
         "starting_out",
@@ -25,9 +25,19 @@
       ]
     },
     {
-      "id": "iron",
-      "item": "dotcoinmod:iron_coin",
+      "id": "zinc",
+      "item": "createdeco:zinc_coin",
       "index": 1,
+      "intendedSources": [
+        "early_adventure",
+        "villages",
+        "route_recovery"
+      ]
+    },
+    {
+      "id": "iron",
+      "item": "createdeco:iron_coin",
+      "index": 2,
       "intendedSources": [
         "tcon_seared",
         "early_adventure",
@@ -35,9 +45,19 @@
       ]
     },
     {
+      "id": "industrial_iron",
+      "item": "createdeco:industrial_iron_coin",
+      "index": 3,
+      "intendedSources": [
+        "create_andesite",
+        "rail_logistics",
+        "workshop_recovery"
+      ]
+    },
+    {
       "id": "brass",
-      "item": "dotcoinmod:brass_coin",
-      "index": 2,
+      "item": "createdeco:brass_coin",
+      "index": 4,
       "intendedSources": [
         "create_brass",
         "logistics",
@@ -46,8 +66,8 @@
     },
     {
       "id": "gold",
-      "item": "dotcoinmod:gold_coin",
-      "index": 3,
+      "item": "createdeco:gold_coin",
+      "index": 5,
       "intendedSources": [
         "space",
         "synthesis",
@@ -56,8 +76,8 @@
     },
     {
       "id": "platinum",
-      "item": "dotcoinmod:platinum_coin",
-      "index": 4,
+      "item": "createdeco:netherite_coin",
+      "index": 6,
       "intendedSources": [
         "deepslate_depths",
         "lava_depths",

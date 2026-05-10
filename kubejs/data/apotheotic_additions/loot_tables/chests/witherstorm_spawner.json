@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dotcoinmod:gold_coin",
+          "name": "createdeco:gold_coin",
           "weight": 1,
           "functions": [
             {

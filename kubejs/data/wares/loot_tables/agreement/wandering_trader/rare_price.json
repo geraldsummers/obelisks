@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "dotcoinmod:gold_coin"
+          "name": "createdeco:gold_coin"
         }
       ],
       "rolls": 1.0

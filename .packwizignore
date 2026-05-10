@@ -13,8 +13,8 @@ playtest_notes
 generated
 server-instance
 server-template
+tools
 kubejs/recipe_dumps
-kubejs/config/runtime_graph_dumps.json
 kubejs/config/recipe_audit_summary.json
 kubejs/config/progression_recipe_mentions.json
 kubejs/config/valuable_material_usage_recipes.json

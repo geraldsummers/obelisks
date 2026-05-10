@@ -476,7 +476,8 @@ function testQuestBook() {
   badRecipeHooks.length ? fail('quest nodes expose stable recipe hooks', badRecipeHooks.slice(0, 80).join('\n')) : ok('quest nodes expose stable recipe hooks')
 
   const starting = parseQuestFile(path.join(chapterDir, 'starting_out.snbt'))
-  const badStarting = starting.filter(q => q.rewards.length !== 1 || q.rewards[0].item !== 'dotcoinmod:copper_coin' || q.rewards[0].count !== 4)
+  const copperCoin = catalog.coinTiers.find(t => t.id === 'copper')?.item || 'createdeco:copper_coin'
+  const badStarting = starting.filter(q => q.rewards.length !== 1 || q.rewards[0].item !== copperCoin || q.rewards[0].count !== 4)
   badStarting.length ? fail('Starting Out rewards exactly 4 copper per quest', badStarting.map(q => q.id).join(', ')) : ok('Starting Out rewards exactly 4 copper per quest', `${starting.length} quests`)
 
   const nonStartingBad = []
@@ -577,7 +578,7 @@ function testWaresAndTrades() {
     for (const coin of coinItems) if (text.includes(coin)) coinWares.push(`${rel(file)} -> ${coin}`)
   }
   emeraldWares.length ? fail('Wares contracts do not use emerald currency', emeraldWares.join('\n')) : ok('Wares contracts do not use emerald currency', `${waresFiles.length} tables`)
-  coinWares.length ? ok('Wares contracts contain dotcoin currency', `${unique(coinWares.map(x => x.split(' -> ')[0])).length} tables`) : fail('Wares contracts contain dotcoin currency', 'no coin entries found')
+  coinWares.length ? ok('Wares contracts contain Create Deco coin currency', `${unique(coinWares.map(x => x.split(' -> ')[0])).length} tables`) : fail('Wares contracts contain Create Deco coin currency', 'no coin entries found')
 
   const tradePath = path.join(repo, 'kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js')
   const text = exists(tradePath) ? read(tradePath) : ''

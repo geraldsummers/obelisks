@@ -2,11 +2,13 @@
 // Keep this Rhino-safe: no modern JS features beyond what KubeJS already supports.
 
 global.BTM_COIN_TIERS = [
-    { id: 'copper', item: 'dotcoinmod:copper_coin' },
-    { id: 'iron', item: 'dotcoinmod:iron_coin' },
-    { id: 'brass', item: 'dotcoinmod:brass_coin' },
-    { id: 'gold', item: 'dotcoinmod:gold_coin' },
-    { id: 'platinum', item: 'dotcoinmod:platinum_coin' }
+    { id: 'copper', item: 'createdeco:copper_coin' },
+    { id: 'zinc', item: 'createdeco:zinc_coin' },
+    { id: 'iron', item: 'createdeco:iron_coin' },
+    { id: 'industrial_iron', item: 'createdeco:industrial_iron_coin' },
+    { id: 'brass', item: 'createdeco:brass_coin' },
+    { id: 'gold', item: 'createdeco:gold_coin' },
+    { id: 'platinum', item: 'createdeco:netherite_coin' }
 ]
 
 global.BTM_MACHINE_CASING_TIERS = [

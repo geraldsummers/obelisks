@@ -1,0 +1,20 @@
+{
+  "run_root": "/tmp/btm-lc-tfth-c2me-dh/20260510-112924",
+  "cycles_requested": 1,
+  "cycles": [
+    {
+      "index": 1,
+      "status": "FAIL",
+      "phases": [],
+      "failure_class": "harness_exception",
+      "reason": "/home/gerald/obelisks/tools/bootstrap_server.sh failed; see /tmp/btm-lc-tfth-c2me-dh/20260510-112924/cycle-01/evidence/bootstrap-server.log",
+      "server_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-112924/cycle-01/server",
+      "client_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-112924/cycle-01/client",
+      "evidence_dir": "/tmp/btm-lc-tfth-c2me-dh/20260510-112924/cycle-01/evidence",
+      "port": 44339,
+      "required_jars": {},
+      "dh_activity_seen": false,
+      "crash_reports": []
+    }
+  ]
+}

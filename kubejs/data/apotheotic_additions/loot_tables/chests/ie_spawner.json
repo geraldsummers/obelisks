@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dotcoinmod:iron_coin",
+          "name": "createdeco:iron_coin",
           "weight": 1,
           "functions": [
             {

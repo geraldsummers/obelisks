@@ -13,7 +13,7 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/igloo_chest',
             'minecraft:chests/underwater_ruin_small'
         ],
-        coin: 'dotcoinmod:copper_coin',
+        coin: 'createdeco:copper_coin',
         count: 4,
         chance: 0.55
     },
@@ -24,7 +24,7 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/underwater_ruin_big',
             'minecraft:chests/ruined_portal'
         ],
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:zinc_coin',
         count: 3,
         chance: 0.45
     },
@@ -36,7 +36,7 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/desert_pyramid',
             'minecraft:chests/jungle_temple'
         ],
-        coin: 'dotcoinmod:iron_coin',
+        coin: 'createdeco:iron_coin',
         count: 3,
         chance: 0.50
     },
@@ -47,7 +47,7 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/stronghold_corridor',
             'minecraft:chests/stronghold_crossing'
         ],
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:industrial_iron_coin',
         count: 3,
         chance: 0.40
     },
@@ -59,9 +59,9 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/bastion_bridge',
             'minecraft:chests/bastion_hoglin_stable'
         ],
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:brass_coin',
         count: 2,
-        chance: 0.40
+        chance: 0.30
     },
     {
         tables: [
@@ -69,18 +69,18 @@ var BTM_WORLD_CHEST_COIN_TABLES = [
             'minecraft:chests/ancient_city',
             'minecraft:chests/bastion_other'
         ],
-        coin: 'dotcoinmod:brass_coin',
+        coin: 'createdeco:gold_coin',
         count: 2,
-        chance: 0.35
+        chance: 0.08
     },
     {
         tables: [
             'minecraft:chests/bastion_treasure',
             'minecraft:chests/end_city_treasure'
         ],
-        coin: 'dotcoinmod:brass_coin',
-        count: 2,
-        chance: 0.30
+        coin: 'createdeco:netherite_coin',
+        count: 1,
+        chance: 0.001
     }
 ]
 
@@ -114,8 +114,9 @@ function btmAddCoinToLootTable(event, table, coin, count, chance) {
 LootJS.modifiers(function (event) {
     var baselineTables = btmKnownCoinLootTables()
     for (var b = 0; b < baselineTables.length; b++) {
-        btmAddCoinToLootTable(event, baselineTables[b], 'dotcoinmod:copper_coin', 4, 1.0)
-        btmAddCoinToLootTable(event, baselineTables[b], 'dotcoinmod:iron_coin', 2, 0.85)
+        btmAddCoinToLootTable(event, baselineTables[b], 'createdeco:copper_coin', 4, 1.0)
+        btmAddCoinToLootTable(event, baselineTables[b], 'createdeco:zinc_coin', 2, 0.9)
+        btmAddCoinToLootTable(event, baselineTables[b], 'createdeco:iron_coin', 2, 0.85)
     }
 
     for (var i = 0; i < BTM_WORLD_CHEST_COIN_TABLES.length; i++) {

@@ -157,7 +157,7 @@ ServerEvents.recipes(function (event) {
         'PAP',
         'WWW'
     ], {
-        G: 'dotcoinmod:gold_coin',
+        G: 'createdeco:gold_coin',
         E: 'ae2:engineering_processor',
         P: 'pneumaticcraft:printed_circuit_board',
         A: BTM_GATE.ae2,
@@ -165,7 +165,7 @@ ServerEvents.recipes(function (event) {
     }).id('kubejs:late_game/tradingpost/trading_post')
 
     // Economy tools use coins instead of emeralds where there is a clear recipe hook.
-    btmReplaceInputs(event, 'wares:delivery_table', ['minecraft:ink_sac'], 'dotcoinmod:iron_coin')
+    btmReplaceInputs(event, 'wares:delivery_table', ['minecraft:ink_sac'], 'createdeco:iron_coin')
 
     // Create Enchantment Industry and Apotheosis are combat/adventure power spikes; parent them to Blood Magic tiers.
     btmGateOutputs(event, [

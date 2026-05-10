@@ -224,7 +224,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "dotcoinmod:iron_coin",
+          "name": "createdeco:iron_coin",
           "weight": 2
         },
         {

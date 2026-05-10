@@ -2,11 +2,123 @@
 // Coins are rewards from quests/adventure first; exchange trades are convenience with spread.
 
 var BTM_COIN = {
-    copper: 'dotcoinmod:copper_coin',
-    iron: 'dotcoinmod:iron_coin',
-    brass: 'dotcoinmod:brass_coin',
-    gold: 'dotcoinmod:gold_coin',
-    platinum: 'dotcoinmod:platinum_coin'
+    copper: 'createdeco:copper_coin',
+    zinc: 'createdeco:zinc_coin',
+    iron: 'createdeco:iron_coin',
+    industrial_iron: 'createdeco:industrial_iron_coin',
+    brass: 'createdeco:brass_coin',
+    gold: 'createdeco:gold_coin',
+    platinum: 'createdeco:netherite_coin'
+}
+
+var BTM_VILLAGER_COIN_WHITELIST = { copper: true, zinc: true, iron: true, industrial_iron: true, brass: true, gold: true, platinum: true }
+var BTM_LOW_TIER_PROFESSIONS = ['minecraft:farmer','minecraft:fisherman','minecraft:fletcher','minecraft:mason','minecraft:librarian','minecraft:toolsmith']
+
+var BTM_30_ITEMS = [
+    ['minecraft:bread',4],['minecraft:apple',4],['minecraft:torch',16],['minecraft:coal',8],['minecraft:stick',32],
+    ['minecraft:string',8],['minecraft:leather',4],['minecraft:paper',16],['minecraft:arrow',16],['minecraft:glass',8],
+    ['minecraft:bucket',1],['minecraft:lantern',2],['minecraft:cooked_beef',4],['minecraft:carrot',12],['minecraft:potato',12],
+    ['minecraft:oak_planks',32],['minecraft:cobblestone',48],['minecraft:andesite',32],['minecraft:granite',32],['minecraft:diorite',32],
+    ['minecraft:iron_ingot',2],['minecraft:redstone',8],['minecraft:compass',1],['minecraft:map',1],['minecraft:fishing_rod',1],
+    ['minecraft:shears',1],['minecraft:rail',16],['minecraft:tnt',1],['minecraft:bone_meal',16],['minecraft:bookshelf',1]
+]
+
+var BTM_INDUSTRIAL_IRON_MARKET = [
+    ['minecraft:mason',2,3,'create:andesite_alloy',4,8,6],
+    ['minecraft:mason',2,3,'create:andesite_casing',4,8,6],
+    ['minecraft:mason',3,4,'create:cut_limestone',16,8,8],
+    ['minecraft:mason',3,4,'create:cut_scoria',16,8,8],
+    ['minecraft:mason',3,4,'create:cut_ochrum',16,8,8],
+    ['minecraft:toolsmith',2,3,'create:wrench',1,6,6],
+    ['minecraft:toolsmith',2,3,'create:super_glue',1,8,6],
+    ['minecraft:toolsmith',3,4,'create:belt_connector',16,8,8],
+    ['minecraft:toolsmith',3,4,'create:depot',2,8,8],
+    ['minecraft:toolsmith',3,4,'create:chute',4,8,8],
+    ['minecraft:toolsmith',3,4,'create:andesite_funnel',2,6,10],
+    ['minecraft:toolsmith',3,4,'create:andesite_tunnel',2,6,10],
+    ['minecraft:toolsmith',3,5,'create:portable_storage_interface',1,5,10],
+    ['minecraft:cartographer',2,3,'create:track',24,6,8],
+    ['minecraft:cartographer',2,3,'create:controller_rail',8,6,8],
+    ['minecraft:cartographer',3,4,'create:track_signal',2,6,10],
+    ['minecraft:cartographer',3,4,'create:track_observer',2,6,10],
+    ['minecraft:cartographer',3,4,'create:track_station',1,5,10],
+    ['minecraft:cartographer',4,5,'create:redstone_link',2,5,14],
+    ['minecraft:librarian',2,3,'create:clipboard',1,6,8],
+    ['minecraft:librarian',3,4,'create:display_link',1,5,10],
+    ['minecraft:librarian',3,4,'create:display_board',2,5,10],
+    ['minecraft:librarian',3,4,'create:content_observer',1,5,10],
+    ['minecraft:fletcher',2,3,'minecraft:spectral_arrow',8,8,6],
+    ['minecraft:fletcher',3,4,'minecraft:target',4,8,10],
+    ['minecraft:leatherworker',3,4,'create:copper_backtank',1,4,10],
+    ['minecraft:leatherworker',3,4,'create:copper_diving_helmet',1,4,10],
+    ['minecraft:leatherworker',3,4,'create:copper_diving_boots',1,4,10],
+    ['minecraft:cleric',3,4,'minecraft:glowstone_dust',12,8,10],
+    ['minecraft:weaponsmith',3,4,'minecraft:tnt',3,6,10]
+]
+
+var BTM_GOLD_MARKET = [
+    ['minecraft:farmer',4,5,'farmersdelight:stuffed_pumpkin_block',1,3,16],
+    ['minecraft:farmer',4,5,'farmersdelight:gleaming_salad_block',1,3,16],
+    ['minecraft:butcher',4,5,'farmersdelight:steak_and_potatoes',4,5,16],
+    ['minecraft:fisherman',4,5,'minecraft:nautilus_shell',2,5,16],
+    ['minecraft:fisherman',4,6,'minecraft:heart_of_the_sea',1,3,18],
+    ['minecraft:fletcher',4,5,'minecraft:tipped_arrow',16,5,16],
+    ['minecraft:shepherd',4,5,'minecraft:globe_banner_pattern',1,4,16],
+    ['minecraft:leatherworker',4,5,'sophisticatedbackpacks:magnet_upgrade',1,3,16],
+    ['minecraft:leatherworker',4,5,'sophisticatedbackpacks:refill_upgrade',1,3,16],
+    ['minecraft:leatherworker',4,5,'sophisticatedbackpacks:restock_upgrade',1,3,16],
+    ['minecraft:mason',4,5,'minecraft:obsidian',8,5,16],
+    ['minecraft:mason',4,5,'minecraft:crying_obsidian',4,4,18],
+    ['minecraft:toolsmith',4,5,'minecraft:diamond_pickaxe',1,3,18],
+    ['minecraft:toolsmith',4,5,'create:empty_blaze_burner',1,3,18],
+    ['minecraft:armorer',4,5,'minecraft:diamond_boots',1,2,18],
+    ['minecraft:armorer',4,5,'minecraft:diamond_helmet',1,2,18],
+    ['minecraft:weaponsmith',4,5,'minecraft:golden_apple',1,4,18],
+    ['minecraft:cleric',4,5,'minecraft:ender_pearl',4,5,18],
+    ['minecraft:cleric',4,6,'minecraft:blaze_rod',4,4,18],
+    ['minecraft:librarian',4,5,'minecraft:experience_bottle',16,6,18],
+    ['minecraft:librarian',4,5,'minecraft:echo_shard',1,4,18],
+    ['minecraft:cartographer',4,5,'minecraft:recovery_compass',1,3,18]
+]
+
+var BTM_PLATINUM_MARKET = [
+    ['minecraft:fisherman',5,7,'minecraft:trident',1,1,24],
+    ['minecraft:fisherman',5,7,'minecraft:conduit',1,1,24],
+    ['minecraft:fletcher',5,7,'minecraft:totem_of_undying',1,1,24],
+    ['minecraft:shepherd',5,6,'minecraft:decorated_pot',4,4,20],
+    ['minecraft:leatherworker',5,8,'sophisticatedbackpacks:advanced_pickup_upgrade',1,2,22],
+    ['minecraft:leatherworker',5,8,'sophisticatedbackpacks:advanced_magnet_upgrade',1,2,22],
+    ['minecraft:mason',5,7,'ae2:sky_stone_block',16,2,22],
+    ['minecraft:mason',5,8,'minecraft:ancient_debris',2,1,26],
+    ['minecraft:toolsmith',5,7,'minecraft:netherite_upgrade_smithing_template',1,1,24],
+    ['minecraft:toolsmith',5,8,'minecraft:netherite_scrap',2,1,26],
+    ['minecraft:armorer',5,8,'minecraft:diamond_chestplate',1,1,24],
+    ['minecraft:armorer',5,8,'minecraft:diamond_leggings',1,1,24],
+    ['minecraft:weaponsmith',5,8,'minecraft:enchanted_golden_apple',1,1,28],
+    ['minecraft:weaponsmith',5,9,'minecraft:netherite_scrap',2,1,28],
+    ['minecraft:cleric',5,8,'bloodmagic:demonslate',1,2,24],
+    ['minecraft:cleric',5,10,'bloodmagic:etherealslate',1,1,30],
+    ['minecraft:librarian',5,8,'minecraft:enchanted_book',1,2,24],
+    ['minecraft:librarian',5,8,'minecraft:dragon_breath',2,2,30],
+    ['minecraft:cartographer',5,8,'minecraft:lodestone',1,2,24],
+    ['minecraft:cartographer',5,10,'minecraft:beacon',1,1,32]
+]
+
+function btmAddThirtyBuys(event, tier, baseCost) {
+    for (var i = 0; i < BTM_30_ITEMS.length; i++) {
+        var p = BTM_LOW_TIER_PROFESSIONS[i % BTM_LOW_TIER_PROFESSIONS.length]
+        var lvl = (i % 5) + 1
+        var it = BTM_30_ITEMS[i][0]
+        var ct = BTM_30_ITEMS[i][1]
+        btmTrade(event, p, lvl, tier, baseCost + Math.floor(i / 10), it, ct, 8, lvl * 3)
+    }
+}
+
+function btmAddTierMarket(event, tier, rows) {
+    for (var i = 0; i < rows.length; i++) {
+        var r = rows[i]
+        btmTrade(event, r[0], r[1], tier, r[2], r[3], r[4], r[5], r[6])
+    }
 }
 
 function btmItemExists(id) {
@@ -14,6 +126,7 @@ function btmItemExists(id) {
 }
 
 function btmTrade(event, profession, level, coinTier, costCount, resultItem, resultCount, uses, xp) {
+    if (!BTM_VILLAGER_COIN_WHITELIST[coinTier]) return
     var coin = BTM_COIN[coinTier]
     if (!coin) {
         console.warn('[coin-villager-trades] Unknown coin tier: ' + coinTier + ' for ' + resultItem)
@@ -32,6 +145,7 @@ function btmTrade(event, profession, level, coinTier, costCount, resultItem, res
 }
 
 function btmWandererTrade(event, level, coinTier, costCount, resultItem, resultCount, uses, xp) {
+    if (!BTM_VILLAGER_COIN_WHITELIST[coinTier]) return
     var coin = BTM_COIN[coinTier]
     if (!coin || !btmItemExists(coin) || !btmItemExists(resultItem)) return
 
@@ -66,6 +180,7 @@ function btmAddSellTrades(event, profession, rows) {
 }
 
 function btmCoinExchangeTrade(event, profession, level, inputTier, inputCount, outputTier, outputCount, uses, xp) {
+    if (!BTM_VILLAGER_COIN_WHITELIST[inputTier] || !BTM_VILLAGER_COIN_WHITELIST[outputTier]) return
     var inputCoin = BTM_COIN[inputTier]
     var outputCoin = BTM_COIN[outputTier]
     if (!inputCoin || !outputCoin) {
@@ -95,28 +210,24 @@ if (typeof MoreJSEvents !== 'undefined') {
         // Moneychanger trades are intentionally lossy in both directions.
         // They smooth progression currency without making lower-tier farms mint higher-tier coins efficiently.
         btmAddCoinExchangeTrades(event, 'minecraft:cleric', [
-            [1, 'copper', 10, 'iron', 1, 16, 2],
-            [1, 'iron', 1, 'copper', 6, 16, 2],
-            [2, 'iron', 8, 'brass', 1, 12, 6],
-            [2, 'brass', 1, 'iron', 5, 12, 6],
-            [3, 'brass', 8, 'gold', 1, 10, 10],
-            [3, 'gold', 1, 'brass', 5, 10, 10],
-            [4, 'gold', 6, 'platinum', 1, 8, 16],
-            [4, 'platinum', 1, 'gold', 4, 8, 16],
-            [5, 'brass', 1, 'copper', 24, 6, 20],
-            [5, 'gold', 1, 'iron', 20, 6, 20],
-            [5, 'platinum', 1, 'brass', 16, 6, 24]
+            [1, 'copper', 10, 'zinc', 1, 16, 2],
+            [1, 'zinc', 1, 'copper', 6, 16, 2],
+            [2, 'zinc', 8, 'iron', 1, 12, 6],
+            [2, 'iron', 1, 'zinc', 5, 12, 6],
+            [3, 'iron', 1, 'copper', 24, 6, 20]
         ])
         btmAddCoinExchangeTrades(event, 'minecraft:cartographer', [
-            [2, 'copper', 12, 'iron', 1, 8, 6],
-            [2, 'iron', 1, 'copper', 5, 8, 6],
-            [3, 'iron', 10, 'brass', 1, 6, 10],
-            [3, 'brass', 1, 'iron', 4, 6, 10],
-            [4, 'brass', 10, 'gold', 1, 5, 16],
-            [4, 'gold', 1, 'brass', 4, 5, 16],
-            [5, 'gold', 8, 'platinum', 1, 4, 22],
-            [5, 'platinum', 1, 'gold', 3, 4, 22]
+            [2, 'copper', 12, 'zinc', 1, 8, 6],
+            [2, 'zinc', 1, 'copper', 5, 8, 6],
+            [3, 'zinc', 10, 'iron', 1, 6, 10],
+            [3, 'iron', 1, 'zinc', 4, 6, 10]
         ])
+        btmAddThirtyBuys(event, 'copper', 2)
+        btmAddThirtyBuys(event, 'zinc', 3)
+        btmAddThirtyBuys(event, 'iron', 4)
+        btmAddTierMarket(event, 'industrial_iron', BTM_INDUSTRIAL_IRON_MARKET)
+        btmAddTierMarket(event, 'gold', BTM_GOLD_MARKET)
+        btmAddTierMarket(event, 'platinum', BTM_PLATINUM_MARKET)
 
         // Copper payout trades replace vanilla sell-for-emerald loops.
         // These create a low-tier market floor without enabling coin conversion.
@@ -230,7 +341,7 @@ if (typeof MoreJSEvents !== 'undefined') {
             [3, 'brass', 4, 'farmersdelight:mutton_wrap', 2, 6, 10],
             [4, 'brass', 4, 'farmersdelight:beef_stew', 2, 5, 14],
             [4, 'brass', 5, 'farmersdelight:roasted_mutton_chops', 2, 5, 14],
-            [5, 'brass', 6, 'mynethersdelight:roast_stuffed_hoglin', 1, 2, 20]
+            [5, 'brass', 6, 'farmersdelight:nether_salad', 4, 3, 20]
         ])
 
         // Fisherman: water travel, food, and ocean expedition restock.
@@ -247,7 +358,7 @@ if (typeof MoreJSEvents !== 'undefined') {
             [3, 'brass', 4, 'starcatcher:stone_hook', 1, 5, 10],
             [3, 'brass', 5, 'starcatcher:murkwater_bait', 4, 6, 10],
             [3, 'brass', 4, 'minecraft:nautilus_shell', 1, 4, 10],
-            [3, 'brass', 4, 'artifacts:snorkel', 1, 2, 10],
+            [3, 'brass', 4, 'create:copper_diving_helmet', 1, 2, 10],
             [4, 'brass', 5, 'minecraft:heart_of_the_sea', 1, 2, 16],
             [4, 'gold', 6, 'starcatcher:fish_radar', 1, 3, 16],
             [4, 'gold', 5, 'starcatcher:waterlogged_satchel', 1, 4, 16],
@@ -388,8 +499,8 @@ if (typeof MoreJSEvents !== 'undefined') {
             [3, 'brass', 5, 'minecraft:recovery_compass', 1, 3, 12],
             [4, 'gold', 4, 'naturescompass:naturescompass', 1, 3, 14],
             [4, 'brass', 5, 'create:track_signal', 4, 5, 16],
-            [5, 'platinum', 7, 'railways:conductor_whistle', 1, 2, 22],
-            [5, 'platinum', 8, 'railways:track_coupler', 2, 2, 24]
+            [5, 'platinum', 7, 'create:track_station', 1, 2, 22],
+            [5, 'platinum', 8, 'create:controller_rail', 8, 2, 24]
         ])
     })
 
@@ -410,7 +521,7 @@ if (typeof MoreJSEvents !== 'undefined') {
         btmWandererTrade(event, 2, 'platinum', 6, 'minecraft:phantom_membrane', 2, 3, 16)
         btmWandererTrade(event, 2, 'platinum', 7, 'minecraft:shulker_shell', 1, 2, 18)
         btmWandererTrade(event, 2, 'platinum', 7, 'minecraft:totem_of_undying', 1, 1, 22)
-        btmWandererTrade(event, 2, 'platinum', 8, 'artifacts:night_vision_goggles', 1, 1, 24)
+        btmWandererTrade(event, 2, 'platinum', 8, 'pneumaticcraft:night_vision_upgrade', 1, 1, 24)
         btmWandererTrade(event, 2, 'platinum', 8, 'minecraft:dragon_breath', 2, 1, 26)
         btmWandererTrade(event, 2, 'platinum', 8, 'minecraft:dragon_head', 1, 1, 28)
         btmWandererTrade(event, 2, 'platinum', 10, 'minecraft:nether_star', 1, 1, 32)
