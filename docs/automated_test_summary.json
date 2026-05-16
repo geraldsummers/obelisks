@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-16T02:46:41.984Z",
+  "generatedAt": "2026-05-16T02:49:27.684Z",
   "repo": "/home/gerald/obelisks",
   "instance": "/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft",
   "passes": 50,
@@ -11,7 +11,7 @@
     "villagerProfessionsCovered": 13,
     "engineWorld": {
       "latestLog": "/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log",
-      "latestLogAgeMinutes": 102.95,
+      "latestLogAgeMinutes": 105.71,
       "latestLogLines": 23415,
       "reachedIntegratedServer": true,
       "startedServingLan": false,
@@ -64,37 +64,37 @@
       "results": [
         {
           "name": "JSON and JS syntax validation",
-          "durationMs": 4316.41,
+          "durationMs": 4350.04,
           "budgetMs": 8000,
           "hardLimitMs": 24000
         },
         {
           "name": "critical progression surfaces",
-          "durationMs": 4.92,
+          "durationMs": 4.24,
           "budgetMs": 750,
           "hardLimitMs": 3000
         },
         {
           "name": "quest book validation",
-          "durationMs": 0.49,
+          "durationMs": 0.41,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "Wares and villager trade validation",
-          "durationMs": 0.7,
+          "durationMs": 0.8,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "repo loot data validation",
-          "durationMs": 1.98,
+          "durationMs": 1.72,
           "budgetMs": 500,
           "hardLimitMs": 3000
         },
         {
           "name": "generated recipe graph validation",
-          "durationMs": 20.11,
+          "durationMs": 18.84,
           "budgetMs": 5000,
           "hardLimitMs": 20000
         },
@@ -106,13 +106,13 @@
         },
         {
           "name": "engine and world performance log analysis",
-          "durationMs": 26.84,
+          "durationMs": 25.95,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "chemistry identity validation",
-          "durationMs": 60.53,
+          "durationMs": 61.45,
           "budgetMs": 500,
           "hardLimitMs": 2000
         },

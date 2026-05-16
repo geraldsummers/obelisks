@@ -1,6 +1,6 @@
 # Automated Pack Test Report
 
-Generated: 2026-05-16T02:46:41.984Z
+Generated: 2026-05-16T02:49:27.684Z
 
 Repo: `/home/gerald/obelisks`
 
@@ -35,7 +35,7 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
 | progression catalog parses                                              | 12 tiers                                 |
 | all repo JSON parses                                                    | 158 files                                |
 | all KubeJS/tool JS parses with node --check                             | 93 files                                 |
-| performance budget: JSON and JS syntax validation                       | 4316.41 ms <= 8000 ms                    |
+| performance budget: JSON and JS syntax validation                       | 4350.04 ms <= 8000 ms                    |
 | critical expert-pack surfaces exist                                     | 19 files                                 |
 | retired Acid Vat deposit slurry script is absent                        |                                          |
 | machine casing IDs are referenced                                       | 10 casings                               |
@@ -51,23 +51,23 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
 | Fallout Wastelands portal is gated by Creating Space                    |                                          |
 | Twilight Forest portal is advancement-locked by Creating Space          |                                          |
 | Creating Space access advancement has a concrete space item trigger     |                                          |
-| performance budget: critical progression surfaces                       | 4.92 ms <= 750 ms                        |
+| performance budget: critical progression surfaces                       | 4.24 ms <= 750 ms                        |
 | quest book is intentionally empty                                       | 0 chapters and no chapter groups         |
-| performance budget: quest book validation                               | 0.49 ms <= 250 ms                        |
+| performance budget: quest book validation                               | 0.41 ms <= 250 ms                        |
 | Wares contracts do not use emerald currency                             | 17 tables                                |
 | Wares contracts contain Create Deco coin currency                       | 17 tables                                |
 | villager trade script covers broad profession set                       | 13 professions                           |
 | villager trade script has no emerald currency                           |                                          |
 | sell-trade helper pays copper coins instead of emeralds                 |                                          |
-| performance budget: Wares and villager trade validation                 | 0.7 ms <= 250 ms                         |
+| performance budget: Wares and villager trade validation                 | 0.8 ms <= 250 ms                         |
 | repo loot table JSON parses                                             | 96 tables                                |
 | repo loot tables inject many coin sources                               | 32 tables                                |
 | repo loot tables contain no direct emerald loot                         |                                          |
 | repo loot tables contain no obvious high-power outputs                  |                                          |
-| performance budget: repo loot data validation                           | 1.98 ms <= 500 ms                        |
-| performance budget: generated recipe graph validation                   | 20.11 ms <= 5000 ms                      |
+| performance budget: repo loot data validation                           | 1.72 ms <= 500 ms                        |
+| performance budget: generated recipe graph validation                   | 18.84 ms <= 5000 ms                      |
 | performance budget: generated loot dump validation                      | 0.15 ms <= 2500 ms                       |
-| latest engine log is recent                                             | 102.95 minutes old                       |
+| latest engine log is recent                                             | 105.71 minutes old                       |
 | engine reached integrated server startup                                |                                          |
 | world became playable/servable                                          | ModernFix in-game marker                 |
 | spawn preparation budget                                                | 38495 ms <= 60000 ms                     |
@@ -75,9 +75,9 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
 | dimension save fanout                                                   | 21 dimensions                            |
 | Distant Horizons shutdown backlog                                       | 4 incomplete tasks                       |
 | EMI reload budget                                                       | 14164 ms <= 90000 ms                     |
-| performance budget: engine and world performance log analysis           | 26.84 ms <= 250 ms                       |
+| performance budget: engine and world performance log analysis           | 25.95 ms <= 250 ms                       |
 | chemistry identity matrix validates                                     | ok - chemistry identity matrix validates |
-| performance budget: chemistry identity validation                       | 60.53 ms <= 500 ms                       |
+| performance budget: chemistry identity validation                       | 61.45 ms <= 500 ms                       |
 | dev dump script emits expected artifacts                                |                                          |
 | dev food effect dump script emits expected artifacts                    |                                          |
 | food effect graph analyzer emits expected artifacts                     |                                          |
@@ -101,7 +101,7 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
   "villagerProfessionsCovered": 13,
   "engineWorld": {
     "latestLog": "/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log",
-    "latestLogAgeMinutes": 102.95,
+    "latestLogAgeMinutes": 105.71,
     "latestLogLines": 23415,
     "reachedIntegratedServer": true,
     "startedServingLan": false,
@@ -154,37 +154,37 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
     "results": [
       {
         "name": "JSON and JS syntax validation",
-        "durationMs": 4316.41,
+        "durationMs": 4350.04,
         "budgetMs": 8000,
         "hardLimitMs": 24000
       },
       {
         "name": "critical progression surfaces",
-        "durationMs": 4.92,
+        "durationMs": 4.24,
         "budgetMs": 750,
         "hardLimitMs": 3000
       },
       {
         "name": "quest book validation",
-        "durationMs": 0.49,
+        "durationMs": 0.41,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
         "name": "Wares and villager trade validation",
-        "durationMs": 0.7,
+        "durationMs": 0.8,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
         "name": "repo loot data validation",
-        "durationMs": 1.98,
+        "durationMs": 1.72,
         "budgetMs": 500,
         "hardLimitMs": 3000
       },
       {
         "name": "generated recipe graph validation",
-        "durationMs": 20.11,
+        "durationMs": 18.84,
         "budgetMs": 5000,
         "hardLimitMs": 20000
       },
@@ -196,13 +196,13 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
       },
       {
         "name": "engine and world performance log analysis",
-        "durationMs": 26.84,
+        "durationMs": 25.95,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
         "name": "chemistry identity validation",
-        "durationMs": 60.53,
+        "durationMs": 61.45,
         "budgetMs": 500,
         "hardLimitMs": 2000
       },

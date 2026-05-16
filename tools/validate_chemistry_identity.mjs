@@ -7,6 +7,7 @@ const matrixPath = path.join(repo, 'kubejs/server_scripts/40_recipe_add/55_reali
 const tagPath = path.join(repo, 'kubejs/server_scripts/10_tags/60_realistic_ores_deposit_tags.js')
 const startupPath = path.join(repo, 'kubejs/startup_scripts/10_items_blocks/30_progression_items.js')
 const questGeneratorPath = path.join(repo, 'tools/generate_expert_quest_book.mjs')
+const shaderBlockPropertiesPath = path.join(repo, 'shaderpacks/ComplementaryReimagined_r5.7.1/shaders/block.properties')
 const modelDir = path.join(repo, 'kubejs/assets/kubejs/models/item')
 const textureDir = path.join(repo, 'kubejs/assets/kubejs/textures/item')
 
@@ -108,6 +109,16 @@ if (fs.existsSync(questGeneratorPath)) {
   if (questGeneratorText.includes('acid_vat:')) fail('quest generator still references retired acid_vat IDs')
   for (const stale of ['kubejs:power_grid_machine_casing', 'kubejs:oc2r_machine_casing', 'kubejs:ae2_machine_casing']) {
     if (questGeneratorText.includes(stale)) fail(`quest generator still references stale casing ID ${stale}`)
+  }
+}
+if (fs.existsSync(shaderBlockPropertiesPath)) {
+  const shaderText = read(shaderBlockPropertiesPath)
+  const shaderSpecialLine = shaderText.match(/^block\.20000=.*$/m)?.[0] || ''
+  for (const stale of ['kubejs:power_grid_machine_casing', 'kubejs:oc2r_machine_casing', 'kubejs:ae2_machine_casing']) {
+    if (shaderSpecialLine.includes(stale)) fail(`shader special block list still references stale casing ID ${stale}`)
+  }
+  for (const current of ['kubejs:electrical_machine_casing', 'kubejs:circuited_machine_casing', 'kubejs:raw_impossible_casing', 'kubejs:impossible_machine_casing']) {
+    if (!shaderSpecialLine.includes(current)) fail(`shader special block list missing current casing ID ${current}`)
   }
 }
 
