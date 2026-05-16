@@ -170,13 +170,13 @@ ServerEvents.recipes(function (event) {
         type: 'create:mechanical_crafting',
         acceptMirrored: false,
         pattern: [
-            'ZCCZ',
+            'OCCO',
             'IBBI',
             'IKKI',
-            'ZCCZ'
+            'OCCO'
         ],
         key: {
-            Z: { tag: 'forge:plates/zinc' },
+            O: { item: 'chemlib:aluminum_oxide' },
             C: { item: 'powergrid:capacitor' },
             I: { item: 'powergrid:integrated_circuit' },
             K: { item: 'powergrid:conductive_casing' },
@@ -192,13 +192,14 @@ ServerEvents.recipes(function (event) {
             'TWWT',
             'CBBC',
             'CNNC',
-            'TWWT'
+            'TEET'
         ],
         key: {
             T: { item: 'pneumaticcraft:transistor' },
             W: { item: 'oc2r:silicon_wafer' },
             C: { item: 'pneumaticcraft:printed_circuit_board' },
             N: { item: 'oc2r:network_connector' },
+            E: { item: 'chemlib:copper_chloride' },
             B: { item: 'kubejs:electrical_machine_casing' }
         },
         result: { item: 'kubejs:circuited_machine_casing' }
@@ -244,17 +245,18 @@ ServerEvents.recipes(function (event) {
         type: 'create:mechanical_crafting',
         acceptMirrored: false,
         pattern: [
-            'SFPFS',
+            'SFOFS',
             'FCBCF',
             'PBABP',
             'FCBCF',
-            'SFPFS'
+            'SFOFS'
         ],
         key: {
             S: { item: 'kubejs:sky_steel_sheet' },
             F: { item: 'ae2:fluix_crystal' },
             C: { item: 'ae2:engineering_processor' },
             P: { item: 'ae2:sky_stone_block' },
+            O: { item: 'chemlib:silicon_dioxide' },
             A: { item: 'ae2:fluix_glass_cable' },
             B: { item: 'kubejs:space_machine_casing' }
         },

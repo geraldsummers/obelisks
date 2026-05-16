@@ -21,6 +21,13 @@ StartupEvents.registry('block', function (event) {
     }
 })
 
+StartupEvents.registry('fluid', function (event) {
+    event.create('phosphoric_acid_fluid')
+        .displayName('Phosphoric Acid')
+        .thinTexture(0xd8b65a)
+        .bucketColor(0xd8b65a)
+})
+
 StartupEvents.registry('item', function (event) {
     var hearts = [
         ['weak_blood_heart', 'Blood-Touched Heart'],

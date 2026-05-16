@@ -1,1 +1,1 @@
-{ "parent": "minecraft:item/generated", "textures": { "layer0": "minecraft:item/redstone" } }
+{ "parent": "minecraft:item/generated", "textures": { "layer0": "kubejs:item/blood_infused_grinding_ball" } }

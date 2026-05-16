@@ -26,6 +26,7 @@ const performanceBudgetsMs = {
   'generated recipe graph validation': { budget: 5000, hard: 20000 },
   'generated loot dump validation': { budget: 2500, hard: 10000 },
   'engine and world performance log analysis': { budget: 250, hard: 1500 },
+  'chemistry identity validation': { budget: 500, hard: 2000 },
   'dev dump health validation': { budget: 50, hard: 500 }
 }
 
@@ -929,6 +930,15 @@ function testDevDumpHealth() {
   ok('food effect graph analyzer emits expected artifacts')
 }
 
+function testChemistryIdentity() {
+  const result = spawnSync('node', ['tools/validate_chemistry_identity.mjs'], {
+    cwd: repo,
+    encoding: 'utf8'
+  })
+  if (result.status === 0) ok('chemistry identity matrix validates', result.stdout.trim())
+  else fail('chemistry identity matrix validates', (result.stdout + result.stderr).trim())
+}
+
 runMeasured('JSON and JS syntax validation', testJsonAndSyntax)
 runMeasured('critical progression surfaces', testCriticalSurfaces)
 runMeasured('quest book validation', testQuestBook)
@@ -937,6 +947,7 @@ runMeasured('repo loot data validation', testLootData)
 runMeasured('generated recipe graph validation', testGeneratedRecipeGraph)
 runMeasured('generated loot dump validation', testGeneratedDumpLoot)
 runMeasured('engine and world performance log analysis', testEngineWorldPerformanceLogs)
+runMeasured('chemistry identity validation', testChemistryIdentity)
 runMeasured('dev dump health validation', testDevDumpHealth)
 
 metrics.performance = {

@@ -59,6 +59,8 @@ ServerEvents.recipes(function (event) {
             { item: 'pneumaticcraft:capacitor' },
             { item: 'pneumaticcraft:transistor' },
             { item: 'pneumaticcraft:transistor' },
+            { item: 'chemlib:copper_chloride' },
+            { item: 'chemlib:silicon_dioxide' },
             { item: 'kubejs:pressure_seal' }
         ],
         pressure: 2.0,

@@ -1,6 +1,6 @@
 # Automated Pack Test Report
 
-Generated: 2026-05-16T01:13:14.562Z
+Generated: 2026-05-16T02:27:01.854Z
 
 Repo: `/home/gerald/obelisks`
 
@@ -10,7 +10,7 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
 
 | Class         | Count |
 | ------------- | ----- |
-| Passes        | 47    |
+| Passes        | 49    |
 | Hard failures | 0     |
 | Soft findings | 3     |
 | Skipped       | 5     |
@@ -22,63 +22,65 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
 
 ## Soft Findings
 
-| Rank   | Test                                                     | Detail                                                                                                                            |
-| ------ | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| MUST   | generated recipe graph is older than repo recipe scripts | 136_machine_casing_ecosystem_expansion.js is newer than live recipe dump; reload the instance to refresh full_recipe_index_*.json |
-| SHOULD | server tick-behind budget exceeded                       | 2 warnings, max 11285 ms                                                                                                          |
-| SHOULD | recent crash report exists                               | crash-2026-05-16_10.57.51-fml.txt                                                                                                 |
+| Rank   | Test                                                     | Detail                                                                                                                   |
+| ------ | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| MUST   | generated recipe graph is older than repo recipe scripts | 99_machine_casing_progression.js is newer than live recipe dump; reload the instance to refresh full_recipe_index_*.json |
+| SHOULD | server tick-behind budget exceeded                       | 2 warnings, max 11285 ms                                                                                                 |
+| SHOULD | recent crash report exists                               | crash-2026-05-16_10.57.51-fml.txt                                                                                        |
 
 ## Passes
 
-| Test                                                                    | Detail                           |
-| ----------------------------------------------------------------------- | -------------------------------- |
-| progression catalog parses                                              | 12 tiers                         |
-| all repo JSON parses                                                    | 158 files                        |
-| all KubeJS/tool JS parses with node --check                             | 92 files                         |
-| performance budget: JSON and JS syntax validation                       | 4321.84 ms <= 8000 ms            |
-| critical expert-pack surfaces exist                                     | 20 files                         |
-| machine casing IDs are referenced                                       | 10 casings                       |
-| Raw Impossible casing does not consume AE2 controller                   |                                  |
-| TiCEX Reconstruction Core is hard-gated post-AE2                        |                                  |
-| Protection Pixel is hard-gated as post-AE2 armor                        |                                  |
-| Protection Pixel late armor is displaced into explicit post-AE2 recipes |                                  |
-| Tome of Blood is hard-gated as post-AE2 hybrid magic                    |                                  |
-| Tome of Blood is no longer gated as an Altar III side mod               |                                  |
-| Hooks and Create SA drones are tier-gated                               |                                  |
-| High-impact backpack upgrades are post-AE2                              |                                  |
-| Quarantined machines/upgrades are removed and hidden                    |                                  |
-| Fallout Wastelands portal is gated by Creating Space                    |                                  |
-| Twilight Forest portal is advancement-locked by Creating Space          |                                  |
-| Creating Space access advancement has a concrete space item trigger     |                                  |
-| performance budget: critical progression surfaces                       | 4.39 ms <= 750 ms                |
-| quest book is intentionally empty                                       | 0 chapters and no chapter groups |
-| performance budget: quest book validation                               | 0.36 ms <= 250 ms                |
-| Wares contracts do not use emerald currency                             | 17 tables                        |
-| Wares contracts contain Create Deco coin currency                       | 17 tables                        |
-| villager trade script covers broad profession set                       | 13 professions                   |
-| villager trade script has no emerald currency                           |                                  |
-| sell-trade helper pays copper coins instead of emeralds                 |                                  |
-| performance budget: Wares and villager trade validation                 | 0.67 ms <= 250 ms                |
-| repo loot table JSON parses                                             | 96 tables                        |
-| repo loot tables inject many coin sources                               | 32 tables                        |
-| repo loot tables contain no direct emerald loot                         |                                  |
-| repo loot tables contain no obvious high-power outputs                  |                                  |
-| performance budget: repo loot data validation                           | 1.65 ms <= 500 ms                |
-| performance budget: generated recipe graph validation                   | 20.45 ms <= 5000 ms              |
-| performance budget: generated loot dump validation                      | 0.15 ms <= 2500 ms               |
-| latest engine log is recent                                             | 9.49 minutes old                 |
-| engine reached integrated server startup                                |                                  |
-| world became playable/servable                                          | ModernFix in-game marker         |
-| spawn preparation budget                                                | 38495 ms <= 60000 ms             |
-| world save budget                                                       | 684 ms <= 10000 ms               |
-| dimension save fanout                                                   | 21 dimensions                    |
-| Distant Horizons shutdown backlog                                       | 4 incomplete tasks               |
-| EMI reload budget                                                       | 14164 ms <= 90000 ms             |
-| performance budget: engine and world performance log analysis           | 27 ms <= 250 ms                  |
-| dev dump script emits expected artifacts                                |                                  |
-| dev food effect dump script emits expected artifacts                    |                                  |
-| food effect graph analyzer emits expected artifacts                     |                                  |
-| performance budget: dev dump health validation                          | 0.19 ms <= 50 ms                 |
+| Test                                                                    | Detail                                   |
+| ----------------------------------------------------------------------- | ---------------------------------------- |
+| progression catalog parses                                              | 12 tiers                                 |
+| all repo JSON parses                                                    | 158 files                                |
+| all KubeJS/tool JS parses with node --check                             | 94 files                                 |
+| performance budget: JSON and JS syntax validation                       | 4353.96 ms <= 8000 ms                    |
+| critical expert-pack surfaces exist                                     | 20 files                                 |
+| machine casing IDs are referenced                                       | 10 casings                               |
+| Raw Impossible casing does not consume AE2 controller                   |                                          |
+| TiCEX Reconstruction Core is hard-gated post-AE2                        |                                          |
+| Protection Pixel is hard-gated as post-AE2 armor                        |                                          |
+| Protection Pixel late armor is displaced into explicit post-AE2 recipes |                                          |
+| Tome of Blood is hard-gated as post-AE2 hybrid magic                    |                                          |
+| Tome of Blood is no longer gated as an Altar III side mod               |                                          |
+| Hooks and Create SA drones are tier-gated                               |                                          |
+| High-impact backpack upgrades are post-AE2                              |                                          |
+| Quarantined machines/upgrades are removed and hidden                    |                                          |
+| Fallout Wastelands portal is gated by Creating Space                    |                                          |
+| Twilight Forest portal is advancement-locked by Creating Space          |                                          |
+| Creating Space access advancement has a concrete space item trigger     |                                          |
+| performance budget: critical progression surfaces                       | 4.8 ms <= 750 ms                         |
+| quest book is intentionally empty                                       | 0 chapters and no chapter groups         |
+| performance budget: quest book validation                               | 0.38 ms <= 250 ms                        |
+| Wares contracts do not use emerald currency                             | 17 tables                                |
+| Wares contracts contain Create Deco coin currency                       | 17 tables                                |
+| villager trade script covers broad profession set                       | 13 professions                           |
+| villager trade script has no emerald currency                           |                                          |
+| sell-trade helper pays copper coins instead of emeralds                 |                                          |
+| performance budget: Wares and villager trade validation                 | 0.74 ms <= 250 ms                        |
+| repo loot table JSON parses                                             | 96 tables                                |
+| repo loot tables inject many coin sources                               | 32 tables                                |
+| repo loot tables contain no direct emerald loot                         |                                          |
+| repo loot tables contain no obvious high-power outputs                  |                                          |
+| performance budget: repo loot data validation                           | 1.84 ms <= 500 ms                        |
+| performance budget: generated recipe graph validation                   | 19.47 ms <= 5000 ms                      |
+| performance budget: generated loot dump validation                      | 0.1 ms <= 2500 ms                        |
+| latest engine log is recent                                             | 83.28 minutes old                        |
+| engine reached integrated server startup                                |                                          |
+| world became playable/servable                                          | ModernFix in-game marker                 |
+| spawn preparation budget                                                | 38495 ms <= 60000 ms                     |
+| world save budget                                                       | 684 ms <= 10000 ms                       |
+| dimension save fanout                                                   | 21 dimensions                            |
+| Distant Horizons shutdown backlog                                       | 4 incomplete tasks                       |
+| EMI reload budget                                                       | 14164 ms <= 90000 ms                     |
+| performance budget: engine and world performance log analysis           | 26.57 ms <= 250 ms                       |
+| chemistry identity matrix validates                                     | ok - chemistry identity matrix validates |
+| performance budget: chemistry identity validation                       | 58.13 ms <= 500 ms                       |
+| dev dump script emits expected artifacts                                |                                          |
+| dev food effect dump script emits expected artifacts                    |                                          |
+| food effect graph analyzer emits expected artifacts                     |                                          |
+| performance budget: dev dump health validation                          | 0.23 ms <= 50 ms                         |
 
 ## Skipped
 
@@ -98,7 +100,7 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
   "villagerProfessionsCovered": 13,
   "engineWorld": {
     "latestLog": "/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft/logs/latest.log",
-    "latestLogAgeMinutes": 9.49,
+    "latestLogAgeMinutes": 83.28,
     "latestLogLines": 23415,
     "reachedIntegratedServer": true,
     "startedServingLan": false,
@@ -133,6 +135,7 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
       "generated recipe graph validation": 5000,
       "generated loot dump validation": 2500,
       "engine and world performance log analysis": 250,
+      "chemistry identity validation": 500,
       "dev dump health validation": 50
     },
     "hardLimitsMs": {
@@ -144,60 +147,67 @@ Instance: `/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Pla
       "generated recipe graph validation": 20000,
       "generated loot dump validation": 10000,
       "engine and world performance log analysis": 1500,
+      "chemistry identity validation": 2000,
       "dev dump health validation": 500
     },
     "results": [
       {
         "name": "JSON and JS syntax validation",
-        "durationMs": 4321.84,
+        "durationMs": 4353.96,
         "budgetMs": 8000,
         "hardLimitMs": 24000
       },
       {
         "name": "critical progression surfaces",
-        "durationMs": 4.39,
+        "durationMs": 4.8,
         "budgetMs": 750,
         "hardLimitMs": 3000
       },
       {
         "name": "quest book validation",
-        "durationMs": 0.36,
+        "durationMs": 0.38,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
         "name": "Wares and villager trade validation",
-        "durationMs": 0.67,
+        "durationMs": 0.74,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
         "name": "repo loot data validation",
-        "durationMs": 1.65,
+        "durationMs": 1.84,
         "budgetMs": 500,
         "hardLimitMs": 3000
       },
       {
         "name": "generated recipe graph validation",
-        "durationMs": 20.45,
+        "durationMs": 19.47,
         "budgetMs": 5000,
         "hardLimitMs": 20000
       },
       {
         "name": "generated loot dump validation",
-        "durationMs": 0.15,
+        "durationMs": 0.1,
         "budgetMs": 2500,
         "hardLimitMs": 10000
       },
       {
         "name": "engine and world performance log analysis",
-        "durationMs": 27,
+        "durationMs": 26.57,
         "budgetMs": 250,
         "hardLimitMs": 1500
       },
       {
+        "name": "chemistry identity validation",
+        "durationMs": 58.13,
+        "budgetMs": 500,
+        "hardLimitMs": 2000
+      },
+      {
         "name": "dev dump health validation",
-        "durationMs": 0.19,
+        "durationMs": 0.23,
         "budgetMs": 50,
         "hardLimitMs": 500
       }

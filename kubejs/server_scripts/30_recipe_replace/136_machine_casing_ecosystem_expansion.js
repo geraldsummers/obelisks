@@ -27,7 +27,14 @@ var BTM_CASING_ECO = {
     redstoneRelay: 'powergrid:redstone_relay',
     circuit: 'powergrid:integrated_circuit',
     pcb: 'pneumaticcraft:printed_circuit_board',
-    transistor: 'pneumaticcraft:transistor'
+    transistor: 'pneumaticcraft:transistor',
+    aluminumOxide: 'chemlib:aluminum_oxide',
+    copperSulfate: 'chemlib:copper_ii_sulfate',
+    copperChloride: 'chemlib:copper_chloride',
+    siliconDioxide: 'chemlib:silicon_dioxide',
+    sodiumHydroxide: 'chemlib:sodium_hydroxide',
+    pvc: 'chemlib:polyvinyl_chloride',
+    titaniumOxide: 'chemlib:titanium_oxide'
 }
 
 function btmEcoExists(id) {
@@ -147,7 +154,7 @@ ServerEvents.recipes(function (event) {
 
     btmEcoAddMany(event, [
         btmEcoRecipe('pneumaticcraft:reinforced_pressure_tube', ['STS', 'TAT', 'STS'], { S: BTM_CASING_ECO.pressureSeal, T: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight }, 'kubejs:casing_ecosystem/airtight/reinforced_pressure_tube', 8),
-        btmEcoRecipe('pneumaticcraft:advanced_pressure_tube', ['PTP', 'TAT', 'PTP'], { P: 'pneumaticcraft:plastic', T: 'pneumaticcraft:reinforced_pressure_tube', A: BTM_CASING_ECO.airtight }, 'kubejs:casing_ecosystem/airtight/advanced_pressure_tube', 4),
+        btmEcoRecipe('pneumaticcraft:advanced_pressure_tube', ['PTP', 'TAT', 'PTP'], { P: BTM_CASING_ECO.pvc, T: 'pneumaticcraft:reinforced_pressure_tube', A: BTM_CASING_ECO.airtight }, 'kubejs:casing_ecosystem/airtight/advanced_pressure_tube', 4),
         btmEcoRecipe('pneumaticcraft:pressure_chamber_valve', ['RGR', 'GAG', 'RGR'], { R: 'pneumaticcraft:reinforced_bricks', G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.airtight }, 'kubejs:casing_ecosystem/airtight/pressure_chamber_valve'),
         btmEcoRecipe('pneumaticcraft:refinery', [' T ', 'PAP', 'SCS'], { T: 'pneumaticcraft:small_tank', P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, C: BTM_CASING_ECO.compressorCore }, 'kubejs:casing_ecosystem/airtight/refinery'),
         btmEcoRecipe('pneumaticcraft:refinery_output', [' T ', 'PAP', ' S '], { T: 'pneumaticcraft:small_tank', P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal }, 'kubejs:casing_ecosystem/airtight/refinery_output'),
@@ -155,7 +162,7 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('pneumaticcraft:fluid_mixer', ['MTM', 'PAP', 'SCS'], { M: 'pneumaticcraft:turbine_blade', T: 'pneumaticcraft:small_tank', P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, C: BTM_CASING_ECO.compressorCore }, 'kubejs:casing_ecosystem/airtight/fluid_mixer'),
         btmEcoRecipe('pneumaticcraft:charging_station', [' G ', 'PAP', 'SCS'], { G: BTM_CASING_ECO.glass, P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, C: BTM_CASING_ECO.compressorCore }, 'kubejs:casing_ecosystem/airtight/charging_station'),
         btmEcoRecipe('pneumaticcraft:security_station', ['GCG', 'PAP', 'SSS'], { G: BTM_CASING_ECO.glass, C: BTM_CASING_ECO.circuit, P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal }, 'kubejs:casing_ecosystem/airtight/security_station'),
-        btmEcoRecipe('pneumaticcraft:etching_tank', ['GAG', 'STS', 'GAG'], { G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, T: 'pneumaticcraft:small_tank' }, 'kubejs:casing_ecosystem/airtight/etching_tank'),
+        btmEcoRecipe('pneumaticcraft:etching_tank', ['GAG', 'STS', 'GNG'], { G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, T: 'pneumaticcraft:small_tank', N: BTM_CASING_ECO.sodiumHydroxide }, 'kubejs:casing_ecosystem/airtight/etching_tank'),
         btmEcoRecipe('pneumaticcraft:assembly_controller', ['GCG', 'PAP', 'SSS'], { G: BTM_CASING_ECO.glass, C: BTM_CASING_ECO.circuit, P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal }, 'kubejs:casing_ecosystem/airtight/assembly_controller'),
         btmEcoRecipe('pneumaticcraft:assembly_platform', ['SSS', 'PAP', 'III'], { S: BTM_CASING_ECO.pressureSeal, P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, I: 'pneumaticcraft:ingot_iron_compressed' }, 'kubejs:casing_ecosystem/airtight/assembly_platform'),
         btmEcoRecipe('pneumaticcraft:assembly_laser', [' R ', 'PAP', 'SCS'], { R: 'minecraft:redstone', P: 'pneumaticcraft:pressure_tube', A: BTM_CASING_ECO.airtight, S: BTM_CASING_ECO.pressureSeal, C: BTM_CASING_ECO.circuit }, 'kubejs:casing_ecosystem/airtight/assembly_laser'),
@@ -164,11 +171,11 @@ ServerEvents.recipes(function (event) {
     ])
 
     btmEcoAddMany(event, [
-        btmEcoRecipe('powergrid:battery', ['ZCZ', 'CAC', 'ZCZ'], { Z: BTM_CASING_ECO.zincPlate, C: 'powergrid:capacitor', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/battery'),
+        btmEcoRecipe('powergrid:battery', ['ZSZ', 'CAC', 'ZSZ'], { Z: BTM_CASING_ECO.zincPlate, S: BTM_CASING_ECO.copperSulfate, C: 'powergrid:capacitor', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/battery'),
         btmEcoRecipe('powergrid:portable_battery', [' C ', 'BAB', ' Z '], { C: 'powergrid:capacitor', B: 'powergrid:battery', A: BTM_CASING_ECO.electrical, Z: BTM_CASING_ECO.zincPlate }, 'kubejs:casing_ecosystem/electrical/portable_battery'),
         btmEcoRecipe('powergrid:electric_motor', [' W ', 'CAC', ' S '], { W: 'powergrid:wire', C: 'powergrid:copper_coil', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/electric_motor'),
         btmEcoRecipe('powergrid:constant_speed_motor', ['RCR', 'MAM', 'RCR'], { R: BTM_CASING_ECO.redstoneRelay, C: 'powergrid:capacitor', M: 'powergrid:electric_motor', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/constant_speed_motor'),
-        btmEcoRecipe('powergrid:generator_housing', ['ICI', 'CAC', 'III'], { I: BTM_CASING_ECO.ironPlate, C: 'powergrid:copper_coil', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/generator_housing'),
+        btmEcoRecipe('powergrid:generator_housing', ['IOI', 'CAC', 'III'], { I: BTM_CASING_ECO.ironPlate, O: BTM_CASING_ECO.aluminumOxide, C: 'powergrid:copper_coil', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/generator_housing'),
         btmEcoRecipe('powergrid:vertical_generator_housing', ['ICI', 'CAC', 'III'], { I: BTM_CASING_ECO.ironPlate, C: 'powergrid:generator_commutator', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/vertical_generator_housing'),
         btmEcoRecipe('powergrid:generator_clutch', [' S ', 'CAC', ' S '], { S: 'create:shaft', C: 'powergrid:generator_commutator', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/generator_clutch'),
         btmEcoRecipe('powergrid:relay', [' W ', 'RAR', ' W '], { W: 'powergrid:wire', R: BTM_CASING_ECO.redstoneRelay, A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/relay'),
@@ -183,8 +190,8 @@ ServerEvents.recipes(function (event) {
     ])
 
     btmEcoAddMany(event, [
-        btmEcoRecipe('oc2r:computer', ['GPG', 'CAC', 'III'], { G: BTM_CASING_ECO.glass, P: BTM_CASING_ECO.pcb, C: BTM_CASING_ECO.circuit, A: BTM_CASING_ECO.circuited, I: BTM_CASING_ECO.ironPlate }, 'kubejs:casing_ecosystem/circuited/computer'),
-        btmEcoRecipe('oc2r:network_hub', ['NCN', 'PAP', 'NCN'], { N: 'oc2r:network_connector', C: BTM_CASING_ECO.circuit, P: BTM_CASING_ECO.pcb, A: BTM_CASING_ECO.circuited }, 'kubejs:casing_ecosystem/circuited/network_hub'),
+        btmEcoRecipe('oc2r:computer', ['GPG', 'CAC', 'ISI'], { G: BTM_CASING_ECO.glass, P: BTM_CASING_ECO.pcb, C: BTM_CASING_ECO.circuit, A: BTM_CASING_ECO.circuited, I: BTM_CASING_ECO.ironPlate, S: BTM_CASING_ECO.siliconDioxide }, 'kubejs:casing_ecosystem/circuited/computer'),
+        btmEcoRecipe('oc2r:network_hub', ['NCN', 'PAP', 'NEN'], { N: 'oc2r:network_connector', C: BTM_CASING_ECO.circuit, P: BTM_CASING_ECO.pcb, A: BTM_CASING_ECO.circuited, E: BTM_CASING_ECO.copperChloride }, 'kubejs:casing_ecosystem/circuited/network_hub'),
         btmEcoRecipe('oc2r:disk_drive', ['GPG', 'SAS', 'III'], { G: BTM_CASING_ECO.glass, P: BTM_CASING_ECO.pcb, S: 'oc2r:silicon_wafer', A: BTM_CASING_ECO.circuited, I: BTM_CASING_ECO.ironPlate }, 'kubejs:casing_ecosystem/circuited/disk_drive'),
         btmEcoRecipe('oc2r:monitor', ['GGG', 'PAP', 'CCC'], { G: BTM_CASING_ECO.glass, P: BTM_CASING_ECO.pcb, A: BTM_CASING_ECO.circuited, C: BTM_CASING_ECO.circuit }, 'kubejs:casing_ecosystem/circuited/monitor'),
         btmEcoRecipe('oc2r:charger', [' W ', 'BAB', ' W '], { W: 'powergrid:wire', B: 'powergrid:battery', A: BTM_CASING_ECO.circuited }, 'kubejs:casing_ecosystem/circuited/charger'),
@@ -215,7 +222,7 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('creatingspace:exhaust_pack', ['SPS', 'PCP', 'SPS'], { S: 'creatingspace:hastelloy_sheet', P: 'pneumaticcraft:pressure_tube', C: BTM_CASING_ECO.space }, 'kubejs:casing_ecosystem/space/exhaust_pack'),
         btmEcoRecipe('creatingspace:copper_oxygen_backtank', ['SPS', 'TCT', 'SPS'], { S: BTM_CASING_ECO.pressureSeal, P: 'pneumaticcraft:pressure_tube', T: 'pneumaticcraft:small_tank', C: BTM_CASING_ECO.space }, 'kubejs:casing_ecosystem/space/copper_oxygen_backtank'),
         btmEcoRecipe('creatingspace:netherite_oxygen_backtank', ['SPS', 'TCT', 'SPS'], { S: 'minecraft:netherite_ingot', P: 'pneumaticcraft:reinforced_pressure_tube', T: 'creatingspace:copper_oxygen_backtank', C: BTM_CASING_ECO.space }, 'kubejs:casing_ecosystem/space/netherite_oxygen_backtank'),
-        btmEcoRecipe('creatingspace:advanced_spacesuit_fabric', ['TST', 'SCS', 'TST'], { T: 'kubejs:titanium_thermal_plate', S: 'creatingspace:basic_spacesuit_fabric', C: BTM_CASING_ECO.space }, 'kubejs:casing_ecosystem/space/advanced_spacesuit_fabric')
+        btmEcoRecipe('creatingspace:advanced_spacesuit_fabric', ['TST', 'SCS', 'TOT'], { T: 'kubejs:titanium_thermal_plate', S: 'creatingspace:basic_spacesuit_fabric', C: BTM_CASING_ECO.space, O: BTM_CASING_ECO.titaniumOxide }, 'kubejs:casing_ecosystem/space/advanced_spacesuit_fabric')
     ])
 
     btmEcoAddMany(event, [
