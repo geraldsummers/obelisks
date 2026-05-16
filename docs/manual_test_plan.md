@@ -122,11 +122,10 @@ Run these checks in a disposable Prism instance built from this branch. Static v
 
 ## Nuclear Synthesis And Power
 
-1. Verify the pack loads with `fission_reactor-0.1.0.jar` and `gases_and_plasmas-0.1.0.jar` present.
-2. Verify `fission_reactor:fission_fuel_acceptor` uses Create mechanical crafting and requires Power Grid / heat / nuclear plate materials.
-3. Verify `fission_reactor:fission_reactor_rod` uses Create mechanical crafting and requires nuclear/extreme-band plate materials.
-4. Verify `gases_and_plasmas:gas_pipe`, `gas_compressor`, `gas_fan`, and `electrolyzer` are visible as space/electric gas-handling infrastructure.
-5. Verify `gases_and_plasmas:electromagnet` requires AE2-tier control materials.
-6. Verify `gases_and_plasmas:ionizer` requires both AE2-tier control and fission reactor hardware.
-7. Verify the FTB Quests electricity chapter is titled `Brass Tier - SU Heat and Electricity` and documents water, wind, blaze burners, diesel, solar heat, Power Grid, Stirling, and fission.
-8. Verify the new `Platinum Tier - Fusion Power and Plasma` chapter appears and stays hidden behind AE2/fission prerequisites where expected.
+1. Verify the pack loads with `latent_chemlib-0.1.0.jar` present and the retired gas/fission jars absent.
+2. Verify `latent_chemlib:gas_capture`, `gas_tank`, `gas_reaction_chamber`, and `gas_release` use Create mechanical crafting.
+3. Verify CNA reactor blocks have no visible recipes and are hidden from EMI/JEI.
+4. Verify gas items escape unsafe storage but remain controllable through Latent ChemLib containment.
+5. Verify high-energy matter and neutron effects are budgeted and do not burst catch up after budget exhaustion.
+6. Verify the FTB Quests electricity chapter still teaches heat/electric infrastructure without CNA reactor progression.
+7. Verify the new `Platinum Tier - Latent ChemLib` chapter appears and stays hidden behind AE2/chemistry prerequisites where expected.

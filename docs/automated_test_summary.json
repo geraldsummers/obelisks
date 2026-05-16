@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-16T03:53:07.109Z",
+  "generatedAt": "2026-05-16T04:46:10.289Z",
   "repo": "/home/gerald/obelisks",
-  "instance": "/tmp/btm-content-smoke",
+  "instance": "/tmp/btm-latent-smoke",
   "passes": 60,
   "hardFailures": 0,
   "softFindings": 0,
@@ -9,24 +9,24 @@
   "metrics": {
     "questChapters": 0,
     "villagerProfessionsCovered": 13,
-    "generatedRecipes": 26364,
+    "generatedRecipes": 26352,
     "engineWorld": {
-      "latestLog": "/tmp/btm-content-smoke/logs/latest.log",
+      "latestLog": "/tmp/btm-latent-smoke/logs/latest.log",
       "latestLogAgeMinutes": 0.09,
-      "latestLogLines": 16822,
+      "latestLogLines": 16835,
       "reachedIntegratedServer": false,
       "reachedDedicatedServer": true,
       "startedServingLan": false,
       "reachedInGame": true,
       "mainMenuToInGameMs": null,
       "totalLoadToWorldMs": null,
-      "spawnPrepTimeMs": 22152,
+      "spawnPrepTimeMs": 31182,
       "serverTickBehindWarnings": 0,
       "maxTickBehindMs": 0,
       "totalTickBehindMs": 0,
       "maxTickBehindTicks": 0,
-      "worldSaveDurationMs": 649,
-      "worldSaveFromSavingWorldsMs": 648,
+      "worldSaveDurationMs": 824,
+      "worldSaveFromSavingWorldsMs": 823,
       "dimensionSaveCount": 21,
       "distantHorizonsIncompleteTasks": 0,
       "settlementRoadsRebuilds": 0,
@@ -71,67 +71,67 @@
       "results": [
         {
           "name": "JSON and JS syntax validation",
-          "durationMs": 4519.58,
+          "durationMs": 4477.49,
           "budgetMs": 8000,
           "hardLimitMs": 24000
         },
         {
           "name": "critical progression surfaces",
-          "durationMs": 5.53,
+          "durationMs": 4.66,
           "budgetMs": 750,
           "hardLimitMs": 3000
         },
         {
           "name": "quest book validation",
-          "durationMs": 0.35,
+          "durationMs": 0.3,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "Wares and villager trade validation",
-          "durationMs": 0.91,
+          "durationMs": 0.66,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "repo loot data validation",
-          "durationMs": 1.9,
+          "durationMs": 1.82,
           "budgetMs": 500,
           "hardLimitMs": 3000
         },
         {
           "name": "generated recipe graph validation",
-          "durationMs": 155.17,
+          "durationMs": 154.87,
           "budgetMs": 5000,
           "hardLimitMs": 20000
         },
         {
           "name": "generated loot dump validation",
-          "durationMs": 0.21,
+          "durationMs": 0.22,
           "budgetMs": 2500,
           "hardLimitMs": 10000
         },
         {
           "name": "engine and world performance log analysis",
-          "durationMs": 37.16,
+          "durationMs": 37.05,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "KubeJS asset validation",
-          "durationMs": 62.01,
+          "durationMs": 63.06,
           "budgetMs": 500,
           "hardLimitMs": 2000
         },
         {
           "name": "chemistry identity validation",
-          "durationMs": 64.04,
+          "durationMs": 62.05,
           "budgetMs": 500,
           "hardLimitMs": 2000
         },
         {
           "name": "dev dump health validation",
-          "durationMs": 0.24,
+          "durationMs": 0.28,
           "budgetMs": 50,
           "hardLimitMs": 500
         }

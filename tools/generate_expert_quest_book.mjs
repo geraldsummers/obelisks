@@ -10,14 +10,10 @@ const registry = fs.existsSync(registryFile) ? fs.readFileSync(registryFile, 'ut
 const knownItems = new Set([...registry.matchAll(/^([^\s]+)\s+raw_id=/gm)].map(m => m[1]))
 const shouldValidateItems = knownItems.size > 0
 for (const id of [
-  'fission_reactor:fission_fuel_acceptor',
-  'fission_reactor:fission_reactor_rod',
-  'gases_and_plasmas:gas_pipe',
-  'gases_and_plasmas:gas_compressor',
-  'gases_and_plasmas:gas_fan',
-  'gases_and_plasmas:electrolyzer',
-  'gases_and_plasmas:electromagnet',
-  'gases_and_plasmas:ionizer',
+  'latent_chemlib:gas_capture',
+  'latent_chemlib:gas_tank',
+  'latent_chemlib:gas_reaction_chamber',
+  'latent_chemlib:gas_release',
   'liquid_coolant:coolant_exchanger',
   'procedural_bouquets:bouquet_grid',
   'procedural_bouquets:potted_bouquet',
@@ -952,19 +948,14 @@ const chapters = [
     ]
   },
   {
-    filename: 'fission_fusion', prefix: 'FI', id: 'BTM_FISSION_FUSION', order: 1, title: 'Fission and Fusion', tier: 'platinum', group: 'power', description: ['Build coolant, fission hardware, gas handling, and fusion readiness.'], quests: [
+    filename: 'latent_chemlib', prefix: 'FI', id: 'BTM_LATENT_CHEMLIB', order: 1, title: 'Latent ChemLib', tier: 'platinum', group: 'power', description: ['Build chemical containment, high-energy matter handling, and periodic-table traversal.'], quests: [
       q('FI_COOLANT', 'Liquid Coolant Exchanger', 0, 0, [item('liquid_coolant:coolant_exchanger')], ['GP_BATTERY']),
-      q('FI_FUEL_ACCEPTOR', 'Fission Fuel Acceptor', 2, -1, [item('fission_reactor:fission_fuel_acceptor')], ['FI_COOLANT', 'S1_SYNTHESIS_EXIT'], ['Fission entry requires coolant engineering and synthesis maturity.']),
-      q('FI_FISSION_ROD', 'Fission Reactor Rod', 4, -1, [item('fission_reactor:fission_reactor_rod')], ['FI_FUEL_ACCEPTOR']),
-      q('FI_GAS_PIPE', 'Gas Pipe Network', 2, 1, [item('gases_and_plasmas:gas_pipe')], ['SP_CHEM', 'GP_BATTERY']),
-      q('FI_COMPRESSOR', 'Gas Compressor', 4, 1, [item('gases_and_plasmas:gas_compressor')], ['FI_GAS_PIPE']),
-      q('FI_FAN', 'Gas Fan', 6, 2, [item('gases_and_plasmas:gas_fan')], ['FI_COMPRESSOR']),
-      q('FI_ELECTROLYZER', 'Electrolyzer', 6, 0, [item('gases_and_plasmas:electrolyzer')], ['FI_COMPRESSOR', 'GP_BATTERY']),
-      q('FI_AE_CONTROL', 'AE2 Control Access', 8, 0, [item('kubejs:impossible_machine_casing')], ['AE_CONTROLLER'], ['Fusion as power needs local intelligence and controlled automation.']),
-      q('FI_ELECTROMAGNET', 'Magnetic Confinement', 10, 0, [item('gases_and_plasmas:electromagnet')], ['FI_AE_CONTROL', 'FI_FAN', 'FI_ELECTROLYZER']),
-      q('FI_IONIZER', 'Ionizer', 12, 0, [item('gases_and_plasmas:ionizer')], ['FI_ELECTROMAGNET', 'FI_FISSION_ROD']),
-      q('FI_REACTIVE_CELL', 'Reactive Matter Cell Work', 14, -1, [item('gases_and_plasmas:electromagnet'), item('gases_and_plasmas:ionizer'), item('fission_reactor:fission_reactor_rod')], ['FI_IONIZER']),
-      q('FI_READY', 'Fusion Readiness', 16, 0, [item('gases_and_plasmas:ionizer'), item('powergrid:battery')], ['FI_REACTIVE_CELL'], ['You now have coolant, fission hardware, gas handling, magnetic containment, and AE2 control ready for fusion tuning.'])
+      q('FI_CAPTURE', 'Gas Capture', 2, -1, [item('latent_chemlib:gas_capture')], ['FI_COOLANT', 'S1_SYNTHESIS_EXIT'], ['Volatile ChemLib matter must be captured before it can become a production lane.']),
+      q('FI_TANK', 'Chemical Containment', 4, -1, [item('latent_chemlib:gas_tank')], ['FI_CAPTURE']),
+      q('FI_RELEASE', 'Controlled Release', 6, 1, [item('latent_chemlib:gas_release')], ['FI_TANK']),
+      q('FI_AE_CONTROL', 'AE2 Control Access', 8, 0, [item('kubejs:impossible_machine_casing')], ['AE_CONTROLLER'], ['High-energy matter needs local intelligence and controlled automation.']),
+      q('FI_REACTION', 'Reaction Chamber', 10, 0, [item('latent_chemlib:gas_reaction_chamber')], ['FI_AE_CONTROL', 'FI_TANK'], ['The reaction chamber is the bridge from power engineering into periodic-table traversal.']),
+      q('FI_READY', 'Latent Matter Readiness', 12, 0, [item('latent_chemlib:gas_reaction_chamber'), item('powergrid:battery')], ['FI_REACTION'], ['You now have coolant, containment, high-energy handling, and AE2 control ready for ChemLib traversal.'])
     ]
   },
   {

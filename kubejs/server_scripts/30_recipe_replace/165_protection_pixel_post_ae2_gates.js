@@ -145,7 +145,7 @@ ServerEvents.recipes(function (event) {
         Q: { item: 'kubejs:sky_steel_sheet' },
         L: { item: 'create_new_age:heat_pipe' },
         A: { item: 'protection_pixel:alloyarmorplate' },
-        F: { item: 'fission_reactor:fission_reactor_rod' },
+        F: { item: 'latent_chemlib:gas_reaction_chamber' },
         C: { item: 'kubejs:impossible_machine_casing' }
     }, 'kubejs:create/mechanical_crafting/protection_pixel/armor_load_platform')
 
@@ -157,7 +157,7 @@ ServerEvents.recipes(function (event) {
         'HFHFH'
     ], {
         H: { item: 'create_new_age:heat_pipe' },
-        F: { item: 'fission_reactor:fission_reactor_rod' },
+        F: { item: 'latent_chemlib:gas_reaction_chamber' },
         Q: { item: 'kubejs:impossible_circuit' },
         C: { item: 'kubejs:impossible_machine_casing' },
         A: { item: 'protection_pixel:alloyarmorplate' }

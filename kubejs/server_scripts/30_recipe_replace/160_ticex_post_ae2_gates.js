@@ -34,7 +34,7 @@ ServerEvents.recipes(function (event) {
             Q: { item: 'kubejs:sky_steel_sheet' },
             E: { item: 'bloodmagic:etherealslate' },
             F: { item: 'ae2:fluix_pearl' },
-            R: { item: 'fission_reactor:fission_reactor_rod' },
+            R: { item: 'latent_chemlib:gas_reaction_chamber' },
             A: { item: 'kubejs:impossible_machine_casing' }
         },
         result: { item: 'ticex:reconstruction_core' }
@@ -52,7 +52,7 @@ ServerEvents.recipes(function (event) {
                 { item: 'kubejs:impossible_circuit' },
                 { item: 'kubejs:impossible_circuit' },
                 { item: 'minecraft:nether_star' },
-                { item: 'fission_reactor:fission_reactor_rod' }
+                { item: 'latent_chemlib:gas_reaction_chamber' }
             ],
             results: [{ item: 'ticex:flickering_reconstruction_core' }]
         }).id('kubejs:create/mixing/ticex/flickering_reconstruction_core')

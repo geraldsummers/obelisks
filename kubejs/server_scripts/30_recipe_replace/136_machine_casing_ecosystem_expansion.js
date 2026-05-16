@@ -185,8 +185,7 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('powergrid:heavy_wire_connector', ['WWW', 'CAC', 'WWW'], { W: 'powergrid:wire_connector', C: 'powergrid:conductive_casing', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/heavy_wire_connector'),
         btmEcoRecipe('create_new_age:basic_energiser', [' W ', 'CAC', ' S '], { W: 'create_new_age:overcharged_iron_wire', C: 'powergrid:capacitor', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/basic_energiser'),
         btmEcoRecipe('create_new_age:advanced_energiser', [' W ', 'CAC', ' S '], { W: 'create_new_age:overcharged_golden_wire', C: 'powergrid:battery', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/advanced_energiser'),
-        btmEcoRecipe('create_new_age:reinforced_energiser', [' W ', 'CAC', ' S '], { W: 'create_new_age:overcharged_diamond_wire', C: 'powergrid:battery', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/reinforced_energiser'),
-        btmEcoRecipe('create_new_age:reactor_fuel_acceptor', ['PPP', 'CAC', 'PPP'], { P: 'create_new_age:heat_pipe', C: 'create_new_age:reactor_casing', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/reactor_fuel_acceptor')
+        btmEcoRecipe('create_new_age:reinforced_energiser', [' W ', 'CAC', ' S '], { W: 'create_new_age:overcharged_diamond_wire', C: 'powergrid:battery', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/reinforced_energiser')
     ])
 
     btmEcoAddMany(event, [

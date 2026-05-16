@@ -146,7 +146,7 @@ ServerEvents.recipes(function (event) {
         { item: 'minecraft:nether_star' },
         { item: 'bloodmagic:etherealslate' },
         { item: 'kubejs:impossible_circuit' },
-        { item: 'fission_reactor:fission_reactor_rod' }
+        { item: 'latent_chemlib:gas_reaction_chamber' }
     ], 100000, 320, 5, 'kubejs:tomeofblood/alchemytable/archmage_tome_post_ae2')
 
     btmTobGlyph(event, 'tomeofblood:glyph_sentient_harm', 80, [
@@ -162,7 +162,7 @@ ServerEvents.recipes(function (event) {
         'ars_nouveau:conjuration_essence',
         'bloodmagic:etherealslate',
         'kubejs:impossible_circuit',
-        'fission_reactor:fission_reactor_rod'
+        'latent_chemlib:gas_reaction_chamber'
     ], 'kubejs:tomeofblood/glyph_sentient_wrath_post_ae2')
 
     btmTobArmor(event, 'tomeofblood:living_mage_hood', 'bloodmagic:livinghelmet', 'kubejs:tomeofblood/living_mage_hood_post_ae2')

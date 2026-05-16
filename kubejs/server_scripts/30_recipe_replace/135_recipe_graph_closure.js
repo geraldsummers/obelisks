@@ -208,21 +208,11 @@ ServerEvents.recipes(function (event) {
     event.remove({ type: 'createdieselgenerators:distillation' })
 
     // Heat/electricity machinery belongs to the power-grid casing tier.
-    btmClosureShaped(event, 'create_new_age:reactor_casing', [
-        'IPI',
-        'PCP',
-        'IPI'
-    ], { I: BTM_CLOSURE.ironPlate, P: BTM_CLOSURE.power, C: 'powergrid:conductive_casing' }, 'kubejs:closure/create_new_age/reactor_casing')
-    btmClosureShaped(event, 'create_new_age:reactor_glass', [
-        'CGC',
-        'GPG',
-        'CGC'
-    ], { C: 'create_new_age:reactor_casing', G: '#forge:glass', P: BTM_CLOSURE.power }, 'kubejs:closure/create_new_age/reactor_glass')
-    btmClosureShaped(event, 'create_new_age:reactor_heat_vent', [
-        'PHP',
-        'HCH',
-        'PHP'
-    ], { P: BTM_CLOSURE.power, H: 'create_new_age:heat_pipe', C: 'create_new_age:reactor_casing' }, 'kubejs:closure/create_new_age/reactor_heat_vent')
+    event.remove({ output: 'create_new_age:reactor_casing' })
+    event.remove({ output: 'create_new_age:reactor_glass' })
+    event.remove({ output: 'create_new_age:reactor_heat_vent' })
+    event.remove({ output: 'create_new_age:reactor_fuel_acceptor' })
+    event.remove({ output: 'create_new_age:reactor_rod' })
     btmClosureShaped(event, 'create_new_age:stirling_engine', [
         'NSN',
         'PCP',

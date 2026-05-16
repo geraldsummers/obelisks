@@ -1,0 +1,8 @@
+{
+  "cloud_updates_per_second": 256,
+  "neighbor_ops_per_second": 768,
+  "escape_scans_per_second": 64,
+  "nuclear_inventory_scans_per_second": 96,
+  "stack_mutations_per_second": 32,
+  "heat_radiation_emissions_per_second": 64
+}

@@ -335,7 +335,7 @@ function testCriticalSurfaces() {
     'kubejs:impossible_circuit',
     'kubejs:sky_steel_sheet',
     'bloodmagic:etherealslate',
-    'fission_reactor:fission_reactor_rod'
+    'latent_chemlib:gas_reaction_chamber'
   ].filter(id => !ticexScript.includes(id))
   ticexHardGates.length
     ? fail('TiCEX Reconstruction Core is hard-gated post-AE2', ticexHardGates.join(', '))
@@ -349,7 +349,7 @@ function testCriticalSurfaces() {
     'kubejs:impossible_circuit',
     'kubejs:sky_steel_sheet',
     'bloodmagic:etherealslate',
-    'fission_reactor:fission_reactor_rod',
+    'latent_chemlib:gas_reaction_chamber',
     'chemlib:iridium_plate'
   ].filter(id => !protectionPixelScript.includes(id))
   protectionPixelGates.length
@@ -370,7 +370,7 @@ function testCriticalSurfaces() {
     'ae2:controller',
     'bloodmagic:etherealslate',
     'ars_nouveau:archmage_spell_book',
-    'fission_reactor:fission_reactor_rod'
+    'latent_chemlib:gas_reaction_chamber'
   ].filter(id => !tomeOfBloodScript.includes(id))
   tomeOfBloodGates.length
     ? fail('Tome of Blood is hard-gated as post-AE2 hybrid magic', tomeOfBloodGates.join(', '))
@@ -528,8 +528,10 @@ function testQuestBook() {
     'kubejs:space_machine_casing',
     'kubejs:raw_impossible_casing',
     'kubejs:impossible_machine_casing',
-    'fission_reactor:fission_fuel_acceptor',
-    'fission_reactor:fission_reactor_rod',
+    'latent_chemlib:gas_capture',
+    'latent_chemlib:gas_tank',
+    'latent_chemlib:gas_reaction_chamber',
+    'latent_chemlib:gas_release',
 	    'liquid_coolant:coolant_exchanger',
 	    'rpgstats:still_beating_heart',
 	    'ticex:reconstruction_core',

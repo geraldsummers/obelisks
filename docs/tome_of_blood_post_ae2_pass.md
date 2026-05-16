@@ -30,7 +30,7 @@ Added post-AE2 replacements using:
 - `advanced_ae:quantum_alloy_plate`
 - `bloodmagic:etherealslate`
 - `kubejs:sky_steel_sheet`
-- `fission_reactor:fission_reactor_rod`
+- `latent_chemlib:gas_reaction_chamber`
 - Ars spell books and Demon Will weapons
 
 The old Altar III KubeJS gate was removed from `80_magic_progression_blood_slate_gates.js`.
