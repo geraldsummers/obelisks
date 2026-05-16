@@ -10,8 +10,8 @@ Food blocks process material identity. The vanilla brewing stand only combines f
 
 | Surface | Role | Current examples |
 |---|---|---|
-| Cutting board | expose plant/animal/mineral source | green tea leaves, salmonberries, blazing chili |
-| Campfire cooking | crude heat and roasting | coffee beans, blazing chili |
+| Cutting board | expose plant/animal/mineral source | green tea leaves, salmonberries, cactus chili |
+| Campfire cooking | crude heat and roasting | coffee beans, cactus chili |
 | Cooking pot | multi-ingredient culinary extraction | brine, vision, heatproof, leaping, featherlight, life, turtle guard, corrupting extracts, stabilized reagent |
 | Kettle | clean aqueous extraction | green tea, coffee, rose hip, yellow tea, purulent tea extracts |
 | Keg | fermentation and stronger concentrates | red rum to pomegranate strength extract, salty folly to brine extract |
@@ -26,7 +26,7 @@ Food blocks process material identity. The vanilla brewing stand only combines f
 | `kubejs:vision_extract` | golden carrot + ube + glow berries | night vision potion finisher |
 | `kubejs:brine_extract` | salmonberry / sea / salt route | water breathing potion finisher |
 | `kubejs:rose_hip_extract` | rose hip recovery identity | regeneration potion finisher |
-| `kubejs:heatproof_extract` | blazing chili / hot spice / magma | fire resistance potion finisher |
+| `kubejs:heatproof_extract` | cactus chili / hot spice / magma | fire resistance potion finisher |
 | `kubejs:fortifying_extract` | yellow tea / resistance identity | reserved for later resistance systems |
 | `kubejs:fermented_pomegranate_extract` | red rum / pomegranate strength route | strength potion finisher |
 | `kubejs:toxic_extract` | purulent tea / poison identity | poison potion finisher |

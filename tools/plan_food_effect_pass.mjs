@@ -42,7 +42,7 @@ const preferredSource = {
   'minecraft:speed': ['farmersrespite:coffee_beans', 'create:bar_of_chocolate', 'minecraft:sugar'],
   'minecraft:night_vision': ['ubesdelight:ube', 'minecraft:golden_carrot', 'collectorsreap:carrot_gummy'],
   'minecraft:water_breathing': ['delightful:salmonberries', 'minecraft:sea_pickle', 'minecraft:pufferfish'],
-  'minecraft:fire_resistance': ['farmersrespite:blazing_chili', 'mynethersdelight:hot_spice', 'minecraft:magma_cream'],
+  'minecraft:fire_resistance': ['delightful:cactus_chili', 'mynethersdelight:hot_spice', 'minecraft:magma_cream'],
   'minecraft:regeneration': ['farmersrespite:rose_hips', 'collectorsreap:strawberry', 'minecraft:ghast_tear'],
   'minecraft:resistance': ['farmersrespite:yellow_tea_leaves', 'delightful:cantaloupe', 'undergarden:ink_mushroom'],
   'minecraft:strength': ['brewinandchewin:red_rum', 'collectorsreap:pomegranate', 'minecraft:blaze_powder'],
@@ -60,7 +60,7 @@ const preferredSource = {
   'brewinandchewin:intoxication': ['brewinandchewin:vodka', 'brewinandchewin:mead'],
   'brewinandchewin:raging': ['brewinandchewin:red_rum', 'collectorsreap:deific_blood'],
   'brewinandchewin:sweet_heart': ['brewinandchewin:mead', 'minecraft:honey_bottle'],
-  'mynethersdelight:b_pungent': ['farmersrespite:blazing_chili', 'mynethersdelight:hot_spice'],
+  'mynethersdelight:b_pungent': ['delightful:cactus_chili', 'mynethersdelight:hot_spice'],
   'ars_nouveau:mana_regen': ['ars_nouveau:sourceberry_bush', 'ars_nouveau:source_berry'],
   'occultism:third_eye': ['occultism:datura', 'occultism:demons_dream_essence']
 }
@@ -261,7 +261,7 @@ const report = [
   '## SHOULD DO',
   '',
   '- Add quest nodes after `FB_KEG`: `Effect Sources`, `Kettle Infusions`, `Fermented Concentrates`, `Potion Engineering`.',
-  '- Put each effect in the quest text with its source identity: coffee means speed/haste, rose hips mean recovery, blazing chili means heat immunity, salmonberries mean water routes.',
+  '- Put each effect in the quest text with its source identity: coffee means speed/haste, rose hips mean recovery, cactus chili means heat immunity, salmonberries mean water routes.',
   '- Add JEI-visible recipes for effect concentrates before final potions so players can reason about the graph.',
   '',
   '## MAYBE',

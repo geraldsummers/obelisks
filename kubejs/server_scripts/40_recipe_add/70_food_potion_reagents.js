@@ -82,10 +82,10 @@ ServerEvents.recipes(function (event) {
 
     cutting('farmersrespite:green_tea_leaves', 'kubejs:cut_green_tea_leaves', 2, 'green_tea_leaves')
     cutting('delightful:salmonberries', 'kubejs:mashed_salmonberries', 2, 'salmonberries')
-    cutting('farmersrespite:blazing_chili', 'kubejs:charred_blazing_chili', 1, 'blazing_chili_prep')
+    cutting('delightful:cactus_chili', 'kubejs:charred_blazing_chili', 1, 'cactus_chili_prep')
 
     campfire('farmersrespite:coffee_beans', 'kubejs:roasted_coffee_reagent', 'coffee_reagent', 600)
-    campfire('farmersrespite:blazing_chili', 'kubejs:charred_blazing_chili', 'blazing_chili', 800)
+    campfire('delightful:cactus_chili', 'kubejs:charred_blazing_chili', 'cactus_chili', 800)
 
     cooking(['kubejs:mashed_salmonberries', 'minecraft:sea_pickle', 'minecraft:dried_kelp', 'minecraft:pufferfish'], 'kubejs:brine_extract', 'brine_extract', 300)
     cooking(['minecraft:golden_carrot', 'ubesdelight:ube', 'minecraft:glow_berries'], 'kubejs:vision_extract', 'vision_extract', 240)

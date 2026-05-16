@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-05-16T03:30:35.059Z",
+  "generatedAt": "2026-05-16T03:41:34.354Z",
   "repo": "/home/gerald/obelisks",
-  "instance": "/tmp/btm-final-validation",
-  "passes": 59,
+  "instance": "/tmp/btm-completeness-final",
+  "passes": 60,
   "hardFailures": 0,
   "softFindings": 0,
   "skips": 7,
   "metrics": {
     "questChapters": 0,
     "villagerProfessionsCovered": 13,
-    "generatedRecipes": 26376,
+    "generatedRecipes": 26364,
     "engineWorld": {
-      "latestLog": "/tmp/btm-final-validation/logs/latest.log",
-      "latestLogAgeMinutes": 0.79,
-      "latestLogLines": 17025,
+      "latestLog": "/tmp/btm-completeness-final/logs/latest.log",
+      "latestLogAgeMinutes": 0.91,
+      "latestLogLines": 16826,
       "reachedIntegratedServer": false,
       "reachedDedicatedServer": true,
       "startedServingLan": false,
       "reachedInGame": true,
       "mainMenuToInGameMs": null,
       "totalLoadToWorldMs": null,
-      "spawnPrepTimeMs": 16236,
-      "serverTickBehindWarnings": 0,
-      "maxTickBehindMs": 0,
-      "totalTickBehindMs": 0,
-      "maxTickBehindTicks": 0,
-      "worldSaveDurationMs": 506,
-      "worldSaveFromSavingWorldsMs": 504,
+      "spawnPrepTimeMs": 21012,
+      "serverTickBehindWarnings": 1,
+      "maxTickBehindMs": 5775,
+      "totalTickBehindMs": 5775,
+      "maxTickBehindTicks": 115,
+      "worldSaveDurationMs": 583,
+      "worldSaveFromSavingWorldsMs": 581,
       "dimensionSaveCount": 21,
       "distantHorizonsIncompleteTasks": 0,
       "settlementRoadsRebuilds": 0,
@@ -35,6 +35,8 @@
       "emiTotalReloadMs": null,
       "emiSlowestPluginMs": 0,
       "emiSlowestPlugin": null,
+      "kubejsRecipeParseErrors": 0,
+      "kubejsFailedRecipeCount": 0,
       "newestCrashReport": null,
       "newestCrashReportAfterLatestLog": false
     },
@@ -68,7 +70,7 @@
       "results": [
         {
           "name": "JSON and JS syntax validation",
-          "durationMs": 4470.22,
+          "durationMs": 4462.35,
           "budgetMs": 8000,
           "hardLimitMs": 24000
         },
@@ -80,55 +82,55 @@
         },
         {
           "name": "quest book validation",
-          "durationMs": 0.33,
+          "durationMs": 0.32,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "Wares and villager trade validation",
-          "durationMs": 0.74,
+          "durationMs": 0.67,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "repo loot data validation",
-          "durationMs": 2.08,
+          "durationMs": 1.97,
           "budgetMs": 500,
           "hardLimitMs": 3000
         },
         {
           "name": "generated recipe graph validation",
-          "durationMs": 158.47,
+          "durationMs": 157.14,
           "budgetMs": 5000,
           "hardLimitMs": 20000
         },
         {
           "name": "generated loot dump validation",
-          "durationMs": 0.24,
+          "durationMs": 0.22,
           "budgetMs": 2500,
           "hardLimitMs": 10000
         },
         {
           "name": "engine and world performance log analysis",
-          "durationMs": 20.22,
+          "durationMs": 21.38,
           "budgetMs": 250,
           "hardLimitMs": 1500
         },
         {
           "name": "KubeJS asset validation",
-          "durationMs": 65.33,
+          "durationMs": 62.54,
           "budgetMs": 500,
           "hardLimitMs": 2000
         },
         {
           "name": "chemistry identity validation",
-          "durationMs": 62,
+          "durationMs": 64.27,
           "budgetMs": 500,
           "hardLimitMs": 2000
         },
         {
           "name": "dev dump health validation",
-          "durationMs": 0.25,
+          "durationMs": 0.3,
           "budgetMs": 50,
           "hardLimitMs": 500
         }

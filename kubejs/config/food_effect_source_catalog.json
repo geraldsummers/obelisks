@@ -474,7 +474,7 @@
       "effect": "minecraft:fire_resistance",
       "foodCount": 21,
       "preferredSources": [
-        "farmersrespite:blazing_chili",
+        "delightful:cactus_chili",
         "mynethersdelight:hot_spice",
         "minecraft:magma_cream"
       ],
@@ -502,7 +502,7 @@
           "score": 126
         },
         {
-          "id": "farmersrespite:blazing_chili",
+          "id": "delightful:cactus_chili",
           "namespace": "farmersrespite",
           "nutrition": 10,
           "dietGroups": [],
@@ -2094,7 +2094,7 @@
       "effect": "mynethersdelight:b_pungent",
       "foodCount": 14,
       "preferredSources": [
-        "farmersrespite:blazing_chili",
+        "delightful:cactus_chili",
         "mynethersdelight:hot_spice"
       ],
       "topFoods": [

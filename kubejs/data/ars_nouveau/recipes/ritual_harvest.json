@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ars_nouveau:green_archwood_log"
+    },
+    {
+      "item": "bloodmagic:infusedslate"
+    },
+    {
+      "item": "ars_nouveau:source_gem"
+    }
+  ],
+  "result": {
+    "item": "ars_nouveau:ritual_harvest"
+  }
+}

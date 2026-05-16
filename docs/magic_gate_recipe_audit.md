@@ -46,13 +46,13 @@ Scope: `kubejs` magic gate scripts, Blood Magic heart/orb flow, and quest chapte
 1. Slate gating is structurally coherent across magic entry, spike, and post-AE2 magic branches.
 2. Blood orb production is strongly constrained by heart typing and RPG/death conditions, not by default altar throughput.
 3. Late magic recipes are slate-heavy, but orb items are mostly progression catalysts and are not reused as broad late-branch recipe catalysts.
-4. Cleric trade stock currently sells all slate tiers up to Ethereal (`10_coin_villager_trades.js`), which creates an alternate slate acquisition path that can partially bypass altar production pressure.
+4. Cleric trade stock now keeps only Blank Slate as a low-tier ritual convenience. Reinforced, Imbued, Demon, and Ethereal Slates remain altar-authored progression materials.
 
 ## Blood Orb Catalyst Opportunities
 
 - Opportunity A: Use orb-tier catalysts in selected late hybrid recipes (especially post-AE2 magic branch conversions) to keep orb relevance beyond heart-channeling.
 - Opportunity B: Tie additional quest checks to higher typed hearts/orbs so quest progression reflects hemostasis, death-cause, and dimension constraints already enforced in scripts.
-- Opportunity C: If intended design is altar-first slate progression, review whether high-tier cleric slate offers should remain at current breadth.
+- Opportunity C: Add selected high-tier orb catalysts to late hybrid recipes if orb relevance needs more pressure beyond heart-channeling.
 
 ## Risk Notes
 
@@ -61,6 +61,6 @@ Scope: `kubejs` magic gate scripts, Blood Magic heart/orb flow, and quest chapte
 
 ## Audit Outcome
 
-- No recipe edits performed.
-- Gate architecture is mostly consistent and intentional.
-- Primary pressure points are quest visibility for high-tier heart constraints and optional reduction of alternative slate supply via economy paths.
+- High-tier cleric slate trades were removed from `10_coin_villager_trades.js` during the completeness pass.
+- Gate architecture is consistent and intentional.
+- Primary remaining pressure point is quest visibility for high-tier heart constraints if quest content is restored later.

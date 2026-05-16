@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:false"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_planks"
+    },
+    {
+      "item": "minecraft:lever"
+    }
+  ],
+  "result": {
+    "item": "sophisticatedstorage:chest"
+  }
+}

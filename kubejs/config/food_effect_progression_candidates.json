@@ -592,7 +592,7 @@
       "farmersdelight:apple_cider",
       "farmersdelight:fruit_salad",
       "farmersdelight:mixed_salad",
-      "farmersrespite:blazing_chili",
+      "delightful:cactus_chili",
       "farmersrespite:long_apple_cider",
       "farmersrespite:long_rose_hip_tea",
       "farmersrespite:long_yellow_tea",
@@ -1720,7 +1720,7 @@
       "collectorsreap:wild_berry_gummy",
       "delightful:long_prickly_pear_juice",
       "delightful:prickly_pear_juice",
-      "farmersrespite:blazing_chili",
+      "delightful:cactus_chili",
       "immersive_weathering:ice_sickle",
       "immersive_weathering:icicle",
       "minecraft:enchanted_golden_apple",
@@ -7663,7 +7663,7 @@
       ]
     },
     {
-      "id": "farmersrespite:blazing_chili",
+      "id": "delightful:cactus_chili",
       "score": 58,
       "category": "combat_supply",
       "suggestedStage": "kettle_drinks",

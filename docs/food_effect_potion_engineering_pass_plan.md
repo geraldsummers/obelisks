@@ -114,14 +114,14 @@ The vanilla brewing stand should stop being the main potion recipe authority. It
 ### minecraft:fire_resistance
 
 - Stage: `keg_distillation`
-- Preferred source ingredients: `farmersrespite:blazing_chili`, `mynethersdelight:hot_spice`, `minecraft:magma_cream`
+- Preferred source ingredients: `delightful:cactus_chili`, `mynethersdelight:hot_spice`, `minecraft:magma_cream`
 - Foods currently proving this effect: 21
 
 | Food evidence | Duration | Amp | Diet groups |
 | --- | ---: | ---: | --- |
 | `minecraft:enchanted_golden_apple` | 300s | 1 | fruits |
 | `collectorsreap:prickly_pear_gummy` | 90s | 1 | none |
-| `farmersrespite:blazing_chili` | 60s | 1 | none |
+| `delightful:cactus_chili` | 60s | 1 | none |
 | `collectorsreap:spicy_grenadine_jelly` | 60s | 1 | none |
 | `mynethersdelight:enchanted_golden_egg` | 60s | 1 | none |
 | `collectorsreap:wild_berry_gummy` | 5s | 3 | none |
@@ -369,7 +369,7 @@ The vanilla brewing stand should stop being the main potion recipe authority. It
 ### mynethersdelight:b_pungent
 
 - Stage: `kitchen_infrastructure`
-- Preferred source ingredients: `farmersrespite:blazing_chili`, `mynethersdelight:hot_spice`
+- Preferred source ingredients: `delightful:cactus_chili`, `mynethersdelight:hot_spice`
 - Foods currently proving this effect: 14
 
 | Food evidence | Duration | Amp | Diet groups |
@@ -420,7 +420,7 @@ The vanilla brewing stand should stop being the main potion recipe authority. It
 ## SHOULD DO
 
 - Add quest nodes after `FB_KEG`: `Effect Sources`, `Kettle Infusions`, `Fermented Concentrates`, `Potion Engineering`.
-- Put each effect in the quest text with its source identity: coffee means speed/haste, rose hips mean recovery, blazing chili means heat immunity, salmonberries mean water routes.
+- Put each effect in the quest text with its source identity: coffee means speed/haste, rose hips mean recovery, cactus chili means heat immunity, salmonberries mean water routes.
 - Add JEI-visible recipes for effect concentrates before final potions so players can reason about the graph.
 
 ## MAYBE

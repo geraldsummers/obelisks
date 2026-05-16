@@ -96,8 +96,8 @@ var BTM_PLATINUM_MARKET = [
     ['minecraft:armorer',5,8,'minecraft:diamond_leggings',1,1,24],
     ['minecraft:weaponsmith',5,8,'minecraft:enchanted_golden_apple',1,1,28],
     ['minecraft:weaponsmith',5,9,'minecraft:netherite_scrap',2,1,28],
-    ['minecraft:cleric',5,8,'bloodmagic:demonslate',1,2,24],
-    ['minecraft:cleric',5,10,'bloodmagic:etherealslate',1,1,30],
+    ['minecraft:cleric',5,8,'minecraft:ghast_tear',2,2,24],
+    ['minecraft:cleric',5,10,'minecraft:sculk_catalyst',1,1,30],
     ['minecraft:librarian',5,8,'minecraft:enchanted_book',1,2,24],
     ['minecraft:librarian',5,8,'minecraft:dragon_breath',2,2,30],
     ['minecraft:cartographer',5,8,'minecraft:lodestone',1,2,24],
@@ -646,18 +646,18 @@ if (typeof MoreJSEvents !== 'undefined') {
             [5, 'platinum', 8, 'minecraft:netherite_scrap', 1, 1, 28]
         ])
 
-        // Cleric: magic recovery and ritual support. Slates are convenience, not the main altar route.
+        // Cleric: magic recovery and ritual support. High slates stay altar-authored.
         btmAddTrades(event, 'minecraft:cleric', [
             [1, 'copper', 3, 'minecraft:redstone', 8, 12, 3],
             [1, 'copper', 3, 'minecraft:lapis_lazuli', 8, 12, 3],
             [2, 'iron', 4, 'minecraft:glowstone_dust', 8, 10, 6],
             [2, 'brass', 4, 'bloodmagic:blankslate', 1, 6, 10],
-            [3, 'brass', 4, 'bloodmagic:reinforcedslate', 1, 4, 14],
+            [3, 'brass', 4, 'minecraft:amethyst_shard', 8, 8, 14],
             [3, 'brass', 5, 'minecraft:ender_pearl', 2, 6, 12],
-            [4, 'gold', 6, 'bloodmagic:infusedslate', 1, 3, 18],
+            [4, 'gold', 6, 'minecraft:ghast_tear', 2, 4, 18],
             [4, 'platinum', 6, 'minecraft:blaze_rod', 4, 4, 18],
-            [5, 'platinum', 8, 'bloodmagic:demonslate', 1, 2, 24],
-            [5, 'platinum', 10, 'bloodmagic:etherealslate', 1, 1, 30]
+            [5, 'platinum', 8, 'minecraft:sculk_catalyst', 1, 2, 24],
+            [5, 'platinum', 10, 'minecraft:echo_shard', 2, 1, 30]
         ])
 
         // Librarian: books, manuals, local intelligence, and late knowledge artifacts.

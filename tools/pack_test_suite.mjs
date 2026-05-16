@@ -792,6 +792,8 @@ function testEngineWorldPerformanceLogs() {
     emiTotalReloadMs: null,
     emiSlowestPluginMs: 0,
     emiSlowestPlugin: null,
+    kubejsRecipeParseErrors: 0,
+    kubejsFailedRecipeCount: 0,
     newestCrashReport: null,
     newestCrashReportAfterLatestLog: false
   }
@@ -837,6 +839,9 @@ function testEngineWorldPerformanceLogs() {
     }
     const emiTotal = line.match(/\[EMI\] Reloaded EMI in (\d+)ms/)
     if (emiTotal) logMetrics.emiTotalReloadMs = Number(emiTotal[1])
+    if (line.includes('Error parsing recipe')) logMetrics.kubejsRecipeParseErrors++
+    const failedRecipes = line.match(/with (\d+) failed recipes/)
+    if (failedRecipes) logMetrics.kubejsFailedRecipeCount = Math.max(logMetrics.kubejsFailedRecipeCount, Number(failedRecipes[1]))
 
     if (line.includes('Stopping server') && at != null) {
       lastStoppingServerAt = at
@@ -915,6 +920,12 @@ function testEngineWorldPerformanceLogs() {
     logMetrics.emiTotalReloadMs > 90000
       ? finding('EMI reload is very slow', `${logMetrics.emiTotalReloadMs} ms`, 'SHOULD')
       : ok('EMI reload budget', `${logMetrics.emiTotalReloadMs} ms <= 90000 ms`)
+  }
+
+  if (logMetrics.kubejsRecipeParseErrors > 0 || logMetrics.kubejsFailedRecipeCount > 0) {
+    fail('KubeJS recipe parse health', `${logMetrics.kubejsRecipeParseErrors} parse errors, ${logMetrics.kubejsFailedRecipeCount} failed recipes`)
+  } else {
+    ok('KubeJS recipe parse health', '0 parse errors, 0 failed recipes')
   }
 
   if (logMetrics.newestCrashReportAfterLatestLog) {
