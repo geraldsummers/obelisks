@@ -89,4 +89,3 @@ Date: 2026-05-13
 
 - Runtime registry dumps were not regenerated after these edits.
 - Full in-game recipe visibility and EMI/JEI checks still need a runtime boot.
-- The casing texture family is model-complete but not the final art pass; new IDs reuse existing casing textures.

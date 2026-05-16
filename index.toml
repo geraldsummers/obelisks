@@ -6630,19 +6630,19 @@ hash = "5d136deff48e6759155f02822037587879cf8210913a66db1712a8361b4f610d"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/circuited_machine_casing.json"
-hash = "5cc7b6e6869de5ab1a1c3c26b508533f8627d7f5ce65abcefdf8f79fd9f8d783"
+hash = "134d191af054ea4fbcac5c7e50646dc803dc79bd1261f37fda875a21e1b112bb"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/electrical_machine_casing.json"
-hash = "312a5d511c763ce75ff7c2d555112d4c8303efc7210651f84da19e280b35e58d"
+hash = "dc37f189c0bc75009d99983dcde328e2b1b4858c0b1752ade7fa370d2f1ccde6"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/impossible_machine_casing.json"
-hash = "464e4972aa109117fb5a9d3fe3ad18c3922bca44313474d39ff4398518706aaf"
+hash = "fa7b0e82318a9148de6aa43e65194330ed59751f220532e0b9887fa387d1a710"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/raw_impossible_casing.json"
-hash = "464e4972aa109117fb5a9d3fe3ad18c3922bca44313474d39ff4398518706aaf"
+hash = "a4fcf6431f5f751f0b90b81858f94e79b881f390c528e1441aeaba28c63857ba"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/block/scorched_machine_casing.json"
@@ -6975,26 +6975,6 @@ hash = "e8aa1da78249e4fd737b864bc25f1fc8971609fd493bfd713927a371d99b73c5"
 [[files]]
 file = "kubejs/assets/kubejs/models/item/weakening_extract.json"
 hash = "9f6090aa9f52ae2941701ce4cf0d6ab9e9afb4d91f31d10449dd71350437c354"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/ae2_machine_casing_back.png"
-hash = "2afce424ce9ad9e833690a41dcdd6c6f8eb7ba3eb2e587aa5a2ecc987c06a027"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/ae2_machine_casing_bottom.png"
-hash = "1cf1245dea31bb6e655a1e37c5e7ec6ea6d747800b82389b5224545049e686dd"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/ae2_machine_casing_front.png"
-hash = "de197d681dfd2f73cfc4d0e9383ca0de143f402b256ac22d6b2780e277ebfb79"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/ae2_machine_casing_side.png"
-hash = "209dc69559de7a1148baea074ebddbbfc998b4f2e080462bf213e5fc5d7de3fc"
-
-[[files]]
-file = "kubejs/assets/kubejs/textures/block/ae2_machine_casing_top.png"
-hash = "680725b00e035f191d1083ee71530902a3eca25cc238c1b6c459382a31ad52ba"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/airtight_machine_casing_back.png"
@@ -7377,44 +7357,84 @@ file = "kubejs/assets/kubejs/textures/block/brass_machine_casing_top.png"
 hash = "58d52ab3883819aa4e2b806c78fe4dc09f892b5f09573872d64234d74833a266"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/oc2r_machine_casing_back.png"
+file = "kubejs/assets/kubejs/textures/block/circuited_machine_casing_back.png"
 hash = "e94c1464457a8d4d9d6f9a687195bda62549eb769bfb65e275a9cc93296f0cbc"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/oc2r_machine_casing_bottom.png"
+file = "kubejs/assets/kubejs/textures/block/circuited_machine_casing_bottom.png"
 hash = "46bc31ad5967ce76ef0d2421f30c22285e45854e3729a5fa168f97b106ace8a2"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/oc2r_machine_casing_front.png"
+file = "kubejs/assets/kubejs/textures/block/circuited_machine_casing_front.png"
 hash = "1bf403927297fe53c9dd4484c33bb45d11a2dcd516dbe339d6e864e70925d12c"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/oc2r_machine_casing_side.png"
+file = "kubejs/assets/kubejs/textures/block/circuited_machine_casing_side.png"
 hash = "d58b0abb0edcde46b45acdc92808528b85233e6414e98065b3aa9f947fb8d991"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/oc2r_machine_casing_top.png"
+file = "kubejs/assets/kubejs/textures/block/circuited_machine_casing_top.png"
 hash = "e26c8f4a6b5e2e561553790eed9fc420b537b635b93227a29de93df11843b186"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/power_grid_machine_casing_back.png"
+file = "kubejs/assets/kubejs/textures/block/electrical_machine_casing_back.png"
 hash = "8ca92fba41b5553578b18aca929e065cad9d67a61bf85d8bde83bbd2da02d3da"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/power_grid_machine_casing_bottom.png"
+file = "kubejs/assets/kubejs/textures/block/electrical_machine_casing_bottom.png"
 hash = "dd1642bb3838fee26809494f24aaf6dbb61a793e5454576c4264288569cc3374"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/power_grid_machine_casing_front.png"
+file = "kubejs/assets/kubejs/textures/block/electrical_machine_casing_front.png"
 hash = "7d5ba2d62390d755ce3a1cbcd533e3bc6ba0743c9c2dff93437ccfb5913ea17e"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/power_grid_machine_casing_side.png"
+file = "kubejs/assets/kubejs/textures/block/electrical_machine_casing_side.png"
 hash = "7d5ba2d62390d755ce3a1cbcd533e3bc6ba0743c9c2dff93437ccfb5913ea17e"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/block/power_grid_machine_casing_top.png"
+file = "kubejs/assets/kubejs/textures/block/electrical_machine_casing_top.png"
 hash = "99348e7d3341a975e24b0a5fc9e4c38d4cceb1e6c9d6d1051c893f706aab4f75"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/impossible_machine_casing_back.png"
+hash = "2afce424ce9ad9e833690a41dcdd6c6f8eb7ba3eb2e587aa5a2ecc987c06a027"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/impossible_machine_casing_bottom.png"
+hash = "1cf1245dea31bb6e655a1e37c5e7ec6ea6d747800b82389b5224545049e686dd"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/impossible_machine_casing_front.png"
+hash = "de197d681dfd2f73cfc4d0e9383ca0de143f402b256ac22d6b2780e277ebfb79"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/impossible_machine_casing_side.png"
+hash = "209dc69559de7a1148baea074ebddbbfc998b4f2e080462bf213e5fc5d7de3fc"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/impossible_machine_casing_top.png"
+hash = "680725b00e035f191d1083ee71530902a3eca25cc238c1b6c459382a31ad52ba"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/raw_impossible_casing_back.png"
+hash = "cd673dc59c144be3a7d552cc534b6e33585615657f6b954e964ae96425b546e2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/raw_impossible_casing_bottom.png"
+hash = "d17b403584bb9a6bd84a3c8f688c31f6d0fd7d54f5df66092be0a27e8d0b7f62"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/raw_impossible_casing_front.png"
+hash = "7b872940ca856c213af54d0b1102c8b6312f4073d754c9219520c3942ee7fd96"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/raw_impossible_casing_side.png"
+hash = "905168c3ad277d47b442dacb21fddc09b454495bca8edfdf249c01d514f18c5f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/raw_impossible_casing_top.png"
+hash = "eee3a4fd7adb58925ab2c73be60961dfa3bee17c6c126ba52c79bc45da6d8ec7"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/scorched_machine_casing_back.png"

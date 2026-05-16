@@ -10,6 +10,8 @@ const questGeneratorPath = path.join(repo, 'tools/generate_expert_quest_book.mjs
 const shaderBlockPropertiesPath = path.join(repo, 'shaderpacks/ComplementaryReimagined_r5.7.1/shaders/block.properties')
 const modelDir = path.join(repo, 'kubejs/assets/kubejs/models/item')
 const textureDir = path.join(repo, 'kubejs/assets/kubejs/textures/item')
+const blockModelDir = path.join(repo, 'kubejs/assets/kubejs/models/block')
+const blockTextureDir = path.join(repo, 'kubejs/assets/kubejs/textures/block')
 
 const failures = []
 function fail(message) { failures.push(message) }
@@ -131,9 +133,54 @@ for (const staleAsset of [
   'kubejs/assets/kubejs/models/block/power_grid_machine_casing.json',
   'kubejs/assets/kubejs/models/item/ae2_machine_casing.json',
   'kubejs/assets/kubejs/models/item/oc2r_machine_casing.json',
-  'kubejs/assets/kubejs/models/item/power_grid_machine_casing.json'
+  'kubejs/assets/kubejs/models/item/power_grid_machine_casing.json',
+  'kubejs/assets/kubejs/textures/block/ae2_machine_casing_front.png',
+  'kubejs/assets/kubejs/textures/block/ae2_machine_casing_back.png',
+  'kubejs/assets/kubejs/textures/block/ae2_machine_casing_side.png',
+  'kubejs/assets/kubejs/textures/block/ae2_machine_casing_top.png',
+  'kubejs/assets/kubejs/textures/block/ae2_machine_casing_bottom.png',
+  'kubejs/assets/kubejs/textures/block/oc2r_machine_casing_front.png',
+  'kubejs/assets/kubejs/textures/block/oc2r_machine_casing_back.png',
+  'kubejs/assets/kubejs/textures/block/oc2r_machine_casing_side.png',
+  'kubejs/assets/kubejs/textures/block/oc2r_machine_casing_top.png',
+  'kubejs/assets/kubejs/textures/block/oc2r_machine_casing_bottom.png',
+  'kubejs/assets/kubejs/textures/block/power_grid_machine_casing_front.png',
+  'kubejs/assets/kubejs/textures/block/power_grid_machine_casing_back.png',
+  'kubejs/assets/kubejs/textures/block/power_grid_machine_casing_side.png',
+  'kubejs/assets/kubejs/textures/block/power_grid_machine_casing_top.png',
+  'kubejs/assets/kubejs/textures/block/power_grid_machine_casing_bottom.png'
 ]) {
   if (fs.existsSync(path.join(repo, staleAsset))) fail(`stale renamed casing asset remains: ${staleAsset}`)
+}
+
+for (const currentCasing of [
+  'seared_machine_casing',
+  'scorched_machine_casing',
+  'andesite_machine_casing',
+  'brass_machine_casing',
+  'airtight_machine_casing',
+  'electrical_machine_casing',
+  'circuited_machine_casing',
+  'space_machine_casing',
+  'raw_impossible_casing',
+  'impossible_machine_casing'
+]) {
+  const blockstate = path.join(repo, 'kubejs/assets/kubejs/blockstates', `${currentCasing}.json`)
+  const blockModel = path.join(blockModelDir, `${currentCasing}.json`)
+  const itemModel = path.join(repo, 'kubejs/assets/kubejs/models/item', `${currentCasing}.json`)
+  if (!hasFile(blockstate)) fail(`missing blockstate for ${currentCasing}`)
+  if (!hasFile(blockModel)) fail(`missing block model for ${currentCasing}`)
+  else {
+    const modelText = read(blockModel)
+    for (const face of ['front', 'back', 'side', 'top', 'bottom']) {
+      if (!modelText.includes(`kubejs:block/${currentCasing}_${face}`)) fail(`block model for ${currentCasing} does not use its ${face} texture`)
+    }
+  }
+  if (!hasFile(itemModel)) fail(`missing item model for ${currentCasing}`)
+  else if (!read(itemModel).includes(`kubejs:block/${currentCasing}`)) fail(`item model for ${currentCasing} does not inherit its block model`)
+  for (const face of ['front', 'back', 'side', 'top', 'bottom']) {
+    if (!hasFile(path.join(blockTextureDir, `${currentCasing}_${face}.png`))) fail(`missing block texture for ${currentCasing}_${face}`)
+  }
 }
 
 if (!fs.existsSync(startupPath) || !read(startupPath).includes("event.create('phosphoric_acid_fluid')")) {
