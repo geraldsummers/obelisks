@@ -5533,254 +5533,6 @@ file = "config/ftbquests/client-config.snbt"
 hash = "466e8173f9a27a489e860cbf5fc460696ed8270f13c97c02d9f2a9b5f8c8b961"
 
 [[files]]
-file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "63f2b58ec125e3dd1f16bab3d53e24c6a1adc2f6ef045aa7df87c6505b19b062"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/adventuring.snbt"
-hash = "d26948fa1c5b677ea7e745b0ae49eb59264afb8ea30d883ff0a0a73b6cffe85d"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ae2.snbt"
-hash = "674acbe7bd62e4e71288e428395896f8535b028cf63e042bd448d7fd18dacbe2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/aether.snbt"
-hash = "a2a0a2002a2328170b1831315fa974fa5927c90890fcb60fec06075e596c4a9c"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/apotheosis.snbt"
-hash = "386d50acaf0e4214ac3d7a27c6594271373b4e3d74aa7c0c5138b50cace7fc90"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ars_nouveau.snbt"
-hash = "a5dc64613fb0a6a8e67634df45d41e9e2aad7c56b6bc1bf343fab9c87f919cce"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/artifacts.snbt"
-hash = "4c1f21bf8aea206bb4e02177582e195cf4f5485f949acaf3284c49495fc4bdf6"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/blue_skies.snbt"
-hash = "59240305a74c614a5dfa3cd33d1d4081ccd05001da1bfdc74a1d0aba79693411"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/books.snbt"
-hash = "836fdf5378c3c795519926da28b6016c02e2938096987c659cd3f0f89760786f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/botania.snbt"
-hash = "324b9c17d00d5f7a69ab8332a3580e86ada862cc772636298514152d6472086e"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/brewing.snbt"
-hash = "091c3a98eb2ee5eddd98efb2c94ba4d3c955e2146660fad11141ad628f287a3d"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/building_block_systems.snbt"
-hash = "4bc77dfd4550fe5410cd9a0ad788a00fd4a1be7074c1e7723e7d4da9073b2df9"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/building_tools.snbt"
-hash = "19d456bff85eb741e1df1d4bd80625f96003db3a3e0266ed04310e5ac52b9c00"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_applied_kinetics.snbt"
-hash = "73418bef809824fbe70420e8f2481f64368bbebae0c9922f155cff5bbff17d91"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_brass_automation.snbt"
-hash = "3173d1e508dd1fe62bf136aa277e561cf8927681ed4714fcaeadbf9b121dddb4"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_components.snbt"
-hash = "ac47a87e774e9269776cd9f6a5f464498a6db4044e831a406bcf73ddb1e10855"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_fluids_and_packages.snbt"
-hash = "4e4910717c5b1d01017e36e65c61bf50600a82577756021b8aed6035a15bbc0f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_foundations.snbt"
-hash = "5a071dedcff163c79ef290060baec02b24109f6db66b3eedab42b78f93e163e9"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/create_rail_logistics.snbt"
-hash = "8c075a6d4261858b0133dd020aa608f9aef4138554ea480ea74fff1f1d2c026b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/death.snbt"
-hash = "0215857f469eacddce9ac8a010366450736c71131792407973adee1dd682b1f2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/deeper_darker.snbt"
-hash = "71f159f5fc18735dd24a0b8aea290184ad4de92a807345fb5baaa4a26352e01f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/fallout_wastelands.snbt"
-hash = "3c29e156984d8e931e1a05806c726950c455693a48a707b274ffc0f66ed4c407"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/fission_fusion.snbt"
-hash = "8deaab87b1ac70bad8af39e3c8ca9ba368718ca2fdf353a28c0364db90302738"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/food_catalogue.snbt"
-hash = "3d2ff853aa3b7af1c825e15dff9d5e8554d8ef82b65b5d59d01935f75974c292"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/food_i.snbt"
-hash = "0e0eeeee04067cf1388370e803afe2d80890da9b12d2b5771b7fd8362b65b87a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/food_ii.snbt"
-hash = "c70386d0c0af7a7352bb9ab11a41295f6a3492130e666fdc52d6b3f8ea1bbea2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/grid_power.snbt"
-hash = "91215ce818b82e82fed7a3b93d742cef2ce13465d6b27f21df10f2804d854b11"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ice_and_fire.snbt"
-hash = "44f90132e69db43853efdcc1b30cbddd59966eb46fcd2a2fce4d1f7c89a15f66"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/little_logistics.snbt"
-hash = "a5de1f837976c822072edc17a918aa1d1e6a383a32c275480285e27b2749e6d5"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/lost_cities.snbt"
-hash = "8ce81f005244e41930eb63fb955d1024ab1e11e1aaef7ebdde7131b881d2fd2b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/magic_i.snbt"
-hash = "5e6059c0593541ddea47f1fb4febbfb1bcf4d70749ace663d0bfa77fc4475a1e"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/magic_ii.snbt"
-hash = "ca962cf1a03d6c2709e6e795d2b78efded759e7ff6c6d27a1dad333cd1dd4cbd"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/major_gates.snbt"
-hash = "6d47aa43573c137518095fd775b512b0140431e9a25856fee2ee13e57c69b606"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/malum.snbt"
-hash = "1eaaf356f312f4bcbb6778bd803d220816f7b836ad38e4cff3d95534ea4b2e29"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/oc2r.snbt"
-hash = "03eb13ae8c469935c72e46fe86713c657b387e67916a9a70e8543d7a224f4c3d"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/occultism.snbt"
-hash = "1d986121c361900d2370de2dbabfc94e9490ecb8044be0f188146834720fb37c"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/pillager_campaigns.snbt"
-hash = "592b7bb2fe1d1fbd84fe72926929f246a1e6926c4bcd48a8da7b57ef4cfa4e2e"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/post_ae2.snbt"
-hash = "310a568102ecdf87a476f7fcb7ff343d938c147d050635eb9abff461fc4fa6fb"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/potion_engineering.snbt"
-hash = "37a230be914efec2db6167d9af88125bd1767d4ed6f2c6b647880c4b1646d0ee"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/protection_pixel.snbt"
-hash = "0f3e1cf794a884d5a63879cc962451cf2e7339ddaa34f8603d606dfa6427bf53"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/relics.snbt"
-hash = "67cc4abaf7f1f79331fb534c0ee16c3193db9b621a2b508e034b595201c4460b"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/reliquary.snbt"
-hash = "d4abc901c67577e7c1dfa82e8f08045a83b88516093a234caebdcb5e27ff6bb8"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/space.snbt"
-hash = "67ead60c80860efbc431cde17b14c142256793086fb4fd8b4fff2933539b877d"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/starcatcher.snbt"
-hash = "ee78c3e66e3733b462b3d2f146171e4f9a139d9c7890a01689e7b565c7f8ea34"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/starting_out.snbt"
-hash = "cda26d743ce2f951e3eec44df164669d37aed836362d5e8999ea7a0d19e82534"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/su_heat.snbt"
-hash = "105958a8dfd0ef8b56ae5a858372f34484ea90753ea95b7fa772b3a1c98c2db2"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/synthesis_i.snbt"
-hash = "379ddf94722917b777c1dd15dcb0a6d5aba52841470f50f755aaedd42d931f58"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/synthesis_ii.snbt"
-hash = "f41f4d168cfd706bac8275661d82ef6c7a04dc62c91f5b521db4116e41aa3456"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/theurgy.snbt"
-hash = "7e92f9433a3a861395dfa1e34fc8a5ebec35186675f7956b53c48e4954fa87b8"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/ticex.snbt"
-hash = "d4cf767cd4bb6cf0387ddc6fa1e1f0e3921616f5a25b85f471d336af770a9d9f"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/tinkers_arsenal.snbt"
-hash = "e1c0b6c917ab8c592d7e216fd22167e4a095ecd3b062753a5f220f10c575fe4a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/tinkers_i.snbt"
-hash = "f07815eed1007c1a2e9a90b494072edf167c2c1c82f5d4b3ec76fb1f5e65219c"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/tinkers_ii.snbt"
-hash = "6898b49a55f41332195cb0949632811da315d2e2c0f9b7216b3e5431ee8e731a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/tome_of_blood.snbt"
-hash = "991f02641564ebe61def9e59b51ffc4578f5929abcdb21a85126090da86f6c36"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/twilight_forest.snbt"
-hash = "069eb14d1543a40055ea06a2d8f571460a1971475866581b79daec3994b8ac6a"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/undergarden.snbt"
-hash = "0e16222de58720ccbe2b5d4e122593a559b988010bc370f3ff45f796a9784547"
-
-[[files]]
-file = "config/ftbquests/quests/chapters/village_economy.snbt"
-hash = "a2aed008f8973f4a0bb596560c27988b0da871ba2f8f0adabcba872a5f7dd2f5"
-
-[[files]]
-file = "config/ftbquests/quests/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
-file = "config/ftbquests/saved/2026-04-25-14-19-15/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
-
-[[files]]
-file = "config/ftbquests/saved/2026-04-25-14-19-15/chapters/f.snbt"
-hash = "afeea83f91ddb8cf251a0a3e06886acaba55d732fad3e72505caacbea7a61f53"
-
-[[files]]
-file = "config/ftbquests/saved/2026-04-25-14-19-15/chapters/starting_out.snbt"
-hash = "9e8c9ef6f3eb771e2a4036a23ab12c8d08aa78bcdde708a266429175e7dc9b6d"
-
-[[files]]
-file = "config/ftbquests/saved/2026-04-25-14-19-15/data.snbt"
-hash = "0fef376c367cb165e7b886c03ada2a3d32abee8abce89b7bf351edd0d6e196aa"
-
-[[files]]
 file = "config/geolosys-common.toml"
 hash = "ebfeec2a9aa89108c938a57b27ae5520a344b0810eea05011759445ff66b815a"
 
@@ -6938,7 +6690,7 @@ hash = "6e083d8b74c228d150f6f66eaa2f47e520b30cb96e4bb1defa8e320b8ca77c07"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/andesite_grinding_ball.json"
-hash = "9827c6264c00c160bef4aaeac1a0e3b71d7d1433ff36657cd5771534bfcdae4b"
+hash = "990d77197302317c5f24062c1f4e0cd8cc84e554ad41a7de3bd7c1a3a49561e1"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/andesite_machine_casing.json"
@@ -6954,7 +6706,7 @@ hash = "a751fdecdd85914b902eb46be1ac55e7ac11e4b2ff183d7a49a11e25a74b3f9b"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/blood_infused_grinding_ball.json"
-hash = "0392aaea7640360c393837546e93a21523634ff00fac0f2b3e86a2a579b84e50"
+hash = "eedb15702f7266fc7c55eae77917dc3c331ff58b2d8c90fbae491a84fd790236"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/box_t01.json"
@@ -7022,7 +6774,7 @@ hash = "99fbe573fae0bf0b4ce714878f5afb52fe1789e0efae1368187d1368ca29f8da"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/brass_grinding_ball.json"
-hash = "4e5e564ade1eec3727053fa2dd966674e07e065fad3e69c6dd590e857a845c91"
+hash = "d53af94eaa35959b138c348743c8d1fb1fd1ef545d7f4a7631e1a28fe1b76ccd"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/brass_machine_casing.json"
@@ -7070,7 +6822,7 @@ hash = "fad36d2cd1c60b6afe9a8445a915ba6d8fd0616993056a88d9462d7fc2ed9500"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/fluix_grinding_ball.json"
-hash = "07c17ff458a184fbcae33e82b0b530ba50a20fb20a73931d6d28ac72122b28d2"
+hash = "1c7cc24917c58de3b89a10ca2a82e27b6beac5f312f31bccc33a80ff717df03d"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/fortifying_extract.json"
@@ -7098,7 +6850,7 @@ hash = "5e3939a0417b02d2c870f828e12a006c9c4b3029ce979fe1f435132f1adb4b9b"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/iron_grinding_ball.json"
-hash = "e07013bd807e986eebf74f1d2e25da2095e79a717c8f9f1b7dbd9c80a8c25ac8"
+hash = "c2a3dc9d1e415dd7ade61fca5e41f59f2012da376ef051b55bca4dd921ffcbac"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/kimberlite_diamond_seed.json"
@@ -7138,7 +6890,7 @@ hash = "55ebb69b9be410dfd68934c7f8e5c27ddb887e14cc1d07a7482087622f2c93db"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/nickel_grinding_ball.json"
-hash = "e07013bd807e986eebf74f1d2e25da2095e79a717c8f9f1b7dbd9c80a8c25ac8"
+hash = "ed8526ca58dbf46d642200de65425cfcf0111e66c1cc91bb3a0a96348ca8c71b"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/oc2r_machine_casing.json"
@@ -7226,11 +6978,11 @@ hash = "572313e69210c12a3b33830a5e7fc0e1fe201e10373c7f41a5e78b3b8170c1dc"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/steel_grinding_ball.json"
-hash = "e07013bd807e986eebf74f1d2e25da2095e79a717c8f9f1b7dbd9c80a8c25ac8"
+hash = "6f7ac3c8f2a3b1123bf6c6f8e47c0d145d3a18f76de3cbfeb3f85abac314aeac"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/titanium_grinding_ball.json"
-hash = "3e7e26be99c58183abff6147a8570dc29fe39213e3b20143a8c26d91bb9f7bd1"
+hash = "43fefc71b360d464bd91525358c0000f109399832e96c0bb0de7d1067f268bbc"
 
 [[files]]
 file = "kubejs/assets/kubejs/models/item/titanium_thermal_plate.json"
@@ -7761,12 +7513,44 @@ file = "kubejs/assets/kubejs/textures/block/space_machine_casing_top.png"
 hash = "0bd7fc6a68c0acb5128891f26de158516238192901034ccff055a8f46661be44"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/andesite_grinding_ball.png"
+hash = "1de61cef249154110442d1bd5be3fe8e77919af967ca1fd3dcea8b7f4fb23ee7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/blood_infused_grinding_ball.png"
+hash = "06b29986219169cedd632dfd617f8f60b18241c6d9a913b62c15a0a248ca0e7d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/brass_grinding_ball.png"
+hash = "732328644d50f159157555c672bc4e46567e8873d744b04b48ab9c11b5a2a66a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/fluix_grinding_ball.png"
+hash = "b9cd6150ef278ed8bf1cc3f714f5dfe564c1cf92e9aeb42040f0ed846ecd28aa"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/iron_grinding_ball.png"
+hash = "1de61cef249154110442d1bd5be3fe8e77919af967ca1fd3dcea8b7f4fb23ee7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/nickel_grinding_ball.png"
+hash = "5a6a36007d8643e017ef8f2bc927c5d96a7c70f350dca201c4bfeb4b65261359"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/sky_steel_ingot.png"
 hash = "ccc371b8999bbf41d2087c0565b10f3ee50962092d70775ef0101a2153d26fa8"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/sky_steel_sheet.png"
 hash = "bdc1efea748879ac6430ebdfa2d69f341e11d2e2e3f7ab17d255274c91bb2b38"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/steel_grinding_ball.png"
+hash = "dc66901d51047704dc08e29a2d3d4bafe04c023deb1874bbd74d49d531165b1a"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/titanium_grinding_ball.png"
+hash = "27d55921b31e8eeb2bf0921a896155ce66600bb870af746c50ede52d8c8b5bee"
 
 [[files]]
 file = "kubejs/client_scripts/10_blood_orb_heart_requirements_tooltips.js"
@@ -7798,7 +7582,7 @@ hash = "b35a8c826862ef7c41189316d335e76d9528b42a220e2fc06e7aba3cf6e88252"
 
 [[files]]
 file = "kubejs/config/btm_expert_graph_catalog.json"
-hash = "ef53f40ca645027664036b2771560e8115e0af1b6be2bf4a4eede0f70fc8a6b3"
+hash = "35e8a8842b6161c616fee14382e3d25e7cf2381e1094dc0fade168a533c17cda"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -8482,7 +8266,7 @@ hash = "56f2fd6078c57f42b66aed52d5e1a4a587d626668edeb5bcac4f38c01ba6a2b1"
 
 [[files]]
 file = "kubejs/server_scripts/10_tags/60_realistic_ores_deposit_tags.js"
-hash = "b5362e6a9861ef25040f97fbff7629ca1e9bd7ec9cdb980f7f880906b821aaa1"
+hash = "144c435ca784eb59dccbd559281e45f8774a7bff57446347b5c9cbba01410774"
 
 [[files]]
 file = "kubejs/server_scripts/20_recipe_remove/10_no_boats.js"
@@ -8530,7 +8314,7 @@ hash = "7b58e5122e1414dcb6fc2094e6f91db83f52996ca517883f2bb6ee7fee256f3b"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/122_pneumaticcraft_create_pressing_gates.js"
-hash = "126b319d7e95792667d18c96f64cb3706b6925cf681e723ca3e5c070f1c29de4"
+hash = "16184f3a74bcb2811d45db84e667a8f241edfcebf8e47ed6d9c9efd0c58222da"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/125_magic_power_spike_gates.js"
@@ -8543,6 +8327,10 @@ hash = "7629b2a0ecf216c7d905635e667af7737b79c9da128a0421a1880f15bd522e91"
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/135_recipe_graph_closure.js"
 hash = "8909bb30ac954577f9283de7d331f58f44afe138ee42862ecd708d6dcbe7c732"
+
+[[files]]
+file = "kubejs/server_scripts/30_recipe_replace/136_machine_casing_ecosystem_expansion.js"
+hash = "6cb2181697a737d3e25af26e73a73111d4eb90576d2df9bc90494e0bef5a9201"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/140_nuclear_synthesis_power_gates.js"
@@ -8622,7 +8410,7 @@ hash = "209e2449cd5d9e7febf3002f00468255813b0b332595d881ce845588f903f48e"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/95_acid_and_nether_grout_unification.js"
-hash = "2ddc61f6b660d2ba1b62bb4a88ee94e6938831c86fe2740a3dcba02d515d8dd8"
+hash = "f8c67e8823f4668f810bcb7304928a122692fd9526ba8a6014f75029377b64f5"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/98_starting_progression_bypasses.js"
@@ -8630,7 +8418,7 @@ hash = "d91308d601bce5b6f1ac6d010d45f9de31f85cafaa1478d1ce12c396b652e9f2"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js"
-hash = "94627731f170ac55d28f8da311ee0a28175a7b81b6406aece8bac22c16ccf4f4"
+hash = "e8cbfbaddcdd65e956442bc1875934ac729a10a480c9e61fd09d9636e44b7555"
 
 [[files]]
 file = "kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js"
@@ -8658,15 +8446,15 @@ hash = "4a20b38aec0f9d59d932d78fe17259716ef7d6ecfe74b8668b758dfcf93ba534"
 
 [[files]]
 file = "kubejs/server_scripts/40_recipe_add/50_create_deposit_preprocessing.js"
-hash = "34156767f5e26e23b40f39791fbfce52512c5d0bc5028eeac2a1a9071551ddb5"
+hash = "c350791cc1f351620f86eeb4cce5f6464549e7966fdb8e75be9b1933bbbb993a"
 
 [[files]]
 file = "kubejs/server_scripts/40_recipe_add/55_realistic_ores_identity_outputs.js"
-hash = "f1c594bd6a594f763ac7f215399555b8df15cd0cd26d55bdd1471a254fe956e1"
+hash = "b63c409b1db12c5497e8576bee12f44c05c45fca667de6e79ec254f5f8dc2bbd"
 
 [[files]]
-file = "kubejs/server_scripts/40_recipe_add/60_acid_vat_deposit_slurries.js"
-hash = "c68a0d97243f2ea91bdce8ed87d50590e355f2df3db6b6b4053c0c38f3923d5d"
+file = "kubejs/server_scripts/40_recipe_add/58_create_pncr_molecular_synthesis.js"
+hash = "ed284f828cbf215c41b6bf8576e944a544d97863c1ce4d0eb4293a7800c7bacf"
 
 [[files]]
 file = "kubejs/server_scripts/40_recipe_add/65_chemlib_plate_manufacturing_routes.js"
@@ -8702,7 +8490,7 @@ hash = "71cf48039941d735dee02d05c6d8380a5464c28a14e73e3675e9e54cbd68dadf"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/10_recipe_audit_dumps.js"
-hash = "a44aa3f1b44b34ab2f29dcb181e610bd7d1cbe7f755f190790508928186413d3"
+hash = "ff523e09f93d4d3d7207661837dd20f6032b9938649bde523440bf2e4d96f67e"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/20_food_effect_audit_dumps.js"
@@ -8718,7 +8506,7 @@ hash = "a2e82364f012f7f124ab2b0ee24cedb969d97e68cdf581fcc650bc31c0315b2b"
 
 [[files]]
 file = "kubejs/startup_scripts/00_globals/20_progression_catalogues.js"
-hash = "94a4da7604cb68ef2a662f598b1bc2da5dc828db52753c1fa856441aff4acc73"
+hash = "20558b16777f62fe11f481d85b4060d8aa351360ecadd57186a9096b3df89a2f"
 
 [[files]]
 file = "kubejs/startup_scripts/10_items_blocks/10_thats_crate_registry.js"
@@ -8730,7 +8518,7 @@ hash = "3552e208796fb8a0af1a41781b58039f5fc0f8c32dd8a3124af67e3268f1729f"
 
 [[files]]
 file = "kubejs/startup_scripts/10_items_blocks/30_progression_items.js"
-hash = "c387c3476ac6579026b662dd97a1878cb951611c40aa0b00f6886b8dce9e22b6"
+hash = "48e9adddd4ffaf0e2983c704cf2b26e1e6bf2222c434953f9f83c22b012354fb"
 
 [[files]]
 file = "kubejs/startup_scripts/20_blocks/10_ae2_skystone_hardness.js"
@@ -8942,15 +8730,6 @@ metafile = true
 file = "mods/controlling.pw.toml"
 hash = "1e56f528d8e21b0cf9c52c3d6deea2a4eafa408170b39a070195dbf66617f373"
 metafile = true
-
-[[files]]
-file = "mods/corn-delight.pw.toml"
-hash = "c819d16483e4d029feee1b799a75cbea606ef759c6dfd67e91b5b2ed45907d29"
-metafile = true
-
-[[files]]
-file = "mods/corn_delight-1.1.9-1.20.1.mods.toml"
-hash = "ab6371046471038cbabccd13dfddadbf5911a250c71fdd84254b2c954bc3bf5d"
 
 [[files]]
 file = "mods/coroutil.pw.toml"

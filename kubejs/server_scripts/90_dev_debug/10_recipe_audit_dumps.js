@@ -127,8 +127,7 @@ var BTM_AUDIT_PROGRESSION_NEEDLES = [
     { id: 'bloodmagic_weakbloodorb', needles: ['"result":{"item":"bloodmagic:weakbloodorb"', '"result":"bloodmagic:weakbloodorb"', '"item":"bloodmagic:weakbloodorb"'] },
     { id: 'ars_nouveau_imbuement_chamber', needles: ['"result":{"item":"ars_nouveau:imbuement_chamber"', '"result":"ars_nouveau:imbuement_chamber"', '"item":"ars_nouveau:imbuement_chamber"'] },
     { id: 'ae2_controller', needles: ['"result":{"item":"ae2:controller"', '"result":"ae2:controller"', '"item":"ae2:controller"'] },
-    { id: 'ae2_drive', needles: ['"result":{"item":"ae2:drive"', '"result":"ae2:drive"', '"item":"ae2:drive"'] },
-    { id: 'acid_vat', needles: ['"result":{"item":"acid_vat:acid_vat"', '"result":"acid_vat:acid_vat"', '"item":"acid_vat:acid_vat"'] }
+    { id: 'ae2_drive', needles: ['"result":{"item":"ae2:drive"', '"result":"ae2:drive"', '"item":"ae2:drive"'] }
 ]
 
 var BTM_AUDIT_BYPASS_NEEDLES = [

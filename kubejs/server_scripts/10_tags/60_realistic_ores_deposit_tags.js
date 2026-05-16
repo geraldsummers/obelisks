@@ -1,5 +1,5 @@
-// Deposit source tags for Realistic Ores. These tags are consumed by TCon, Create,
-// and Acid Vat recipe generators.
+// Deposit source tags for Realistic Ores. These tags are consumed by TCon and
+// Create recipe generators.
 
 var BTM_DEPOSIT_SOURCE_BLOCKS = {
     coal_measures: ['realisticores:coal_measures', 'realisticores:deepslate_coal_measures'],

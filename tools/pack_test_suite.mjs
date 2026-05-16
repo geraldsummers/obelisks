@@ -286,7 +286,6 @@ function testCriticalSurfaces() {
 	    'kubejs/server_scripts/30_recipe_replace/80_magic_progression_blood_slate_gates.js',
     'kubejs/client_scripts/40_hide_quarantined_systems.js',
     'kubejs/server_scripts/30_recipe_replace/130_manufactured_plate_recipe_pass.js',
-    'kubejs/server_scripts/40_recipe_add/60_acid_vat_deposit_slurries.js',
     'kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js',
     'kubejs/server_scripts/50_loot/20_world_chest_coin_tiers.js',
     'kubejs/server_scripts/50_loot/40_emerald_loot_coin_replacement.js',
@@ -296,6 +295,9 @@ function testCriticalSurfaces() {
   ]
   const missing = required.filter(f => !exists(path.join(repo, f)))
   missing.length ? fail('critical expert-pack surfaces exist', missing.join(', ')) : ok('critical expert-pack surfaces exist', `${required.length} files`)
+  exists(path.join(repo, 'kubejs/server_scripts/40_recipe_add/60_acid_vat_deposit_slurries.js'))
+    ? fail('retired Acid Vat deposit slurry script is absent', 'kubejs/server_scripts/40_recipe_add/60_acid_vat_deposit_slurries.js still exists')
+    : ok('retired Acid Vat deposit slurry script is absent')
 
   const kubejsText = walk(path.join(repo, 'kubejs'), p => p.endsWith('.js') || p.endsWith('.json')).map(read).join('\n')
   for (const tier of catalog.machineTiers) {
@@ -510,7 +512,6 @@ function testQuestBook() {
     'kubejs:space_machine_casing',
     'kubejs:raw_impossible_casing',
     'kubejs:impossible_machine_casing',
-    'acid_vat:acid_vat',
     'fission_reactor:fission_fuel_acceptor',
     'fission_reactor:fission_reactor_rod',
 	    'liquid_coolant:coolant_exchanger',
@@ -696,7 +697,6 @@ function testGeneratedRecipeGraph() {
     'create:windmill_bearing',
     'tconstruct:grout',
     'kubejs:impossible_machine_casing',
-    'acid_vat:acid_vat',
     'bloodmagic:weakbloodorb'
   ]
   if (finalEffectiveGraph) {

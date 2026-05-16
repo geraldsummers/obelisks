@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
     // Manual fluid unification (Almost Unified does not handle these fluid recipe ingredients).
-    event.replaceInput({}, Fluid.of('the_finley_dimension_remastered:acid', 1), Fluid.of('chemlib:nitric_acid_fluid', 1))
-    event.replaceInput({}, Fluid.of('powergrid:acid', 1), Fluid.of('chemlib:sulfuric_acid_fluid', 1))
-    event.replaceOutput({}, Fluid.of('powergrid:acid', 1), Fluid.of('chemlib:sulfuric_acid_fluid', 1))
+    event.replaceInput({}, Fluid.of('the_finley_dimension_remastered:acid', 1), Fluid.of('chemlib:nitric_acid', 1))
+    event.replaceInput({}, Fluid.of('powergrid:acid', 1), Fluid.of('chemlib:sulfuric_acid', 1))
+    event.replaceOutput({}, Fluid.of('powergrid:acid', 1), Fluid.of('chemlib:sulfuric_acid', 1))
 
     // Remove TConstruct nether grout crafting + furnace-style processing into scorched brick.
     event.remove({ output: 'tconstruct:nether_grout', type: 'minecraft:crafting_shaped' })

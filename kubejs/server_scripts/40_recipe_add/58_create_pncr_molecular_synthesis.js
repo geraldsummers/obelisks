@@ -59,38 +59,38 @@ ServerEvents.recipes(function (event) {
         { item: 'minecraft:dried_kelp' },
         { item: 'chemlib:sulfur' },
         { item: 'chemlib:carbon' },
-        { fluid: 'chemlib:ethanol_fluid', amount: 250 }
+        { fluid: 'chemlib:ethanol', amount: 250 }
     ], [{ item: 'kubejs:pressure_seal', count: 2 }], null)
 
     btmChemMixing(event, 'ethanol_from_sugar', [
         { item: 'minecraft:sugar' },
         { item: 'chemlib:carbon' },
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:ethanol_fluid', amount: 250 }], null, 120)
+    ], [{ fluid: 'chemlib:ethanol', amount: 250 }], null, 120)
 
     btmChemMixing(event, 'acetic_acid_from_ethanol', [
         { item: 'chemlib:oxygen' },
         { item: 'chemlib:carbon' },
-        { fluid: 'chemlib:ethanol_fluid', amount: 250 }
-    ], [{ fluid: 'chemlib:acetic_acid_fluid', amount: 250 }], 'heated', 180)
+        { fluid: 'chemlib:ethanol', amount: 250 }
+    ], [{ fluid: 'chemlib:acetic_acid', amount: 250 }], 'heated', 180)
 
     btmChemMixing(event, 'sulfuric_acid_from_sulfur_trioxide', [
         { item: 'chemlib:sulfur_trioxide' },
         { item: 'chemlib:oxygen' },
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:sulfuric_acid_fluid', amount: 250 }], 'heated', 200)
+    ], [{ fluid: 'chemlib:sulfuric_acid', amount: 250 }], 'heated', 200)
 
     btmChemMixing(event, 'hydrochloric_acid_from_chlorine', [
         { item: 'chemlib:chlorine' },
         { item: 'chemlib:hydrogen' },
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:hydrochloric_acid_fluid', amount: 250 }], 'heated', 200)
+    ], [{ fluid: 'chemlib:hydrochloric_acid', amount: 250 }], 'heated', 200)
 
     btmChemMixing(event, 'nitric_acid_from_nitrogen_dioxide', [
         { item: 'chemlib:nitrogen_dioxide' },
         { item: 'chemlib:oxygen' },
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:nitric_acid_fluid', amount: 250 }], 'heated', 220)
+    ], [{ fluid: 'chemlib:nitric_acid', amount: 250 }], 'heated', 220)
 
     btmChemMixing(event, 'phosphoric_acid_fluid', [
         { item: 'chemlib:phosphoric_acid' },
@@ -149,19 +149,19 @@ ServerEvents.recipes(function (event) {
 
     btmChemThermo(event, 'sulfur_dioxide', { item: 'chemlib:sulfur' }, {
         type: 'pneumaticcraft:fluid',
-        fluid: 'chemlib:oxygen_fluid',
+        fluid: 'chemlib:oxygen',
         amount: 250
-    }, { fluid: 'chemlib:sulfur_dioxide_fluid', amount: 250 }, 2.0, 473)
+    }, { fluid: 'chemlib:sulfur_dioxide', amount: 250 }, 2.0, 473)
 
     btmChemThermo(event, 'sulfur_trioxide', { item: 'chemlib:sulfur_dioxide' }, {
         type: 'pneumaticcraft:fluid',
-        fluid: 'chemlib:oxygen_fluid',
+        fluid: 'chemlib:oxygen',
         amount: 250
-    }, { fluid: 'chemlib:sulfur_trioxide_fluid', amount: 250 }, 3.0, 573)
+    }, { fluid: 'chemlib:sulfur_trioxide', amount: 250 }, 3.0, 573)
 
     btmChemThermo(event, 'nitrogen_dioxide', { item: 'chemlib:nitric_oxide' }, {
         type: 'pneumaticcraft:fluid',
-        fluid: 'chemlib:oxygen_fluid',
+        fluid: 'chemlib:oxygen',
         amount: 250
-    }, { fluid: 'chemlib:nitrogen_dioxide_fluid', amount: 250 }, 3.0, 523)
+    }, { fluid: 'chemlib:nitrogen_dioxide', amount: 250 }, 3.0, 523)
 })

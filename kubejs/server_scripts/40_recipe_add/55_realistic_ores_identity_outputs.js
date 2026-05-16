@@ -5,11 +5,11 @@
 // family, ball selects recovery bias and operating cost through retention chance.
 
 var BTM_RO_SOLVENTS = [
-    { id: 'ethanol', fluid: 'chemlib:ethanol_fluid', amount: 250, time: 180, primary: 0, secondary: 0.24, trace: 0.06, heat: null },
-    { id: 'acetic', fluid: 'chemlib:acetic_acid_fluid', amount: 250, time: 200, primary: 1, secondary: 0.32, trace: 0.10, heat: null },
-    { id: 'sulfuric', fluid: 'chemlib:sulfuric_acid_fluid', amount: 250, time: 220, primary: 2, secondary: 0.48, trace: 0.14, heat: 'heated' },
-    { id: 'hydrochloric', fluid: 'chemlib:hydrochloric_acid_fluid', amount: 250, time: 230, primary: 2, secondary: 0.44, trace: 0.18, heat: 'heated' },
-    { id: 'nitric', fluid: 'chemlib:nitric_acid_fluid', amount: 300, time: 260, primary: 1, secondary: 0.38, trace: 0.28, heat: 'heated' },
+    { id: 'ethanol', fluid: 'chemlib:ethanol', amount: 250, time: 180, primary: 0, secondary: 0.24, trace: 0.06, heat: null },
+    { id: 'acetic', fluid: 'chemlib:acetic_acid', amount: 250, time: 200, primary: 1, secondary: 0.32, trace: 0.10, heat: null },
+    { id: 'sulfuric', fluid: 'chemlib:sulfuric_acid', amount: 250, time: 220, primary: 2, secondary: 0.48, trace: 0.14, heat: 'heated' },
+    { id: 'hydrochloric', fluid: 'chemlib:hydrochloric_acid', amount: 250, time: 230, primary: 2, secondary: 0.44, trace: 0.18, heat: 'heated' },
+    { id: 'nitric', fluid: 'chemlib:nitric_acid', amount: 300, time: 260, primary: 1, secondary: 0.38, trace: 0.28, heat: 'heated' },
     { id: 'phosphoric', fluid: 'kubejs:phosphoric_acid_fluid', amount: 250, time: 230, primary: 1, secondary: 0.42, trace: 0.16, heat: 'heated' }
 ]
 
@@ -66,12 +66,12 @@ var BTM_RO_DEPOSITS = [
     },
     {
         id: 'quartz_vein', crushed: 'realisticores:crushed_quartz_vein', primary: 'minecraft:quartz',
-        ethanol: 'chemlib:silicon', acetic: 'chemlib:silicon_dioxide', sulfuric: 'chemlib:silicon', hydrochloric: 'chemlib:silicon_dioxide', nitric: 'chemlib:silicon', phosphoric: 'chemlib:calcium_sulfate',
+        ethanol: 'minecraft:quartz', acetic: 'chemlib:silicon_dioxide', sulfuric: 'chemlib:calcium_sulfate', hydrochloric: 'chemlib:silicon', nitric: 'chemlib:gold', phosphoric: 'chemlib:phosphate',
         ferrous: 'chemlib:iron', nonferrous: 'create:crushed_raw_copper', hard: 'chemlib:beryllium', rare: 'create:crushed_raw_gold', blood: 'minecraft:redstone', ae: 'ae2:certus_quartz_crystal', gangue: 'chemlib:silicon', trace: 'ae2:fluix_dust'
     },
     {
         id: 'bauxite_laterite', crushed: 'realisticores:crushed_bauxite_laterite', primary: 'chemlib:aluminum',
-        ethanol: 'chemlib:aluminum_hydroxide', acetic: 'chemlib:aluminum_hydroxide', sulfuric: 'chemlib:aluminum_oxide', hydrochloric: 'chemlib:aluminum_oxide', nitric: 'chemlib:aluminum_nitrate', phosphoric: 'chemlib:calcium_sulfate',
+        ethanol: 'chemlib:aluminum_hydroxide', acetic: 'chemlib:iron_oxide', sulfuric: 'chemlib:aluminum_oxide', hydrochloric: 'chemlib:calcium_chloride', nitric: 'chemlib:aluminum_nitrate', phosphoric: 'chemlib:calcium_sulfate',
         ferrous: 'chemlib:iron', nonferrous: 'create:crushed_raw_aluminum', hard: 'chemlib:nickel', rare: 'chemlib:titanium', blood: 'minecraft:redstone', ae: 'chemlib:silicon', gangue: 'chemlib:calcium', trace: 'chemlib:gallium'
     },
     {
@@ -86,7 +86,7 @@ var BTM_RO_DEPOSITS = [
     },
     {
         id: 'titanium_iron_oxide', crushed: 'realisticores:crushed_titanium_iron_oxide_ore', primary: 'chemlib:titanium',
-        ethanol: 'chemlib:titanium_oxide', acetic: 'chemlib:titanium_oxide', sulfuric: 'chemlib:iron_ii_sulfate', hydrochloric: 'chemlib:titanium_oxide', nitric: 'chemlib:iron_iii_nitrate', phosphoric: 'chemlib:calcium_sulfate',
+        ethanol: 'chemlib:titanium_oxide', acetic: 'chemlib:iron_oxide', sulfuric: 'chemlib:iron_ii_sulfate', hydrochloric: 'chemlib:magnesium_chloride', nitric: 'chemlib:iron_iii_nitrate', phosphoric: 'chemlib:calcium_sulfate',
         ferrous: 'chemlib:iron', nonferrous: 'create:crushed_raw_iron', hard: 'chemlib:chromium', rare: 'chemlib:titanium', blood: 'minecraft:redstone', ae: 'chemlib:silicon', gangue: 'chemlib:oxygen', trace: 'chemlib:vanadium'
     },
     {

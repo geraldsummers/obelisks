@@ -41,7 +41,7 @@ global.BTM_STARTER_DEPOSITS = [
         id: 'copper_sulfide', displayName: 'Copper Sulfide', tag: 'kubejs:deposit_blocks/copper_sulfide',
         yBand: 'shallow_underground_or_hills', dangerTier: 'early_mid', primary: 'copper', secondary: 'iron', tertiary: 'gold',
         primaryFluidTag: 'forge:molten_copper', secondaryFluidTag: 'forge:molten_iron', tertiaryFluidTag: 'forge:molten_gold',
-        firstUsefulProcessingTier: 'melter', lateProcessingRole: 'acid_vat_sulfide_route', notes: 'Starter copper deposit.'
+        firstUsefulProcessingTier: 'melter', lateProcessingRole: 'acid_ball_sulfide_route', notes: 'Starter copper deposit.'
     },
     {
         id: 'tin', displayName: 'Tin Vein', tag: 'kubejs:deposit_blocks/tin',
