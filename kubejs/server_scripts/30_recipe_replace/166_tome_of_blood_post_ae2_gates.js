@@ -45,7 +45,7 @@ function btmTobArmor(event, output, reagent, id) {
             { item: 'kubejs:impossible_circuit' },
             { item: 'kubejs:sky_steel_sheet' },
             { item: 'kubejs:purified_source_core' },
-            { item: 'kubejs:impossible_machine_casing' }
+            { item: 'kubejs:living_binding' }
         ],
         reagent: [{ item: reagent }],
         sourceCost: 12000
@@ -95,7 +95,7 @@ ServerEvents.recipes(function (event) {
             { item: 'kubejs:mountain_beryl_lens' },
             { item: 'kubejs:corundum_lapping_grit' },
             { item: 'kubejs:purified_blood_catalyst' },
-            { item: 'kubejs:impossible_machine_casing' }
+            { item: 'kubejs:impossible_circuit' }
         ],
         reagent: [{ item: 'ars_nouveau:archmage_spell_book' }],
         sourceCost: 12000
@@ -125,7 +125,6 @@ ServerEvents.recipes(function (event) {
         { item: 'ars_nouveau:archmage_spell_book' },
         { item: 'bloodmagic:archmagebloodorb' },
         { item: 'ae2:controller' },
-        { item: 'kubejs:impossible_machine_casing' },
         { item: 'kubejs:impossible_circuit' },
         { item: 'kubejs:purified_source_core' },
         { item: 'kubejs:living_binding' }
@@ -153,7 +152,7 @@ ServerEvents.recipes(function (event) {
         'bloodmagic:soulsword',
         'bloodmagic:etherealslate',
         'kubejs:impossible_circuit',
-        'kubejs:impossible_machine_casing'
+        'kubejs:purified_source_core'
     ], 'kubejs:tomeofblood/glyph_sentient_harm_post_ae2')
 
     btmTobGlyph(event, 'tomeofblood:glyph_sentient_wrath', 120, [

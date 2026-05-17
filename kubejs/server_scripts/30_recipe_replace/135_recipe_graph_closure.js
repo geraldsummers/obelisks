@@ -114,9 +114,9 @@ ServerEvents.recipes(function (event) {
     ], { G: BTM_CLOSURE.goldPlate, S: '#forge:rods/wooden', A: BTM_CLOSURE.andesite, E: 'create:electron_tube' }, 'kubejs:closure/create/controller_rail')
     btmClosureShaped(event, 'create:steam_engine', [
         ' G ',
-        ' A ',
+        ' B ',
         ' C '
-    ], { G: BTM_CLOSURE.goldPlate, A: BTM_CLOSURE.andesite, C: '#forge:storage_blocks/copper' }, 'kubejs:closure/create/steam_engine')
+    ], { G: BTM_CLOSURE.goldPlate, B: BTM_CLOSURE.brass, C: '#forge:storage_blocks/copper' }, 'kubejs:closure/create/steam_engine')
     btmClosureShaped(event, 'create:transmitter', [
         ' L ',
         'CAC',

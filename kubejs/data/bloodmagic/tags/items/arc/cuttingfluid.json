@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "kubejs:sanguine_acetic_cutting_fluid",
+    "kubejs:sanguine_sulfuric_cutting_fluid",
+    "kubejs:sanguine_hydrochloric_cutting_fluid",
+    "kubejs:sanguine_nitric_cutting_fluid",
+    "kubejs:sanguine_phosphoric_cutting_fluid"
+  ]
+}

@@ -1,0 +1,190 @@
+// Late-tier material economy completion.
+//
+// Not every valuable component should contain a casing directly. This pass turns
+// several electronics, gas-containment, and AE2 precursor parts into outputs of
+// machines whose blocks are casing-gated elsewhere.
+
+var BTM_LATE_ECON = {
+    sealedCell: 'latent_chemlib:sealed_chemical_cell',
+    pressureSeal: 'kubejs:pressure_seal',
+    redstoneRelay: 'powergrid:redstone_relay',
+    circuit: 'powergrid:integrated_circuit',
+    transistor: 'pneumaticcraft:transistor',
+    pcb: 'pneumaticcraft:printed_circuit_board',
+    siliconDioxide: 'chemlib:silicon_dioxide',
+    copperChloride: 'chemlib:copper_chloride',
+    aluminumOxide: 'chemlib:aluminum_oxide'
+}
+
+function btmLateExists(id) {
+    try { return Item.exists(id) } catch (e) { return false }
+}
+
+function btmLateIngredientExists(input) {
+    if (!input || typeof input !== 'string') return true
+    if (input.charAt(0) === '#') return true
+    if (input.indexOf(':') < 0) return true
+    return btmLateExists(input)
+}
+
+function btmLateCanMake(output, inputs) {
+    if (!btmLateExists(output)) return false
+    for (var i = 0; i < inputs.length; i++) if (!btmLateIngredientExists(inputs[i])) return false
+    return true
+}
+
+function btmLateStack(input, count) {
+    if (input.charAt(0) === '#') return { type: 'pneumaticcraft:stacked_item', count: count || 1, tag: input.substring(1) }
+    return { type: 'pneumaticcraft:stacked_item', count: count || 1, item: input }
+}
+
+function btmLatePressure(event, id, output, count, pressure, inputs) {
+    var ids = []
+    for (var i = 0; i < inputs.length; i++) ids.push(inputs[i].id)
+    if (!btmLateCanMake(output, ids)) return
+    event.remove({ output: output })
+    event.custom({
+        type: 'pneumaticcraft:pressure_chamber',
+        inputs: inputs.map(function (entry) { return btmLateStack(entry.id, entry.count || 1) }),
+        pressure: pressure,
+        results: [{ item: output, count: count || 1 }]
+    }).id('kubejs:late_material_economy/pncr_pressure/' + id)
+}
+
+function btmLateAssembly(event, program, id, input, output) {
+    if (!btmLateCanMake(output, [input])) return
+    event.remove({ output: output })
+    event.custom({
+        type: 'pneumaticcraft:assembly_' + program,
+        input: input.charAt(0) === '#' ? { tag: input.substring(1) } : { item: input },
+        program: program,
+        result: { item: output }
+    }).id('kubejs:late_material_economy/pncr_assembly/' + id)
+}
+
+function btmLateEnergising(event, id, output, energy, inputs) {
+    if (!btmLateCanMake(output, inputs)) return
+    event.remove({ output: output })
+    event.custom({
+        type: 'create_new_age:energising',
+        energy_needed: energy,
+        ingredients: inputs.map(function (input) {
+            return input.charAt(0) === '#' ? { tag: input.substring(1) } : { item: input }
+        }),
+        results: [{ item: output }]
+    }).id('kubejs:late_material_economy/electrical_energising/' + id)
+}
+
+function btmLateReplace(event, outputs, oldInputs, newInput) {
+    if (!btmLateIngredientExists(newInput)) return
+    for (var i = 0; i < outputs.length; i++) {
+        if (!btmLateExists(outputs[i])) continue
+        for (var j = 0; j < oldInputs.length; j++) event.replaceInput({ output: outputs[i] }, oldInputs[j], newInput)
+    }
+}
+
+function btmLateShaped(event, output, pattern, keys, id) {
+    if (!btmLateExists(output)) return
+    for (var key in keys) if (!btmLateIngredientExists(keys[key])) return
+    event.remove({ output: output })
+    event.shaped(output, pattern, keys).id(id)
+}
+
+ServerEvents.recipes(function (event) {
+    // Bootstrap the first energiser without requiring already-energised wire.
+    btmLateShaped(event, 'create_new_age:basic_energiser', [
+        ' W ',
+        'CAC',
+        ' S '
+    ], {
+        W: 'create_new_age:copper_wire',
+        C: 'powergrid:capacitor',
+        A: 'kubejs:electrical_machine_casing',
+        S: 'create:shaft'
+    }, 'kubejs:late_material_economy/electrical/basic_energiser_bootstrap')
+
+    // Gas cells are PNCR-sealed pressure goods, not generic mechanical-crafter parts.
+    btmLatePressure(event, 'sealed_chemical_cell', BTM_LATE_ECON.sealedCell, 4, 2.0, [
+        { id: 'pneumaticcraft:small_tank' },
+        { id: BTM_LATE_ECON.pressureSeal, count: 2 },
+        { id: 'create_new_age:heat_pipe' },
+        { id: '#forge:glass', count: 2 }
+    ])
+
+    // OC2R electronics become authored pressure/assembly outputs before they are
+    // consumed by Circuited casing, AE2 processor closure, and programmable blocks.
+    btmLatePressure(event, 'oc2r_raw_silicon_wafer', 'oc2r:raw_silicon_wafer', 2, 2.0, [
+        { id: BTM_LATE_ECON.siliconDioxide, count: 2 },
+        { id: BTM_LATE_ECON.aluminumOxide },
+        { id: '#forge:plates/gold' }
+    ])
+    btmLateAssembly(event, 'laser', 'oc2r_silicon_wafer', 'oc2r:raw_silicon_wafer', 'oc2r:silicon_wafer')
+    btmLatePressure(event, 'oc2r_transistor', 'oc2r:transistor', 2, 2.5, [
+        { id: 'oc2r:silicon_wafer' },
+        { id: BTM_LATE_ECON.transistor },
+        { id: BTM_LATE_ECON.redstoneRelay },
+        { id: BTM_LATE_ECON.copperChloride }
+    ])
+    btmLatePressure(event, 'oc2r_circuit_board', 'oc2r:circuit_board', 1, 3.0, [
+        { id: BTM_LATE_ECON.pcb },
+        { id: BTM_LATE_ECON.circuit },
+        { id: 'oc2r:transistor', count: 2 },
+        { id: '#forge:plates/gold' }
+    ])
+    btmLatePressure(event, 'oc2r_bus_cable', 'oc2r:bus_cable', 4, 2.0, [
+        { id: 'oc2r:circuit_board' },
+        { id: 'powergrid:wire', count: 2 },
+        { id: BTM_LATE_ECON.pressureSeal }
+    ])
+    btmLatePressure(event, 'oc2r_network_connector', 'oc2r:network_connector', 2, 2.5, [
+        { id: 'oc2r:bus_cable' },
+        { id: 'oc2r:transistor' },
+        { id: BTM_LATE_ECON.circuit },
+        { id: 'powergrid:wire_connector' }
+    ])
+
+    // These are post-electrical power components: energising gives them a native
+    // electrical surface instead of leaving them as simple metal/redstone crafts.
+    btmLateEnergising(event, 'heating_coil', 'powergrid:heating_coil', 4000, [
+        'powergrid:copper_coil',
+        'create_new_age:overcharged_iron_sheet',
+        BTM_LATE_ECON.redstoneRelay
+    ])
+    btmLateEnergising(event, 'carbon_pile_coil', 'powergrid:carbon_pile_coil', 5000, [
+        'powergrid:heating_coil',
+        'minecraft:coal',
+        'create_new_age:overcharged_iron_sheet'
+    ])
+    btmLateEnergising(event, 'electromagnet', 'powergrid:electromagnet', 8000, [
+        'powergrid:copper_coil',
+        'create_new_age:redstone_magnet',
+        'create_new_age:overcharged_golden_sheet'
+    ])
+    btmLateEnergising(event, 'electrical_gizmo', 'powergrid:electrical_gizmo', 12000, [
+        BTM_LATE_ECON.circuit,
+        'powergrid:electromagnet',
+        'powergrid:capacitor'
+    ])
+
+    // AE2 processors should cross the programmable-control economy before AE2
+    // becomes the dominant logistics authority.
+    btmLateReplace(event, [
+        'ae2:logic_processor',
+        'ae2:calculation_processor',
+        'ae2:engineering_processor'
+    ], [BTM_LATE_ECON.redstoneRelay, 'minecraft:redstone', '#forge:dusts/redstone'], 'oc2r:transistor')
+
+    btmLateReplace(event, [
+        'ae2:annihilation_core',
+        'ae2:formation_core',
+        'ae2:wireless_receiver',
+        'ae2:advanced_card'
+    ], [BTM_LATE_ECON.circuit, 'minecraft:redstone', '#forge:dusts/redstone'], 'oc2r:circuit_board')
+
+    // Rocket and gas infrastructure should spend real aerospace subassemblies
+    // once those parts exist, not just sheets.
+    btmLateReplace(event, ['creatingspace:rocket_engine'], ['creatingspace:inconel_sheet'], 'creatingspace:inconel_engine_wall')
+    btmLateReplace(event, ['creatingspace:rocket_engine'], ['creatingspace:rocket_casing'], 'creatingspace:hastelloy_injector_grid')
+    btmLateReplace(event, ['creatingspace:rocket_generator'], ['powergrid:electric_motor'], 'powergrid:electrical_gizmo')
+    btmLateReplace(event, ['latent_chemlib:gas_reaction_chamber'], ['creatingspace:inconel_sheet'], 'creatingspace:inconel_engine_wall')
+})

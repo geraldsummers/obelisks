@@ -222,6 +222,27 @@ for (const id of ballIds) {
   if (!hasFile(texture)) fail(`missing texture for ${id}`)
 }
 
+const manufacturedPassPath = path.join(repo, 'kubejs/server_scripts/30_recipe_replace/130_manufactured_plate_recipe_pass.js')
+if (!fs.existsSync(manufacturedPassPath)) fail('missing manufactured plate recipe pass')
+else {
+  const manufacturedText = read(manufacturedPassPath)
+  if (!manufacturedText.includes("id('kubejs:powergrid/mechanical_crafting/integrated_circuit_nonrecursive')")) {
+    fail('Power Grid integrated circuit must have an explicit non-recursive KubeJS recipe')
+  }
+  if (!manufacturedText.includes("C: { item: 'powergrid:incomplete_circuit' }")) {
+    fail('Power Grid integrated circuit recipe must consume the etched/incomplete circuit board')
+  }
+}
+
+for (const fullPath of kubejsFiles) {
+  const scriptText = read(fullPath)
+  const recursiveReplace = /btm(?:Plate|Mat|Late|Eco|Aesthetic|Closure|Create)?Replace(?:Outputs)?\(\s*event,\s*\[[^\]]*'powergrid:integrated_circuit'[^\]]*\]\s*,\s*\[[^\]]*minecraft:redstone[^\]]*\]\s*,\s*(?:BTM_[A-Z_]+\.)?(?:powerCircuit|circuit)/.test(scriptText)
+  const recursiveDirectReplace = /replaceInput\(\s*\{\s*output:\s*['"]powergrid:integrated_circuit['"][^)]*minecraft:redstone[^)]*powergrid:integrated_circuit/.test(scriptText)
+  if (recursiveReplace || recursiveDirectReplace) {
+    fail(`Power Grid integrated circuit redstone replacement would recurse in ${path.relative(repo, fullPath)}`)
+  }
+}
+
 if (failures.length) {
   console.error(failures.map(f => `FAIL - ${f}`).join('\n'))
   process.exit(1)

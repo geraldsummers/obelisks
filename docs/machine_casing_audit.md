@@ -84,6 +84,7 @@
 - Scripted machine-like outputs (replaceInput-gated):
   - `tconstruct:foundry_controller`
   - `tconstruct:scorched_fuel_tank`
+  - `tconstruct:scorched_alloyer`
   - `tconstruct:alloyer`
 - Quest milestone node: `4FF82A40E0CFE52B` (`Scorched Machine Casing`)
 

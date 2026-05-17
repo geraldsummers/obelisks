@@ -8,6 +8,25 @@ function btmChemItem(id) {
     try { return Item.exists(id) } catch (e) { return false }
 }
 
+var BTM_CHEM_SEALED_CELL = 'latent_chemlib:sealed_chemical_cell'
+
+function btmChemGas(original) {
+    return btmChemItem(BTM_CHEM_SEALED_CELL) ? { item: BTM_CHEM_SEALED_CELL } : { item: original }
+}
+
+function btmChemResults(primaryResults, sideProducts) {
+    var results = primaryResults.slice()
+    for (var i = 0; i < (sideProducts || []).length; i++) {
+        var side = sideProducts[i]
+        if (!btmChemItem(side.item)) continue
+        var result = { item: side.item }
+        if (side.count && side.count > 1) result.count = side.count
+        if (side.chance && side.chance < 1) result.chance = side.chance
+        results.push(result)
+    }
+    return results
+}
+
 function btmChemMixing(event, id, ingredients, results, heat, time) {
     var recipe = {
         type: 'create:mixing',
@@ -66,31 +85,41 @@ ServerEvents.recipes(function (event) {
         { item: 'minecraft:sugar' },
         { item: 'chemlib:carbon' },
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:ethanol_fluid', amount: 250 }], null, 120)
+    ], btmChemResults([{ fluid: 'chemlib:ethanol_fluid', amount: 250 }], [
+        { item: 'chemlib:carbon_dioxide', chance: 0.20 }
+    ]), null, 120)
 
     btmChemMixing(event, 'acetic_acid_from_ethanol', [
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:oxygen'),
         { item: 'chemlib:carbon' },
         { fluid: 'chemlib:ethanol_fluid', amount: 250 }
-    ], [{ fluid: 'chemlib:acetic_acid_fluid', amount: 250 }], 'heated', 180)
+    ], btmChemResults([{ fluid: 'chemlib:acetic_acid_fluid', amount: 250 }], [
+        { item: 'chemlib:carbon_dioxide', chance: 0.12 }
+    ]), 'heated', 180)
 
     btmChemMixing(event, 'sulfuric_acid_from_sulfur_trioxide', [
-        { item: 'chemlib:sulfur_trioxide' },
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:sulfur_trioxide'),
+        btmChemGas('chemlib:oxygen'),
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:sulfuric_acid_fluid', amount: 250 }], 'heated', 200)
+    ], btmChemResults([{ fluid: 'chemlib:sulfuric_acid_fluid', amount: 250 }], [
+        { item: 'chemlib:sulfur_dioxide', chance: 0.16 }
+    ]), 'heated', 200)
 
     btmChemMixing(event, 'hydrochloric_acid_from_chlorine', [
-        { item: 'chemlib:chlorine' },
-        { item: 'chemlib:hydrogen' },
+        btmChemGas('chemlib:chlorine'),
+        btmChemGas('chemlib:hydrogen'),
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:hydrochloric_acid_fluid', amount: 250 }], 'heated', 200)
+    ], btmChemResults([{ fluid: 'chemlib:hydrochloric_acid_fluid', amount: 250 }], [
+        { item: 'chemlib:hydrogen', chance: 0.12 }
+    ]), 'heated', 200)
 
     btmChemMixing(event, 'nitric_acid_from_nitrogen_dioxide', [
-        { item: 'chemlib:nitrogen_dioxide' },
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:nitrogen_dioxide'),
+        btmChemGas('chemlib:oxygen'),
         { fluid: 'minecraft:water', amount: 250 }
-    ], [{ fluid: 'chemlib:nitric_acid_fluid', amount: 250 }], 'heated', 220)
+    ], btmChemResults([{ fluid: 'chemlib:nitric_acid_fluid', amount: 250 }], [
+        { item: 'chemlib:nitrogen_dioxide', chance: 0.16 }
+    ]), 'heated', 220)
 
     btmChemMixing(event, 'phosphoric_acid_fluid', [
         { item: 'chemlib:phosphoric_acid' },
@@ -100,20 +129,20 @@ ServerEvents.recipes(function (event) {
 
     btmChemMixing(event, 'phosphoric_acid_molecule', [
         { item: 'chemlib:phosphorus' },
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:oxygen'),
         { item: 'minecraft:bone_meal' },
         { fluid: 'minecraft:water', amount: 250 }
     ], [{ item: 'chemlib:phosphoric_acid', count: 2 }], 'heated', 180)
 
     btmChemCompacting(event, 'sodium_hydroxide', [
         { item: 'chemlib:sodium' },
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:oxygen'),
         { fluid: 'minecraft:water', amount: 250 }
     ], [{ item: 'chemlib:sodium_hydroxide', count: 2 }], null)
 
     btmChemCompacting(event, 'silicon_dioxide', [
         { item: 'chemlib:silicon' },
-        { item: 'chemlib:oxygen' },
+        btmChemGas('chemlib:oxygen'),
         { item: 'minecraft:quartz' }
     ], [{ item: 'chemlib:silicon_dioxide', count: 2 }], null)
 
@@ -128,24 +157,68 @@ ServerEvents.recipes(function (event) {
         { item: 'minecraft:charcoal' }
     ], [{ item: 'chemlib:calcium_oxide' }, { item: 'chemlib:carbon_dioxide' }], 'heated')
 
+    btmChemMixing(event, 'iron_ii_oxide', [
+        { item: 'chemlib:iron' },
+        btmChemGas('chemlib:oxygen'),
+        { item: 'minecraft:charcoal' }
+    ], btmChemResults([{ item: 'chemlib:iron_ii_oxide', count: 2 }], [
+        { item: 'chemlib:carbon_dioxide', chance: 0.18 }
+    ]), 'heated', 180)
+
     btmChemPressure(event, 'copper_chloride', [
         { item: 'chemlib:copper' },
-        { item: 'chemlib:chlorine' },
+        btmChemGas('chemlib:chlorine'),
         { item: 'chemlib:sodium_chloride' }
     ], { item: 'chemlib:copper_chloride', count: 2 }, 2.5)
 
     btmChemPressure(event, 'copper_nitrate', [
         { item: 'chemlib:copper' },
-        { item: 'chemlib:nitrogen_dioxide' },
-        { item: 'chemlib:oxygen' }
+        btmChemGas('chemlib:nitrogen_dioxide'),
+        btmChemGas('chemlib:oxygen')
     ], { item: 'chemlib:copper_nitrate', count: 2 }, 3.0)
 
     btmChemPressure(event, 'pvc', [
-        { item: 'chemlib:ethylene' },
-        { item: 'chemlib:chlorine' },
+        btmChemGas('chemlib:ethylene'),
+        btmChemGas('chemlib:chlorine'),
         { item: 'chemlib:carbon' },
         { item: 'kubejs:pressure_seal' }
     ], { item: 'chemlib:polyvinyl_chloride', count: 4 }, 3.5)
+
+    btmChemPressure(event, 'hydrogen_sulfide', [
+        { item: 'chemlib:sulfur' },
+        btmChemGas('chemlib:hydrogen'),
+        { item: 'kubejs:pressure_seal' }
+    ], { item: 'chemlib:hydrogen_sulfide', count: 2 }, 2.75)
+
+    btmChemPressure(event, 'nitric_oxide', [
+        btmChemGas('chemlib:nitrogen'),
+        btmChemGas('chemlib:oxygen'),
+        { item: 'minecraft:redstone' }
+    ], { item: 'chemlib:nitric_oxide', count: 2 }, 3.0)
+
+    btmChemPressure(event, 'ammonium_chloride', [
+        { item: 'chemlib:ammonium' },
+        btmChemGas('chemlib:chlorine'),
+        { fluid: 'minecraft:water', amount: 250 }
+    ], { item: 'chemlib:ammonium_chloride', count: 2 }, 2.75)
+
+    btmChemPressure(event, 'diammonium_phosphate', [
+        { item: 'chemlib:ammonium' },
+        { item: 'chemlib:phosphoric_acid' },
+        { fluid: 'minecraft:water', amount: 250 }
+    ], { item: 'chemlib:diammonium_phosphate', count: 2 }, 3.0)
+
+    btmChemMixing(event, 'arsenic_sulfide', [
+        { item: 'chemlib:arsenic' },
+        { item: 'chemlib:sulfur' },
+        { fluid: 'chemlib:sulfuric_acid_fluid', amount: 125 }
+    ], [{ item: 'chemlib:arsenic_sulfide', count: 2 }], 'heated', 220)
+
+    btmChemMixing(event, 'mercury_sulfide', [
+        { item: 'chemlib:mercury' },
+        { item: 'chemlib:sulfur' },
+        { fluid: 'chemlib:sulfuric_acid_fluid', amount: 125 }
+    ], [{ item: 'chemlib:mercury_sulfide', count: 2 }], 'heated', 220)
 
     btmChemThermo(event, 'sulfur_dioxide', { item: 'chemlib:sulfur' }, {
         type: 'pneumaticcraft:fluid',
@@ -153,13 +226,13 @@ ServerEvents.recipes(function (event) {
         amount: 250
     }, { fluid: 'chemlib:sulfur_dioxide_fluid', amount: 250 }, 2.0, 473)
 
-    btmChemThermo(event, 'sulfur_trioxide', { item: 'chemlib:sulfur_dioxide' }, {
+    btmChemThermo(event, 'sulfur_trioxide', btmChemGas('chemlib:sulfur_dioxide'), {
         type: 'pneumaticcraft:fluid',
         fluid: 'chemlib:oxygen_fluid',
         amount: 250
     }, { fluid: 'chemlib:sulfur_trioxide_fluid', amount: 250 }, 3.0, 573)
 
-    btmChemThermo(event, 'nitrogen_dioxide', { item: 'chemlib:nitric_oxide' }, {
+    btmChemThermo(event, 'nitrogen_dioxide', btmChemGas('chemlib:nitric_oxide'), {
         type: 'pneumaticcraft:fluid',
         fluid: 'chemlib:oxygen_fluid',
         amount: 250

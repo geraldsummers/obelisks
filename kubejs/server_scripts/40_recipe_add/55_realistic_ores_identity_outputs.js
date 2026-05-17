@@ -33,6 +33,15 @@ var BTM_RO_RETENTION = {
     phosphoric: { andesite: 0.60, iron: 0.64, brass: 0.74, steel: 0.80, nickel: 0.84, titanium: 0.88, blood_infused: 0.74, fluix: 0.76 }
 }
 
+var BTM_RO_SOLVENT_GAS_PRODUCTS = {
+    ethanol: { item: 'chemlib:carbon_dioxide', chance: 0.06 },
+    acetic: { item: 'chemlib:carbon_dioxide', chance: 0.10 },
+    sulfuric: { item: 'chemlib:sulfur_dioxide', chance: 0.18 },
+    hydrochloric: { item: 'chemlib:hydrogen', chance: 0.16 },
+    nitric: { item: 'chemlib:nitrogen_dioxide', chance: 0.22 },
+    phosphoric: { item: 'chemlib:hydrogen', chance: 0.08 }
+}
+
 var BTM_RO_DEPOSITS = [
     {
         id: 'coal_measures', crushed: 'realisticores:crushed_coal_measures', primary: 'minecraft:coal',
@@ -141,6 +150,10 @@ var BTM_RO_DEPOSITS = [
     }
 ]
 
+global.BTM_RO_SOLVENTS = BTM_RO_SOLVENTS
+global.BTM_RO_BALLS = BTM_RO_BALLS
+global.BTM_RO_DEPOSITS = BTM_RO_DEPOSITS
+
 function btmRoItemExists(id) {
     if (!id) return false
     try { return Item.exists(id) } catch (e) { return false }
@@ -152,6 +165,37 @@ function btmRoAddResult(results, id, count, chance) {
     if (count && count > 1) result.count = count
     if (chance && chance < 1) result.chance = Math.max(0.01, Math.min(0.99, chance))
     results.push(result)
+}
+
+function btmRoAddGasResult(results, seen, id, chance) {
+    if (!id || seen[id] || !btmRoItemExists(id)) return
+    seen[id] = true
+    btmRoAddResult(results, id, 1, chance)
+}
+
+function btmRoDepositGas(dep) {
+    var haystack = [
+        dep.id, dep.primary, dep.ethanol, dep.acetic, dep.sulfuric, dep.hydrochloric,
+        dep.nitric, dep.phosphoric, dep.gangue, dep.trace
+    ].join('|')
+    if (haystack.indexOf('hydrogen_sulfide') >= 0 || haystack.indexOf('sulfide') >= 0 || haystack.indexOf('pyrite') >= 0) {
+        return { item: 'chemlib:hydrogen_sulfide', chance: 0.12 }
+    }
+    if (haystack.indexOf('carbonate') >= 0 || haystack.indexOf('coal') >= 0 || haystack.indexOf('kimberlite') >= 0 || haystack.indexOf('soul') >= 0) {
+        return { item: 'chemlib:carbon_dioxide', chance: 0.14 }
+    }
+    if (haystack.indexOf('phosphate') >= 0 || haystack.indexOf('oxide') >= 0 || haystack.indexOf('lazurite') >= 0) {
+        return { item: 'chemlib:oxygen', chance: 0.10 }
+    }
+    return null
+}
+
+function btmRoAddGasSideProducts(results, dep, solvent) {
+    var seen = {}
+    var solventGas = BTM_RO_SOLVENT_GAS_PRODUCTS[solvent.id]
+    if (solventGas) btmRoAddGasResult(results, seen, solventGas.item, solventGas.chance)
+    var depositGas = btmRoDepositGas(dep)
+    if (depositGas) btmRoAddGasResult(results, seen, depositGas.item, depositGas.chance)
 }
 
 function btmRoBallResult(dep, ball) {
@@ -172,6 +216,7 @@ function btmRoRecipeResults(dep, solvent, ball) {
     btmRoAddResult(results, dep.trace, 1, solvent.trace + ball.traceBonus)
     var retained = BTM_RO_RETENTION[solvent.id][ball.id]
     if (retained && retained > 0) results.push({ item: ball.item, chance: retained })
+    btmRoAddGasSideProducts(results, dep, solvent)
     return results
 }
 

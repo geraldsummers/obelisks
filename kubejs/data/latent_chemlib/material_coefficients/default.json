@@ -1,3 +1,19 @@
 {
-  "note": "Reserved for pack-authored containment, moderation, scattering, and shielding coefficient overrides."
+  "moderators": [
+    { "item": "minecraft:water_bucket", "moderation": 0.35 },
+    { "item": "minecraft:ice", "moderation": 0.45 },
+    { "item": "minecraft:packed_ice", "moderation": 0.6 },
+    { "item": "chemlib:carbon", "moderation": 0.75 },
+    { "item": "chemlib:beryllium", "moderation": 0.9 }
+  ],
+  "absorbers": [
+    { "item": "chemlib:boron", "absorption": 0.85 },
+    { "item": "chemlib:cadmium", "absorption": 0.75 },
+    { "item": "chemlib:lead", "absorption": 0.55 }
+  ],
+  "containment": [
+    { "item": "kubejs:pressure_seal", "containment_strength": 250.0 },
+    { "item": "kubejs:titanium_thermal_plate", "containment_strength": 750.0 },
+    { "item": "kubejs:impossible_machine_casing", "containment_strength": 2500.0 }
+  ]
 }

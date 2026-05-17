@@ -33,7 +33,7 @@ function parseProgressionItemIds() {
   if (!exists(progressionRegistryPath)) return []
   const text = read(progressionRegistryPath)
   const ids = []
-  for (const match of text.matchAll(/\[\s*'([a-z0-9_]+)'\s*,\s*'[^']+'\s*\]/g)) ids.push(match[1])
+  for (const match of text.matchAll(/\[\s*'([a-z0-9_]+)'\s*,\s*'[^']+'(?:\s*,\s*\d+)?\s*\]/g)) ids.push(match[1])
   for (const match of text.matchAll(/event\.create\('([a-z0-9_]+)'\)\.displayName/g)) ids.push(match[1])
   return unique(ids).filter(id => id !== 'phosphoric_acid_fluid')
 }

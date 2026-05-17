@@ -79,6 +79,21 @@ StartupEvents.registry('item', function (event) {
         event.create(overhaulIntermediates[o][0]).displayName(overhaulIntermediates[o][1])
     }
 
+    var magicCuttingFluids = [
+        ['sanguine_acetic_cutting_fluid', 'Sanguine Acetic Cutting Fluid', 64],
+        ['sanguine_sulfuric_cutting_fluid', 'Sanguine Sulfuric Cutting Fluid', 256],
+        ['sanguine_hydrochloric_cutting_fluid', 'Sanguine Hydrochloric Cutting Fluid', 256],
+        ['sanguine_nitric_cutting_fluid', 'Sanguine Nitric Cutting Fluid', 1024],
+        ['sanguine_phosphoric_cutting_fluid', 'Sanguine Phosphoric Cutting Fluid', 1024]
+    ]
+
+    for (var m = 0; m < magicCuttingFluids.length; m++) {
+        event.create(magicCuttingFluids[m][0])
+            .displayName(magicCuttingFluids[m][1])
+            .maxDamage(magicCuttingFluids[m][2])
+            .glow(true)
+    }
+
     var reagents = [
         ['cut_green_tea_leaves', 'Cut Green Tea Leaves'],
         ['roasted_coffee_reagent', 'Roasted Coffee Reagent'],

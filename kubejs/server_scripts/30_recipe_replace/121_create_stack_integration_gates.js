@@ -4,6 +4,8 @@
 // heat/electric power -> OC2R/AE2 bridges. It also removes package teleportation.
 
 var BTM_CREATE_STACK = {
+    seared: 'kubejs:seared_machine_casing',
+    scorched: 'kubejs:scorched_machine_casing',
     andesite: 'kubejs:andesite_machine_casing',
     brass: 'kubejs:brass_machine_casing',
     power: 'kubejs:electrical_machine_casing',
@@ -44,37 +46,38 @@ ServerEvents.recipes(function (event) {
     // Package wormholes are direct logistics teleportation. Keep them absent until explicitly redesigned.
     btmCreateRemove(event, ['createadvlogistics:package_wormhole'])
 
-    // Core fluid/package logistics are real Create infrastructure, not cheap copper/redstone utilities.
+    // Passive fluid utilities do not consume SU; they can sit at the high-heat
+    // TCon handoff before Andesite kinetic machinery.
     btmCreateShaped(event, 'create:fluid_tank', [
         'CPC',
-        'GAG',
+        'GSG',
         'CPC'
     ], {
         C: BTM_CREATE_STACK.copperPlate,
         P: 'create:fluid_pipe',
         G: 'minecraft:glass',
-        A: BTM_CREATE_STACK.andesite
+        S: BTM_CREATE_STACK.scorched
     }, 'kubejs:create_stack/create/fluid_tank')
 
     btmCreateShaped(event, 'create:item_drain', [
         ' G ',
-        'PAP',
+        'PSP',
         ' C '
     ], {
         G: 'minecraft:iron_bars',
         P: 'create:fluid_pipe',
-        A: BTM_CREATE_STACK.andesite,
+        S: BTM_CREATE_STACK.scorched,
         C: BTM_CREATE_STACK.copperPlate
     }, 'kubejs:create_stack/create/item_drain')
 
     btmCreateShaped(event, 'create:spout', [
         ' P ',
-        'TAT',
+        'TST',
         ' C '
     ], {
         P: 'create:fluid_pipe',
         T: 'create:fluid_tank',
-        A: BTM_CREATE_STACK.andesite,
+        S: BTM_CREATE_STACK.scorched,
         C: BTM_CREATE_STACK.copperPlate
     }, 'kubejs:create_stack/create/spout')
 

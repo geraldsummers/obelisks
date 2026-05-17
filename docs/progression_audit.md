@@ -21,7 +21,8 @@ User direction after initial audit:
 - Prefer many distinct tricky alloys over steel-centric progression.
 - Use E2E-style machine casings where each tier adds a mod's manufacturing complexity.
 - Initial casing tier order: TCon seared -> TCon scorched -> Create andesite -> Create brass -> Power Grid -> OC2R -> Space -> AE2.
-- Alchemistry remains a compatibility/reference surface; Create/PNCR routes should provide dissolver-style parity.
+- Alchemistry has been removed as a pack dependency; its dissolver recipes are
+  now source/reference data ported to Create mixer + acid + grinding ball routes.
 
 The implementation is not yet aligned with the cleaned progression:
 
@@ -38,7 +39,7 @@ The implementation is not yet aligned with the cleaned progression:
 | Create | Ponder in-game | `create:hand_crank`, `create:millstone`, `create:deployer` | sustainable SU with `create:water_wheel`/`create:windmill_bearing` | After alloying | casing item-application bypass; early kit includes Create parts | FTB quests, recipe dump, class kits | High |
 | Realistic Ores | none confirmed | deposit blocks | crushed deposit items and later processing | World-gen root | Without recipe rewrite, vanilla/other ore recipes may bypass deposit-first economy | custom resources and registry | High |
 | Create/PNCR chemistry | in-game mechanics | `create:mechanical_mixer`, `pneumaticcraft:pressure_chamber_interface` | acid+ball ore identity, pressure/gas chemistry, board assembly | Brass/Airtight ore tier | must avoid becoming generic ore doubling | KubeJS scripts and Chemlib jar audit | High |
-| Alchemistry | n/a | recipe compatibility/reference surface | dissolver-style semantics | Do not target as player-facing machine progression | Runtime recipe types exist; user direction is to keep it for mods to reference while providing Create/PNCR parity | user direction, recipe dump | High |
+| Former Alchemistry dissolver surface | n/a | `create:mechanical_mixer` + ChemLib acid + grinding ball | dissolver-style decomposition through authored chemistry | Brass/Create chemistry | Must not reintroduce Alchemistry machines or universal acid shortcuts | `kubejs/config/alchemistry_dissolver_port.json`, KubeJS port script | High |
 | Blood Magic | `patchouli` book likely UNKNOWN exact | `bloodmagic:altar` | slate tiers and blood orbs | Magic backbone | Current tooltip script mentions heart requirements, but side magic recipes may be ungated | registry and KubeJS tooltip script | High |
 | RPG Stats hearts | none | `rpgstats:still_beating_heart` | typed hearts and ritual-death trophies | Magic 1 bridge | Existing blood-orb recipes consume hearts; must stay milestone-grade, not bulk fuel | source, quests, KubeJS recipes | High |
 | Ars Nouveau | book item UNKNOWN | `ars_nouveau:imbuement_chamber`, `ars_nouveau:novice_spell_book` | `ars_nouveau:enchanting_apparatus`, later spell books | Reinforced; late Ethereal | Can become magic powerhouse before Blood Magic if ungated | registry and recipe types | High |

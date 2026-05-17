@@ -88,4 +88,21 @@ ServerEvents.recipes(function (event) {
         },
         result: { item: 'latent_chemlib:gas_release' }
     }).id('kubejs:create/mechanical_crafting/latent_chemlib/gas_release')
+
+    event.custom({
+        type: 'create:mechanical_crafting',
+        acceptMirrored: true,
+        pattern: [
+            ' G ',
+            'SCS',
+            ' P '
+        ],
+        key: {
+            G: { tag: 'forge:glass' },
+            S: { item: 'kubejs:pressure_seal' },
+            C: { item: 'pneumaticcraft:small_tank' },
+            P: { item: 'create_new_age:heat_pipe' }
+        },
+        result: { item: 'latent_chemlib:sealed_chemical_cell', count: 4 }
+    }).id('kubejs:create/mechanical_crafting/latent_chemlib/sealed_chemical_cell')
 })

@@ -323,6 +323,7 @@ ServerEvents.recipes(function (event) {
     btmGateAny(event, [
         'tconstruct:foundry_controller',
         'tconstruct:scorched_fuel_tank',
+        'tconstruct:scorched_alloyer',
         'tconstruct:alloyer'
     ], ['tconstruct:scorched_bricks', 'tconstruct:scorched_brick'], 'kubejs:scorched_machine_casing')
 

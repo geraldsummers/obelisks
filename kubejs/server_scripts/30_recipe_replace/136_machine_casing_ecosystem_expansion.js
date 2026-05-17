@@ -91,7 +91,12 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('tconstruct:seared_chute', ['B B', 'BCB', ' G '], { B: 'tconstruct:seared_brick', C: BTM_CASING_ECO.seared, G: 'tconstruct:seared_glass' }, 'kubejs:casing_ecosystem/seared/chute'),
         btmEcoRecipe('tconstruct:seared_casting_tank', ['GCG', 'GBG', 'GCG'], { G: 'tconstruct:seared_glass', C: BTM_CASING_ECO.seared, B: 'tconstruct:seared_bricks' }, 'kubejs:casing_ecosystem/seared/casting_tank'),
         btmEcoRecipe('tconstruct:seared_fuel_tank', ['GCG', 'GBG', 'GCG'], { G: 'tconstruct:seared_glass', C: BTM_CASING_ECO.seared, B: 'minecraft:coal_block' }, 'kubejs:casing_ecosystem/seared/fuel_tank'),
-        btmEcoRecipe('tconstruct:seared_fuel_gauge', ['GCG', 'RBR', 'GCG'], { G: 'tconstruct:seared_glass', C: BTM_CASING_ECO.seared, R: 'minecraft:redstone', B: 'tconstruct:seared_bricks' }, 'kubejs:casing_ecosystem/seared/fuel_gauge')
+        btmEcoRecipe('tconstruct:seared_fuel_gauge', ['GCG', 'RBR', 'GCG'], { G: 'tconstruct:seared_glass', C: BTM_CASING_ECO.seared, R: 'minecraft:redstone', B: 'tconstruct:seared_bricks' }, 'kubejs:casing_ecosystem/seared/fuel_gauge'),
+        btmEcoRecipe('create:basin', ['A A', 'ICI', 'AAA'], { A: 'create:andesite_alloy', I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.seared }, 'kubejs:casing_ecosystem/seared/create_basin'),
+        btmEcoRecipe('create:depot', [' I ', ' C ', ' A '], { I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.seared, A: 'create:andesite_alloy' }, 'kubejs:casing_ecosystem/seared/create_depot'),
+        btmEcoRecipe('create:chute', [' I ', ' C ', ' I '], { I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.seared }, 'kubejs:casing_ecosystem/seared/create_chute', 2),
+        btmEcoRecipe('create:andesite_funnel', [' I ', ' C ', ' D '], { I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.seared, D: 'create:depot' }, 'kubejs:casing_ecosystem/seared/andesite_funnel'),
+        btmEcoRecipe('create:andesite_tunnel', ['IFI', ' C ', 'IFI'], { I: BTM_CASING_ECO.ironPlate, F: 'create:andesite_funnel', C: BTM_CASING_ECO.seared }, 'kubejs:casing_ecosystem/seared/andesite_tunnel')
     ])
 
     btmEcoAddMany(event, [
@@ -108,14 +113,14 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('tconstruct:scorched_ingot_tank', ['GCG', 'GBG', 'GCG'], { G: 'tconstruct:scorched_glass', C: BTM_CASING_ECO.scorched, B: 'tconstruct:scorched_bricks' }, 'kubejs:casing_ecosystem/scorched/ingot_tank'),
         btmEcoRecipe('tconstruct:scorched_anvil', ['III', ' C ', 'B B'], { I: '#forge:ingots/cobalt', C: BTM_CASING_ECO.scorched, B: 'tconstruct:scorched_bricks' }, 'kubejs:casing_ecosystem/scorched/anvil'),
         btmEcoRecipe('tconstruct:scorched_duct', ['B B', 'RCR', 'B B'], { B: 'tconstruct:scorched_brick', R: 'minecraft:redstone', C: BTM_CASING_ECO.scorched }, 'kubejs:casing_ecosystem/scorched/duct'),
-        btmEcoRecipe('tconstruct:scorched_fluid_cannon', [' N ', 'BCB', ' R '], { N: '#forge:nuggets/cobalt', B: 'tconstruct:scorched_brick', C: BTM_CASING_ECO.scorched, R: 'minecraft:redstone' }, 'kubejs:casing_ecosystem/scorched/fluid_cannon')
+        btmEcoRecipe('tconstruct:scorched_fluid_cannon', [' N ', 'BCB', ' R '], { N: '#forge:nuggets/cobalt', B: 'tconstruct:scorched_brick', C: BTM_CASING_ECO.scorched, R: 'minecraft:redstone' }, 'kubejs:casing_ecosystem/scorched/fluid_cannon'),
+        btmEcoRecipe('create:fluid_tank', ['CPC', 'GSG', 'CPC'], { C: BTM_CASING_ECO.copperPlate, P: 'create:fluid_pipe', G: BTM_CASING_ECO.glass, S: BTM_CASING_ECO.scorched }, 'kubejs:casing_ecosystem/scorched/fluid_tank'),
+        btmEcoRecipe('create:item_drain', [' G ', 'PSP', ' C '], { G: 'minecraft:iron_bars', P: 'create:fluid_pipe', S: BTM_CASING_ECO.scorched, C: BTM_CASING_ECO.copperPlate }, 'kubejs:casing_ecosystem/scorched/item_drain'),
+        btmEcoRecipe('create:spout', [' P ', 'TST', ' C '], { P: 'create:fluid_pipe', T: 'create:fluid_tank', S: BTM_CASING_ECO.scorched, C: BTM_CASING_ECO.copperPlate }, 'kubejs:casing_ecosystem/scorched/spout')
     ])
 
     btmEcoAddMany(event, [
         btmEcoRecipe('create:millstone', [' S ', 'ACA', ' S '], { S: 'minecraft:smooth_stone', A: BTM_CASING_ECO.andesite, C: 'create:cogwheel' }, 'kubejs:casing_ecosystem/andesite/millstone'),
-        btmEcoRecipe('create:basin', ['A A', 'ICI', 'AAA'], { A: 'create:andesite_alloy', I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/basin'),
-        btmEcoRecipe('create:depot', [' I ', ' C ', ' A '], { I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.andesite, A: 'create:andesite_alloy' }, 'kubejs:casing_ecosystem/andesite/depot'),
-        btmEcoRecipe('create:chute', [' I ', ' C ', ' I '], { I: BTM_CASING_ECO.ironPlate, C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/chute', 2),
         btmEcoRecipe('create:encased_fan', [' I ', 'SCS', ' I '], { I: BTM_CASING_ECO.ironPlate, S: 'create:shaft', C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/encased_fan'),
         btmEcoRecipe('create:mechanical_press', [' S ', ' C ', ' I '], { S: 'create:shaft', C: BTM_CASING_ECO.andesite, I: 'minecraft:iron_block' }, 'kubejs:casing_ecosystem/andesite/mechanical_press'),
         btmEcoRecipe('create:mechanical_mixer', [' S ', ' C ', ' W '], { S: 'create:shaft', C: BTM_CASING_ECO.andesite, W: 'create:whisk' }, 'kubejs:casing_ecosystem/andesite/mechanical_mixer'),
@@ -126,14 +131,11 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('create:mechanical_piston', [' P ', 'SCS', ' A '], { P: 'create:piston_extension_pole', S: 'create:shaft', C: BTM_CASING_ECO.andesite, A: 'create:andesite_alloy' }, 'kubejs:casing_ecosystem/andesite/mechanical_piston'),
         btmEcoRecipe('create:sticky_mechanical_piston', [' L ', ' P ', ' C '], { L: 'minecraft:slime_ball', P: 'create:mechanical_piston', C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/sticky_mechanical_piston'),
         btmEcoRecipe('create:gearshift', [' R ', 'SCS', ' R '], { R: 'minecraft:redstone', S: 'create:shaft', C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/gearshift'),
-        btmEcoRecipe('create:clutch', [' I ', 'SCS', ' I '], { I: BTM_CASING_ECO.ironPlate, S: 'create:shaft', C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/clutch'),
-        btmEcoRecipe('create:fluid_tank', ['CPC', 'GAG', 'CPC'], { C: BTM_CASING_ECO.copperPlate, P: 'create:fluid_pipe', G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/fluid_tank'),
-        btmEcoRecipe('create:item_drain', [' G ', 'PAP', ' C '], { G: 'minecraft:iron_bars', P: 'create:fluid_pipe', A: BTM_CASING_ECO.andesite, C: BTM_CASING_ECO.copperPlate }, 'kubejs:casing_ecosystem/andesite/item_drain'),
-        btmEcoRecipe('create:spout', [' P ', 'TAT', ' C '], { P: 'create:fluid_pipe', T: 'create:fluid_tank', A: BTM_CASING_ECO.andesite, C: BTM_CASING_ECO.copperPlate }, 'kubejs:casing_ecosystem/andesite/spout'),
-        btmEcoRecipe('create:steam_engine', [' G ', ' A ', ' C '], { G: BTM_CASING_ECO.goldPlate, A: BTM_CASING_ECO.andesite, C: '#forge:storage_blocks/copper' }, 'kubejs:casing_ecosystem/andesite/steam_engine')
+        btmEcoRecipe('create:clutch', [' I ', 'SCS', ' I '], { I: BTM_CASING_ECO.ironPlate, S: 'create:shaft', C: BTM_CASING_ECO.andesite }, 'kubejs:casing_ecosystem/andesite/clutch')
     ])
 
     btmEcoAddMany(event, [
+        btmEcoRecipe('create:steam_engine', [' G ', ' B ', ' C '], { G: BTM_CASING_ECO.goldPlate, B: BTM_CASING_ECO.brass, C: '#forge:storage_blocks/copper' }, 'kubejs:casing_ecosystem/brass/steam_engine'),
         btmEcoRecipe('create:rotation_speed_controller', [' B ', 'PCP', ' G '], { B: BTM_CASING_ECO.brassPlate, P: 'create:precision_mechanism', C: BTM_CASING_ECO.brass, G: 'create:large_cogwheel' }, 'kubejs:casing_ecosystem/brass/rotation_speed_controller'),
         btmEcoRecipe('create:mechanical_arm', [' B ', 'PCP', ' H '], { B: BTM_CASING_ECO.brassPlate, P: 'create:precision_mechanism', C: BTM_CASING_ECO.brass, H: 'create:brass_hand' }, 'kubejs:casing_ecosystem/brass/mechanical_arm'),
         btmEcoRecipe('create:stockpile_switch', [' G ', 'RCR', ' B '], { G: BTM_CASING_ECO.glass, R: BTM_CASING_ECO.redstoneRelay, C: BTM_CASING_ECO.brass, B: BTM_CASING_ECO.brassPlate }, 'kubejs:casing_ecosystem/brass/stockpile_switch'),
@@ -180,7 +182,9 @@ ServerEvents.recipes(function (event) {
         btmEcoRecipe('powergrid:generator_clutch', [' S ', 'CAC', ' S '], { S: 'create:shaft', C: 'powergrid:generator_commutator', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/generator_clutch'),
         btmEcoRecipe('powergrid:relay', [' W ', 'RAR', ' W '], { W: 'powergrid:wire', R: BTM_CASING_ECO.redstoneRelay, A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/relay'),
         btmEcoRecipe('powergrid:relay_dpdt', ['RWR', 'WAW', 'RWR'], { R: 'powergrid:relay', W: 'powergrid:wire', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/relay_dpdt'),
-        btmEcoRecipe('powergrid:power_gauge', [' G ', 'CAC', ' W '], { G: BTM_CASING_ECO.glass, C: 'powergrid:current_gauge', A: BTM_CASING_ECO.electrical, W: 'powergrid:wire' }, 'kubejs:casing_ecosystem/electrical/power_gauge'),
+        btmEcoRecipe('powergrid:current_gauge', [' G ', 'CAC', ' W '], { G: BTM_CASING_ECO.glass, C: 'powergrid:copper_coil', A: BTM_CASING_ECO.electrical, W: 'powergrid:wire' }, 'kubejs:casing_ecosystem/electrical/current_gauge'),
+        btmEcoRecipe('powergrid:voltage_gauge', [' G ', 'CAC', ' R '], { G: BTM_CASING_ECO.glass, C: 'powergrid:capacitor', A: BTM_CASING_ECO.electrical, R: BTM_CASING_ECO.redstoneRelay }, 'kubejs:casing_ecosystem/electrical/voltage_gauge'),
+        btmEcoRecipe('powergrid:power_gauge', ['GVG', 'CAC', ' W '], { G: BTM_CASING_ECO.glass, V: 'powergrid:voltage_gauge', C: 'powergrid:current_gauge', A: BTM_CASING_ECO.electrical, W: 'powergrid:wire' }, 'kubejs:casing_ecosystem/electrical/power_gauge'),
         btmEcoRecipe('powergrid:device_connector', [' W ', 'CAC', ' W '], { W: 'powergrid:wire_connector', C: BTM_CASING_ECO.circuit, A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/device_connector'),
         btmEcoRecipe('powergrid:heavy_wire_connector', ['WWW', 'CAC', 'WWW'], { W: 'powergrid:wire_connector', C: 'powergrid:conductive_casing', A: BTM_CASING_ECO.electrical }, 'kubejs:casing_ecosystem/electrical/heavy_wire_connector'),
         btmEcoRecipe('create_new_age:basic_energiser', [' W ', 'CAC', ' S '], { W: 'create_new_age:overcharged_iron_wire', C: 'powergrid:capacitor', A: BTM_CASING_ECO.electrical, S: 'create:shaft' }, 'kubejs:casing_ecosystem/electrical/basic_energiser'),
