@@ -1,0 +1,9 @@
+enabled = true
+baseCost = 1.0
+k = 2.0
+minimumCost = 0.0
+maximumCost = 16.0
+consumeWhileStopped = false
+minimumMovingSpeedBps = 0.05
+resetDebtWhenFuelEmpty = true
+debugLogging = false

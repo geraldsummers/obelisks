@@ -5286,7 +5286,7 @@ hash = "968e91950a61f0de05aa579cdc9e8772414ef1e9e2199af55dd940edf1bbdcc3"
 
 [[files]]
 file = "config/classselector/embark.json"
-hash = "756d79b9639f07f75ce1b60b38ab84aa2704aa6b83b9bd865a78c97d0b004ee9"
+hash = "036e703998a91e89e000b187694753e7ce8309bdc5a5f2c21b7f23192977ee3b"
 
 [[files]]
 file = "config/classselector/kits.json"
@@ -5315,6 +5315,10 @@ hash = "3dc63fecc68b714b0a24779d2d4c3220192fa33c3fe598e8ac68fdb4b7b23ab1"
 [[files]]
 file = "config/coldsweat/world.toml"
 hash = "4fde63ba18d1adf869b400cfcd31aadd538290445af0daf5405a10f6a712ef52"
+
+[[files]]
+file = "config/create_train_fuel_scaling-common.toml"
+hash = "e1ac48c727652278e503a9126b3391d732a96f38667c8c7a1870e957e4a74509"
 
 [[files]]
 file = "config/dcm.json"
@@ -10204,7 +10208,7 @@ metafile = true
 
 [[files]]
 file = "mods/btmfixes-0.1.0.jar"
-hash = "665fac20373358b2d5f4d2e5a217038641a51f79126f56f54f0a3b4ffd5699a6"
+hash = "d8435eab301aa8319c1fc6c655851a491c15cc37d434740488c960fc5fe51c20"
 
 [[files]]
 file = "mods/building-gadgets.pw.toml"
@@ -10243,7 +10247,7 @@ metafile = true
 
 [[files]]
 file = "mods/classselector-1.0.0.jar"
-hash = "93e1543d6c6e6a3f07acf44fd6f5941f7c049d080f852bba651f8e0c1392e2a6"
+hash = "2d65394cf0731f8f0b8e85233b9a03720d19b243048fe89252aa14e374c9b14e"
 
 [[files]]
 file = "mods/cloth-config.pw.toml"
@@ -10272,7 +10276,7 @@ metafile = true
 
 [[files]]
 file = "mods/computerbridge-0.1.0.jar"
-hash = "c6ab34716ccc2123e706c1eba9fe493274f06b0e18682061197d0f8c56055c8c"
+hash = "4cf23b9721abc9f15d06fc42681847bc86a84132fddf5114c0ce8e2139fdc315"
 
 [[files]]
 file = "mods/concurrent-chunk-management-engine-for-forge-the.pw.toml"
@@ -10325,8 +10329,12 @@ hash = "71918d13bde877a24fbe2be5a7cf93514c70ce170c50cd4c96eef0f36841a89a"
 metafile = true
 
 [[files]]
+file = "mods/create-train-fuel-scaling-0.1.0.jar"
+hash = "5ff9684e3e75a04215e4c6b9416e7250d3d9f8b865dfb1724f84d128920d7c44"
+
+[[files]]
 file = "mods/create-transmission-loss-0.1.0.jar"
-hash = "325047880b72eaf3b8b04306e8349b2289d77326dd8733e1a17d0ad07745df12"
+hash = "fe402c0d70269f5eed8f02ef16338bef74a98c96d538784832e416ca333e03eb"
 
 [[files]]
 file = "mods/create.pw.toml"
@@ -10375,11 +10383,11 @@ metafile = true
 
 [[files]]
 file = "mods/dthexerei-1.0.0.jar"
-hash = "6ab5f76661350717f593616459f5df3c3c31f0895d80bf4a2e27f79b1fbc9ccf"
+hash = "83b44dc062ffd5a43139c6ae857ac3becff702c974c56c60137a0cdcfd41cf22"
 
 [[files]]
 file = "mods/dtmalum-1.0.0.jar"
-hash = "0828ea9645fe6131ec3d5470a401e11b927fc765a99e3df88ea62be76f8bce6e"
+hash = "601dcdb7429f6a33e7578199d939ae26be071d499aa82d7d45f3fe69b282cfc5"
 
 [[files]]
 file = "mods/dynamic-asset-generator.pw.toml"
@@ -10502,11 +10510,6 @@ hash = "3ed5a12bb390e00f10899c409ee668f755798fbd3c02ec1641500dea555a76b8"
 metafile = true
 
 [[files]]
-file = "mods/finite-water.pw.toml"
-hash = "edfbf18a50f7163550ce0da139144d57d549c3e9f45c89c7077a3afafdaf194c"
-metafile = true
-
-[[files]]
 file = "mods/forbidden-arcanus.pw.toml"
 hash = "edeefca9053ee0da1511185568d0241798273fb7d03ed09f7b5fd3dbbbc582bb"
 metafile = true
@@ -10608,7 +10611,7 @@ metafile = true
 
 [[files]]
 file = "mods/heatsync-0.1.0.jar"
-hash = "cc894bcc57c1ea57dac95f7f206a0f53241db794fa044b0fde26920501190dca"
+hash = "ec999f18cc012dd17787c1aafbd35b2dcfd0d81a0bea6e9cf0e2f362a41f5385"
 
 [[files]]
 file = "mods/hexerei.pw.toml"
@@ -10727,11 +10730,11 @@ metafile = true
 
 [[files]]
 file = "mods/latent_chemlib-0.1.0.jar"
-hash = "0ec2abc34fc39dbdc97bc56cebb8cef024b8b6c4104c22625ab12c7f51895834"
+hash = "e86c64f468b67321988d4769beb461e8a059b5c1ef0f03decfd095a61b68c65a"
 
 [[files]]
 file = "mods/latent_water_sim-0.1.0.jar"
-hash = "20839443933df5ddb66ac9b67625c61863b5a686e3bfc929c91e2e86f41f2ec2"
+hash = "913047b7f0752d93e4c3b917325ca57e8a43f1c62f30df7b92de469de49e4a44"
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
@@ -10850,7 +10853,7 @@ metafile = true
 
 [[files]]
 file = "mods/obelisks-1.0.0.jar"
-hash = "9db0261499decff5ce3e186671d5e9f94b00c17a93308e3f4ad6aec9202ad224"
+hash = "160162d4a244e9cd2726319f1da8c2eb910c3e33ea872e11f9bf1b2c27e63fac"
 
 [[files]]
 file = "mods/oc2r.pw.toml"
@@ -10859,7 +10862,7 @@ metafile = true
 
 [[files]]
 file = "mods/oc2rwireless-1.0.0.jar"
-hash = "b3b6c71645992bce1231367bd6cdfd14e61b0604ae7dfb5a1963448e4cc5f36d"
+hash = "adaeefbd5d32636c7a9d423c5465b629ee2d83c32d8a58b76f6b2fc73fa0ba2e"
 
 [[files]]
 file = "mods/occultism.pw.toml"
@@ -10883,7 +10886,7 @@ metafile = true
 
 [[files]]
 file = "mods/pillagercampaigns-0.2.0.jar"
-hash = "b9cfdc4dc650617c78d65f33119d2dc2919632e1ca4d54745089ab45c7cd9c12"
+hash = "4f89d38511278c6d03d0d1a18a4026cea73b50fd0698b06215908972cf058390"
 
 [[files]]
 file = "mods/placebo.pw.toml"
@@ -10927,7 +10930,7 @@ metafile = true
 
 [[files]]
 file = "mods/procedural_bouquets-0.1.0.jar"
-hash = "224637c40c0fbbd8155759aa4bf2830e21f42a2e8ae84982f510e50cbcd8f374"
+hash = "965babc67a4481450d91576daea97929b6064a3038dea11a889cf3f8865189fa"
 
 [[files]]
 file = "mods/project-vibrant-journeys.pw.toml"
@@ -10966,7 +10969,7 @@ metafile = true
 
 [[files]]
 file = "mods/realisticores-0.1.0.jar"
-hash = "f33ca65d1f126aa7085c220db4e6271af9610fefde30a19113e693d19e0b2109"
+hash = "7ff41bc54bd984f606cf57f3f2a421cfce5c20ab3e381418ebdb3b0db255bece"
 
 [[files]]
 file = "mods/rehooked.pw.toml"
@@ -11000,7 +11003,7 @@ metafile = true
 
 [[files]]
 file = "mods/rpgstats-1.0.0.jar"
-hash = "582071ecc921ca72b0f1496a50cca7ccc3d1453f0bb169eae3ba0960f99c59de"
+hash = "3d405e7fa77799d784cdb6d99732ee5821bfa9778f031bf57c550f5b45dd6a73"
 
 [[files]]
 file = "mods/rustic-delight.pw.toml"
@@ -11034,7 +11037,7 @@ metafile = true
 
 [[files]]
 file = "mods/settlementroads-0.1.0.jar"
-hash = "1dc54696e39225bd0e7a2109d554ec8e08e0c210587931415839a0db4ba843b3"
+hash = "4c75ad1fa6c79e50cfff66ad5ef51875c2ad1a1db743480b95d929c3fb279dba"
 
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
@@ -11253,7 +11256,7 @@ metafile = true
 
 [[files]]
 file = "mods/villagewalls-1.0.0.jar"
-hash = "89e266737e559ea128b865f19b64e7ab544543b64c77dd987e68e11ff285e740"
+hash = "6e17c0d8e9dac42b01c794fad29874c1889daea3bae28e71b361a2af97396311"
 
 [[files]]
 file = "mods/wares.pw.toml"
