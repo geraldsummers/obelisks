@@ -3,6 +3,6 @@
   "acceptable_soils": [
     "dirt_like"
   ],
-  "substitute_soil": "rooted_dirt",
+  "substitute_soil": "dynamictrees:rooted_dirt",
   "only_if_loaded": "fallout_wastelands_"
 }

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#dynamictrees:branches",
+    "#dynamictrees:stripped_branches"
+  ]
+}

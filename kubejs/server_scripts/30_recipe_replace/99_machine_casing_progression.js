@@ -98,14 +98,17 @@ ServerEvents.recipes(function (event) {
         loops: 2
     }).id('kubejs:create/sequenced_assembly/machine_casing/brass')
 
-    event.shaped('kubejs:pressure_seal', [
-        'RRR',
-        'RLR',
-        'RRR'
-    ], {
-        R: 'minecraft:dried_kelp',
-        L: 'minecraft:slime_ball'
-    }).id('kubejs:pneumaticcraft/pressure_seal')
+    global.btmCreateCompacting(event, 'kubejs:pneumaticcraft/pressure_seal', 'kubejs:pressure_seal', 1, [
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:dried_kelp',
+        'minecraft:slime_ball'
+    ])
 
     event.custom({
         type: 'create:sequenced_assembly',
@@ -287,16 +290,16 @@ ServerEvents.recipes(function (event) {
     event.remove({ output: 'pneumaticcraft:pressure_chamber_glass' })
     event.remove({ output: 'pneumaticcraft:pressure_chamber_interface' })
 
-    event.shaped('16x pneumaticcraft:pressure_chamber_wall', [
+    global.btmCreateMechanicalCrafting(event, 'kubejs:pneumaticcraft/pressure_chamber_wall_airtight', 'pneumaticcraft:pressure_chamber_wall', 16, [
         'RRR',
         'RAR',
         'RRR'
     ], {
         R: 'pneumaticcraft:reinforced_bricks',
         A: 'kubejs:airtight_machine_casing'
-    }).id('kubejs:pneumaticcraft/pressure_chamber_wall_airtight')
+    }, true)
 
-    event.shaped('16x pneumaticcraft:pressure_chamber_glass', [
+    global.btmCreateMechanicalCrafting(event, 'kubejs:pneumaticcraft/pressure_chamber_glass_airtight', 'pneumaticcraft:pressure_chamber_glass', 16, [
         'RGR',
         'GAG',
         'RGR'
@@ -304,14 +307,14 @@ ServerEvents.recipes(function (event) {
         R: 'pneumaticcraft:reinforced_bricks',
         G: '#forge:glass',
         A: 'kubejs:airtight_machine_casing'
-    }).id('kubejs:pneumaticcraft/pressure_chamber_glass_airtight')
+    }, true)
 
-    event.shapeless('2x pneumaticcraft:pressure_chamber_interface', [
+    global.btmCreateMechanicalFromInputs(event, 'kubejs:pneumaticcraft/pressure_chamber_interface_airtight', 'pneumaticcraft:pressure_chamber_interface', 2, [
         'minecraft:hopper',
         'kubejs:airtight_machine_casing',
         'pneumaticcraft:pressure_chamber_wall',
         'pneumaticcraft:pressure_chamber_wall'
-    ]).id('kubejs:pneumaticcraft/pressure_chamber_interface_airtight')
+    ])
 
     // First block-like machines per tier. Avoid deadlocking Deployer; it remains pre-casing.
     btmGateAny(event, [

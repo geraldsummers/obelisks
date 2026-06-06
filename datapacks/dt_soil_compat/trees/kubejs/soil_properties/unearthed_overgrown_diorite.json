@@ -1,8 +1,0 @@
-{
-  "primitive_soil": "unearthed:overgrown_diorite",
-  "acceptable_soils": [
-    "dirt_like"
-  ],
-  "substitute_soil": "grass_block",
-  "only_if_loaded": "unearthed"
-}

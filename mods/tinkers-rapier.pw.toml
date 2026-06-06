@@ -1,0 +1,13 @@
+name = "Tinkers' Rapier"
+filename = "tinker_rapier-1.0.1-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1ca49cef230c3c7d3dc954c0eb25de85e1c1cead"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6950589
+project-id = 518284

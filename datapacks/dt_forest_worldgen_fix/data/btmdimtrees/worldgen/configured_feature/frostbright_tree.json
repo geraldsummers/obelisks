@@ -1,0 +1,7 @@
+{
+  "type": "btmdimtrees:species_tree",
+  "config": {
+    "species": "btmdimtrees:frostbright",
+    "radius": 3
+  }
+}

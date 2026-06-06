@@ -25,6 +25,72 @@
       "slot": "inventory"
     },
     {
+      "id": "thermometer",
+      "title": "Thermometer",
+      "category": "Climate",
+      "blurb": "A thin warning in your palm.",
+      "item": "cold_sweat:thermometer",
+      "count": 1,
+      "cost": 2,
+      "maxPurchases": 1,
+      "slot": "weapon.offhand"
+    },
+    {
+      "id": "leather_cap",
+      "title": "Leather Cap",
+      "category": "Climate",
+      "blurb": "Worn shelter for ears and sun.",
+      "item": "minecraft:leather_helmet",
+      "count": 1,
+      "cost": 2,
+      "maxPurchases": 1,
+      "slot": "armor:head"
+    },
+    {
+      "id": "leather_boots",
+      "title": "Leather Boots",
+      "category": "Climate",
+      "blurb": "Dry steps through spiteful weather.",
+      "item": "minecraft:leather_boots",
+      "count": 1,
+      "cost": 2,
+      "maxPurchases": 1,
+      "slot": "armor:feet"
+    },
+    {
+      "id": "goat_fur_lining",
+      "title": "Goat Fur",
+      "category": "Climate",
+      "blurb": "Soft lining against hard frost.",
+      "item": "cold_sweat:goat_fur",
+      "count": 1,
+      "cost": 1,
+      "maxPurchases": 2,
+      "slot": "inventory"
+    },
+    {
+      "id": "hoglin_hide_lining",
+      "title": "Hoglin Hide",
+      "category": "Climate",
+      "blurb": "Tough hide for angry heat.",
+      "item": "cold_sweat:hoglin_hide",
+      "count": 1,
+      "cost": 1,
+      "maxPurchases": 2,
+      "slot": "inventory"
+    },
+    {
+      "id": "chameleon_molt",
+      "title": "Chameleon Molt",
+      "category": "Climate",
+      "blurb": "Pale scales that answer weather.",
+      "item": "cold_sweat:chameleon_molt",
+      "count": 1,
+      "cost": 2,
+      "maxPurchases": 1,
+      "slot": "inventory"
+    },
+    {
       "id": "torch_bundle",
       "title": "Torch Bundle",
       "category": "Camp",
@@ -317,17 +383,6 @@
       "blurb": "Loose thread for field repairs.",
       "item": "minecraft:string",
       "count": 8,
-      "cost": 1,
-      "maxPurchases": 2,
-      "slot": "inventory"
-    },
-    {
-      "id": "flint_shards",
-      "title": "Flint Shards",
-      "category": "Craft",
-      "blurb": "Sharp stone from a riverbank.",
-      "item": "minecraft:flint",
-      "count": 4,
       "cost": 1,
       "maxPurchases": 2,
       "slot": "inventory"

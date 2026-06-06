@@ -1,18 +1,71 @@
-// Mobility and autonomous helper tools are powerful route-editing utilities. Keep
-// basic hooks early, then tier the stronger hooks and Create Stuff & Additions drones.
+// Mobility and autonomous helper tools are powerful route-editing utilities.
+// Keep them off the hand grid; tier hooks and Create Stuff & Additions drones
+// through mechanical assembly.
 
 function btmMobilityExists(id) {
     try { return Item.exists(id) } catch (e) { return false }
 }
 
-function btmMobilityShaped(event, output, pattern, key, recipeId) {
+function btmMobilityMechanical(event, output, pattern, key, recipeId) {
     if (!btmMobilityExists(output)) return
     event.remove({ output: output })
-    event.shaped(output, pattern, key).id(recipeId)
+    global.btmCreateMechanicalCrafting(event, recipeId, output, 1, pattern, key, true)
 }
 
 ServerEvents.recipes(function (event) {
-    btmMobilityShaped(event, 'rehooked:blaze_hook', [
+    btmMobilityMechanical(event, 'rehooked:wood_chain', [
+        ' SS',
+        'SCS',
+        'SS '
+    ], {
+        S: '#forge:rods/wooden',
+        C: 'kubejs:seared_machine_casing'
+    }, 'kubejs:rehooked/wood_chain_post_seared')
+
+    btmMobilityMechanical(event, 'rehooked:wood_hook', [
+        'RRC',
+        ' WH',
+        'W H'
+    ], {
+        R: 'farmersdelight:rope',
+        C: 'kubejs:seared_machine_casing',
+        W: 'rehooked:wood_chain',
+        H: '#forge:rods/wooden'
+    }, 'kubejs:rehooked/wood_hook_post_seared')
+
+    btmMobilityMechanical(event, 'rehooked:iron_hook', [
+        'IIC',
+        ' HI',
+        'L I'
+    ], {
+        I: '#forge:plates/iron',
+        C: 'kubejs:andesite_machine_casing',
+        H: 'rehooked:wood_hook',
+        L: 'minecraft:chain'
+    }, 'kubejs:rehooked/iron_hook_post_create')
+
+    btmMobilityMechanical(event, 'rehooked:diamond_chain', [
+        ' DD',
+        'DCD',
+        'DD '
+    ], {
+        D: '#forge:gems/diamond',
+        C: 'kubejs:brass_machine_casing'
+    }, 'kubejs:rehooked/diamond_chain_post_brass')
+
+    btmMobilityMechanical(event, 'rehooked:diamond_hook', [
+        'DDC',
+        ' HI',
+        'L I'
+    ], {
+        D: '#forge:gems/diamond',
+        C: 'kubejs:brass_machine_casing',
+        H: 'rehooked:iron_hook',
+        I: '#forge:plates/iron',
+        L: 'rehooked:diamond_chain'
+    }, 'kubejs:rehooked/diamond_hook_post_brass')
+
+    btmMobilityMechanical(event, 'rehooked:blaze_hook', [
         ' H ',
         'BPC',
         ' H '
@@ -23,7 +76,7 @@ ServerEvents.recipes(function (event) {
         C: 'heatsync:heat_pipe'
     }, 'kubejs:rehooked/blaze_hook_post_electricity')
 
-    btmMobilityShaped(event, 'rehooked:ender_hook', [
+    btmMobilityMechanical(event, 'rehooked:ender_hook', [
         ' E ',
         'HSH',
         ' E '
@@ -33,7 +86,7 @@ ServerEvents.recipes(function (event) {
         S: 'kubejs:space_machine_casing'
     }, 'kubejs:rehooked/ender_hook_post_space')
 
-    btmMobilityShaped(event, 'rehooked:red_hook', [
+    btmMobilityMechanical(event, 'rehooked:red_hook', [
         'QAQ',
         'HRH',
         'QAQ'
@@ -44,7 +97,7 @@ ServerEvents.recipes(function (event) {
         R: 'kubejs:impossible_circuit'
     }, 'kubejs:rehooked/red_hook_post_ae2')
 
-    btmMobilityShaped(event, 'create_sa:brass_drone', [
+    btmMobilityMechanical(event, 'create_sa:brass_drone', [
         'QPQ',
         'DAD',
         'QSQ'

@@ -12,7 +12,7 @@ Active downloaded mods are the current `mods/*.pw.toml` files. Active custom bun
 - `dtmalum-1.0.0.jar`
 - `heatsync-0.1.0.jar`
 - `latent_chemlib-0.1.0.jar`
-- `obelisks-1.0.0.jar`
+- `dimensionalfonts-1.0.0.jar`
 - `pillagercampaigns-0.2.0.jar`
 - `procedural_bouquets-0.1.0.jar`
 - `realisticores-0.1.0.jar`
@@ -61,11 +61,15 @@ Canonical custom mod sources live under `/home/gerald/mcmods`. Use `/home/gerald
 
 Prior repairs worth retaining as current expectations:
 
+- Forest generation in fresh server runtimes depends on repo datapacks being present in `world/datapacks`; `tools/bootstrap_server.sh` now injects source datapacks there for disposable server tests. `dt_forest_worldgen_fix` disables reliance on Nature's Spirit modified vanilla biome packs and adds explicit Dynamic Trees selectors for vanilla forest biomes. Hyle/Unearthed dirt replacement stays enabled; `btmfixes` registers 37 Unearthed regolith/overgrown surface blocks as Dynamic Trees dirt-like soil aliases. Do not restore Unearthed DT soil-property JSON files, because they make Dynamic Trees expect unregistered `rooty_unearthed_*` blocks during worldgen. Fixed-seed radius-3 evidence from `/tmp/btm-forest-audit-regolith-alias/result-radius3-regolith-on-alias.json`: forest 5280 expected DT branch blocks, old-growth birch 2238, dark forest 1305, and jungle 2369, all with zero missing chunks and all passing. The external DT Nature's Spirit addon still logs bad redwood species growth-logic ids; treat that as an addon bug unless patched in a custom jar.
+- Dimension forest coverage now includes CurseForge DT addons for Aether and Twilight Forest plus bundled `btmdimtrees` species/decorator coverage for Blue Skies, Undergarden, Finley, and Call From The Depths. Current radius-2 harness evidence: Aether skyroot grove 154 `dtaether:skyroot_branch`, Twilight dense forest 3528 DT branch blocks, Blue Skies sunset maple 1114 `btmdimtrees:maple_branch`, Undergarden wigglewood 398 `btmdimtrees:wigglewood_branch`, Finley living forest 737 `btmdimtrees:living_wood_branch`, and Call deepforest 587 `btmdimtrees:silent_tree_branch`.
 - `settlementroads` should avoid unbounded tick-time work and clean level-unload state.
 - `villagewalls` should cap automatic wall generation work and avoid endless retries for failed village cells.
 - `pillagercampaigns` placement and materialization scans should use already-loaded `LevelChunk` data via `getChunkNow`, not blocking `ServerLevel.getHeight` or `getBlockState` calls from chunk-load paths.
 - `btmfixes` includes compatibility behavior for C2ME safe-random guard noise around EMI tooltip indexing.
+- Worldgen C2ME compatibility fixes now include a pack datapack no-op for PVJ Nether `charred_bones` groundcover, and `meteor_ore_relocation` routes relocated Malum cthonic gold through vanilla `minecraft:ore` instead of Malum's custom cross-chunk writer.
 - `dtmalum` and `dthexerei` are the Dynamic Trees extension jars for Malum and Hexerei; rebuild and run both their unit tests and Forge game tests before redeploying either jar.
+- `latent_water_sim` finite water must preserve vanilla-facing water behavior through `FluidTags.WATER`, vanilla water `FluidState`, bucket pickup, waterlogged hosts, sponge absorption, lava hardening, farmland/crop support, entity water contact, external vanilla-water conversion, Weather2 rain accumulation, and snow/ice phase-change GameTests. Pack-owned code should use `FiniteWaterApi.isWaterLike`, `isFullWaterLike`, and `waterLikeVolume` instead of hard-coded `Blocks.WATER` identity checks. Third-party code that literally requires `state.is(Blocks.WATER)` cannot be made seamless without keeping a vanilla water block and losing finite volume semantics.
 
 Rebuild and redeploy custom jars deliberately; then sync, prune, boot, and validate with the relevant harness.
 

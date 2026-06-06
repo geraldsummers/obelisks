@@ -9,6 +9,14 @@
     "#minecraft:sand",
     "#minecraft:wool_carpets",
     {
+      "id": "#kubejs:dirt_like",
+      "required": false
+    },
+    {
+      "id": "#kubejs:grass_like",
+      "required": false
+    },
+    {
       "id": "#forge:gravel",
       "required": false
     },

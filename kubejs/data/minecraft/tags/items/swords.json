@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tinker_rapier:estoc_tic",
+    "tinker_rapier:rapier_tic",
+    "tinkers_katanas:katana",
+    "tinkersweaponry:greatsword"
+  ]
+}

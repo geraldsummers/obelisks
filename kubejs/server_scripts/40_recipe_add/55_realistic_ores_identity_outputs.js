@@ -160,6 +160,7 @@ var BTM_RO_DEPOSITS = [
 global.BTM_RO_SOLVENTS = BTM_RO_SOLVENTS
 global.BTM_RO_BALLS = BTM_RO_BALLS
 global.BTM_RO_DEPOSITS = BTM_RO_DEPOSITS
+global.BTM_RO_RETENTION = BTM_RO_RETENTION
 
 function btmRoItemExists(id) {
     if (!id) return false
@@ -267,53 +268,71 @@ function btmRoPressing(event, id, output, input) {
 }
 
 ServerEvents.recipes(function (event) {
-    event.shaped('kubejs:andesite_grinding_ball', [
-        ' A ',
-        'AAA',
-        ' A '
-    ], { A: 'create:andesite_alloy' }).id('kubejs:realistic_ores/grinding_ball/andesite')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/andesite', 'kubejs:andesite_grinding_ball', 1, [
+        'create:andesite_alloy',
+        'create:andesite_alloy',
+        'create:andesite_alloy',
+        'create:andesite_alloy',
+        'create:andesite_alloy'
+    ])
 
-    event.shaped('kubejs:iron_grinding_ball', [
-        ' I ',
-        'III',
-        ' I '
-    ], { I: '#forge:ingots/iron' }).id('kubejs:realistic_ores/grinding_ball/iron')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/iron', 'kubejs:iron_grinding_ball', 1, [
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron'
+    ])
 
-    event.shaped('kubejs:brass_grinding_ball', [
-        ' B ',
-        'BBB',
-        ' B '
-    ], { B: '#forge:ingots/brass' }).id('kubejs:realistic_ores/grinding_ball/brass')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/brass', 'kubejs:brass_grinding_ball', 1, [
+        '#forge:ingots/brass',
+        '#forge:ingots/brass',
+        '#forge:ingots/brass',
+        '#forge:ingots/brass',
+        '#forge:ingots/brass'
+    ])
 
-    event.shaped('kubejs:steel_grinding_ball', [
-        ' S ',
-        'SIS',
-        ' S '
-    ], { S: '#forge:ingots/steel', I: 'kubejs:iron_grinding_ball' }).id('kubejs:realistic_ores/grinding_ball/steel')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/steel', 'kubejs:steel_grinding_ball', 1, [
+        '#forge:ingots/steel',
+        '#forge:ingots/steel',
+        '#forge:ingots/steel',
+        '#forge:ingots/steel',
+        'kubejs:iron_grinding_ball'
+    ], 'heated')
 
-    event.shaped('kubejs:nickel_grinding_ball', [
-        ' N ',
-        'NSN',
-        ' N '
-    ], { N: '#forge:ingots/nickel', S: 'kubejs:steel_grinding_ball' }).id('kubejs:realistic_ores/grinding_ball/nickel')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/nickel', 'kubejs:nickel_grinding_ball', 1, [
+        '#forge:ingots/nickel',
+        '#forge:ingots/nickel',
+        '#forge:ingots/nickel',
+        '#forge:ingots/nickel',
+        'kubejs:steel_grinding_ball'
+    ], 'heated')
 
-    event.shaped('kubejs:titanium_grinding_ball', [
-        ' T ',
-        'TNT',
-        ' T '
-    ], { T: 'chemlib:titanium_ingot', N: 'kubejs:nickel_grinding_ball' }).id('kubejs:realistic_ores/grinding_ball/titanium')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/titanium', 'kubejs:titanium_grinding_ball', 1, [
+        'chemlib:titanium_ingot',
+        'chemlib:titanium_ingot',
+        'chemlib:titanium_ingot',
+        'chemlib:titanium_ingot',
+        'kubejs:nickel_grinding_ball'
+    ], 'heated')
 
-    event.shaped('kubejs:blood_infused_grinding_ball', [
-        'SBS',
-        'BIB',
-        'SBS'
-    ], { S: 'bloodmagic:demonslate', B: 'minecraft:redstone', I: 'kubejs:steel_grinding_ball' }).id('kubejs:realistic_ores/grinding_ball/blood_infused')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/blood_infused', 'kubejs:blood_infused_grinding_ball', 1, [
+        'bloodmagic:demonslate',
+        'bloodmagic:demonslate',
+        'bloodmagic:demonslate',
+        'minecraft:redstone',
+        'minecraft:redstone',
+        'minecraft:redstone',
+        'kubejs:steel_grinding_ball'
+    ], 'heated')
 
-    event.shaped('kubejs:fluix_grinding_ball', [
-        'FCF',
-        'CSC',
-        'FCF'
-    ], { F: 'ae2:fluix_crystal', C: 'ae2:certus_quartz_crystal', S: 'kubejs:steel_grinding_ball' }).id('kubejs:realistic_ores/grinding_ball/fluix')
+    global.btmCreateCompacting(event, 'kubejs:realistic_ores/grinding_ball/fluix', 'kubejs:fluix_grinding_ball', 1, [
+        'ae2:fluix_crystal',
+        'ae2:fluix_crystal',
+        'ae2:certus_quartz_crystal',
+        'ae2:certus_quartz_crystal',
+        'kubejs:steel_grinding_ball'
+    ], 'heated')
 
     for (var d = 0; d < BTM_RO_DEPOSITS.length; d++) {
         for (var s = 0; s < BTM_RO_SOLVENTS.length; s++) {

@@ -47,11 +47,18 @@ ServerEvents.recipes(function (event) {
 
     if (Item.exists('mahoutsukai:attuned_diamond') && Item.exists('mahoutsukai:attuner')) {
         event.remove({ id: 'mahoutsukai:attuned_diamond' })
-        event.shapeless('mahoutsukai:attuned_diamond', [
-            'mahoutsukai:attuner',
-            'minecraft:diamond',
-            BM_SLATE_T3
-        ]).id('kubejs:mahoutsukai/attuned_diamond_blood_gate')
+        event.custom({
+            type: 'bloodmagic:alchemytable',
+            input: [
+                { item: 'mahoutsukai:attuner' },
+                { item: 'minecraft:diamond' },
+                { item: BM_SLATE_T3 }
+            ],
+            output: { item: 'mahoutsukai:attuned_diamond' },
+            syphon: 9000,
+            ticks: 180,
+            upgradeLevel: 3
+        }).id('kubejs:mahoutsukai/attuned_diamond_blood_gate')
     }
 
     gate(event, { id: 'eidolon:crucible' }, 'eidolon:pewter_ingot', BM_SLATE_T3)

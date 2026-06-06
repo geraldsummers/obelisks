@@ -143,7 +143,7 @@
 		#Mechanical modifiers.
 		attributes = []
 		#Main hand item.
-		main_hand = "create:wrench=1"
+		main_hand = "additionalweaponry:wrench=1"
 		#Off hand item.
 		off_hand = ""
 		#Armor items.
@@ -2286,4 +2286,3 @@
 		items = []
 		#Item ID for the class icon.
 		icon = "minecraft:barrier"
-

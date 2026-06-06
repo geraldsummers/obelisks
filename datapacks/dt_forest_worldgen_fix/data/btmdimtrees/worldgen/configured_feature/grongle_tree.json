@@ -1,0 +1,7 @@
+{
+  "type": "btmdimtrees:species_tree",
+  "config": {
+    "species": "btmdimtrees:grongle",
+    "radius": 3
+  }
+}

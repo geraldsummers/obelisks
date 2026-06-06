@@ -1,8 +1,0 @@
-{
-  "primitive_soil": "unearthed:grey_limestone_grassy_regolith",
-  "acceptable_soils": [
-    "dirt_like"
-  ],
-  "substitute_soil": "grass_block",
-  "only_if_loaded": "unearthed"
-}

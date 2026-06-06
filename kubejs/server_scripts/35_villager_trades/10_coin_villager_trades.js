@@ -29,7 +29,7 @@ var BTM_INDUSTRIAL_IRON_MARKET = [
     ['minecraft:mason',3,4,'create:cut_limestone',16,8,8],
     ['minecraft:mason',3,4,'create:cut_scoria',16,8,8],
     ['minecraft:mason',3,4,'create:cut_ochrum',16,8,8],
-    ['minecraft:toolsmith',2,3,'create:wrench',1,6,6],
+    ['minecraft:toolsmith',2,3,'additionalweaponry:wrench',1,6,6],
     ['minecraft:toolsmith',2,3,'create:super_glue',1,8,6],
     ['minecraft:toolsmith',3,4,'create:belt_connector',16,8,8],
     ['minecraft:toolsmith',3,4,'create:depot',2,8,8],
@@ -265,7 +265,7 @@ var BTM_WANDERER_MARKET = [
     [2, 'platinum', 7, 'minecraft:wild_armor_trim_smithing_template', 1, 1, 22],
     [2, 'iron', 5, 'create:track', 32, 5, 12],
     [2, 'brass', 6, 'create:super_glue', 1, 4, 14],
-    [2, 'gold', 6, 'create:wrench', 1, 3, 16],
+    [2, 'gold', 6, 'additionalweaponry:wrench', 1, 3, 16],
     [2, 'gold', 7, 'create:linked_controller', 1, 2, 18],
     [2, 'gold', 6, 'create:copper_diving_helmet', 1, 2, 16],
     [2, 'gold', 6, 'create:copper_diving_boots', 1, 2, 16],
@@ -707,7 +707,7 @@ if (typeof MoreJSEvents !== 'undefined') {
             [2, 'iron', 4, 'minecraft:iron_pickaxe', 1, 4, 6],
             [2, 'brass', 4, 'minecraft:shears', 1, 6, 6],
             [3, 'brass', 4, 'create:super_glue', 1, 6, 10],
-            [4, 'gold', 6, 'create:wrench', 1, 4, 16],
+            [4, 'gold', 6, 'additionalweaponry:wrench', 1, 4, 16],
             [5, 'platinum', 6, 'minecraft:diamond_pickaxe', 1, 2, 22]
         ])
 

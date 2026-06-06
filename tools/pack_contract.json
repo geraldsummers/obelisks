@@ -105,7 +105,6 @@
       "mods/dthexerei-1.0.0.jar",
       "mods/heatsync-0.1.0.jar",
       "mods/latent_chemlib-0.1.0.jar",
-      "mods/obelisks-1.0.0.jar",
       "mods/oc2rwireless-1.0.0.jar",
       "mods/pillagercampaigns-0.2.0.jar",
       "mods/procedural_bouquets-0.1.0.jar",
@@ -684,7 +683,7 @@
         "systemRefs": [
           "adventure_dimensions_combat_pressure"
         ],
-        "claim": "Dimension travel is source-checked to meteor rift anchors and Creating Space rocket routes; direct portal/key routes, TFTH config, pillager campaigns, spawn randomizer, and village-wall pressure require scenario execution for full proof.",
+        "claim": "Dimension travel is source-checked to Dimensional Fonts and Creating Space rocket routes; direct portal/key routes, TFTH config, pillager campaigns, spawn randomizer, and village-wall pressure require scenario execution for full proof.",
         "evidence": [
           "kubejs/server_scripts/30_recipe_replace/170_space_dimension_access_gates.js",
           "kubejs/client_scripts/40_hide_quarantined_systems.js",
@@ -887,9 +886,9 @@
         "minTestFiles": 10
       },
       {
-        "id": "obelisks",
+        "id": "dimensionalfonts",
         "repo": "meteor-obelisks",
-        "jar": "mods/obelisks-1.0.0.jar",
+        "jar": "mods/dimensionalfonts-1.0.0.jar",
         "minCodeFiles": 50,
         "minTestFiles": 5
       },

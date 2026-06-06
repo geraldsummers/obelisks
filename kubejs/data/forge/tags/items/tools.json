@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:tools/axes",
+    "#forge:tools/bows",
+    "#forge:tools/crossbows",
+    "#forge:tools/fishing_rods",
+    "#forge:tools/hoes",
+    "#forge:tools/knives",
+    "#forge:tools/pickaxes",
+    "#forge:tools/scythe",
+    "#forge:tools/shears",
+    "#forge:tools/shields",
+    "#forge:tools/shovels",
+    "#forge:tools/swords",
+    "#forge:tools/tridents",
+    "#forge:tools/wrench",
+    "#forge:tools/wrenches"
+  ]
+}

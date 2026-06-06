@@ -8,7 +8,7 @@ function btmBpExists(id) {
 function btmBpRecipe(event, output, pattern, key, id) {
     if (!btmBpExists(output)) return
     event.remove({ output: output })
-    event.shaped(output, pattern, key).id(id)
+    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, key, true)
 }
 
 ServerEvents.recipes(function (event) {

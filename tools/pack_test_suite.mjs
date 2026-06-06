@@ -853,7 +853,7 @@ function testGeneratedRecipeGraph() {
   const undertiered = []
   const materialRisks = []
   const alchemistryPlayerFacing = []
-  const finalEffectiveGraph = recipes.some(r => r.namespace === 'kubejs' || String(r.id).startsWith('kubejs:'))
+  const finalEffectiveGraph = manifest.recipeEventStage !== 'pre_mutation_recipe_event'
 
   for (const r of recipes) {
     if (ids.has(r.id)) dupes.push(r.id)

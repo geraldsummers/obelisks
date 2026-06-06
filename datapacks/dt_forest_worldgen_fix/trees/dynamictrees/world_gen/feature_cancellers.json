@@ -1,0 +1,74 @@
+[
+  {
+    "__comment": "Keep Dynamic Trees' default vanilla tree suppression active; this file replaces the bundled default.",
+    "select": {
+      "name": "minecraft:.*",
+      "tag": "#minecraft:is_overworld"
+    },
+    "cancellers": {
+      "type": "tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "select": {
+      "name": "minecraft:.*",
+      "tag": "#forge:is_lush"
+    },
+    "cancellers": {
+      "type": "rooted_tree",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "select": {
+      "name": "minecraft:.*",
+      "tag": "#forge:is_mushroom"
+    },
+    "cancellers": {
+      "type": "mushroom",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "select": {
+      "name": "minecraft:.*forest",
+      "tag": "#minecraft:is_nether"
+    },
+    "cancellers": {
+      "type": "fungus",
+      "namespace": "minecraft"
+    }
+  },
+  {
+    "__comment": "Suppress static tree features injected by forest-biome addons; Dynamic Trees selectors provide the replacement trees.",
+    "select": {
+      "name": ".*",
+      "tag": "#minecraft:is_overworld"
+    },
+    "cancellers": {
+      "type": "tree",
+      "namespace": "natures_spirit"
+    }
+  },
+  {
+    "select": {
+      "name": ".*",
+      "tag": "#minecraft:is_overworld"
+    },
+    "cancellers": {
+      "type": "tree",
+      "namespace": "projectvibrantjourneys"
+    }
+  },
+  {
+    "select": {
+      "name": ".*",
+      "tag": "#minecraft:is_overworld"
+    },
+    "cancellers": {
+      "type": "tree",
+      "namespace": "forbidden_arcanus"
+    }
+  }
+]

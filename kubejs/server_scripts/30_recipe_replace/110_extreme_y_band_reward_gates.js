@@ -39,12 +39,12 @@ function btmExtremeItemExists(id) {
 
 function btmExtremeRecipe(event, output, pattern, keys, id) {
     if (!btmExtremeItemExists(output)) {
-        console.warn('[extreme-y-rewards] Skipping recipe for missing output: ' + output)
+        console.info('[extreme-y-rewards] Skipping recipe for missing optional output: ' + output)
         return
     }
 
     event.remove({ output: output })
-    event.shaped(output, pattern, keys).id(id)
+    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, keys, true)
 }
 
 ServerEvents.recipes(function (event) {

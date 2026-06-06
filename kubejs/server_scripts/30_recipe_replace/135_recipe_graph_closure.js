@@ -35,13 +35,13 @@ function btmClosureRemoveIds(event, ids) {
 function btmClosureShaped(event, output, pattern, keys, id) {
     if (!btmClosureExists(output)) return
     event.remove({ output: output })
-    event.shaped(output, pattern, keys).id(id)
+    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, keys, true)
 }
 
 function btmClosureShapeless(event, output, inputs, id) {
     if (!btmClosureExists(output)) return
     event.remove({ output: output })
-    event.shapeless(output, inputs).id(id)
+    global.btmCreateMechanicalFromInputs(event, id, output, 1, inputs)
 }
 
 function btmClosureReplace(event, outputs, oldInputs, newInput) {

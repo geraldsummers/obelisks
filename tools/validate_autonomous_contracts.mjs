@@ -478,7 +478,13 @@ function validateVanillaStyleToolSuppression() {
     'undergarden',
     'twilightforest:ironwood_pickaxe',
     'ars_nouveau:enchanters_sword',
-    'create:cardboard_sword'
+    'blue_skies:maple_spear',
+    'create:cardboard_sword',
+    'farmersdelight:flint_knife',
+    'notreepunching:flint_pickaxe',
+    'notreepunching:iron_saw',
+    'rpgstats:iron_ritual_dagger',
+    'undergarden:forgotten_battleaxe'
   ]
   const missingToolMarkers = requiredToolMarkers.filter(marker => !server.includes(marker) || !client.includes(marker))
   missingToolMarkers.length
@@ -489,6 +495,7 @@ function validateVanillaStyleToolSuppression() {
     'event.remove({ output: tool })',
     'event.remove({ id: tool })',
     'event.remove({ type: tool })',
+    "event.remove({ type: 'minecraft:smithing_transform', output: tool })",
     'BTM_VANILLA_STYLE_TOOL_RECIPE_IDS',
     'occultism:ritual/craft_infused_pickaxe',
     "event.add('c:hidden_from_recipe_viewers'",
@@ -505,11 +512,19 @@ function validateVanillaStyleToolSuppression() {
     ? fail('vanilla-style tools are hidden from JEI and EMI', missingClientNeedles.join(', '))
     : ok('vanilla-style tools are hidden from JEI and EMI')
 
-  const forbiddenFamilies = ["['tconstruct'", '"tconstruct"', 'notreepunching:flint_pickaxe']
+  const forbiddenFamilies = ["['tconstruct'", '"tconstruct"']
   const forbiddenHits = forbiddenFamilies.filter(marker => server.includes(marker) || client.includes(marker))
   forbiddenHits.length
-    ? fail('vanilla-style tool suppression avoids TConstruct and stale inactive No Tree Punching entries', forbiddenHits.join(', '))
-    : ok('vanilla-style tool suppression avoids TConstruct and stale inactive No Tree Punching entries')
+    ? fail('vanilla-style tool suppression avoids TConstruct tool-building entries', forbiddenHits.join(', '))
+    : ok('vanilla-style tool suppression avoids TConstruct tool-building entries')
+
+  const skippedRemovalNeedles = [
+    'if (!btmItemExists(tool)) continue',
+    'if (btmItemExists(tool)) event.remove'
+  ].filter(marker => server.includes(marker))
+  skippedRemovalNeedles.length
+    ? fail('vanilla-style tool recipe removals are unconditional', skippedRemovalNeedles.join(', '))
+    : ok('vanilla-style tool recipe removals are unconditional')
 }
 
 function validateVanillishExpertRecipePass() {
@@ -659,6 +674,24 @@ function validateWorldgenStaticContracts() {
     ? ok('RBP Overworld physics is explicit-definition only')
     : fail('RBP Overworld physics is explicit-definition only', 'DefaultBlockDefinition must be empty to avoid fallback physics on decorative/support-sensitive mod blocks')
 
+  const generatedPackSolid = read('config/rbp/block_definitions/generated_pack_solid_blocks.toml')
+  const generatedPackSolidIds = [...generatedPackSolid.matchAll(/"([a-z0-9_.-]+:[a-z0-9_/.-]+)"/g)].map(match => match[1])
+  const generatedPackSolidSet = new Set(generatedPackSolidIds)
+  generatedPackSolidIds.length >= 9000 && !generatedPackSolidSet.has('minecraft:bedrock')
+    ? ok('RBP generated pack-solid definition covers broad solid block surface', `${generatedPackSolidIds.length} explicit ids`)
+    : fail('RBP generated pack-solid definition covers broad solid block surface', `${generatedPackSolidIds.length} explicit ids; bedrock included=${generatedPackSolidSet.has('minecraft:bedrock')}`)
+
+  const dynamicTreesManagedRbpPatterns = [
+    /^dynamictrees:/,
+    /^dynamictreesplus:/,
+    /^btmdimtrees:/,
+    /^dt[a-z0-9_]*:/
+  ]
+  const dynamicTreesManagedPackSolidIds = generatedPackSolidIds.filter(id => dynamicTreesManagedRbpPatterns.some(pattern => pattern.test(id)))
+  dynamicTreesManagedPackSolidIds.length
+    ? fail('RBP generated pack-solid definition excludes Dynamic Trees-managed blocks', dynamicTreesManagedPackSolidIds.slice(0, 20).join(', '))
+    : ok('RBP generated pack-solid definition excludes Dynamic Trees-managed blocks')
+
   const generatedRbpWhitelistFiles = walk('config/rbp/block_definitions', file => path.basename(file).startsWith('generated_modded_') && file.endsWith('.toml'))
   const generatedRbpWhitelistText = generatedRbpWhitelistFiles.map(read).join('\n')
   const generatedRbpWhitelistIds = generatedRbpWhitelistText
@@ -673,13 +706,7 @@ function validateWorldgenStaticContracts() {
   const forbiddenRbpWhitelistPatterns = [
     /(^|:)bedrock$/,
     /sky_stone|skystone/,
-    /^dynamictrees:/,
-    /^dynamictreesplus:/,
-    /^dtarsnouveau:/,
-    /^dtquark:/,
-    /^dtnatures_spirit:/,
-    /^dthexerei:/,
-    /^dtmalum:/,
+    ...dynamicTreesManagedRbpPatterns,
     /^projectvibrantjourneys:/,
     /(^|[_:/])seashell($|[_:/])/,
     /(^|[_:/])shell($|[_:/])/
@@ -940,12 +967,6 @@ function validateDimensionProofGraphStarts() {
   }
 }
 
-function readZipJson(zipPath, entryPath) {
-  const result = spawnSync('unzip', ['-p', full(zipPath), entryPath], { encoding: 'utf8' })
-  if (result.status !== 0 || !result.stdout.trim()) throw new Error(`${zipPath}:${entryPath}`)
-  return JSON.parse(result.stdout)
-}
-
 function validateDimensionTravelRoutes() {
   const routePass = 'kubejs/server_scripts/30_recipe_replace/170_space_dimension_access_gates.js'
   const hiddenPass = 'kubejs/client_scripts/40_hide_quarantined_systems.js'
@@ -1050,31 +1071,9 @@ function validateDimensionTravelRoutes() {
   const aetherObelisk = readJson('config/obelisks/obelisks/aether.json')
   const obeliskProblems = []
   if (aetherObelisk.targetDimension !== 'aether:the_aether' || aetherObelisk.enabled !== true) obeliskProblems.push('aether config')
-  const expectedJarRoutes = {
-    nether: 'minecraft:the_nether',
-    end: 'minecraft:the_end',
-    undergarden: 'undergarden:undergarden',
-    everbright: 'blue_skies:everbright',
-    everdawn: 'blue_skies:everdawn',
-    otherside: 'deeperdarker:otherside'
-  }
-  for (const [route, target] of Object.entries(expectedJarRoutes)) {
-    try {
-      const data = readZipJson('mods/obelisks-1.0.0.jar', `defaults/obelisks/${route}.json`)
-      if (data.targetDimension !== target || data.enabled !== true) obeliskProblems.push(`${route} -> ${data.targetDimension || '<missing>'}`)
-    } catch (error) {
-      obeliskProblems.push(error.message)
-    }
-  }
-  try {
-    const overworld = readZipJson('mods/obelisks-1.0.0.jar', 'defaults/obelisks/overworld.json')
-    if (overworld.enabled !== false) obeliskProblems.push('overworld obelisk enabled')
-  } catch (error) {
-    obeliskProblems.push(error.message)
-  }
   obeliskProblems.length
-    ? fail('meteor rift anchors own meteor-routed dimensions', obeliskProblems.join(', '))
-    : ok('meteor rift anchors own meteor-routed dimensions', `${Object.keys(expectedJarRoutes).length + 1} routes`)
+    ? fail('configured font routes include required Aether entry', obeliskProblems.join(', '))
+    : ok('configured font routes include required Aether entry')
 
   const contract = readJson('tools/pack_contract.json')
   const sourceRoot = process.env.BTM_CUSTOM_MODS_DIR || contract.customMods.sourceRoot

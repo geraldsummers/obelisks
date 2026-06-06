@@ -4,6 +4,6 @@
     "dirt_like",
     "mud_like"
   ],
-  "substitute_soil": "mud",
+  "substitute_soil": "dynamictrees:mud",
   "only_if_loaded": "goety"
 }

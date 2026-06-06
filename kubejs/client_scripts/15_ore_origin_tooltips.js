@@ -254,7 +254,7 @@ var BTM_METEOR_ORE_ORIGINS = [
         lines: btmOreOriginLines('Meteor sky dimensions', 'Natural generation is in Aether, Everbright, and Everdawn meteor target biomes.', 'The original Overworld generators are disabled.')
     },
     {
-        ores: ['gilded_darkstone', 'jade_ore', 'cthonic_gold_ore', 'soulstone_ore', 'brilliant_stone', 'xpetrified_ore'],
+        ores: ['darkstone', 'gilded_darkstone', 'jade_ore', 'cthonic_gold_ore', 'soulstone_ore', 'brilliant_stone', 'xpetrified_ore'],
         items: [
             'forbidden_arcanus:darkstone',
             'forbidden_arcanus:gilded_darkstone',
@@ -351,6 +351,10 @@ var BTM_METEOR_EV_STONES = [
     'aether_mossy_holystone',
     'blue_skies_turquoise_stone',
     'blue_skies_lunar_stone',
+    'blue_skies_rimestone',
+    'blue_skies_taratite',
+    'blue_skies_umber',
+    'blue_skies_cinderstone',
     'undergarden_depthrock',
     'undergarden_shiverstone',
     'undergarden_tremblecrust',

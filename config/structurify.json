@@ -7,7 +7,9 @@
     "enable_global_spacing_and_separation_modifier": false,
     "global_spacing_and_separation_modifier": 1.0
   },
-  "structure_namespaces": [],
+  "structure_namespaces": [
+    { "name": "latent_water_sim", "is_disabled": true }
+  ],
   "structures": [
     { "name": "cataclysm:acropolis", "is_disabled": true },
 
@@ -51,6 +53,8 @@
     { "name": "graveyard:lich_prison", "is_disabled": true },
     { "name": "mna:faction/boss/council_island", "is_disabled": true },
     { "name": "minecraft:ancient_city", "is_disabled": true },
+    { "name":  "forbidden_arcanus:nipa_floating", "is_disabled": true },
+
 
 
 

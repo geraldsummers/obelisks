@@ -25,7 +25,7 @@ ServerEvents.recipes(function (event) {
     }).id('kubejs:create/mechanical_crafting/heatsync/coolant_exchanger')
 
     event.remove({ output: 'procedural_bouquets:bouquet_grid' })
-    event.shaped('procedural_bouquets:bouquet_grid', [
+    global.btmCreateMechanicalCrafting(event, 'kubejs:decor/procedural_bouquets/bouquet_grid', 'procedural_bouquets:bouquet_grid', 1, [
         'SSS',
         'SCS',
         'PAP'
@@ -34,5 +34,5 @@ ServerEvents.recipes(function (event) {
         C: 'wares:cardboard_box',
         P: 'minecraft:stick',
         A: 'create:andesite_casing'
-    }).id('kubejs:decor/procedural_bouquets/bouquet_grid')
+    }, true)
 })

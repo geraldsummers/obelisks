@@ -4,6 +4,6 @@
     "dirt_like",
     "mud_like"
   ],
-  "substitute_soil": "grass_block",
+  "substitute_soil": "dynamictrees:grass_block",
   "only_if_loaded": "immersive_weathering"
 }

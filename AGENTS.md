@@ -55,7 +55,6 @@ Do not sync or delete player/runtime state by default. Use explicit reset flags 
 - Server apply: `tools/sync_to_server.sh --apply --server-dir server-instance`
 - Client dry run: `tools/sync_to_client.sh --dry-run --client-dir /path/to/client`
 - Client apply: `tools/sync_to_client.sh --apply --client-dir /path/to/client`
-- All instances: `tools/sync_all_instances.sh --dry-run --client-dir /path/to/client`
 - Bootstrap server: `tools/bootstrap_server.sh --server-dir /tmp/btm-server --port 25566`
 - Launch server: `tools/launch_server_direct.sh --server-dir /tmp/btm-server -- nogui`
 - Bootstrap client: `tools/bootstrap_client_runtime.sh --client-dir /tmp/btm-client`
@@ -98,6 +97,7 @@ Current LC/DH scenario:
 - Prefer data-driven generation over copy-paste recipes.
 - Remove bypasses; do not introduce deadlocks.
 - Update docs when progression behavior changes.
+- Commit as you make changes: after each coherent completed change, run the relevant validation, commit the finished work, and push the current branch. Do not leave completed work uncommitted or unpushed unless the user explicitly asks to hold it locally.
 
 ## Validate Before Shipping
 1. `node --check` for touched JS scripts.

@@ -3,12 +3,12 @@
 #	Namespaces:   '<minecraft>'
 #	Tags:         '#forge:stone'
 #	IDs:          'minecraft:stone'
-Blocks = ["#minecraft:dirt", "minecraft:clay", "minecraft:crimson_nylium", "minecraft:dirt_path", "minecraft:farmland", "minecraft:mangrove_roots", "minecraft:mud", "minecraft:mycelium", "minecraft:packed_mud", "minecraft:podzol", "minecraft:sculk", "minecraft:soul_sand", "minecraft:soul_soil", "minecraft:warped_nylium"]
+Blocks = ["#minecraft:dirt", "#kubejs:dirt_like", "minecraft:clay", "minecraft:crimson_nylium", "minecraft:dirt_path", "minecraft:farmland", "minecraft:mangrove_roots", "minecraft:mud", "minecraft:mycelium", "minecraft:packed_mud", "minecraft:podzol", "minecraft:sculk", "minecraft:soul_sand", "minecraft:soul_soil", "minecraft:warped_nylium"]
 
 [Physics]
 	#The maximum weight the block(s) can support both horizontally and vertically.
 	#Range: > 0
-	SupportStrength = 31300
+	SupportStrength = 0
 
 	#Additional support strength to apply to the amount of weight the block(s) can support above when acting as a beam.
 	#A value of 1.0 will allow the block(s) to support an infinite amount of weight, whereas a value of 0.0 will not apply any additional strengthening.
@@ -20,10 +20,10 @@ Blocks = ["#minecraft:dirt", "minecraft:clay", "minecraft:crimson_nylium", "mine
 	Mass = 650.0
 
 	#Whether the block(s) can hang from other blocks for support.
-	CanHang = true
+	CanHang = false
 
 	#Whether the block(s) can attach to the sides of other blocks for support.
-	CanAttach = true
+	CanAttach = false
 
 	#Whether the block(s) can diagonally attach to other blocks for support.
 	CanAttachDiagonally = false
@@ -46,7 +46,7 @@ Blocks = ["#minecraft:dirt", "minecraft:clay", "minecraft:crimson_nylium", "mine
 
 	#The maximum force the block(s) can withstand before being broken.
 	#Range: > 0
-	Strength = 391200
+	Strength = 195600
 
 	#Whether the block(s) can be supported by liquids that are below.
 	FloatsOnLiquid = false
@@ -55,7 +55,7 @@ Blocks = ["#minecraft:dirt", "minecraft:clay", "minecraft:crimson_nylium", "mine
 	#Note: Directions are relative to the orientation of the block(s) (excluding vertical axis), not the world itself.
 	[Physics.ExtendedCollisionBounds]
 		#Fully extends the collision bounds of the block(s) in the UP direction.
-		Up = true
+		Up = false
 
 		#Fully extends the collision bounds of the block(s) in the DOWN direction.
 		Down = false
@@ -75,4 +75,3 @@ Blocks = ["#minecraft:dirt", "minecraft:clay", "minecraft:crimson_nylium", "mine
 [ChunkAnalysis]
 	#Whether the block(s) should be processed during chunk analysis updates.
 	Enabled = true
-

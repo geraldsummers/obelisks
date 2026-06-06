@@ -1,0 +1,146 @@
+[
+  {
+    "_comment": "Plain forest should not rely on the broad minecraft:is_forest fallback; some pack biome stacks fail that path.",
+    "select": "minecraft:forest",
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 4,
+          "birch": 1
+        }
+      },
+      "density": [
+        8
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:flower_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 4,
+          "birch": 1
+        }
+      },
+      "density": [
+        8
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:birch_forest",
+    "apply": {
+      "species": "birch",
+      "density": [
+        8
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:old_growth_birch_forest",
+    "apply": {
+      "species": "tall_birch",
+      "density": [
+        12
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:dark_forest",
+    "apply": {
+      "species": "dark_oak",
+      "density": [
+        16
+      ],
+      "chance": 1,
+      "forestness": 1,
+      "multipass": true
+    }
+  },
+  {
+    "select": "minecraft:windswept_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "oak": 1,
+          "spruce": 1
+        }
+      },
+      "density": [
+        6
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:jungle",
+    "apply": {
+      "species": {
+        "random": {
+          "jungle": 15,
+          "mega_jungle": 3,
+          "cocoa": 1
+        }
+      },
+      "density": [
+        8
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:sparse_jungle",
+    "apply": {
+      "species": {
+        "random": {
+          "jungle": 10,
+          "jungle_undergrowth": 2,
+          "cocoa": 1
+        }
+      },
+      "density": [
+        8
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:bamboo_jungle",
+    "apply": {
+      "species": {
+        "random": {
+          "jungle": 3,
+          "mega_jungle": 1
+        }
+      },
+      "density": [
+        1
+      ],
+      "chance": 1,
+      "forestness": 1
+    }
+  },
+  {
+    "select": "minecraft:swamp",
+    "apply": {
+      "species": "swamp_oak",
+      "density": [
+        0.2
+      ],
+      "chance": 0.75,
+      "forestness": 1
+    }
+  }
+]

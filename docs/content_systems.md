@@ -8,11 +8,11 @@ Important policies:
 
 - Remove easy metal compression and raw nugget/ingot/block liquidity.
 - Replace vanilla valuables in high-impact recipes with manufactured parts, casings, slates, alloys, plates, circuits, or terrain-gated materials.
-- Keep easy hand-stacked automation and furnace metal shortcuts out of the grid/furnace: `145_vanillish_recipe_expert_pass.js` routes ordinary engineering to Create assembly/compaction and magic or alchemy workstations to Blood Magic alchemy.
+- Keep easy hand-stacked automation and furnace metal shortcuts out of the grid/furnace: `145_vanillish_recipe_expert_pass.js` routes ordinary engineering to Create assembly/compaction and magic or alchemy workstations to Blood Magic alchemy. `80_recipe_policy/10_no_complex_grid_defaults.js` is the late guard for complex defaults: only vanilla-power survival, camp, decor, and ordinary block recipes should remain crafting-table content. Removed complex defaults are re-exposed through non-grid surfaces, primarily Create mechanical crafting/mixing or Blood Magic alchemy for small magic recipes, so recipe reachability is preserved without making the crafting grid authoritative for modded systems.
 - Remove teleportation, chunk-loading, creative, infinity, and package-wormhole bypasses unless explicitly re-authored.
 - Keep recipes Rhino-safe and deterministic under `kubejs:*` IDs.
 
-Dimension travel is intentionally narrow: meteor rift anchors and Creating Space rocket routes are the only authored cross-dimension surfaces. Direct portal/key recipes, portal structures, and JEI/EMI visibility for those route items should stay disabled unless a route is deliberately re-authored through one of those two surfaces.
+Dimension travel is intentionally narrow: Dimensional Fonts and Creating Space rocket routes are the only authored cross-dimension surfaces. Direct portal/key recipes, portal structures, and JEI/EMI visibility for those route items should stay disabled unless a route is deliberately re-authored through one of those two surfaces.
 
 ## Materials And Chemistry
 
@@ -33,11 +33,13 @@ The lava-depth material loop is a late exception within the Overworld geology st
 
 ## Create And Tinkers
 
-Tinkers establishes seared/scorched metallurgy before Create authority. Create addon integration is handled through `121_create_stack_integration_gates.js`; PNCR compression gates in `122_pneumaticcraft_create_pressing_gates.js` make compressed iron and compressed stone Create pressing outputs and remove pressure/explosion shortcuts.
+Tinkers establishes seared/scorched metallurgy before Create authority. Create addon integration is handled through `121_create_stack_integration_gates.js`; PNCR compression gates in `122_pneumaticcraft_create_pressing_gates.js` make compressed iron and compressed stone Create pressing outputs and remove pressure/explosion shortcuts. Authored factory-machine recipes use Create mechanical crafting/compacting by default, TCon remains the molten metallurgy surface, Blood Magic alchemy owns magic work, and PNCR pressure or assembly owns late electronics/circuit completion.
 
-The first woodcutting tool is a flint TConstruct hand axe crafted from a Farmer's Delight flint knife and a stick. No Tree Punching tools, loose rocks, pottery, vessels, and straw-binding routes are not part of the active early-game spine.
+The first hand tools are authored TConstruct stacks: a flint hand axe crafted from flint, Farmer's Delight straw, and a stick, plus a flint/wood butcher knife crafted from three flint and a stick. No Tree Punching tools, loose rocks, and pottery/vessel routes are not part of the active early-game spine.
 
-`60_vanilla_tools_to_tcon_heads.js` removes and hides vanilla-shaped pickaxe, axe, shovel, sword, and hoe outputs from Minecraft and installed tool-clone mods. Existing vanilla tool inputs are remapped to TConstruct parts where recipes still need that semantic role; player-facing tool progression should remain TConstruct-authored rather than disposable material-tier clones.
+Installed TConstruct tool add-ons broaden the authored tool and weapon surface without returning to disposable vanilla-tier tools. Additional Weaponry and Battle Spades provide the current primitive/survival+ edge; Tinkers' Things, Katanas, Rapier, and Weaponry add halberd, staff, chisel, shortbow/blowpipe, katana, shuriken, rapier/estoc, greatsword, lance, and pike families. Better Combat weapon attributes are pack-authored under `kubejs/data/*/weapon_attributes/` for these added tools so animation categories stay explicit.
+
+`60_vanilla_tools_to_tcon_heads.js` removes and hides vanilla-shaped pickaxe, axe, shovel, sword, and hoe outputs from Minecraft and installed tool-clone mods, plus disposable material-tier knives, mattocks, saws, spears, daggers, and battleaxes where they duplicate the vanilla tool lane. Existing vanilla tool inputs are remapped to TConstruct parts where recipes still need that semantic role; player-facing tool progression should remain TConstruct-authored rather than disposable material-tier clones.
 
 Create trains and physical logistics are a first-class progression lane. Package teleportation remains removed until redesigned. The bundled `create_train_fuel_scaling` addon keeps Create's normal powered-top-speed fuel rate but scales drain exponentially by actual train speed, so slower local routes are cheaper and high-speed routes pay a heavier fuel premium.
 
@@ -45,9 +47,7 @@ Create trains and physical logistics are a first-class progression lane. Package
 
 ## World Physics
 
-Realistic Block Physics uses authored material definitions where available, then applies the `stone` definition as the overworld default for every otherwise-unmatched supported block. Bedrock, world-control/admin blocks, and AE2 sky stone blocks are intentional gravity-exempt exceptions so chunk analysis cannot destabilize the world floor or structure internals.
-
-Dynamic Trees namespaces are also excluded from the Overworld default physics pass. Branches and generated leaf blocks use Dynamic Trees' own support, decay, and growth lifecycle; letting the RBP stone default analyze those blocks can make generated trees disassemble during chunk analysis.
+Realistic Block Physics stays explicit-definition only in `config/rbp/world_definitions/overworld.toml`; the default block definition remains empty so non-solid blocks are not swept in by fallback physics. `tools/generate_rbp_pack_solid_blocks.mjs` generates `config/rbp/block_definitions/generated_pack_solid_blocks.toml` from the runtime block audit plus current RBP IDs, giving pack solid/collision-like blocks RBP coverage while excluding bedrock, Dynamic Trees-managed blocks, virtual/control blocks, plants/fluids, attached thin controls, and support-owned blocks.
 
 ## Blood Magic And Body Systems
 
@@ -61,7 +61,7 @@ Food and potion identity are handled through `70_food_potion_reagents.js`: food 
 
 Non-village natural crop and edible-plant diversity is relocated into Undergarden forage by `datapacks/datapack_foraging_everywhere`. Village farms, Wares, and villager food routes remain the explicit surface exception; ordinary Overworld biome forage should not be the first renewable source for specialty crops.
 
-Starting loadouts are owned by the embark point-buy config in `config/classselector/embark.json`; `config/classselector/kits.json` remains safe legacy fallback data. The active embark quota is 18 points. The pool is support-only: hydration, light, camp supplies, scouting, local maps, rope, animal routing, small vanilla rail starts, seed/ration starts, drink stock, and low craft materials. It must not include starter tools, logs/planks, generic storage, coins, scuba gear, gliders, recovery compass routes, renewable specialty crop starts, ready-made TNT or TNT inputs, Protection Pixel gear, AE2, PNCR pressure items, Blood Magic LP/orbs, Create trains, Wares routes, or other missing-logistics progression before those systems provide power.
+Starting loadouts are owned by the embark point-buy config in `config/classselector/embark.json`; `config/classselector/kits.json` remains safe legacy fallback data. The active embark quota is 18 points. The pool is support-only: hydration, climate scouting/protection, light, camp supplies, local maps, rope, animal routing, small vanilla rail starts, seed/ration starts, drink stock, and low craft materials. Climate starts are deliberately modest: thermometer, leather cap/boots, and small Cold Sweat insulation scraps, not full climate suits or machines. It must not include starter tools, logs/planks, generic storage, coins, scuba gear, gliders, recovery compass routes, renewable specialty crop starts, ready-made TNT or TNT inputs, Protection Pixel gear, AE2, PNCR pressure items, Blood Magic LP/orbs, Create trains, Wares routes, or other missing-logistics progression before those systems provide power.
 
 `126_cross_magic_irons_spellcraft.js` is the current Iron's Spells integration surface. It treats Iron's spellcraft as an authored branch of the magic spine: Blood Magic slates set tier, Ars apparatus handles source stabilization, Botania runic altar handles rune school identity, Hexerei cauldron handles folk/alchemical setup, Malum spirit infusion upgrades school power, and Goety rituals handle cursed/high-danger artifacts. Occultism, Forbidden and Arcanus, Reliquary, Hexerei, Botania, Goety, Ars, and Malum reagents are intentionally mixed into the recipes so Iron's spell outputs cannot be mass-crafted from only vanilla valuables and Iron's own drops.
 

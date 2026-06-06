@@ -116,7 +116,7 @@ function btmAestheticAssembly(event, program, id, input, output) {
 function btmAestheticEnergising(event, id, output, energy, inputs) {
     if (!btmAestheticCanMake(output, inputs)) return
     btmAestheticRemove(event, output)
-    event.shapeless(output, inputs).id('kubejs:casing_aesthetic/powergrid_component/' + id)
+    global.btmPncrPressure(event, 'kubejs:casing_aesthetic/pncr_pressure/' + id, output, 1, Math.max(1.0, energy / 4000), inputs)
 }
 
 function btmAestheticMechanical(event, id, output, pattern, keys) {

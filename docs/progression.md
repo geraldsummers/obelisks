@@ -24,7 +24,7 @@ Meteor/obelisk dimensions are origin proofs for outside reward systems. A valid 
 
 Current graph-start recipe gates are in `kubejs/server_scripts/30_recipe_replace/155_dimension_proof_graph_starts.js`. Existing Nether and Undergarden edges live in the TCon grout and Blood Magic altar passes.
 
-Dimension travel has two authored surfaces only: meteor rift anchors from `obelisks-1.0.0.jar` plus `config/obelisks/`, and Creating Space rocket graph entries under `kubejs/data/*/creatingspace/rocket_accessible_dimension/`. Direct portal/key routes are removed or hidden by `170_space_dimension_access_gates.js`, `40_hide_quarantined_systems.js`, `config/twilightforest-common.toml`, and `config/structurify.json`. Lost Cities, Twilight Forest, Fallout Wastelands, Finley, and Call From The Depths are space-routed adventure dimensions.
+Dimension travel has two authored surfaces only: Dimensional Fonts from `dimensionalfonts-1.0.0.jar` plus `config/obelisks/`, and Creating Space rocket graph entries under `kubejs/data/*/creatingspace/rocket_accessible_dimension/`. Direct portal/key routes are removed or hidden by `170_space_dimension_access_gates.js`, `40_hide_quarantined_systems.js`, `config/twilightforest-common.toml`, and `config/structurify.json`. Lost Cities, Twilight Forest, Fallout Wastelands, Finley, and Call From The Depths are space-routed adventure dimensions.
 
 | Dimension | Graph Start Opened | Proof Route |
 | --- | --- | --- |
@@ -58,12 +58,13 @@ The active casing catalogue is `global.BTM_MACHINE_CASING_TIERS` in `kubejs/star
 
 ## Early Chokepoints
 
-- No Tree Punching is replaced by a KubeJS first-hour gate: bare hands can break only the `kubejs:hand_breakable` block whitelist and loose surfaces such as sand or gravel, while other blocks need matching tools. Surface plants and all leaf-like blocks, including Dynamic Trees leaves, are knife-only so the Farmer's Delight flint knife is the first authored harvest intermediary. The first authored woodcutting tool is a flint TConstruct hand axe made from that knife and a stick.
+- No Tree Punching is replaced by a KubeJS first-hour gate: bare hands can break only the `kubejs:hand_breakable` block whitelist and loose surfaces such as sand or gravel, while other blocks need matching tools. Surface plants and all leaf-like blocks, including Dynamic Trees leaves, are knife-only. The first authored tools are a flint TConstruct hand axe made from flint, Farmer's Delight straw, and a stick, and a flint/wood TConstruct butcher knife made from three flint and a stick.
+- TConstruct tool variety comes from authored tool families rather than vanilla-tier disposable tools. Current add-ons include Additional Weaponry, Battle Spades, Tinkers' Things, Katanas, Rapier, and Weaponry; their Better Combat categories are explicit datapack attributes so halberds, katanas, rapiers, lances, pikes, greatswords, and related tools animate consistently.
 - Netherrack grout keeps seared metallurgy tied to Nether-obelisk preparation.
 - `create:andesite_alloy` is an alloying output, not easy nugget crafting.
 - `create:deployer` gates `create:andesite_casing`.
 - More Red is the terrestrial primitive circuitry layer around early Create: red alloy comes from Create mixing, wire from Create pressing, and the soldering table consumes andesite-tier parts instead of Nether/blaze ingredients.
-- Vanilla-style automation such as pistons, hoppers, observers, rails, carts, and similar modded hand-stacked machinery is assembled on Create surfaces by `145_vanillish_recipe_expert_pass.js`; magic/alchemy workstations such as brewing, enchanting, Ars apparatus, and hellforged processing use Blood Magic alchemy instead of grid or furnace recipes.
+- Vanilla-style automation such as pistons, hoppers, observers, rails, carts, and similar modded hand-stacked machinery is assembled on Create surfaces by `145_vanillish_recipe_expert_pass.js`; magic/alchemy workstations such as brewing, enchanting, Ars apparatus, and hellforged processing use Blood Magic alchemy instead of grid or furnace recipes. The late grid policy in `80_recipe_policy/10_no_complex_grid_defaults.js` moves complex shaped/shapeless defaults from expert tech, magic, mobility, portable-storage, and mass-building namespaces onto non-grid surfaces while preserving vanilla-power survival, camp, decor, ordinary block recipes, and named early progression roots in the grid. Shaped tech defaults become Create mechanical crafting, shapeless tech defaults become Create mixing, and small magic defaults use Blood Magic alchemy.
 - Finished circuit items belong to PNCR assembly laser/drill. Earlier surfaces prepare boards, traces, wafers, and printed processors; PNCR assembly completes the circuit.
 - Passive Create SU sources are pushed to the andesite machine-casing tier.
 - Clean water, serious extraction, and body-system recovery depend on sustainable tech rather than free early infrastructure.

@@ -49,13 +49,8 @@ ServerEvents.recipes(function (event) {
         results: [{ item: 'create:andesite_casing' }]
     }).id('kubejs:create/deploying/andesite_casing')
 
-    // Gravel has value before bulk Create processing. TNT stays visible and reachable.
-    event.shapeless('minecraft:gunpowder', [
-        'minecraft:gravel',
-        'minecraft:flint',
-        'minecraft:charcoal'
-    ]).id('kubejs:survival/gunpowder_from_gravel_flint_charcoal')
-
+    // Gravel has value before bulk Create processing. TNT stays visible and reachable,
+    // but explosive work moves off the crafting table once Create is available.
     event.custom({
         type: 'create:milling',
         ingredients: [{ item: 'minecraft:gravel' }],
@@ -66,13 +61,17 @@ ServerEvents.recipes(function (event) {
         ]
     }).id('kubejs:create/milling/gravel_to_flint_and_gunpowder')
 
-    event.shaped('minecraft:tnt', [
-        'GSG',
-        'SFS',
-        'GSG'
-    ], {
-        G: 'minecraft:gunpowder',
-        S: '#forge:sand',
-        F: 'minecraft:flint'
-    }).id('kubejs:survival/tnt_with_flint_core')
+    event.remove({ output: 'minecraft:tnt', type: 'minecraft:crafting_shaped' })
+    event.remove({ output: 'minecraft:tnt', type: 'minecraft:crafting_shapeless' })
+    global.btmCreateCompacting(event, 'kubejs:create/compacting/tnt_with_flint_core', 'minecraft:tnt', 1, [
+        'minecraft:gunpowder',
+        'minecraft:gunpowder',
+        'minecraft:gunpowder',
+        'minecraft:gunpowder',
+        '#forge:sand',
+        '#forge:sand',
+        '#forge:sand',
+        '#forge:sand',
+        'minecraft:flint'
+    ])
 })

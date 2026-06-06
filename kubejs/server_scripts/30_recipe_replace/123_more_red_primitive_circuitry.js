@@ -65,7 +65,7 @@ ServerEvents.recipes(function (event) {
         results: [{ item: BTM_MORERED.wire, count: 2 }]
     }).id('kubejs:morered/create_pressing/red_alloy_wire')
 
-    event.shaped(BTM_MORERED.solderingTable, [
+    global.btmCreateMechanicalCrafting(event, 'kubejs:morered/soldering_table_terrestrial_create', BTM_MORERED.solderingTable, 1, [
         'PPP',
         'WCW',
         ' A '
@@ -74,7 +74,7 @@ ServerEvents.recipes(function (event) {
         W: BTM_MORERED.wire,
         C: '#forge:plates/copper',
         A: 'kubejs:andesite_machine_casing'
-    }).id('kubejs:morered/soldering_table_terrestrial_create')
+    }, true)
 
     btmMoreRedSolder(event, 'diode', 'morered:diode', [
         BTM_MORERED.plate,

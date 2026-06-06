@@ -30,6 +30,35 @@ function btmGateOutputs(event, outputs, oldInputs, newInput) {
     for (var i = 0; i < outputs.length; i++) btmReplaceInputs(event, outputs[i], oldInputs, newInput)
 }
 
+function btmGateItemExists(id) {
+    try { return Item.exists(id) } catch (e) { return false }
+}
+
+function btmGatePath(id) {
+    var split = id.indexOf(':')
+    return split < 0 ? id : id.substring(split + 1)
+}
+
+function btmMechanicalGate(event, output, pattern, keys, id, count) {
+    if (!btmGateItemExists(output)) return
+    event.remove({ output: output })
+    global.btmCreateMechanicalCrafting(event, id, output, count || 1, pattern, keys, true)
+}
+
+function btmMechanicalGateMany(event, outputs, idPrefix, core, part, shell) {
+    for (var i = 0; i < outputs.length; i++) {
+        btmMechanicalGate(event, outputs[i], [
+            'SPS',
+            'PCP',
+            'SPS'
+        ], {
+            S: shell,
+            P: part,
+            C: core
+        }, 'kubejs:' + idPrefix + '/' + btmGatePath(outputs[i]))
+    }
+}
+
 ServerEvents.recipes(function (event) {
     // No infinite storage or creative-scale carry/storage loops.
     btmRemoveOutputs(event, [
@@ -72,6 +101,46 @@ ServerEvents.recipes(function (event) {
         'sophisticatedstorage:advanced_alchemy_upgrade'
     ], ['minecraft:redstone', '#forge:dusts/redstone', 'minecraft:gold_ingot', '#forge:ingots/gold', 'minecraft:diamond', '#forge:gems/diamond', 'minecraft:ender_pearl', '#forge:ender_pearls'], BTM_GATE.ae2)
 
+    btmMechanicalGate(event, 'sophisticatedbackpacks:backpack', [
+        'LSL',
+        'SCS',
+        'LSL'
+    ], {
+        L: 'minecraft:leather',
+        S: 'minecraft:string',
+        C: BTM_GATE.seared
+    }, 'kubejs:sophisticatedbackpacks/backpack_seared')
+
+    btmMechanicalGateMany(event, [
+        'sophisticatedbackpacks:upgrade_base',
+        'sophisticatedbackpacks:crafting_upgrade',
+        'sophisticatedbackpacks:deposit_upgrade',
+        'sophisticatedbackpacks:pickup_upgrade',
+        'sophisticatedbackpacks:filter_upgrade'
+    ], 'sophisticatedbackpacks/seared', BTM_GATE.seared, 'morered:red_alloy_wire', 'minecraft:string')
+
+    btmMechanicalGateMany(event, [
+        'sophisticatedbackpacks:compacting_upgrade',
+        'sophisticatedbackpacks:void_upgrade',
+        'sophisticatedbackpacks:magnet_upgrade',
+        'sophisticatedbackpacks:pump_upgrade',
+        'sophisticatedbackpacks:xp_pump_upgrade',
+        'sophisticatedbackpacks:stack_upgrade_tier_1',
+        'sophisticatedbackpacks:stack_upgrade_tier_2',
+        'sophisticatedbackpacks:stack_upgrade_tier_3',
+        'sophisticatedbackpacks:stack_upgrade_tier_4',
+        'sophisticatedbackpacks:inception_upgrade'
+    ], 'sophisticatedbackpacks/brass', BTM_GATE.brass, 'create:precision_mechanism', '#forge:plates/brass')
+
+    btmMechanicalGateMany(event, [
+        'sophisticatedbackpacks:feeding_upgrade',
+        'sophisticatedbackpacks:advanced_feeding_upgrade',
+        'sophisticatedbackpacks:alchemy_upgrade',
+        'sophisticatedbackpacks:advanced_alchemy_upgrade',
+        'sophisticatedbackpacks:tool_swapper_upgrade',
+        'sophisticatedbackpacks:advanced_tool_swapper_upgrade'
+    ], 'sophisticatedbackpacks/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+
     // Sophisticated Storage: local bulk storage is allowed; controllers and high upgrades wait for AE2-local-intelligence tier.
     btmGateOutputs(event, [
         'sophisticatedstorage:controller',
@@ -96,6 +165,43 @@ ServerEvents.recipes(function (event) {
         'sophisticatedstorage:diamond_to_netherite_tier_upgrade'
     ], ['minecraft:diamond', '#forge:gems/diamond', 'minecraft:netherite_ingot', '#forge:ingots/netherite'], BTM_GATE.space)
 
+    btmMechanicalGateMany(event, [
+        'sophisticatedstorage:upgrade_base',
+        'sophisticatedstorage:filter_upgrade',
+        'sophisticatedstorage:pickup_upgrade',
+        'sophisticatedstorage:hopper_upgrade',
+        'sophisticatedstorage:smelting_upgrade',
+        'sophisticatedstorage:smoking_upgrade',
+        'sophisticatedstorage:blasting_upgrade',
+        'sophisticatedstorage:stonecutter_upgrade',
+        'sophisticatedstorage:crafting_upgrade'
+    ], 'sophisticatedstorage/seared', BTM_GATE.seared, 'morered:red_alloy_wire', '#forge:plates/iron')
+
+    btmMechanicalGateMany(event, [
+        'sophisticatedstorage:controller',
+        'sophisticatedstorage:storage_io',
+        'sophisticatedstorage:storage_tool',
+        'sophisticatedstorage:compression_upgrade',
+        'sophisticatedstorage:compacting_upgrade',
+        'sophisticatedstorage:advanced_compacting_upgrade',
+        'sophisticatedstorage:advanced_hopper_upgrade',
+        'sophisticatedstorage:advanced_void_upgrade',
+        'sophisticatedstorage:alchemy_upgrade',
+        'sophisticatedstorage:advanced_alchemy_upgrade'
+    ], 'sophisticatedstorage/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+
+    btmMechanicalGateMany(event, [
+        'sophisticatedstorage:basic_to_diamond_tier_upgrade',
+        'sophisticatedstorage:copper_to_diamond_tier_upgrade',
+        'sophisticatedstorage:iron_to_diamond_tier_upgrade',
+        'sophisticatedstorage:gold_to_diamond_tier_upgrade',
+        'sophisticatedstorage:basic_to_netherite_tier_upgrade',
+        'sophisticatedstorage:copper_to_netherite_tier_upgrade',
+        'sophisticatedstorage:iron_to_netherite_tier_upgrade',
+        'sophisticatedstorage:gold_to_netherite_tier_upgrade',
+        'sophisticatedstorage:diamond_to_netherite_tier_upgrade'
+    ], 'sophisticatedstorage/space', BTM_GATE.space, 'kubejs:sky_steel_sheet', '#forge:ingots/netherite')
+
     // Building Wands and Building Gadgets: mass construction edits are post-AE2.
     btmGateOutputs(event, [
         'wands:netherite_wand',
@@ -115,6 +221,28 @@ ServerEvents.recipes(function (event) {
     btmGateOutputs(event, [
         'buildinggadgets2:gadget_destruction'
     ], ['minecraft:ender_pearl', '#forge:ender_pearls', 'minecraft:redstone', '#forge:dusts/redstone'], BTM_GATE.ae2)
+
+    btmMechanicalGateMany(event, [
+        'buildinggadgets2:gadget_building',
+        'buildinggadgets2:gadget_exchanging',
+        'buildinggadgets2:template_manager',
+        'buildinggadgets2:gadget_copy_paste',
+        'buildinggadgets2:gadget_cut_paste',
+        'buildinggadgets2:gadget_destruction'
+    ], 'buildinggadgets2/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+
+    btmMechanicalGateMany(event, [
+        'wands:stone_wand',
+        'wands:copper_wand',
+        'wands:iron_wand'
+    ], 'wands/seared', BTM_GATE.seared, 'morered:red_alloy_wire', '#forge:rods/wooden')
+
+    btmMechanicalGateMany(event, [
+        'wands:diamond_wand',
+        'wands:magic_bag_1',
+        'wands:magic_bag_2',
+        'wands:magic_bag_3'
+    ], 'wands/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
 
     // Chunk loading is remote-site infrastructure. It must not appear before power/computing logistics.
     btmGateOutputs(event, [
@@ -152,7 +280,7 @@ ServerEvents.recipes(function (event) {
     // AOE villager trading is too strong for the early village economy.
     // PROVISIONAL - requires playtesting.
     event.remove({ output: 'tradingpost:trading_post' })
-    event.shaped('tradingpost:trading_post', [
+    global.btmCreateMechanicalCrafting(event, 'kubejs:late_game/tradingpost/trading_post', 'tradingpost:trading_post', 1, [
         'GEG',
         'PAP',
         'WWW'
@@ -162,7 +290,7 @@ ServerEvents.recipes(function (event) {
         P: 'pneumaticcraft:printed_circuit_board',
         A: BTM_GATE.ae2,
         W: '#minecraft:planks'
-    }).id('kubejs:late_game/tradingpost/trading_post')
+    }, true)
 
     // Economy tools use coins instead of emeralds where there is a clear recipe hook.
     btmReplaceInputs(event, 'wares:delivery_table', ['minecraft:ink_sac'], 'createdeco:iron_coin')

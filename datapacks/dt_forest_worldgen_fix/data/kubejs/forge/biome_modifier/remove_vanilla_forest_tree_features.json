@@ -1,0 +1,23 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#kubejs:dt_vanilla_forest_replacement_targets",
+  "features": [
+    "minecraft:bamboo",
+    "minecraft:bamboo_light",
+    "minecraft:bamboo_vegetation",
+    "minecraft:birch_checked",
+    "minecraft:dark_oak_checked",
+    "minecraft:fancy_oak_checked",
+    "minecraft:jungle_tree",
+    "minecraft:mega_jungle_tree_checked",
+    "minecraft:oak_checked",
+    "minecraft:trees_birch",
+    "minecraft:trees_birch_and_oak",
+    "minecraft:trees_flower_forest",
+    "minecraft:trees_jungle",
+    "minecraft:trees_sparse_jungle",
+    "minecraft:trees_swamp",
+    "minecraft:trees_windswept_forest"
+  ],
+  "step": "vegetal_decoration"
+}

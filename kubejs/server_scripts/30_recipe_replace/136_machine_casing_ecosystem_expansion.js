@@ -59,9 +59,13 @@ function btmEcoCanCraft(recipe) {
 function btmEcoAddShaped(event, recipe) {
     if (!btmEcoCanCraft(recipe)) return
     event.remove({ output: recipe.output })
-    var output = recipe.output
-    if (recipe.count && recipe.count > 1) output = recipe.count + 'x ' + recipe.output
-    event.shaped(output, recipe.pattern, recipe.keys).id(recipe.id)
+    if (recipe.output.indexOf('tconstruct:') === 0) {
+        var output = recipe.output
+        if (recipe.count && recipe.count > 1) output = recipe.count + 'x ' + recipe.output
+        event.shaped(output, recipe.pattern, recipe.keys).id(recipe.id)
+        return
+    }
+    global.btmCreateMechanicalCrafting(event, recipe.id, recipe.output, recipe.count || 1, recipe.pattern, recipe.keys, true)
 }
 
 function btmEcoAddMany(event, recipes) {

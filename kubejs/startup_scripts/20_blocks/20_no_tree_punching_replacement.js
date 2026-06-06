@@ -1,17 +1,10 @@
 // Lightweight No Tree Punching replacement.
 // Hands can gather only the authored survival whitelist; other blocks need matching tools.
 
-var BtmNtprBlockTags = Java.loadClass('net.minecraft.tags.BlockTags')
-var BtmNtprItemTags = Java.loadClass('net.minecraft.tags.ItemTags')
-var BtmNtprToolActions = Java.loadClass('net.minecraftforge.common.ToolActions')
 var BtmNtprEventResult = Java.loadClass('net.minecraftforge.eventbus.api.Event$Result')
-var BtmNtprResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 var BtmNtprForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
 
-console.info('[BTM-NTPR] registering no-tree-punching replacement block gates')
-
-var BtmNtprHandBreakable = BtmNtprBlockTags.create(new BtmNtprResourceLocation('kubejs', 'hand_breakable'))
-var BtmNtprKnives = BtmNtprItemTags.create(new BtmNtprResourceLocation('forge', 'tools/knives'))
+var BtmNtprAssignments = global.BTM_NTPR_AUDIT_ASSIGNMENTS || { blocks: {}, items: {} }
 
 function btmNtprCall(target, methodNames, args) {
     if (target === null || target === undefined) return null
@@ -33,52 +26,46 @@ function btmNtprBool(value) {
     return value === true || String(value) === 'true'
 }
 
-function btmNtprTagId(tag) {
-    var location = btmNtprCall(tag, ['location'], [])
-    return location ? String(location) : String(tag)
-}
-
-function btmNtprStateIs(state, tag) {
-    var wanted = btmNtprTagId(tag)
-    var stream = btmNtprCall(state, ['getTags', 'm_204343_'], [])
-    var iterator = stream ? btmNtprCall(stream, ['iterator'], []) : null
-    if (!iterator) return false
-
-    while (btmNtprBool(btmNtprCall(iterator, ['hasNext'], []))) {
-        if (btmNtprTagId(btmNtprCall(iterator, ['next'], [])) === wanted) return true
+function btmNtprMakeSet(values) {
+    var out = {}
+    if (!values) return out
+    try {
+        for (var i = 0; i < values.length; i++) out[String(values[i])] = true
+    } catch (ignored) {
     }
-
-    return false
+    return out
 }
+
+var BtmNtprBlockSets = {
+    hand: btmNtprMakeSet(BtmNtprAssignments.blocks.hand),
+    knife: btmNtprMakeSet(BtmNtprAssignments.blocks.knife),
+    axe: btmNtprMakeSet(BtmNtprAssignments.blocks.axe),
+    pickaxe: btmNtprMakeSet(BtmNtprAssignments.blocks.pickaxe),
+    shovel: btmNtprMakeSet(BtmNtprAssignments.blocks.shovel),
+    hoe: btmNtprMakeSet(BtmNtprAssignments.blocks.hoe),
+    sword: btmNtprMakeSet(BtmNtprAssignments.blocks.sword)
+}
+var BtmNtprItemSets = {
+    knife: btmNtprMakeSet(BtmNtprAssignments.items.knife),
+    axe: btmNtprMakeSet(BtmNtprAssignments.items.axe),
+    pickaxe: btmNtprMakeSet(BtmNtprAssignments.items.pickaxe),
+    shovel: btmNtprMakeSet(BtmNtprAssignments.items.shovel),
+    hoe: btmNtprMakeSet(BtmNtprAssignments.items.hoe),
+    sword: btmNtprMakeSet(BtmNtprAssignments.items.sword)
+}
+
+console.info('[BTM-NTPR] registering audited block gates schema=' + (BtmNtprAssignments.schema || 'UNKNOWN') +
+    ' hand=' + Object.keys(BtmNtprBlockSets.hand).length +
+    ' knife=' + Object.keys(BtmNtprBlockSets.knife).length +
+    ' axe=' + Object.keys(BtmNtprBlockSets.axe).length +
+    ' pickaxe=' + Object.keys(BtmNtprBlockSets.pickaxe).length +
+    ' shovel=' + Object.keys(BtmNtprBlockSets.shovel).length +
+    ' hoe=' + Object.keys(BtmNtprBlockSets.hoe).length +
+    ' sword=' + Object.keys(BtmNtprBlockSets.sword).length)
 
 function btmNtprStackIsEmpty(stack) {
     if (stack === null || stack === undefined) return true
     return btmNtprBool(btmNtprCall(stack, ['isEmpty', 'm_41619_'], []))
-}
-
-function btmNtprStackCanPerform(stack, action) {
-    if (btmNtprStackIsEmpty(stack)) return false
-    return btmNtprBool(btmNtprCall(stack, ['canPerformAction'], [action]))
-}
-
-function btmNtprStackHasTag(stack, tag) {
-    if (btmNtprStackIsEmpty(stack)) return false
-
-    var wanted = btmNtprTagId(tag)
-    var stream = btmNtprCall(stack, ['getTags'], [])
-    var iterator = stream ? btmNtprCall(stream, ['iterator'], []) : null
-    if (!iterator) return false
-
-    while (btmNtprBool(btmNtprCall(iterator, ['hasNext'], []))) {
-        if (btmNtprTagId(btmNtprCall(iterator, ['next'], [])) === wanted) return true
-    }
-
-    return false
-}
-
-function btmNtprStackCorrectForDrops(stack, state) {
-    if (btmNtprStackIsEmpty(stack)) return false
-    return btmNtprBool(btmNtprCall(stack, ['isCorrectToolForDrops', 'm_41735_'], [state]))
 }
 
 function btmNtprIsCreative(player) {
@@ -96,87 +83,45 @@ function btmNtprStateId(state) {
     return key ? String(key) : ''
 }
 
-function btmNtprIsLeafState(state) {
-    var id = btmNtprStateId(state)
-    if (!id) return false
-
-    var path = id.indexOf(':') >= 0 ? id.split(':')[1] : id
-    return path.indexOf('leaves') >= 0 || path.indexOf('leaf') >= 0
+function btmNtprStackId(stack) {
+    if (btmNtprStackIsEmpty(stack)) return ''
+    var item = btmNtprCall(stack, ['getItem', 'm_41720_'], [])
+    var key = item ? BtmNtprForgeRegistries.ITEMS.getKey(item) : null
+    return key ? String(key) : ''
 }
 
-function btmNtprIsLooseSurfaceState(state) {
-    var id = btmNtprStateId(state)
-    if (!id) return false
-
-    var path = id.indexOf(':') >= 0 ? id.split(':')[1] : id
-    return path === 'gravel' ||
-        path === 'sand' ||
-        path === 'red_sand' ||
-        path.indexOf('gravel') >= 0 ||
-        path.lastIndexOf('_sand') === path.length - '_sand'.length
+function btmNtprBlockIn(setName, id) {
+    return id && BtmNtprBlockSets[setName] && BtmNtprBlockSets[setName][id] === true
 }
 
-function btmNtprIsSurfacePlantState(state) {
-    var id = btmNtprStateId(state)
-    if (!id) return false
-
-    var path = id.indexOf(':') >= 0 ? id.split(':')[1] : id
-    return path === 'grass' ||
-        path === 'short_grass' ||
-        path === 'tall_grass' ||
-        path === 'fern' ||
-        path === 'large_fern' ||
-        path === 'dead_bush' ||
-        path === 'sugar_cane' ||
-        path === 'cactus' ||
-        path === 'bamboo' ||
-        path === 'bamboo_sapling' ||
-        path === 'vine' ||
-        path === 'cave_vines' ||
-        path === 'cave_vines_plant' ||
-        path === 'glow_lichen' ||
-        path.indexOf('grass') >= 0 ||
-        path.indexOf('fern') >= 0 ||
-        path.indexOf('flower') >= 0 ||
-        path.indexOf('bush') >= 0 ||
-        path.indexOf('shrub') >= 0 ||
-        path.indexOf('reed') >= 0 ||
-        path.indexOf('vine') >= 0
-}
-
-function btmNtprIsHandBreakable(state) {
-    if (btmNtprIsSurfacePlantState(state) || btmNtprIsLeafState(state)) return false
-
-    return btmNtprStateIs(state, BtmNtprHandBreakable) ||
-        btmNtprIsLooseSurfaceState(state)
+function btmNtprItemIn(setName, id) {
+    return id && BtmNtprItemSets[setName] && BtmNtprItemSets[setName][id] === true
 }
 
 function btmNtprHasMatchingTool(player, state) {
     if (btmNtprIsCreative(player)) return true
 
+    var id = btmNtprStateId(state)
+    if (!id) return false
+
     var stack = btmNtprCall(player, ['getMainHandItem', 'm_21205_'], [])
-    if (btmNtprIsSurfacePlantState(state) || btmNtprIsLeafState(state)) {
-        return btmNtprStackHasTag(stack, BtmNtprKnives)
-    }
+    var itemId = btmNtprStackId(stack)
 
-    var axeBlock = btmNtprStateIs(state, BtmNtprBlockTags.MINEABLE_WITH_AXE)
-    var pickaxeBlock = btmNtprStateIs(state, BtmNtprBlockTags.MINEABLE_WITH_PICKAXE)
-    var shovelBlock = btmNtprStateIs(state, BtmNtprBlockTags.MINEABLE_WITH_SHOVEL)
-    var hoeBlock = btmNtprStateIs(state, BtmNtprBlockTags.MINEABLE_WITH_HOE)
-    var swordBlock = btmNtprStateIs(state, BtmNtprBlockTags.SWORD_EFFICIENT)
-
-    if (axeBlock && btmNtprStackCanPerform(stack, BtmNtprToolActions.AXE_DIG)) return true
-    if (pickaxeBlock && btmNtprStackCanPerform(stack, BtmNtprToolActions.PICKAXE_DIG) && btmNtprStackCorrectForDrops(stack, state)) return true
-    if (shovelBlock && btmNtprStackCanPerform(stack, BtmNtprToolActions.SHOVEL_DIG)) return true
-    if (hoeBlock && btmNtprStackCanPerform(stack, BtmNtprToolActions.HOE_DIG)) return true
-    if (swordBlock && btmNtprStackCanPerform(stack, BtmNtprToolActions.SWORD_DIG)) return true
+    if (btmNtprBlockIn('knife', id) && btmNtprItemIn('knife', itemId)) return true
+    if (btmNtprBlockIn('axe', id) && btmNtprItemIn('axe', itemId)) return true
+    if (btmNtprBlockIn('pickaxe', id) && btmNtprItemIn('pickaxe', itemId)) return true
+    if (btmNtprBlockIn('shovel', id) && btmNtprItemIn('shovel', itemId)) return true
+    if (btmNtprBlockIn('hoe', id) && btmNtprItemIn('hoe', itemId)) return true
+    if (btmNtprBlockIn('sword', id) && btmNtprItemIn('sword', itemId)) return true
 
     return false
 }
 
 function btmNtprShouldDeny(player, state) {
     if (!player || !state) return false
-    if (btmNtprIsHandBreakable(state)) return false
+    var id = btmNtprStateId(state)
+    if (!id) return false
+    if (btmNtprBlockIn('hand', id)) return false
     return !btmNtprHasMatchingTool(player, state)
 }
 

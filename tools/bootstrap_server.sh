@@ -70,6 +70,14 @@ done
 
 "$ROOT/tools/prune_runtime_mods.mjs" --apply --pack-root "$ROOT" --target-dir "$server_dir" --side server
 
+mkdir -p "$server_dir/world/datapacks"
+if [[ -d "$ROOT/datapacks" ]]; then
+  for datapack in "$ROOT"/datapacks/*; do
+    [[ -e "$datapack" ]] || continue
+    rsync -a "$datapack" "$server_dir/world/datapacks/"
+  done
+fi
+
 if [[ ! -f "$server_dir/run.sh" || ! -d "$server_dir/libraries/net/minecraftforge/forge/${BTM_FORGE_COORD}" ]]; then
   (cd "$server_dir" && "$java_bin" -jar "forge-${BTM_FORGE_COORD}-installer.jar" --installServer)
 fi

@@ -1,8 +1,0 @@
-{
-  "primitive_soil": "unearthed:kimberlite_regolith",
-  "acceptable_soils": [
-    "dirt_like"
-  ],
-  "substitute_soil": "dirt",
-  "only_if_loaded": "unearthed"
-}

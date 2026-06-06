@@ -305,6 +305,15 @@ ServerEvents.recipes(function (event) {
         P: BTM_VANILLISH.copperPlate
     })
 
+    btmVanMechanical(event, 'immersive_aircraft/boiler', 'immersive_aircraft:boiler', 1, [
+        'CCC',
+        'C C',
+        'AFA'
+    ], {
+        C: BTM_VANILLISH.copperPlate,
+        A: BTM_VANILLISH.andesite,
+        F: 'minecraft:furnace'
+    })
     btmVanMechanical(event, 'immersive_aircraft/industrial_gears', 'immersive_aircraft:industrial_gears', 1, [
         'CIC',
         'IAI',

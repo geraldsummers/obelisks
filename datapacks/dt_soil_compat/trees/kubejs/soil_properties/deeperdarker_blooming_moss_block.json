@@ -3,6 +3,6 @@
   "acceptable_soils": [
     "dirt_like"
   ],
-  "substitute_soil": "moss_block",
+  "substitute_soil": "dynamictrees:moss_block",
   "only_if_loaded": "deeperdarker"
 }

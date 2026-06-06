@@ -93,6 +93,8 @@ if [[ "${BTM_SKIP_PACKWIZ_DOWNLOADS:-0}" != "1" ]]; then
   "$ROOT/tools/resolve_packwiz_downloads.mjs" --apply --pack-root "$ROOT" --target-dir "$client_dir" --side client
 fi
 
+"$ROOT/tools/prune_runtime_mods.mjs" --apply --pack-root "$ROOT" --target-dir "$client_dir" --side client
+
 cat > "$client_dir/README.agent-runtime.txt" <<EOF
 Bound to Matter direct client runtime
 

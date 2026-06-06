@@ -65,7 +65,7 @@ function btmLateAssembly(event, program, id, input, output) {
 function btmLateEnergising(event, id, output, energy, inputs) {
     if (!btmLateCanMake(output, inputs)) return
     event.remove({ output: output })
-    event.shapeless(output, inputs).id('kubejs:late_material_economy/powergrid_component/' + id)
+    global.btmPncrPressure(event, 'kubejs:late_material_economy/pncr_pressure/' + id, output, 1, Math.max(1.0, energy / 4000), inputs)
 }
 
 function btmLateReplace(event, outputs, oldInputs, newInput) {
@@ -80,7 +80,7 @@ function btmLateShaped(event, output, pattern, keys, id) {
     if (!btmLateExists(output)) return
     for (var key in keys) if (!btmLateIngredientExists(keys[key])) return
     event.remove({ output: output })
-    event.shaped(output, pattern, keys).id(id)
+    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, keys, true)
 }
 
 ServerEvents.recipes(function (event) {

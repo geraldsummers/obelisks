@@ -69,6 +69,14 @@ Use `BTM_INSTANCE=/path/to/runtime BTM_STRICT_RUNTIME=1 node tools/pack_test_sui
 
 Portable harness mechanics live in `tools/portable_minecraft_harness.py`. Scenario scripts should create disposable server/client runtimes under `/tmp` and keep raw evidence there.
 
+All-dimension worldgen stress:
+
+```bash
+python3 tools/dimension_worldgen_stress.py --cycles 1 --radius 1 --samples 1
+```
+
+Current clean evidence: `/tmp/btm-dimension-worldgen/20260604-215117` passed radius-1 chunk generation in every authored dimension with C2ME, Distant Horizons, and `btmfixes` enabled. The harness treats C2ME far-chunk writes, DH worldgen exceptions, crash reports, watchdogs, internal disconnects, and C2ME thread-guard failures as fatal.
+
 Current LC/DH/C2ME/TFTH scenario:
 
 ```bash

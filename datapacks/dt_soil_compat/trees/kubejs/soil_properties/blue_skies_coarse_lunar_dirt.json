@@ -3,6 +3,6 @@
   "acceptable_soils": [
     "dirt_like"
   ],
-  "substitute_soil": "coarse_dirt",
+  "substitute_soil": "dynamictrees:coarse_dirt",
   "only_if_loaded": "blue_skies"
 }

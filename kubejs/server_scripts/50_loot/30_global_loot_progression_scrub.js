@@ -158,10 +158,14 @@ var BTM_LOOT_HIGH_TIER_IRONS_SCROLL_TABLES = [
     'irons_spellbooks:magic_items/reward_ink'
 ]
 
+function btmLootItemExists(id) {
+    try { return Item.exists(id) } catch (e) { return false }
+}
+
 LootJS.modifiers(function (event) {
     var allLoot = event.addLootTableModifier(/.*/)
     for (var i = 0; i < BTM_LOOT_REMOVE_ITEMS.length; i++) {
-        allLoot.removeLoot(BTM_LOOT_REMOVE_ITEMS[i])
+        if (btmLootItemExists(BTM_LOOT_REMOVE_ITEMS[i])) allLoot.removeLoot(BTM_LOOT_REMOVE_ITEMS[i])
     }
 
     for (var j = 0; j < BTM_LOOT_EMERALD_TABLES_TO_COIN.length; j++) {

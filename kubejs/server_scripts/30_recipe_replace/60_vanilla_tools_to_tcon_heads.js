@@ -20,6 +20,13 @@ var BTM_VANILLA_STYLE_TOOL_FAMILIES = [
 
 var BTM_VANILLA_STYLE_TOOL_EXTRAS = [
     'ars_nouveau:enchanters_sword',
+    'blue_skies:bluebright_spear',
+    'blue_skies:comet_spear',
+    'blue_skies:dusk_spear',
+    'blue_skies:frostbright_spear',
+    'blue_skies:lunar_spear',
+    'blue_skies:maple_spear',
+    'blue_skies:starlit_spear',
     'botania:glass_pickaxe',
     'botania:manasteel_axe',
     'botania:manasteel_hoe',
@@ -30,6 +37,11 @@ var BTM_VANILLA_STYLE_TOOL_EXTRAS = [
     'botania:terra_sword',
     'botania:thunder_sword',
     'create:cardboard_sword',
+    'farmersdelight:diamond_knife',
+    'farmersdelight:flint_knife',
+    'farmersdelight:golden_knife',
+    'farmersdelight:iron_knife',
+    'farmersdelight:netherite_knife',
     'forbidden_arcanus:slimec_pickaxe',
     'goety:diamond_ice_axe',
     'goety:eerie_pickaxe',
@@ -38,8 +50,31 @@ var BTM_VANILLA_STYLE_TOOL_EXTRAS = [
     'goety:rampaging_axe',
     'iceandfire:ghost_sword',
     'iceandfire:hippogryph_sword',
+    'iceandfire:myrmex_desert_staff',
+    'iceandfire:myrmex_jungle_staff',
+    'notreepunching:diamond_knife',
+    'notreepunching:diamond_mattock',
+    'notreepunching:diamond_saw',
+    'notreepunching:flint_axe',
+    'notreepunching:flint_hoe',
+    'notreepunching:flint_knife',
+    'notreepunching:flint_pickaxe',
+    'notreepunching:flint_shovel',
+    'notreepunching:gold_knife',
+    'notreepunching:gold_mattock',
+    'notreepunching:gold_saw',
+    'notreepunching:iron_knife',
+    'notreepunching:iron_mattock',
+    'notreepunching:iron_saw',
+    'notreepunching:netherite_knife',
+    'notreepunching:netherite_mattock',
+    'notreepunching:netherite_saw',
     'occultism:iesnium_pickaxe',
     'occultism:infused_pickaxe',
+    'rpgstats:bone_ritual_dagger',
+    'rpgstats:diamond_ritual_dagger',
+    'rpgstats:gold_ritual_dagger',
+    'rpgstats:iron_ritual_dagger',
     'the_flesh_that_hates:flesh_axe',
     'the_flesh_that_hates:flesh_sword',
     'twilightforest:fiery_pickaxe',
@@ -58,7 +93,8 @@ var BTM_VANILLA_STYLE_TOOL_EXTRAS = [
     'twilightforest:steeleaf_hoe',
     'twilightforest:steeleaf_pickaxe',
     'twilightforest:steeleaf_shovel',
-    'twilightforest:steeleaf_sword'
+    'twilightforest:steeleaf_sword',
+    'undergarden:forgotten_battleaxe'
 ]
 
 var BTM_VANILLA_STYLE_TOOL_RECIPE_IDS = [
@@ -111,7 +147,6 @@ ServerEvents.recipes(function (event) {
     var tools = vanillaToolIds()
     for (var i = 0; i < tools.length; i++) {
         var tool = tools[i]
-        if (!btmItemExists(tool)) continue
 
         event.remove({ output: tool })
         event.remove({ id: tool })

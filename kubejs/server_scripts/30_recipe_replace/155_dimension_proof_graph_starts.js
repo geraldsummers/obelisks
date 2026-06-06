@@ -10,11 +10,17 @@ function btmDimProofShaped(event, output, pattern, keys, recipeId, count) {
     BTM_DIM_PROOF_ADDED++
 }
 
+function btmDimProofMechanical(event, output, pattern, keys, recipeId, count) {
+    event.remove({ output: output })
+    global.btmCreateMechanicalCrafting(event, recipeId, output, count || 1, pattern, keys, true)
+    BTM_DIM_PROOF_ADDED++
+}
+
 ServerEvents.recipes(function (event) {
     BTM_DIM_PROOF_ADDED = 0
 
     // Aether -> air travel and expedition mobility.
-    btmDimProofShaped(event, 'hangglider:glider_wing', [
+    btmDimProofMechanical(event, 'hangglider:glider_wing', [
         '  S',
         ' SA',
         'SAA'
@@ -23,7 +29,7 @@ ServerEvents.recipes(function (event) {
         A: 'aether:blue_aercloud'
     }, 'kubejs:dimension_graph/aether/glider_wing')
 
-    btmDimProofShaped(event, 'hangglider:glider_framework', [
+    btmDimProofMechanical(event, 'hangglider:glider_framework', [
         ' Z ',
         'IAI',
         'I I'
@@ -33,7 +39,29 @@ ServerEvents.recipes(function (event) {
         A: 'aether:aerogel'
     }, 'kubejs:dimension_graph/aether/glider_framework')
 
-    btmDimProofShaped(event, 'immersive_aircraft:sail', [
+    btmDimProofMechanical(event, 'hangglider:hang_glider', [
+        'WFW',
+        ' A ',
+        ' B '
+    ], {
+        W: 'hangglider:glider_wing',
+        F: 'hangglider:glider_framework',
+        A: 'aether:aerogel',
+        B: 'kubejs:brass_machine_casing'
+    }, 'kubejs:dimension_graph/aether/hang_glider')
+
+    btmDimProofMechanical(event, 'hangglider:reinforced_hang_glider', [
+        'EGE',
+        'SCS',
+        'EGE'
+    ], {
+        E: 'minecraft:elytra',
+        G: 'hangglider:hang_glider',
+        S: 'kubejs:sky_steel_sheet',
+        C: 'kubejs:impossible_machine_casing'
+    }, 'kubejs:dimension_graph/aether/reinforced_hang_glider')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:sail', [
         'AAA',
         'SBS',
         'AAA'
@@ -43,7 +71,7 @@ ServerEvents.recipes(function (event) {
         B: 'aether:ambrosium_shard'
     }, 'kubejs:dimension_graph/aether/aircraft_sail')
 
-    btmDimProofShaped(event, 'immersive_aircraft:hull', [
+    btmDimProofMechanical(event, 'immersive_aircraft:hull', [
         'SZS',
         'PAP',
         'SZS'
@@ -54,7 +82,7 @@ ServerEvents.recipes(function (event) {
         A: 'aether:aerogel'
     }, 'kubejs:dimension_graph/aether/aircraft_hull')
 
-    btmDimProofShaped(event, 'immersive_aircraft:propeller', [
+    btmDimProofMechanical(event, 'immersive_aircraft:propeller', [
         ' Q ',
         'PAP',
         ' Q '
@@ -63,6 +91,61 @@ ServerEvents.recipes(function (event) {
         P: '#forge:plates/iron',
         A: 'aether:aerogel'
     }, 'kubejs:dimension_graph/aether/aircraft_propeller')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:airship', [
+        'SSS',
+        'HHH',
+        'BCE'
+    ], {
+        S: 'immersive_aircraft:sail',
+        H: 'immersive_aircraft:hull',
+        B: 'kubejs:brass_machine_casing',
+        C: 'aether:aerogel',
+        E: 'immersive_aircraft:engine'
+    }, 'kubejs:dimension_graph/aether/airship')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:biplane', [
+        ' H ',
+        'HEP',
+        ' B '
+    ], {
+        H: 'immersive_aircraft:hull',
+        E: 'immersive_aircraft:engine',
+        P: 'immersive_aircraft:propeller',
+        B: 'kubejs:brass_machine_casing'
+    }, 'kubejs:dimension_graph/aether/biplane')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:gyrodyne', [
+        ' S ',
+        'HPH',
+        ' B '
+    ], {
+        S: 'immersive_aircraft:sail',
+        H: 'immersive_aircraft:hull',
+        P: 'immersive_aircraft:propeller',
+        B: 'kubejs:brass_machine_casing'
+    }, 'kubejs:dimension_graph/aether/gyrodyne')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:quadrocopter', [
+        'PBP',
+        'BEB',
+        'PBP'
+    ], {
+        P: 'immersive_aircraft:propeller',
+        B: 'kubejs:brass_machine_casing',
+        E: 'immersive_aircraft:engine'
+    }, 'kubejs:dimension_graph/aether/quadrocopter')
+
+    btmDimProofMechanical(event, 'immersive_aircraft:cargo_airship', [
+        'CAC',
+        'CHC',
+        ' B '
+    ], {
+        C: 'minecraft:chest',
+        A: 'immersive_aircraft:airship',
+        H: 'immersive_aircraft:hull',
+        B: 'kubejs:circuited_machine_casing'
+    }, 'kubejs:dimension_graph/aether/cargo_airship')
 
     // Everdawn -> advanced hydration and drink route supplies. Basic Thirst
     // bowls, bottles, buckets, and early water purification stay outside this gate.

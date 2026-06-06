@@ -1,0 +1,31 @@
+{
+  "family": "dtnatures_spirit:redwood",
+  "tapering": 0.65,
+  "signal_energy": 32.0,
+  "up_probability": 6,
+  "lowest_branch_height": 15,
+  "growth_rate": 0.8,
+  "max_branch_radius": 24,
+  "soil_longevity": 15,
+  "growth_logic_kit": {
+    "name": "dtnatures_spirit:hemlock",
+    "properties": {}
+  },
+  "leaves_properties": "dtnatures_spirit:redwood",
+  "environment_factors": {
+    "#forge:is_cold": 0.75,
+    "#forge:is_hot": 0.5,
+    "#forge:is_dry": 0.25,
+    "mushroom": 1.25
+  },
+  "primitive_sapling": "natures_spirit:redwood_sapling",
+  "always_show_on_waila": false,
+  "generate_seed": true,
+  "generate_sapling": true,
+  "features": [
+    "conifer_topper",
+    "roots",
+    "mound",
+    "clear_volume"
+  ]
+}
