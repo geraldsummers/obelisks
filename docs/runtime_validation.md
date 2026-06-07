@@ -25,6 +25,8 @@ tools/test_agent_validate_surfaces.sh --include-static --runtime /path/to/fresh/
 
 Primitive mining static regressions now cover soft-ground hand breakability, representative pick/axe/shovel gates, primitive flint butcher knife and hand axe recipes, Farmer's Delight straw-harvester knife tags, and ore/deepslate hardness probe coverage. The exact deepslate `+1` hardness assertion is enforced when a retained `generated/runtime-dumps/block_hardness_probe.json` exists.
 
+Player progression regressions are data-driven by `kubejs/config/player_progression_regression.json` and enforced by `tools/validate_player_progression_contracts.mjs` during `--static`. Current coverage includes the primitive tool route, the full machine casing ladder, Blood Magic heart/orb/slate authority, Creating Space dimension routes, and absence of future milestone outputs from starting options, repo loot, Wares loot, generated quest rewards, and villager buy results. Effective recipe graph route reachability still requires a refreshed strict runtime dump.
+
 Run `tools/test_agent_validate_surfaces.sh` after changing validation entry points. Add `--include-static --runtime /path/to/fresh/runtime` when changing evidence claims, static isolation, or strict data-dump behavior.
 
 ## Routine Checks
@@ -37,6 +39,7 @@ node --check kubejs/startup_scripts/path/to/touched.js
 node tools/validate_pack_contract.mjs
 node tools/contract_completeness_report.mjs --check
 node tools/validate_autonomous_contracts.mjs
+node tools/validate_player_progression_contracts.mjs
 node tools/validate_kubejs_assets.mjs
 node tools/validate_chemistry_identity.mjs
 node tools/validate_synthesis_pipeline.mjs

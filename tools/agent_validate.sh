@@ -76,6 +76,10 @@ run_static_validators() {
   pids+=("$!")
   names+=("synthesis_pipeline")
 
+  run_named_check player_progression node "$ROOT/tools/validate_player_progression_contracts.mjs" >"$tmpdir/6.log" 2>&1 &
+  pids+=("$!")
+  names+=("player_progression")
+
   set +e
   for i in "${!pids[@]}"; do
     wait "${pids[$i]}"

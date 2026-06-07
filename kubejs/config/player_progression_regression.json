@@ -1,0 +1,460 @@
+{
+  "schema": "btm.player_progression_regression.v1",
+  "expectedTierOrder": [
+    "survival",
+    "tcon_seared",
+    "tcon_scorched",
+    "create_andesite",
+    "create_brass",
+    "airtight",
+    "power_grid",
+    "oc2r",
+    "space",
+    "raw_impossible",
+    "ae2",
+    "hybrid_matter"
+  ],
+  "milestones": [
+    {
+      "id": "primitive_tools",
+      "tier": "survival",
+      "outputs": [
+        "additionalweaponry:butcher_knife",
+        "tconstruct:hand_axe"
+      ],
+      "route": [
+        "soft ground hand breakability",
+        "flint plus stick butcher knife",
+        "knife straw harvesting",
+        "straw plus flint plus stick hand axe"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/data/kubejs/recipes/primitive/flint_butcher_knife.json",
+          "all": [
+            "additionalweaponry:butcher_knife",
+            "minecraft:flint",
+            "minecraft:stick",
+            "tconstruct:flint",
+            "tconstruct:wood"
+          ]
+        },
+        {
+          "file": "kubejs/data/kubejs/recipes/primitive/flint_hand_axe.json",
+          "all": [
+            "tconstruct:hand_axe",
+            "farmersdelight:straw",
+            "minecraft:flint",
+            "minecraft:stick",
+            "tconstruct:flint",
+            "tconstruct:wood"
+          ]
+        },
+        {
+          "file": "kubejs/data/farmersdelight/tags/items/straw_harvesters.json",
+          "all": [
+            "additionalweaponry:butcher_knife"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcon_seared",
+      "tier": "tcon_seared",
+      "outputs": [
+        "kubejs:seared_machine_casing"
+      ],
+      "requiresPrevious": "primitive_tools",
+      "route": [
+        "Nether/netherrack grout proof",
+        "TConstruct seared materials",
+        "seared machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/20_expensive_grout.js",
+          "all": [
+            "tconstruct:grout",
+            "minecraft:netherrack"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:seared_machine_casing",
+            "tconstruct:seared_bricks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcon_scorched",
+      "tier": "tcon_scorched",
+      "outputs": [
+        "kubejs:scorched_machine_casing"
+      ],
+      "requiresPrevious": "tcon_seared",
+      "route": [
+        "seared casing",
+        "TConstruct scorched materials",
+        "scorched machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:scorched_machine_casing",
+            "kubejs:seared_machine_casing",
+            "tconstruct:scorched_bricks"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create_andesite",
+      "tier": "create_andesite",
+      "outputs": [
+        "create:andesite_alloy",
+        "kubejs:andesite_machine_casing"
+      ],
+      "requiresPrevious": "tcon_scorched",
+      "route": [
+        "TConstruct alloy/casting andesite alloy",
+        "andesite machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/98_starting_progression_bypasses.js",
+          "all": [
+            "create:andesite_alloy",
+            "tconstruct:casting_basin/compat/create/andesite_alloy_iron",
+            "tconstruct:casting_basin/compat/create/andesite_alloy_zinc"
+          ],
+          "absent": [
+            "event.shaped('create:andesite_alloy'",
+            "event.shapeless('create:andesite_alloy'"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:andesite_machine_casing",
+            "kubejs:scorched_machine_casing",
+            "create:andesite_alloy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "create_brass",
+      "tier": "create_brass",
+      "outputs": [
+        "create:precision_mechanism",
+        "kubejs:brass_machine_casing"
+      ],
+      "requiresPrevious": "create_andesite",
+      "route": [
+        "andesite casing sequenced assembly",
+        "precision mechanism",
+        "brass machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "create:precision_mechanism",
+            "kubejs:andesite_machine_casing",
+            "kubejs:brass_machine_casing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airtight",
+      "tier": "airtight",
+      "outputs": [
+        "kubejs:airtight_machine_casing",
+        "compressedcreativity:rotational_compressor"
+      ],
+      "requiresPrevious": "create_brass",
+      "route": [
+        "rotational compressor core",
+        "brass casing",
+        "airtight casing and pressure authority"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:rotational_compressor_core",
+            "kubejs:brass_machine_casing",
+            "kubejs:airtight_machine_casing"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/122_pneumaticcraft_create_pressing_gates.js",
+          "all": [
+            "compressedcreativity:rotational_compressor",
+            "kubejs:rotational_compressor_core",
+            "kubejs:airtight_machine_casing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power_grid",
+      "tier": "power_grid",
+      "outputs": [
+        "kubejs:electrical_machine_casing"
+      ],
+      "requiresPrevious": "airtight",
+      "route": [
+        "airtight casing",
+        "Power Grid conductive/electrical work",
+        "electrical machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:electrical_machine_casing",
+            "kubejs:airtight_machine_casing",
+            "powergrid:conductive_casing"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/140_latent_chemlib_power_gates.js",
+          "all": [
+            "kubejs:airtight_machine_casing",
+            "latent_chemlib:sealed_chemical_cell"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oc2r",
+      "tier": "oc2r",
+      "outputs": [
+        "kubejs:circuited_machine_casing",
+        "ae2:engineering_processor"
+      ],
+      "requiresPrevious": "power_grid",
+      "route": [
+        "electrical casing",
+        "PNCR assembly laser/drill circuit completion",
+        "circuited casing and OC2R authority"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:circuited_machine_casing",
+            "kubejs:electrical_machine_casing",
+            "powergrid:integrated_circuit"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/143_circuit_pncr_assembly_authority.js",
+          "all": [
+            "pneumaticcraft:assembly_",
+            "ae2:engineering_processor",
+            "'laser'",
+            "'drill'"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space",
+      "tier": "space",
+      "outputs": [
+        "kubejs:space_machine_casing"
+      ],
+      "requiresPrevious": "oc2r",
+      "route": [
+        "circuited casing",
+        "Creating Space authority",
+        "space machine casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:space_machine_casing",
+            "kubejs:circuited_machine_casing",
+            "creatingspace:"
+          ]
+        },
+        {
+          "file": "kubejs/data/creatingspace/creatingspace/rocket_accessible_dimension/earth_orbit.json",
+          "all": [
+            "lostcities:lostcity",
+            "twilightforest:twilight_forest",
+            "fallout_wastelands_:wastelands",
+            "the_finley_dimension_remastered:finley_dimension",
+            "callfromthedepth_:depth"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "raw_impossible",
+      "tier": "raw_impossible",
+      "outputs": [
+        "kubejs:raw_impossible_casing"
+      ],
+      "requiresPrevious": "space",
+      "route": [
+        "space casing",
+        "AE2 prepared components",
+        "raw impossible casing"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:raw_impossible_casing",
+            "kubejs:space_machine_casing",
+            "ae2:engineering_processor"
+          ],
+          "absent": [
+            "ae2:controller'\\n        result: { item: 'kubejs:raw_impossible_casing'"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ae2",
+      "tier": "ae2",
+      "outputs": [
+        "kubejs:impossible_machine_casing",
+        "ae2:controller"
+      ],
+      "requiresPrevious": "raw_impossible",
+      "route": [
+        "raw impossible casing",
+        "ethereal slate and archmage blood orb",
+        "impossible casing",
+        "AE2 controller"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js",
+          "all": [
+            "kubejs:impossible_machine_casing",
+            "kubejs:raw_impossible_casing",
+            "bloodmagic:etherealslate",
+            "bloodmagic:archmagebloodorb"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blood_magic",
+      "tier": "survival",
+      "outputs": [
+        "bloodmagic:weakbloodorb",
+        "bloodmagic:apprenticebloodorb",
+        "bloodmagic:magicianbloodorb",
+        "bloodmagic:masterbloodorb",
+        "bloodmagic:archmagebloodorb"
+      ],
+      "route": [
+        "RPG Stats still-beating heart",
+        "typed heart keys",
+        "Blood Altar orb escalation",
+        "slate-parented side magic"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "kubejs/server_scripts/40_recipe_add/40_blood_orbs_from_still_beating_hearts.js",
+          "all": [
+            "bloodmagic:weakbloodorb",
+            "bloodmagic:apprenticebloodorb",
+            "bloodmagic:magicianbloodorb",
+            "bloodmagic:masterbloodorb",
+            "bloodmagic:archmagebloodorb",
+            "kubejs:weak_blood_heart",
+            "kubejs:archmage_blood_heart"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/80_magic_progression_blood_slate_gates.js",
+          "all": [
+            "bloodmagic:blankslate",
+            "bloodmagic:reinforcedslate",
+            "bloodmagic:infusedslate",
+            "bloodmagic:demonslate",
+            "bloodmagic:etherealslate"
+          ]
+        },
+        {
+          "file": "docs/progression.md",
+          "all": [
+            "Still-Beating Hearts bridge the death loop",
+            "Blood Magic slates are the side-magic authority"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dimension_routes",
+      "tier": "space",
+      "outputs": [
+        "creatingspace:rocket"
+      ],
+      "requiresPrevious": "space",
+      "route": [
+        "Dimensional Fonts",
+        "Creating Space rocket graph",
+        "direct portal and key bypasses removed"
+      ],
+      "sourceAssertions": [
+        {
+          "file": "docs/progression.md",
+          "all": [
+            "Dimension travel has two authored surfaces only",
+            "Lost Cities, Twilight Forest, Fallout Wastelands, Finley, and Call From The Depths are space-routed adventure dimensions"
+          ]
+        },
+        {
+          "file": "kubejs/data/creatingspace/creatingspace/rocket_accessible_dimension/earth_orbit.json",
+          "all": [
+            "twilightforest:twilight_forest",
+            "lostcities:lostcity",
+            "fallout_wastelands_",
+            "the_finley_dimension_remastered",
+            "callfromthedepth_"
+          ]
+        },
+        {
+          "file": "config/twilightforest-common.toml",
+          "all": [
+            "disablePortalCreation = true"
+          ]
+        }
+      ]
+    }
+  ],
+  "forbiddenBypassOutputs": [
+    "kubejs:seared_machine_casing",
+    "kubejs:scorched_machine_casing",
+    "kubejs:andesite_machine_casing",
+    "kubejs:brass_machine_casing",
+    "kubejs:airtight_machine_casing",
+    "kubejs:electrical_machine_casing",
+    "kubejs:circuited_machine_casing",
+    "kubejs:space_machine_casing",
+    "kubejs:raw_impossible_casing",
+    "kubejs:impossible_machine_casing",
+    "compressedcreativity:rotational_compressor",
+    "ae2:controller"
+  ],
+  "forbiddenBypassSurfaces": [
+    "starting_options",
+    "repo_loot",
+    "wares_loot",
+    "generated_quest_rewards",
+    "villager_buy_results"
+  ]
+}

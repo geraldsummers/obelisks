@@ -9249,6 +9249,10 @@ file = "kubejs/config/perf_probe.json"
 hash = "dc753044f39d65b2a0106b3ea4005dd10287e94c4ce1cc7d5bb4f9948bbb37c2"
 
 [[files]]
+file = "kubejs/config/player_progression_regression.json"
+hash = "1f5fcbd2fba1ddf12cc90fea2f7ba08862576f95685881e320b7eab90657c9ba"
+
+[[files]]
 file = "kubejs/config/runtime_graph_dumps.json"
 hash = "8405a203dd1b7fa9335b24067944bf5b5d474621dd1c6ff61ab3d59c6feed5fc"
 
