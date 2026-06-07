@@ -142,6 +142,29 @@ function btmNtprShouldDeny(player, state) {
     return !btmNtprHasMatchingTool(player, state)
 }
 
+function btmNtprDamageMainHandKnife(player, state) {
+    if (!player || !state || btmNtprIsCreative(player)) return
+
+    var blockId = btmNtprStateId(state)
+    if (!btmNtprBlockIn('knife', blockId)) return
+
+    var stack = btmNtprCall(player, ['getMainHandItem', 'm_21205_'], [])
+    var itemId = btmNtprStackId(stack)
+    if (!btmNtprItemIn('knife', itemId)) return
+    if (!btmNtprBool(btmNtprCall(stack, ['isDamageableItem', 'm_41763_'], []))) return
+
+    var currentDamage = Number(btmNtprCall(stack, ['getDamageValue', 'm_41773_'], []) || 0)
+    var maxDamage = Number(btmNtprCall(stack, ['getMaxDamage', 'm_41776_'], []) || 0)
+    if (maxDamage <= 0) return
+
+    var nextDamage = currentDamage + 1
+    if (nextDamage >= maxDamage) {
+        btmNtprCall(stack, ['shrink', 'm_41774_'], [1])
+    } else {
+        btmNtprCall(stack, ['setDamageValue', 'm_41721_'], [nextDamage])
+    }
+}
+
 function btmNtprBlockStateAt(level, pos) {
     if (!level || !pos) return null
     return btmNtprCall(level, ['getBlockState', 'm_8055_'], [pos])
@@ -172,5 +195,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerInteractEvent$
 ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$BreakEvent', function (event) {
     if (btmNtprShouldDeny(event.getPlayer(), event.getState())) {
         event.setCanceled(true)
+        return
     }
+    btmNtprDamageMainHandKnife(event.getPlayer(), event.getState())
 })

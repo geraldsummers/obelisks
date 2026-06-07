@@ -666,6 +666,39 @@ function validatePrimitiveMiningRegressionContracts() {
     ? fail('flint butcher knife remains a Farmer Delight straw harvester', knifeTagProblems.join(', '))
     : ok('flint butcher knife remains a Farmer Delight straw harvester')
 
+  const ntprHook = read('kubejs/startup_scripts/20_blocks/20_no_tree_punching_replacement.js')
+  const knifeDurabilityMarkers = [
+    'function btmNtprDamageMainHandKnife',
+    "btmNtprBlockIn('knife', blockId)",
+    "btmNtprItemIn('knife', itemId)",
+    "['isDamageableItem', 'm_41763_']",
+    "['setDamageValue', 'm_41721_']",
+    "['shrink', 'm_41774_']",
+    'btmNtprDamageMainHandKnife(event.getPlayer(), event.getState())'
+  ]
+  const missingKnifeDurabilityMarkers = knifeDurabilityMarkers.filter(marker => !ntprHook.includes(marker))
+  missingKnifeDurabilityMarkers.length
+    ? fail('knife-gated plant cutting consumes knife durability', missingKnifeDurabilityMarkers.join(', '))
+    : ok('knife-gated plant cutting consumes knife durability')
+
+  const tconPatternRoutes = read('kubejs/server_scripts/30_recipe_replace/98_starting_progression_bypasses.js')
+  const tconPatternMarkers = [
+    "event.remove({ id: 'tconstruct:common/pattern' })",
+    "event.remove({ id: 'tconstruct:tables/pattern' })",
+    "event.remove({ id: 'tconstruct:pattern' })",
+    "event.remove({ type: 'minecraft:crafting_shaped', output: 'tconstruct:pattern' })",
+    "event.remove({ type: 'minecraft:crafting_shapeless', output: 'tconstruct:pattern' })",
+    "event.shaped(Item.of('tconstruct:pattern', 4)",
+    "C: 'farmersdelight:canvas'",
+    "type: 'create:pressing'",
+    "{ item: 'minecraft:paper' }",
+    "{ item: 'tconstruct:pattern' }"
+  ]
+  const missingTconPatternMarkers = tconPatternMarkers.filter(marker => !tconPatternRoutes.includes(marker))
+  missingTconPatternMarkers.length
+    ? fail('TConstruct pattern routes use canvas grid and Create paper pressing', missingTconPatternMarkers.join(', '))
+    : ok('TConstruct pattern routes use canvas grid and Create paper pressing')
+
   const startingBypasses = read('kubejs/server_scripts/30_recipe_replace/98_starting_progression_bypasses.js')
   const flintBypassMarkers = [
     "event.remove({ id: 'tconstruct:common/materials/flint_from_gravel' })",

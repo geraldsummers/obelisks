@@ -7,6 +7,30 @@ ServerEvents.recipes(function (event) {
     event.remove({ id: 'tconstruct:flint_from_gravel' })
     event.remove({ type: 'minecraft:crafting_shapeless', input: 'minecraft:gravel', output: 'minecraft:flint' })
 
+    // TCon patterns are an early textile/paper route, not a sticks + planks bypass.
+    event.remove({ id: 'tconstruct:common/pattern' })
+    event.remove({ id: 'tconstruct:tables/pattern' })
+    event.remove({ id: 'tconstruct:pattern' })
+    event.remove({ type: 'minecraft:crafting_shaped', output: 'tconstruct:pattern' })
+    event.remove({ type: 'minecraft:crafting_shapeless', output: 'tconstruct:pattern' })
+
+    event.shaped(Item.of('tconstruct:pattern', 4), [
+        'CC',
+        'CC'
+    ], {
+        C: 'farmersdelight:canvas'
+    }).id('kubejs:tconstruct/pattern_from_canvas')
+
+    event.custom({
+        type: 'create:pressing',
+        ingredients: [
+            { item: 'minecraft:paper' }
+        ],
+        results: [
+            { item: 'tconstruct:pattern' }
+        ]
+    }).id('kubejs:create/pressing/tconstruct_pattern_from_paper')
+
     // Andesite alloy must come from TCon molten handling before Create casing work.
     var andesiteAlloyBypassIds = [
         'create:crafting/materials/andesite_alloy',

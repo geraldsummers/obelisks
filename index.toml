@@ -10562,7 +10562,7 @@ hash = "a364b840586bc5904d078cee8f779924b8bf5d8e744e2bdcd0209f065896087f"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/98_starting_progression_bypasses.js"
-hash = "c750bdb47ff34a54ab5d889048e8719d7f69fd12dada44e6dd8d45f43697ec9f"
+hash = "9b847fdea634a2291138054e0291b5cf0a91a4e76c4e8b391bbb59e202a3c29f"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js"
@@ -10690,7 +10690,7 @@ hash = "75e2d05543db8c5dac81701c327452f62b499f69a3dfd3394e4d036d4d07f469"
 
 [[files]]
 file = "kubejs/startup_scripts/20_blocks/20_no_tree_punching_replacement.js"
-hash = "8097faf1c9b2c70b47b3ec548eea8412c5a0eadb4c7b1acaa71e342f318f3b80"
+hash = "d8e409136a4a22715cb34df90ff042c7fee9ae6a78661e8705e2172157415275"
 
 [[files]]
 file = "kubejs/startup_scripts/20_globals/10_immobile_spawn.js"
