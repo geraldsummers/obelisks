@@ -5978,7 +5978,7 @@ hash = "f1406b9947fb97c1487713093d39ebc79b7c9b6de2cb9934ce4d4c60653b0b95"
 
 [[files]]
 file = "config/rbp/block_definitions/generated_pack_solid_blocks.toml"
-hash = "89100a570fe69a244cc2e6ceb7fdbd8dbcbf99c679f4f703e0a4b1929f79a297"
+hash = "e485ae523280dbdf1d16d6b2c36b64d4b6fe94779677135726e3842a2be1e477"
 
 [[files]]
 file = "config/rbp/block_definitions/glass.toml"
@@ -7850,11 +7850,11 @@ hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_arcane_crystal_ore.json"
-hash = "1c4dcb1d10ace0fa59e2f877a5ec6f26686a90e46d3e952148dc3e68a31b2019"
+hash = "54d9a23b498aba36d952b0c5e4371011b927103ba5e5ca97e083547e97d81dd4"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_arcane_gilded_darkstone.json"
-hash = "c6ed85864c635c8f7be5de518a48cc8b3e978b8fbd21af360194bffd5ac38fd1"
+hash = "ad15e86e4b0fbd100af890a82ccee06ce207b5c4224795d57c87b750f347e5db"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_blazing_quartz_ore.json"
@@ -7862,19 +7862,19 @@ hash = "7aa1c938420ff83f5236028d7901d249606bb4d9ee32ebc2a66a7037fe4dc22f"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_brilliant_ore.json"
-hash = "b506f80f43e5b37ec50aee5fffbccc5ad0190604149c3a15a438b243cb87db40"
+hash = "86520992491abf15c73d240a611a0085bed3a67b647b744dacc21aea94bfabd1"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_cantazarite_ore.json"
-hash = "19cfe7c16064466ea4941cbb168470a6e507966ec595738f99ddf25a962ea5c7"
+hash = "a2dd5ac5dc8713215f15bdd680df5a51b1a2bfb8a521ce51ebfdfd4805c2b4c7"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_cthonic_gold_ore.json"
-hash = "d6b35ff71dfe2a1d279a5bff26bc5401157bb2a5ae4bf9bfda2824f7b345e01e"
+hash = "77cea0f09900460cc4771e47c50494f3b78ec63f3a869fd9dff5ab8b38ac0a23"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_darkstone.json"
-hash = "b088dbaf5ea86b35d44d8ad1bf7a941807ba45a1788bb0a4ed2588ebd813fea0"
+hash = "d5e04cbf37a053f93d9d42312d77021d1790a8b833f8956321fe5c36a35c8ec5"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_iesnium_ore.json"
@@ -7882,31 +7882,31 @@ hash = "b22ca7790bc8f056de1d99b6e1623a8bd3e99a60bcfec6b865af60682c6df66f"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_jade_ore.json"
-hash = "92a7880f5e42f4bd9bc6b4f9b46fc0471d4fcd20bfc809189a3d02219cd704fc"
+hash = "ac4141f6c5beace00b6d9486f37a6c34d1ebdff720731b8c6ee71677b07fbfdd"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_mithril_ore.json"
-hash = "a6cd5fc7480841f051ab3ff12bc5a13842cffef473f49de65c79c9437880c7ef"
+hash = "61a7373682dda4b8b5142870255513f4b63900a7e5dba8e23ac73feab8adbe64"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_natural_quartz_ore.json"
-hash = "80267e8ce8c723c243de8eda74631829b21c6862478d96834b5a5a19228e4da4"
+hash = "44382db1ec813dc86e9a7cc8718cb47c79268000611d859e726a63ba85f99353"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_runic_stone.json"
-hash = "b8b9824af6055a860b1e8bb483c3c955f11d21d40d418a9e8a8329d2dd6fe83a"
+hash = "eb0d4e64405b098144577f52ad499d78dc8e0fc069b7368a151b077d27531b64"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_soulstone_ore.json"
-hash = "bff69ac7441417514d82d8e703fd893b9e87e2927bcb14ad494787c4f2481914"
+hash = "87441ac5ce29d94eea771832bb8fbeff5d23b83d32a15f91c43776d30c14b526"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_stella_arcanum.json"
-hash = "5bcdc2c382b4bc1922302a741aae1e9a821a98861200967676dd757e632dbcbd"
+hash = "f9f13db8c0bc00578d7d7745df1aa25c16f846e03e14e877233ab527a2c73cf9"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature/meteor_xpetrified_ore.json"
-hash = "f57ec456537490f3e3c712a2024eb9e231b7ef2f7caceabb6c5bc7adadaa2bb1"
+hash = "b0d8150c52f6f94b2480c51b155da74efc41f5b5dae68b4fa1689f76e3487c65"
 
 [[files]]
 file = "datapacks/meteor_ore_relocation/data/kubejs/worldgen/placed_feature/meteor_arcane_crystal_ore.json"
@@ -8130,7 +8130,7 @@ hash = "f13459ed12f9f5cc5018b4480ccd1641d5a094c20c15e6056e5545d89fd4289a"
 
 [[files]]
 file = "globalresources/obelisks/excavated_variants/obelisks/variants/meteor_modded_ores.json5"
-hash = "1835619b537a34005a9ee7d68d4e881cf4307efbd515adecced18513eee1b690"
+hash = "115be2d2cfdc6ba7929cdcdd67f11be7826ac8bf74648826620af70b998b70a3"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -9190,7 +9190,7 @@ hash = "39e70d5010bbebe1f5eda30ae8902b8cbc3391b3ba81fa2eb605d28d70c380a2"
 
 [[files]]
 file = "kubejs/client_scripts/15_ore_origin_tooltips.js"
-hash = "2cab9d5119d147fb1d13f8fbe826c8fb95d102e719e246ba34424253482c267c"
+hash = "6eb6674b4d09074af0822bf3a59fab4be03e853a86873e6090ea2cd52db38728"
 
 [[files]]
 file = "kubejs/client_scripts/20_hide_vanilla_tools.js"
@@ -10710,7 +10710,7 @@ hash = "2f877d1dcdfe376099f4fd6df097168f161caa846416332e19fe64637c45ad83"
 
 [[files]]
 file = "kubejs/startup_scripts/99_ntp_audit_assignments.js"
-hash = "943a741ab5ccd2669c57d4ab83faf7ecf12a79abd2bb499de98032629d787322"
+hash = "b4300507c7243c0110f26dc76479b957dc369ec0b1f539e3504c53fa63050423"
 
 [[files]]
 file = "kubejs/startup_scripts/README.md"

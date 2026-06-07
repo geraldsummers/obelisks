@@ -2,6 +2,12 @@
   mod_id: 'kubejs',
   provided_stones: [
     {
+      id: 'gravel',
+      lang: { en_us: 'Gravel' },
+      block_id: 'minecraft:gravel',
+      types: ['stone'],
+    },
+    {
       id: 'aether_holystone',
       lang: { en_us: 'Holystone' },
       block_id: 'aether:holystone',

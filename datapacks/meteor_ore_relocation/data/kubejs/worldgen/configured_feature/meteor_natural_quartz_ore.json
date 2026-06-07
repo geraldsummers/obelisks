@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "discard_chance_on_air_exposure": 0.0,
+    "discard_chance_on_air_exposure": 0,
     "size": 5,
     "targets": [
       {
@@ -74,6 +74,15 @@
         "target": {
           "predicate_type": "minecraft:block_match",
           "block": "deeperdarker:gloomslate"
+        }
+      },
+      {
+        "state": {
+          "Name": "malum:natural_quartz_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:gravel"
         }
       }
     ]

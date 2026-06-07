@@ -977,6 +977,43 @@ function validateWorldgenStaticContracts() {
     ? ok('foraging datapack is Undergarden-only', `${foragePlacedFeatures.length} placed features, ${forageBiomeModifiers.length} biome modifiers, ${forageBiomeTags.length} biome tags`)
     : fail('foraging datapack is Undergarden-only', `placed=${foragePlacedFeatures.length} modifiers=${forageBiomeModifiers.length} tags=${forageBiomeTags.length} bad=${forageFailures.join(', ')}`)
 
+  const meteorEvVariants = read('globalresources/obelisks/excavated_variants/obelisks/variants/meteor_modded_ores.json5')
+  meteorEvVariants.includes("id: 'gravel'") && meteorEvVariants.includes("block_id: 'minecraft:gravel'") && meteorEvVariants.includes("types: ['stone']")
+    ? ok('Excavated Variants treats gravel as a stone ore substrate')
+    : fail('Excavated Variants treats gravel as a stone ore substrate', 'missing gravel provided_stones entry')
+
+  const meteorOreFeatureDir = 'datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature'
+  const gravelTargetProblems = []
+  const gravelTargetExclusions = new Set(['meteor_blazing_quartz_ore.json', 'meteor_iesnium_ore.json'])
+  for (const file of walk(meteorOreFeatureDir, file => file.endsWith('.json')).sort()) {
+    const name = path.basename(file)
+    const data = readJson(file)
+    if (data.type !== 'minecraft:ore' || gravelTargetExclusions.has(name)) continue
+    const hasGravelTarget = (data.config?.targets || []).some(target => target.target?.predicate_type === 'minecraft:block_match' && target.target?.block === 'minecraft:gravel')
+    if (!hasGravelTarget) gravelTargetProblems.push(name)
+  }
+  gravelTargetProblems.length
+    ? fail('stone-style meteor ores can replace gravel', gravelTargetProblems.join(', '))
+    : ok('stone-style meteor ores can replace gravel')
+
+  const ntpAssignments = JSON.parse(read('kubejs/startup_scripts/99_ntp_audit_assignments.js').match(/global\.BTM_NTPR_AUDIT_ASSIGNMENTS\s*=\s*({[\s\S]*})\s*$/)[1])
+  const rbpGeneratedSolid = read('config/rbp/block_definitions/generated_pack_solid_blocks.toml')
+  const expectedGravelEvOres = [
+    'gravel_arcane_crystal_ore',
+    'gravel_bauxite_laterite',
+    'gravel_cthonic_gold_ore',
+    'gravel_ironstone',
+    'gravel_mithril_ore',
+    'gravel_natural_quartz_ore',
+    'gravel_zinc_ore'
+  ].map(path => `excavated_variants:${path}`)
+  const pickaxeSet = new Set(ntpAssignments.blocks?.pickaxe || [])
+  const missingGravelPickaxe = expectedGravelEvOres.filter(id => !pickaxeSet.has(id))
+  const missingGravelRbp = expectedGravelEvOres.filter(id => !rbpGeneratedSolid.includes(`"${id}"`))
+  missingGravelPickaxe.length || missingGravelRbp.length
+    ? fail('gravel Excavated Variants ore blocks are pickaxe-gated and RBP-managed', `pickaxe=${missingGravelPickaxe.join(', ')} rbp=${missingGravelRbp.join(', ')}`)
+    : ok('gravel Excavated Variants ore blocks are pickaxe-gated and RBP-managed', `${expectedGravelEvOres.length} representatives`)
+
   const lavaDepthFiles = [
     'datapacks/realistic_ores_lava_depths/data/realisticores/forge/biome_modifier/add_osmiridium_lava_sulfide_ore_deepslate.json',
     'datapacks/realistic_ores_lava_depths/data/realisticores/forge/biome_modifier/add_thorium_ore_deepslate.json',

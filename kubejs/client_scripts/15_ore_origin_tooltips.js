@@ -347,6 +347,7 @@ var BTM_METEOR_ORE_ORIGINS = [
 ]
 
 var BTM_METEOR_EV_STONES = [
+    'gravel',
     'aether_holystone',
     'aether_mossy_holystone',
     'blue_skies_turquoise_stone',
