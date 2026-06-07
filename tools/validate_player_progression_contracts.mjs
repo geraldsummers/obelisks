@@ -170,6 +170,80 @@ function validateRuntimeGraphReadiness(manifest) {
   }
 }
 
+function loadRetainedRecipeGraph() {
+  const dumpPath = 'generated/runtime-dumps/recipes.json'
+  if (!exists(dumpPath)) return null
+  try {
+    const dump = readJson(dumpPath)
+    return dump.schema === 'obelisks.recipe_graph.v1' ? dump : null
+  } catch {
+    return null
+  }
+}
+
+function validatePrimaryCraftingSpine(manifest, milestones) {
+  const spine = manifest.primaryCraftingSpine || {}
+  const checkpointProblems = []
+  const milestoneSet = new Set(milestones.map(milestone => milestone.id))
+  let checkpointCount = 0
+
+  for (const checkpoint of spine.sourceCheckpoints || []) {
+    checkpointCount++
+    if (!checkpoint.id) checkpointProblems.push('<missing id>: checkpoint id is required')
+    if (!checkpoint.milestone || !milestoneSet.has(checkpoint.milestone)) checkpointProblems.push(`${checkpoint.id || '<missing id>'}: unknown milestone ${checkpoint.milestone || '<missing>'}`)
+
+    const missingFiles = (checkpoint.sourceFiles || []).filter(file => !exists(file))
+    for (const file of missingFiles) checkpointProblems.push(`${checkpoint.id}: missing source file ${file}`)
+    const sourceText = sourceSurfaceText(checkpoint.sourceFiles || [])
+
+    const missingOutputs = (checkpoint.requiredOutputs || []).filter(item => !containsItem(sourceText, item))
+    const missingGates = (checkpoint.requiredGateItems || []).filter(item => !containsItem(sourceText, item))
+    if (missingOutputs.length) checkpointProblems.push(`${checkpoint.id}: missing progression outputs ${missingOutputs.join(', ')}`)
+    if (missingGates.length) checkpointProblems.push(`${checkpoint.id}: missing gate inputs ${missingGates.join(', ')}`)
+  }
+
+  checkpointProblems.length
+    ? fail('primary crafting spine source checkpoints are progression-routed', checkpointProblems.slice(0, 100).join('\n'))
+    : ok('primary crafting spine source checkpoints are progression-routed', `${checkpointCount} checkpoints`)
+
+  const sourceFiles = walk('kubejs/server_scripts', file => file.endsWith('.js')).concat(walk('kubejs/data', file => file.endsWith('.json')))
+  const sourceText = sourceSurfaceText(sourceFiles)
+  const surfaceProblems = []
+  for (const surface of spine.sourceRecipeSurfaces || []) {
+    const needles = surface.needles || []
+    if (!surface.id || !needles.length) {
+      surfaceProblems.push(`${surface.id || '<missing id>'}: missing needles`)
+      continue
+    }
+    if (!needles.some(needle => sourceText.includes(needle))) surfaceProblems.push(`${surface.id}: missing any of ${needles.join(' | ')}`)
+  }
+  surfaceProblems.length
+    ? fail('primary crafting recipe surfaces are represented in authored progression scripts', surfaceProblems.slice(0, 100).join('\n'))
+    : ok('primary crafting recipe surfaces are represented in authored progression scripts', `${(spine.sourceRecipeSurfaces || []).length} surfaces`)
+
+  const dump = loadRetainedRecipeGraph()
+  if (!dump) {
+    ok('primary crafting spine retained runtime evidence is ready', 'no retained recipe graph')
+    return
+  }
+
+  const recipeTypes = new Set((dump.recipes || []).map(recipe => recipe.type).filter(Boolean))
+  const produced = new Set()
+  for (const recipe of dump.recipes || []) {
+    for (const output of recipe.outputs || []) if (output?.kind === 'item' && output.id) produced.add(output.id)
+  }
+
+  const missingRuntimeSurfaces = (spine.runtimeRecipeSurfaces || []).filter(type => !recipeTypes.has(type))
+  const missingRuntimeOutputs = (spine.runtimeProducedMachineOutputs || []).filter(item => !produced.has(item) && !containsItem(sourceText, item))
+  const runtimeProblems = []
+  if (missingRuntimeSurfaces.length) runtimeProblems.push(`missing recipe types: ${missingRuntimeSurfaces.join(', ')}`)
+  if (missingRuntimeOutputs.length) runtimeProblems.push(`missing produced machine outputs: ${missingRuntimeOutputs.join(', ')}`)
+
+  runtimeProblems.length
+    ? fail('retained runtime graph covers primary crafting spine surfaces', runtimeProblems.join('\n'))
+    : ok('retained runtime graph covers primary crafting spine surfaces', `${(spine.runtimeRecipeSurfaces || []).length} recipe types, ${(spine.runtimeProducedMachineOutputs || []).length} outputs`)
+}
+
 let manifest
 try {
   manifest = readJson('kubejs/config/player_progression_regression.json')
@@ -228,6 +302,7 @@ sparseMilestones.length
   : ok('player progression milestones carry outputs, route notes, and source assertions')
 
 validateSourceAssertions(milestones)
+validatePrimaryCraftingSpine(manifest, milestones)
 validateBypassSurfaces(manifest)
 validateRuntimeGraphReadiness(manifest)
 

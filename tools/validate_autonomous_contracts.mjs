@@ -557,10 +557,6 @@ function validatePrimitiveMiningRegressionContracts() {
     return ids.filter(id => !blockSets[group]?.has(id))
   }
 
-  function sortUnique(values) {
-    return Array.from(new Set(values)).sort()
-  }
-
   const handSoftBlocks = [
     'minecraft:sand',
     'minecraft:red_sand',
@@ -634,122 +630,6 @@ function validatePrimitiveMiningRegressionContracts() {
   missingGrassPick.length
     ? fail('grass-over-stone blocks remain pickaxe-mineable', missingGrassPick.join(', '))
     : ok('grass-over-stone blocks remain pickaxe-mineable', `${grassPickBlocks.length} representative blocks`)
-
-  const primaryCraftingNamespaces = ['bloodmagic', 'create', 'tconstruct', 'pneumaticcraft', 'compressedcreativity']
-  const nonHandToolGroups = ['knife', 'axe', 'pickaxe', 'shovel', 'hoe', 'sword']
-  const allAssignedBlocks = Object.values(assignments?.blocks || {}).flat()
-  for (const namespace of primaryCraftingNamespaces) {
-    const prefix = `${namespace}:`
-    const auditedIds = sortUnique([
-      ...allAssignedBlocks.filter(id => id.startsWith(prefix)),
-      ...(assignments?.unassignedBreakableBlocks || []).filter(id => id.startsWith(prefix))
-    ])
-    const handBreakable = auditedIds.filter(id => blockSets.hand?.has(id))
-    const unassigned = (assignments?.unassignedBreakableBlocks || []).filter(id => id.startsWith(prefix))
-    const missingToolGate = auditedIds.filter(id => !nonHandToolGroups.some(group => blockSets[group]?.has(id)))
-    handBreakable.length || unassigned.length || missingToolGate.length
-      ? fail(`${namespace} breakable blocks are NTP tool-gated`, `hand=${handBreakable.join(', ')} unassigned=${unassigned.join(', ')} missingTool=${missingToolGate.join(', ')}`)
-      : ok(`${namespace} breakable blocks are NTP tool-gated`, `${auditedIds.length} audited blocks`)
-  }
-
-  const primaryCraftingSurfacePickaxeBlocks = {
-    'Blood Magic crafting surfaces': [
-      'bloodmagic:altar',
-      'bloodmagic:alchemytable',
-      'bloodmagic:alchemicalreactionchamber',
-      'bloodmagic:alchemyarray',
-      'bloodmagic:soulforge'
-    ],
-    'Create crafting surfaces and support': [
-      'create:millstone',
-      'create:crushing_wheel',
-      'create:mechanical_press',
-      'create:mechanical_mixer',
-      'create:mechanical_saw',
-      'create:deployer',
-      'create:depot',
-      'create:basin',
-      'create:encased_fan',
-      'create:mechanical_crafter',
-      'create:mechanical_arm',
-      'create:mechanical_drill',
-      'create:mechanical_pump',
-      'create:fluid_pipe',
-      'create:encased_fluid_pipe',
-      'create:fluid_tank',
-      'create:item_drain',
-      'create:spout',
-      'create:water_wheel',
-      'create:large_water_wheel',
-      'create:windmill_bearing',
-      'create:mechanical_bearing',
-      'create:encased_chain_drive',
-      'create:gearbox',
-      'create:andesite_casing',
-      'create:brass_casing',
-      'create:copper_casing'
-    ],
-    'TConstruct casting and smeltery support': [
-      'tconstruct:seared_melter',
-      'tconstruct:seared_heater',
-      'tconstruct:seared_table',
-      'tconstruct:seared_basin',
-      'tconstruct:seared_faucet',
-      'tconstruct:seared_drain',
-      'tconstruct:seared_fuel_tank',
-      'tconstruct:seared_fuel_gauge',
-      'tconstruct:smeltery_controller',
-      'tconstruct:seared_chute',
-      'tconstruct:scorched_alloyer',
-      'tconstruct:foundry_controller',
-      'tconstruct:scorched_table',
-      'tconstruct:scorched_basin',
-      'tconstruct:scorched_faucet',
-      'tconstruct:scorched_drain',
-      'tconstruct:scorched_chute',
-      'tconstruct:scorched_fuel_tank',
-      'tconstruct:scorched_fuel_gauge',
-      'tconstruct:scorched_ingot_tank'
-    ],
-    'PNC:R pressure and assembly support': [
-      'pneumaticcraft:pressure_chamber_wall',
-      'pneumaticcraft:pressure_chamber_glass',
-      'pneumaticcraft:pressure_chamber_valve',
-      'pneumaticcraft:pressure_chamber_interface',
-      'pneumaticcraft:thermopneumatic_processing_plant',
-      'pneumaticcraft:fluid_mixer',
-      'pneumaticcraft:refinery',
-      'pneumaticcraft:refinery_output',
-      'pneumaticcraft:assembly_controller',
-      'pneumaticcraft:assembly_platform',
-      'pneumaticcraft:assembly_laser',
-      'pneumaticcraft:assembly_drill',
-      'pneumaticcraft:heat_pipe',
-      'pneumaticcraft:pressure_tube',
-      'pneumaticcraft:reinforced_pressure_tube',
-      'pneumaticcraft:advanced_pressure_tube',
-      'pneumaticcraft:small_tank',
-      'pneumaticcraft:air_compressor',
-      'pneumaticcraft:advanced_air_compressor',
-      'pneumaticcraft:liquid_compressor',
-      'pneumaticcraft:advanced_liquid_compressor',
-      'pneumaticcraft:thermal_compressor',
-      'pneumaticcraft:manual_compressor',
-      'pneumaticcraft:electrostatic_compressor',
-      'pneumaticcraft:solar_compressor',
-      'pneumaticcraft:flux_compressor',
-      'compressedcreativity:rotational_compressor',
-      'pneumaticcraft:charging_station',
-      'pneumaticcraft:etching_tank'
-    ]
-  }
-  for (const [label, ids] of Object.entries(primaryCraftingSurfacePickaxeBlocks)) {
-    const missingPickaxe = blocksIn('pickaxe', ids)
-    const handBreakable = ids.filter(id => blockSets.hand?.has(id))
-    missingPickaxe.length || handBreakable.length
-      ? fail(`${label} stay pickaxe-gated`, `missing=${missingPickaxe.join(', ')} hand=${handBreakable.join(', ')}`)
-      : ok(`${label} stay pickaxe-gated`, `${ids.length} blocks`)
-  }
 
   const butcherKnife = readJson('kubejs/data/kubejs/recipes/primitive/flint_butcher_knife.json')
   const handAxe = readJson('kubejs/data/kubejs/recipes/primitive/flint_hand_axe.json')

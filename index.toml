@@ -9250,7 +9250,7 @@ hash = "dc753044f39d65b2a0106b3ea4005dd10287e94c4ce1cc7d5bb4f9948bbb37c2"
 
 [[files]]
 file = "kubejs/config/player_progression_regression.json"
-hash = "1f5fcbd2fba1ddf12cc90fea2f7ba08862576f95685881e320b7eab90657c9ba"
+hash = "f48e85442a8132ea389592b68c5129896f54e530a87cfa532ddbe5802169fcd6"
 
 [[files]]
 file = "kubejs/config/runtime_graph_dumps.json"
@@ -10710,7 +10710,7 @@ hash = "2f877d1dcdfe376099f4fd6df097168f161caa846416332e19fe64637c45ad83"
 
 [[files]]
 file = "kubejs/startup_scripts/99_ntp_audit_assignments.js"
-hash = "3b165e933993074fc80f924339d109b9375ee78637398b360acfe233729d4f17"
+hash = "ab1b99b23848d5cf787f44ec6eb7118bd1547132cdb6439d579de2fae1663806"
 
 [[files]]
 file = "kubejs/startup_scripts/README.md"
