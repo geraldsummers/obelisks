@@ -5,7 +5,7 @@
       id: 'gravel',
       lang: { en_us: 'Gravel' },
       block_id: 'minecraft:gravel',
-      types: ['stone'],
+      types: ['gravel'],
     },
     {
       id: 'aether_holystone',

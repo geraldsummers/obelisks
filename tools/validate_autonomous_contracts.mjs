@@ -983,9 +983,9 @@ function validateWorldgenStaticContracts() {
     : fail('foraging datapack is Undergarden-only', `placed=${foragePlacedFeatures.length} modifiers=${forageBiomeModifiers.length} tags=${forageBiomeTags.length} bad=${forageFailures.join(', ')}`)
 
   const meteorEvVariants = read('globalresources/obelisks/excavated_variants/obelisks/variants/meteor_modded_ores.json5')
-  meteorEvVariants.includes("id: 'gravel'") && meteorEvVariants.includes("block_id: 'minecraft:gravel'") && meteorEvVariants.includes("types: ['stone']")
-    ? ok('Excavated Variants treats gravel as a stone ore substrate')
-    : fail('Excavated Variants treats gravel as a stone ore substrate', 'missing gravel provided_stones entry')
+  meteorEvVariants.includes("id: 'gravel'") && meteorEvVariants.includes("block_id: 'minecraft:gravel'") && meteorEvVariants.includes("types: ['gravel']")
+    ? ok('Excavated Variants treats gravel as a gravel ore substrate')
+    : fail('Excavated Variants treats gravel as a gravel ore substrate', 'missing gravel provided_stones entry')
 
   const meteorOreFeatureDir = 'datapacks/meteor_ore_relocation/data/kubejs/worldgen/configured_feature'
   const gravelTargetProblems = []
