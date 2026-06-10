@@ -1,0 +1,82 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dimensions"
+	group: ""
+	id: "7B7213E267295F4B"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "09048D42BC60FB02"
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				id: "09044EA0DAE279AD"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			id: "1AF1E257059105E2"
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				id: "44E8E41D0904227E"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			id: "41E455CD4D16FB44"
+			tasks: [{
+				dimension: "deeperdarker:otherside"
+				id: "0CE308F73007DB38"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			id: "14F60973DD91B6F2"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "039C102255C92191"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			id: "632A0926919CA7AB"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "758B82ADE9D02306"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			id: "6D3B361F4618FB3F"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "5373A09895FBFB22"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			id: "29DD7BCEDC44AEF3"
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "44FAC15DEB384B1C"
+				type: "dimension"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+	]
+	title: "Dimensions"
+}

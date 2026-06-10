@@ -7,11 +7,13 @@
   "comment_structure_blacklist": "Supports: full id, namespace.*, *, #namespace:tag",
   "Structure blacklist": [
     "minecraft.*",
+    "hexerei.*",
     "ae2.*"
   ],
   "comment_foundation_blacklist": "Supports: full id, namespace.*, *, #namespace:tag",
   "Foundation blacklist": [
     "minecraft.*",
+    "hexerei.*",
     "ae2.*"
   ],
   "comment_auto": "Below list contains real structure template files (.nbt). Do not edit.",
