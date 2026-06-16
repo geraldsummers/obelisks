@@ -10681,6 +10681,10 @@ file = "kubejs/server_scripts/40_recipe_add/62_chemical_electronics_magic_growth
 hash = "55d215882b09a5ab3c52d2c19fb7ed89ee6d4b7817eac8243ad9eb6b7bc39842"
 
 [[files]]
+file = "kubejs/server_scripts/40_recipe_add/63_chemlib_full_integration_routes.js"
+hash = "262aa03a42a6ce40cfd99751fd687a7596f94e31924bb56c09429cbcd56c8ffb"
+
+[[files]]
 file = "kubejs/server_scripts/40_recipe_add/65_chemlib_plate_manufacturing_routes.js"
 hash = "2632711ce6d3abb90dc3ca87da08cabdee3a4a510fe19ccd4f0f046e3c5bfb92"
 
