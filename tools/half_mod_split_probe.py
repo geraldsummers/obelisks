@@ -35,7 +35,7 @@ LIVE = Path(
 OUT_ROOT = Path(os.environ.get("OUT_ROOT", "/tmp/btm-half-mod-tests"))
 OUT = OUT_ROOT / time.strftime("%Y%m%d-%H%M%S")
 MOD_DIRS = [SERVER / "mods", LIVE / "mods"]
-PORT = int(os.environ.get("SERVER_PORT", "25566"))
+PORT = int(os.environ.get("SERVER_PORT", "25565"))
 TARGET_FRACTION = float(os.environ.get("HALF_MOD_TARGET_FRACTION", "0.5"))
 SPLIT_MODE = os.environ.get("HALF_MOD_SPLIT_MODE", "primary")
 

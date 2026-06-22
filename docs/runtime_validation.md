@@ -12,7 +12,7 @@ Do not treat stale client/server logs or stale jar caches as evidence. Re-sync o
 tools/agent_validate.sh --static
 tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime
 tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime --strict-data-dumps
-tools/agent_validate.sh --smoke --server-dir /tmp/btm-agent-validate-smoke --port 25566 --reset-runtime
+tools/agent_validate.sh --smoke --server-dir /tmp/btm-agent-validate-smoke --port 25565 --reset-runtime
 tools/test_agent_validate_surfaces.sh
 tools/test_agent_validate_surfaces.sh --include-static --runtime /path/to/fresh/runtime
 ```
@@ -63,7 +63,7 @@ python3 -m py_compile tools/*.py
 ```bash
 tools/sync_to_server.sh --dry-run
 tools/sync_to_server.sh --apply --server-dir server-instance
-tools/server_content_smoke.sh --server-dir /tmp/btm-content-smoke --port 25566 --reset-runtime
+tools/server_content_smoke.sh --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime
 ```
 
 `tools/server_content_smoke.sh` bootstraps a fresh server, prunes stale runtime mods, boots the server, scans hard log failures, and runs `tools/pack_test_suite.mjs` with `BTM_STRICT_RUNTIME=1`.

@@ -22,7 +22,7 @@ LIVE_MODS = Path.home() / ".local/share/PrismLauncher/instances" / INSTANCE_NAME
 SERVER_MODS = SERVER_DIR / "mods"
 OUT_BASE = Path(os.environ.get("OUT_BASE", "/tmp/btm-ram-profile"))
 CLIENT_JOIN_PROBE = ROOT / "tools/client_join_probe.sh"
-SERVER_PORT = "25566"
+SERVER_PORT = "25565"
 DISABLED_SUFFIX = ".tps-probe-disabled"
 
 

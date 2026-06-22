@@ -26,7 +26,7 @@ class HarnessConfig:
     fatal_patterns: dict[str, Pattern[str]]
     activity_patterns: dict[str, Pattern[str]] = field(default_factory=dict)
     username: str = "AgentClient"
-    default_port: int = 25566
+    default_port: int = 25565
     default_cycles: int = 1
     default_boot_timeout: int = 900
     default_join_timeout: int = 900

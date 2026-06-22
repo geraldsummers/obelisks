@@ -889,7 +889,7 @@ def audit_target(server: Server, target: str, radius_chunks: int, count_log_ids:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--server-dir", default="/tmp/btm-forest-tree-audit")
-    parser.add_argument("--port", default="25566")
+    parser.add_argument("--port", default="25565")
     parser.add_argument("--reset-runtime", action="store_true")
     parser.add_argument("--skip-bootstrap", action="store_true")
     parser.add_argument("--radius-chunks", type=int, default=1)

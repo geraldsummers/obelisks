@@ -5,7 +5,7 @@
     "name": "Bound to Matter",
     "minecraft": "1.20.1",
     "forge": "47.4.13",
-    "localServerPort": 25566
+    "localServerPort": 25565
   },
   "sourceSurface": {
     "authoritativeRoots": [

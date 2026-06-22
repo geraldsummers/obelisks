@@ -39,7 +39,7 @@ Do not sync or delete player/runtime state by default. Use explicit reset flags 
 ## Runtime Defaults
 - Minecraft: `1.20.1`
 - Forge: `47.4.13`
-- Local server port: `25566`
+- Local server port: `25565`
 - Offline local testing usernames are allowed for agent validation.
 
 ## Where To Work
@@ -55,15 +55,15 @@ Do not sync or delete player/runtime state by default. Use explicit reset flags 
 - Server apply: `tools/sync_to_server.sh --apply --server-dir server-instance`
 - Client dry run: `tools/sync_to_client.sh --dry-run --client-dir /path/to/client`
 - Client apply: `tools/sync_to_client.sh --apply --client-dir /path/to/client`
-- Bootstrap server: `tools/bootstrap_server.sh --server-dir /tmp/btm-server --port 25566`
+- Bootstrap server: `tools/bootstrap_server.sh --server-dir /tmp/btm-server --port 25565`
 - Launch server: `tools/launch_server_direct.sh --server-dir /tmp/btm-server -- nogui`
 - Bootstrap client: `tools/bootstrap_client_runtime.sh --client-dir /tmp/btm-client`
-- Launch direct client: `tools/launch_client_direct.sh --client-dir /tmp/btm-client --username AgentClient --server 127.0.0.1:25566`
-- Direct join probe: `tools/client_join_probe_direct.sh --client-dir /tmp/btm-client --server 127.0.0.1:25566`
+- Launch direct client: `tools/launch_client_direct.sh --client-dir /tmp/btm-client --username AgentClient --server 127.0.0.1:25565`
+- Direct join probe: `tools/client_join_probe_direct.sh --client-dir /tmp/btm-client --server 127.0.0.1:25565`
 - Agent static validation: `tools/agent_validate.sh --static`
 - Agent existing-runtime validation: `tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime`
-- Agent fresh smoke validation: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-agent-validate-smoke --port 25566 --reset-runtime`
-- Content smoke: `tools/server_content_smoke.sh --server-dir /tmp/btm-content-smoke --port 25566 --reset-runtime`
+- Agent fresh smoke validation: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-agent-validate-smoke --port 25565 --reset-runtime`
+- Content smoke: `tools/server_content_smoke.sh --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime`
 - Prism fallback: `tools/launch_prism_instance.sh "Bound to Matter"`
 
 The sync scripts use managed source path lists and excludes for runtime state. Server sync also excludes known client-only mod entries so client-only jars do not enter the dedicated server runtime. Bootstrap scripts resolve current `.pw.toml` downloads into generated server/client roots; use `tools/resolve_packwiz_downloads.mjs --dry-run --pack-root . --target-dir /tmp/btm-server --side server` to inspect that step directly.
@@ -109,7 +109,7 @@ Current LC/DH scenario:
 Recommended validation ladder:
 1. Static checks: `tools/agent_validate.sh --static`.
 2. Existing fresh runtime: `tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime`.
-3. Fresh server smoke for recipe/config/content changes: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-content-smoke --port 25566 --reset-runtime`.
+3. Fresh server smoke for recipe/config/content changes: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime`.
 4. Client/server scenario harnesses for stability, rendering, login, LC/DH/TFTH, or client-only work.
 
 Treat runtime validation as authoritative only when it reads logs and KubeJS audit dumps from a fresh or intentionally reused current runtime. `--runtime` and `--smoke` run the pack suite in strict runtime mode. Add `--strict-data-dumps` only when vanilla `/dump` output such as `dump/data_raw/loot_tables` was intentionally generated; this is separate from KubeJS audit dumps under `kubejs/config`.
