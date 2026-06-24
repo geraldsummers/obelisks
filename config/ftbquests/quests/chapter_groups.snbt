@@ -1,3 +1,16 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{id:"52D8800CDEBBF5D6" order_index:0 title:"Orientation"},
+		{id:"3570F9CE90E09BD1" order_index:1 title:"Routes and Settlements"},
+		{id:"1535A2E7C7CA772B" order_index:2 title:"Body and Blood"},
+		{id:"6E0A7267C9728B31" order_index:3 title:"Relics and Rewards"},
+		{id:"17D1B259E2B76A4F" order_index:4 title:"Workshop Spine"},
+		{id:"4B746D4352454154" order_index:5 title:"Create Systems"},
+		{id:"666B73C638A92906" order_index:6 title:"Power and Control"},
+		{id:"3BF99559A31D6EB4" order_index:7 title:"Worlds and Threats"},
+		{id:"77AFAA45BDFC5D88" order_index:8 title:"Magic and Matter"},
+		{id:"410B481B7D8A23F1" order_index:9 title:"Space and Intelligence"},
+		{id:"7D79E4B0E21B410D" order_index:10 title:"Late Matter Branches"},
+		{id:"42544D4255494C44" order_index:11 title:"Building Blocks"}
+	]
 }

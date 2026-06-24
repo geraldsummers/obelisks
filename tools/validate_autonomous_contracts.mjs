@@ -438,7 +438,18 @@ function validateMagicBody() {
 function validateClientQuestIntent() {
   const liveQuestFiles = walk('config/ftbquests', file => file.endsWith('.snbt'))
   const liveQuestContent = liveQuestFiles.filter(file => !file.endsWith('client-config.snbt'))
-  liveQuestContent.length ? fail('live FTB quest content is intentionally empty', liveQuestContent.join(', ')) : ok('live FTB quest content is intentionally empty', `${liveQuestFiles.length} config file(s)`)
+  const liveChapters = liveQuestContent.filter(file => file.includes('/chapters/') || file.includes('\\chapters\\'))
+  const liveQuestCount = liveChapters.reduce((sum, file) => {
+    const text = read(file)
+    return sum + [...text.matchAll(/^\s*\{\s*id:\s*"?[0-9A-Fa-f]{16}"?/gm)].length
+  }, 0)
+  const groupFile = 'config/ftbquests/quests/chapter_groups.snbt'
+  const liveGroups = exists(groupFile)
+    ? [...read(groupFile).matchAll(/\{id:\s*"?[0-9A-Fa-f]{16}"?/g)].length
+    : 0
+  liveChapters.length && liveQuestCount && liveGroups
+    ? ok('live FTB quest content is populated', `${liveChapters.length} chapters, ${liveQuestCount} quest nodes, ${liveGroups} groups`)
+    : fail('live FTB quest content is populated', `chapters=${liveChapters.length}, quest_nodes=${liveQuestCount}, groups=${liveGroups}`)
 
   const generatedQuestFiles = walk('generated/ftbquests', file => file.endsWith('.snbt'))
   generatedQuestFiles.length >= 4 ? ok('generated quest output remains available for regeneration audits', `${generatedQuestFiles.length} generated files`) : fail('generated quest output remains available for regeneration audits', `${generatedQuestFiles.length} files`)

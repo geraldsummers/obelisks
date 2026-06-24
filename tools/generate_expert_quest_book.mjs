@@ -151,11 +151,12 @@ const coinTierAliases = {
 function activeTier(tier) { return coinTierAliases[tier] || 'copper' }
 const tierCoins = {
   copper: ['copper'],
-  iron: ['copper', 'iron'],
-  brass: ['copper', 'iron', 'brass'],
-  gold: ['copper', 'iron', 'brass', 'gold'],
-  platinum: ['copper', 'iron', 'brass', 'gold', 'platinum']
+  iron: ['copper', 'zinc', 'iron'],
+  brass: ['copper', 'zinc', 'iron', 'industrial_iron', 'brass'],
+  gold: ['copper', 'zinc', 'iron', 'industrial_iron', 'brass', 'gold'],
+  platinum: ['copper', 'zinc', 'iron', 'industrial_iron', 'brass', 'gold', 'netherite']
 }
+function coinItem(coin) { return `createdeco:${coin}_coin` }
 
 const chapterGroups = {
   orientation: { id: '52D8800CDEBBF5D6', title: 'Orientation', order: 0 },
@@ -510,9 +511,9 @@ function displayQuestTitle(title) {
     .replace(/^AE2 Control Permission$/, 'AE2 Control Access')
 }
 function rewards(chapter, quest, tier) {
-  if (tier === 'starting') return `[{id:"${ftbId(`reward:${chapter}:${quest}:0`)}" type:"item" item:"dotcoinmod:copper_coin" count:4}]`
+  if (tier === 'starting') return `[{id:"${ftbId(`reward:${chapter}:${quest}:0`)}" type:"item" item:"${coinItem('copper')}" count:4}]`
   const list = tierCoins[activeTier(tier)] || ['copper']
-  return '[' + list.map((coin, i) => `{id:"${ftbId(`reward:${chapter}:${quest}:${i}`)}" type:"item" item:"dotcoinmod:${coin}_coin" count:4}`).join(',') + ']'
+  return '[' + list.map((coin, i) => `{id:"${ftbId(`reward:${chapter}:${quest}:${i}`)}" type:"item" item:"${coinItem(coin)}" count:4}`).join(',') + ']'
 }
 function questSnbt(chapterPrefix, tier, quest) {
   const deps = quest.deps?.length ? ` dependencies:[${quest.deps.map(d => `"${questFtbId(d)}"`).join(',')}]` : ''
@@ -720,7 +721,7 @@ const chapters = [
       q('SO_REPAIR', 'Repair Mindset', 0, 2, [item('tconstruct:repair_kit')], ['SO_PARTS'], ['Do not throw tools away. Repair is part of the cost of distance and deposits.']),
       q('SO_HOOK', 'Hooks and Routes', 2, 2, [item('rehooked:wood_hook')], ['SO_BACKPACK'], ['Movement tools are route tools. They help traverse terrain; they do not erase distance.']),
       q('SO_TNT', 'Controlled Blast Mining', 4, 2, [item('minecraft:tnt')], ['SO_PARTS'], ['TNT is meant to be an early mining method. It is loud, risky, and efficient when you plan the blast.']),
-      q('SO_TRADE_FLOAT', 'Sixteen Copper Coins', 6, 2, [item('dotcoinmod:copper_coin', 16)], ['SO_BACKPACK'], ['Holding copper coins unlocks village trading. Coins are a crafting system, not just money.']),
+      q('SO_TRADE_FLOAT', 'Sixteen Copper Coins', 6, 2, [item('createdeco:copper_coin', 16)], ['SO_BACKPACK'], ['Holding copper coins unlocks village trading. Coins are a crafting system, not just money.']),
       q('SO_NETHER', 'First Nether Obelisk Run', -4, 4, [item('minecraft:netherrack', 16)], ['SO_SHELTER', 'SO_WATER', 'SO_COOKING'], ['This is a prepared raid, not a base move. Pack light, bring food and water, take netherrack, retreat successfully.']),
       q('SO_GROUT', 'Netherrack Grout', -2, 4, [item('tconstruct:grout', 8)], ['SO_NETHER', 'SO_PARTS'], ['Base grout now remembers the Nether. This is the first hard proof that obelisks feed progression.']),
       q('SO_MELTERY', 'First Meltery', 0, 4, [item('tconstruct:seared_melter'), item('tconstruct:seared_heater'), item('tconstruct:seared_faucet'), item('tconstruct:seared_basin'), item('tconstruct:seared_table')], ['SO_GROUT'], ['The meltery is the first metallurgy checkpoint. From here, ore is a material stream instead of a furnace shortcut.']),
@@ -736,9 +737,11 @@ const chapters = [
       q('MG_START', 'Starting Out Complete', 0, 0, [item('tconstruct:seared_melter')], ['SO_MELTERY'], ['The tutorial spine has reached molten material. From here the pack opens into parallel streams.']),
       q('MG_TCON', 'Tinkers Metallurgy Gate', 2, -2, [item('tconstruct:foundry_controller')], ['MG_START', 'TC_FOUNDRY'], ['Tinkers proves deposit interpretation and alloy authority before Create becomes the infrastructure layer.']),
       q('MG_CREATE', 'Create Manufacturing Gate', 4, -2, [item('kubejs:brass_machine_casing')], ['MG_TCON', 'C2_BRASS'], ['Create proves sequenced manufacturing, brass, presses, and manufactured casings.']),
-      q('MG_POWER', 'Grid Power Gate', 6, -1, [item('kubejs:electrical_machine_casing')], ['MG_CREATE', 'GP_CASE'], ['SU and heat feed Power Grid, where rotational infrastructure becomes stored electricity. The casing is the manufacturing proof for this tier.']),
+      q('MG_PRESSURE', 'Pressure Machine Gate', 5, -1, [item('kubejs:airtight_machine_casing')], ['MG_CREATE'], ['Airtight casings prove sealed pressure work before the electrical grid and late chemistry branches.']),
+      q('MG_POWER', 'Grid Power Gate', 6, -1, [item('kubejs:electrical_machine_casing')], ['MG_PRESSURE', 'GP_CASE'], ['SU and heat feed Power Grid, where rotational infrastructure becomes stored electricity. The casing is the manufacturing proof for this tier.']),
       q('MG_OC2R', 'OC2R Control Gate', 8, -1, [item('kubejs:electrical_machine_casing')], ['MG_POWER', 'OC_NETWORK'], ['OC2R is the intersite communication/control track before AE2 local intelligence. The electrical casing proves the electronics line is online.']),
       q('MG_SPACE', 'Space Logistics Gate', 10, 0, [item('kubejs:space_machine_casing')], ['MG_OC2R', 'SP_CASE'], ['Space is a logistics and chemistry commitment that consumes the earlier factory rather than replacing it. The casing is the launch-era authority item.']),
+      q('MG_RAW_IMPOSSIBLE', 'Raw Impossible Casing', 11, -1, [item('kubejs:raw_impossible_casing')], ['MG_SPACE', 'MG_SYNTHESIS'], ['The raw casing is the visible bridge from space-era materials into AE2 local intelligence.']),
       q('MG_MAGIC', 'Blood Magic Gate', 4, 2, [item('bloodmagic:etherealslate')], ['MG_START', 'M1_ETHEREAL'], ['Magic progresses through Blood Magic slate permissions. Ethereal Slate proves the late magic stream is ready to contribute.']),
       q('MG_ECONOMY', 'Village Economy Gate', 6, 3, [item('wares:completed_delivery_agreement')], ['MG_MAGIC', 'VE_COMPLETED'], ['Coins, Wares, villages, and routes are a parallel crafting economy.']),
       q('MG_SYNTHESIS', 'Synthesis Gate', 8, 2, [item('kubejs:phosphate_flux')], ['MG_MAGIC', 'MG_ECONOMY', 'S1_SYNTHESIS_EXIT'], ['Create and PNCR synthesis turn deposits into chemical packages, feeding late materials.']),
@@ -950,8 +953,9 @@ const chapters = [
       q('FI_CAPTURE', 'Gas Capture', 2, -1, [item('latent_chemlib:gas_capture')], ['FI_COOLANT', 'S1_SYNTHESIS_EXIT'], ['Volatile ChemLib matter must be captured before it can become a production lane.']),
       q('FI_TANK', 'Chemical Containment', 4, -1, [item('latent_chemlib:gas_tank')], ['FI_CAPTURE']),
       q('FI_RELEASE', 'Controlled Release', 6, 1, [item('latent_chemlib:gas_release')], ['FI_TANK']),
+      q('FI_FISSION_ROD', 'Nuclear Decay Cell', 6, -2, [item('latent_chemlib:sealed_chemical_cell')], ['FI_TANK'], ['Latent ChemLib owns the fission and nuclear-decay authority. Treat sealed cells as the carried proof for late heat and radiation-adjacent routes.']),
       q('FI_AE_CONTROL', 'AE2 Control Access', 8, 0, [item('kubejs:impossible_machine_casing')], ['AE_CONTROLLER'], ['High-energy matter needs local intelligence and controlled automation.']),
-      q('FI_REACTION', 'Reaction Chamber', 10, 0, [item('latent_chemlib:gas_reaction_chamber')], ['FI_AE_CONTROL', 'FI_TANK'], ['The reaction chamber is the bridge from power engineering into periodic-table traversal.']),
+      q('FI_REACTION', 'Reaction Chamber', 10, 0, [item('latent_chemlib:gas_reaction_chamber')], ['FI_AE_CONTROL', 'FI_TANK', 'FI_FISSION_ROD'], ['The reaction chamber is the bridge from power engineering into periodic-table traversal.']),
       q('FI_READY', 'Latent Matter Readiness', 12, 0, [item('latent_chemlib:gas_reaction_chamber'), item('powergrid:battery')], ['FI_REACTION'], ['You now have coolant, containment, high-energy handling, and AE2 control ready for ChemLib traversal.'])
     ]
   },
@@ -1194,7 +1198,7 @@ const chapters = [
       q('LC_MEDICAL_CACHE', 'Recovery Cache', 4, 1, [item('minecraft:golden_apple'), item('farmersdelight:roast_chicken_block')], ['LC_SPACE_ROUTE'], [
         'Urban scavenging has long sightlines, vertical danger, and recovery risk. Stage food and healing before deep building clears.'
       ]),
-      q('LC_CITY_LOOT', 'City Chest Recovery', 6, 0, [item('dotcoinmod:gold_coin'), item('minecraft:chest')], ['LC_RAIL_DUNGEON', 'LC_MEDICAL_CACHE'], [
+      q('LC_CITY_LOOT', 'City Chest Recovery', 6, 0, [item('createdeco:gold_coin'), item('minecraft:chest')], ['LC_RAIL_DUNGEON', 'LC_MEDICAL_CACHE'], [
         'World loot and coins are part of the crafting economy. Treat recovered city loot as a resource stream that still has to be hauled home.'
       ]),
       q('LC_CITY_RECOVERY', 'Recovered City Infrastructure', 8, 0, [item('minecraft:iron_bars'), item('minecraft:chain'), item('minecraft:lantern')], ['LC_CITY_LOOT'], [
@@ -1452,14 +1456,14 @@ const chapters = [
   {
     filename: 'adventuring', prefix: 'AD', id: 'BTM_ADVENTURING', order: 0, title: 'Adventuring, Coins, and Wares', tier: 'copper', group: 'routes', description: ['Adventure is a grindable progression lane. Coins, contracts, villages, and routes give useful work when the next factory is unclear.'], quests: [
       q('AD_ROUTE', 'Route Supplies', 0, 0, [item('minecraft:compass'), item('minecraft:map')], ['SO_EXIT_ADVENTURE']),
-      q('AD_COIN', 'First Market Float', 2, 0, [item('dotcoinmod:copper_coin', 16)], ['AD_ROUTE']),
+      q('AD_COIN', 'First Market Float', 2, 0, [item('createdeco:copper_coin', 16)], ['AD_ROUTE']),
       q('AD_TRADING_POST', 'Village Trading Post', 4, -1, [item('tradingpost:trading_post')], ['AD_COIN']),
       q('AD_WARES_TABLE', 'Wares Delivery Table', 4, 1, [item('wares:delivery_table')], ['AD_COIN']),
       q('AD_CONTRACT', 'Contract As Crafting', 6, 0, [item('wares:delivery_agreement')], ['AD_TRADING_POST', 'AD_WARES_TABLE']),
       q('AD_PACKAGE', 'Physical Package', 8, -1, [item('wares:package')], ['AD_CONTRACT']),
       q('AD_COMPLETED', 'Completed Delivery', 8, 1, [item('wares:completed_delivery_agreement')], ['AD_PACKAGE']),
       q('AD_CURSED_REGIONS', 'Cursed Regions', 10, -1, [item('minecraft:compass'), item('minecraft:shield')], ['AD_COMPLETED'], ['Cursed Biomes adds dangerous regional laws. Treat cursed territory as an extraction/adventure route, not background ambience.']),
-      q('AD_IRON_FLOAT', 'Iron Coin Float', 12, 0, [item('dotcoinmod:iron_coin', 4)], ['AD_CURSED_REGIONS'])
+      q('AD_IRON_FLOAT', 'Iron Coin Float', 12, 0, [item('createdeco:iron_coin', 4)], ['AD_CURSED_REGIONS'])
     ]
   },
   {
@@ -1473,8 +1477,8 @@ const chapters = [
       q('VE_BOUQUETS', 'Procedural Bouquets', 6, -1, [item('procedural_bouquets:bouquet_grid'), item('procedural_bouquets:potted_bouquet')], ['VE_COMPLETED'], ['Decorative systems can have shallow graph depth. Bouquets stay because they are a small custom settlement reward, not a massive block-variant library.']),
       q('VE_VILLAGE_WALLS', 'Fortified Village', 8, 1, [item('minecraft:stone_bricks'), item('minecraft:spruce_log')], ['VE_COMPLETED'], ['Village Walls turns settlement defense into local infrastructure. The wall itself is commanded/world work, but the materials should still be physical.']),
       q('VE_SETTLEMENT_ROADS', 'Settlement Roads', 10, 1, [item('minecraft:dirt_path'), item('minecraft:gravel'), item('minecraft:stone_bricks')], ['VE_VILLAGE_WALLS'], ['Settlement Roads makes routes visible in the world. Roads and bridges support distance; they do not erase it.']),
-      q('VE_IRON_COIN_TIER', 'Iron Coin Float', 12, -1, [item('dotcoinmod:iron_coin', 8)], ['VE_COMPLETED'], ['Higher coins come from harder chapters, loot, and combat loops. They should not be convertible downward or upward in bulk.']),
-      q('VE_BRASS_COIN_TIER', 'Brass Coin Float', 14, -1, [item('dotcoinmod:brass_coin', 8)], ['VE_IRON_COIN_TIER'], ['Brass coin trades are where villages begin supporting workshop recovery, logistics, and settlement upgrades.'])
+      q('VE_IRON_COIN_TIER', 'Iron Coin Float', 12, -1, [item('createdeco:iron_coin', 8)], ['VE_COMPLETED'], ['Higher coins come from harder chapters, loot, and combat loops. They should not be convertible downward or upward in bulk.']),
+      q('VE_BRASS_COIN_TIER', 'Brass Coin Float', 14, -1, [item('createdeco:brass_coin', 8)], ['VE_IRON_COIN_TIER'], ['Brass coin trades are where villages begin supporting workshop recovery, logistics, and settlement upgrades.'])
     ]
   },
   {
@@ -1486,7 +1490,7 @@ const chapters = [
       q('PC_BANNER', 'Captain Banner Capture', 2, 1, [item('minecraft:white_banner'), item('minecraft:ominous_banner')], ['PC_SCOUT'], ['Captains mark successful interception. Treat banners as route intelligence markers in your settlement, not trophy clutter.']),
       q('PC_COMMAND_POST', 'Command Post', 4, 0, [item('minecraft:cartography_table'), item('minecraft:lectern'), item('minecraft:barrel')], ['PC_SIGNAL', 'PC_BANNER', 'VE_TRADING_POST'], ['A command post is a real place: maps, records, and stock. Campaign pressure should be answered by infrastructure, not just better armor.']),
       q('PC_RECOVERY', 'Recovery Contract Loop', 6, -1, [item('wares:delivery_agreement'), item('wares:completed_delivery_agreement')], ['PC_COMMAND_POST'], ['After a campaign hit, route recovery should return value. Contracts and deliveries make defense part of settlement economics.']),
-      q('PC_BATTLE_STANDARD', 'Battle Standard Economy', 8, 0, [item('dotcoinmod:iron_coin', 16), item('dotcoinmod:brass_coin', 4), item('wares:completed_delivery_agreement')], ['PC_RECOVERY', 'SC_ECONOMY'], ['Capstone: pillager pressure now feeds your broader route economy. You can scout, defend, recover, and reinvest without breaking the pack\'s physical logistics rules.'])
+      q('PC_BATTLE_STANDARD', 'Battle Standard Economy', 8, 0, [item('createdeco:iron_coin', 16), item('createdeco:brass_coin', 4), item('wares:completed_delivery_agreement')], ['PC_RECOVERY', 'SC_ECONOMY'], ['Capstone: pillager pressure now feeds your broader route economy. You can scout, defend, recover, and reinvest without breaking the pack\'s physical logistics rules.'])
     ]
   },
   {
@@ -1559,6 +1563,9 @@ for (const ch of chapters) {
 }
 if (graphWarnings.length) console.warn(`Quest graph warnings:\n${graphWarnings.join('\n')}`)
 
+for (const file of fs.readdirSync(chapterDir).filter(file => file.endsWith('.snbt'))) {
+  fs.unlinkSync(path.join(chapterDir, file))
+}
 for (const ch of chapters) fs.writeFileSync(path.join(chapterDir, `${ch.filename}.snbt`), chapterSnbt(ch))
 fs.writeFileSync(path.join(root, 'config/ftbquests/quests/chapter_groups.snbt'), chapterGroupsSnbt())
 console.log(`generated ${chapters.length} quest chapters, ${allQuestIds.size} quests`)
