@@ -57,7 +57,9 @@ Revalidate with the current harness after touching `config/c2me.toml`, `config/D
 
 ## Custom Mod Notes
 
-Canonical custom mod sources live under `/home/gerald/mcmods`. Use `/home/gerald/mcmods/settlement-roads` for settlement roads unless explicitly told otherwise.
+Canonical custom mod sources live under `generated/custom-mod-sources`. Use `generated/custom-mod-sources/settlement-roads` for settlement roads unless explicitly told otherwise.
+
+Set `BTM_CUSTOM_MODS_DIR` to use a different custom-mod checkout when running validation in another environment.
 
 Prior repairs worth retaining as current expectations:
 

@@ -123,7 +123,7 @@ For runtime/tooling changes, also run:
 4. Runtime probes against temporary directories when launch assets are available
 5. `python3 -m py_compile` for touched Python tools
 
-## Custom Mods Source (`/home/gerald/mcmods`)
+## Custom Mods Source (`generated/custom-mod-sources`)
 Active pack-critical sources:
 - `acid-vat` (`acid_vat`)
 - `bound-to-matter-fixes` (`btmfixes`)
@@ -144,4 +144,6 @@ Active pack-critical sources:
 Deferred:
 - `deferred/oc2rwireless` (`oc2rwireless`)
 
-Note: `settlementroads` appears in multiple dirs; use `/home/gerald/mcmods/settlement-roads` as canonical unless explicitly told otherwise.
+Note: `settlementroads` appears in multiple dirs; use `generated/custom-mod-sources/settlement-roads` as canonical unless explicitly told otherwise.
+
+Override source root for alternate environments with `BTM_CUSTOM_MODS_DIR`.

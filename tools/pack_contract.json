@@ -812,7 +812,7 @@
         "evidence": [
           "tools/validate_autonomous_contracts.mjs",
           "tools/validate_pack_contract.mjs",
-          "/home/gerald/mcmods",
+          "generated/custom-mod-sources",
           "mods/btmfixes-0.1.0.jar",
           "mods/pillagercampaigns-0.2.0.jar"
         ],
@@ -850,7 +850,7 @@
     ]
   },
   "customMods": {
-    "sourceRoot": "/home/gerald/mcmods",
+    "sourceRoot": "generated/custom-mod-sources",
     "entries": [
       {
         "id": "btmfixes",
