@@ -1,6 +1,7 @@
 *.zip
 *.jar
 server-template/
+generated/custom-mod-sources/
 
 kubejs/recipe_dumps/
 kubejs/config/recipe_audit_summary.json

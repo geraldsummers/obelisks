@@ -1,50 +1,55 @@
 # Starting Item Economy Audit
 
 Recipes scanned: 23169
-Embark options: 38 at quota 18
+Embark options: 37 at quota 18
 Fallback kits: 6
-Starter entries audited: 73
-Rejected starter entries: 0
+Starter entries audited: 72
+Rejected starter entries: 4
+
+## Starter Safety Findings
+- embark:leather_cap minecraft:leather_helmet: pattern (^|:).*(helmet|chestplate|leggings|boots)$
+- embark:leather_boots minecraft:leather_boots: pattern (^|:).*(helmet|chestplate|leggings|boots)$
+- embark:campfire minecraft:campfire: functional crafting/processing block
+- embark:bonemeal_pouch minecraft:bone_meal: exact hard reject
 
 ## Current Starter Roles
 - embark:terracotta_bowl thirst:terracotta_bowl: Water; inputs 1, outputs 2
 - embark:filled_waterskin cold_sweat:filled_waterskin: Water; inputs 10, outputs 6
+- embark:thermometer cold_sweat:thermometer: Other; inputs 0, outputs 1
+- embark:leather_cap minecraft:leather_helmet: Material; inputs 10, outputs 1
+- embark:leather_boots minecraft:leather_boots: Material; inputs 7, outputs 1
+- embark:goat_fur_lining cold_sweat:goat_fur: Other; inputs 0, outputs 0
+- embark:hoglin_hide_lining cold_sweat:hoglin_hide: Material; inputs 0, outputs 0
+- embark:chameleon_molt cold_sweat:chameleon_molt: Other; inputs 0, outputs 0
 - embark:torch_bundle minecraft:torch: Camp; inputs 21, outputs 3; progression-adjacent recipe participant
-- embark:lantern minecraft:lantern: Camp; inputs 4, outputs 2
 - embark:candle_bundle minecraft:candle: Camp; inputs 16, outputs 2
+- embark:lantern minecraft:lantern: Camp; inputs 4, outputs 2
+- embark:campfire minecraft:campfire: Camp; inputs 4, outputs 0
+- embark:charcoal minecraft:charcoal: Camp; inputs 26, outputs 6; progression-adjacent recipe participant
 - embark:rope_coil farmersdelight:rope: Route; inputs 3, outputs 2
 - embark:compass minecraft:compass: Route; inputs 19, outputs 2; progression-adjacent recipe participant
 - embark:clock minecraft:clock: Route; inputs 23, outputs 2; progression-adjacent recipe participant
 - embark:empty_map minecraft:map: Route; inputs 0, outputs 1
+- embark:paper_pack minecraft:paper: Material; inputs 74, outputs 7; progression-adjacent recipe participant
 - embark:spyglass minecraft:spyglass: Route; inputs 5, outputs 1
 - embark:natures_compass naturescompass:naturescompass: Route; inputs 1, outputs 2
-- embark:recovery_compass minecraft:recovery_compass: Route; inputs 1, outputs 1
-- embark:reinforced_hang_glider hangglider:reinforced_hang_glider: Route; inputs 0, outputs 1
-- embark:diving_helmet create:copper_diving_helmet: Water; inputs 2, outputs 1
-- embark:diving_boots create:copper_diving_boots: Water; inputs 2, outputs 1; progression-adjacent recipe participant
 - embark:rail_bundle minecraft:rail: Route; inputs 3, outputs 1
 - embark:powered_rail_bundle minecraft:powered_rail: Route; inputs 4, outputs 1
 - embark:minecart minecraft:minecart: Route; inputs 14, outputs 2; progression-adjacent recipe participant
 - embark:lead_pair minecraft:lead: Route; inputs 0, outputs 6
 - embark:saddle minecraft:saddle: Route; inputs 4, outputs 2
-- embark:copper_coin_float createdeco:copper_coin: Trade; inputs 0, outputs 0
-- embark:zinc_coin_float createdeco:zinc_coin: Trade; inputs 0, outputs 0
 - embark:season_calendar sereneseasons:calendar: Route; inputs 1, outputs 1
 - embark:wheat_seeds minecraft:wheat_seeds: Food; inputs 10, outputs 0
-- embark:cabbage_seeds farmersdelight:cabbage_seeds: Food; inputs 2, outputs 0
-- embark:tomato_seeds farmersdelight:tomato_seeds: Food; inputs 2, outputs 1
-- embark:rice_panicles farmersdelight:rice_panicle: Food; inputs 4, outputs 1
-- embark:bellpepper_seeds veggiesdelight:bellpepper_seeds: Food; inputs 0, outputs 0
-- embark:broccoli_seeds veggiesdelight:broccoli_seeds: Food; inputs 0, outputs 0
-- embark:turnip_seeds veggiesdelight:turnip_seeds: Food; inputs 0, outputs 0
-- embark:potatoes minecraft:potato: Food; inputs 10, outputs 2
-- embark:carrots minecraft:carrot: Food; inputs 14, outputs 2
-- embark:brown_mushrooms minecraft:brown_mushroom: Food; inputs 16, outputs 0
+- embark:beetroot_seeds minecraft:beetroot_seeds: Food; inputs 3, outputs 0
+- embark:melon_seeds minecraft:melon_seeds: Food; inputs 1, outputs 1
+- embark:bonemeal_pouch minecraft:bone_meal: Food; inputs 48, outputs 11; progression-adjacent recipe participant
 - embark:apple_ration minecraft:apple: Food; inputs 23, outputs 1
-- embark:vegetable_stock farmersdelight:cabbage: Food; inputs 5, outputs 2
-- embark:tomato_stock farmersdelight:tomato: Food; inputs 4, outputs 1
-- embark:vodka_stock brewinandchewin:vodka: Food; inputs 2, outputs 1
 - embark:bread_ration minecraft:bread: Food; inputs 4, outputs 8
+- embark:dried_kelp minecraft:dried_kelp: Other; inputs 212, outputs 6; progression-adjacent recipe participant
+- embark:vodka_stock brewinandchewin:vodka: Food; inputs 2, outputs 1
+- embark:string_bundle minecraft:string: Material; inputs 41, outputs 5; progression-adjacent recipe participant
+- embark:leather_scraps minecraft:leather: Material; inputs 65, outputs 12; progression-adjacent recipe participant
+- embark:clay_lumps minecraft:clay_ball: Material; inputs 23, outputs 4; progression-adjacent recipe participant
 - kit:wayfinder minecraft:compass: Route; inputs 19, outputs 2; progression-adjacent recipe participant
 - kit:wayfinder minecraft:map: Route; inputs 0, outputs 1
 - kit:wayfinder minecraft:spyglass: Route; inputs 5, outputs 1

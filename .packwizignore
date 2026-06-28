@@ -11,6 +11,7 @@ playtest_notes
 *.pyc
 .pytest_cache
 generated
+generated/custom-mod-sources/
 server-instance
 server-template
 /tools/

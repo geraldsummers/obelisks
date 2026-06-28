@@ -9,11 +9,11 @@
     ]
   },
   "summary": {
-    "embarkItems": 38,
+    "embarkItems": 37,
     "embarkQuota": 18,
     "kitCount": 6,
-    "starterStacks": 73,
-    "rejectedStarterEntries": 0
+    "starterStacks": 72,
+    "rejectedStarterEntries": 4
   },
   "currentStarterAudit": [
     {
@@ -40,7 +40,7 @@
       "item": "cold_sweat:filled_waterskin",
       "category": "Water",
       "count": 1,
-      "cost": 4,
+      "cost": 2,
       "role": "Water",
       "inputRecipeCount": 10,
       "outputRecipeCount": 6,
@@ -57,11 +57,117 @@
       "rejectionReasons": []
     },
     {
+      "source": "embark:thermometer",
+      "item": "cold_sweat:thermometer",
+      "category": "Climate",
+      "count": 1,
+      "cost": 2,
+      "role": "Other",
+      "inputRecipeCount": 0,
+      "outputRecipeCount": 1,
+      "sampleInputTypes": [],
+      "sampleOutputTypes": [
+        "minecraft:crafting_shaped"
+      ],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:leather_cap",
+      "item": "minecraft:leather_helmet",
+      "category": "Climate",
+      "count": 1,
+      "cost": 2,
+      "role": "Material",
+      "inputRecipeCount": 10,
+      "outputRecipeCount": 1,
+      "sampleInputTypes": [
+        "aether:repairing",
+        "farmersdelight:cutting",
+        "minecraft:crafting_shaped",
+        "notreepunching:tool_damaging_shapeless",
+        "tconstruct:part_builder_recycling"
+      ],
+      "sampleOutputTypes": [
+        "minecraft:crafting_shaped"
+      ],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": [
+        "pattern (^|:).*(helmet|chestplate|leggings|boots)$"
+      ]
+    },
+    {
+      "source": "embark:leather_boots",
+      "item": "minecraft:leather_boots",
+      "category": "Climate",
+      "count": 1,
+      "cost": 2,
+      "role": "Material",
+      "inputRecipeCount": 7,
+      "outputRecipeCount": 1,
+      "sampleInputTypes": [
+        "aether:repairing",
+        "farmersdelight:cutting",
+        "minecraft:crafting_shaped",
+        "notreepunching:tool_damaging_shapeless",
+        "tconstruct:part_builder_recycling"
+      ],
+      "sampleOutputTypes": [
+        "minecraft:crafting_shaped"
+      ],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": [
+        "pattern (^|:).*(helmet|chestplate|leggings|boots)$"
+      ]
+    },
+    {
+      "source": "embark:goat_fur_lining",
+      "item": "cold_sweat:goat_fur",
+      "category": "Climate",
+      "count": 1,
+      "cost": 1,
+      "role": "Other",
+      "inputRecipeCount": 0,
+      "outputRecipeCount": 0,
+      "sampleInputTypes": [],
+      "sampleOutputTypes": [],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:hoglin_hide_lining",
+      "item": "cold_sweat:hoglin_hide",
+      "category": "Climate",
+      "count": 1,
+      "cost": 1,
+      "role": "Material",
+      "inputRecipeCount": 0,
+      "outputRecipeCount": 0,
+      "sampleInputTypes": [],
+      "sampleOutputTypes": [],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:chameleon_molt",
+      "item": "cold_sweat:chameleon_molt",
+      "category": "Climate",
+      "count": 1,
+      "cost": 2,
+      "role": "Other",
+      "inputRecipeCount": 0,
+      "outputRecipeCount": 0,
+      "sampleInputTypes": [],
+      "sampleOutputTypes": [],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
       "source": "embark:torch_bundle",
       "item": "minecraft:torch",
       "category": "Camp",
-      "count": 16,
-      "cost": 2,
+      "count": 12,
+      "cost": 1,
       "role": "Camp",
       "inputRecipeCount": 21,
       "outputRecipeCount": 3,
@@ -79,6 +185,24 @@
         "minecraft:crafting_shaped"
       ],
       "progressionRecipeParticipant": true,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:candle_bundle",
+      "item": "minecraft:candle",
+      "category": "Camp",
+      "count": 8,
+      "cost": 1,
+      "role": "Camp",
+      "inputRecipeCount": 16,
+      "outputRecipeCount": 2,
+      "sampleInputTypes": [
+        "minecraft:crafting_shapeless"
+      ],
+      "sampleOutputTypes": [
+        "minecraft:crafting_shaped"
+      ],
+      "progressionRecipeParticipant": false,
       "rejectionReasons": []
     },
     {
@@ -104,29 +228,57 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:candle_bundle",
-      "item": "minecraft:candle",
+      "source": "embark:campfire",
+      "item": "minecraft:campfire",
       "category": "Camp",
-      "count": 8,
+      "count": 1,
+      "cost": 2,
+      "role": "Camp",
+      "inputRecipeCount": 4,
+      "outputRecipeCount": 0,
+      "sampleInputTypes": [
+        "ars_nouveau:enchanting_apparatus",
+        "create:haunting",
+        "minecraft:crafting_shaped",
+        "tconstruct:modifier"
+      ],
+      "sampleOutputTypes": [],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": [
+        "functional crafting/processing block"
+      ]
+    },
+    {
+      "source": "embark:charcoal",
+      "item": "minecraft:charcoal",
+      "category": "Camp",
+      "count": 6,
       "cost": 1,
       "role": "Camp",
-      "inputRecipeCount": 16,
-      "outputRecipeCount": 2,
+      "inputRecipeCount": 26,
+      "outputRecipeCount": 6,
       "sampleInputTypes": [
-        "minecraft:crafting_shapeless"
+        "bloodmagic:alchemytable",
+        "bloodmagic:soulforge",
+        "create:milling",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "pneumaticcraft:thermo_plant"
       ],
       "sampleOutputTypes": [
-        "minecraft:crafting_shaped"
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "minecraft:smelting"
       ],
-      "progressionRecipeParticipant": false,
+      "progressionRecipeParticipant": true,
       "rejectionReasons": []
     },
     {
       "source": "embark:rope_coil",
       "item": "farmersdelight:rope",
       "category": "Route",
-      "count": 12,
-      "cost": 3,
+      "count": 8,
+      "cost": 2,
       "role": "Route",
       "inputRecipeCount": 3,
       "outputRecipeCount": 2,
@@ -196,7 +348,7 @@
       "item": "minecraft:map",
       "category": "Route",
       "count": 1,
-      "cost": 2,
+      "cost": 1,
       "role": "Route",
       "inputRecipeCount": 0,
       "outputRecipeCount": 1,
@@ -205,6 +357,31 @@
         "minecraft:crafting_shaped"
       ],
       "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:paper_pack",
+      "item": "minecraft:paper",
+      "category": "Route",
+      "count": 12,
+      "cost": 1,
+      "role": "Material",
+      "inputRecipeCount": 74,
+      "outputRecipeCount": 7,
+      "sampleInputTypes": [
+        "bloodmagic:alchemytable",
+        "create:pressing",
+        "create:sequenced_assembly",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "tconstruct:material",
+        "tconstruct:modifier"
+      ],
+      "sampleOutputTypes": [
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless"
+      ],
+      "progressionRecipeParticipant": true,
       "rejectionReasons": []
     },
     {
@@ -248,81 +425,11 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:recovery_compass",
-      "item": "minecraft:recovery_compass",
-      "category": "Route",
-      "count": 1,
-      "cost": 6,
-      "role": "Route",
-      "inputRecipeCount": 1,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [
-        "tconstruct:modifier"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shaped"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:reinforced_hang_glider",
-      "item": "hangglider:reinforced_hang_glider",
-      "category": "Route",
-      "count": 1,
-      "cost": 9,
-      "role": "Route",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [
-        "hangglider:copy_tag_shapeless_recipe"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:diving_helmet",
-      "item": "create:copper_diving_helmet",
-      "category": "Water",
-      "count": 1,
-      "cost": 6,
-      "role": "Water",
-      "inputRecipeCount": 2,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [
-        "minecraft:smithing_transform"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shaped"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:diving_boots",
-      "item": "create:copper_diving_boots",
-      "category": "Water",
-      "count": 1,
-      "cost": 5,
-      "role": "Water",
-      "inputRecipeCount": 2,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [
-        "minecraft:smithing_transform"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shaped"
-      ],
-      "progressionRecipeParticipant": true,
-      "rejectionReasons": []
-    },
-    {
       "source": "embark:rail_bundle",
       "item": "minecraft:rail",
       "category": "Route",
-      "count": 32,
-      "cost": 4,
+      "count": 16,
+      "cost": 2,
       "role": "Route",
       "inputRecipeCount": 3,
       "outputRecipeCount": 1,
@@ -341,8 +448,8 @@
       "source": "embark:powered_rail_bundle",
       "item": "minecraft:powered_rail",
       "category": "Route",
-      "count": 8,
-      "cost": 4,
+      "count": 4,
+      "cost": 2,
       "role": "Route",
       "inputRecipeCount": 4,
       "outputRecipeCount": 1,
@@ -363,7 +470,7 @@
       "item": "minecraft:minecart",
       "category": "Route",
       "count": 1,
-      "cost": 3,
+      "cost": 2,
       "role": "Route",
       "inputRecipeCount": 14,
       "outputRecipeCount": 2,
@@ -384,7 +491,7 @@
       "item": "minecraft:lead",
       "category": "Route",
       "count": 2,
-      "cost": 2,
+      "cost": 1,
       "role": "Route",
       "inputRecipeCount": 0,
       "outputRecipeCount": 6,
@@ -417,39 +524,11 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:copper_coin_float",
-      "item": "createdeco:copper_coin",
-      "category": "Trade",
-      "count": 8,
-      "cost": 3,
-      "role": "Trade",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:zinc_coin_float",
-      "item": "createdeco:zinc_coin",
-      "category": "Trade",
-      "count": 2,
-      "cost": 4,
-      "role": "Trade",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
       "source": "embark:season_calendar",
       "item": "sereneseasons:calendar",
       "category": "Food",
       "count": 1,
-      "cost": 2,
+      "cost": 1,
       "role": "Route",
       "inputRecipeCount": 1,
       "outputRecipeCount": 1,
@@ -466,7 +545,7 @@
       "source": "embark:wheat_seeds",
       "item": "minecraft:wheat_seeds",
       "category": "Food",
-      "count": 16,
+      "count": 12,
       "cost": 1,
       "role": "Food",
       "inputRecipeCount": 10,
@@ -482,13 +561,13 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:cabbage_seeds",
-      "item": "farmersdelight:cabbage_seeds",
+      "source": "embark:beetroot_seeds",
+      "item": "minecraft:beetroot_seeds",
       "category": "Food",
       "count": 12,
       "cost": 1,
       "role": "Food",
-      "inputRecipeCount": 2,
+      "inputRecipeCount": 3,
       "outputRecipeCount": 0,
       "sampleInputTypes": [
         "create:milling",
@@ -499,17 +578,16 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:tomato_seeds",
-      "item": "farmersdelight:tomato_seeds",
+      "source": "embark:melon_seeds",
+      "item": "minecraft:melon_seeds",
       "category": "Food",
-      "count": 12,
-      "cost": 1,
+      "count": 4,
+      "cost": 2,
       "role": "Food",
-      "inputRecipeCount": 2,
+      "inputRecipeCount": 1,
       "outputRecipeCount": 1,
       "sampleInputTypes": [
-        "create:milling",
-        "farmersdelight:cutting"
+        "bloodmagic:soulforge"
       ],
       "sampleOutputTypes": [
         "minecraft:crafting_shapeless"
@@ -518,145 +596,39 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:rice_panicles",
-      "item": "farmersdelight:rice_panicle",
+      "source": "embark:bonemeal_pouch",
+      "item": "minecraft:bone_meal",
       "category": "Food",
-      "count": 12,
+      "count": 8,
       "cost": 1,
       "role": "Food",
-      "inputRecipeCount": 4,
-      "outputRecipeCount": 1,
+      "inputRecipeCount": 48,
+      "outputRecipeCount": 11,
       "sampleInputTypes": [
+        "bloodmagic:alchemytable",
         "create:milling",
-        "farmersdelight:cutting",
-        "minecraft:crafting_shaped",
-        "minecraft:crafting_shapeless"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shapeless"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:bellpepper_seeds",
-      "item": "veggiesdelight:bellpepper_seeds",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:broccoli_seeds",
-      "item": "veggiesdelight:broccoli_seeds",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:turnip_seeds",
-      "item": "veggiesdelight:turnip_seeds",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 0,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:potatoes",
-      "item": "minecraft:potato",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 10,
-      "outputRecipeCount": 2,
-      "sampleInputTypes": [
-        "bloodmagic:soulforge",
-        "create:haunting",
+        "createdieselgenerators:basin_fermenting",
+        "createdieselgenerators:bulk_fermenting",
         "farmersdelight:cooking",
         "farmersdelight:cutting",
-        "minecraft:campfire_cooking",
         "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless"
+      ],
+      "sampleOutputTypes": [
         "minecraft:crafting_shapeless",
         "minecraft:smelting"
       ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shapeless"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:carrots",
-      "item": "minecraft:carrot",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 14,
-      "outputRecipeCount": 2,
-      "sampleInputTypes": [
-        "ars_nouveau:enchanting_apparatus",
-        "createdieselgenerators:basin_fermenting",
-        "farmersdelight:cooking",
-        "farmersdelight:cutting",
-        "minecraft:crafting_shaped",
-        "minecraft:crafting_shapeless",
-        "tconstruct:casting_table"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shapeless"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:brown_mushrooms",
-      "item": "minecraft:brown_mushroom",
-      "category": "Food",
-      "count": 12,
-      "cost": 1,
-      "role": "Food",
-      "inputRecipeCount": 16,
-      "outputRecipeCount": 0,
-      "sampleInputTypes": [
-        "bloodmagic:alchemytable",
-        "brewinandchewin:fermenting",
-        "create:haunting",
-        "farmersdelight:cooking",
-        "farmersdelight:cutting",
-        "minecraft:crafting_shaped",
-        "minecraft:crafting_shapeless"
-      ],
-      "sampleOutputTypes": [],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
+      "progressionRecipeParticipant": true,
+      "rejectionReasons": [
+        "exact hard reject"
+      ]
     },
     {
       "source": "embark:apple_ration",
       "item": "minecraft:apple",
       "category": "Food",
-      "count": 8,
-      "cost": 2,
+      "count": 6,
+      "cost": 1,
       "role": "Food",
       "inputRecipeCount": 23,
       "outputRecipeCount": 1,
@@ -677,71 +649,10 @@
       "rejectionReasons": []
     },
     {
-      "source": "embark:vegetable_stock",
-      "item": "farmersdelight:cabbage",
-      "category": "Food",
-      "count": 8,
-      "cost": 2,
-      "role": "Food",
-      "inputRecipeCount": 5,
-      "outputRecipeCount": 2,
-      "sampleInputTypes": [
-        "create:mixing",
-        "farmersdelight:cutting",
-        "minecraft:crafting_shaped",
-        "minecraft:crafting_shapeless"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shapeless"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:tomato_stock",
-      "item": "farmersdelight:tomato",
-      "category": "Food",
-      "count": 8,
-      "cost": 2,
-      "role": "Food",
-      "inputRecipeCount": 4,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [
-        "create:haunting",
-        "farmersdelight:cutting",
-        "minecraft:crafting_shaped",
-        "minecraft:crafting_shapeless"
-      ],
-      "sampleOutputTypes": [
-        "minecraft:crafting_shapeless"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
-      "source": "embark:vodka_stock",
-      "item": "brewinandchewin:vodka",
-      "category": "Drink",
-      "count": 3,
-      "cost": 4,
-      "role": "Food",
-      "inputRecipeCount": 2,
-      "outputRecipeCount": 1,
-      "sampleInputTypes": [
-        "create:emptying",
-        "create:filling"
-      ],
-      "sampleOutputTypes": [
-        "brewinandchewin:keg_pouring"
-      ],
-      "progressionRecipeParticipant": false,
-      "rejectionReasons": []
-    },
-    {
       "source": "embark:bread_ration",
       "item": "minecraft:bread",
       "category": "Food",
-      "count": 8,
+      "count": 6,
       "cost": 2,
       "role": "Food",
       "inputRecipeCount": 4,
@@ -758,6 +669,131 @@
         "minecraft:smoking"
       ],
       "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:dried_kelp",
+      "item": "minecraft:dried_kelp",
+      "category": "Food",
+      "count": 16,
+      "cost": 1,
+      "role": "Other",
+      "inputRecipeCount": 212,
+      "outputRecipeCount": 6,
+      "sampleInputTypes": [
+        "brewinandchewin:fermenting",
+        "create:mechanical_crafting",
+        "farmersdelight:cooking",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless"
+      ],
+      "sampleOutputTypes": [
+        "minecraft:campfire_cooking",
+        "minecraft:crafting_shapeless",
+        "minecraft:smelting",
+        "minecraft:smoking"
+      ],
+      "progressionRecipeParticipant": true,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:vodka_stock",
+      "item": "brewinandchewin:vodka",
+      "category": "Drink",
+      "count": 2,
+      "cost": 2,
+      "role": "Food",
+      "inputRecipeCount": 2,
+      "outputRecipeCount": 1,
+      "sampleInputTypes": [
+        "create:emptying",
+        "create:filling"
+      ],
+      "sampleOutputTypes": [
+        "brewinandchewin:keg_pouring"
+      ],
+      "progressionRecipeParticipant": false,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:string_bundle",
+      "item": "minecraft:string",
+      "category": "Craft",
+      "count": 8,
+      "cost": 1,
+      "role": "Material",
+      "inputRecipeCount": 41,
+      "outputRecipeCount": 5,
+      "sampleInputTypes": [
+        "create:crushing",
+        "create:mechanical_crafting",
+        "create:milling",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "tconstruct:part_builder_recycling"
+      ],
+      "sampleOutputTypes": [
+        "bloodmagic:alchemytable",
+        "minecraft:crafting_shapeless",
+        "minecraft:smelting",
+        "notreepunching:tool_damaging_shapeless"
+      ],
+      "progressionRecipeParticipant": true,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:leather_scraps",
+      "item": "minecraft:leather",
+      "category": "Craft",
+      "count": 4,
+      "cost": 2,
+      "role": "Material",
+      "inputRecipeCount": 65,
+      "outputRecipeCount": 12,
+      "sampleInputTypes": [
+        "ars_nouveau:glyph",
+        "create:crushing",
+        "create:milling",
+        "farmersdelight:cutting",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "tconstruct:modifier",
+        "tconstruct:part_builder_recycling"
+      ],
+      "sampleOutputTypes": [
+        "bloodmagic:alchemytable",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless",
+        "notreepunching:tool_damaging_shapeless"
+      ],
+      "progressionRecipeParticipant": true,
+      "rejectionReasons": []
+    },
+    {
+      "source": "embark:clay_lumps",
+      "item": "minecraft:clay_ball",
+      "category": "Craft",
+      "count": 12,
+      "cost": 1,
+      "role": "Material",
+      "inputRecipeCount": 23,
+      "outputRecipeCount": 4,
+      "sampleInputTypes": [
+        "bloodmagic:alchemytable",
+        "bloodmagic:arc",
+        "create:crushing",
+        "create:milling",
+        "create:splashing",
+        "farmersdelight:cutting",
+        "minecraft:crafting_shaped",
+        "minecraft:crafting_shapeless"
+      ],
+      "sampleOutputTypes": [
+        "bloodmagic:alchemytable",
+        "bloodmagic:arc",
+        "tconstruct:severing"
+      ],
+      "progressionRecipeParticipant": true,
       "rejectionReasons": []
     },
     {
