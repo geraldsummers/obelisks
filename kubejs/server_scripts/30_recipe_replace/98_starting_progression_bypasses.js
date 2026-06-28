@@ -7,6 +7,11 @@ ServerEvents.recipes(function (event) {
     event.remove({ id: 'tconstruct:flint_from_gravel' })
     event.remove({ type: 'minecraft:crafting_shapeless', input: 'minecraft:gravel', output: 'minecraft:flint' })
 
+    event.shapeless('tconstruct:flint_and_brick', [
+        'minecraft:flint',
+        'minecraft:brick'
+    ]).id('kubejs:tconstruct/flint_and_brick')
+
     // TCon patterns are an early textile/paper route, not a sticks + planks bypass.
     event.remove({ id: 'tconstruct:common/pattern' })
     event.remove({ id: 'tconstruct:tables/pattern' })
