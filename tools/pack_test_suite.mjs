@@ -5,7 +5,7 @@ import { spawnSync } from 'node:child_process'
 import { scanHardFailures } from './log_hard_failure_scan.mjs'
 
 const repo = process.cwd()
-const defaultInstance = '/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 3 - v1/minecraft'
+const defaultInstance = '/home/gerald/.local/share/PrismLauncher/instances/Bound to Matter-Playtest 4 - v1/minecraft'
 const instance = process.env.BTM_INSTANCE || defaultInstance
 const explicitInstance = Boolean(process.env.BTM_INSTANCE)
 const strictRuntime = process.env.BTM_STRICT_RUNTIME === '1' || process.argv.includes('--strict-runtime')

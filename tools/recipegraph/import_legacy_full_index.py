@@ -11,7 +11,7 @@ SCHEMA = "obelisks.recipe_graph.v1"
 MC_VERSION = "1.20.1"
 DEFAULT_SOURCE = (
     "/home/gerald/.local/share/PrismLauncher/instances/"
-    "Bound to Matter-Playtest 3 - v1/minecraft/kubejs/config"
+    "Bound to Matter-Playtest 4 - v1/minecraft/kubejs/config"
 )
 
 

@@ -1,11 +1,11 @@
 name = "Bound to Matter"
-version = "Playtest 3 - v1"
+version = "Playtest 4 - v1"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "462c7653f064b47ddde597fb4f49992a3c6c6e6fb0c2d0e8aded2fcd7eadad7d"
+hash = "f6e920f333af038672dcb13b18c1a911fc269882e91af2d482da762b71d4c049"
 
 [versions]
 forge = "47.4.13"

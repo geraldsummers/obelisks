@@ -9354,11 +9354,11 @@ hash = "46a66b6e003ba7953c9a13428fd9c1967e862a673d7fd849831defab59eb08f1"
 
 [[files]]
 file = "kubejs/config/food_effect_progression_candidates.json"
-hash = "e84936ec8f7af412ed9f6c65f8bcd85c4ac79f6c8e2064944d35e74948929fd7"
+hash = "1096dd1c87f61777ca47ae9f1058e0005b2c99bdf655624610edd8ff8c413ca4"
 
 [[files]]
 file = "kubejs/config/food_effect_source_catalog.json"
-hash = "d72fbdb8debbace079ecf19c218738d45c1b989b857161d312f3b2348638215d"
+hash = "3e327bb92916f7b80f8cdda9f2126de3404c174a40c75f4f2d0b0e44e7764ca8"
 
 [[files]]
 file = "kubejs/config/input_rewrites.json"
