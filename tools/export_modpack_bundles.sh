@@ -14,6 +14,7 @@ client_alias_zip="$exports_dir/bound-to-matter-curseforge.zip"
 server_tree_zip="$exports_dir/bound-to-matter-playtest-4-v1-server.zip"
 skip_cf=0
 skip_server_tree=0
+clean_server_tree=0
 server_tree_dir_custom=0
 server_tree_zip_custom=0
 
@@ -30,6 +31,7 @@ Options:
   --exports-dir PATH       Output directory (default: generated/exports)
   --server-tree-dir PATH   Staging directory for the complete server tree
   --server-zip PATH        Complete server tree zip path
+  --clean-server-tree      Delete the server tree staging cache before building
   --skip-cf               Do not export CurseForge manifest zips
   --skip-server-tree      Do not build the complete server tree
   -h, --help              Show this help
@@ -43,6 +45,7 @@ while (($#)); do
     --exports-dir) exports_dir="${2:-}"; [[ -n "$exports_dir" ]] || btm_usage_error "--exports-dir needs a path"; shift 2 ;;
     --server-tree-dir) server_tree_dir="${2:-}"; [[ -n "$server_tree_dir" ]] || btm_usage_error "--server-tree-dir needs a path"; server_tree_dir_custom=1; shift 2 ;;
     --server-zip) server_tree_zip="${2:-}"; [[ -n "$server_tree_zip" ]] || btm_usage_error "--server-zip needs a path"; server_tree_zip_custom=1; shift 2 ;;
+    --clean-server-tree) clean_server_tree=1; shift ;;
     --skip-cf) skip_cf=1; shift ;;
     --skip-server-tree) skip_server_tree=1; shift ;;
     -h|--help) usage; exit 0 ;;
@@ -92,12 +95,48 @@ copy_managed_source() {
     dst="$server_tree_dir/$path"
     [[ -e "$src" ]] || continue
     mkdir -p "$(dirname "$dst")"
-    cp -a "$src" "$dst"
+    if [[ -d "$src" ]]; then
+      mkdir -p "$dst"
+      cp -a "$src/." "$dst/"
+    else
+      cp -a "$src" "$dst"
+    fi
   done
+}
+
+refresh_server_tree_source() {
+  local path
+  if [[ "$clean_server_tree" == "1" ]]; then
+    rm -rf "$server_tree_dir"
+  fi
+
+  mkdir -p "$server_tree_dir"
+
+  for path in "${btm_managed_paths[@]}"; do
+    case "$path" in
+      mods|resourcepacks|shaderpacks)
+        mkdir -p "$server_tree_dir/$path"
+        find "$server_tree_dir/$path" -mindepth 1 -maxdepth 1 -type d -exec rm -rf {} +
+        find "$server_tree_dir/$path" -maxdepth 1 -type f \
+          ! -name '*.jar' ! -name '*.so' ! -name '*.zip' -delete
+        ;;
+      *)
+        rm -rf "$server_tree_dir/$path"
+        ;;
+    esac
+  done
+
+  rm -rf "$server_tree_dir/world" "$server_tree_dir/logs" "$server_tree_dir/crash-reports"
+  copy_managed_source
 }
 
 install_forge_server() {
   local installer source_installer
+  if [[ -f "$server_tree_dir/run.sh" && -f "$server_tree_dir/libraries/net/minecraftforge/forge/${BTM_FORGE_COORD}/unix_args.txt" ]]; then
+    echo "Forge server install present: $server_tree_dir"
+    return 0
+  fi
+
   installer="$server_tree_dir/forge-${BTM_FORGE_COORD}-installer.jar"
   source_installer="$(btm_find_forge_installer "$ROOT")"
   if [[ -n "$source_installer" && -f "$source_installer" ]]; then
@@ -139,9 +178,7 @@ EOF
 }
 
 build_server_tree() {
-  rm -rf "$server_tree_dir"
-  mkdir -p "$server_tree_dir"
-  copy_managed_source
+  refresh_server_tree_source
   "$ROOT/tools/resolve_packwiz_downloads.mjs" --apply --pack-root "$ROOT" --target-dir "$server_tree_dir" --side server
   "$ROOT/tools/prune_runtime_mods.mjs" --apply --pack-root "$ROOT" --target-dir "$server_tree_dir" --side server
   install_forge_server
