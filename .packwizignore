@@ -15,6 +15,7 @@ generated/custom-mod-sources/
 server-instance
 server-template
 /tools/
+forge-*-installer.jar
 kubejs/recipe_dumps
 kubejs/config/recipe_audit_summary.json
 kubejs/config/progression_recipe_mentions.json

@@ -5274,7 +5274,7 @@ hash = "62f528a6cbed5a846e9afb0f42b90e91a7bbbf0948412643d460ea872b8bcb51"
 
 [[files]]
 file = "config/btmfixes-common.toml"
-hash = "1dce2a33a4982bbdf02e16023faf5f6a3769b17e141ff39895b23f05cce4183f"
+hash = "b02053aaeaaab4de749efb449e78f7baaf34e8c9c9e0dc2e988fa853720f1b7a"
 
 [[files]]
 file = "config/c2me.toml"
@@ -10969,7 +10969,7 @@ metafile = true
 
 [[files]]
 file = "mods/btmfixes-0.1.0.jar"
-hash = "ac2254d99a165dd8676c2f762f79feb65e69f75da1a33c883624dc82a09c23d4"
+hash = "832553d7e2fad989f144544f1ca76dc6487d8dfbc6f013a5615408454b99b115"
 
 [[files]]
 file = "mods/building-gadgets.pw.toml"
@@ -11134,7 +11134,7 @@ metafile = true
 
 [[files]]
 file = "mods/dimensionalfonts-1.0.0.jar"
-hash = "d532629467d47739b9261fc39790ee1238f74f4dbc78097bce6411490665774c"
+hash = "86acf2bb64937e28a3c9546a9298d268be4f22e1e9b9af6216daea436d6b6fb0"
 
 [[files]]
 file = "mods/ding.pw.toml"

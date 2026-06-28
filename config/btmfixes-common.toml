@@ -3,6 +3,10 @@
 	#This is intended to prevent ConcurrentModificationException during parallel feature generation, especially with C2ME threaded features.
 	#Disable this if Dynamic Trees changes this internals or if diagnosing unrelated season behavior.
 	seasonContextConcurrentMap = true
+	#Deconstructs Dynamic Trees trees when their rooty soil block no longer has a solid supporting block underneath.
+	#Catches both immediate support loss from block updates and preexisting floating rooty soils when a chunk loads.
+	#Applies to base Dynamic Trees rooty blocks and extension species that anchor through the same rooty soil system.
+	destroyUnsupportedTrees = true
 
 [hyle]
 	#Guards Hyle tertiary stone selection against invalid indices.
