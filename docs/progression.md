@@ -10,6 +10,8 @@ The pack has two primary crafting spines and one pressure spine:
 
 Local logistics stays first. Create trains and physical routes should matter before AE2 dominates a site, and OC2R is the intended intersite information bridge.
 
+Pillager campaign pressure is adaptive by warband rather than global time scaling. New warbands open at modest strength, each successfully defeated raid increases that warband's future raid strength by 1, and each raid that kills a player reduces its future strength by 1. This keeps successful settlements under escalating surface pressure while giving losing players an automatic easing path instead of stacking extra setback cooldowns.
+
 ## Death Loop
 
 Death is a structured life-length and location penalty, not a random item-loss pressure. `defaultconfigs/configurabledeath-server.toml` keeps inventory, armor, hotbar, mainhand, offhand, food, and saturation on death, with no durability loss on kept items. The costly loss is the current life's RPG Stats power and the trip back to the locked spawn.
