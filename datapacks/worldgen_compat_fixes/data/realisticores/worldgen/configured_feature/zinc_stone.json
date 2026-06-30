@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:zinc_ore"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_zinc"
-        }
       }
     ]
   }

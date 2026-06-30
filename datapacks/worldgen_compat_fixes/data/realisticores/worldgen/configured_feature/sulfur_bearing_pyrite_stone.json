@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:sulfur_bearing_pyrite_ore"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_sulfur_bearing_pyrite"
-        }
       }
     ]
   }

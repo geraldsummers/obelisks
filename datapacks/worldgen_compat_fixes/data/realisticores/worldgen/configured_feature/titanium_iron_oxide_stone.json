@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:titanium_iron_oxide_ore"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_titanium_iron_oxide"
-        }
       }
     ]
   }

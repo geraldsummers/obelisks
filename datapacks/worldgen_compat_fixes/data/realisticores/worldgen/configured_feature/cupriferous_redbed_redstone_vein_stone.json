@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:cupriferous_redbed_redstone_vein"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_cupriferous_redbed_redstone_vein"
-        }
       }
     ]
   }

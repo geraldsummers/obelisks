@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:kimberlite_pipe"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_kimberlite_pipe"
-        }
       }
     ]
   }

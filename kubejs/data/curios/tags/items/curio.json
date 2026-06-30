@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "expatternprovider:wireless_ex_pat",
     "#artifacts:slot/all",
     "botania:cosmetic_black_bowtie",
     "botania:cosmetic_black_tie",

@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:phosphate_rock"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_phosphate_rock"
-        }
       }
     ]
   }

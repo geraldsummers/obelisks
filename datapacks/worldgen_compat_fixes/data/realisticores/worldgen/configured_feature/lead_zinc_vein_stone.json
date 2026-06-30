@@ -12,15 +12,6 @@
         "state": {
           "Name": "realisticores:lead_zinc_vein"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "minecraft:tag_match",
-          "tag": "forge:gravel"
-        },
-        "state": {
-          "Name": "excavated_variants:gravel_lead_zinc_vein"
-        }
       }
     ]
   }
