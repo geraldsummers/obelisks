@@ -150,6 +150,7 @@ val instance: Path = Paths.get(System.getenv("BTM_INSTANCE") ?: "server-instance
 val explicitInstance = System.getenv("BTM_INSTANCE") != null
 val strictRuntime = (System.getenv("BTM_STRICT_RUNTIME") == "1") || args.contains("--strict-runtime")
 val strictDataDumps = (System.getenv("BTM_STRICT_DATA_DUMPS") == "1") || args.contains("--strict-data-dumps")
+val runtimeOnly = System.getenv("BTM_RUNTIME_ONLY") == "1"
 val reportDir: Path = Paths.get(System.getenv("BTM_REPORT_DIR") ?: repo.resolve("generated/validation").toString())
 val generatedConfigDir = instance.resolve("kubejs/config")
 val generatedDumpDir = instance.resolve("dump/data_raw")
@@ -737,21 +738,29 @@ if (explicitInstance && !exists(instance)) {
 }
 Files.createDirectories(reportDir)
 
-runMeasured("JSON and JS syntax validation", ::testJsonAndSyntax)
-runMeasured("critical progression surfaces", ::testCriticalSurfaces)
-runMeasured("pack contract validation") { testBtmValidator("pack contract validates", "validate-pack-contract") }
-runMeasured("contract completeness classification") { testBtmValidator("contract completeness is classified", "contract-completeness-report", "--check", "--no-write") }
-runMeasured("autonomous contract validation") { testBtmValidator("autonomous contract validators pass", "validate-autonomous-contracts") }
-runMeasured("quest book validation", ::testQuestBook)
-runMeasured("Wares and villager trade validation", ::testWaresAndTrades)
-runMeasured("repo loot data validation", ::testLootData)
-runMeasured("generated recipe graph validation", ::testGeneratedRecipeGraph)
-runMeasured("generated loot dump validation", ::testGeneratedDumpLoot)
+if (runtimeOnly) {
+    skip("source contract validation profile", "runtime-only mode skips repo-wide source validators")
+} else {
+    runMeasured("JSON and JS syntax validation", ::testJsonAndSyntax)
+    runMeasured("critical progression surfaces", ::testCriticalSurfaces)
+    runMeasured("pack contract validation") { testBtmValidator("pack contract validates", "validate-pack-contract") }
+    runMeasured("contract completeness classification") { testBtmValidator("contract completeness is classified", "contract-completeness-report", "--check", "--no-write") }
+    runMeasured("autonomous contract validation") { testBtmValidator("autonomous contract validators pass", "validate-autonomous-contracts") }
+    runMeasured("quest book validation", ::testQuestBook)
+    runMeasured("Wares and villager trade validation", ::testWaresAndTrades)
+    runMeasured("repo loot data validation", ::testLootData)
+    runMeasured("generated recipe graph validation", ::testGeneratedRecipeGraph)
+    runMeasured("generated loot dump validation", ::testGeneratedDumpLoot)
+}
 runMeasured("engine and world performance log analysis", ::testEngineWorldPerformanceLogs)
-runMeasured("Realistic Hands validation") { testBtmValidator("Realistic Hands validates", "validate-realistic-hands") }
-runMeasured("KubeJS asset validation") { testBtmValidator("KubeJS custom assets validate", "validate-kubejs-assets") }
-runMeasured("chemistry identity validation") { testBtmValidator("chemistry identity matrix validates", "validate-chemistry-identity") }
-runMeasured("dev dump health validation", ::testDevDumpHealth)
+if (runtimeOnly) {
+    skip("source asset and tooling validation profile", "runtime-only mode skips repo-wide asset/tool validators")
+} else {
+    runMeasured("Realistic Hands validation") { testBtmValidator("Realistic Hands validates", "validate-realistic-hands") }
+    runMeasured("KubeJS asset validation") { testBtmValidator("KubeJS custom assets validate", "validate-kubejs-assets") }
+    runMeasured("chemistry identity validation") { testBtmValidator("chemistry identity matrix validates", "validate-chemistry-identity") }
+    runMeasured("dev dump health validation", ::testDevDumpHealth)
+}
 
 metrics["performance"] = mapOf(
     "budgetsMs" to performanceBudgetsMs.mapValues { it.value["budget"] },
@@ -766,6 +775,7 @@ val summary = linkedMapOf<String, Any?>(
     "explicitInstance" to explicitInstance,
     "strictRuntime" to strictRuntime,
     "strictDataDumps" to strictDataDumps,
+    "runtimeOnly" to runtimeOnly,
     "runtimeEvidenceClaim" to if (strictRuntime) "strict-runtime" else "opportunistic-runtime",
     "dataDumpEvidenceClaim" to if (strictDataDumps) "strict-vanilla-dump" else "opportunistic-vanilla-dump",
     "dataDumpEvidenceScope" to "vanilla /dump output under dump/data_raw, separate from KubeJS audit dumps under kubejs/config",
@@ -793,6 +803,8 @@ val report = buildString {
     appendLine("Repo: `${summary["repo"]}`")
     appendLine()
     appendLine("Instance: `${summary["instance"]}`")
+    appendLine()
+    appendLine("Validation profile: `${if (runtimeOnly) "runtime-only" else "full-pack-suite"}`")
     appendLine()
     appendLine("Runtime evidence mode: `${if (strictRuntime) "strict" else "opportunistic"}`")
     appendLine()

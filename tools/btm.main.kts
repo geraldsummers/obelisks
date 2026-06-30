@@ -370,9 +370,14 @@ fun ensureCommands(vararg commands: String): List<ValidationFinding> =
         if (commandExists(command)) null else ValidationFinding("error", "missing required command: $command")
     }
 
-fun runProcess(command: List<String>, extraEnv: Map<String, String> = emptyMap(), stream: Boolean = !jsonOutput && !quiet): ProcessRun {
+fun runProcess(
+    command: List<String>,
+    extraEnv: Map<String, String> = emptyMap(),
+    stream: Boolean = !jsonOutput && !quiet,
+    workDir: Path = root,
+): ProcessRun {
     val builder = ProcessBuilder(command)
-    builder.directory(root.toFile())
+    builder.directory(workDir.toFile())
     builder.redirectErrorStream(true)
     builder.environment().putAll(extraEnv)
     val process = builder.start()
@@ -1254,6 +1259,26 @@ fun extractArchive(archive: Path, destination: Path): ProcessRun {
     return ProcessRun(exit, buffer.toString(Charsets.UTF_8).trim())
 }
 
+fun mirrorRepoDatapacks(worldDir: Path) {
+    val targetRoot = worldDir.resolve("datapacks")
+    targetRoot.createDirectories()
+    val sourceRoot = root.resolve("datapacks")
+    if (!sourceRoot.exists()) return
+    Files.list(sourceRoot).use { stream ->
+        stream.forEach { datapack ->
+            val target = targetRoot.resolve(datapack.fileName.toString())
+            runProcess(
+                listOf(
+                    "bash",
+                    "-lc",
+                    "rm -rf '${target.toString().replace("'", "'\\''")}' && cp -a '${datapack.toString().replace("'", "'\\''")}' '${targetRoot.toString().replace("'", "'\\''")}/'"
+                ),
+                stream = false,
+            )
+        }
+    }
+}
+
 fun generateMinecraftClientArgfile(clientDir: Path, versionId: String, username: String, server: String, out: Path): ProcessRun {
     val inherited = mutableListOf<String>()
     val version = loadMergedVersion(clientDir, versionId, inherited)
@@ -1381,67 +1406,41 @@ fun syncManaged(side: String, targetDir: Path, apply: Boolean): ProcessRun {
 }
 
 fun bootstrapServerRuntime(serverDir: Path, port: Int, reset: Boolean): ProcessRun {
-    val javaBin = requireJava17Path()
-    val installer = findForgeInstaller()
-    val sync = syncManaged("server", serverDir, apply = true)
-    if (sync.exitCode != 0) return sync
-    val escapedRoot = root.toString().replace("'", "'\\''")
-    val escapedServer = serverDir.toString().replace("'", "'\\''")
-    val escapedInstaller = installer.toString().replace("'", "'\\''")
-    val javaEscaped = javaBin.replace("'", "'\\''")
-    val script = buildString {
-        appendLine("set -Eeuo pipefail")
-        appendLine("ROOT='$escapedRoot'")
-        appendLine("SERVER_DIR='$escapedServer'")
-        appendLine("INSTALLER='$escapedInstaller'")
-        appendLine("JAVA_BIN='$javaEscaped'")
-        appendLine("mkdir -p \"\$SERVER_DIR/generated/runtime-dumps\"")
-        if (reset) appendLine("rm -rf \"\$SERVER_DIR/world\" \"\$SERVER_DIR/logs\" \"\$SERVER_DIR/crash-reports\"")
-        appendLine("cp \"\$INSTALLER\" \"\$SERVER_DIR/forge-$forgeCoord-installer.jar\"")
-        appendLine("for jar_cache in \"\$ROOT/server-template/mods\" \"\$ROOT/server-instance/mods\"; do")
-        appendLine("  [[ -d \"\$jar_cache\" ]] || continue")
-        appendLine("  [[ \"\$(cd \"\$jar_cache\" && pwd)\" == \"\$(cd \"\$SERVER_DIR/mods\" 2>/dev/null && pwd)\" ]] && continue")
-        appendLine("  mkdir -p \"\$SERVER_DIR/mods\"")
-        appendLine("  while IFS= read -r -d '' file; do")
-        appendLine("    rel=\"\${file#\"\$jar_cache\"/}\"")
-        appendLine("    dest=\"\$SERVER_DIR/mods/\$rel\"")
-        appendLine("    [[ -e \"\$dest\" ]] && continue")
-        appendLine("    mkdir -p \"\$(dirname \"\$dest\")\"")
-        appendLine("    cp -p \"\$file\" \"\$dest\"")
-        appendLine("  done < <(find \"\$jar_cache\" -type f \\( -name '*.jar' -o -name '*.so' \\) -print0)")
-        appendLine("done")
-        appendLine("for library_cache in \"\$ROOT/server-template/libraries\" \"\$ROOT/server-instance/libraries\" \"\${BTM_PRISM_ROOT:-\$HOME/.local/share/PrismLauncher}/libraries\"; do")
-        appendLine("  [[ -d \"\$library_cache\" ]] || continue")
-        appendLine("  mkdir -p \"\$SERVER_DIR/libraries\"")
-        appendLine("  [[ \"\$(cd \"\$library_cache\" && pwd)\" == \"\$(cd \"\$SERVER_DIR/libraries\" && pwd)\" ]] && continue")
-        appendLine("  while IFS= read -r -d '' file; do")
-        appendLine("    rel=\"\${file#\"\$library_cache\"/}\"")
-        appendLine("    dest=\"\$SERVER_DIR/libraries/\$rel\"")
-        appendLine("    [[ -e \"\$dest\" ]] && continue")
-        appendLine("    mkdir -p \"\$(dirname \"\$dest\")\"")
-        appendLine("    cp -p \"\$file\" \"\$dest\"")
-        appendLine("  done < <(find \"\$library_cache\" -type f \\( -name '*.jar' -o -name '*.pom' \\) -print0)")
-        appendLine("done")
-        appendLine("mkdir -p \"\$SERVER_DIR/world/datapacks\"")
-        appendLine("if [[ -d \"\$ROOT/datapacks\" ]]; then")
-        appendLine("  for datapack in \"\$ROOT\"/datapacks/*; do")
-        appendLine("    [[ -e \"\$datapack\" ]] || continue")
-        appendLine("    rm -rf \"\$SERVER_DIR/world/datapacks/\$(basename \"\$datapack\")\"")
-        appendLine("    cp -a \"\$datapack\" \"\$SERVER_DIR/world/datapacks/\"")
-        appendLine("  done")
-        appendLine("fi")
-        appendLine("if [[ ! -f \"\$SERVER_DIR/run.sh\" || ! -d \"\$SERVER_DIR/libraries/net/minecraftforge/forge/$forgeCoord\" ]]; then")
-        appendLine("  (cd \"\$SERVER_DIR\" && \"\$JAVA_BIN\" -jar \"forge-$forgeCoord-installer.jar\" --installServer)")
-        appendLine("fi")
+    val bundleRoot = serverDir.parent.resolve("${serverDir.fileName}.bundle-work")
+    val exportsDir = bundleRoot.resolve("exports")
+    val serverTreeDir = bundleRoot.resolve("server-tree/better-content-server")
+    val serverZip = exportsDir.resolve("better-content-playtest-4-v1-server.zip")
+    val extractRoot = bundleRoot.resolve("unzipped")
+    if (reset) {
+        runProcess(
+            listOf(
+                "bash",
+                "-lc",
+                "rm -rf '${bundleRoot.toString().replace("'", "'\\''")}' '${serverDir.toString().replace("'", "'\\''")}'"
+            ),
+            stream = false,
+        )
     }
-    val run = runBash(script)
-    if (run.exitCode != 0) return run
-    if (System.getenv("BTM_SKIP_PACKWIZ_DOWNLOADS") != "1") {
-        val resolve = resolvePackwizDownloads(serverDir, "server", apply = true)
-        if (resolve.exitCode != 0) return resolve
+    val bundle = buildServerBundle(exportsDir, serverTreeDir, serverZip, clean = true)
+    if (bundle.exitCode != 0) return bundle
+    val extracted = extractArchive(serverZip, extractRoot)
+    if (extracted.exitCode != 0) return extracted
+    val extractedServerDir = extractRoot.resolve(serverTreeDir.fileName.toString())
+    if (!extractedServerDir.exists()) return ProcessRun(1, "server bundle zip did not contain ${serverTreeDir.fileName}")
+    runProcess(
+        listOf(
+            "bash",
+            "-lc",
+            "rm -rf '${serverDir.toString().replace("'", "'\\''")}' && mkdir -p '${serverDir.parent.toString().replace("'", "'\\''")}' && mv '${extractedServerDir.toString().replace("'", "'\\''")}' '${serverDir.toString().replace("'", "'\\''")}'"
+        ),
+        stream = false,
+    )
+    val runSh = serverDir.resolve("run.sh")
+    if (runSh.exists()) {
+        runProcess(listOf("chmod", "+x", runSh.toString()), stream = false)
     }
-    val prune = pruneRuntimeMods(serverDir, "server", apply = true)
-    if (prune.exitCode != 0) return prune
+    serverDir.resolve("generated/runtime-dumps").createDirectories()
+    mirrorRepoDatapacks(serverDir.resolve("world"))
     Files.writeString(serverDir.resolve("eula.txt"), "eula=true\n")
     writeLocalServerProperties(serverDir.resolve("server.properties"), port, onlineMode = false)
     val userJvm = serverDir.resolve("user_jvm_args.txt")
@@ -1629,9 +1628,10 @@ fun runStaticValidation(): ProcessRun {
     return runBash(script)
 }
 
-fun runPackSuite(instance: Path, strictDataDumps: Boolean): ProcessRun {
+fun runPackSuite(instance: Path, strictDataDumps: Boolean, runtimeOnly: Boolean = false): ProcessRun {
     val env = mutableMapOf("BTM_INSTANCE" to instance.toString(), "BTM_STRICT_RUNTIME" to "1")
     if (strictDataDumps) env["BTM_STRICT_DATA_DUMPS"] = "1"
+    if (runtimeOnly) env["BTM_RUNTIME_ONLY"] = "1"
     return runKotlinScript(root.resolve("tools/kotlin/pack_test_suite.main.kts"), extraEnv = env)
 }
 
@@ -2502,12 +2502,12 @@ fun runBurntCoverageValidation(): ProcessRun {
 
 fun runSmokeValidation(serverDir: Path, port: Int, reset: Boolean): ProcessRun {
     val stamp = timestamp()
-    val evidenceDir = serverDir.resolve("validation-evidence/$stamp")
-    evidenceDir.createDirectories()
     val bootstrap = bootstrapServerRuntime(serverDir, port, reset)
     if (bootstrap.exitCode != 0) return bootstrap
     val prune = pruneRuntimeMods(serverDir, "server", apply = false)
     if (prune.exitCode != 0) return prune
+    val evidenceDir = serverDir.resolve("validation-evidence/$stamp")
+    evidenceDir.createDirectories()
     val serverLog = evidenceDir.resolve("server-console.log")
     val latestLog = serverDir.resolve("logs/latest.log")
     val running = startServerProcess(serverDir, port, listOf("nogui"), serverLog)
@@ -2545,7 +2545,7 @@ fun runSmokeValidation(serverDir: Path, port: Int, reset: Boolean): ProcessRun {
         }.trim()
         return ProcessRun(1, output)
     }
-    return runPackSuite(serverDir, strictDataDumps = false)
+    return runPackSuite(serverDir, strictDataDumps = false, runtimeOnly = true)
 }
 
 fun runKotlinTests(filter: String?): ProcessRun {
@@ -2701,10 +2701,16 @@ fun buildServerBundle(exportsDir: Path, serverTreeDir: Path, serverZip: Path, cl
     Files.copy(installer, serverTreeDir.resolve(installer.fileName), StandardCopyOption.REPLACE_EXISTING)
     val javaBin = requireJava17Path()
     if (!serverTreeDir.resolve("run.sh").exists() || !serverTreeDir.resolve("libraries/net/minecraftforge/forge/$forgeCoord").exists()) {
-        val install = runProcess(listOf(javaBin, "-jar", serverTreeDir.resolve("forge-$forgeCoord-installer.jar").toString(), "--installServer"), stream = !jsonOutput && !quiet)
+        val install = runProcess(
+            listOf(javaBin, "-jar", serverTreeDir.resolve("forge-$forgeCoord-installer.jar").toString(), "--installServer"),
+            stream = !jsonOutput && !quiet,
+            workDir = serverTreeDir,
+        )
         if (install.exitCode != 0) return install
     }
+    mirrorRepoDatapacks(serverTreeDir.resolve("world"))
     runProcess(listOf("bash", "-lc", "rm -rf '${serverTreeDir.resolve("world").toString().replace("'", "'\\''")}' '${serverTreeDir.resolve("logs").toString().replace("'", "'\\''")}' '${serverTreeDir.resolve("crash-reports").toString().replace("'", "'\\''")}'"))
+    mirrorRepoDatapacks(serverTreeDir.resolve("world"))
     Files.writeString(
         serverTreeDir.resolve("SERVER_README.txt"),
         """
