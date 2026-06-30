@@ -815,6 +815,29 @@ fun walkFiles(rootDir: Path, predicate: (Path) -> Boolean = { true }): List<Path
     return Files.walk(rootDir).use { stream -> stream.filter { Files.isRegularFile(it) && predicate(it) }.toList() }
 }
 
+fun pruneEmptyDirectories(rootDir: Path) {
+    if (!rootDir.exists()) return
+    Files.walk(rootDir).use { stream ->
+        stream
+            .filter { Files.isDirectory(it) }
+            .toList()
+            .sortedByDescending { it.nameCount }
+            .forEach { dir ->
+                if (dir != rootDir && Files.list(dir).use { children -> !children.findAny().isPresent }) {
+                    Files.deleteIfExists(dir)
+                }
+            }
+    }
+}
+
+fun shouldExcludeManagedFile(side: String, managedPath: String, relative: Path): Boolean {
+    if (side != "server" || managedPath != "mods") return false
+    val fileName = relative.fileName?.toString() ?: return false
+    return clientOnlyModGlobs.any { pattern ->
+        root.fileSystem.getPathMatcher("glob:$pattern").matches(Paths.get(fileName))
+    }
+}
+
 fun newestFile(files: List<Path>): Path? = files.maxByOrNull { runCatching { Files.getLastModifiedTime(it).toMillis() }.getOrElse { 0L } }
 
 fun addFinding(findings: MutableMap<String, HardFinding>, key: String, label: String, lineNumber: Int, line: String) {
@@ -1310,48 +1333,46 @@ fun generateMinecraftClientArgfile(clientDir: Path, versionId: String, username:
 }
 
 fun syncManaged(side: String, targetDir: Path, apply: Boolean): ProcessRun {
-    val escapedRoot = root.toString().replace("'", "'\\''")
-    val escapedTarget = targetDir.toString().replace("'", "'\\''")
-    val excludes = runtimeExcludes.joinToString(" ") { "--exclude='${it}'" }
-    val serverExcludes = clientOnlyModGlobs.joinToString(" ") { "--exclude='${it}'" }
-    val rsyncFlags = if (apply) "-a --delete --prune-empty-dirs" else "-a --delete --prune-empty-dirs --dry-run --itemize-changes"
-    val script = buildString {
-        appendLine("set -Eeuo pipefail")
-        appendLine("ROOT='$escapedRoot'")
-        appendLine("TARGET='$escapedTarget'")
-        appendLine("mkdir -p \"\$TARGET\"")
-        appendLine("if command -v rsync >/dev/null 2>&1; then")
-        appendLine("  for path in ${managedPaths.joinToString(" ") { "'$it'" }}; do")
-        appendLine("    [[ -e \"\$ROOT/\$path\" ]] || continue")
-        appendLine("    if [[ -d \"\$ROOT/\$path\" ]]; then")
-        appendLine("      mkdir -p \"\$TARGET/\$path\"")
-        appendLine("      rsync $rsyncFlags $excludes ${if (side == "server") serverExcludes else ""} \"\$ROOT/\$path/\" \"\$TARGET/\$path/\"")
-        appendLine("    else")
-        appendLine("      mkdir -p \"\$TARGET/$(dirname \"\$path\")\"")
-        appendLine("      rsync $rsyncFlags $excludes ${if (side == "server") serverExcludes else ""} \"\$ROOT/\$path\" \"\$TARGET/\$path\"")
-        appendLine("    fi")
-        appendLine("  done")
-        appendLine("else")
-        appendLine("  ${if (side == "client") "echo 'sync_to_client: rsync unavailable' >&2; exit 1" else "echo 'sync_to_server: rsync unavailable, using local copy fallback' >&2"}")
-        if (side == "server") {
-            appendLine("  shopt -s dotglob nullglob extglob")
-            appendLine("  for path in ${managedPaths.joinToString(" ") { "'$it'" }}; do")
-            appendLine("    [[ -e \"\$ROOT/\$path\" ]] || continue")
-            appendLine("    if [[ '${if (apply) "1" else "0"}' == '0' ]]; then echo \"COPY \$path -> \$TARGET/\$path\"; continue; fi")
-            appendLine("    rm -rf \"\$TARGET/\$path\"")
-            appendLine("    mkdir -p \"\$TARGET/$(dirname \"\$path\")\"")
-            appendLine("    cp -a \"\$ROOT/\$path\" \"\$TARGET/\$path\"")
-            appendLine("  done")
-            appendLine("  if [[ '${if (apply) "1" else "0"}' == '1' ]]; then")
-            appendLine("    for pattern in ${clientOnlyModGlobs.joinToString(" ") { "'$it'" }}; do")
-            appendLine("      for match in \"\$TARGET\"/\$pattern; do [[ -e \"\$match\" ]] || continue; rm -rf \"\$match\"; done")
-            appendLine("    done")
-            appendLine("  fi")
+    val output = mutableListOf<String>()
+    targetDir.createDirectories()
+    managedPaths.forEach { managedPath ->
+        val source = root.resolve(managedPath)
+        if (!source.exists()) return@forEach
+        val destination = targetDir.resolve(managedPath)
+        if (!Files.isDirectory(source)) {
+            output += "${if (apply) "COPY" else "WOULD COPY"} $managedPath"
+            if (apply) {
+                destination.parent?.createDirectories()
+                Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING)
+            }
+            return@forEach
         }
-        appendLine("fi")
-        appendLine("echo '${if (apply) "Synced" else "Dry run complete for"} $side target: '\"\$TARGET\"")
+
+        val sourceFiles = walkFiles(source).filterNot { file ->
+            shouldExcludeManagedFile(side, managedPath, source.relativize(file))
+        }
+        val sourceRelative = sourceFiles.map { source.relativize(it) }
+        val sourceByRelative = sourceRelative.zip(sourceFiles).toMap()
+        val targetFiles = walkFiles(destination)
+        val targetRelative = targetFiles.map { destination.relativize(it) }
+
+        targetRelative.filter { it !in sourceByRelative.keys }.sortedByDescending { it.nameCount }.forEach { relative ->
+            output += "${if (apply) "DELETE" else "WOULD DELETE"} $managedPath/$relative"
+            if (apply) Files.deleteIfExists(destination.resolve(relative))
+        }
+        sourceRelative.sortedBy { it.toString() }.forEach { relative ->
+            output += "${if (apply) "COPY" else "WOULD COPY"} $managedPath/$relative"
+            if (apply) {
+                val from = sourceByRelative.getValue(relative)
+                val to = destination.resolve(relative)
+                to.parent?.createDirectories()
+                Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING)
+            }
+        }
+        if (apply) pruneEmptyDirectories(destination)
     }
-    return runBash(script)
+    output += "${if (apply) "Synced" else "Dry run complete for"} $side target: $targetDir"
+    return ProcessRun(0, output.joinToString("\n"))
 }
 
 fun bootstrapServerRuntime(serverDir: Path, port: Int, reset: Boolean): ProcessRun {
@@ -1375,17 +1396,26 @@ fun bootstrapServerRuntime(serverDir: Path, port: Int, reset: Boolean): ProcessR
         appendLine("for jar_cache in \"\$ROOT/server-template/mods\" \"\$ROOT/server-instance/mods\"; do")
         appendLine("  [[ -d \"\$jar_cache\" ]] || continue")
         appendLine("  [[ \"\$(cd \"\$jar_cache\" && pwd)\" == \"\$(cd \"\$SERVER_DIR/mods\" 2>/dev/null && pwd)\" ]] && continue")
-        appendLine("  if command -v rsync >/dev/null 2>&1; then")
-        appendLine("    rsync -a --ignore-existing --include='*/' --include='*.jar' --include='*.so' --exclude='*' \"\$jar_cache/\" \"\$SERVER_DIR/mods/\"")
-        appendLine("  fi")
+        appendLine("  mkdir -p \"\$SERVER_DIR/mods\"")
+        appendLine("  while IFS= read -r -d '' file; do")
+        appendLine("    rel=\"\${file#\"\$jar_cache\"/}\"")
+        appendLine("    dest=\"\$SERVER_DIR/mods/\$rel\"")
+        appendLine("    [[ -e \"\$dest\" ]] && continue")
+        appendLine("    mkdir -p \"\$(dirname \"\$dest\")\"")
+        appendLine("    cp -p \"\$file\" \"\$dest\"")
+        appendLine("  done < <(find \"\$jar_cache\" -type f \\( -name '*.jar' -o -name '*.so' \\) -print0)")
         appendLine("done")
         appendLine("for library_cache in \"\$ROOT/server-template/libraries\" \"\$ROOT/server-instance/libraries\" \"\${BTM_PRISM_ROOT:-\$HOME/.local/share/PrismLauncher}/libraries\"; do")
         appendLine("  [[ -d \"\$library_cache\" ]] || continue")
         appendLine("  mkdir -p \"\$SERVER_DIR/libraries\"")
         appendLine("  [[ \"\$(cd \"\$library_cache\" && pwd)\" == \"\$(cd \"\$SERVER_DIR/libraries\" && pwd)\" ]] && continue")
-        appendLine("  if command -v rsync >/dev/null 2>&1; then")
-        appendLine("    rsync -a --ignore-existing --include='*/' --include='*.jar' --include='*.pom' --exclude='*' \"\$library_cache/\" \"\$SERVER_DIR/libraries/\"")
-        appendLine("  fi")
+        appendLine("  while IFS= read -r -d '' file; do")
+        appendLine("    rel=\"\${file#\"\$library_cache\"/}\"")
+        appendLine("    dest=\"\$SERVER_DIR/libraries/\$rel\"")
+        appendLine("    [[ -e \"\$dest\" ]] && continue")
+        appendLine("    mkdir -p \"\$(dirname \"\$dest\")\"")
+        appendLine("    cp -p \"\$file\" \"\$dest\"")
+        appendLine("  done < <(find \"\$library_cache\" -type f \\( -name '*.jar' -o -name '*.pom' \\) -print0)")
         appendLine("done")
         appendLine("mkdir -p \"\$SERVER_DIR/world/datapacks\"")
         appendLine("if [[ -d \"\$ROOT/datapacks\" ]]; then")
@@ -1437,7 +1467,14 @@ fun bootstrapClientRuntime(clientDir: Path): ProcessRun {
         appendLine("for jar_cache in \"\$ROOT/server-template/mods\" \"\$ROOT/server-instance/mods\"; do")
         appendLine("  [[ -d \"\$jar_cache\" ]] || continue")
         appendLine("  [[ \"\$(cd \"\$jar_cache\" && pwd)\" == \"\$(cd \"\$CLIENT_DIR/mods\" 2>/dev/null && pwd)\" ]] && continue")
-        appendLine("  rsync -a --ignore-existing --include='*/' --include='*.jar' --include='*.so' --exclude='*' \"\$jar_cache/\" \"\$CLIENT_DIR/mods/\" || true")
+        appendLine("  mkdir -p \"\$CLIENT_DIR/mods\"")
+        appendLine("  while IFS= read -r -d '' file; do")
+        appendLine("    rel=\"\${file#\"\$jar_cache\"/}\"")
+        appendLine("    dest=\"\$CLIENT_DIR/mods/\$rel\"")
+        appendLine("    [[ -e \"\$dest\" ]] && continue")
+        appendLine("    mkdir -p \"\$(dirname \"\$dest\")\"")
+        appendLine("    cp -p \"\$file\" \"\$dest\"")
+        appendLine("  done < <(find \"\$jar_cache\" -type f \\( -name '*.jar' -o -name '*.so' \\) -print0)")
         appendLine("done")
         if (installer != null) {
             appendLine("cp '${installer.toString().replace("'", "'\\''")}' \"\$CLIENT_DIR/forge-$forgeCoord-installer.jar\"")
@@ -2803,7 +2840,7 @@ fun handleDoctor(subArgs: List<String>): CommandResult {
     return when (subArgs.first()) {
         "env" -> {
             val findings = mutableListOf<ValidationFinding>()
-            val required = listOf("kotlin", "node", "python3", "java", "rsync", "curl", "bash", "rg")
+            val required = listOf("kotlin", "node", "python3", "java", "curl", "bash", "rg")
             for (command in required) {
                 if (!commandExists(command)) {
                     findings += ValidationFinding("error", "missing required command: $command")
@@ -3159,7 +3196,7 @@ fun handleTest(subArgs: List<String>): CommandResult {
             )
         }
         "smoke" -> {
-            val missing = ensureCommands("bash", "kotlin", "java", "rsync", "curl")
+            val missing = ensureCommands("bash", "kotlin", "java", "curl")
             if (missing.isNotEmpty()) return prereqFailure("smoke validation prerequisites missing", missing)
             var serverDir = "/tmp/btm-agent-validate-smoke"
             var port = "25565"
@@ -3207,7 +3244,7 @@ fun handleTest(subArgs: List<String>): CommandResult {
             )
         }
         "join" -> {
-            val missing = ensureCommands("bash", "java", "rsync", "curl")
+            val missing = ensureCommands("bash", "java", "curl")
             if (missing.isNotEmpty()) return prereqFailure("join validation prerequisites missing", missing)
             if ((System.getenv("DISPLAY") ?: "").isBlank() && !commandExists("xvfb-run")) {
                 return prereqFailure("headless client join requires xvfb-run when DISPLAY is unset")
@@ -3350,7 +3387,7 @@ fun handleBuild(subArgs: List<String>): CommandResult {
             }
             if (dir.isNullOrBlank()) return usageError("build sync $side requires --dir PATH", buildHelp())
             if (mode == null) return usageError("build sync $side requires --dry-run or --apply", buildHelp())
-            val prereqs = if (side == "server") ensureCommands("bash") else ensureCommands("bash", "rsync")
+            val prereqs = ensureCommands("bash")
             if (prereqs.isNotEmpty()) return prereqFailure("sync prerequisites missing", prereqs)
             val targetPath = resolveUserPath(dir!!)
             val run = syncManaged(side, targetPath, mode == "--apply")
