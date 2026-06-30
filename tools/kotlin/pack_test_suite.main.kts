@@ -179,6 +179,18 @@ val performanceBudgetsMs = linkedMapOf(
     "dev dump health validation" to mapOf("budget" to 50, "hard" to 500),
 )
 
+data class HardFindingMatch(val lineNumber: Int, val line: String)
+data class HardFinding(val key: String, val label: String, var count: Int = 0, val matches: MutableList<HardFindingMatch> = mutableListOf())
+
+val hardPatterns = listOf(
+    Triple("kubejs_recipe_parse_error", "KubeJS recipe parse errors", Regex("Error parsing recipe", RegexOption.IGNORE_CASE)),
+    Triple("invalid_empty_fluid", "Invalid empty fluid errors", Regex("Invalid empty fluid", RegexOption.IGNORE_CASE)),
+    Triple("crash_report_marker", "Crash report markers", Regex("crash report|this crash report has been saved|preparing crash report", RegexOption.IGNORE_CASE)),
+    Triple("jvm_fatal", "JVM fatal errors", Regex("OutOfMemoryError|hs_err_pid|fatal error has been detected", RegexOption.IGNORE_CASE)),
+    Triple("modernfix_watchdog", "ModernFix watchdog signatures", Regex("modernfix.*watchdog|watchdog.*modernfix|server thread dump", RegexOption.IGNORE_CASE)),
+    Triple("c2me_thread_guard", "C2ME/thread-guard signatures", Regex("(ThreadingDetector|PalettedContainer|BulkSectionAccess|safe.?random|random.*wrong thread|accessing legacyrandomsource|CheckedThreadLocalRandom|Chunk not there when requested).*\\b(Exception|Error|FATAL|ReportedException|IllegalStateException)\\b|\\b(Exception|Error|FATAL|ReportedException|IllegalStateException)\\b.*(ThreadingDetector|PalettedContainer|BulkSectionAccess|safe.?random|random.*wrong thread|accessing legacyrandomsource|CheckedThreadLocalRandom|Chunk not there when requested)", RegexOption.IGNORE_CASE)),
+)
+
 fun ok(name: String, detail: String = "") {
     passes += Pass(name, detail)
     println("ok - $name" + if (detail.isNotBlank()) " ($detail)" else "")
@@ -243,6 +255,45 @@ fun runCommand(vararg args: String): CmdResult {
     val buffer = ByteArrayOutputStream()
     process.inputStream.copyTo(buffer)
     return CmdResult(process.waitFor(), buffer.toString(Charsets.UTF_8))
+}
+
+fun addHardFinding(findingsByKey: MutableMap<String, HardFinding>, key: String, label: String, lineNumber: Int, line: String) {
+    val finding = findingsByKey.getOrPut(key) { HardFinding(key, label) }
+    finding.count += 1
+    if (finding.matches.size < 20) finding.matches += HardFindingMatch(lineNumber, line)
+}
+
+fun scanHardFailuresInline(logPath: Path, instanceDir: Path): Pair<Boolean, String> {
+    val findingsByKey = linkedMapOf<String, HardFinding>()
+    Files.readAllLines(logPath).forEachIndexed { index, line ->
+        val lineNumber = index + 1
+        Regex("""with (\d+) failed recipes""", RegexOption.IGNORE_CASE).find(line)?.groupValues?.getOrNull(1)?.toIntOrNull()?.let {
+            if (it > 0) addHardFinding(findingsByKey, "kubejs_failed_recipes", "KubeJS failed recipe count", lineNumber, line)
+        }
+        for ((key, label, pattern) in hardPatterns) {
+            if (pattern.containsMatchIn(line)) addHardFinding(findingsByKey, key, label, lineNumber, line)
+        }
+    }
+    val crashFiles = walk(instanceDir.resolve("crash-reports")) { Regex("""crash-.*\.txt$""").matches(it.fileName.toString()) }
+    val newestCrash = newestFile(crashFiles)
+    if (newestCrash != null && Files.getLastModifiedTime(newestCrash).toMillis() > Files.getLastModifiedTime(logPath).toMillis()) {
+        addHardFinding(findingsByKey, "newer_crash_report", "Crash report newer than log", 0, instanceDir.relativize(newestCrash).toString())
+    }
+    val output = if (findingsByKey.isEmpty()) {
+        "ok - hard log failure scan (${logPath})"
+    } else {
+        buildString {
+            appendLine("FAIL - hard log failure scan (${logPath})")
+            for (finding in findingsByKey.values) {
+                appendLine("FAIL - ${finding.label}: ${finding.count}")
+                for (match in finding.matches) {
+                    val prefix = if (match.lineNumber > 0) "${match.lineNumber}:" else ""
+                    appendLine("  $prefix${match.line}")
+                }
+            }
+        }.trim()
+    }
+    return (findingsByKey.isEmpty()) to output
 }
 
 fun commandExists(command: String): Boolean = try {
@@ -628,9 +679,8 @@ fun testEngineWorldPerformanceLogs() {
         logMetrics["newestCrashReport"] = newestCrash.fileName.toString()
         logMetrics["newestCrashReportAfterLatestLog"] = Files.getLastModifiedTime(newestCrash).toMillis() > Files.getLastModifiedTime(logPath).toMillis()
     }
-    val hardLogScan = runCommand("tools/btm", "--json", "internal", "log-hard-failure-scan", "--instance", instance.toString(), "--log", logPath.toString())
-    val hardScanOk = hardLogScan.exitCode == 0
-    metrics["engineWorld"] = logMetrics + mapOf("hardLogScanOk" to hardScanOk, "hardLogScan" to hardLogScan.output)
+    val (hardScanOk, hardLogScanOutput) = scanHardFailuresInline(logPath, instance)
+    metrics["engineWorld"] = logMetrics + mapOf("hardLogScanOk" to hardScanOk, "hardLogScan" to hardLogScanOutput)
     if (logAgeMinutes <= 1440) ok("latest engine log is recent", "$logAgeMinutes minutes old") else finding("latest engine log is stale", "$logAgeMinutes minutes old", "SHOULD")
     if (logMetrics["reachedIntegratedServer"] == true) ok("engine reached integrated server startup")
     else if (logMetrics["reachedDedicatedServer"] == true) ok("engine reached dedicated server startup")
@@ -656,7 +706,7 @@ fun testEngineWorldPerformanceLogs() {
         worldSaveDurationMs > 10000 -> finding("world save budget exceeded", "$worldSaveDurationMs ms > 10000 ms", "SHOULD")
         else -> ok("world save budget", "$worldSaveDurationMs ms <= 10000 ms")
     }
-    if (hardScanOk) ok("hard engine log failure scan") else fail("hard engine log failure scan", hardLogScan.output.trim())
+    if (hardScanOk) ok("hard engine log failure scan") else fail("hard engine log failure scan", hardLogScanOutput.trim())
 }
 
 fun testDevDumpHealth() {

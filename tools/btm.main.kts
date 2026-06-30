@@ -673,6 +673,12 @@ fun downloadUrl(entry: PackwizEntry): String? =
         else -> null
     }
 
+fun isRuntimeModArtifact(name: String): Boolean {
+    if (!(name.endsWith(".jar") || name.endsWith(".so"))) return false
+    val lower = name.lowercase()
+    return !(lower.endsWith("-sources.jar") || lower.endsWith("-source.jar") || lower.endsWith("-javadoc.jar"))
+}
+
 fun normalizeHash(format: String): String? {
     val normalized = format.lowercase().replace("-", "")
     return if (normalized in setOf("sha1", "sha256", "sha512", "md5")) normalized else null
@@ -769,7 +775,7 @@ fun pruneRuntimeMods(targetDir: Path, side: String, apply: Boolean): ProcessRun 
             stream.forEach { entry ->
                 val name = entry.fileName.toString()
                 when {
-                    name.endsWith(".jar") || name.endsWith(".so") -> {
+                    isRuntimeModArtifact(name) -> {
                         val excludedOnServer = side == "server" && clientOnlyModGlobs.any { glob ->
                             val regex = Regex("^" + Regex.escape(glob).replace("\\*", ".*").replace("\\?", ".") + "$", RegexOption.IGNORE_CASE)
                             regex.matches(name) || regex.matches("mods/$name")
@@ -802,7 +808,8 @@ fun pruneRuntimeMods(targetDir: Path, side: String, apply: Boolean): ProcessRun 
     }
     val finalActual = if (targetModsDir.exists()) Files.list(targetModsDir).use { stream -> stream.filter { Files.isRegularFile(it) && (it.fileName.toString().endsWith(".jar") || it.fileName.toString().endsWith(".so")) }.map { it.fileName.toString() }.toList() } else emptyList()
     val finalUnexpected = finalActual.filter { it !in expected }.sorted()
-    val missing = expected.filter { it !in finalActual }.sorted()
+    val finalRuntimeActual = finalActual.filter(::isRuntimeModArtifact)
+    val missing = expected.filter { it !in finalRuntimeActual }.sorted()
     output += "runtime mod prune: side=$side expected=${expected.size} actual=${finalActual.size} unexpected=${finalUnexpected.size} missing=${missing.size} excluded=$excluded removed=${if (apply) unexpected.size else 0} mode=${if (apply) "apply" else "dry-run"}"
     if (missing.isNotEmpty()) output += "missing expected runtime mods: ${missing.take(40).joinToString(", ")}${if (missing.size > 40) ", ... (${missing.size - 40} more)" else ""}"
     return ProcessRun(if (finalUnexpected.isEmpty() && missing.isEmpty()) 0 else 1, output.joinToString("\n"))
