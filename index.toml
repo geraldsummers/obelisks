@@ -9310,7 +9310,7 @@ hash = "27d55921b31e8eeb2bf0921a896155ce66600bb870af746c50ede52d8c8b5bee"
 
 [[files]]
 file = "kubejs/client_scripts/10_blood_orb_heart_requirements_tooltips.js"
-hash = "39e70d5010bbebe1f5eda30ae8902b8cbc3391b3ba81fa2eb605d28d70c380a2"
+hash = "6b66f43c5a8ad14538b5785ad5aaa837ba529783fe5dda9653d3abd4b208e90c"
 
 [[files]]
 file = "kubejs/client_scripts/15_ore_origin_tooltips.js"
