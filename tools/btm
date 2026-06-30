@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+
+if command -v kotlin >/dev/null 2>&1; then
+  exec kotlin "$ROOT/tools/btm.main.kts" "$@"
+fi
+
+if command -v kotlinc >/dev/null 2>&1; then
+  exec kotlinc -script "$ROOT/tools/btm.main.kts" -- "$@"
+fi
+
+echo "ERROR: Kotlin was not found. Install \`kotlin\` or \`kotlinc\`, then rerun tools/btm." >&2
+exit 3

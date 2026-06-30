@@ -261,7 +261,6 @@
         "kubejs/server_scripts/40_recipe_add/58_blood_magic_manual_create_yields.js",
         "kubejs/server_scripts/40_recipe_add/70_food_potion_reagents.js",
         "kubejs/server_scripts/90_dev_debug/20_food_effect_audit_dumps.js",
-        "tools/analyze_food_effect_graph.mjs",
         "config/thirst/common.toml",
         "config/coldsweat/main.toml",
         "config/classselector/kits.json"
@@ -376,19 +375,16 @@
       "id": "runtime_concurrency_performance",
       "tier": "L4",
       "requiredFiles": [
-        "tools/portable_minecraft_harness.py",
-        "tools/lc_tfth_c2me_dh_stability.py",
-        "tools/server_content_smoke.sh",
-        "tools/bootstrap_server.sh",
-        "tools/bootstrap_client_runtime.sh",
-        "tools/prune_runtime_mods.mjs",
-        "tools/log_hard_failure_scan.mjs",
+        "tools/btm",
+        "tools/btm.main.kts",
+        "tools/quarantine/original-tools/portable_minecraft_harness.py",
+        "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py",
         "config/c2me.toml",
         "config/DistantHorizons.toml"
       ],
       "contains": [
         {
-          "file": "tools/lc_tfth_c2me_dh_stability.py",
+          "file": "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py",
           "all": [
             "modernfix_watchdog",
             "C2ME",
@@ -397,11 +393,11 @@
           ]
         },
         {
-          "file": "tools/log_hard_failure_scan.mjs",
+          "file": "tools/btm.main.kts",
           "all": [
-            "ModernFix watchdog",
-            "KubeJS recipe parse",
-            "Crash report"
+            "ModernFix watchdog signatures",
+            "KubeJS recipe parse errors",
+            "Crash report markers"
           ]
         }
       ]
@@ -410,9 +406,7 @@
       "id": "client_visibility_guidance",
       "tier": "L3",
       "requiredFiles": [
-        "kubejs/client_scripts/40_hide_quarantined_systems.js",
-        "tools/generate_expert_quest_book.mjs",
-        "tools/apply_quest_dependencies.mjs"
+        "kubejs/client_scripts/40_hide_quarantined_systems.js"
       ],
       "contains": [
         {
@@ -429,9 +423,8 @@
       "id": "worldgen_statistical_sampling",
       "tier": "L5",
       "requiredFiles": [
-        "tools/content_memory_inventory.py",
-        "tools/engine_world_log_metrics.mjs",
-        "tools/c2me_feature_matrix.py",
+        "tools/quarantine/original-tools/content_memory_inventory.py",
+        "tools/quarantine/original-tools/c2me_feature_matrix.py",
         "datapacks/realistic_ores_lava_depths/pack.mcmeta",
         "datapacks/hyle_deep/pack.mcmeta"
       ],
@@ -445,26 +438,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "playtest_telemetry_friction",
-      "tier": "L6",
-      "requiredFiles": [
-        "tools/engine_world_log_metrics.mjs",
-        "tools/analyze_food_effect_graph.mjs",
-        "docs/runtime_validation.md",
-        "docs/progression.md"
-      ],
-      "contains": [
-        {
-          "file": "tools/engine_world_log_metrics.mjs",
-          "all": [
-            "main menu to in-game",
-            "spawn",
-            "tick"
-          ]
-        }
-      ]
     }
   ],
   "validationTiers": [
@@ -472,27 +445,27 @@
       "id": "L0",
       "name": "inventory/source integrity",
       "requiredTools": [
-        "tools/contract_completeness_report.mjs",
-        "tools/validate_pack_contract.mjs",
-        "tools/sync_to_server.sh",
-        "tools/sync_to_client.sh"
+        "tools/btm",
+        "tools/btm.main.kts",
+        "tools/kotlin/contract_completeness_report.main.kts",
+        "tools/kotlin/validate_pack_contract.main.kts"
       ]
     },
     {
       "id": "L1",
       "name": "static syntax/schema/reference checks",
       "requiredTools": [
-        "tools/validate_autonomous_contracts.mjs",
-        "tools/validate_kubejs_assets.mjs",
-        "tools/validate_chemistry_identity.mjs",
-        "tools/validate_synthesis_pipeline.mjs"
+        "tools/btm",
+        "tools/btm.main.kts",
+        "tools/kotlin/validate_autonomous_contracts.main.kts",
+        "tools/kotlin/validate_kubejs_assets.main.kts"
       ]
     },
     {
       "id": "L2",
       "name": "extracted progression/economy graph invariants",
       "requiredTools": [
-        "tools/pack_test_suite.mjs",
+        "tools/kotlin/pack_test_suite.main.kts",
         "tools/expert_graph_audit.mjs",
         "tools/audit_indirect_casing_economy.mjs"
       ]
@@ -510,26 +483,18 @@
       "id": "L4",
       "name": "client/server scenario harnesses",
       "requiredTools": [
-        "tools/server_content_smoke.sh",
-        "tools/client_join_probe_direct.sh",
-        "tools/lc_tfth_c2me_dh_stability.py"
+        "tools/btm",
+        "tools/btm.main.kts",
+        "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py"
       ]
     },
     {
       "id": "L5",
       "name": "statistical seed/worldgen/performance sampling",
       "requiredTools": [
-        "tools/c2me_feature_matrix.py",
-        "tools/content_memory_inventory.py",
-        "tools/joined_memory_cross_section.py"
-      ]
-    },
-    {
-      "id": "L6",
-      "name": "human playtest telemetry and friction metrics",
-      "requiredTools": [
-        "tools/engine_world_log_metrics.mjs",
-        "tools/analyze_food_effect_graph.mjs"
+        "tools/quarantine/original-tools/c2me_feature_matrix.py",
+        "tools/quarantine/original-tools/content_memory_inventory.py",
+        "tools/quarantine/original-tools/joined_memory_cross_section.py"
       ]
     }
   ],
@@ -540,8 +505,7 @@
       "runtime_checked",
       "marker_checked",
       "scenario_required",
-      "statistical_required",
-      "telemetry_required"
+      "statistical_required"
     ],
     "strongStatuses": [
       "hard_checked",
@@ -557,13 +521,13 @@
         "claim": "Authoritative source roots, source scale, packwiz index membership, indexed hashes, retired files, required manifests, bundled jars, and living-doc boundaries are checked as hard invariants.",
         "evidence": [
           "tools/pack_contract.json",
-          "tools/validate_pack_contract.mjs",
+          "tools/kotlin/validate_pack_contract.main.kts",
           "index.toml",
           "pack.toml",
           ".packwizignore"
         ],
         "validators": [
-          "tools/validate_pack_contract.mjs"
+          "tools/kotlin/validate_pack_contract.main.kts"
         ],
         "openRequirements": []
       },
@@ -575,16 +539,14 @@
         ],
         "claim": "KubeJS/tool syntax, JSON parse health, custom item/block assets, casing assets, chemistry identity, and synthesis pipeline structure are checked by static validators.",
         "evidence": [
-          "tools/pack_test_suite.mjs",
-          "tools/validate_kubejs_assets.mjs",
-          "tools/validate_chemistry_identity.mjs",
-          "tools/validate_synthesis_pipeline.mjs"
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/kotlin/validate_kubejs_assets.main.kts",
+          "tools/btm.main.kts"
         ],
         "validators": [
-          "tools/pack_test_suite.mjs",
-          "tools/validate_kubejs_assets.mjs",
-          "tools/validate_chemistry_identity.mjs",
-          "tools/validate_synthesis_pipeline.mjs"
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/kotlin/validate_kubejs_assets.main.kts",
+          "tools/btm.main.kts"
         ],
         "openRequirements": []
       },
@@ -602,12 +564,12 @@
         "evidence": [
           "kubejs/config/btm_expert_graph_catalog.json",
           "kubejs/server_scripts/90_dev_debug/10_recipe_audit_dumps.js",
-          "tools/pack_test_suite.mjs",
+          "tools/kotlin/pack_test_suite.main.kts",
           "tools/expert_graph_audit.mjs",
           "tools/audit_indirect_casing_economy.mjs"
         ],
         "validators": [
-          "tools/pack_test_suite.mjs",
+          "tools/kotlin/pack_test_suite.main.kts",
           "tools/expert_graph_audit.mjs",
           "tools/audit_indirect_casing_economy.mjs"
         ],
@@ -625,15 +587,13 @@
         ],
         "claim": "Deposit processing scripts, acid/ball matrix identity, Alchemistry-to-Create port shape, Chemlib/Latent Chemlib data, and synthesis routes are checked as hard source invariants.",
         "evidence": [
-          "tools/validate_chemistry_identity.mjs",
-          "tools/validate_synthesis_pipeline.mjs",
+          "tools/btm.main.kts",
           "kubejs/server_scripts/40_recipe_add/55_realistic_ores_identity_outputs.js",
           "kubejs/config/alchemistry_dissolver_port.json"
         ],
         "validators": [
-          "tools/validate_chemistry_identity.mjs",
-          "tools/validate_synthesis_pipeline.mjs",
-          "tools/pack_test_suite.mjs"
+          "tools/btm.main.kts",
+          "tools/kotlin/pack_test_suite.main.kts"
         ],
         "openRequirements": []
       },
@@ -649,17 +609,15 @@
         ],
         "claim": "Blood-orb heart bridge, Blood Magic slate parenting, cross-magic spellcraft files, food/potion reagent scripts, and body-system configs are present and marker-checked.",
         "evidence": [
-          "tools/validate_autonomous_contracts.mjs",
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
           "kubejs/server_scripts/40_recipe_add/40_blood_orbs_from_still_beating_hearts.js",
           "kubejs/server_scripts/30_recipe_replace/126_cross_magic_irons_spellcraft.js",
-          "kubejs/server_scripts/90_dev_debug/20_food_effect_audit_dumps.js",
-          "tools/analyze_food_effect_graph.mjs"
+          "kubejs/server_scripts/90_dev_debug/20_food_effect_audit_dumps.js"
         ],
         "validators": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/validate_pack_contract.mjs",
-          "tools/audit_cross_magic_spellcraft.mjs",
-          "tools/analyze_food_effect_graph.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/kotlin/validate_pack_contract.main.kts",
+          "tools/audit_cross_magic_spellcraft.mjs"
         ],
         "openRequirements": []
       },
@@ -675,17 +633,17 @@
         ],
         "claim": "Coin tiers, Wares loot tables, villager-trade rewrites, emerald removal, coin loot injection, and broad profession coverage are checked.",
         "evidence": [
-          "tools/validate_autonomous_contracts.mjs",
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
           "kubejs/server_scripts/35_villager_trades/10_coin_villager_trades.js",
           "kubejs/server_scripts/50_loot/40_emerald_loot_coin_replacement.js",
           "kubejs/data/wares/loot_tables/agreement",
           "kubejs/data/wares/loot_tables/package",
-          "tools/pack_test_suite.mjs"
+          "tools/kotlin/pack_test_suite.main.kts"
         ],
         "validators": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/pack_test_suite.mjs",
-          "tools/validate_pack_contract.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/kotlin/validate_pack_contract.main.kts"
         ],
         "openRequirements": []
       },
@@ -709,12 +667,12 @@
           "config/twilightforest-common.toml",
           "config/structurify.json",
           "config/obelisks/obelisks/aether.json",
-          "tools/lc_tfth_c2me_dh_stability.py"
+          "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py"
         ],
         "validators": [
-          "tools/lc_tfth_c2me_dh_stability.py",
-          "tools/client_join_probe_direct.sh",
-          "tools/pack_test_suite.mjs"
+          "tools/btm",
+          "tools/btm.main.kts",
+          "tools/kotlin/pack_test_suite.main.kts"
         ],
         "openRequirements": [
           "Run and retain fresh evidence for actual Creating Space travel UI and travel to all space-routed adventure dimensions.",
@@ -733,16 +691,16 @@
         ],
         "claim": "Fresh server smoke validates boot, hard log scan, recipe parse health, tick/save budgets, dimension save fanout, DH backlog, and recent crash state.",
         "evidence": [
-          "tools/server_content_smoke.sh",
-          "tools/pack_test_suite.mjs",
-          "tools/log_hard_failure_scan.mjs",
-          "tools/portable_minecraft_harness.py",
-          "tools/lc_tfth_c2me_dh_stability.py"
+          "tools/btm",
+          "tools/btm.main.kts",
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/quarantine/original-tools/portable_minecraft_harness.py",
+          "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py"
         ],
         "validators": [
-          "tools/server_content_smoke.sh",
-          "tools/pack_test_suite.mjs",
-          "tools/lc_tfth_c2me_dh_stability.py"
+          "tools/btm",
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/quarantine/original-tools/lc_tfth_c2me_dh_stability.py"
         ],
         "openRequirements": []
       },
@@ -756,17 +714,15 @@
         "systemRefs": [
           "client_visibility_guidance"
         ],
-        "claim": "Client hiding, quest generator, dependency application, and recipe-hook expectations are present; the current live FTB Quests config is intentionally skeletal/manual rather than full generated progression coverage.",
+        "claim": "Client hiding and recipe-hook expectations are present; the current live FTB Quests config is intentionally skeletal/manual rather than generated.",
         "evidence": [
-          "tools/validate_autonomous_contracts.mjs",
-          "kubejs/client_scripts/40_hide_quarantined_systems.js",
-          "tools/generate_expert_quest_book.mjs",
-          "tools/apply_quest_dependencies.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "kubejs/client_scripts/40_hide_quarantined_systems.js"
         ],
         "validators": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/pack_test_suite.mjs",
-          "tools/validate_pack_contract.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/kotlin/pack_test_suite.main.kts",
+          "tools/kotlin/validate_pack_contract.main.kts"
         ],
         "openRequirements": []
       },
@@ -779,20 +735,18 @@
         "systemRefs": [
           "worldgen_statistical_sampling"
         ],
-        "claim": "Worldgen datapacks, C2ME matrix tooling, memory inventory, runtime metrics, and known follow-ups exist; density and accessibility proof requires seed sampling.",
+        "claim": "Worldgen datapacks, C2ME matrix tooling, memory inventory, and known follow-ups exist; density and accessibility proof requires seed sampling.",
         "evidence": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/c2me_feature_matrix.py",
-          "tools/content_memory_inventory.py",
-          "tools/engine_world_log_metrics.mjs",
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/quarantine/original-tools/c2me_feature_matrix.py",
+          "tools/quarantine/original-tools/content_memory_inventory.py",
           "datapacks/realistic_ores_lava_depths/pack.mcmeta",
           "datapacks/hyle_deep/pack.mcmeta"
         ],
         "validators": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/c2me_feature_matrix.py",
-          "tools/content_memory_inventory.py",
-          "tools/engine_world_log_metrics.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/quarantine/original-tools/c2me_feature_matrix.py",
+          "tools/quarantine/original-tools/content_memory_inventory.py"
         ],
         "openRequirements": [
           "Add deterministic seed sampling for deposits, Y-bands, villages, roads, walls, structures, forageables, and spawn viability.",
@@ -809,42 +763,17 @@
         ],
         "claim": "All pack-critical custom mod sources, build files, minimum code/test surface, bundled jars, and packwiz jar entries are checked.",
         "evidence": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/validate_pack_contract.mjs",
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/kotlin/validate_pack_contract.main.kts",
           "generated/custom-mod-sources",
           "mods/btmfixes-0.1.0.jar",
           "mods/pillagercampaigns-0.2.0.jar"
         ],
         "validators": [
-          "tools/validate_autonomous_contracts.mjs",
-          "tools/validate_pack_contract.mjs"
+          "tools/kotlin/validate_autonomous_contracts.main.kts",
+          "tools/kotlin/validate_pack_contract.main.kts"
         ],
         "openRequirements": []
-      },
-      {
-        "id": "playtest_telemetry_friction",
-        "status": "telemetry_required",
-        "tierRefs": [
-          "L6"
-        ],
-        "systemRefs": [
-          "playtest_telemetry_friction"
-        ],
-        "claim": "The pack has tooling that can parse runtime timing and food-effect pressure, but human-route friction is not mathematically proven by static tests.",
-        "evidence": [
-          "tools/engine_world_log_metrics.mjs",
-          "tools/analyze_food_effect_graph.mjs",
-          "docs/progression.md",
-          "docs/runtime_validation.md"
-        ],
-        "validators": [
-          "tools/engine_world_log_metrics.mjs",
-          "tools/analyze_food_effect_graph.mjs"
-        ],
-        "openRequirements": [
-          "Capture route telemetry for time-to-tier, deaths, lookup stalls, travel distance, recovery loops, and player confusion.",
-          "Define friction budgets per progression segment and compare playtest traces against them."
-        ]
       }
     ]
   },

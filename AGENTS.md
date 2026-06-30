@@ -50,45 +50,64 @@ Do not sync or delete player/runtime state by default. Use explicit reset flags 
 - `tools/`: test/profiling/worldgen harness scripts
 - `server-instance/`: generated dedicated server runtime; sync from source before launching
 
-## Sync And Launch
-- Server dry run: `tools/sync_to_server.sh --dry-run`
-- Server apply: `tools/sync_to_server.sh --apply --server-dir server-instance`
-- Client dry run: `tools/sync_to_client.sh --dry-run --client-dir /path/to/client`
-- Client apply: `tools/sync_to_client.sh --apply --client-dir /path/to/client`
-- Bootstrap server: `tools/bootstrap_server.sh --server-dir /tmp/btm-server --port 25565`
-- Launch server: `tools/launch_server_direct.sh --server-dir /tmp/btm-server -- nogui`
-- Bootstrap client: `tools/bootstrap_client_runtime.sh --client-dir /tmp/btm-client`
-- Launch direct client: `tools/launch_client_direct.sh --client-dir /tmp/btm-client --username AgentClient --server 127.0.0.1:25565`
-- Direct join probe: `tools/client_join_probe_direct.sh --client-dir /tmp/btm-client --server 127.0.0.1:25565`
-- Agent static validation: `tools/agent_validate.sh --static`
-- Agent existing-runtime validation: `tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime`
-- Agent fresh smoke validation: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-agent-validate-smoke --port 25565 --reset-runtime`
-- Content smoke: `tools/server_content_smoke.sh --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime`
-- Prism fallback: `tools/launch_prism_instance.sh "Bound to Matter"`
+## Supported Tool Surface
+- Launcher: `tools/btm`
+- Validation: `tools/btm test static`
+- Existing runtime validation: `tools/btm test runtime --instance /path/to/fresh/runtime`
+- Fresh smoke validation: `tools/btm test smoke --server-dir /tmp/btm-agent-validate-smoke --port 25565 --reset-runtime`
+- Scenario validation: `tools/btm test scenario lc_tfth_c2me_dh`
+- Kotlin test runner: `tools/btm test kotlin`
+- Server sync dry run: `tools/btm build sync server --dir server-instance --dry-run`
+- Server sync apply: `tools/btm build sync server --dir server-instance --apply`
+- Client sync dry run: `tools/btm build sync client --dir /path/to/client --dry-run`
+- Client sync apply: `tools/btm build sync client --dir /path/to/client --apply`
+- CurseForge bundle export: `tools/btm build bundle curseforge`
+- Complete server bundle export: `tools/btm build bundle server`
+- Environment checks: `tools/btm doctor env`
+- Repo checks: `tools/btm doctor repo`
+- Runtime inspection: `tools/btm doctor runtime --instance /path/to/fresh/runtime`
 
-The sync scripts use managed source path lists and excludes for runtime state. Server sync also excludes known client-only mod entries so client-only jars do not enter the dedicated server runtime. Bootstrap scripts resolve current `.pw.toml` downloads into generated server/client roots; use `tools/resolve_packwiz_downloads.mjs --dry-run --pack-root . --target-dir /tmp/btm-server --side server` to inspect that step directly.
+The supported public contract is the `btm` tree only. Legacy shell, Python, and Node entrypoints remain as internal implementation detail until their Kotlin replacements land; do not teach or depend on them as the front door.
+Original shell/Python tools are quarantined under `tools/quarantine/original-tools/` for archival reference. Do not move them back into the active `tools/` root.
+
+## Tool Prerequisites
+- Run `tools/btm doctor env` before claiming the toolchain is usable.
+- Current practical prerequisites for supported workflows include:
+  - `kotlin`
+  - `python3`
+  - `java` with Java 17
+  - `bash`
+  - `rg`
+  - `rsync` for sync flows
+  - `curl` for runtime/bootstrap and server bundle flows
+  - `packwiz` for bundle export flows
+- Treat `tools/btm doctor env` as authoritative when a command fails due to missing local dependencies.
+- `tools/btm` is the only supported front door. Some internal generators and archival compatibility shims remain outside Kotlin, but supported `test`, `build`, and `doctor` flows should not be taught as Node entrypoints.
 
 ## Modular Harnesses
 Use the portable harness layer for repeatable runtime tests instead of hand-built local instances.
 
-- Shared mechanics live in `tools/portable_minecraft_harness.py`.
-- Scenario scripts, such as `tools/lc_tfth_c2me_dh_stability.py`, should define only:
-  - scenario metadata and default run/docs paths,
-  - required mod jar patterns,
-  - fatal log classifiers,
-  - activity signatures,
-  - scenario phases and console commands.
+- Public scenario entrypoint: `tools/btm test scenario NAME [scenario args]`
+- Current public scenarios:
+  - `lc_tfth_c2me_dh`
+  - `dimension_worldgen`
+- Internal harness/scenario implementation should define only:
+  - scenario metadata and default run/docs paths
+  - required mod jar patterns
+  - fatal log classifiers
+  - activity signatures
+  - scenario phases and console commands
 - Keep scenario scripts deterministic and disposable. They should create fresh server/client runtimes under `/tmp`, use direct launchers only, and write machine summaries under the disposable run root.
 - Keep raw logs, crash reports, thread dumps, heap info, generated worlds, and per-run summaries under the `/tmp` run root. Commit only concise conclusions in `docs/runtime_validation.md` or `docs/performance_and_mods.md` when useful.
 - Harness scripts are repo tooling, not pack content. `tools/` must stay excluded from packwiz via `.packwizignore`; verify with `rg '^file = "tools/' index.toml` after `packwiz refresh`.
 - Do not make a stability harness pass by disabling the feature being tested. Required mods and features must stay enabled unless the user explicitly asks for an exclusion experiment.
-- Prefer adding a new scenario wrapper over copying launcher/process code. If a new test needs generic behavior, add it to `portable_minecraft_harness.py` and keep scenario-specific behavior in the scenario file.
+- Prefer adding a new scenario wrapper over copying launcher/process code. Keep shared harness behavior internal and expose new cases through `tools/btm test scenario`.
 - Use `--cycles`, `--idle-seconds`, `--keep-going`, `--keep-runs`, `--min-free-gb`, and `--max-old-runs` to tune validation runs. Default behavior should prune old `/tmp` runs and fail early if free space is low.
 - On stalls, timeouts, watchdogs, JVM exits, or crash reports, capture diagnostics through the harness before stopping processes.
 
 Current LC/DH scenario:
-- Run: `python3 tools/lc_tfth_c2me_dh_stability.py`
-- Short smoke: `python3 tools/lc_tfth_c2me_dh_stability.py --cycles 1 --idle-seconds 30 --tfth-seconds 30`
+- Run: `tools/btm test scenario lc_tfth_c2me_dh`
+- Short smoke: `tools/btm test scenario lc_tfth_c2me_dh --cycles 1 --idle-seconds 30 --tfth-seconds 30`
 - Full validation expectation: 3 clean boot/join/LC teleport/DH generation/TFTH pressure cycles, required jars present on server and client, no crash reports, no ModernFix watchdog, no C2ME thread-guard failures, and DH activity observed.
 
 ## Core Rules
@@ -100,28 +119,32 @@ Current LC/DH scenario:
 - Commit as you make changes: after each coherent completed change, run the relevant validation, commit the finished work, and push the current branch. Do not leave completed work uncommitted or unpushed unless the user explicitly asks to hold it locally.
 
 ## Validate Before Shipping
-1. `node --check` for touched JS scripts.
-2. Run relevant `tools/` harness/tests.
-3. Confirm recipe visibility (EMI/JEI-facing paths).
-4. Recheck known chokepoints (alloy, casing, grout, gates, coins/trades).
-5. Record concise findings in the relevant living doc under `docs/`.
+1. `tools/btm internal check-js-syntax` for touched JS scripts.
+2. Run `tools/btm doctor env` before validation if the machine/toolchain state is uncertain.
+3. Run relevant `tools/btm ...` validation/build flows.
+4. Confirm recipe visibility (EMI/JEI-facing paths).
+5. Recheck known chokepoints (alloy, casing, grout, gates, coins/trades).
+6. Record concise findings in the relevant living doc under `docs/`.
 
 Recommended validation ladder:
-1. Static checks: `tools/agent_validate.sh --static`.
-2. Existing fresh runtime: `tools/agent_validate.sh --runtime --instance /path/to/fresh/runtime`.
-3. Fresh server smoke for recipe/config/content changes: `tools/agent_validate.sh --smoke --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime`.
-4. Client/server scenario harnesses for stability, rendering, login, LC/DH/TFTH, or client-only work.
+1. Static checks: `tools/btm test static`.
+2. Existing fresh runtime: `tools/btm test runtime --instance /path/to/fresh/runtime`.
+3. Fresh server smoke for recipe/config/content changes: `tools/btm test smoke --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime`.
+4. Client/server scenario harnesses for stability, rendering, login, LC/DH/TFTH, or client-only work: `tools/btm test scenario ...`.
 
-Treat runtime validation as authoritative only when it reads logs and KubeJS audit dumps from a fresh or intentionally reused current runtime. `--runtime` and `--smoke` run the pack suite in strict runtime mode. Add `--strict-data-dumps` only when vanilla `/dump` output such as `dump/data_raw/loot_tables` was intentionally generated; this is separate from KubeJS audit dumps under `kubejs/config`.
+Treat runtime validation as authoritative only when it reads logs and KubeJS audit dumps from a fresh or intentionally reused current runtime. `tools/btm test runtime` and `tools/btm test smoke` run the pack suite in strict runtime mode. Add `--strict-data-dumps` only when vanilla `/dump` output such as `dump/data_raw/loot_tables` was intentionally generated; this is separate from KubeJS audit dumps under `kubejs/config`.
 
-After changing agent validation entry points or evidence claims, run `tools/test_agent_validate_surfaces.sh`. Use `tools/test_agent_validate_surfaces.sh --include-static --runtime /path/to/fresh/runtime` when changing static isolation, runtime claims, report summaries, or strict data-dump behavior.
+After changing the validation surface or evidence claims, verify `tools/btm test ...` behavior and the generated validation reports against a fresh runtime.
 
 For runtime/tooling changes, also run:
-1. `bash -n tools/*.sh`
-2. Sync scripts in `--dry-run`
-3. Sync scripts in `--apply` against temporary server/client directories
-4. Runtime probes against temporary directories when launch assets are available
-5. `python3 -m py_compile` for touched Python tools
+1. `tools/btm doctor env`
+2. `tools/btm build sync server --dir /tmp/btm-sync-server --dry-run`
+3. `tools/btm build sync server --dir /tmp/btm-sync-server --apply`
+4. `tools/btm build sync client --dir /tmp/btm-sync-client --dry-run`
+5. `tools/btm build sync client --dir /tmp/btm-sync-client --apply`
+6. `tools/btm test kotlin`
+
+If `tools/btm doctor env` reports missing prerequisites, do not claim validation parity for commands that depend on them.
 
 ## Custom Mods Source (`generated/custom-mod-sources`)
 Active pack-critical sources:

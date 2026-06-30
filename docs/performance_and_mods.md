@@ -25,7 +25,7 @@ Do not infer active state from old RAM cuts or runtime caches. In the current re
 
 ## Runtime Pruning
 
-Disposable runtimes can inherit stale jars from `server-template/`, `server-instance/`, or launcher caches. `tools/prune_runtime_mods.mjs` is wired into `tools/bootstrap_server.sh` to remove jars not expected from active manifests plus bundled jars, while also respecting server-side client-only exclusions from `tools/_runtime_common.sh`.
+Disposable runtimes can inherit stale jars from `server-template/`, `server-instance/`, or launcher caches. The supported cleanup surface is `tools/btm build sync ...` plus `tools/btm test smoke`; internal runtime pruning still derives from the staged mod set and server-side client-only exclusions so stale jars are removed before strict runtime claims.
 
 If a runtime dump mentions a mod not present in current manifests or bundled jars, treat it as contaminated until the runtime is rebuilt and pruned.
 
@@ -44,7 +44,7 @@ Current full-pack work should assume a higher memory budget unless the user expl
 
 ## C2ME, DH, LC, And TFTH
 
-Current source state keeps C2ME, Distant Horizons, Lost Cities, and The Flesh That Hates active. The focused stability harness is `tools/lc_tfth_c2me_dh_stability.py`.
+Current source state keeps C2ME, Distant Horizons, Lost Cities, and The Flesh That Hates active. The focused stability harness entrypoint is `tools/btm test scenario lc_tfth_c2me_dh`.
 
 Historical conclusions to preserve:
 
@@ -64,7 +64,7 @@ Set `BTM_CUSTOM_MODS_DIR` to use a different custom-mod checkout when running va
 
 Prior repairs worth retaining as current expectations:
 
-- Forest generation in fresh server runtimes depends on repo datapacks being present in `world/datapacks`; `tools/bootstrap_server.sh` now injects source datapacks there for disposable server tests. `dt_forest_worldgen_fix` disables reliance on Nature's Spirit modified vanilla biome packs and adds explicit Dynamic Trees selectors for vanilla forest biomes. Dark forests remove the vanilla `minecraft:dark_forest_vegetation` feature and replace its huge mushrooms through Dynamic Trees Plus brown/red mushroom species in the dark forest selector. Hyle/Unearthed dirt replacement stays enabled; `btmfixes` registers 37 Unearthed regolith/overgrown surface blocks as Dynamic Trees dirt-like soil aliases. Do not restore Unearthed DT soil-property JSON files, because they make Dynamic Trees expect unregistered `rooty_unearthed_*` blocks during worldgen. Fixed-seed radius-3 evidence from `/tmp/btm-forest-audit-regolith-alias/result-radius3-regolith-on-alias.json`: forest 5280 expected DT branch blocks, old-growth birch 2238, dark forest 1305, and jungle 2369, all with zero missing chunks and all passing. The external DT Nature's Spirit addon still logs bad redwood species growth-logic ids; treat that as an addon bug unless patched in a custom jar.
+- Forest generation in fresh server runtimes depends on repo datapacks being present in `world/datapacks`; the current `tools/btm test smoke` path injects source datapacks into disposable server tests before strict validation. `dt_forest_worldgen_fix` disables reliance on Nature's Spirit modified vanilla biome packs and adds explicit Dynamic Trees selectors for vanilla forest biomes. Dark forests remove the vanilla `minecraft:dark_forest_vegetation` feature and replace its huge mushrooms through Dynamic Trees Plus brown/red mushroom species in the dark forest selector. Hyle/Unearthed dirt replacement stays enabled; `btmfixes` registers 37 Unearthed regolith/overgrown surface blocks as Dynamic Trees dirt-like soil aliases. Do not restore Unearthed DT soil-property JSON files, because they make Dynamic Trees expect unregistered `rooty_unearthed_*` blocks during worldgen. Fixed-seed radius-3 evidence from `/tmp/btm-forest-audit-regolith-alias/result-radius3-regolith-on-alias.json`: forest 5280 expected DT branch blocks, old-growth birch 2238, dark forest 1305, and jungle 2369, all with zero missing chunks and all passing. The external DT Nature's Spirit addon still logs bad redwood species growth-logic ids; treat that as an addon bug unless patched in a custom jar.
 - Dimension forest coverage now includes CurseForge DT addons for Aether and Twilight Forest plus bundled `btmdimtrees` species/decorator coverage for Blue Skies, Undergarden, Finley, and Call From The Depths. Current radius-2 harness evidence: Aether skyroot grove 154 `dtaether:skyroot_branch`, Twilight dense forest 3528 DT branch blocks, Blue Skies sunset maple 1114 `btmdimtrees:maple_branch`, Undergarden wigglewood 398 `btmdimtrees:wigglewood_branch`, Finley living forest 737 `btmdimtrees:living_wood_branch`, and Call deepforest 587 `btmdimtrees:silent_tree_branch`.
 - `settlementroads` should avoid unbounded tick-time work and clean level-unload state.
 - `villagewalls` should cap automatic wall generation work and avoid endless retries for failed village cells.
