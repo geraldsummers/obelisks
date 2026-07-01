@@ -8125,6 +8125,14 @@ file = "datapacks/realistic_ores_lava_depths/pack.mcmeta"
 hash = "2e69b890b2e44b67e2d5adc2cd88b4cfab95bd588cee3f3d92abcbec99f21e36"
 
 [[files]]
+file = "datapacks/worldgen_compat_fixes/data/immersive_weathering/tags/blocks/grass_blocks.json"
+hash = "023e2ba64d2011e0ccf6e65290fc44d6ad2ddf4b422b193ac54ae2cd41deeaf9"
+
+[[files]]
+file = "datapacks/worldgen_compat_fixes/data/immersive_weathering/tags/blocks/grassy_blocks.json"
+hash = "023e2ba64d2011e0ccf6e65290fc44d6ad2ddf4b422b193ac54ae2cd41deeaf9"
+
+[[files]]
 file = "datapacks/worldgen_compat_fixes/data/kubejs/forge/biome_modifier/remove_hexerei_mahogany_tree.json"
 hash = "5245b6adf7d098e72e5e56c2e8b45b7ec04a796528fdb2b524491f2f328e2215"
 
@@ -9726,7 +9734,7 @@ hash = "78228ed784d87138ec9a63c59c96f71351a00bec30f5423fc35a4c1278351c05"
 
 [[files]]
 file = "kubejs/data/burnt/tags/blocks/grass_blocks.json"
-hash = "3bd759b6e58eaf8fc75b1e0aa1cc57abf9a5be2e2fa668aa33f3a09c948c2c29"
+hash = "023e2ba64d2011e0ccf6e65290fc44d6ad2ddf4b422b193ac54ae2cd41deeaf9"
 
 [[files]]
 file = "kubejs/data/burnt/tags/blocks/plants_will_burn.json"
@@ -10022,11 +10030,11 @@ hash = "d0fabf3f3c99cc7065c7f491411535d3295d22ad2adc2b59303d25dceaab7e8e"
 
 [[files]]
 file = "kubejs/data/immersive_weathering/tags/blocks/grass_blocks.json"
-hash = "3bd759b6e58eaf8fc75b1e0aa1cc57abf9a5be2e2fa668aa33f3a09c948c2c29"
+hash = "023e2ba64d2011e0ccf6e65290fc44d6ad2ddf4b422b193ac54ae2cd41deeaf9"
 
 [[files]]
 file = "kubejs/data/immersive_weathering/tags/blocks/grassy_blocks.json"
-hash = "3bd759b6e58eaf8fc75b1e0aa1cc57abf9a5be2e2fa668aa33f3a09c948c2c29"
+hash = "023e2ba64d2011e0ccf6e65290fc44d6ad2ddf4b422b193ac54ae2cd41deeaf9"
 
 [[files]]
 file = "kubejs/data/kubejs/recipes/primitive/flint_butcher_knife.json"
