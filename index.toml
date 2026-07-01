@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".modpack questbook notes.kate-swp"
-hash = "3ba88419db90e46cb12b4c179a5bef1ce655382f90471a127976a0ce4cd53779"
-
-[[files]]
 file = "AGENTS.md"
 hash = "672b3973ab1413bc9eaf80529c0d523eae22585ae5b57b803ade33017877e419"
 
@@ -11164,6 +11160,11 @@ hash = "1315cd56b0b4a5b3d53374cebf4f1f3cd0546b05058740847bd226c1d1ccab39"
 metafile = true
 
 [[files]]
+file = "mods/dark-mode-everywhere.pw.toml"
+hash = "a4f35c84ec9feec9911672daeadcb81059c96131702216010b17d6408afa5da7"
+metafile = true
+
+[[files]]
 file = "mods/deeperdarker.pw.toml"
 hash = "e50740a50bdeef70e78fc991fbc8eee9dbb4bacd11f5e7cbf10f4c46cb5fd0aa"
 metafile = true
@@ -11958,6 +11959,11 @@ hash = "148bc9c5989ac676d91b6f07a5e871d7b5d11c1b7b46fe30c3894c1512069a88"
 metafile = true
 
 [[files]]
+file = "mods/sushigocrafting.pw.toml"
+hash = "81158e150587d8c9e3218d2f64455f24c8129b00f0008410eba0667a5240cc6a"
+metafile = true
+
+[[files]]
 file = "mods/swem.pw.toml"
 hash = "2a94ad4b0ce05cccaccbabffc78b1897cb361cc357fe296fe082730ca0972c36"
 metafile = true
@@ -12065,6 +12071,11 @@ metafile = true
 [[files]]
 file = "mods/tinkers-weaponry.pw.toml"
 hash = "40e6ec637ce752d74bc4510ddb1578a1dcd21bd7792b135c568dd7e925f4019a"
+metafile = true
+
+[[files]]
+file = "mods/titanium.pw.toml"
+hash = "e8be245ed767270ec9abbdba7fe19b1c46fbf877fde14f3704d71b5baea11213"
 metafile = true
 
 [[files]]
