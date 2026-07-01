@@ -100,9 +100,12 @@ def main() -> int:
             harness.verify_required_jars(result, server_dir, client_dir)
             server_proc = harness.start_server(server_dir, evidence_dir, result.port or args.port)
             harness.wait_for_server_boot(result, server_dir, server_proc)
-            client_proc = harness.start_client(client_dir, evidence_dir, result.port or args.port)
-            harness.wait_for_join(result, server_dir, client_dir, client_proc)
-            prepare_player(harness, server_proc)
+            if not args.server_only:
+                client_proc = harness.start_client(client_dir, evidence_dir, result.port or args.port)
+                harness.wait_for_join(result, server_dir, client_dir, client_proc)
+                prepare_player(harness, server_proc)
+            else:
+                prepare_server_only(harness, server_proc)
             run_dimension_generation(harness, result, server_proc, client_proc, server_dir, client_dir, evidence_dir, args)
 
             if not harness.mark_crash_reports(result, server_dir, client_dir):
@@ -145,6 +148,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--keep-going", action="store_true")
     parser.add_argument("--keep-runs", action="store_true")
     parser.add_argument("--skip-bootstrap", action="store_true")
+    parser.add_argument("--server-only", action="store_true", help="Skip graphical client launch and generate chunks with server forceloads only.")
     parser.add_argument("--min-free-gb", type=float, default=CONFIG.default_min_free_gb)
     parser.add_argument("--max-old-runs", type=int, default=CONFIG.default_max_old_runs)
     return parser.parse_args()
@@ -176,6 +180,15 @@ def prepare_player(harness: PortableMinecraftHarness, server_proc) -> None:
         harness.send_command(server_proc, command)
 
 
+def prepare_server_only(harness: PortableMinecraftHarness, server_proc) -> None:
+    commands = [
+        "gamerule doDaylightCycle false",
+        "gamerule doWeatherCycle false",
+    ]
+    for command in commands:
+        harness.send_command(server_proc, command)
+
+
 def run_dimension_generation(
     harness: PortableMinecraftHarness,
     result,
@@ -196,7 +209,8 @@ def run_dimension_generation(
             x = cx * 16 + 8
             z = cz * 16 + 8
             harness.send_command(server_proc, f"execute in {dimension} run forceload add {cx - radius} {cz - radius} {cx + radius} {cz + radius}")
-            harness.send_command(server_proc, f"execute in {dimension} run tp {CONFIG.username} {x} 128 {z}")
+            if not args.server_only:
+                harness.send_command(server_proc, f"execute in {dimension} run tp {CONFIG.username} {x} 128 {z}")
             harness.idle_until(time.monotonic() + args.settle_seconds, result, logs, server_proc, client_proc)
             harness.update_activity(result, logs)
             result.phases.append(f"{dimension}[{sample + 1}]")

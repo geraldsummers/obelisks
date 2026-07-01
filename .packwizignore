@@ -22,6 +22,7 @@ server-template
 /tools/
 /user_jvm_args.txt
 forge-*-installer.jar
+forge-*-installer.jar.log
 kubejs/recipe_dumps
 kubejs/config/recipe_audit_summary.json
 kubejs/config/progression_recipe_mentions.json

@@ -14,7 +14,7 @@ hash = "47bfcb867a04dc521dd93fef3b13a6bc5b5cddfa1217803c58520373ab47c991"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "a0b5d83b164b214fd7d498932b6ea9f70cbfa1ece6b2cfe7601e34d0fbfd6ea3"
+hash = "fa856157a1e6f81434ee41adc7d44581d23782ff8a08912417fd59928c15884f"
 
 [[files]]
 file = "config/TFTH-Data.toml"
@@ -8257,10 +8257,6 @@ file = "defaultresources/excavated_variants/excavated_variants/variants/realisti
 hash = "524d3f626ff204f39b7deed3a6917b8dc85979164ad3b163be69e5cdd811df3a"
 
 [[files]]
-file = "forge-1.20.1-47.4.13-installer.jar.log"
-hash = "66893216b7edbbe401d8fd95ccdf63aaa5ec4eedb4acf379f848f99dfd04d5e5"
-
-[[files]]
 file = "globalresources/obelisks/excavated_variants/obelisks/variants/meteor_modded_ores.json5"
 hash = "2ccf53677e91deccb0d6f193f1c15d8280677dbc6d53676e98d1696f2d1008c5"
 
@@ -11188,7 +11184,7 @@ metafile = true
 
 [[files]]
 file = "mods/dimensionalfonts-1.0.0.jar"
-hash = "c9999d13c4570ae82f5bdf7c55b0d3619bfa2ee857ee974d28bfde63ebe825e3"
+hash = "736c6e6ec846831e3f32ff36900137200c8cd27e28cf352160703e3a46950a05"
 
 [[files]]
 file = "mods/ding.pw.toml"

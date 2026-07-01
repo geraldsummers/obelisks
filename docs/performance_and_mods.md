@@ -50,7 +50,7 @@ Historical conclusions to preserve:
 
 - C2ME had real previous watchdog/deadlock risk during login and chunk access.
 - DH should remain enabled for stability validation rather than being disabled to make the test easier.
-- DH server generation request radii must stay constrained. A fresh dedicated runtime with `maxSyncOnLoadRequestDistance = 512` and `maxGenerationRequestDistance = 512` produced a C2ME chunk-read stall during DH `PRE_EXISTING_ONLY` import; `64` sync and `16` generation kept DH active and booted cleanly with zero incomplete DH generation tasks on shutdown.
+- DH server generation request radii must stay constrained. A fresh dedicated runtime with `maxSyncOnLoadRequestDistance = 512` and `maxGenerationRequestDistance = 512` produced a C2ME chunk-read stall during DH `PRE_EXISTING_ONLY` import. Current source state keeps `maxGenerationRequestDistance = 16`, trims `maxSyncOnLoadRequestDistance` to `32`, caps DH per-player upload to `256` KB/s, and enables adaptive transfer speed to reduce client movement rubberbanding while flying on dedicated servers.
 - Lost Cities, Twilight Forest, Fallout Wastelands, Finley, and Call From The Depths are routed through Creating Space datapack entries under `kubejs/data/*/creatingspace/rocket_accessible_dimension/`.
 - TFTH now has an active manifest/config state; any older claim that no TFTH mod was identified is stale.
 
