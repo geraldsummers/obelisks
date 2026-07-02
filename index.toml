@@ -10866,11 +10866,11 @@ hash = "2d8a78ea31797897891856bf25f84e717c01ed2d8cccfc2e57bb047a127786b4"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/30_runtime_graph_dumps.js"
-hash = "96099ddc16c0385e6f71361b2b1b15a8b62ed43e862095142d44f7ab7babfe71"
+hash = "dcecc87c42390c14bec7bfbc9c7eb712681dad0af0376051236891e841b1ecaa"
 
 [[files]]
 file = "kubejs/server_scripts/90_dev_debug/40_block_hardness_probe.js"
-hash = "94c966a0ab6936f7240092f613167530f4fc95a9b6609e71d68959e6391ae7ec"
+hash = "cd76f7161ab2ad7d4713652ce5a1e898624752ffc3d8450aabb4b9ec575fedc8"
 
 [[files]]
 file = "kubejs/startup_scripts/00_globals/20_progression_catalogues.js"
