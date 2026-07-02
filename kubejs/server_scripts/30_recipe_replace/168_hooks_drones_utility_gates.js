@@ -9,7 +9,7 @@ function btmMobilityExists(id) {
 function btmMobilityMechanical(event, output, pattern, key, recipeId) {
     if (!btmMobilityExists(output)) return
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, recipeId, output, 1, pattern, key, true)
+    global.btmFactoryCrafting(event, recipeId, output, 1, pattern, key, true)
 }
 
 ServerEvents.recipes(function (event) {

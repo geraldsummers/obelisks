@@ -12,7 +12,7 @@ function btmDimProofShaped(event, output, pattern, keys, recipeId, count) {
 
 function btmDimProofMechanical(event, output, pattern, keys, recipeId, count) {
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, recipeId, output, count || 1, pattern, keys, true)
+    global.btmFactoryCrafting(event, recipeId, output, count || 1, pattern, keys, true)
     BTM_DIM_PROOF_ADDED++
 }
 

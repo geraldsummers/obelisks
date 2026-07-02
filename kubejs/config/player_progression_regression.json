@@ -591,13 +591,6 @@
         ]
       },
       {
-        "id": "create:mechanical_crafting",
-        "needles": [
-          "type: 'create:mechanical_crafting'",
-          "global.btmCreateMechanicalCrafting"
-        ]
-      },
-      {
         "id": "create:milling",
         "needles": [
           "type: 'create:milling'",
@@ -706,7 +699,6 @@
       "create:emptying",
       "create:filling",
       "create:haunting",
-      "create:mechanical_crafting",
       "create:milling",
       "create:mixing",
       "create:pressing",

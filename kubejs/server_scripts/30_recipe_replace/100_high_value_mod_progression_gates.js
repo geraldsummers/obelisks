@@ -47,7 +47,7 @@ function btmMechanicalGate(event, output, pattern, keys, id, count) {
         if (ingredient && ingredient.charAt && ingredient.charAt(0) !== '#' && ingredient.indexOf(':') >= 0 && !btmGateItemExists(ingredient)) return
     }
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, id, output, count || 1, pattern, keys, true)
+    global.btmFactoryCrafting(event, id, output, count || 1, pattern, keys, true)
 }
 
 function btmMechanicalGateMany(event, outputs, idPrefix, core, part, shell) {
@@ -285,7 +285,7 @@ ServerEvents.recipes(function (event) {
     // AOE villager trading is too strong for the early village economy.
     // PROVISIONAL - requires playtesting.
     event.remove({ output: 'tradingpost:trading_post' })
-    global.btmCreateMechanicalCrafting(event, 'kubejs:late_game/tradingpost/trading_post', 'tradingpost:trading_post', 1, [
+    global.btmFactoryCrafting(event, 'kubejs:late_game/tradingpost/trading_post', 'tradingpost:trading_post', 1, [
         'GEG',
         'PAP',
         'WWW'

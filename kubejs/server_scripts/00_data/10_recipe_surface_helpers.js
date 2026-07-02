@@ -45,20 +45,13 @@ global.btmFactoryCrafting = function (event, id, output, count, pattern, keys, o
     event.shaped(result, pattern, keys).id(id)
 }
 
-global.btmCreateMechanicalCrafting = function () {
-    return
+global.btmCreateMechanicalCrafting = function (event, id, output, count, pattern, keys, acceptMirrored) {
+    global.btmFactoryCrafting(event, id, output, count || 1, pattern, keys, { mirrored: !!acceptMirrored })
 }
 
 global.btmCreateMechanicalFromInputs = function (event, id, output, count, inputs) {
-    var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    var pattern = []
-    var keys = {}
-    for (var i = 0; i < inputs.length; i++) {
-        var key = letters.charAt(i)
-        pattern.push(key)
-        keys[key] = inputs[i]
-    }
-    global.btmCreateMechanicalCrafting(event, id, output, count || 1, pattern, keys, false)
+    var result = count && count > 1 ? (count + 'x ' + output) : output
+    event.shapeless(result, inputs).id(id)
 }
 
 global.btmCreateCompacting = function (event, id, output, count, inputs, heat) {

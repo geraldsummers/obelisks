@@ -12,7 +12,7 @@ function btmBpRecipe(event, output, pattern, key, id) {
         if (ingredient && ingredient.charAt && ingredient.charAt(0) !== '#' && ingredient.indexOf(':') >= 0 && !btmBpExists(ingredient)) return
     }
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, key, true)
+    global.btmFactoryCrafting(event, id, output, 1, pattern, key, true)
 }
 
 ServerEvents.recipes(function (event) {

@@ -51,7 +51,7 @@ function btmExtremeRecipe(event, output, pattern, keys, id) {
     }
 
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, keys, true)
+    global.btmFactoryCrafting(event, id, output, 1, pattern, keys, true)
 }
 
 ServerEvents.recipes(function (event) {

@@ -101,7 +101,7 @@ function btmLateShaped(event, output, pattern, keys, id) {
     if (!btmLateExists(output)) return
     for (var key in keys) if (!btmLateIngredientExists(keys[key])) return
     event.remove({ output: output })
-    global.btmCreateMechanicalCrafting(event, id, output, 1, pattern, keys, true)
+    global.btmFactoryCrafting(event, id, output, 1, pattern, keys, true)
 }
 
 ServerEvents.recipes(function (event) {

@@ -123,6 +123,8 @@ function btmAestheticMechanical(event, id, output, pattern, keys) {
     var inputs = []
     for (var key in keys) inputs.push(keys[key])
     if (!btmAestheticCanMake(output, inputs)) return
+    btmAestheticRemove(event, output)
+    global.btmFactoryCrafting(event, 'kubejs:casing_aesthetic/factory/' + id, output, 1, pattern, keys, { mirrored: true })
 }
 
 ServerEvents.recipes(function (event) {

@@ -62,7 +62,7 @@ The active casing catalogue is `global.BTM_MACHINE_CASING_TIERS` in `kubejs/star
 
 `kubejs/server_scripts/30_recipe_replace/99_machine_casing_progression.js`, `136_machine_casing_ecosystem_expansion.js`, and related replacement passes keep high-impact machines tied to this ladder. Seared and scorched are merged into one TCon casing tier; recipes that need scorched proof consume scorched bricks/glass directly. Electrical and circuited are merged into one post-airtight electrical/control casing built from Power Grid, PNCR, and OC2R parts. Each new tier should depend on earlier tier capabilities and add a real manufacturing dependency from its own tier.
 
-The pack no longer registers most bespoke pack-authored crafting intermediates such as pressure seals, impossible circuits, or AE2 control subassemblies as standalone KubeJS items. Processing media that act as reusable ore-route components, such as grinding balls, remain registered. Progression otherwise falls back to casing, material, and machine-surface gates where those bespoke intermediary items had previously carried the authored step.
+The pack currently uses a narrow set of standalone KubeJS intermediates where the recipe graph still needs explicit manufactured subassemblies. Pressure seals, compressor cores, late control modules, impossible-circuit parts, and selected chemistry or magic components remain registered; reusable processing media such as grinding balls remain registered as well. New one-off intermediates should still be avoided unless the progression docs and validation contracts are updated with the reason they exist.
 
 ## Early Chokepoints
 
