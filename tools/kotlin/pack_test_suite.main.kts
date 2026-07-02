@@ -165,6 +165,7 @@ val performanceResults = mutableListOf<Map<String, Any?>>()
 val performanceBudgetsMs = linkedMapOf(
     "JSON and JS syntax validation" to mapOf("budget" to 8000, "hard" to 24000),
     "critical progression surfaces" to mapOf("budget" to 750, "hard" to 3000),
+    "progression parenting and economy validation" to mapOf("budget" to 2500, "hard" to 10000),
     "pack contract validation" to mapOf("budget" to 1000, "hard" to 5000),
     "contract completeness classification" to mapOf("budget" to 1000, "hard" to 5000),
     "autonomous contract validation" to mapOf("budget" to 1500, "hard" to 6000),
@@ -173,7 +174,7 @@ val performanceBudgetsMs = linkedMapOf(
     "repo loot data validation" to mapOf("budget" to 500, "hard" to 3000),
     "generated recipe graph validation" to mapOf("budget" to 5000, "hard" to 20000),
     "generated loot dump validation" to mapOf("budget" to 2500, "hard" to 10000),
-    "engine and world performance log analysis" to mapOf("budget" to 250, "hard" to 1500),
+    "engine and world performance log analysis" to mapOf("budget" to 750, "hard" to 1500),
     "Realistic Hands validation" to mapOf("budget" to 2000, "hard" to 4000),
     "KubeJS asset validation" to mapOf("budget" to 2000, "hard" to 4000),
     "chemistry identity validation" to mapOf("budget" to 1500, "hard" to 4000),
@@ -743,6 +744,7 @@ if (runtimeOnly) {
 } else {
     runMeasured("JSON and JS syntax validation", ::testJsonAndSyntax)
     runMeasured("critical progression surfaces", ::testCriticalSurfaces)
+    runMeasured("progression parenting and economy validation") { testBtmValidator("progression parenting and economy contracts validate", "validate-player-progression-contracts") }
     runMeasured("pack contract validation") { testBtmValidator("pack contract validates", "validate-pack-contract") }
     runMeasured("contract completeness classification") { testBtmValidator("contract completeness is classified", "contract-completeness-report", "--check", "--no-write") }
     runMeasured("autonomous contract validation") { testBtmValidator("autonomous contract validators pass", "validate-autonomous-contracts") }

@@ -9,6 +9,10 @@ file = "LICENSE"
 hash = "7f8f48e4266aa8fd3033dfaa4bb7f6e83a60c6e099f82d4959b81de90e67cd8f"
 
 [[files]]
+file = "TOOL_MIGRATION_MATRIX.md"
+hash = "9c1e7fac67c854f51712ab0b204d7ceb19c06645b2c79375eaa1ff2ea2b230c5"
+
+[[files]]
 file = "config/DistantHorizons.toml"
 hash = "fa856157a1e6f81434ee41adc7d44581d23782ff8a08912417fd59928c15884f"
 
@@ -9374,7 +9378,7 @@ hash = "627b340a9c28a68ad8860c2a1a689c879c7420dc789ee582fe0b49e3bacadfe9"
 
 [[files]]
 file = "kubejs/config/btm_expert_graph_catalog.json"
-hash = "302bb55e3c9245be616e4678be331cec0250ae287b97ba8b66f0923eb1fb7191"
+hash = "986652d5be2d23b7061ab597aab8f257df8781b997a2e55669ce8800bcd41e2a"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -9383,6 +9387,10 @@ hash = "ca1bcfdcb5e2feb66eea14271ba8ceb5aaa1cc81fba3b5294a2cc0a14eb26b6e"
 [[files]]
 file = "kubejs/config/common.properties"
 hash = "46a66b6e003ba7953c9a13428fd9c1967e862a673d7fd849831defab59eb08f1"
+
+[[files]]
+file = "kubejs/config/economy_acquisition.json"
+hash = "62266f273a18acbe0203dcca2cbc74a046e87759492ce74951528fd885e7f837"
 
 [[files]]
 file = "kubejs/config/food_effect_progression_candidates.json"
@@ -9395,6 +9403,10 @@ hash = "9f389c7051efc14582d372126829aafd6c5de531590b43e3d4d45501ab021b90"
 [[files]]
 file = "kubejs/config/input_rewrites.json"
 hash = "9d734d8f9b4ba19dce7c21e44f618524733742516fe647ee72c820c71649acbb"
+
+[[files]]
+file = "kubejs/config/magic_parenting.json"
+hash = "beeadf7ca7db698887d73541c2362b8a045d504765c97fa34ef3450cab191f21"
 
 [[files]]
 file = "kubejs/config/perf_probe.json"
@@ -9411,6 +9423,14 @@ hash = "5b849097c77499fa9d5c0536b75759474610a693ca45c305227b35bb83b50f96"
 [[files]]
 file = "kubejs/config/runtime_graph_dumps.json"
 hash = "8405a203dd1b7fa9335b24067944bf5b5d474621dd1c6ff61ab3d59c6feed5fc"
+
+[[files]]
+file = "kubejs/config/surface_registry.json"
+hash = "373ae4de154b28560bd29b7b37bb7b573efb69472dd0502e6177fbff1b457e2e"
+
+[[files]]
+file = "kubejs/config/tech_parenting.json"
+hash = "2d8a8fcb6976c394b9ed8299c2141a904b8e13439ba7bc2b43e85c0b211e8dfc"
 
 [[files]]
 file = "kubejs/data/additionalweaponry/recipes/embellishment/amethyst.json"
@@ -10586,7 +10606,7 @@ hash = "5352611f78d2bdebcdae3321f7ef58ca0bbac07aceb122b695bcf4f5e5be2d89"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/100_high_value_mod_progression_gates.js"
-hash = "a51b1fdf0d5187ed83e608094774729046c05d61a749be0d051f57cd566a7888"
+hash = "e5c02b47d967228eba644c99840a7b05637e1041dc1221e7cb9efc80e26d5b05"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/10_no_easy_compression.js"
@@ -10618,7 +10638,7 @@ hash = "632d6b8d37cedd3bc38e5258ad823f12d9a9863893976082f503c91c3b3361e5"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/125_magic_power_spike_gates.js"
-hash = "a8f13c76cc90f94c39ae30300db2b4e98e2201fd90b55d2c043713b6bed5306d"
+hash = "af234a117c8a2895b22435489d3518ba02dc7c1408aebca938c6950743d92273"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/126_cross_magic_irons_spellcraft.js"
@@ -10634,11 +10654,11 @@ hash = "03bbccce682207ebeb3c8df7ba57d97baa33cc8511cfa30782416eea7bd603e6"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/136_machine_casing_ecosystem_expansion.js"
-hash = "6c3e5f2ba7065dc08563a07285e41de5f591927db30c67e41691c65a400ede55"
+hash = "c3c1c0491a499af7e2a6b512887dff85c5f36c542b0bc448b8da16cee557b9f5"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/137_casing_aesthetic_component_routes.js"
-hash = "229c57eb28a207b46ce62e989fe41cd476b1cb9dd08415b90d165a5df8637b52"
+hash = "2a8b49c7eae5102efd952b56a4f15ca48349ffecd0fc2ef05ef4b38714634f68"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/140_latent_chemlib_power_gates.js"
@@ -10646,7 +10666,7 @@ hash = "0e5af3b9f00d90c5640852b3dcbdf5bb47d458ddf38c58d1797061100d425dd9"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/142_late_tier_material_economy_completion.js"
-hash = "2355bb65befbce1525b95b830e1dc5448beffb651e82f385a74e333f9ed4c5e8"
+hash = "d8965f4a912def1250b64908f51f43156e7badaca6fcd775d1d7a0a78f0e55fb"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/143_circuit_pncr_assembly_authority.js"
@@ -10654,7 +10674,7 @@ hash = "bb64ff45fd155c77cd461ee4aee819028ccca8e03fe2ae0fc32cae7e70a643e2"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/145_vanillish_recipe_expert_pass.js"
-hash = "d8b538ac09d051d80f44d66a97936a320ae35cec15b300fffedd95dcd2bcc6e0"
+hash = "9dda9e7a39b5f5d73d454ca788c37640b1f8122ecc0538e80fec13fc1dab43cd"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/146_hexerei_mahogany_to_natures_spirit.js"
@@ -10666,27 +10686,27 @@ hash = "15ab9f6cc22cd18a6f3d13a77b979652e9257583237ae8e8eb0793271a875a25"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/155_dimension_proof_graph_starts.js"
-hash = "64bcaed2862836ed14edc41dd5a9b7414f147a849f1a89629bf95784a0c292a6"
+hash = "2cf02e0eae1c547969c1521968e0411c1e85136dc9cef9fe848a323b88914174"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/165_protection_pixel_post_ae2_gates.js"
-hash = "fae1781f21fda9306a297501010c05aa7250ae1d6bfbd0211e349f1f8d14981b"
+hash = "e2b3fb1a06d82e9b060f4f385e5c2fc32814956120fab4cfe801a341d355ce1f"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/166_tome_of_blood_post_ae2_gates.js"
-hash = "12ad8f1a42e7573b112341372cc9ba5e262b0238b942561acac54dfc07f2336b"
+hash = "d4f598c338a05665d18daef27f90da1bc6b5f8383937507daa986ecb9f00bf9c"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/168_hooks_drones_utility_gates.js"
-hash = "59d0eb294436e3db0a43ee1ffbf9675573b39f4abc9bca7d08234a6c7c1a936a"
+hash = "7b5dd3c333abe3a772e4c4f77000f6e8173a6a7b73a2fafee7b5a3d856044c94"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/169_backpack_post_ae2_utility_gates.js"
-hash = "b3d954c5264c39ab7d81796813a433fbdfc92aa4ac36effb9dbe3d796f59b262"
+hash = "d06caa897ea4705d0b2d26f4a5ff6ca4df8141f34c7f3cdf0fc38b8271f93c34"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/170_space_dimension_access_gates.js"
-hash = "4fe17bc85faaf1af8372a81c16cc8c6b1e60a8d8f85a99bafd55499a593f0031"
+hash = "679f04e3f2d6de2163a1597b8c3bb5160f080824c40a0786b89478a9c9e5c548"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/20_expensive_grout.js"
@@ -10718,7 +10738,7 @@ hash = "9245affdcbb452cd2d749540114ee5541df86f8a4d503f3164770d3e1613d656"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/80_magic_progression_blood_slate_gates.js"
-hash = "8115b072cf7bd319ef8efa094d360b029b6b778cf3bb5f7c18b5783d25e53a6e"
+hash = "2d0c9e737be6e670b079d993341e4abc4d3783ddb6f25a163257a5949c496a96"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/82_blood_magic_lifeforce_rework.js"
@@ -10882,7 +10902,7 @@ hash = "967a736c0355743c7a6acbecf2772bb1a5be27db9620debc1cc1775ea9aada9b"
 
 [[files]]
 file = "kubejs/startup_scripts/10_items_blocks/30_progression_items.js"
-hash = "19271e3d133986914754a1fa52346da50822b173070ca6562a00e1bef33e926c"
+hash = "d11aa653ef28d3ed570c060b5fb1e062c0acc5a7356c1a23f9a2da8e62f82560"
 
 [[files]]
 file = "kubejs/startup_scripts/20_blocks/10_ae2_skystone_hardness.js"

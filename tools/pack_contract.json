@@ -291,6 +291,25 @@
             "malum:",
             "goety:"
           ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/80_magic_progression_blood_slate_gates.js",
+          "all": [
+            "Botania light progression precedes Ars source precision.",
+            "gate(event, { id: 'botania:runic_altar' }, 'botania:mana_pearl', BM_SLATE_T3)",
+            "gate(event, { id: 'ars_nouveau:imbuement_chamber' }, '#forge:ingots/gold', BM_SLATE_T4)",
+            "Occultism bridges Malum into Goety plus Hexerei dark progression.",
+            "gate(event, { id: 'hexerei:mixing_cauldron' }, 'minecraft:torch', BM_SLATE_T4)"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/146_hexerei_mahogany_to_natures_spirit.js",
+          "all": [
+            "hexerei:mahogany_log",
+            "natures_spirit:mahogany_log",
+            "hexerei:mahogany_planks",
+            "natures_spirit:mahogany_planks"
+          ]
         }
       ]
     },
@@ -325,6 +344,7 @@
       "tier": "L4",
       "requiredFiles": [
         "kubejs/server_scripts/30_recipe_replace/170_space_dimension_access_gates.js",
+        "kubejs/server_scripts/30_recipe_replace/155_dimension_proof_graph_starts.js",
         "kubejs/client_scripts/40_hide_quarantined_systems.js",
         "kubejs/server_scripts/70_spawn/10_spawn_randomizer.js",
         "kubejs/data/btm/advancements/creating_space_access.json",
@@ -346,9 +366,18 @@
         {
           "file": "kubejs/server_scripts/30_recipe_replace/170_space_dimension_access_gates.js",
           "all": [
-            "meteor rifts or Creating Space rocket routes",
+            "Dimensional Fonts or Creating Space rocket routes",
             "fallout_wastelands_:portal_frame",
             "callfromthedepth_:depth"
+          ]
+        },
+        {
+          "file": "kubejs/server_scripts/30_recipe_replace/155_dimension_proof_graph_starts.js",
+          "all": [
+            "kubejs:dimension_graph/everdawn/waterskin",
+            "kubejs:dimension_graph/everdawn/keg",
+            "kubejs:dimension_graph/everbright/soul_torch",
+            "kubejs:dimension_graph/everbright/fermented_spider_eye"
           ]
         },
         {

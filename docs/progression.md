@@ -10,11 +10,13 @@ The pack has two primary crafting spines and one pressure spine:
 
 Local logistics stays first. Create trains and physical routes should matter before AE2 dominates a site, and OC2R is the intended intersite information bridge.
 
+The canonical progression manifests now live in `kubejs/config/tech_parenting.json`, `kubejs/config/magic_parenting.json`, `kubejs/config/economy_acquisition.json`, and `kubejs/config/surface_registry.json`. Recipe scripts and reward surfaces are still authored in KubeJS/config/data files, but tier/branch/policy truth is expected to be audited against those manifests.
+
 Pillager campaign pressure is adaptive by warband rather than global time scaling. New warbands open at modest strength, each successfully defeated raid increases that warband's future raid strength by 1, and each raid that kills a player reduces its future strength by 1. This keeps successful settlements under escalating surface pressure while giving losing players an automatic easing path instead of stacking extra setback cooldowns.
 
 Tier design should feel like conquest rather than checklisting: each new tier needs a new resource domain plus a signature transformation, not just a renamed ingredient. Matter should keep memory of where it came from, so geology, death, heat, pressure, distance, and biological growth remain visible in downstream recipes instead of collapsing into generic dusts.
 
-Death-native magic starts from Blood Magic, Malum, Occultism, and similar substrate languages; reformist or abstraction-heavy schools such as Ars-style spellcraft should be parented by the Blood Magic/slate spine instead of opening as independent vanilla crafting islands.
+Death-native magic starts from Blood Magic and the dark substrate languages it can discipline: Malum first, Occultism as the bridge tier, and Goety plus Hexerei once the player has already proven deeper slate authority. Reformist or abstraction-heavy schools such as Ars-style spellcraft should arrive after Botania's natural-mana engineering rather than opening as independent vanilla crafting islands.
 
 ## Death Loop
 
@@ -39,9 +41,10 @@ Dimension travel has two authored surfaces only: Dimensional Fonts from `dimensi
 | Nether | TConstruct metallurgy proof edge | Netherrack grout and Nether heat/material recipes prove the first serious molten-material route. This keeps TCon rooted in the tech spine while letting Nether travel supply its first hard proof. |
 | Undergarden | Deep survival and later magic materials | Shiverstone, depthrock, cloggrum, regalium, and blood globules remain deep-route materials for later magic and survival escalation after the first heart-bound Blood Altar is online. |
 | Aether | Air travel and expedition mobility | `aether:blue_aercloud`, `aether:skyroot_stick`, `aether:zanite_gemstone`, `aether:aerogel`, `aether:quicksoil_glass`, and `aether:ambrosium_shard` enter Hang Glider wings/frameworks and Immersive Aircraft sail/hull/propeller components. |
-| Everdawn | Heat/desert hydration and brewing route supplies | `blue_skies:brewberry`, `blue_skies:pyrope_gem`, `blue_skies:lunar_planks`, and `blue_skies:polished_umber` open Cold Sweat waterskins and Brewin kegs. Thirst bowls, bottles, buckets, and basic water purification remain ungated by dimensions. |
+| Everdawn | Light-side expedition support | `blue_skies:brewberry`, `blue_skies:pyrope_gem`, `blue_skies:lunar_planks`, and `blue_skies:polished_umber` open Cold Sweat waterskins and Brewin kegs. Thirst bowls, bottles, buckets, and basic water purification remain ungated by dimensions. |
+| Everbright | Dark-side expedition support | `blue_skies:moonstone`, `blue_skies:aquite`, and Everbright woodcraft open soul-torch fieldcraft and fermented-spider-eye scouting supplies. The dimension feeds dark-route exploration pressure without taking ownership of Hexerei, Occultism, Malum, or Goety workstations. |
 
-Everbright, Otherside, and End have no active graph-start mapping until their material identities are redesigned.
+Otherside and End have no active graph-start mapping until their material identities are redesigned.
 
 Mod-specific natural ore and geode origins that are not part of the Realistic Ores deposit pass are meteor-dimension content. Their Overworld and ordinary Nether biome modifiers are suppressed by `datapacks/meteor_ore_relocation`, then reintroduced in Aether, Blue Skies, Undergarden, Otherside, or Nether-obelisk target tags with Excavated Variants support for the local stone skins. Gravel is registered as a gravel Excavated Variants substrate, so gravel-specific meteor ores resolve to `excavated_variants:gravel_*` blocks and remain shovel-gated. This relocates raw worldgen origins only; workstation and recipe entry still follows the Blood-Magic-parented magic spine unless a future pass deliberately changes that spine. JEI/EMI-facing ore origin tooltips live in `kubejs/client_scripts/15_ore_origin_tooltips.js` and should be updated with any future ore source move.
 
@@ -106,13 +109,25 @@ The downstream chemistry pass makes those side streams matter without turning th
 
 Chemical alternatives can offer higher yield, earlier access with more setup, or byproduct-consuming substitutions depending on the target. Finished circuits remain PNCR assembly authority; chemistry prepares wafers, boards, printed processors, etchants, capacitors, and transistors rather than bypassing that completion step. Create recipes represent open bulk processing, grinding media, acids, precipitation, and reduction; PNCR recipes represent sealed pressure, gas handling, thermal control, polymers, and etching; Blood Magic recipes are deliberately manual LP/slate routes with better yield instead of unattended throughput.
 
-Blood Magic slates are the side-magic authority:
+Blood Magic slates are the side-magic authority, with light and dark branches intentionally offset rather than opening together:
 
-- Blank Slate: first side-magic/workstation permissions such as Hexerei, Malum, and early utility.
-- Reinforced Slate: Ars-style entry and Altar II magic.
-- Infused Slate: Occultism basics, Tome of Blood, Goety, and comparable mid magic.
-- Demonic Slate: Botania runic tier, Forbidden and Arcanus, and stronger magic.
+- Blank Slate: Malum and other first-contact death-native practice.
+- Reinforced Slate: Botania's first natural-mana engineering, Nature's Aura support systems, and low-tier cross-magic utility.
+- Infused Slate: Botania runic proof plus Occultism's bridge layer into attunement, chalk, and otherworld work.
+- Demonic Slate: Ars source precision, Goety plus Hexerei operational dark practice, Forbidden and Arcanus, and stronger hybrid schools.
 - Ethereal Slate: late programmable or endgame magic where installed and confirmed.
+
+This keeps the agreed branch order explicit:
+
+- Light: Blood Magic -> Botania -> Ars Nouveau
+- Dark: Blood Magic -> Malum -> Occultism -> Goety plus Hexerei
+- Blue Skies: Everdawn feeds the light expedition lane and Everbright feeds the dark expedition lane, but both still depend on Blood Magic authority to matter downstream.
+
+Cross-mod material standardization stays moderate:
+
+- Exact duplicate physical materials collapse to one canonical family. The active example is mahogany, where Hexerei inputs are redirected into `natures_spirit` mahogany.
+- Shared feedstocks such as planks, logs, generic glass, silica-bearing inputs, and plate/sheet tags should standardize through tags and common substrates.
+- Mod-native proof reagents stay distinct. Do not flatten Blood Magic slates, Botania petals/runes, Ars source items, Malum spirits, Occultism attunement matter, Goety cursed matter, AE2 certus/fluix/sky stone, PNCR PCB stages, or OC2R wafers into interchangeable "magic parts."
 
 Do not gate guidebooks when a workstation/core item can be gated. Do not use hearts in side-magic recipe spam; use slates and authored intermediates.
 
@@ -120,7 +135,7 @@ Iron's Spells is integrated as a cross-magic spellcraft branch, not as an indepe
 
 ## Late And Post-AE2
 
-AE2 is late local intelligence, not early global logistics. `impossible_machine_casing` should mark the point where AE2-scale systems, high Sophisticated Storage control, and late utility can appear. Post-AE2 branches currently include Protection Pixel, Tome of Blood, hooks/drones/backpack utility gates, and Creating Space dimension access gates where the installed mods exist.
+AE2 is late local intelligence, not early global logistics. `impossible_machine_casing` should mark the point where AE2-scale systems, high Sophisticated Storage control, and late utility can appear. Post-AE2 branches currently include Protection Pixel, Tome of Blood, hooks/drones/backpack utility gates, and Creating Space dimension access gates where the installed mods exist. Tome of Blood is the intended hybrid finisher here: the science side proves raw impossible matter through AE2 processors, sky steel, fluix, and sealed pressure assembly, while the magic side proves that the unstable body can be stabilized through Blood Magic, Ars source refinement, and late dark bindings.
 
 Lava-depth osmiridium is a post-AE2 material pressure point for Protection Pixel Tosaki recipes and selected late utility. JEI/EMI ore-origin tooltips should make clear when a material is a normal deposit, meteor-dimension origin, or lava-diving origin.
 

@@ -2162,6 +2162,12 @@ fun runPlayerProgressionContractsValidation(): ProcessRun {
     validatePrimaryCraftingSpine(manifest, milestones)
     validateBypassSurfaces(manifest)
     validateRuntimeGraphReadiness(manifest)
+    val parentingValidation = runProcess(listOf("python3", "tools/progression_contracts.py", "validate"), stream = false)
+    if (parentingValidation.exitCode == 0) {
+        ok("era parenting and economy manifests validate", parentingValidation.output.trim().ifBlank { "ok" })
+    } else {
+        fail("era parenting and economy manifests validate", parentingValidation.output.trim().ifBlank { "validation failed" })
+    }
 
     val output = buildString {
         appendLine()

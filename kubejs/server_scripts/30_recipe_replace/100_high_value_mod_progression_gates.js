@@ -144,7 +144,7 @@ ServerEvents.recipes(function (event) {
         'sophisticatedbackpacks:advanced_alchemy_upgrade',
         'sophisticatedbackpacks:tool_swapper_upgrade',
         'sophisticatedbackpacks:advanced_tool_swapper_upgrade'
-    ], 'sophisticatedbackpacks/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+    ], 'sophisticatedbackpacks/ae2', BTM_GATE.ae2, 'kubejs:ae_logic_package', 'kubejs:sky_steel_sheet')
 
     // Sophisticated Storage: local bulk storage is allowed; controllers and high upgrades wait for AE2-local-intelligence tier.
     btmGateOutputs(event, [
@@ -193,7 +193,7 @@ ServerEvents.recipes(function (event) {
         'sophisticatedstorage:advanced_void_upgrade',
         'sophisticatedstorage:alchemy_upgrade',
         'sophisticatedstorage:advanced_alchemy_upgrade'
-    ], 'sophisticatedstorage/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+    ], 'sophisticatedstorage/ae2', BTM_GATE.ae2, 'kubejs:ae_logic_package', 'kubejs:sky_steel_sheet')
 
     btmMechanicalGateMany(event, [
         'sophisticatedstorage:basic_to_diamond_tier_upgrade',
@@ -234,7 +234,7 @@ ServerEvents.recipes(function (event) {
         'buildinggadgets2:gadget_copy_paste',
         'buildinggadgets2:gadget_cut_paste',
         'buildinggadgets2:gadget_destruction'
-    ], 'buildinggadgets2/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+    ], 'buildinggadgets2/ae2', BTM_GATE.ae2, 'kubejs:ae_logic_package', 'kubejs:sky_steel_sheet')
 
     btmMechanicalGateMany(event, [
         'wands:stone_wand',
@@ -247,7 +247,7 @@ ServerEvents.recipes(function (event) {
         'wands:magic_bag_1',
         'wands:magic_bag_2',
         'wands:magic_bag_3'
-    ], 'wands/ae2', BTM_GATE.ae2, 'kubejs:impossible_circuit', 'kubejs:sky_steel_sheet')
+    ], 'wands/ae2', BTM_GATE.ae2, 'kubejs:ae_logic_package', 'kubejs:sky_steel_sheet')
 
     // Chunk loading is remote-site infrastructure. It must not appear before power/computing logistics.
     btmGateOutputs(event, [
@@ -363,7 +363,7 @@ ServerEvents.recipes(function (event) {
         'ae2additions:chemical_storage_cell_1024',
         'ae2additions:chemical_storage_cell_4096',
         'ae2additions:chemical_storage_cell_16384'
-    ], ['ae2:cell_component_256k', 'ae2:cell_component_64k', 'ae2:cell_component_16k', 'ae2:engineering_processor', 'kubejs:impossible_circuit'], BTM_GATE.space)
+    ], ['ae2:cell_component_256k', 'ae2:cell_component_64k', 'ae2:cell_component_16k', 'ae2:engineering_processor', 'kubejs:ae_logic_package'], BTM_GATE.space)
 
     // Create Applied Kinetics is an AE/Create bridge, not a pre-AE power shortcut.
     btmGateOutputs(event, [

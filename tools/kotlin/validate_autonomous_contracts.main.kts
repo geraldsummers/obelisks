@@ -1015,11 +1015,11 @@ fun validateDimensionProofGraphStartsImpl() {
     val progression = read("docs/progression.md")
     val obeliskSection = Regex("""## Obelisk Dimension Graph Starts\n([\s\S]*?)(?=\n## )""").find(progression)?.groupValues?.getOrNull(1).orEmpty()
     val dimensionIds = Regex("""['"]kubejs:dimension_graph/([^/'"]+)/""").findAll(recipeText).map { it.groupValues[1] }.toSet()
-    val missingDimensions = listOf("aether", "everdawn").filterNot(dimensionIds::contains)
-    if (missingDimensions.isEmpty()) ok("dimension proof graph-start recipe ids cover mapped route dimensions", "aether, everdawn") else fail("dimension proof graph-start recipe ids cover mapped route dimensions", missingDimensions.joinToString(", "))
+    val missingDimensions = listOf("aether", "everdawn", "everbright").filterNot(dimensionIds::contains)
+    if (missingDimensions.isEmpty()) ok("dimension proof graph-start recipe ids cover mapped route dimensions", "aether, everdawn, everbright") else fail("dimension proof graph-start recipe ids cover mapped route dimensions", missingDimensions.joinToString(", "))
     if ("BTM_DIM_PROOF_ADDED" in recipeText && "btmDimProofShaped" in recipeText) ok("dimension proof graph-start pass uses explicit helper and recipe counter") else fail("dimension proof graph-start pass uses explicit helper and recipe counter", "missing BTM_DIM_PROOF_ADDED or btmDimProofShaped")
-    val requiredRecipeMarkers = listOf("hangglider:glider_wing", "immersive_aircraft:hull", "cold_sweat:waterskin", "brewinandchewin:keg").filterNot(recipeText::contains)
-    if (requiredRecipeMarkers.isEmpty()) ok("dimension proof graph-start outputs stay on route-tool surfaces", "4 outputs") else fail("dimension proof graph-start outputs stay on route-tool surfaces", requiredRecipeMarkers.joinToString(", "))
+    val requiredRecipeMarkers = listOf("hangglider:glider_wing", "immersive_aircraft:hull", "cold_sweat:waterskin", "brewinandchewin:keg", "minecraft:soul_torch", "minecraft:fermented_spider_eye").filterNot(recipeText::contains)
+    if (requiredRecipeMarkers.isEmpty()) ok("dimension proof graph-start outputs stay on route-tool surfaces", "6 outputs") else fail("dimension proof graph-start outputs stay on route-tool surfaces", requiredRecipeMarkers.joinToString(", "))
     val forbiddenOutputPrefixes = listOf("create:","ae2:","advanced_ae:","pneumaticcraft:","computerbridge:","oc2r:","bloodmagic:","botania:","ars_nouveau:","hexerei:","malum:","goety:","irons_spellbooks:","aether:","blue_skies:","deeperdarker:","thirst:")
     val authoredOutputs = Regex("""btmDimProofShaped\(event, '([^']+)'""").findAll(recipeText).map { it.groupValues[1] }.toList()
     val forbiddenOutputs = authoredOutputs.filter { output -> forbiddenOutputPrefixes.any(output::startsWith) }
@@ -1036,10 +1036,13 @@ fun validateDimensionProofGraphStartsImpl() {
     val positiveTableSpineClaims = tableRows.filter { "| Nether |" !in it && "| Undergarden |" !in it }.filter { row -> spineTerms.any { term -> (row.split('|').getOrNull(2)?.trim().orEmpty()).contains(term) } }
     if (positiveTableSpineClaims.isEmpty()) ok("obelisk graph-start table does not reassign tech or magic spines") else fail("obelisk graph-start table does not reassign tech or magic spines", positiveTableSpineClaims.joinToString("\n"))
     val everdawnRow = tableRows.find { "| Everdawn |" in it }.orEmpty()
+    val everbrightRow = tableRows.find { "| Everbright |" in it }.orEmpty()
     val basicWaterOutputs = authoredOutputs.filter { it == "minecraft:water_bucket" || it == "minecraft:potion" || it.startsWith("thirst:") }
     if (Regex("""basic water[^.]{0,80}(gate|gated|open|opens|require|requires)""", RegexOption.IGNORE_CASE).containsMatchIn(everdawnRow) && !Regex("""ungated|remain outside|outside this gate""", RegexOption.IGNORE_CASE).containsMatchIn(everdawnRow)) fail("Everdawn route does not claim to gate basic water", everdawnRow)
     else if (basicWaterOutputs.isNotEmpty()) fail("Everdawn route recipes do not gate basic water outputs", basicWaterOutputs.joinToString(", "))
     else ok("Everdawn route leaves basic water ungated")
+    if (Regex("""Hexerei|Occultism|Malum|Goety""", RegexOption.IGNORE_CASE).containsMatchIn(everbrightRow) && !Regex("""without taking ownership|does not own|doesn't own|without owning""", RegexOption.IGNORE_CASE).containsMatchIn(everbrightRow)) fail("Everbright route does not claim ownership of the dark magic spine", everbrightRow)
+    else ok("Everbright route stays on dark-side expedition support")
 }
 
 fun validateDimensionTravelRoutesImpl() {

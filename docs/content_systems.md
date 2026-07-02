@@ -4,6 +4,8 @@
 
 KubeJS recipe overrides are the authoritative content surface. The active server recipe passes live under `kubejs/server_scripts/20_recipe_remove/`, `30_recipe_replace/`, `35_villager_trades/`, `40_recipe_add/`, `50_loot/`, and `60_worldgen/`.
 
+Progression parenting and acquisition policy are now audited through four explicit manifests in `kubejs/config/`: `tech_parenting.json`, `magic_parenting.json`, `economy_acquisition.json`, and `surface_registry.json`. When a new craftable, reward surface, or recipe type is introduced, those manifests must remain in sync.
+
 Important policies:
 
 - Remove easy metal compression and raw nugget/ingot/block liquidity.
@@ -18,6 +20,12 @@ Current Dimensional Fonts graveyard generation is structure-set driven rather th
 KubeJS layout remains load-order grouped by responsibility. `startup_scripts/00_boot` is for shared globals/helpers, startup item/block registration lives under startup item/block domains, and global startup behavior toggles live under startup globals. Server scripts use `10_tags`, `20_recipe_remove`, `30_recipe_replace`, `35_villager_trades`, `40_recipe_add`, `50_loot`, `60_worldgen`, `70_spawn`, `80_recipe_policy`, and `90_dev_debug`; keep `90_dev_debug` empty for release. Client scripts own JEI/EMI visibility, tooltips, and client-only presentation.
 
 ## Materials And Chemistry
+
+Cross-mod standardization is moderate rather than total:
+
+- Collapse exact duplicate physical materials into one canonical family when the pack already has a clear owner. Mahogany is the active case: `146_hexerei_mahogany_to_natures_spirit.js` rewrites Hexerei mahogany inputs into `natures_spirit` mahogany.
+- Standardize generic feedstocks through tags and shared substrate items where possible: planks/logs, generic glass, common sheets/plates, silica-bearing feedstocks, and chemistry precursors.
+- Keep mod-native proof reagents distinct. Blood Magic slates and orbs, Botania petals/runes/mana matter, Ars source items, Malum spirits, Occultism attunement materials, Goety cursed matter, AE2 certus/fluix/sky stone, PneumaticCraft PCB stages, and OC2R wafers should interoperate in recipes without collapsing into generic substitutes.
 
 Deposit processing is multi-surface:
 
@@ -85,6 +93,14 @@ Non-village natural crop and edible-plant diversity is relocated into Undergarde
 Starting loadouts are owned by the embark point-buy config in `config/classselector/embark.json`; `config/classselector/kits.json` remains safe legacy fallback data. The active embark quota is 18 points. The Class Selector embark UI now presents one dozen high-signal support choices instead of a broad catalogue: hydration, climate scouting, light, route marking, rope, a small vanilla rail start, and basic rations. It must not include starter tools, armor, logs/planks, functional crafting blocks, generic storage, coins, scuba gear, gliders, recovery compass routes, renewable specialty crop starts, ready-made TNT or TNT inputs, Protection Pixel gear, AE2, PNCR pressure items, Blood Magic LP/orbs, Create trains, Wares routes, or other missing-logistics progression before those systems provide power.
 
 `126_cross_magic_irons_spellcraft.js` is the current Iron's Spells integration surface. It treats Iron's spellcraft as an authored branch of the magic spine: Blood Magic slates set tier, Ars apparatus handles source stabilization, Botania runic altar handles rune school identity, Hexerei cauldron handles folk/alchemical setup, Malum spirit infusion upgrades school power, and Goety rituals handle cursed/high-danger artifacts. Occultism, Forbidden and Arcanus, Reliquary, Hexerei, Botania, Goety, Ars, and Malum reagents are intentionally mixed into the recipes so Iron's spell outputs cannot be mass-crafted from only vanilla valuables and Iron's own drops.
+
+The current slate order is deliberate and should stay easy to audit in recipes and docs:
+
+- Blank Slate: Malum and other first-contact death-native work
+- Reinforced Slate: first Botania and allied natural-magic systems
+- Infused Slate: Occultism bridge content and Botania runic proof
+- Demonic Slate: Ars source precision plus Goety and Hexerei operational dark work
+- Ethereal Slate: programmable, networked, or post-AE2 hybrid magic
 
 ## Casings And Manufactured Parts
 

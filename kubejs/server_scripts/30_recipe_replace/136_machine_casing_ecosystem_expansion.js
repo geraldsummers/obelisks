@@ -13,7 +13,6 @@ var BTM_CASING_ECO = {
     space: 'kubejs:space_machine_casing',
     rawImpossible: 'kubejs:raw_impossible_casing',
     impossible: 'kubejs:impossible_machine_casing',
-    impossibleCircuit: 'kubejs:impossible_circuit',
     brassControlAssembly: 'kubejs:brass_control_assembly',
     airtightFluidModule: 'kubejs:airtight_fluid_module',
     electricalControlModule: 'kubejs:electrical_control_module',
@@ -237,19 +236,19 @@ ServerEvents.recipes(function (event) {
 
     btmEcoAddMany(event, [
         btmEcoRecipe('ae2:controller', ['SFS', 'AIA', 'SFS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:fluix_crystal', A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/controller'),
-        btmEcoRecipe('ae2:drive', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible, P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/drive'),
+        btmEcoRecipe('ae2:drive', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, C: 'oc2r:circuit_board', I: BTM_CASING_ECO.impossible, P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/drive'),
         btmEcoRecipe('ae2:energy_acceptor', ['SFS', 'FIF', 'SFS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:fluix_crystal', I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/energy_acceptor'),
-        btmEcoRecipe('ae2:interface', ['SAS', 'CIC', 'SLS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible, L: 'ae2:logic_processor' }, 'kubejs:casing_ecosystem/impossible/interface'),
+        btmEcoRecipe('ae2:interface', ['SAS', 'CIC', 'SLS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, C: 'oc2r:network_connector', I: BTM_CASING_ECO.impossible, L: 'ae2:logic_processor' }, 'kubejs:casing_ecosystem/impossible/interface'),
         btmEcoRecipe('ae2:io_port', ['SAS', 'DID', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, D: 'ae2:drive', I: BTM_CASING_ECO.impossible, P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/io_port'),
         btmEcoRecipe('ae2:spatial_io_port', ['SAS', 'DID', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, D: 'ae2:spatial_cell_component_16', I: BTM_CASING_ECO.impossible, P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/spatial_io_port'),
         btmEcoRecipe('ae2:condenser', ['SFS', 'AIA', 'SCS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:fluix_crystal', A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, C: 'ae2:calculation_processor' }, 'kubejs:casing_ecosystem/impossible/condenser'),
-        btmEcoRecipe('ae2:molecular_assembler', ['SGS', 'AIA', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, G: 'ae2:quartz_glass', A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, P: BTM_CASING_ECO.impossibleCircuit }, 'kubejs:casing_ecosystem/impossible/molecular_assembler'),
-        btmEcoRecipe('ae2:pattern_provider', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:blank_pattern', C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/pattern_provider'),
-        btmEcoRecipe('ae2:cell_workbench', ['SGS', 'AIA', 'SCP'], { S: BTM_CASING_ECO.skySteelSheet, G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, C: 'ae2:calculation_processor', P: BTM_CASING_ECO.impossibleCircuit }, 'kubejs:casing_ecosystem/impossible/cell_workbench'),
-        btmEcoRecipe('ae2:crafting_unit', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:calculation_processor', C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/crafting_unit'),
+        btmEcoRecipe('ae2:molecular_assembler', ['SGS', 'AIA', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, G: 'ae2:quartz_glass', A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/molecular_assembler'),
+        btmEcoRecipe('ae2:pattern_provider', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:blank_pattern', C: 'ae2:engineering_processor', I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/pattern_provider'),
+        btmEcoRecipe('ae2:cell_workbench', ['SGS', 'AIA', 'SCP'], { S: BTM_CASING_ECO.skySteelSheet, G: BTM_CASING_ECO.glass, A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, C: 'ae2:calculation_processor', P: 'ae2:engineering_processor' }, 'kubejs:casing_ecosystem/impossible/cell_workbench'),
+        btmEcoRecipe('ae2:crafting_unit', ['SAS', 'CIC', 'SPS'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:calculation_processor', C: 'oc2r:circuit_board', I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/crafting_unit'),
         btmEcoRecipe('ae2:wireless_access_point', [' F ', 'AIA', ' S '], { F: 'ae2:wireless_receiver', A: BTM_CASING_ECO.aeLogicPackage, I: BTM_CASING_ECO.impossible, S: BTM_CASING_ECO.skySteelSheet }, 'kubejs:casing_ecosystem/impossible/wireless_access_point'),
-        btmEcoRecipe('ae2:annihilation_plane', ['SFS', 'AIA', 'SCS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:annihilation_core', A: BTM_CASING_ECO.aeLogicPackage, C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/annihilation_plane'),
-        btmEcoRecipe('ae2:formation_plane', ['SFS', 'AIA', 'SCS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:formation_core', A: BTM_CASING_ECO.aeLogicPackage, C: BTM_CASING_ECO.impossibleCircuit, I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/formation_plane'),
-        btmEcoRecipe('ae2:pattern_encoding_terminal', ['SAS', 'TIT', 'SCP'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:blank_pattern', T: 'ae2:terminal', I: BTM_CASING_ECO.impossible, C: BTM_CASING_ECO.impossibleCircuit }, 'kubejs:casing_ecosystem/impossible/pattern_encoding_terminal')
+        btmEcoRecipe('ae2:annihilation_plane', ['SFS', 'AIA', 'SCS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:annihilation_core', A: BTM_CASING_ECO.aeLogicPackage, C: 'ae2:engineering_processor', I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/annihilation_plane'),
+        btmEcoRecipe('ae2:formation_plane', ['SFS', 'AIA', 'SCS'], { S: BTM_CASING_ECO.skySteelSheet, F: 'ae2:formation_core', A: BTM_CASING_ECO.aeLogicPackage, C: 'ae2:engineering_processor', I: BTM_CASING_ECO.impossible }, 'kubejs:casing_ecosystem/impossible/formation_plane'),
+        btmEcoRecipe('ae2:pattern_encoding_terminal', ['SAS', 'TIT', 'SCP'], { S: BTM_CASING_ECO.skySteelSheet, A: BTM_CASING_ECO.aeLogicPackage, P: 'ae2:blank_pattern', T: 'ae2:terminal', I: BTM_CASING_ECO.impossible, C: 'oc2r:circuit_board' }, 'kubejs:casing_ecosystem/impossible/pattern_encoding_terminal')
     ])
 })

@@ -297,7 +297,7 @@ ServerEvents.recipes(function (event) {
     ], {
         S: 'kubejs:sky_steel_sheet',
         P: 'ae2:capacity_card',
-        C: 'kubejs:impossible_circuit',
+        C: 'kubejs:ae_logic_package',
         I: 'expatternprovider:ex_interface'
     })
     btmAestheticMechanical(event, 'expatternprovider_oversize_interface_part', 'expatternprovider:oversize_interface_part', [
@@ -307,7 +307,7 @@ ServerEvents.recipes(function (event) {
     ], {
         S: 'kubejs:sky_steel_sheet',
         P: 'ae2:engineering_processor',
-        C: 'kubejs:impossible_circuit',
+        C: 'kubejs:ae_logic_package',
         I: 'expatternprovider:oversize_interface'
     })
 

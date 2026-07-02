@@ -231,6 +231,6 @@ ServerEvents.recipes(function (event) {
         { id: 'kubejs:sky_steel_sheet', count: 2 },
         { id: 'oc2r:circuit_board' },
         { id: 'ae2:logic_processor' },
-        { id: 'kubejs:raw_impossible_circuit' }
+        { id: 'kubejs:raw_impossible_casing' }
     ])
 })

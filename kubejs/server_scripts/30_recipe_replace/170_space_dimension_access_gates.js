@@ -1,5 +1,5 @@
 // Direct dimension portals are not pack routes. Player dimension travel should
-// come from meteor rift anchors or Creating Space rocket graph entries only.
+// come from Dimensional Font routes or Creating Space rocket graph entries only.
 
 var BTM_DIRECT_DIMENSION_ROUTE_ITEMS = [
     'fallout_wastelands_:portal_frame',
@@ -43,5 +43,5 @@ ServerEvents.recipes(function (event) {
     event.remove({ id: 'irons_spellbooks:portal_frame' })
     event.remove({ id: 'irons_spellbooks:wayward_compass' })
 
-    console.info('[space-dimension-access] disabled direct portal/key recipe outputs; use meteor rifts or Creating Space rocket routes')
+    console.info('[space-dimension-access] disabled direct portal/key recipe outputs; use Dimensional Fonts or Creating Space rocket routes')
 })

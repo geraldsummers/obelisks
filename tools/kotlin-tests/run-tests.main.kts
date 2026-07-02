@@ -89,7 +89,7 @@ test("internal kubejs assets validator runs through btm") {
 test("internal autonomous contracts validator runs through btm") {
     val (exit, output) = runCommand("tools/btm", "internal", "validate-autonomous-contracts")
     assertTrue(exit == 0, "internal validate-autonomous-contracts should exit 0, got $exit")
-    assertContains(output, "autonomous contract validators: 87 pass(es), 0 hard failure(s)", "internal validate-autonomous-contracts should match expected summary")
+    assertContains(output, "autonomous contract validators: 88 pass(es), 0 hard failure(s)", "internal validate-autonomous-contracts should match expected summary")
 }
 
 test("internal realistic hands validator runs through btm") {

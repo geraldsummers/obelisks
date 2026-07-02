@@ -32,7 +32,7 @@ tools/btm doctor runtime --instance /path/to/fresh/runtime
 
 Realistic Hands static regressions now cover primitive loose-earth hand breakability, representative knife/sword separation, first-class tool coverage, primitive flint butcher knife and hand axe recipes, Farmer's Delight straw-harvester knife tags, and ore/deepslate hardness probe coverage. The exact deepslate `+1` hardness assertion is enforced when a retained `generated/runtime-dumps/block_hardness_probe.json` exists.
 
-Player progression regressions are data-driven by `kubejs/config/player_progression_regression.json` and enforced by the Kotlin-backed `tools/btm internal validate-player-progression-contracts` path during `--static`. Current coverage includes the primitive tool route, the full machine casing ladder, Blood Magic heart/orb/slate authority, Creating Space dimension routes, and absence of future milestone outputs from starting options, repo loot, Wares loot, generated quest rewards, and villager buy results. Effective recipe graph route reachability still requires a refreshed strict runtime dump.
+Player progression regressions are data-driven by `kubejs/config/player_progression_regression.json` plus the authoritative parenting/acquisition manifests in `kubejs/config/tech_parenting.json`, `magic_parenting.json`, `economy_acquisition.json`, and `surface_registry.json`. `tools/btm internal validate-player-progression-contracts` now checks the primitive tool route, the full machine casing ladder, Blood Magic heart/orb/slate authority, Creating Space dimension routes, reward-surface bypass bans, direct coin-crafting bans, Font coin-only payouts, registered recipe/acquisition surfaces, and parenting coverage for retained craftable outputs. Effective recipe graph route reachability still requires a refreshed strict runtime dump.
 
 After changing validation entry points or evidence claims, re-run the relevant `tools/btm test ...` modes and confirm the generated validation report still matches the intended evidence level.
 
@@ -70,6 +70,8 @@ tools/btm test smoke --server-dir /tmp/btm-content-smoke --port 25565 --reset-ru
 ```
 
 `tools/btm test smoke` bootstraps a fresh server, prunes stale runtime mods, boots the server, scans hard log failures, and runs the strict runtime suite.
+
+Current smoke evidence: `/tmp/btm-content-smoke` passed `tools/btm test smoke --server-dir /tmp/btm-content-smoke --port 25565 --reset-runtime` on 2026-07-02 after the magic-order, dimension-proof, and late-crafting reauthoring pass. Hard runtime checks were clean; the only finding was a soft startup-performance overage for engine/world log analysis (`533.86 ms` against the `250 ms` budget).
 
 ## Scenario Harnesses
 

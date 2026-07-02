@@ -76,6 +76,8 @@ function btmVanRemoveCooking(event, output) {
 
 function btmVanMechanical(event, id, output, count, pattern, keys) {
     if (!btmVanCanCraft(output, btmVanKeyInputs(keys))) return
+    btmVanRemoveOutput(event, output)
+    global.btmFactoryCrafting(event, 'kubejs:vanillish_expert/factory/' + id, output, count || 1, pattern, keys, { mirrored: true })
 }
 
 function btmVanDeploying(event, id, output, count, base, applied) {
