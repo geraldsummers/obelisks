@@ -101,13 +101,13 @@ tools/btm test scenario lc_tfth_c2me_dh --cycles 1 --idle-seconds 30 --tfth-seco
 
 Expected full validation: three clean boot/join/space-routed dimension teleport/Distant Horizons generation/TFTH pressure cycles, required jars present, no crash reports, no ModernFix watchdog, no C2ME thread-guard failures, and Distant Horizons activity observed.
 
-Opening progression runtime GameTest:
+Opening progression runtime validation:
 
 ```bash
 tools/btm test scenario opening_progression --cycles 1
 ```
 
-Expected validation: a fresh disposable pack server boots with the `pillagercampaigns` GameTest namespace enabled, then the opening progression fixture proves runtime gravel hand-breakability, hand denial on stone and logs, live flint availability from placed gravel, straw drops from placed tall grass cut with the primitive butcher knife, runtime primitive recipe presence for the butcher knife and hand axe, and first log access with the crafted primitive hand axe.
+Expected validation: a fresh disposable pack server boots normally, then the `sam validate_opening_progression` runtime validator proves gravel hand-breakability, hand denial on stone and logs, live flint availability from placed gravel, straw drops from placed tall grass cut with the primitive butcher knife, runtime primitive recipe presence for the butcher knife and hand axe, and first log access with the crafted primitive hand axe.
 
 ## Current Follow-Ups
 

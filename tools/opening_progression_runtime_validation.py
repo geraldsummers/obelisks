@@ -12,10 +12,10 @@ from portable_minecraft_harness import HarnessConfig, HarnessFailure, PortableMi
 
 
 CONFIG = HarnessConfig(
-    name="Opening Progression Runtime GameTest",
-    slug="opening_progression_gametest",
-    description="Bootstraps a disposable pack server and runs the pillagercampaigns opening progression GameTest suite.",
-    docs_subdir="opening_progression_gametest",
+    name="Opening Progression Runtime Validation",
+    slug="opening_progression_runtime_validation",
+    description="Bootstraps a disposable pack server and runs the pillagercampaigns opening progression runtime validation.",
+    docs_subdir="opening_progression_runtime_validation",
     default_run_parent=Path("/tmp/btm-opening-progression"),
     default_cycles=1,
     default_boot_timeout=900,
@@ -24,13 +24,13 @@ CONFIG = HarnessConfig(
     },
     fatal_patterns={
         "crash_report": re.compile(r"crash report|this crash report has been saved|preparing crash report", re.I),
-        "gametest_failure": re.compile(r"failed!|assertion failed|GameTestAssert|No such test|No tests to run", re.I),
+        "runtime_validation_failure": re.compile(r"OPENING_PROGRESSION_VALIDATION FAIL|Unknown or incomplete command", re.I),
         "jvm_fatal": re.compile(r"OutOfMemoryError|hs_err_pid|fatal error has been detected", re.I),
     },
 )
 
-PASS_PATTERN = re.compile(r"All \d+ required tests passed|All tests passed", re.I)
-START_PATTERN = re.compile(r"test runall|Running all tests|Starting test", re.I)
+PASS_PATTERN = re.compile(r"OPENING_PROGRESSION_VALIDATION PASS", re.I)
+START_PATTERN = re.compile(r"validate_opening_progression|OPENING_PROGRESSION_VALIDATION", re.I)
 
 
 def main() -> int:
@@ -45,7 +45,7 @@ def main() -> int:
         try:
             harness.bootstrap_cycle(result, server_dir, client_dir, evidence_dir)
             harness.verify_required_jars(result, server_dir, client_dir)
-            server_proc = start_server_with_gametests(root, server_dir, evidence_dir)
+            server_proc = start_server(root, server_dir, evidence_dir)
             harness.wait_for_server_boot(result, server_dir, server_proc)
             run_opening_progression_suite(harness, result, server_dir, evidence_dir, server_proc, args.timeout)
             if not harness.mark_crash_reports(result, server_dir, client_dir):
@@ -87,10 +87,7 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def start_server_with_gametests(root: Path, server_dir: Path, evidence_dir: Path) -> subprocess.Popen[str]:
-    env = os.environ.copy()
-    extra_opts = "-Dforge.enabledGameTestNamespaces=pillagercampaigns,minecraft"
-    env["JAVA_TOOL_OPTIONS"] = f"{env.get('JAVA_TOOL_OPTIONS', '').strip()} {extra_opts}".strip()
+def start_server(root: Path, server_dir: Path, evidence_dir: Path) -> subprocess.Popen[str]:
     return subprocess.Popen(
         [str(root / "tools/launch_server_direct.sh"), "--server-dir", str(server_dir), "--", "nogui"],
         cwd=root,
@@ -98,7 +95,6 @@ def start_server_with_gametests(root: Path, server_dir: Path, evidence_dir: Path
         stdout=(evidence_dir / "server-console.log").open("w", encoding="utf-8"),
         stderr=subprocess.STDOUT,
         text=True,
-        env=env,
     )
 
 
@@ -114,7 +110,7 @@ def run_opening_progression_suite(
     console_log = evidence_dir / "server-console.log"
     logs = [server_log, console_log]
 
-    send_command(server_proc, "test runall")
+    send_command(server_proc, "sam validate_opening_progression")
     deadline = time.monotonic() + timeout
     started = False
     while time.monotonic() < deadline:
@@ -129,7 +125,7 @@ def run_opening_progression_suite(
             result.phases.append("gametest_pass")
             return
         time.sleep(1)
-    raise HarnessFailure("no_progress_stall", f"opening progression GameTest timed out after {timeout}s")
+    raise HarnessFailure("no_progress_stall", f"opening progression runtime validation timed out after {timeout}s")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "AGENTS.md"
-hash = "672b3973ab1413bc9eaf80529c0d523eae22585ae5b57b803ade33017877e419"
+hash = "e48b29ccf509d60a47d3271e964910889998aa051d087152a764d9731955f4f5"
 
 [[files]]
 file = "LICENSE"
@@ -10666,7 +10666,7 @@ hash = "3c557ca6a4b4bb3a0000a45364f1e6be93bb4f1bd2f3da4cb41824dbf8ee59e2"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/123_more_red_primitive_circuitry.js"
-hash = "632d6b8d37cedd3bc38e5258ad823f12d9a9863893976082f503c91c3b3361e5"
+hash = "626d81f9a43ed2224e08a37e5b4f4a208359dff042879629daaa1c57705fcbb4"
 
 [[files]]
 file = "kubejs/server_scripts/30_recipe_replace/125_magic_power_spike_gates.js"
@@ -11245,7 +11245,7 @@ metafile = true
 
 [[files]]
 file = "mods/dimensionalfonts-1.0.0.jar"
-hash = "49f5fca666481a89ec680f9d30e7ccf7818d86a630eb8c5dfc3f1cb9af179706"
+hash = "f471bcae3853aeb7ea2234b30d9d8c7389a9d31168689576b5c5689911d25d07"
 
 [[files]]
 file = "mods/ding.pw.toml"
@@ -11779,7 +11779,7 @@ metafile = true
 
 [[files]]
 file = "mods/pillagercampaigns-0.2.0.jar"
-hash = "1306f5ebc455c2a8b8490abaea03273cc415d00fed7ee8c3b93d8b842b6ad58b"
+hash = "b1cf7dcf62cdfdf68e838ef948bb3ca148995a7b5955c09bcc85140628787ff0"
 
 [[files]]
 file = "mods/placebo.pw.toml"
@@ -12199,7 +12199,7 @@ metafile = true
 
 [[files]]
 file = "mods/villagewalls-1.0.0.jar"
-hash = "37fe2cc04e37e8e743b2a19b675a0e8c1372aa5fd248d917b1405b1041f0652b"
+hash = "d847e168ae87a374a1e3196fa71edf4b503ab6a8c27c6ea745654a9d52cb1985"
 
 [[files]]
 file = "mods/wares.pw.toml"

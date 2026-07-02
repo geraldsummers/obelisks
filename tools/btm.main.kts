@@ -217,8 +217,8 @@ val scenarios = linkedMapOf(
     ),
     "opening_progression" to ScenarioDefinition(
         "opening_progression",
-        "Opening progression runtime GameTest validation",
-        "tools/opening_progression_gametest.py",
+        "Opening progression runtime validation",
+        "tools/opening_progression_runtime_validation.py",
     ),
 )
 

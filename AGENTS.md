@@ -168,3 +168,10 @@ Active pack-critical sources:
 Note: `settlementroads` appears in multiple dirs; use `generated/custom-mod-sources/settlement-roads` as canonical unless explicitly told otherwise.
 
 Override source root for alternate environments with `BTM_CUSTOM_MODS_DIR`.
+
+## Custom Mod Runtime Artifact Rule
+- ForgeGradle custom mods must be deployed and validated with a reobfuscated runtime jar, not the plain development `jar` output.
+- Treat `build/libs/<mod>.jar` from a plain `jar` task as a dev artifact unless the build explicitly stages the `reobfJar` output there.
+- Before copying a custom mod into repo `mods/` or any disposable runtime, build the runtime artifact from `reobfJar` and verify the exact deployed file path.
+- If a freshly built custom mod fails at runtime with `NoSuchMethodError`, `NoSuchFieldError`, or similar linkage errors against Minecraft/Forge classes, first suspect a non-reobfuscated jar before adding compatibility shims or source workarounds.
+- Keep custom mod Forge versions aligned with the repo runtime default unless an intentional divergence is documented.
